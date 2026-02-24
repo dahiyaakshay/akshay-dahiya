@@ -102,7 +102,7 @@ This portfolio evolves alongside active product development.
 
 ## 🌐 Live Site
 
-([[Add your GitHub Pages URL here](https://www.akshaydahiya.site/)](https://www.akshaydahiya.site/))
+((https://www.akshaydahiya.site/))
 
 ------------------------------------------------------------------------
 
