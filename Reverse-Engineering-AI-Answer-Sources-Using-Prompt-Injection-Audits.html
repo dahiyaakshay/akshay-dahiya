@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Reverse-Engineering AI Answer Sources Using Prompt Injection Audits | Akshay Dahiya</title>
+        <script src="assets/js/vendors/color-modes.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="home-page-2">
+        <div id="preloader">
+            <div class="loader-cover">
+                <div class="loader-container">
+                    <div class="loader-icon-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="container position-relative">
+                <div class="position-relative">
+                    <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                            <i class="ri-menu-2-line"></i>
+                        </a>
+                        <div class="container py-3 px-4">
+                            <a class="navbar-brand d-flex main-logo align-items-center" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="d-none d-lg-flex">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                                <div class="d-md-flex d-none gap-3">
+                                    <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                    <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                                </div>
+                                <div class="burger-icon burger-icon-white border rounded-3">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- offCanvas Sidebar -->
+                <div class="offCanvas__info style-2">
+                    <div class="offCanvas__close-icon menu-close">
+                        <button><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+                    <div class="offCanvas__side-info mb-30">
+                        <div class="contact-list mb-30">
+                            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                            <div class="mb-3">
+                                <span class="text-400 fs-5">Email</span>
+                                <p class="mb-0"><a href="mailto:akshaydahiya92.ad@gmail.com">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <p class="text-400 fs-5 mb-2">Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__overly"></div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+                    <div class="mobile-header-wrapper-inner">
+                        <div class="mobile-header-logo">
+                            <a class="d-flex main-logo align-items-center d-inline-flex" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-header-content-area">
+                            <div class="perfect-scroll">
+                                <div class="mobile-menu-wrap mobile-header-border">
+                                    <nav>
+                                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item has-children"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-blog-hero position-relative pt-160 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <a href="blog.html" class="btn btn-sm border border-1 rounded-3 px-3 py-2 mb-3">
+                                <i class="ri-arrow-left-line me-2"></i>Back to Blog
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <a href="#" class="text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2 me-3">AI Research</a>
+                                <span class="text-400 fs-7">January 19, 2026</span>
+                                <span class="text-400 fs-7 mx-2">•</span>
+                                <span class="text-400 fs-7">16 min read</span>
+                            </div>
+                            <h1 class="ds-3 my-4 fw-medium">
+                                Reverse-Engineering AI Answer Sources Using <span class="text-300">Prompt Injection Audits_</span>
+                            </h1>
+                            <p class="fs-5 text-300 mb-4">
+                                How to scientifically observe AI source selection behavior through controlled prompt experiments—revealing citation patterns and retrieval preferences
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 40px; height: 40px;" />
+                                <div class="text-start">
+                                    <p class="mb-0 fw-medium">Akshay Dahiya</p>
+                                    <p class="mb-0 text-400 fs-7">Growth & MarTech Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-featured-image pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="rounded-3 overflow-hidden border border-1">
+                                <img src="assets/imgs/blog/blog-6.png" alt="Featured Image" class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-blog-content pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="blog-content">
+                                <p class="text-300 fs-5 mb-4">
+                                    AI search engines don't "search" the web the way classic search engines do. They retrieve, filter, synthesize, and cite—often invisibly.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    When users ask questions in AI-driven search systems like Google AI Overviews, Perplexity, or Microsoft Bing AI, the answers they see are not neutral summaries of the SERP.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    They are the result of:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Prompt interpretation</li>
+                                    <li class="mb-2">Retrieval heuristics</li>
+                                    <li class="mb-2">Confidence weighting</li>
+                                    <li class="mb-2">Source selection rules</li>
+                                    <li>Safety and hallucination controls</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-3">For SEOs and content strategists, this creates a new challenge:</p>
+                                    <p class="text-300 mb-0 fst-italic fs-5">Why is one source cited while another—often higher ranking—is ignored?</p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    To answer that, we need to reverse-engineer how AI systems choose their sources.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">This article explains:</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">What prompt injection audits are (and what they are not)</li>
+                                        <li class="mb-2">How AI systems expose their sourcing logic under controlled prompts</li>
+                                        <li class="mb-2">How to run structured prompt experiments</li>
+                                        <li class="mb-2">How to track source frequency over time</li>
+                                        <li class="mb-2">How to automate prompt testing and source extraction</li>
+                                        <li>How to use these insights defensively and offensively</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is not about manipulating AI. It's about <span class="text-secondary-2">observing system behavior scientifically</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why Reverse-Engineering AI Answers Is Necessary</h3>
+
+                                <p class="text-300 mb-4">
+                                    Traditional SEO tools answer questions like:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Who ranks?</li>
+                                    <li class="mb-2">Who has backlinks?</li>
+                                    <li>Who owns SERP features?</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    AI search breaks this model.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    You can:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Rank on page one</li>
+                                    <li class="mb-2">Have strong authority</li>
+                                    <li>Be factually correct</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    …and still never appear in AI answers.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2">The reason is simple:</p>
+                                    <p class="text-300 mb-0 fst-italic">AI systems do not rank pages. They <strong>select evidence</strong>.</p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    To understand that selection, we must interrogate the system itself.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">What Is a Prompt Injection Audit?</h3>
+
+                                <p class="text-300 mb-4">
+                                    A prompt injection audit is a controlled experiment framework where you:
+                                </p>
+
+                                <ol class="text-300 mb-4">
+                                    <li class="mb-2">Ask functionally equivalent questions</li>
+                                    <li class="mb-2">Vary phrasing, constraints, and intent</li>
+                                    <li>Observe changes in:
+                                        <ul class="mt-2">
+                                            <li>Answer structure</li>
+                                            <li>Cited sources</li>
+                                            <li>Source ordering</li>
+                                            <li>Omitted entities</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+
+                                <p class="text-300 mb-4">
+                                    The goal is not to "hack" the model.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    The goal is to reveal:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Retrieval preferences</li>
+                                    <li class="mb-2">Citation thresholds</li>
+                                    <li class="mb-2">Source bias patterns</li>
+                                    <li>Structural content advantages</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Think of it as <span class="text-secondary-2">black-box testing for AI search</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Ethical & Practical Boundaries (Important)</h3>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="text-danger mb-3">We are NOT talking about:</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Jailbreaking</li>
+                                                <li class="mb-2">Bypassing safeguards</li>
+                                                <li>Manipulating outputs maliciously</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="text-success mb-3">We ARE talking about:</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Observational testing</li>
+                                                <li class="mb-2">Comparative analysis</li>
+                                                <li>Reproducible experiments</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Everything described here is:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Non-invasive</li>
+                                    <li class="mb-2">Ethical</li>
+                                    <li>Already used in AI evaluation research</li>
+                                </ul>
+
+                                <h3 class="mt-5 mb-4">How AI Search Engines Pull Sources (Simplified Model)</h3>
+
+                                <p class="text-300 mb-4">
+                                    At a high level, AI answer generation follows this flow:
+                                </p>
+
+                                <ol class="text-300 mb-4">
+                                    <li class="mb-2">Prompt interpretation</li>
+                                    <li class="mb-2">Intent classification</li>
+                                    <li class="mb-2">Candidate retrieval</li>
+                                    <li class="mb-2">Source confidence scoring</li>
+                                    <li class="mb-2">Answer synthesis</li>
+                                    <li>Optional citation display</li>
+                                </ol>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        The only part we can't see directly is step 3–4. Prompt injection audits let us <strong>infer</strong> those steps.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Step 1: Designing Controlled Prompt Experiments</h3>
+
+                                <p class="text-300 mb-4">
+                                    The foundation of reverse-engineering is prompt control.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    You must keep:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Topic constant</li>
+                                    <li class="mb-2">Difficulty constant</li>
+                                    <li>Information need constant</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    And vary only one dimension at a time.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <h6 class="mb-3">Example: Base Prompt</h6>
+                                    <p class="text-300 mb-3">"How do AI search engines choose which sources to cite?"</p>
+                                    <p class="text-300 mb-2"><strong>Now create controlled variants:</strong></p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">"Explain how AI search engines choose which sources to cite."</li>
+                                        <li class="mb-2">"List the factors AI search engines use to select cited sources."</li>
+                                        <li class="mb-2">"From a technical perspective, how are sources selected in AI search?"</li>
+                                        <li>"According to research, how do AI systems decide what to cite?"</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Each version tests a different:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Verb ("explain" vs "list")</li>
+                                    <li class="mb-2">Constraint (technical vs general)</li>
+                                    <li>Evidence expectation ("according to research")</li>
+                                </ul>
+
+                                <h3 class="mt-5 mb-4">Step 2: Running Prompts Across AI Systems</h3>
+
+                                <p class="text-300 mb-4">
+                                    Run the same prompt set across:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Google AI Overviews</li>
+                                    <li class="mb-2">Perplexity</li>
+                                    <li>Bing AI</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        You are not comparing answers. You are comparing <strong>sources</strong>.
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Key questions:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Which domains appear repeatedly?</li>
+                                    <li class="mb-2">Which disappear with minor phrasing changes?</li>
+                                    <li class="mb-2">Which appear only under "research" framing?</li>
+                                    <li>Which are never cited?</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Patterns emerge quickly.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 3: Tracking Source Frequency</h3>
+
+                                <p class="text-300 mb-4">
+                                    Once you collect responses, you log:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Prompt version</li>
+                                    <li class="mb-2">AI system</li>
+                                    <li class="mb-2">Cited sources (domains, URLs)</li>
+                                    <li class="mb-2">Position/order</li>
+                                    <li>Whether the source is quoted or paraphrased</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        Over dozens or hundreds of prompts, frequency matters more than individual appearances. A source cited 30 times across variants is <strong>structurally favored</strong>.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">What Citation Patterns Reveal</h3>
+
+                                <p class="text-300 mb-4">
+                                    Across multiple audits, consistent patterns appear:
+                                </p>
+
+                                <h5 class="mt-4 mb-3">1. Structural Sources Beat Popular Sources</h5>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <p class="text-success mb-2"><strong>Often cited:</strong></p>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Documentation</li>
+                                                <li class="mb-2">Research-style blogs</li>
+                                                <li>Neutral explainers</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <p class="text-danger mb-2"><strong>Often ignored:</strong></p>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">High-traffic marketing blogs</li>
+                                                <li class="mb-2">Opinion pieces</li>
+                                                <li>Branded thought leadership</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h5 class="mt-4 mb-3">2. Explicit Definitions Increase Citation Odds</h5>
+
+                                <p class="text-300 mb-4">
+                                    Pages that <em>define</em> concepts clearly are cited more than pages that <em>discuss</em> them broadly.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI systems need quotable units.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">3. Section-Level Retrieval Is Common</h5>
+
+                                <p class="text-300 mb-4">
+                                    AI systems often retrieve:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">One section</li>
+                                    <li class="mb-2">One paragraph</li>
+                                    <li>One list</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Not entire pages.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    This means internal structure matters more than overall authority.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 4: Building a Prompt Testing Framework</h3>
+
+                                <p class="text-300 mb-4">
+                                    To scale this, you need automation.
+                                </p>
+
+                                <h6 class="mt-4 mb-3">Prompt Testing Framework (Conceptual Python)</h6>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>prompts = [
+    "Explain how AI search engines choose sources",
+    "List the factors AI search engines use to cite sources",
+    "From a technical perspective, how are sources selected in AI search?"
+]
+
+results = []
+
+for prompt in prompts:
+    response = query_ai_model(prompt)
+    sources = extract_sources(response)
+    results.append({
+        "prompt": prompt,
+        "sources": sources
+    })</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    The key is consistency:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Same prompts</li>
+                                    <li class="mb-2">Same order</li>
+                                    <li>Same logging format</li>
+                                </ul>
+
+                                <h3 class="mt-5 mb-4">Step 5: Automating Source Extraction</h3>
+
+                                <p class="text-300 mb-4">
+                                    Different AI systems expose sources differently:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Inline links</li>
+                                    <li class="mb-2">Footnotes</li>
+                                    <li class="mb-2">Bullet citations</li>
+                                    <li>Domain mentions</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    You must normalize them.
+                                </p>
+
+                                <h6 class="mt-4 mb-3">Source Extraction Logic (Simplified)</h6>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>import re
+
+def extract_sources(text):
+    urls = re.findall(r'https?://\S+', text)
+    domains = set([url.split("/")[2] for url in urls])
+    return list(domains)</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    In practice, you also extract:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Brand mentions</li>
+                                    <li class="mb-2">Publication names</li>
+                                    <li>Paraphrased references</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This builds a citation graph.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 6: Building a Source Frequency Matrix</h3>
+
+                                <p class="text-300 mb-4">
+                                    Now you aggregate results:
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2"><strong>Rows:</strong> Sources</li>
+                                        <li class="mb-2"><strong>Columns:</strong> Prompt variants</li>
+                                        <li><strong>Values:</strong> Citation count</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This reveals:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Stable citation sources</li>
+                                    <li class="mb-2">Conditional sources</li>
+                                    <li>Fragile sources (appear once, then vanish)</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Stable sources represent <span class="text-secondary-2">AI trust anchors</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Defensive Strategy: Protecting Your Brand</h3>
+
+                                <p class="text-300 mb-4">
+                                    Prompt injection audits reveal:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">When your content is cited</li>
+                                    <li class="mb-2">When competitors replace you</li>
+                                    <li>Which framing causes your disappearance</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Defensive actions include:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Reinforcing definitions</li>
+                                    <li class="mb-2">Adding neutral explanatory sections</li>
+                                    <li class="mb-2">Reducing promotional language</li>
+                                    <li>Improving section-level clarity</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is <span class="text-secondary-2">AI reputation management</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Offensive Strategy: Engineering for Inclusion</h3>
+
+                                <p class="text-300 mb-4">
+                                    Offensively, audits show:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Which content types AI prefers</li>
+                                    <li class="mb-2">Which phrasing unlocks citation</li>
+                                    <li>Which entities are overrepresented</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    You can then:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Create citation-first pages</li>
+                                    <li class="mb-2">Engineer content blocks designed to be retrieved</li>
+                                    <li>Align structure with known citation patterns</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        This is not ranking manipulation. It's <strong>retrieval alignment</strong>.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Why This Matters More Than Ever</h3>
+
+                                <p class="text-300 mb-4">
+                                    AI answers are becoming:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">The first interaction</li>
+                                    <li class="mb-2">The primary explanation</li>
+                                    <li>The decision shortcut</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-3">If your brand is not cited:</p>
+                                    <p class="text-danger mb-0 fst-italic">You don't exist in the user's mental model—even if you "rank"</p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Prompt audits make that gap visible.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Limitations (Be Honest)</h3>
+
+                                <p class="text-300 mb-4">
+                                    Prompt injection audits:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Do not reveal full retrieval pipelines</li>
+                                    <li class="mb-2">Cannot guarantee inclusion</li>
+                                    <li>Change as models evolve</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    But they do provide:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Directional truth</li>
+                                    <li class="mb-2">Comparative advantage</li>
+                                    <li>Early warning signals</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    In AI search, early signals are everything.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">The Strategic Shift: From SEO to AI Visibility Research</h3>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="mb-3">Classic SEO asks:</h6>
+                                            <p class="text-300 mb-0 fst-italic">"How do we rank?"</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="mb-3">Modern AI search strategy asks:</h6>
+                                            <p class="text-300 mb-0 fst-italic">"How does the system decide who to trust?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Prompt injection audits turn that question into data.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    They transform:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Guesswork → experiments</li>
+                                    <li class="mb-2">Assumptions → observations</li>
+                                    <li>Rankings → influence</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">Key Takeaways</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">Prompt injection audits reveal AI source selection through controlled experimentation</li>
+                                        <li class="mb-2">Structural sources (documentation, neutral explainers) outperform popular marketing content</li>
+                                        <li class="mb-2">Source frequency across prompt variants indicates AI trust anchors</li>
+                                        <li class="mb-2">Python automation enables scalable prompt testing and source extraction</li>
+                                        <li class="mb-2">Defensive strategy protects brand citations; offensive strategy engineers for inclusion</li>
+                                        <li>This is observational research, not system manipulation</li>
+                                    </ul>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Final Thoughts: Influence Comes Before Traffic</h3>
+
+                                <p class="text-300 mb-4">
+                                    In AI-driven discovery:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Influence precedes clicks</li>
+                                    <li class="mb-2">Citations precede traffic</li>
+                                    <li>Trust precedes rankings</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Reverse-engineering AI answer sources is not optional anymore.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    It's the only way to:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Understand visibility loss</li>
+                                    <li class="mb-2">Engineer inclusion</li>
+                                    <li>Compete where users actually get answers</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic fs-5">
+                                        If you don't study how AI systems select sources, you are optimizing for a surface that users no longer see.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Author Bio -->
+                            <div class="author-bio mt-5 p-4 rounded-3 border border-1 bg-3">
+                                <div class="d-flex align-items-start gap-4">
+                                    <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 80px; height: 80px;" />
+                                    <div>
+                                        <h5 class="mb-2">Akshay Dahiya</h5>
+                                        <p class="text-400 mb-3">Growth & MarTech Specialist</p>
+                                        <p class="text-300 mb-3">
+                                            Digital marketing professional with 6+ years of experience in SEO, analytics, and marketing automation. Founder of MarAI and passionate about building tools that solve real marketing problems.
+                                        </p>
+                                        <div class="d-flex gap-3">
+                                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" class="text-300">
+                                                <i class="ri-linkedin-fill fs-5"></i>
+                                            </a>
+                                            <a href="https://github.com/dahiyaakshay" target="_blank" class="text-300">
+                                                <i class="ri-github-fill fs-5"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-related-posts pb-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-5">Related Posts</h3>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-7.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Content-Decay-in-the-Age-of-AI-Predicting-When-a-Page-Will-Stop-Being-Referenced.html">Content Strategy</a>
+                                        <a href="Content-Decay-in-the-Age-of-AI-Predicting-When-a-Page-Will-Stop-Being-Referenced.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 16, 2026 • 17 min read</span>
+                                    <h6 class="blog-card__title mt-2">Content Decay in the Age of AI: Predicting When a Page Will Stop Being Referenced</h6>
+                                    <p class="blog-card__description fs-7">How to forecast content decay using time-series data, AI citation logs, and topic</p>
+                                    <a href="Content-Decay-in-the-Age-of-AI-Predicting-When-a-Page-Will-Stop-Being-Referenced.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-8.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Using-Log-File-Analysis-to-Detect-AI-Crawler-Behavior-Before-Google-Reports-It.html">Technical SEO</a>
+                                        <a href="Using-Log-File-Analysis-to-Detect-AI-Crawler-Behavior-Before-Google-Reports-It.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 12, 2026 • 15 min read</span>
+                                    <h6 class="blog-card__title mt-2">Using Log File Analysis to Detect AI Crawler Behavior Before Google Reports It</h6>
+                                    <p class="blog-card__description fs-7">How to fingerprint AI crawlers at the server level and detect new bot behavior</p>
+                                    <a href="Using-Log-File-Analysis-to-Detect-AI-Crawler-Behavior-Before-Google-Reports-It.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-9.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Schema-Beyond-Rich-Results-Feeding-Knowledge-Graphs-for-AI-Consumption.html">Technical SEO</a>
+                                        <a href="Schema-Beyond-Rich-Results-Feeding-Knowledge-Graphs-for-AI-Consumption.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 7, 2026 • 14 min read</span>
+                                    <h6 class="blog-card__title mt-2">Schema Beyond Rich Results: Feeding Knowledge Graphs for AI Consumption</h6>
+                                    <p class="blog-card__description fs-7">How schema markup becomes machine-readable truth for AI systems—moving beyond rich</p>
+                                    <a href="Schema-Beyond-Rich-Results-Feeding-Knowledge-Graphs-for-AI-Consumption.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="section-footer-2 position-relative">
+                <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                    <div class="text-center">
+                        <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="index-2.html">
+                            <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                            <span class="fs-4 ms-2">Akshay</span>
+                        </a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                        <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a class="nav-link" href="index.html"> Home </a>
+                    <a class="nav-link" href="about.html"> About me </a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a></li>
+                    <a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank"> MarAI </a>
+                    <a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank"> Rank Scan </a>
+                    <a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank"> Retrieve AI </a>
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                    <a class="nav-link" href="index.html#contact"> Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="btn-scroll-top style-btn-2">
+            <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+            </svg>
+        </div>
+        
+<!-- Libs JS -->
+<script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/main.js"></script>
+    </body>
+</html>

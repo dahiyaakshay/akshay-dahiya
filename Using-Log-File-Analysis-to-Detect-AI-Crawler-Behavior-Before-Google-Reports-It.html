@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Using Log File Analysis to Detect AI Crawler Behavior Before Google Reports It | Akshay Dahiya</title>
+        <script src="assets/js/vendors/color-modes.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="home-page-2">
+        <div id="preloader">
+            <div class="loader-cover">
+                <div class="loader-container">
+                    <div class="loader-icon-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="container position-relative">
+                <div class="position-relative">
+                    <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                            <i class="ri-menu-2-line"></i>
+                        </a>
+                        <div class="container py-3 px-4">
+                            <a class="navbar-brand d-flex main-logo align-items-center" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="d-none d-lg-flex">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                                <div class="d-md-flex d-none gap-3">
+                                    <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                    <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                                </div>
+                                <div class="burger-icon burger-icon-white border rounded-3">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- offCanvas Sidebar -->
+                <div class="offCanvas__info style-2">
+                    <div class="offCanvas__close-icon menu-close">
+                        <button><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+                    <div class="offCanvas__side-info mb-30">
+                        <div class="contact-list mb-30">
+                            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                            <div class="mb-3">
+                                <span class="text-400 fs-5">Email</span>
+                                <p class="mb-0"><a href="mailto:akshaydahiya92.ad@gmail.com">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <p class="text-400 fs-5 mb-2">Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__overly"></div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+                    <div class="mobile-header-wrapper-inner">
+                        <div class="mobile-header-logo">
+                            <a class="d-flex main-logo align-items-center d-inline-flex" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-header-content-area">
+                            <div class="perfect-scroll">
+                                <div class="mobile-menu-wrap mobile-header-border">
+                                    <nav>
+                                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item has-children"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-blog-hero position-relative pt-160 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <a href="blog.html" class="btn btn-sm border border-1 rounded-3 px-3 py-2 mb-3">
+                                <i class="ri-arrow-left-line me-2"></i>Back to Blog
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <a href="#" class="text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2 me-3">Technical SEO</a>
+                                <span class="text-400 fs-7">January 12, 2026</span>
+                                <span class="text-400 fs-7 mx-2">•</span>
+                                <span class="text-400 fs-7">15 min read</span>
+                            </div>
+                            <h1 class="ds-3 my-4 fw-medium">
+                                Using Log File Analysis to Detect AI Crawler Behavior Before <span class="text-300">Google Reports It_</span>
+                            </h1>
+                            <p class="fs-5 text-300 mb-4">
+                                How to fingerprint AI crawlers at the server level and detect new bot behavior weeks before official documentation
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 40px; height: 40px;" />
+                                <div class="text-start">
+                                    <p class="mb-0 fw-medium">Akshay Dahiya</p>
+                                    <p class="mb-0 text-400 fs-7">Growth & MarTech Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-featured-image pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="rounded-3 overflow-hidden border border-1">
+                                <img src="assets/imgs/blog/blog-8.png" alt="Featured Image" class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-blog-content pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="blog-content">
+                                <p class="text-300 fs-5 mb-4">
+                                    Most SEO teams learn about major crawler changes the same way everyone else does: a blog post, a documentation update, or a vague announcement weeks after the fact.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    By then, the damage—or opportunity—has already passed.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-3">But search engines and AI systems don't start with announcements. They start with requests hitting your server.</p>
+                                    <p class="text-300 mb-0 fst-italic">
+                                        Long before Google documents a new crawler behavior, long before dashboards show anomalies, and long before rankings move, the truth is already written—line by line—in your <strong>log files</strong>.
+                                    </p>
+                                </div>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">This article explains:</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">Why log file analysis is becoming critical in the age of AI search</li>
+                                        <li class="mb-2">How AI crawlers behave differently from classic search bots</li>
+                                        <li class="mb-2">How to fingerprint AI crawlers at the server level</li>
+                                        <li class="mb-2">How to analyze crawl depth and intent</li>
+                                        <li class="mb-2">How to detect AI crawler activity before it's officially acknowledged</li>
+                                        <li class="mb-2">How to build a basic bot behavior classifier</li>
+                                        <li>How to operationalize this data for SEO and AI visibility strategy</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is not SEO reporting. This is <span class="text-secondary-2">search intelligence from the wire level up</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why Log Files Matter More in the AI Era</h3>
+
+                                <p class="text-300 mb-4">
+                                    Traditional SEO relies on reported data:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Search Console</li>
+                                    <li class="mb-2">Crawling stats</li>
+                                    <li class="mb-2">Indexing coverage</li>
+                                    <li>Rank tracking</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    AI-driven search breaks this model.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Many AI systems:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Crawl selectively</li>
+                                    <li class="mb-2">Retrieve content on demand</li>
+                                    <li class="mb-2">Do not index in the traditional sense</li>
+                                    <li>Do not fully report their activity</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        If you wait for official tooling, you are <strong>weeks behind reality</strong>.
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Log files show:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Who accessed your site</li>
+                                    <li class="mb-2">When</li>
+                                    <li class="mb-2">How often</li>
+                                    <li class="mb-2">How deep</li>
+                                    <li>In what patterns</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is the earliest signal you will ever get.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">What Makes AI Crawlers Different From Classic Bots</h3>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="mb-3">Classic crawlers (Googlebot):</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Methodical</li>
+                                                <li class="mb-2">Sitemap-aware</li>
+                                                <li class="mb-2">Coverage-oriented</li>
+                                                <li>Consistent over time</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="mb-3">AI crawlers behave differently:</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Opportunistic</li>
+                                                <li class="mb-2">Query-driven</li>
+                                                <li class="mb-2">Depth-focused, not breadth-focused</li>
+                                                <li>Burst-based rather than continuous</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Understanding these differences is the key to detection.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Known AI Crawlers (and Why Names Aren't Enough)</h3>
+
+                                <p class="text-300 mb-4">
+                                    Some AI-related user agents are publicly known:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">GPTBot</li>
+                                    <li class="mb-2">Google-Extended</li>
+                                    <li>Bing AI-related crawlers</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    But relying on user-agent strings alone is insufficient.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    <strong>Why?</strong>
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">User agents can be spoofed</li>
+                                    <li class="mb-2">New crawlers appear before names are documented</li>
+                                    <li>Some AI systems reuse infrastructure shared with other bots</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        This is why <strong>behavioral fingerprinting</strong> matters more than identification strings.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Server-Level SEO Intelligence: What Logs Actually Tell You</h3>
+
+                                <p class="text-300 mb-4">
+                                    A standard access log gives you:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">IP address</li>
+                                    <li class="mb-2">Timestamp</li>
+                                    <li class="mb-2">HTTP method</li>
+                                    <li class="mb-2">Requested URL</li>
+                                    <li class="mb-2">Response code</li>
+                                    <li class="mb-2">User agent</li>
+                                    <li>Referrer (sometimes)</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    From this, you can infer:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Crawl intent</li>
+                                    <li class="mb-2">Content prioritization</li>
+                                    <li class="mb-2">Retrieval strategies</li>
+                                    <li>AI vs indexer behavior</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is far richer than Search Console ever will be.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 1: Isolating Suspected AI Crawler Traffic</h3>
+
+                                <p class="text-300 mb-4">
+                                    The simplest starting point is filtering known AI bots.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    <strong>Example:</strong>
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>grep "GPTBot" access.log | awk '{print $7}'</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This shows:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Which URLs are being accessed</li>
+                                    <li class="mb-2">Frequency</li>
+                                    <li>Patterns over time</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    But this is only step one. Real insight comes from what they do next.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 2: Bot Fingerprinting Beyond User Agents</h3>
+
+                                <p class="text-300 mb-4">
+                                    Bot fingerprinting looks at behavioral traits, not labels.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Key dimensions include:
+                                </p>
+
+                                <h5 class="mt-4 mb-3">1. Crawl Depth</h5>
+
+                                <p class="text-300 mb-4">
+                                    How deep into the site does the bot go?
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Does it stop at top-level pages?</li>
+                                    <li>Does it target specific sections?</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    AI crawlers often:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Skip category pages</li>
+                                    <li class="mb-2">Go directly to long-form content</li>
+                                    <li>Access documentation, guides, and explainers</li>
+                                </ul>
+
+                                <h5 class="mt-4 mb-3">2. URL Selection Patterns</h5>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <p class="text-success mb-2"><strong>AI crawlers prefer:</strong></p>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Text-heavy pages</li>
+                                                <li class="mb-2">Informational content</li>
+                                                <li class="mb-2">Evergreen resources</li>
+                                                <li>Pages with definitions and structure</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <p class="text-danger mb-2"><strong>They often avoid:</strong></p>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Filtered URLs</li>
+                                                <li class="mb-2">Faceted navigation</li>
+                                                <li>Parameter-heavy pages</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is not random crawling.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">3. Request Timing</h5>
+
+                                <p class="text-300 mb-4">
+                                    Classic bots crawl steadily.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI crawlers often:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Appear in short bursts</li>
+                                    <li class="mb-2">Make rapid sequential requests</li>
+                                    <li>Then disappear for days or weeks</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This aligns with model refresh cycles, not indexing cycles.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 3: Crawl Depth Analysis</h3>
+
+                                <p class="text-300 mb-4">
+                                    Crawl depth tells you intent.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2"><strong>Example depth categories:</strong></p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2"><code>/</code> → homepage</li>
+                                        <li class="mb-2"><code>/blog/</code> → section level</li>
+                                        <li class="mb-2"><code>/blog/ai-search-engineering/</code> → content level</li>
+                                        <li><code>/blog/ai-search-engineering/log-analysis.html</code> → deep retrieval</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    AI crawlers disproportionately favor deep content URLs.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    This suggests:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Retrieval for answer generation</li>
+                                    <li>Not broad site discovery</li>
+                                </ul>
+
+                                <h3 class="mt-5 mb-4">Step 4: Building a Log Parser (Python)</h3>
+
+                                <p class="text-300 mb-4">
+                                    To analyze behavior at scale, you need structured data.
+                                </p>
+
+                                <h6 class="mt-4 mb-3">Simple Log Parser Example</h6>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>import re
+
+log_pattern = re.compile(
+    r'(?P<ip>\S+) .* "(?P<method>GET|POST) (?P<url>\S+) .*" \d+ .* "(?P<agent>[^"]+)"'
+)
+
+def parse_log_line(line):
+    match = log_pattern.search(line)
+    return match.groupdict() if match else None</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Once parsed, you can:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Group by user agent</li>
+                                    <li class="mb-2">Group by IP</li>
+                                    <li class="mb-2">Analyze URL patterns</li>
+                                    <li>Track depth distribution</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is where patterns emerge.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 5: Bot Behavior Classification</h3>
+
+                                <p class="text-300 mb-4">
+                                    Now we classify bots not by name—but by behavior profile.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    <strong>Example features:</strong>
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Pages per session</li>
+                                    <li class="mb-2">Average URL depth</li>
+                                    <li class="mb-2">Time between requests</li>
+                                    <li class="mb-2">Ratio of HTML vs non-HTML requests</li>
+                                    <li>Revisit frequency</li>
+                                </ul>
+
+                                <h6 class="mt-4 mb-3">Simple Bot Classifier Logic</h6>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>def classify_bot(behavior):
+    if behavior["avg_depth"] > 3 and behavior["burst_requests"] > 10:
+        return "AI_Retrieval_Bot"
+    if behavior["steady_rate"] and behavior["sitemap_hits"]:
+        return "Indexer_Bot"
+    return "Unknown"</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This approach detects new AI crawlers even when:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">User agent is unfamiliar</li>
+                                    <li>IP range is undocumented</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    That's the real advantage.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 6: Detecting AI Crawlers Before Public Disclosure</h3>
+
+                                <p class="text-300 mb-4">
+                                    Historically, AI crawler behavior shows up in logs:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Weeks before documentation updates</li>
+                                    <li>Months before SEO blogs catch on</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2"><strong>Early signals include:</strong></p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">New user agents with shallow crawl breadth</li>
+                                        <li class="mb-2">Repeated access to the same explanatory pages</li>
+                                        <li class="mb-2">Focus on specific topics rather than site-wide coverage</li>
+                                        <li>High revisit rate on authoritative pages</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    If you see these patterns, you are observing <span class="text-secondary-2">model ingestion</span>, not indexing.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why AI Crawlers Care About Depth, Not Coverage</h3>
+
+                                <p class="text-300 mb-4">
+                                    AI systems don't need to index your whole site.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    They need:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Reliable explanations</li>
+                                    <li class="mb-2">Definitions</li>
+                                    <li class="mb-2">Structured knowledge</li>
+                                    <li>Fact-dense content</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    So they retrieve:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">The best page</li>
+                                    <li class="mb-2">On a given topic</li>
+                                    <li>Repeatedly</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-3">This explains why some pages see:</p>
+                                    <p class="text-success mb-3">Disproportionate AI crawler activity</p>
+                                    <p class="text-300 mb-3">While others see:</p>
+                                    <p class="text-danger mb-0">None</p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Defensive Strategy: Protecting Your Content</h3>
+
+                                <p class="text-300 mb-4">
+                                    Log analysis helps you:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">See which pages AI systems are pulling from</li>
+                                    <li class="mb-2">Detect sensitive content access</li>
+                                    <li class="mb-2">Decide what to allow or restrict</li>
+                                    <li>Adjust robots and headers intelligently</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is critical for:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Proprietary research</li>
+                                    <li class="mb-2">Premium content</li>
+                                    <li>Regulated industries</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    You can't protect what you can't see.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Offensive Strategy: Engineering for AI Retrieval</h3>
+
+                                <p class="text-300 mb-4">
+                                    Offensively, log insights show you:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">What AI systems value</li>
+                                    <li class="mb-2">Which content formats are retrieved</li>
+                                    <li>Which sections attract repeated access</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This allows you to:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Create more retrieval-optimized pages</li>
+                                    <li class="mb-2">Strengthen high-value sections</li>
+                                    <li>Improve structure where AI crawlers already focus</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    You stop guessing—and start aligning.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why Google Will Always Be Late to Tell You</h3>
+
+                                <p class="text-300 mb-4">
+                                    Google reports:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">What it wants webmasters to know</li>
+                                    <li class="mb-2">When it's safe to disclose</li>
+                                    <li>After behavior stabilizes</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    But infrastructure always moves first.
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="text-danger mb-3">Google's reports:</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Delayed</li>
+                                                <li class="mb-2">Filtered</li>
+                                                <li>Curated</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="text-success mb-3">Log files are:</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Real-time</li>
+                                                <li class="mb-2">Unfiltered</li>
+                                                <li>Unopinionated</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    They don't wait for blog posts.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">The Strategic Shift: From SEO Tools to Infrastructure Awareness</h3>
+
+                                <p class="text-300 mb-4">
+                                    The future of advanced SEO is not more dashboards.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    It's:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Server access</li>
+                                    <li class="mb-2">Log pipelines</li>
+                                    <li class="mb-2">Behavior analysis</li>
+                                    <li>AI system observation</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Teams that understand this will:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Detect changes earlier</li>
+                                    <li class="mb-2">Adapt faster</li>
+                                    <li>Preserve visibility longer</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Everyone else will react late.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">Key Takeaways</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">Log files reveal AI crawler behavior weeks before official documentation</li>
+                                        <li class="mb-2">AI crawlers exhibit depth-focused, burst-based patterns unlike traditional indexers</li>
+                                        <li class="mb-2">Behavioral fingerprinting detects new crawlers regardless of user-agent strings</li>
+                                        <li class="mb-2">Python-based log parsing enables scalable bot classification</li>
+                                        <li class="mb-2">Crawl depth analysis reveals retrieval intent vs broad indexing</li>
+                                        <li>Server-level intelligence provides the earliest signal for AI search changes</li>
+                                    </ul>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Final Thoughts: Logs Are the Earliest Truth in AI Search</h3>
+
+                                <p class="text-300 mb-4">
+                                    AI search is changing faster than public documentation can keep up.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    If you rely on:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Official announcements</li>
+                                    <li class="mb-2">Tool updates</li>
+                                    <li>Community chatter</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    You are downstream of reality.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic fs-5">
+                                        Log file analysis puts you <strong>upstream</strong>—where behavior begins.
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    In the age of AI-driven discovery, whoever sees first, wins first.
+                                </p>
+
+                                <p class="text-300 mb-0 fst-italic fs-5">
+                                    And the first signal is always: a request hitting your server.
+                                </p>
+                            </div>
+
+                            <!-- Author Bio -->
+                            <div class="author-bio mt-5 p-4 rounded-3 border border-1 bg-3">
+                                <div class="d-flex align-items-start gap-4">
+                                    <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 80px; height: 80px;" />
+                                    <div>
+                                        <h5 class="mb-2">Akshay Dahiya</h5>
+                                        <p class="text-400 mb-3">Growth & MarTech Specialist</p>
+                                        <p class="text-300 mb-3">
+                                            Digital marketing professional with 6+ years of experience in SEO, analytics, and marketing automation. Founder of MarAI and passionate about building tools that solve real marketing problems.
+                                        </p>
+                                        <div class="d-flex gap-3">
+                                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" class="text-300">
+                                                <i class="ri-linkedin-fill fs-5"></i>
+                                            </a>
+                                            <a href="https://github.com/dahiyaakshay" target="_blank" class="text-300">
+                                                <i class="ri-github-fill fs-5"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-related-posts pb-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-5">Related Posts</h3>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-9.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Schema-Beyond-Rich-Results-Feeding-Knowledge-Graphs-for-AI-Consumption.html">Technical SEO</a>
+                                        <a href="Schema-Beyond-Rich-Results-Feeding-Knowledge-Graphs-for-AI-Consumption.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 7, 2026 • 14 min read</span>
+                                    <h6 class="blog-card__title mt-2">Schema Beyond Rich Results: Feeding Knowledge Graphs for AI Consumption</h6>
+                                    <p class="blog-card__description fs-7">How schema markup becomes machine-readable truth for AI systems—moving beyond rich</p>
+                                    <a href="Schema-Beyond-Rich-Results-Feeding-Knowledge-Graphs-for-AI-Consumption.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-10.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Building-an-AI-Search-Visibility-Dashboard-Using-GA4-GSC-BigQuery-&-Looker.html">Analytics</a>
+                                        <a href="Building-an-AI-Search-Visibility-Dashboard-Using-GA4-GSC-BigQuery-&-Looker.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 3, 2026 • 18 min read</span>
+                                    <h6 class="blog-card__title mt-2">Building an AI-Search Visibility Dashboard Using GA4, GSC, BigQuery & Looker</h6>
+                                    <p class="blog-card__description fs-7">How to build executive-ready AI impact monitoring using modern data stack</p>
+                                    <a href="Building-an-AI-Search-Visibility-Dashboard-Using-GA4-GSC-BigQuery-&-Looker.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-1.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="How-AI-Search-Engines-Rewrite-SERPs-Using-Entity-Graphs.html">SEO</a>
+                                        <a href="How-AI-Search-Engines-Rewrite-SERPs-Using-Entity-Graphs.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">February  16, 2026 • 12 min read</span>
+                                    <h6 class="blog-card__title mt-2">How AI Search Engines Rewrite SERPs Using Entity Graphs</h6>
+                                    <p class="blog-card__description fs-7">And how to engineer your content for entity extraction and citation in the age of AI-generated answers</p>
+                                    <a href="How-AI-Search-Engines-Rewrite-SERPs-Using-Entity-Graphs.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="section-footer-2 position-relative">
+                <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                    <div class="text-center">
+                        <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="index-2.html">
+                            <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                            <span class="fs-4 ms-2">Akshay</span>
+                        </a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                        <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a class="nav-link" href="index.html"> Home </a>
+                    <a class="nav-link" href="about.html"> About me </a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a></li>
+                    <a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank"> MarAI </a>
+                    <a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank"> Rank Scan </a>
+                    <a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank"> Retrieve AI </a>
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                    <a class="nav-link" href="index.html#contact"> Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="btn-scroll-top style-btn-2">
+            <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+            </svg>
+        </div>
+
+    <!-- Libs JS -->
+<script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/main.js"></script>
+    </body>
+</html>

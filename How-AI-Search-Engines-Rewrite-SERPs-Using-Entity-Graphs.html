@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>How AI Search Engines Rewrite SERPs Using Entity Graphs | Akshay Dahiya</title>
+        <script src="assets/js/vendors/color-modes.js"></script>
+        <!-- Favicon icon-->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+        <!-- Libs CSS -->
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="home-page-2">
+        <!--Preloader-->
+        <div id="preloader">
+            <div class="loader-cover">
+                <div class="loader-container">
+                    <div class="loader-icon-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <header>
+            <div class="container position-relative">
+                <div class="position-relative">
+                    <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                            <i class="ri-menu-2-line"></i>
+                        </a>
+                        <div class="container py-3 px-4">
+                            <a class="navbar-brand d-flex main-logo align-items-center" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="d-none d-lg-flex">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                                <div class="d-md-flex d-none gap-3">
+                                    <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                    <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                                </div>
+                                <div class="burger-icon burger-icon-white border rounded-3">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- offCanvas Sidebar -->
+                <div class="offCanvas__info style-2">
+                    <div class="offCanvas__close-icon menu-close">
+                        <button><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+                    <div class="offCanvas__side-info mb-30">
+                        <div class="contact-list mb-30">
+                            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                            <div class="mb-3">
+                                <span class="text-400 fs-5">Email</span>
+                                <p class="mb-0"><a href="mailto:akshaydahiya92.ad@gmail.com">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <p class="text-400 fs-5 mb-2">Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__overly"></div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+                    <div class="mobile-header-wrapper-inner">
+                        <div class="mobile-header-logo">
+                            <a class="d-flex main-logo align-items-center d-inline-flex" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-header-content-area">
+                            <div class="perfect-scroll">
+                                <div class="mobile-menu-wrap mobile-header-border">
+                                    <nav>
+                                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item has-children"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Blog Hero Section -->
+            <section class="section-blog-hero position-relative pt-160 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <a href="blog.html" class="btn btn-sm border border-1 rounded-3 px-3 py-2 mb-3">
+                                <i class="ri-arrow-left-line me-2"></i>Back to Blog
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <a href="#" class="text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2 me-3">SEO</a>
+                                <span class="text-400 fs-7">February 16, 2026</span>
+                                <span class="text-400 fs-7 mx-2">•</span>
+                                <span class="text-400 fs-7">12 min read</span>
+                            </div>
+                            <h1 class="ds-3 my-4 fw-medium">
+                                How AI Search Engines Rewrite SERPs Using <span class="text-300">Entity Graphs_</span>
+                            </h1>
+                            <p class="fs-5 text-300 mb-4">
+                                And how to engineer your content for entity extraction and citation in the age of AI-generated answers
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 40px; height: 40px;" />
+                                <div class="text-start">
+                                    <p class="mb-0 fw-medium">Akshay Dahiya</p>
+                                    <p class="mb-0 text-400 fs-7">Growth & MarTech Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Image -->
+            <section class="section-featured-image pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="rounded-3 overflow-hidden border border-1">
+                                <img src="assets/imgs/blog/blog-1.png" alt="Featured Image" class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Content -->
+            <section class="section-blog-content pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="blog-content">
+                                <p class="text-300 fs-5 mb-4">
+                                    Search results are no longer lists of links. They are assembled answers, generated by AI systems that understand the world through entities, relationships, and confidence scoring—not keywords.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    If you're still optimizing for "blue links," you're optimizing for a SERP that barely exists anymore.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI-driven search systems like Google SGE, Perplexity, and Microsoft Bing AI are fundamentally rewriting how search works. They ingest content, extract entities, build entity graphs, and generate synthesized answers—often without sending traffic to the original source.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">This article explains:</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">How AI search engines actually construct answers</li>
+                                        <li class="mb-2">Why entity graphs matter more than rankings</li>
+                                        <li class="mb-2">What SERPs look like across major AI search platforms</li>
+                                        <li class="mb-2">How to engineer content for entity extraction and citation</li>
+                                        <li>How to measure entity visibility using NLP and Python</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is not beginner SEO. This is <span class="text-secondary-2">search engineering</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">The Death of the Keyword-First SERP</h3>
+
+                                <p class="text-300 mb-4">
+                                    Traditional SEO assumed a linear model:
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-secondary">
+                                    Query → Keywords → Ranked Documents → Click
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI search breaks this model.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    The modern flow looks like this:
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-secondary">
+                                    Query → Entity Detection → Entity Graph Expansion → Answer Synthesis → Optional Citations
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    In other words:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Keywords are used only to infer intent</li>
+                                    <li class="mb-2">Entities are used to construct meaning</li>
+                                    <li class="mb-2">Documents are used as evidence, not destinations</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    If your content does not resolve cleanly into entities and relationships, it is invisible to AI answers, even if it ranks #1.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">What Is an Entity Graph (In Search Terms)?</h3>
+
+                                <p class="text-300 mb-4">
+                                    An entity graph is a structured representation of:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2"><strong>Entities</strong> (people, companies, locations, concepts)</li>
+                                    <li class="mb-2"><strong>Attributes</strong> (definitions, properties, metrics)</li>
+                                    <li class="mb-2"><strong>Relationships</strong> (works with, located in, competes with, causes)</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Search engines maintain massive internal graphs similar to a knowledge graph, but AI search systems dynamically rebuild micro-graphs per query.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h6 class="mb-3">Example:</h6>
+                                    <p class="text-300 mb-3"><strong>Query:</strong> "Best AI SEO tools for local businesses"</p>
+                                    <p class="text-300 mb-2">The AI system extracts:</p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">Entity: AI SEO tools</li>
+                                        <li class="mb-2">Entity: Local businesses</li>
+                                        <li class="mb-2">Attributes: pricing, automation, geo-support</li>
+                                        <li>Relationships: tool → supports → local SEO</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    The answer is assembled by connecting entities, not ranking pages.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">How AI Search Engines Rewrite SERPs</h3>
+
+                                <p class="text-300 mb-4">
+                                    Let's look at how three major platforms behave.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Google SGE: Confidence-Weighted Entity Summaries</h5>
+
+                                <p class="text-300 mb-4">
+                                    Google SGE:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Pulls entities from top-ranking and trusted sources</li>
+                                    <li class="mb-2">Scores entity confidence using redundancy + authority</li>
+                                    <li class="mb-2">Produces a synthesized paragraph</li>
+                                    <li>Often suppresses traditional organic clicks</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        <strong>Key observation:</strong> Pages with clear entity definitions, schema, and factual density are disproportionately cited—even if they don't rank #1.
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    SGE is not trying to rank pages. It's trying to answer the question with minimal risk.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Perplexity: Citation-First Entity Retrieval</h5>
+
+                                <p class="text-300 mb-4">
+                                    Perplexity behaves differently:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Entities are extracted aggressively</li>
+                                    <li class="mb-2">Every factual claim must be sourced</li>
+                                    <li class="mb-2">Long-form, explanatory content performs better</li>
+                                    <li>Smaller sites can outperform big brands if entity clarity is high</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Perplexity's system favors:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Clean sentence structures</li>
+                                    <li class="mb-2">Explicit definitions</li>
+                                    <li>Low ambiguity language</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is why blogs with research-backed structure outperform generic SEO pages here.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Bing AI: Hybrid Knowledge Graph + LLM</h5>
+
+                                <p class="text-300 mb-4">
+                                    Bing AI sits between Google and Perplexity:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Heavy reliance on structured data</li>
+                                    <li class="mb-2">Strong integration with Microsoft's knowledge graph</li>
+                                    <li>Higher visibility for well-marked-up entities</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    If your content feeds Bing's entity resolution system, it often feeds multiple AI layers downstream.
+                                </p>
+
+                                <h4 class="mt-5 mb-4">The Common Thread: Entity Frequency and Entity Relationships</h4>
+
+                                <p class="text-300 mb-4">
+                                    Across all platforms, one pattern is consistent:
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        The more frequently and consistently an entity appears across authoritative sources, the more likely it is to be used in AI answers.
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is where entity frequency analysis becomes critical.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Measuring Entity Presence Using NLP (Python)</h3>
+
+                                <p class="text-300 mb-4">
+                                    Let's move from theory to practice.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Step 1: Extract Entities From Top-Ranking Pages</h5>
+
+                                <p class="text-300 mb-4">
+                                    We start by analyzing what entities already dominate AI-visible content.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>from spacy import load
+
+nlp = load("en_core_web_sm")
+
+def extract_entities(text):
+    doc = nlp(text)
+    return [(ent.text, ent.label_) for ent in doc.ents]
+
+text = """AI search engines rely on entity graphs and knowledge graphs
+to generate synthesized answers across platforms like Google SGE,
+Perplexity, and Bing AI."""
+    
+entities = extract_entities(text)
+print(entities)</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This gives us:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Entity names</li>
+                                    <li>Entity types (ORG, GPE, PRODUCT, CONCEPT)</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Now apply this at scale across:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Top 10 organic results</li>
+                                    <li class="mb-2">Pages cited by AI answers</li>
+                                    <li>Competitor content</li>
+                                </ul>
+
+                                <h5 class="mt-4 mb-3">Step 2: Entity Frequency Scoring</h5>
+
+                                <p class="text-300 mb-4">
+                                    We then calculate how often entities appear across documents.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>from collections import Counter
+
+all_entities = []
+
+for page_text in pages:
+    all_entities.extend([ent[0] for ent in extract_entities(page_text)])
+
+entity_frequency = Counter(all_entities)
+
+print(entity_frequency.most_common(20))</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This reveals:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Dominant entities</li>
+                                    <li class="mb-2">Missing entities in your content</li>
+                                    <li>Overrepresented vs underrepresented concepts</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is far more actionable than keyword density.
+                                </p>
+
+                                <h4 class="mt-5 mb-4">Entity Similarity Between AI Answers and Your Content</h4>
+
+                                <p class="text-300 mb-4">
+                                    The next step is understanding why your content isn't cited.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    We do this by comparing entity overlap between:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">AI-generated answers</li>
+                                    <li>Your page content</li>
+                                </ul>
+
+                                <h5 class="mt-4 mb-3">Step 3: Entity Similarity Scoring</h5>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>def entity_similarity(entities_a, entities_b):
+    set_a = set([e[0] for e in entities_a])
+    set_b = set([e[0] for e in entities_b])
+    return len(set_a & set_b) / len(set_a | set_b)
+
+ai_entities = extract_entities(ai_answer_text)
+page_entities = extract_entities(your_page_text)
+
+similarity_score = entity_similarity(ai_entities, page_entities)
+print(similarity_score)</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    A low score means:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">You may rank</li>
+                                    <li>But you are entity-invisible to AI</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This explains why many high-ranking pages receive zero AI citations.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Engineering Content for Entity Graph Inclusion</h3>
+
+                                <p class="text-300 mb-4">
+                                    To engineer for AI search, your content must behave like structured knowledge, not marketing copy.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">1. Explicit Entity Definitions</h5>
+
+                                <p class="text-300 mb-4">
+                                    Avoid vague language.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-3 my-3 bg-3">
+                                    <p class="text-danger mb-2"><strong>Bad:</strong></p>
+                                    <p class="text-300 mb-0">"Our platform helps businesses grow using AI."</p>
+                                </div>
+
+                                <div class="rounded-3 border border-1 p-3 my-3 bg-3">
+                                    <p class="text-success mb-2"><strong>Good:</strong></p>
+                                    <p class="text-300 mb-0">"Our platform is an AI-powered SEO automation system designed for local and multi-location businesses."</p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Clear entity → clear extraction.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">2. Dense but Clean Factual Sentences</h5>
+
+                                <p class="text-300 mb-4">
+                                    AI models reward:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Declarative sentences</li>
+                                    <li class="mb-2">Low ambiguity</li>
+                                    <li>Minimal fluff</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Think:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Wikipedia tone</li>
+                                    <li class="mb-2">Research paper clarity</li>
+                                    <li>Documentation-style structure</li>
+                                </ul>
+
+                                <h5 class="mt-4 mb-3">3. Entity Relationships, Not Just Mentions</h5>
+
+                                <p class="text-300 mb-4">
+                                    Don't list features—connect entities.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Example:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Tool → supports → Local SEO</li>
+                                    <li>Entity graph → drives → AI answer generation</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    These relationships matter more than repetition.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">4. Structured Markup as Reinforcement</h5>
+
+                                <p class="text-300 mb-4">
+                                    Schema doesn't create rankings—but it reinforces entity confidence.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI systems cross-check:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">On-page content</li>
+                                    <li class="mb-2">Structured data</li>
+                                    <li>External references</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Consistency = trust.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why Rankings Matter Less Than Entity Visibility</h3>
+
+                                <p class="text-300 mb-4">
+                                    Here's the uncomfortable truth:
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic fs-5">
+                                        You can rank #1 and still be irrelevant to AI search.
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    AI answers:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Reduce click-through rates</li>
+                                    <li class="mb-2">Replace informational queries</li>
+                                    <li>Prioritize authority and clarity over SEO tricks</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    The new KPI is:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Entity inclusion</li>
+                                    <li class="mb-2">Citation frequency</li>
+                                    <li>Answer alignment</li>
+                                </ul>
+
+                                <h3 class="mt-5 mb-4">The New SEO Stack: From Optimization to Engineering</h3>
+
+                                <p class="text-300 mb-4">
+                                    Modern SEO now requires:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">NLP analysis</li>
+                                    <li class="mb-2">Entity modeling</li>
+                                    <li class="mb-2">Data pipelines</li>
+                                    <li>Continuous SERP observation across AI platforms</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is no longer "content writing." It's <span class="text-secondary-2">search system engineering</span>.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">Key Takeaways</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">AI search engines assemble answers from entity graphs, not keyword rankings</li>
+                                        <li class="mb-2">Entity frequency, clarity, and relationships determine citation visibility</li>
+                                        <li class="mb-2">Google SGE, Perplexity, and Bing AI each have distinct entity extraction behaviors</li>
+                                        <li class="mb-2">Python + NLP tools enable systematic entity analysis and optimization</li>
+                                        <li class="mb-2">Content must be engineered like structured knowledge, not marketing copy</li>
+                                        <li>The new SEO KPI is entity inclusion and citation frequency, not just rankings</li>
+                                    </ul>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Final Thoughts: The Future Belongs to Entity Architects</h3>
+
+                                <p class="text-300 mb-4">
+                                    AI search engines are not trying to understand your keywords. They are trying to understand the world.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    If your content:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Defines entities clearly</li>
+                                    <li class="mb-2">Connects them logically</li>
+                                    <li>Aligns with authoritative graphs</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    You don't just rank—you become part of the answer.
+                                </p>
+
+                                <p class="text-300 mb-0">
+                                    And in a world where answers replace clicks, that's the only visibility that matters.
+                                </p>
+                            </div>
+
+                            <!-- Author Bio -->
+                            <div class="author-bio mt-5 p-4 rounded-3 border border-1 bg-3">
+                                <div class="d-flex align-items-start gap-4">
+                                    <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 80px; height: 80px;" />
+                                    <div>
+                                        <h5 class="mb-2">Akshay Dahiya</h5>
+                                        <p class="text-400 mb-3">Growth & MarTech Specialist</p>
+                                        <p class="text-300 mb-3">
+                                            Digital marketing professional with 6+ years of experience in SEO, analytics, and marketing automation. Founder of MarAI and passionate about building tools that solve real marketing problems.
+                                        </p>
+                                        <div class="d-flex gap-3">
+                                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" class="text-300">
+                                                <i class="ri-linkedin-fill fs-5"></i>
+                                            </a>
+                                            <a href="https://github.com/dahiyaakshay" target="_blank" class="text-300">
+                                                <i class="ri-github-fill fs-5"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Posts -->
+            <section class="section-related-posts pb-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-5">Related Posts</h3>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-2.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Programmatic-GEO-Pages-at-Scale-Using-Search-Intent-Clustering-+-AI-Validation.html">SEO</a>
+                                        <a href="Programmatic-GEO-Pages-at-Scale-Using-Search-Intent-Clustering-+-AI-Validation.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">February 5, 2026 • 14 min read</span>
+                                    <h6 class="blog-card__title mt-2">Programmatic GEO Pages at Scale Using Search Intent Clustering</h6>
+                                    <p class="blog-card__description fs-7">How to build scalable local SEO pages using AI validation and intent clustering without</p>
+                                    <a href="Programmatic-GEO-Pages-at-Scale-Using-Search-Intent-Clustering-+-AI-Validation.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-3.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Measuring-Visibility-Loss-to-AI-Answers-Using-Click-Through-Suppression-Models.html">Analytics</a>
+                                        <a href="Measuring-Visibility-Loss-to-AI-Answers-Using-Click-Through-Suppression-Models.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">February 1, 2026 • 15 min read</span>
+                                    <h6 class="blog-card__title mt-2">Measuring Visibility Loss to AI Answers Using Click-Through Suppression Models</h6>
+                                    <p class="blog-card__description fs-7">How to quantify traffic loss caused by AI-generated answers and build CFO-level</p>
+                                    <a href="Measuring-Visibility-Loss-to-AI-Answers-Using-Click-Through-Suppression-Models.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-4.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Engineering-Content-for-Citation-by-AI-Search-Engines.html">SEO</a>
+                                        <a href="Engineering-Content-for-Citation-by-AI-Search-Engines.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 27, 2026 • 13 min read</span>
+                                    <h6 class="blog-card__title mt-2">Engineering Content for Citation by AI Search Engines</h6>
+                                    <p class="blog-card__description fs-7">How to optimize content for AI retrieval and citation, not just rankings—turning your pages into trusted sources</p>
+                                    <a href="Engineering-Content-for-Citation-by-AI-Search-Engines.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="section-footer-2 position-relative">
+                <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                    <div class="text-center">
+                        <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="index-2.html">
+                            <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                            <span class="fs-4 ms-2">Akshay</span>
+                        </a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                        <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a class="nav-link" href="index.html"> Home </a>
+                    <a class="nav-link" href="about.html"> About me </a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a></li>
+                    <a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank"> MarAI </a>
+                    <a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank"> Rank Scan </a>
+                    <a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank"> Retrieve AI </a>
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                    <a class="nav-link" href="index.html#contact"> Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll top -->
+        <div class="btn-scroll-top style-btn-2">
+            <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+            </svg>
+        </div>
+
+        <!-- Libs JS -->
+<script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/main.js"></script>
+    </body>
+</html>

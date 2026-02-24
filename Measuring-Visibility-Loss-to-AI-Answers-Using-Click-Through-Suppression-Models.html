@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Measuring Visibility Loss to AI Answers Using CTR Suppression Models | Akshay Dahiya</title>
+        <script src="assets/js/vendors/color-modes.js"></script>
+        <!-- Favicon icon-->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+        <!-- Libs CSS -->
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="home-page-2">
+        <!--Preloader-->
+        <div id="preloader">
+            <div class="loader-cover">
+                <div class="loader-container">
+                    <div class="loader-icon-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <header>
+            <div class="container position-relative">
+                <div class="position-relative">
+                    <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                            <i class="ri-menu-2-line"></i>
+                        </a>
+                        <div class="container py-3 px-4">
+                            <a class="navbar-brand d-flex main-logo align-items-center" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="d-none d-lg-flex">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                                <div class="d-md-flex d-none gap-3">
+                                    <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                    <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                                </div>
+                                <div class="burger-icon burger-icon-white border rounded-3">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- offCanvas Sidebar -->
+                <div class="offCanvas__info style-2">
+                    <div class="offCanvas__close-icon menu-close">
+                        <button><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+                    <div class="offCanvas__side-info mb-30">
+                        <div class="contact-list mb-30">
+                            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                            <div class="mb-3">
+                                <span class="text-400 fs-5">Email</span>
+                                <p class="mb-0"><a href="mailto:akshaydahiya92.ad@gmail.com">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <p class="text-400 fs-5 mb-2">Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__overly"></div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+                    <div class="mobile-header-wrapper-inner">
+                        <div class="mobile-header-logo">
+                            <a class="d-flex main-logo align-items-center d-inline-flex" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-header-content-area">
+                            <div class="perfect-scroll">
+                                <div class="mobile-menu-wrap mobile-header-border">
+                                    <nav>
+                                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item has-children"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Blog Hero Section -->
+            <section class="section-blog-hero position-relative pt-160 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <a href="blog.html" class="btn btn-sm border border-1 rounded-3 px-3 py-2 mb-3">
+                                <i class="ri-arrow-left-line me-2"></i>Back to Blog
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <a href="#" class="text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2 me-3">Analytics</a>
+                                <span class="text-400 fs-7">February 1, 2026</span>
+                                <span class="text-400 fs-7 mx-2">•</span>
+                                <span class="text-400 fs-7">15 min read</span>
+                            </div>
+                            <h1 class="ds-3 my-4 fw-medium">
+                                Measuring Visibility Loss to AI Answers Using Click-Through <span class="text-300">Suppression Models_</span>
+                            </h1>
+                            <p class="fs-5 text-300 mb-4">
+                                How to quantify traffic loss caused by AI-generated answers and build CFO-level reports that translate lost visibility into revenue impact
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 40px; height: 40px;" />
+                                <div class="text-start">
+                                    <p class="mb-0 fw-medium">Akshay Dahiya</p>
+                                    <p class="mb-0 text-400 fs-7">Growth & MarTech Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Image -->
+            <section class="section-featured-image pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="rounded-3 overflow-hidden border border-1">
+                                <img src="assets\imgs\blog\blog-3.png" alt="Featured Image" class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Content -->
+            <section class="section-blog-content pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="blog-content">
+                                <p class="text-300 fs-5 mb-4">
+                                    Organic traffic loss today doesn't always look like a ranking drop.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Pages can:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Hold the same average position</li>
+                                    <li class="mb-2">Maintain impressions</li>
+                                    <li>Still lose 30–70% of clicks</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    <strong>Why?</strong>
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Because AI-generated answers now sit between the user and your link.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Features like Google AI Overviews, Bing AI answers, and conversational SERPs suppress clicks without triggering traditional SEO alarms. Rankings stay flat. Traffic collapses.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">This article explains how to:</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">Quantify traffic loss caused specifically by AI answers</li>
+                                        <li class="mb-2">Separate AI-driven CTR suppression from normal volatility</li>
+                                        <li class="mb-2">Build CFO-level reports that translate lost visibility into revenue impact</li>
+                                        <li class="mb-2">Model risk using pre/post CTR analysis, SERP feature flags, and statistical significance testing</li>
+                                        <li>Implement everything using GA4, BigQuery, and Search Console data</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is not about speculation. It's about <span class="text-secondary-2">measurement</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why Rankings No Longer Explain Traffic Decline</h3>
+
+                                <p class="text-300 mb-4">
+                                    Classic SEO reporting assumes:
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-secondary">
+                                    Rank ↓ → CTR ↓ → Traffic ↓
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI search breaks that chain.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Today, the pattern looks like this:
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">Rank → unchanged</li>
+                                        <li class="mb-2">Impressions → unchanged</li>
+                                        <li class="mb-2">CTR → down sharply</li>
+                                        <li>Traffic → down sharply</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    The cause is <span class="text-secondary-2">answer interception</span>.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI systems extract information from multiple sources, generate a summarized answer, and resolve the user's intent before they consider clicking.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    From a business standpoint, this is worse than ranking loss:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">You still pay to maintain content</li>
+                                    <li class="mb-2">You still attract impressions</li>
+                                    <li>But you no longer receive demand capture</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    To address this, we need a <span class="text-secondary-2">click-through suppression model</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">What Is Click-Through Suppression?</h3>
+
+                                <p class="text-300 mb-4">
+                                    Click-through suppression occurs when:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">A result remains visible</li>
+                                    <li>But user behavior changes due to SERP layout or features</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    AI answers suppress clicks by:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Satisfying informational intent immediately</li>
+                                    <li class="mb-2">Reducing curiosity</li>
+                                    <li>Moving organic links further down the viewport</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        This is not user disinterest. It's <strong>interface intervention</strong>.
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    And it must be measured differently.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why This Is a CFO-Level Problem</h3>
+
+                                <p class="text-300 mb-4">
+                                    From a finance perspective, AI answers create:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Invisible revenue leakage</li>
+                                    <li class="mb-2">Misleading performance signals</li>
+                                    <li>Forecasting risk</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    If leadership sees:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">"Rankings stable"</li>
+                                    <li>"Search demand stable"</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    …but revenue falling, SEO credibility erodes.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2"><strong>The fix is to show:</strong></p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">Exactly which queries lost clicks</li>
+                                        <li class="mb-2">When the loss started</li>
+                                        <li class="mb-2">Why (AI answer presence)</li>
+                                        <li>How much revenue is affected</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is where data engineering replaces SEO intuition.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Data Sources Required</h3>
+
+                                <p class="text-300 mb-4">
+                                    To measure AI-driven CTR loss accurately, we need:
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <h6 class="mb-2">Google Search Console</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li>Query-level CTR</li>
+                                                <li>Impressions</li>
+                                                <li>Average position</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <h6 class="mb-2">Google Analytics 4</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li>Landing page sessions</li>
+                                                <li>Conversion rate</li>
+                                                <li>Revenue per session</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <h6 class="mb-2">BigQuery</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li>Time-series joins</li>
+                                                <li>Statistical calculations</li>
+                                                <li>Scalable reporting</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    The goal: <span class="text-secondary-2">pre/post comparison around AI answer rollout</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 1: Identify the AI Answer Introduction Window</h3>
+
+                                <p class="text-300 mb-4">
+                                    The most common mistake teams make is comparing arbitrary date ranges.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Instead, identify:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">When AI Overviews began appearing for your query set</li>
+                                    <li>When CTR divergence started</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This can be done by:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Monitoring sudden CTR drops without ranking changes</li>
+                                    <li class="mb-2">Tracking SERP feature flags (manually or via tooling)</li>
+                                    <li>Using known rollout timelines as boundaries</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Once identified, define:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Pre-AI period</li>
+                                    <li>Post-AI period</li>
+                                </ul>
+
+                                <h3 class="mt-5 mb-4">Step 2: Build a Query-Level CTR Comparison Table</h3>
+
+                                <p class="text-300 mb-4">
+                                    Using Search Console data in BigQuery:
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>WITH base_data AS (
+  SELECT
+    query,
+    DATE(date) AS date,
+    ctr,
+    impressions
+  FROM `project.dataset.search_console_data`
+),
+
+period_labeled AS (
+  SELECT
+    query,
+    ctr,
+    impressions,
+    CASE
+      WHEN date < '2024-05-01' THEN 'before'
+      ELSE 'after'
+    END AS period
+  FROM base_data
+)
+
+SELECT
+  query,
+  AVG(CASE WHEN period = 'before' THEN ctr END) AS ctr_before,
+  AVG(CASE WHEN period = 'after' THEN ctr END) AS ctr_after
+FROM period_labeled
+GROUP BY query;</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This gives us raw CTR deltas, but not yet insight.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 3: Calculate Click-Through Suppression</h3>
+
+                                <p class="text-300 mb-4">
+                                    Now we compute CTR loss per query:
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>SELECT
+  query,
+  AVG(ctr_before) - AVG(ctr_after) AS ctr_loss
+FROM search_console_data
+GROUP BY query;</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    At this stage, patterns emerge:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Informational queries show large losses</li>
+                                    <li class="mb-2">Commercial queries often remain stable</li>
+                                    <li>Branded queries are least affected</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This already tells a story—but we're not done.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 4: Control for Ranking Stability</h3>
+
+                                <p class="text-300 mb-4">
+                                    To isolate AI impact, filter for queries where:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li>Average position changed minimally (e.g., ±0.5)</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This removes:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Algorithm volatility</li>
+                                    <li class="mb-2">Competitor effects</li>
+                                    <li>Content decay noise</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    The remaining CTR loss is interface-driven, not SEO failure.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 5: SERP Feature Presence vs CTR Drop</h3>
+
+                                <p class="text-300 mb-4">
+                                    Now correlate CTR loss with AI answer presence.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    If you tag queries with:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">AI Overview shown (yes/no)</li>
+                                    <li class="mb-2">Featured snippet</li>
+                                    <li>PAA expansion</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    You can compare CTR loss distributions.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        <strong>Typical finding:</strong> Queries with AI answers show 2–4× higher CTR suppression—even when ranking #1–#3
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is the empirical proof leadership needs.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 6: Statistical Significance Testing</h3>
+
+                                <p class="text-300 mb-4">
+                                    Raw differences are not enough. We need to prove the change is real.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    <strong>Example: Two-sample t-test logic (conceptual)</strong>
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Null hypothesis: CTR before = CTR after</li>
+                                    <li>Alternative: CTR after is lower</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    You can compute this in Python or BigQuery ML.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Conceptually:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">If p-value < 0.05 → statistically significant suppression</li>
+                                    <li>If not → normal variance</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This turns SEO into <span class="text-secondary-2">risk analysis</span>, not opinion.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 7: Revenue Impact Modeling</h3>
+
+                                <p class="text-300 mb-4">
+                                    CTR loss means nothing unless tied to money.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Using GA4 data:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Map queries → landing pages</li>
+                                    <li class="mb-2">Calculate revenue per session</li>
+                                    <li>Estimate lost sessions from CTR decline</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2"><strong>Formula:</strong></p>
+                                    <p class="text-300 mb-0 fs-5 text-center">Lost clicks × conversion rate × average order value</p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Now your report shows:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">"AI answers reduced visibility by X clicks"</li>
+                                    <li>"Estimated revenue impact: ₹ / $ / € Y per month"</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This reframes SEO as <span class="text-secondary-2">forecastable business risk</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 8: CFO-Level Reporting Structure</h3>
+
+                                <p class="text-300 mb-4">
+                                    Effective executive reporting avoids SEO jargon.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Your dashboard should show:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Queries affected</li>
+                                    <li class="mb-2">CTR loss %</li>
+                                    <li class="mb-2">Estimated revenue loss</li>
+                                    <li class="mb-2">Trend over time</li>
+                                    <li>Mitigation status</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-3">This shifts the conversation from:</p>
+                                    <p class="text-danger mb-3 fst-italic">"SEO traffic dropped"</p>
+                                    <p class="text-300 mb-3">to:</p>
+                                    <p class="text-success mb-0 fst-italic">"AI SERP changes suppressed demand capture by 18% in high-intent informational queries."</p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    That's a budget conversation.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">What This Model Reveals (That Rankings Never Will)</h3>
+
+                                <p class="text-300 mb-4">
+                                    Click-through suppression models reveal:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Which content types are most vulnerable to AI answers</li>
+                                    <li class="mb-2">Which queries are becoming "zero-click by design"</li>
+                                    <li class="mb-2">Where optimization effort no longer pays off</li>
+                                    <li>Where content must shift from traffic capture to authority signaling</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This insight prevents wasted spend.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Strategic Implications</h3>
+
+                                <p class="text-300 mb-4">
+                                    Once measured, teams can:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Stop chasing declining informational queries</li>
+                                    <li class="mb-2">Reallocate effort to AI-citation-friendly content</li>
+                                    <li class="mb-2">Engineer pages to be referenced inside AI answers</li>
+                                    <li>Adjust forecasting models for suppressed CTR baselines</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        The goal is not to "beat" AI answers. It's to <strong>adapt capital allocation</strong>.
+                                    </p>
+                                </div>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">Key Takeaways</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">AI-generated answers suppress CTR without affecting rankings or impressions</li>
+                                        <li class="mb-2">Click-through suppression is measurable using pre/post CTR analysis</li>
+                                        <li class="mb-2">BigQuery + GA4 + Search Console enable CFO-level revenue impact reporting</li>
+                                        <li class="mb-2">Statistical significance testing proves AI impact beyond normal variance</li>
+                                        <li class="mb-2">Revenue modeling translates CTR loss into forecastable business risk</li>
+                                        <li>Strategic pivots require measurement, not speculation</li>
+                                    </ul>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Final Thoughts: SEO Without Measurement Is Now Dangerous</h3>
+
+                                <p class="text-300 mb-4">
+                                    AI search didn't kill SEO.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    It killed <span class="text-secondary-2">unmeasured SEO</span>.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Teams that still report:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Rankings</li>
+                                    <li class="mb-2">Sessions</li>
+                                    <li>Impressions</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    …without accounting for answer-level interception are flying blind.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Click-through suppression modeling turns:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Fear into numbers</li>
+                                    <li class="mb-2">Traffic loss into insight</li>
+                                    <li>SEO into a board-level discipline</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic fs-5">
+                                        If you can't quantify the loss, you can't justify the pivot. And in AI-driven search, the pivot is mandatory.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Author Bio -->
+                            <div class="author-bio mt-5 p-4 rounded-3 border border-1 bg-3">
+                                <div class="d-flex align-items-start gap-4">
+                                    <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 80px; height: 80px;" />
+                                    <div>
+                                        <h5 class="mb-2">Akshay Dahiya</h5>
+                                        <p class="text-400 mb-3">Growth & MarTech Specialist</p>
+                                        <p class="text-300 mb-3">
+                                            Digital marketing professional with 6+ years of experience in SEO, analytics, and marketing automation. Founder of MarAI and passionate about building tools that solve real marketing problems.
+                                        </p>
+                                        <div class="d-flex gap-3">
+                                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" class="text-300">
+                                                <i class="ri-linkedin-fill fs-5"></i>
+                                            </a>
+                                            <a href="https://github.com/dahiyaakshay" target="_blank" class="text-300">
+                                                <i class="ri-github-fill fs-5"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Posts -->
+            <section class="section-related-posts pb-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-5">Related Posts</h3>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-4.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Engineering-Content-for-Citation-by-AI-Search-Engines.html">SEO</a>
+                                        <a href="Engineering-Content-for-Citation-by-AI-Search-Engines.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 27, 2026 • 13 min read</span>
+                                    <h6 class="blog-card__title mt-2">Engineering Content for Citation by AI Search Engines</h6>
+                                    <p class="blog-card__description fs-7">How to optimize content for AI retrieval and citation, not just rankings—turning your pages into trusted sources</p>
+                                    <a href="Engineering-Content-for-Citation-by-AI-Search-Engines.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-5.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Local-SEO-Without-Maps-How-AI-Uses-Unstructured-Location-Signals.html">Local SEO</a>
+                                        <a href="Local-SEO-Without-Maps-How-AI-Uses-Unstructured-Location-Signals.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 23, 2026 • 14 min read</span>
+                                    <h6 class="blog-card__title mt-2">Local SEO Without Maps: How AI Uses Unstructured Location Signals</h6>
+                                    <p class="blog-card__description fs-7">How AI-driven search determines local relevance without maps or business listings</p>
+                                    <a href="Local-SEO-Without-Maps-How-AI-Uses-Unstructured-Location-Signals.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-6.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Reverse-Engineering-AI-Answer-Sources-Using-Prompt-Injection-Audits.html">AI Research</a>
+                                        <a href="Reverse-Engineering-AI-Answer-Sources-Using-Prompt-Injection-Audits.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 19, 2026 • 16 min read</span>
+                                    <h6 class="blog-card__title mt-2">Reverse-Engineering AI Answer Sources Using Prompt Injection Audits</h6>
+                                    <p class="blog-card__description fs-7">How to scientifically observe AI source selection behavior through controlled</p>
+                                    <a href="Reverse-Engineering-AI-Answer-Sources-Using-Prompt-Injection-Audits.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="section-footer-2 position-relative">
+                <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                    <div class="text-center">
+                        <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="index-2.html">
+                            <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                            <span class="fs-4 ms-2">Akshay</span>
+                        </a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                        <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a class="nav-link" href="index.html"> Home </a>
+                    <a class="nav-link" href="about.html"> About me </a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a></li>
+                    <a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank"> MarAI </a>
+                    <a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank"> Rank Scan </a>
+                    <a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank"> Retrieve AI </a>
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                    <a class="nav-link" href="index.html#contact"> Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll top -->
+        <div class="btn-scroll-top style-btn-2">
+            <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+            </svg>
+        </div>
+
+        <!-- Libs JS -->
+<script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/main.js"></script>
+    </body>
+</html>

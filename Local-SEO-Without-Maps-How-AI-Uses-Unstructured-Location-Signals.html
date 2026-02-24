@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Local SEO Without Maps: How AI Uses Unstructured Location Signals | Akshay Dahiya</title>
+        <script src="assets/js/vendors/color-modes.js"></script>
+        <!-- Favicon icon-->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+        <!-- Libs CSS -->
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="home-page-2">
+        <!--Preloader-->
+        <div id="preloader">
+            <div class="loader-cover">
+                <div class="loader-container">
+                    <div class="loader-icon-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <header>
+            <div class="container position-relative">
+                <div class="position-relative">
+                    <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                            <i class="ri-menu-2-line"></i>
+                        </a>
+                        <div class="container py-3 px-4">
+                            <a class="navbar-brand d-flex main-logo align-items-center" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="d-none d-lg-flex">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                                <div class="d-md-flex d-none gap-3">
+                                    <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                    <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                                </div>
+                                <div class="burger-icon burger-icon-white border rounded-3">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- offCanvas Sidebar -->
+                <div class="offCanvas__info style-2">
+                    <div class="offCanvas__close-icon menu-close">
+                        <button><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+                    <div class="offCanvas__side-info mb-30">
+                        <div class="contact-list mb-30">
+                            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                            <div class="mb-3">
+                                <span class="text-400 fs-5">Email</span>
+                                <p class="mb-0"><a href="mailto:akshaydahiya92.ad@gmail.com">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <p class="text-400 fs-5 mb-2">Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__overly"></div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+                    <div class="mobile-header-wrapper-inner">
+                        <div class="mobile-header-logo">
+                            <a class="d-flex main-logo align-items-center d-inline-flex" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-header-content-area">
+                            <div class="perfect-scroll">
+                                <div class="mobile-menu-wrap mobile-header-border">
+                                    <nav>
+                                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item has-children"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Blog Hero Section -->
+            <section class="section-blog-hero position-relative pt-160 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <a href="blog.html" class="btn btn-sm border border-1 rounded-3 px-3 py-2 mb-3">
+                                <i class="ri-arrow-left-line me-2"></i>Back to Blog
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <a href="#" class="text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2 me-3">Local SEO</a>
+                                <span class="text-400 fs-7">January 23, 2026</span>
+                                <span class="text-400 fs-7 mx-2">•</span>
+                                <span class="text-400 fs-7">14 min read</span>
+                            </div>
+                            <h1 class="ds-3 my-4 fw-medium">
+                                Local SEO Without Maps: How AI Uses Unstructured <span class="text-300">Location Signals_</span>
+                            </h1>
+                            <p class="fs-5 text-300 mb-4">
+                                How AI-driven search determines local relevance without maps or business listings—using semantic proximity and unstructured signals
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 40px; height: 40px;" />
+                                <div class="text-start">
+                                    <p class="mb-0 fw-medium">Akshay Dahiya</p>
+                                    <p class="mb-0 text-400 fs-7">Growth & MarTech Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Image -->
+            <section class="section-featured-image pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="rounded-3 overflow-hidden border border-1">
+                                <img src="assets/imgs/blog/blog-5.png" alt="Featured Image" class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Content -->
+            <section class="section-blog-content pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="blog-content">
+                                <p class="text-300 fs-5 mb-4">
+                                    For more than a decade, local SEO has revolved around one gravitational center: Google Maps.
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Optimize your Google Business Profile</li>
+                                    <li class="mb-2">Collect reviews</li>
+                                    <li class="mb-2">Build citations</li>
+                                    <li>Rank in the local pack</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    That playbook still matters—but it no longer explains how AI-driven search engines determine local relevance.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    In AI-powered search experiences—across Google AI Overviews, Perplexity, and Microsoft Bing AI—local answers are increasingly generated without maps, pins, or business profiles.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Instead, AI systems infer locality from <span class="text-secondary-2">unstructured location signals</span> scattered across the web:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Blog posts</li>
+                                    <li class="mb-2">PDFs</li>
+                                    <li class="mb-2">Community forums</li>
+                                    <li class="mb-2">News articles</li>
+                                    <li class="mb-2">Documentation</li>
+                                    <li>Reviews outside Google</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">This article explains:</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">Why map-based local SEO is no longer sufficient</li>
+                                        <li class="mb-2">How AI systems detect local relevance without explicit listings</li>
+                                        <li class="mb-2">What unstructured location signals matter most</li>
+                                        <li class="mb-2">How semantic proximity to place entities is calculated</li>
+                                        <li class="mb-2">How to extract and score location signals using NLP and scraping</li>
+                                        <li>How to build a location relevance model that AI search engines trust</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is not citation SEO. This is <span class="text-secondary-2">geospatial relevance engineering</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why Maps Are No Longer the Center of Local Search</h3>
+
+                                <p class="text-300 mb-4">
+                                    Maps are structured. AI search is not limited to structured data.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI systems are designed to answer questions like:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">"Who are the best cybersecurity consultants in Berlin?"</li>
+                                    <li class="mb-2">"Which agencies in Austin specialize in B2B SaaS SEO?"</li>
+                                    <li>"What companies in Toronto work with healthcare automation?"</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    These queries are often answered without showing:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">A map pack</li>
+                                    <li class="mb-2">A business listing</li>
+                                    <li>A phone number</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        Instead, AI generates a synthesized answer based on <strong>contextual location confidence</strong>. That confidence comes from unstructured signals.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">What Are Unstructured Location Signals?</h3>
+
+                                <p class="text-300 mb-4">
+                                    Unstructured location signals are implicit references that associate an entity with a place—without using a formal address or listing.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    <strong>Examples:</strong>
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">"Based in New York"</li>
+                                    <li class="mb-2">"Serving the Bay Area"</li>
+                                    <li class="mb-2">"Clients across London and Manchester"</li>
+                                    <li class="mb-2">"Founded in Amsterdam"</li>
+                                    <li>"Operating across DACH markets"</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    These signals appear in:
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <ul class="text-300 mb-0">
+                                            <li class="mb-2">Blog content</li>
+                                            <li class="mb-2">Author bios</li>
+                                            <li class="mb-2">Case studies</li>
+                                            <li>PDFs and whitepapers</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="text-300 mb-0">
+                                            <li class="mb-2">Press coverage</li>
+                                            <li class="mb-2">Forum discussions</li>
+                                            <li class="mb-2">Job listings</li>
+                                            <li>Documentation footers</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    AI systems aggregate these signals to infer:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Geographic relevance</li>
+                                    <li class="mb-2">Service area confidence</li>
+                                    <li>Regional expertise</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fs-5 text-center fst-italic">
+                                        Maps become optional.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">How AI Search Infers Locality Without Maps</h3>
+
+                                <p class="text-300 mb-4">
+                                    AI-driven local relevance follows a pattern:
+                                </p>
+
+                                <ol class="text-300 mb-4">
+                                    <li class="mb-2">Place Entity Detection</li>
+                                    <li class="mb-2">Entity–Place Association</li>
+                                    <li class="mb-2">Semantic Proximity Scoring</li>
+                                    <li class="mb-2">Redundancy & Confidence Weighting</li>
+                                    <li>Answer Assembly</li>
+                                </ol>
+
+                                <p class="text-300 mb-4">
+                                    Let's break that down.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Step 1: Place Entity Detection</h5>
+
+                                <p class="text-300 mb-4">
+                                    AI systems identify:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Cities</li>
+                                    <li class="mb-2">Regions</li>
+                                    <li class="mb-2">Neighborhoods</li>
+                                    <li class="mb-2">Countries</li>
+                                    <li>Local landmarks</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    These are <span class="text-secondary-2">place entities</span>.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    They are detected using:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Named Entity Recognition (NER)</li>
+                                    <li class="mb-2">Knowledge graph resolution</li>
+                                    <li>Contextual disambiguation</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2"><strong>Example:</strong></p>
+                                    <p class="text-300 mb-0">"New York" could mean the city or the state. AI systems resolve this using surrounding context.</p>
+                                </div>
+
+                                <h5 class="mt-4 mb-3">Step 2: Entity–Place Association</h5>
+
+                                <p class="text-300 mb-4">
+                                    Once a place entity is detected, AI systems look for associations:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Is this company based in the location?</li>
+                                    <li class="mb-2">Do they serve the location?</li>
+                                    <li>Is the location historical, operational, or incidental?</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    <strong>Not all mentions are equal.</strong>
+                                </p>
+
+                                <h6 class="mt-4 mb-3">Example:</h6>
+
+                                <div class="rounded-3 border border-1 p-3 my-3 bg-3">
+                                    <p class="text-danger mb-2"><strong>Weak signal:</strong></p>
+                                    <p class="text-300 mb-0">"We attended a conference in New York"</p>
+                                </div>
+
+                                <div class="rounded-3 border border-1 p-3 my-3 bg-3">
+                                    <p class="text-success mb-2"><strong>Strong signal:</strong></p>
+                                    <p class="text-300 mb-0">"We provide enterprise SEO services to clients in New York"</p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Only the second strengthens local relevance.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Step 3: Semantic Proximity Scoring</h5>
+
+                                <p class="text-300 mb-4">
+                                    This is where things get advanced.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI systems measure how close a location entity is to:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">The primary entity (company, service, person)</li>
+                                    <li class="mb-2">Core service descriptions</li>
+                                    <li>Expertise statements</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is <span class="text-secondary-2">semantic proximity</span>.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    A location mentioned:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">In the header</li>
+                                    <li class="mb-2">In the opening paragraph</li>
+                                    <li>Near service descriptions</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    …carries more weight than one buried in a footer.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Step 4: Redundancy & Confidence Weighting</h5>
+
+                                <p class="text-300 mb-4">
+                                    One mention is weak. Multiple mentions across independent sources build confidence.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI systems favor:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Repeated location associations</li>
+                                    <li class="mb-2">Across different domains</li>
+                                    <li>In different content formats</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2">This is why:</p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">Forums matter</li>
+                                        <li class="mb-2">PDFs matter</li>
+                                        <li>Third-party blogs matter</li>
+                                    </ul>
+                                    <p class="text-300 mt-3 mb-0 fst-italic">Not because of links—but because of redundant corroboration.</p>
+                                </div>
+
+                                <h5 class="mt-4 mb-3">Step 5: Answer Assembly</h5>
+
+                                <p class="text-300 mb-4">
+                                    When answering a local query, AI systems:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Retrieve entities with strong place association</li>
+                                    <li class="mb-2">Prefer those with high semantic proximity</li>
+                                    <li class="mb-2">Filter for relevance and safety</li>
+                                    <li>Generate a localized answer</li>
+                                </ul>
+
+                                <p class="text-300 mb-4 fs-5 text-center">
+                                    No map required.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Research Insight: Where Location Signals Actually Come From</h3>
+
+                                <p class="text-300 mb-4">
+                                    Analysis of AI-cited local answers shows that:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Many cited entities do not rank in the map pack</li>
+                                    <li>Some don't even have optimized Google Business Profiles</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Location relevance is inferred from:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Long-form content</li>
+                                    <li class="mb-2">Mentions in discussions</li>
+                                    <li class="mb-2">PDFs and reports</li>
+                                    <li>Author credentials</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        This is why traditional local SEO dashboards often fail to explain AI visibility.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Extracting Location Signals From the Web</h3>
+
+                                <p class="text-300 mb-4">
+                                    To engineer for AI locality, you need to measure your location footprint.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    This starts with scraping.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Step 1: Web Scraping for Unstructured Mentions</h5>
+
+                                <p class="text-300 mb-4">
+                                    Sources to scrape:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Blog content</li>
+                                    <li class="mb-2">Press mentions</li>
+                                    <li class="mb-2">Community forums</li>
+                                    <li class="mb-2">Case studies</li>
+                                    <li>PDFs</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        The goal is not links. The goal is <strong>contextual location mentions</strong>.
+                                    </p>
+                                </div>
+
+                                <h5 class="mt-4 mb-3">Step 2: Named Entity Recognition for Locations</h5>
+
+                                <p class="text-300 mb-4">
+                                    Using NLP, we extract place entities.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>import spacy
+nlp = spacy.load("en_core_web_sm")
+
+def extract_location_entities(text):
+    doc = nlp(text)
+    return [ent.text for ent in doc.ents if ent.label_ in ["GPE", "LOC"]]</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This gives us raw location mentions—but not relevance.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Measuring Semantic Proximity to Location Entities</h3>
+
+                                <p class="text-300 mb-4">
+                                    Now we score how meaningful each location mention is.
+                                </p>
+
+                                <h6 class="mt-4 mb-3">Contextual Location Scoring Logic</h6>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>def location_proximity_score(entity_context, location):
+    score = 0
+    proximity_weight = 1.5
+
+    if location in entity_context:
+        score += proximity_weight
+
+    return score</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Expanded versions include:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Distance from service keywords</li>
+                                    <li class="mb-2">Section weighting (header vs footer)</li>
+                                    <li>Sentence intent classification</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This transforms mentions into signals.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Building Co-Occurrence Heatmaps</h3>
+
+                                <p class="text-300 mb-4">
+                                    To understand geographic strength, we analyze co-occurrence:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Which services appear near which locations</li>
+                                    <li>How frequently across sources</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <h6 class="mb-3">Co-Occurrence Matrix Concept</h6>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2"><strong>Rows:</strong> Services / entities</li>
+                                        <li class="mb-2"><strong>Columns:</strong> Locations</li>
+                                        <li><strong>Values:</strong> Frequency × proximity score</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This produces a geographic relevance heatmap.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Insights include:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Strong vs weak regions</li>
+                                    <li class="mb-2">Overrepresented locations</li>
+                                    <li>Missed GEO opportunities</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    AI systems do something very similar internally.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why This Matters More Than Citations</h3>
+
+                                <p class="text-300 mb-4">
+                                    Local AI answers don't need:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">NAP consistency</li>
+                                    <li class="mb-2">Category matching</li>
+                                    <li>Map prominence</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    They need:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Contextual confidence</li>
+                                    <li class="mb-2">Semantic clarity</li>
+                                    <li>Repeated corroboration</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-3">This is why a company can:</p>
+                                    <p class="text-success mb-3">Dominate AI local answers</p>
+                                    <p class="text-300 mb-3">While being invisible in Maps</p>
+                                    <p class="text-300 mb-3">And why some businesses ranking in Maps:</p>
+                                    <p class="text-danger mb-3">Never appear in AI-generated local responses</p>
+                                    <p class="text-300 mb-0 fst-italic">Different systems. Different signals.</p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Engineering Local Authority Without Maps</h3>
+
+                                <p class="text-300 mb-4">
+                                    To optimize for AI-driven local relevance:
+                                </p>
+
+                                <h5 class="mt-4 mb-3">1. Embed Location Context in Core Content</h5>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Service pages</li>
+                                    <li class="mb-2">Case studies</li>
+                                    <li>Explainers</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Not footers.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">2. Create Third-Party Location Mentions</h5>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Guest content</li>
+                                    <li class="mb-2">Industry blogs</li>
+                                    <li class="mb-2">Community discussions</li>
+                                    <li>Podcasts and transcripts</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    These build corroboration.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">3. Use Consistent Place Terminology</h5>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Avoid unnecessary synonyms</li>
+                                    <li class="mb-2">Be explicit about service areas</li>
+                                    <li>Define geographic scope clearly</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    AI prefers clarity over creativity.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">4. Diversify Content Formats</h5>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">PDFs</li>
+                                    <li class="mb-2">Reports</li>
+                                    <li class="mb-2">Long-form guides</li>
+                                    <li>Documentation</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    AI systems ingest far more than HTML pages.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">The Strategic Shift: From Local Listings to Local Evidence</h3>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="mb-3">Maps answer:</h6>
+                                            <p class="text-300 mb-0 fst-italic">"Who is nearby?"</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="mb-3">AI answers:</h6>
+                                            <p class="text-300 mb-0 fst-italic">"Who is relevant here?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    That difference is subtle—but massive.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Local SEO without maps is about:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Evidence, not listings</li>
+                                    <li class="mb-2">Context, not coordinates</li>
+                                    <li>Confidence, not categories</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">Key Takeaways</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">AI systems infer local relevance from unstructured signals across the web</li>
+                                        <li class="mb-2">Semantic proximity to location entities matters more than map listings</li>
+                                        <li class="mb-2">Redundancy across independent sources builds location confidence</li>
+                                        <li class="mb-2">NLP tools can extract and score location signals from content</li>
+                                        <li class="mb-2">Local authority requires evidence in core content, not just footers</li>
+                                        <li>Geographic relevance is measured through co-occurrence and contextual analysis</li>
+                                    </ul>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Final Thoughts: Local SEO Is Becoming Geographic Intelligence</h3>
+
+                                <p class="text-300 mb-4">
+                                    As AI search continues to expand:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Maps will remain transactional</li>
+                                    <li>AI answers will dominate discovery</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Businesses that rely solely on map visibility will:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Lose top-of-funnel exposure</li>
+                                    <li class="mb-2">Struggle to explain performance drops</li>
+                                    <li>Miss AI-driven demand</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    The future of local SEO belongs to teams that:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Understand unstructured data</li>
+                                    <li class="mb-2">Measure semantic proximity</li>
+                                    <li class="mb-2">Engineer geographic relevance</li>
+                                    <li>Build location authority across the open web</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-3">Because AI doesn't ask:</p>
+                                    <p class="text-danger mb-3 fst-italic">"Who has the best listing?"</p>
+                                    <p class="text-300 mb-3">It asks:</p>
+                                    <p class="text-success mb-3 fst-italic">"Who actually belongs in this place?"</p>
+                                    <p class="text-300 mb-0">And it answers accordingly.</p>
+                                </div>
+                            </div>
+
+                            <!-- Author Bio -->
+                            <div class="author-bio mt-5 p-4 rounded-3 border border-1 bg-3">
+                                <div class="d-flex align-items-start gap-4">
+                                    <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 80px; height: 80px;" />
+                                    <div>
+                                        <h5 class="mb-2">Akshay Dahiya</h5>
+                                        <p class="text-400 mb-3">Growth & MarTech Specialist</p>
+                                        <p class="text-300 mb-3">
+                                            Digital marketing professional with 6+ years of experience in SEO, analytics, and marketing automation. Founder of MarAI and passionate about building tools that solve real marketing problems.
+                                        </p>
+                                        <div class="d-flex gap-3">
+                                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" class="text-300">
+                                                <i class="ri-linkedin-fill fs-5"></i>
+                                            </a>
+                                            <a href="https://github.com/dahiyaakshay" target="_blank" class="text-300">
+                                                <i class="ri-github-fill fs-5"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Posts -->
+            <section class="section-related-posts pb-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-5">Related Posts</h3>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-6.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Reverse-Engineering-AI-Answer-Sources-Using-Prompt-Injection-Audits.html">AI Research</a>
+                                        <a href="Reverse-Engineering-AI-Answer-Sources-Using-Prompt-Injection-Audits.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 19, 2026 • 16 min read</span>
+                                    <h6 class="blog-card__title mt-2">Reverse-Engineering AI Answer Sources Using Prompt Injection Audits</h6>
+                                    <p class="blog-card__description fs-7">How to scientifically observe AI source selection behavior through controlled</p>
+                                    <a href="Reverse-Engineering-AI-Answer-Sources-Using-Prompt-Injection-Audits.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-7.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Content-Decay-in-the-Age-of-AI-Predicting-When-a-Page-Will-Stop-Being-Referenced.html">Content Strategy</a>
+                                        <a href="Content-Decay-in-the-Age-of-AI-Predicting-When-a-Page-Will-Stop-Being-Referenced.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 16, 2026 • 17 min read</span>
+                                    <h6 class="blog-card__title mt-2">Content Decay in the Age of AI: Predicting When a Page Will Stop Being Referenced</h6>
+                                    <p class="blog-card__description fs-7">How to forecast content decay using time-series data, AI citation logs, and topic</p>
+                                    <a href="Content-Decay-in-the-Age-of-AI-Predicting-When-a-Page-Will-Stop-Being-Referenced.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-8.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Using-Log-File-Analysis-to-Detect-AI-Crawler-Behavior-Before-Google-Reports-It.html">Technical SEO</a>
+                                        <a href="Using-Log-File-Analysis-to-Detect-AI-Crawler-Behavior-Before-Google-Reports-It.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 12, 2026 • 15 min read</span>
+                                    <h6 class="blog-card__title mt-2">Using Log File Analysis to Detect AI Crawler Behavior Before Google Reports It</h6>
+                                    <p class="blog-card__description fs-7">How to fingerprint AI crawlers at the server level and detect new bot behavior</p>
+                                    <a href="Using-Log-File-Analysis-to-Detect-AI-Crawler-Behavior-Before-Google-Reports-It.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="section-footer-2 position-relative">
+                <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                    <div class="text-center">
+                        <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="index-2.html">
+                            <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                            <span class="fs-4 ms-2">Akshay</span>
+                        </a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                        <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a class="nav-link" href="index.html"> Home </a>
+                    <a class="nav-link" href="about.html"> About me </a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a></li>
+                    <a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank"> MarAI </a>
+                    <a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank"> Rank Scan </a>
+                    <a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank"> Retrieve AI </a>
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                    <a class="nav-link" href="index.html#contact"> Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll top -->
+        <div class="btn-scroll-top style-btn-2">
+            <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+            </svg>
+        </div>
+
+        <!-- Libs JS -->
+<script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/main.js"></script>
+    </body>
+</html>

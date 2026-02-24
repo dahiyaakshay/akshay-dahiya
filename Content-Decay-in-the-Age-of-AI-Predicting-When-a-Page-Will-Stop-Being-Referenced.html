@@ -1,0 +1,999 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Content Decay in the Age of AI: Predicting When a Page Will Stop Being Referenced | Akshay Dahiya</title>
+        <script src="assets/js/vendors/color-modes.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="home-page-2">
+        <div id="preloader">
+            <div class="loader-cover">
+                <div class="loader-container">
+                    <div class="loader-icon-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="container position-relative">
+                <div class="position-relative">
+                    <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                            <i class="ri-menu-2-line"></i>
+                        </a>
+                        <div class="container py-3 px-4">
+                            <a class="navbar-brand d-flex main-logo align-items-center" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="d-none d-lg-flex">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                                <div class="d-md-flex d-none gap-3">
+                                    <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                    <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                                </div>
+                                <div class="burger-icon burger-icon-white border rounded-3">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- offCanvas Sidebar -->
+                <div class="offCanvas__info style-2">
+                    <div class="offCanvas__close-icon menu-close">
+                        <button><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+                    <div class="offCanvas__side-info mb-30">
+                        <div class="contact-list mb-30">
+                            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                            <div class="mb-3">
+                                <span class="text-400 fs-5">Email</span>
+                                <p class="mb-0"><a href="mailto:akshaydahiya92.ad@gmail.com">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <p class="text-400 fs-5 mb-2">Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__overly"></div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+                    <div class="mobile-header-wrapper-inner">
+                        <div class="mobile-header-logo">
+                            <a class="d-flex main-logo align-items-center d-inline-flex" href="index-2.html">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-header-content-area">
+                            <div class="perfect-scroll">
+                                <div class="mobile-menu-wrap mobile-header-border">
+                                    <nav>
+                                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item has-children"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-blog-hero position-relative pt-160 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <a href="blog.html" class="btn btn-sm border border-1 rounded-3 px-3 py-2 mb-3">
+                                <i class="ri-arrow-left-line me-2"></i>Back to Blog
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <a href="#" class="text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2 me-3">Content Strategy</a>
+                                <span class="text-400 fs-7">January 16, 2026</span>
+                                <span class="text-400 fs-7 mx-2">•</span>
+                                <span class="text-400 fs-7">17 min read</span>
+                            </div>
+                            <h1 class="ds-3 my-4 fw-medium">
+                                Content Decay in the Age of AI: Predicting When a Page Will <span class="text-300">Stop Being Referenced_</span>
+                            </h1>
+                            <p class="fs-5 text-300 mb-4">
+                                How to forecast content decay using time-series data, AI citation logs, and topic freshness curves—refreshing before visibility loss
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 40px; height: 40px;" />
+                                <div class="text-start">
+                                    <p class="mb-0 fw-medium">Akshay Dahiya</p>
+                                    <p class="mb-0 text-400 fs-7">Growth & MarTech Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-featured-image pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="rounded-3 overflow-hidden border border-1">
+                                <img src="assets/imgs/blog/blog-7.png" alt="Featured Image" class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-blog-content pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="blog-content">
+                                <p class="text-300 fs-5 mb-4">
+                                    Content doesn't just lose rankings anymore. It loses relevance inside AI systems—often silently.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    In AI-driven search experiences across Google AI Overviews, Perplexity, and Microsoft Bing AI, pages can remain indexed, even ranked, while quietly falling out of AI answers.
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">No alert fires</li>
+                                    <li class="mb-2">No traffic cliff explains it</li>
+                                    <li>The page simply stops being referenced</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        This is AI-era content decay—and reacting after it happens is already too late.
+                                    </p>
+                                </div>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">This article explains:</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">Why AI systems accelerate content decay</li>
+                                        <li class="mb-2">How decay differs from traditional SEO decline</li>
+                                        <li class="mb-2">How to combine time-series data with AI citation logs</li>
+                                        <li class="mb-2">How to model topic freshness curves</li>
+                                        <li class="mb-2">How to predict when a page will stop being referenced</li>
+                                        <li>How to score refresh priority using a decay model</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This is not content maintenance. This is <span class="text-secondary-2">content lifecycle forecasting</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why Content Decay Looks Different in AI Search</h3>
+
+                                <p class="text-300 mb-4">
+                                    Classic SEO decay was visible:
+                                </p>
+
+                                <ol class="text-300 mb-4">
+                                    <li class="mb-2">Rankings drop</li>
+                                    <li class="mb-2">Traffic drops</li>
+                                    <li>Fix the page</li>
+                                </ol>
+
+                                <p class="text-300 mb-4">
+                                    AI-driven decay is orthogonal to rankings.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    A page can:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Rank top 5</li>
+                                    <li class="mb-2">Maintain impressions</li>
+                                    <li>Still vanish from AI-generated answers</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    <strong>Why?</strong>
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        Because AI systems do not optimize for rankings. They optimize for <strong>current, confident, low-risk references</strong>.
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Once a page's relevance score drops below a threshold, it's excluded—regardless of authority.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">The New Definition of Content Decay</h3>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2"><strong>In the AI era, content decay means:</strong></p>
+                                    <p class="text-300 mb-0 fst-italic">
+                                        A page no longer meets the relevance, freshness, or confidence thresholds required to be retrieved and cited by AI systems.
+                                    </p>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This decay is driven by:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Topic evolution</li>
+                                    <li class="mb-2">Entity shifts</li>
+                                    <li class="mb-2">New research</li>
+                                    <li class="mb-2">Changed terminology</li>
+                                    <li>Redundant coverage by newer sources</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    And it happens <em>before</em> rankings decline.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why Forecasting Matters More Than Refreshing</h3>
+
+                                <p class="text-300 mb-4">
+                                    Most teams operate on a reactive loop:
+                                </p>
+
+                                <ol class="text-300 mb-4">
+                                    <li class="mb-2">Traffic drops</li>
+                                    <li class="mb-2">Rankings fall</li>
+                                    <li>Content is refreshed</li>
+                                </ol>
+
+                                <p class="text-300 mb-4">
+                                    But AI systems remove pages from answers <em>upstream</em> of those signals.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2">By the time traffic drops:</p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">The page has already lost AI visibility</li>
+                                        <li class="mb-2">Competitors have already replaced it</li>
+                                        <li>The recovery window is narrower</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Forecasting decay lets you:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Refresh before exclusion</li>
+                                    <li class="mb-2">Preserve AI citations</li>
+                                    <li>Maintain authority continuity</li>
+                                </ul>
+
+                                <h3 class="mt-5 mb-4">Data Required to Model AI-Era Content Decay</h3>
+
+                                <p class="text-300 mb-4">
+                                    To predict decay, we need three data streams:
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <h6 class="mb-2">1. Historical Rankings</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Query-level position trends</li>
+                                                <li>Stability vs volatility</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <h6 class="mb-2">2. AI Citation Logs</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">When page appears in AI answers</li>
+                                                <li class="mb-2">Frequency over time</li>
+                                                <li>Citation disappearance points</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="rounded-3 border border-1 p-3 bg-3">
+                                            <h6 class="mb-2">3. Topic Freshness Signals</h6>
+                                            <ul class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Publication dates of competing content</li>
+                                                <li class="mb-2">Update frequency in topic cluster</li>
+                                                <li>Terminology drift</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    These together form a <span class="text-secondary-2">time-series relevance model</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 1: Establish a Baseline Relevance Window</h3>
+
+                                <p class="text-300 mb-4">
+                                    Every topic has a natural relevance half-life.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2"><strong>Examples:</strong></p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">"What is AI search?" → Long half-life</li>
+                                        <li class="mb-2">"Google AI Overviews update" → Short half-life</li>
+                                        <li>"Best SEO tools 2024" → Very short half-life</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Your first task is to classify pages by <span class="text-secondary-2">topic volatility</span>.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    High-volatility topics decay faster—even if written well.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 2: Build Topic Freshness Curves</h3>
+
+                                <p class="text-300 mb-4">
+                                    A freshness curve models how relevance changes over time.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2"><strong>General shape:</strong></p>
+                                    <ol class="text-300 mb-0">
+                                        <li class="mb-2">Spike at publication</li>
+                                        <li class="mb-2">Plateau</li>
+                                        <li class="mb-2">Gradual decay</li>
+                                        <li>Sharp drop when topic shifts</li>
+                                    </ol>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    You infer this by tracking:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">New competing content</li>
+                                    <li class="mb-2">Updated guides</li>
+                                    <li>Shifts in language used by AI answers</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Pages that aren't updated flatten early—and then drop.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 3: Track AI Citation Frequency Over Time</h3>
+
+                                <p class="text-300 mb-4">
+                                    This is the most important signal.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    AI citation frequency answers:
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-secondary fst-italic">
+                                    Is this page still being considered relevant evidence?
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Track:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Weekly or monthly citation counts</li>
+                                    <li class="mb-2">Number of AI tools citing the page</li>
+                                    <li>Section-level vs page-level citations</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        When citation frequency trends downward <strong>before</strong> rankings, decay has begun.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Step 4: Combine Signals Into a Decay Model</h3>
+
+                                <p class="text-300 mb-4">
+                                    Now we model decay mathematically.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    At its simplest:
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0 text-center fs-5" style="white-space: pre-wrap;"><code>decay_score = relevance × freshness × citation_frequency</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Each component represents a distinct dimension.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Relevance</h5>
+
+                                <p class="text-300 mb-4">
+                                    Relevance measures:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Query match quality</li>
+                                    <li class="mb-2">Entity coverage</li>
+                                    <li>Semantic similarity to current AI answers</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This can be approximated using:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">NLP similarity scores</li>
+                                    <li class="mb-2">Entity overlap</li>
+                                    <li>Heading alignment</li>
+                                </ul>
+
+                                <h5 class="mt-4 mb-3">Freshness</h5>
+
+                                <p class="text-300 mb-4">
+                                    Freshness captures:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Time since last update</li>
+                                    <li class="mb-2">Topic update velocity</li>
+                                    <li>Competitor update frequency</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Freshness decays faster in fast-moving topics.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">Citation Frequency</h5>
+
+                                <p class="text-300 mb-4">
+                                    Citation frequency reflects:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Trust by AI systems</li>
+                                    <li class="mb-2">Continued inclusion in answer generation</li>
+                                    <li>Replacement risk</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is the <span class="text-secondary-2">leading indicator</span>.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Step 5: Time-Series Decay Modeling (Conceptual)</h3>
+
+                                <p class="text-300 mb-4">
+                                    You track each component over time:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Relevance(t)</li>
+                                    <li class="mb-2">Freshness(t)</li>
+                                    <li>CitationFrequency(t)</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    The combined decay score produces a forecast curve.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-2">When the score crosses a threshold, the page is likely to:</p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">Stop being cited</li>
+                                        <li class="mb-2">Lose AI visibility</li>
+                                        <li>Eventually lose rankings</li>
+                                    </ul>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Step 6: Refresh Priority Scoring</h3>
+
+                                <p class="text-300 mb-4">
+                                    Not all pages deserve equal effort.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Refresh priority answers:
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-secondary fst-italic">
+                                    Which pages should we update first to preserve AI visibility?
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    A simple scoring model:
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <pre class="text-300 mb-0" style="white-space: pre-wrap;"><code>def refresh_priority(decay_score, traffic_value, conversion_value):
+    return (1 - decay_score) * (traffic_value + conversion_value)</code></pre>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    Pages with:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">High business value</li>
+                                    <li>Rapid decay trajectory</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    …move to the top of the refresh queue.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    This prevents wasted effort on low-impact pages.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Why AI Accelerates Content Decay</h3>
+
+                                <p class="text-300 mb-4">
+                                    AI systems compress competition.
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="mb-3">Instead of competing against:</h6>
+                                            <p class="text-300 mb-0">10 blue links</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="mb-3">You compete against:</h6>
+                                            <p class="text-300 mb-0">A small rotating set of "trusted references"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    When a newer, clearer, or fresher source appears:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">AI systems switch quickly</li>
+                                    <li>There is no loyalty to legacy content</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    This is why decay feels sudden.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">Common Causes of AI-Era Content Decay</h3>
+
+                                <h5 class="mt-4 mb-3">1. Terminology Drift</h5>
+
+                                <p class="text-300 mb-4">
+                                    AI answers adopt new language faster than legacy pages.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    If your content uses outdated terms:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">It becomes semantically distant</li>
+                                    <li>Relevance drops even if facts are correct</li>
+                                </ul>
+
+                                <h5 class="mt-4 mb-3">2. Entity Graph Shifts</h5>
+
+                                <p class="text-300 mb-4">
+                                    New entities enter the topic space. Old pages don't mention them. AI systems prefer pages that do.
+                                </p>
+
+                                <h5 class="mt-4 mb-3">3. Redundant Coverage</h5>
+
+                                <p class="text-300 mb-4">
+                                    When many pages say the same thing:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">AI systems consolidate sources</li>
+                                    <li>Only the clearest survives</li>
+                                </ul>
+
+                                <h5 class="mt-4 mb-3">4. Structural Stagnation</h5>
+
+                                <p class="text-300 mb-4">
+                                    Pages that aren't restructured:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Have lower fact density</li>
+                                    <li class="mb-2">Are harder to extract from</li>
+                                    <li>Lose retrieval preference</li>
+                                </ul>
+
+                                <h3 class="mt-5 mb-4">Predictive Signals That a Page Is About to Decay</h3>
+
+                                <p class="text-300 mb-4">
+                                    Before a page disappears from AI answers, you often see:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Citation frequency flattening</li>
+                                    <li class="mb-2">Section-level citations replacing full-page citations</li>
+                                    <li class="mb-2">AI answers paraphrasing competitors instead</li>
+                                    <li>Entity overlap dropping</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        These signals appear weeks or months <strong>before</strong> traffic loss.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Strategic Implications for Content Teams</h3>
+
+                                <p class="text-300 mb-4">
+                                    Predictive decay modeling changes how teams operate:
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="text-danger mb-3">Old model:</h6>
+                                            <ol class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Publish</li>
+                                                <li class="mb-2">Monitor rankings</li>
+                                                <li>Refresh when traffic drops</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="rounded-3 border border-1 p-4 bg-3">
+                                            <h6 class="text-success mb-3">AI-era model:</h6>
+                                            <ol class="text-300 mb-0 fs-7">
+                                                <li class="mb-2">Publish</li>
+                                                <li class="mb-2">Monitor citation velocity</li>
+                                                <li class="mb-2">Forecast decay</li>
+                                                <li>Refresh before loss</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    This turns content into a managed asset, not a sunk cost.
+                                </p>
+
+                                <h3 class="mt-5 mb-4">What Refreshing Actually Means in the AI Era</h3>
+
+                                <p class="text-300 mb-4">
+                                    Refreshing is not:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Updating the date</li>
+                                    <li class="mb-2">Adding paragraphs</li>
+                                    <li>Rewriting intros</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Effective refresh focuses on:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">New entities</li>
+                                    <li class="mb-2">Updated definitions</li>
+                                    <li class="mb-2">Structural clarity</li>
+                                    <li class="mb-2">Fact density</li>
+                                    <li>Neutral, reference-style language</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        The goal is to restore <strong>retrieval confidence</strong>, not just freshness.
+                                    </p>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Why This Matters to Leadership</h3>
+
+                                <p class="text-300 mb-4">
+                                    From a business perspective, predictive decay:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Stabilizes organic performance</li>
+                                    <li class="mb-2">Reduces sudden traffic shocks</li>
+                                    <li class="mb-2">Improves ROI on content</li>
+                                    <li>Preserves AI-era brand authority</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    It transforms content from:
+                                </p>
+
+                                <p class="text-300 mb-3 ps-4 border-start border-2 border-danger">
+                                    "Marketing output"
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    into:
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-success">
+                                    "Search system infrastructure"
+                                </p>
+
+                                <h3 class="mt-5 mb-4">The Strategic Shift: From Content Publishing to Content Portfolio Management</h3>
+
+                                <p class="text-300 mb-4">
+                                    AI search forces a mindset change.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Content is no longer:
+                                </p>
+
+                                <p class="text-300 mb-3 ps-4 border-start border-2 border-danger">
+                                    Write → rank → forget
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    It is:
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-success">
+                                    Publish → observe → forecast → intervene
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Teams that don't adopt decay forecasting will:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Constantly chase losses</li>
+                                    <li class="mb-2">Misdiagnose performance drops</li>
+                                    <li>Waste resources on reactive fixes</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">Key Takeaways</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">AI-era content decay happens before rankings drop, driven by relevance thresholds</li>
+                                        <li class="mb-2">Citation frequency is the leading indicator of impending content decay</li>
+                                        <li class="mb-2">Decay models combine relevance, freshness, and citation signals over time</li>
+                                        <li class="mb-2">Topic volatility determines natural relevance half-life for content</li>
+                                        <li class="mb-2">Refresh priority scoring prevents wasted effort on low-impact pages</li>
+                                        <li>Forecasting enables proactive refresh before AI visibility loss</li>
+                                    </ul>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Final Thoughts: Decay Is Inevitable—Blindness Is Optional</h3>
+
+                                <p class="text-300 mb-4">
+                                    In AI-driven search, everything decays.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    The difference between leaders and laggards is not:
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2">Who publishes more</li>
+                                    <li>Who writes better prose</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    It's who sees decay before it happens.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-3">If you can predict when a page will stop being referenced:</p>
+                                    <ul class="text-300 mb-0">
+                                        <li class="mb-2">You control the timeline</li>
+                                        <li class="mb-2">You control visibility</li>
+                                        <li>You control authority</li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-300 mb-0 fst-italic fs-5">
+                                    In the age of AI, content success isn't about freshness. It's about staying reference-worthy—<strong>on purpose</strong>.
+                                </p>
+                            </div>
+
+                            <!-- Author Bio -->
+                            <div class="author-bio mt-5 p-4 rounded-3 border border-1 bg-3">
+                                <div class="d-flex align-items-start gap-4">
+                                    <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 80px; height: 80px;" />
+                                    <div>
+                                        <h5 class="mb-2">Akshay Dahiya</h5>
+                                        <p class="text-400 mb-3">Growth & MarTech Specialist</p>
+                                        <p class="text-300 mb-3">
+                                            Digital marketing professional with 6+ years of experience in SEO, analytics, and marketing automation. Founder of MarAI and passionate about building tools that solve real marketing problems.
+                                        </p>
+                                        <div class="d-flex gap-3">
+                                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" class="text-300">
+                                                <i class="ri-linkedin-fill fs-5"></i>
+                                            </a>
+                                            <a href="https://github.com/dahiyaakshay" target="_blank" class="text-300">
+                                                <i class="ri-github-fill fs-5"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-related-posts pb-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-5">Related Posts</h3>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-8.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Using-Log-File-Analysis-to-Detect-AI-Crawler-Behavior-Before-Google-Reports-It.html">Technical SEO</a>
+                                        <a href="Using-Log-File-Analysis-to-Detect-AI-Crawler-Behavior-Before-Google-Reports-It.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 12, 2026 • 15 min read</span>
+                                    <h6 class="blog-card__title mt-2">Using Log File Analysis to Detect AI Crawler Behavior Before Google Reports It</h6>
+                                    <p class="blog-card__description fs-7">How to fingerprint AI crawlers at the server level and detect new bot behavior</p>
+                                    <a href="Using-Log-File-Analysis-to-Detect-AI-Crawler-Behavior-Before-Google-Reports-It.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-9.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Schema-Beyond-Rich-Results-Feeding-Knowledge-Graphs-for-AI-Consumption.html">Technical SEO</a>
+                                        <a href="Schema-Beyond-Rich-Results-Feeding-Knowledge-Graphs-for-AI-Consumption.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 7, 2026 • 14 min read</span>
+                                    <h6 class="blog-card__title mt-2">Schema Beyond Rich Results: Feeding Knowledge Graphs for AI Consumption</h6>
+                                    <p class="blog-card__description fs-7">How schema markup becomes machine-readable truth for AI systems—moving beyond rich</p>
+                                    <a href="Schema-Beyond-Rich-Results-Feeding-Knowledge-Graphs-for-AI-Consumption.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-10.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Building-an-AI-Search-Visibility-Dashboard-Using-GA4-GSC-BigQuery-&-Looker.html">Analytics</a>
+                                        <a href="Building-an-AI-Search-Visibility-Dashboard-Using-GA4-GSC-BigQuery-&-Looker.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 3, 2026 • 18 min read</span>
+                                    <h6 class="blog-card__title mt-2">Building an AI-Search Visibility Dashboard Using GA4, GSC, BigQuery & Looker</h6>
+                                    <p class="blog-card__description fs-7">How to build executive-ready AI impact monitoring using modern data stack</p>
+                                    <a href="Building-an-AI-Search-Visibility-Dashboard-Using-GA4-GSC-BigQuery-&-Looker.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="section-footer-2 position-relative">
+                <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                    <div class="text-center">
+                        <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="index-2.html">
+                            <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                            <span class="fs-4 ms-2">Akshay</span>
+                        </a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                        <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a class="nav-link" href="index.html"> Home </a>
+                    <a class="nav-link" href="about.html"> About me </a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a></li>
+                    <a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank"> MarAI </a>
+                    <a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank"> Rank Scan </a>
+                    <a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank"> Retrieve AI </a>
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                    <a class="nav-link" href="index.html#contact"> Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="btn-scroll-top style-btn-2">
+            <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+            </svg>
+        </div>
+
+    <!-- Libs JS -->
+<script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/main.js"></script>
+    </body>
+</html>
