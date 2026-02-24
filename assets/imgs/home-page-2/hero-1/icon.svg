@@ -1,0 +1,25 @@
+<svg
+  width="81"
+  height="73"
+  viewBox="0 0 81 73"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Hex background -->
+  <path
+    d="M55.5422 0H25.4578C21.7408 0 18.3084 1.9948 16.442 5.20863L1.39982 31.2835C-0.466608 34.5131 -0.466608 38.4869 1.39982 41.7165L16.442 67.7914C18.3084 71.021 21.7408 73 25.4578 73H55.5422C59.2592 73 62.6916 71.0052 64.558 67.7914L79.6002 41.7165C81.4666 38.4869 81.4666 34.5131 79.6002 31.2835L64.5738 5.20863C62.6916 1.97896 59.2592 0 55.5422 0Z"
+    fill="#ff6b35"
+  />
+
+  <!-- MarAI logo (white) -->
+  <g transform="translate(22 18) scale(0.75)" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top-left (small) -->
+    <rect x="4" y="4" width="14" height="14" rx="4" />
+    <!-- Top-right (large) -->
+    <rect x="24" y="4" width="20" height="20" rx="5" />
+    <!-- Bottom-left (large) -->
+    <rect x="4" y="24" width="20" height="20" rx="5" />
+    <!-- Bottom-right (small) -->
+    <rect x="30" y="30" width="14" height="14" rx="4" />
+  </g>
+</svg>
