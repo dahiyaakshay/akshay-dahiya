@@ -102,7 +102,7 @@ This portfolio evolves alongside active product development.
 
 ## 🌐 Live Site
 
-((https://www.akshaydahiya.site/))
+www.akshaydahiya.site
 
 ------------------------------------------------------------------------
 
