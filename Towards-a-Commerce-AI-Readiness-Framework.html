@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Towards a Commerce AI Readiness Framework: Four Dimensions for Measuring Agentic Accessibility | Akshay Dahiya</title>
+        <script src="assets/js/vendors/color-modes.js"></script>
+        <!-- Favicon icon-->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+        <!-- Libs CSS -->
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+        <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="home-page-2">
+        <!--Preloader-->
+        <div id="preloader">
+            <div class="loader-cover">
+                <div class="loader-container">
+                    <div class="loader-icon-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <header>
+            <div class="container position-relative">
+                <div class="position-relative">
+                    <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                            <i class="ri-menu-2-line"></i>
+                        </a>
+                        <div class="container py-3 px-4">
+                            <a class="navbar-brand d-flex main-logo align-items-center" href="/">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="d-none d-lg-flex">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                                <div class="d-md-flex d-none gap-3">
+                                    <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                    <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                                </div>
+                                <div class="burger-icon burger-icon-white border rounded-3">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- offCanvas Sidebar -->
+                <div class="offCanvas__info style-2">
+                    <div class="offCanvas__close-icon menu-close">
+                        <button><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+                    <div class="offCanvas__side-info mb-30">
+                        <div class="contact-list mb-30">
+                            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                            <div class="mb-3">
+                                <span class="text-400 fs-5">Email</span>
+                                <p class="mb-0"><a href="mailto:akshaydahiya92.ad@gmail.com">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <p class="text-400 fs-5 mb-2">Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__overly"></div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+                    <div class="mobile-header-wrapper-inner">
+                        <div class="mobile-header-logo">
+                            <a class="d-flex main-logo align-items-center d-inline-flex" href="/">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-header-content-area">
+                            <div class="perfect-scroll">
+                                <div class="mobile-menu-wrap mobile-header-border">
+                                    <nav>
+                                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item has-children"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Blog Hero Section -->
+            <section class="section-blog-hero position-relative pt-160 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <a href="blog.html" class="btn btn-sm border border-1 rounded-3 px-3 py-2 mb-3">
+                                <i class="ri-arrow-left-line me-2"></i>Back to Blog
+                            </a>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <a href="#" class="text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2 me-3">Research</a>
+                                <span class="text-400 fs-7">April 15, 2026</span>
+                                <span class="text-400 fs-7 mx-2">•</span>
+                                <span class="text-400 fs-7">18 min read</span>
+                            </div>
+                            <h1 class="ds-3 my-4 fw-medium">
+                                Towards a Commerce AI Readiness Framework: <span class="text-300">Four Dimensions for Measuring Agentic Accessibility_</span>
+                            </h1>
+                            <p class="fs-5 text-300 mb-4">
+                                The first structured definition of commerce AI readiness — a four-dimension scoring model built from first principles while developing RetrieveAI, an AI retrieval and visibility audit platform.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 40px; height: 40px;" />
+                                <div class="text-start">
+                                    <p class="mb-0 fw-medium">Akshay Dahiya</p>
+                                    <p class="mb-0 text-400 fs-7">Growth & MarTech Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Image -->
+            <section class="section-featured-image pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="rounded-3 overflow-hidden border border-1">
+                                <img src="assets/imgs/blog/blog-1.png" alt="Featured Image" class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Content -->
+            <section class="section-blog-content pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="blog-content">
+
+                                <!-- Abstract -->
+                                <p class="text-300 fs-5 mb-4">
+                                    The emergence of AI agents as autonomous purchasers — rather than passive research assistants — creates an urgent and largely unmeasured infrastructure problem for e-commerce operators. While the AI visibility research community has developed sophisticated frameworks for measuring brand citation rates, no existing tool or framework addresses the upstream question: <em>can an AI agent actually execute a transaction on a given website?</em>
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    This paper presents the <strong>Commerce AI Readiness Framework (CARF)</strong>, a four-dimension scoring model developed through the construction of <a href="https://retrieveai.akshaydahiya.site/" target="_blank">RetrieveAI</a>, an AI retrieval and visibility audit platform. The four dimensions — MCP Compatibility, API Readiness, Tool-Call Compatibility, and Inventory Simulation — each weighted at 25%, produce a composite Commerce AI Readiness Score (CARS) between 0 and 100.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">This paper covers:</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">Why existing AI visibility frameworks are insufficient for agentic commerce</li>
+                                        <li class="mb-2">The four CARF dimensions and scoring logic</li>
+                                        <li class="mb-2">Weighting rationale — why equal 25/25/25/25 distribution</li>
+                                        <li class="mb-2">Grade thresholds and benchmark scoring</li>
+                                        <li class="mb-2">How the framework is implemented inside RetrieveAI's audit pipeline</li>
+                                        <li>Competitive positioning vs 80+ existing tools</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Section 1 -->
+                                <h3 class="mt-5 mb-4">1. The Agentic Commerce Inflection</h3>
+
+                                <p class="text-300 mb-4">
+                                    On November 25, 2024, Anthropic released the Model Context Protocol (MCP) — an open standard for connecting AI systems to external data and tools.<sup>[1]</sup> Within sixteen months, MCP had accumulated over <strong>10,000 active public servers</strong>, <strong>97 million monthly SDK downloads</strong>, and adoption by OpenAI, Google DeepMind, Microsoft, and every major AI infrastructure provider.<sup>[3]</sup>
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    On March 26, 2025, OpenAI's Sam Altman stated: <em>"People love MCP and we are excited to add support across our products."</em><sup>[4]</sup> Shopify shipped four MCP servers making every one of its 5.6 million merchant stores natively queryable by AI agents.<sup>[6]</sup> OpenAI and Stripe co-developed the Agentic Commerce Protocol (ACP), enabling purchase transactions directly inside ChatGPT.<sup>[7]</sup> Google released the Universal Commerce Protocol (UCP) in partnership with Shopify, Etsy, Wayfair, Target, and Walmart.<sup>[8]</sup>
+                                </p>
+
+                                <!-- Stat Grid -->
+                                <div class="row g-3 my-4">
+                                    <div class="col-6 col-lg-3">
+                                        <div class="rounded-3 border border-1 p-3 text-center bg-3 h-100">
+                                            <div class="fs-2 fw-bold text-secondary-2 mb-1">$15T</div>
+                                            <div class="text-400 fs-7">B2B purchases mediated by AI agents by 2028</div>
+                                            <div class="text-400 fs-8 mt-1" style="font-size:.65rem">Gartner, Oct 2025</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="rounded-3 border border-1 p-3 text-center bg-3 h-100">
+                                            <div class="fs-2 fw-bold text-secondary-2 mb-1">$5T</div>
+                                            <div class="text-400 fs-7">Global agentic commerce by 2030</div>
+                                            <div class="text-400 fs-8 mt-1" style="font-size:.65rem">McKinsey, Oct 2025</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="rounded-3 border border-1 p-3 text-center bg-3 h-100">
+                                            <div class="fs-2 fw-bold text-secondary-2 mb-1">25%</div>
+                                            <div class="text-400 fs-7">Of US e-commerce via AI agents by 2030</div>
+                                            <div class="text-400 fs-8 mt-1" style="font-size:.65rem">Bain & Co., Dec 2025</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3">
+                                        <div class="rounded-3 border border-1 p-3 text-center bg-3 h-100">
+                                            <div class="fs-2 fw-bold text-secondary-2 mb-1">4,700%</div>
+                                            <div class="text-400 fs-7">YoY growth in AI-driven traffic to US retail sites</div>
+                                            <div class="text-400 fs-8 mt-1" style="font-size:.65rem">Adobe Analytics, Jul 2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    These are not projections about a distant future. During Cyber Week 2025, AI and agents drove <strong>$67 billion in sales</strong>, influencing 20% of all purchases.<sup>[12]</sup> Nearly 60% of Americans now use generative AI for online shopping.<sup>[17]</sup>
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    In this context, we identified a critical gap while building RetrieveAI: <strong>no metric existed to measure whether a website was actually accessible to an AI agent attempting a transaction.</strong> The entire AI visibility research community measures LLM <em>outputs</em> — what AI systems say about brands. Nobody measures the <em>inputs</em> — whether an AI agent can find, parse, understand, and act on a product.
+                                </p>
+
+                                <!-- Section 2 -->
+                                <h3 class="mt-5 mb-4">2. Why Existing Frameworks Are Insufficient</h3>
+
+                                <p class="text-300 mb-4">
+                                    The state of AI readiness measurement in e-commerce can be summarised as follows: frameworks exist either at the infrastructure layer (can AI agents technically connect?) or the visibility layer (does AI mention my brand?), but none bridge the two with a unified commerce-specific scoring model.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    The GEO research community — including the foundational Princeton/IIT Delhi paper "GEO: Generative Engine Optimization"<sup>[21]</sup> — focuses on optimising for LLM citation frequency in response outputs. Tools like Profound track share of voice across 10+ AI platforms. AthenaHQ measures entity signal density. Otterly scores 25+ on-page factors. <strong>None contain a dimension for MCP compatibility, tool-call response structure, or inventory data completeness.</strong>
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        When building the commerce phase of RetrieveAI's 17-phase audit pipeline, we found no existing scoring rubric that answered the question an AI agent actually asks: "Is this product retrievable, parseable, priced, and purchasable through a machine interface?" The Commerce AI Readiness Framework was built to answer that question.
+                                    </p>
+                                </div>
+
+                                <!-- Section 3 -->
+                                <h3 class="mt-5 mb-4">3. The Commerce AI Readiness Framework (CARF)</h3>
+
+                                <p class="text-300 mb-4">
+                                    CARF comprises four dimensions, each contributing 25% to a composite Commerce AI Readiness Score (CARS) between 0 and 100. The equal weighting reflects a deliberate design choice: all four dimensions are necessary conditions for full agentic accessibility, and weakness in any single dimension substantially degrades agent performance regardless of the others.
+                                </p>
+
+                                <!-- CARF Visual: Weighted Bar Chart -->
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <p class="text-400 fs-7 mb-3" style="letter-spacing:.1em;text-transform:uppercase">CARF Dimension Weighting — Commerce AI Readiness Score (CARS)</p>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="text-300 fs-7">D1 · MCP Compatibility</span>
+                                            <span class="text-400 fs-7">25%</span>
+                                        </div>
+                                        <div class="w-100 rounded-pill" style="height:8px;background:rgba(255,255,255,.1)">
+                                            <div class="rounded-pill" style="width:25%;height:100%;background:#e67e22"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="text-300 fs-7">D2 · API Readiness</span>
+                                            <span class="text-400 fs-7">25%</span>
+                                        </div>
+                                        <div class="w-100 rounded-pill" style="height:8px;background:rgba(255,255,255,.1)">
+                                            <div class="rounded-pill" style="width:25%;height:100%;background:#3498db"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="text-300 fs-7">D3 · Tool-Call Compatibility</span>
+                                            <span class="text-400 fs-7">25%</span>
+                                        </div>
+                                        <div class="w-100 rounded-pill" style="height:8px;background:rgba(255,255,255,.1)">
+                                            <div class="rounded-pill" style="width:25%;height:100%;background:#2ecc71"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span class="text-300 fs-7">D4 · Inventory Simulation</span>
+                                            <span class="text-400 fs-7">25%</span>
+                                        </div>
+                                        <div class="w-100 rounded-pill" style="height:8px;background:rgba(255,255,255,.1)">
+                                            <div class="rounded-pill" style="width:25%;height:100%;background:#e74c3c"></div>
+                                        </div>
+                                    </div>
+                                    <p class="text-400 mb-0 mt-3" style="font-size:.7rem">CARS = (D1 + D2 + D3 + D4) / 4 &nbsp;·&nbsp; Each dimension scored 0–100 &nbsp;·&nbsp; Composite 0–100</p>
+                                </div>
+
+                                <h4 class="mt-5 mb-4">Dimension 1: MCP Compatibility (25%)</h4>
+
+                                <p class="text-300 mb-4">
+                                    Measures whether the domain exposes a functional Model Context Protocol endpoint that AI agents can use to discover and retrieve structured product data. MCP is the emerging universal standard for AI-to-data connectivity — <strong>10,000+ public servers</strong> and adopted by every major AI platform as of December 2025.<sup>[3]</sup>
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    High scores require: a discoverable MCP server endpoint, support for product listing and detail tool calls, valid JSON-RPC 2.0 response structure, and schema.org/Product entity alignment in tool responses. Shopify confirmed all 5.6M+ stores expose MCP endpoints by default since Summer 2025.<sup>[6]</sup> Outside Shopify, MCP adoption in e-commerce remains near zero — making this dimension the single most discriminating signal between agentic-ready and agentic-blind operators.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-3 my-3 bg-3">
+                                    <p class="text-400 fs-7 mb-2" style="letter-spacing:.08em;text-transform:uppercase">Scoring signals</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">MCP endpoint present</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Tool discovery valid</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">JSON-RPC 2.0 structure</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Product tool callable</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Schema.org alignment</span>
+                                    </div>
+                                </div>
+
+                                <h4 class="mt-5 mb-4">Dimension 2: API Readiness (25%)</h4>
+
+                                <p class="text-300 mb-4">
+                                    Measures whether the site exposes machine-readable product data endpoints that AI agents can programmatically query without MCP — the pre-MCP layer of agentic accessibility. A site without MCP can still partially serve AI agents through RESTful or GraphQL product APIs.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    High scores require: at least one publicly accessible product data endpoint (e.g. <code>/products.json</code>, <code>/api/products</code>, <code>/graphql</code>), JSON response format with structured product objects, and endpoint density above a minimum threshold. OpenAPI/Swagger specification presence is scored as a strong positive signal. RetrieveAI's API detection phase (Phase 4a) extracts endpoints from JavaScript bundles, network request patterns, link-rel headers, and sitemap metadata.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-3 my-3 bg-3">
+                                    <p class="text-400 fs-7 mb-2" style="letter-spacing:.08em;text-transform:uppercase">Scoring signals</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Product endpoints detected</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">JSON response format</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">OpenAPI spec present</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Endpoint density score</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">GraphQL introspection</span>
+                                    </div>
+                                </div>
+
+                                <h4 class="mt-5 mb-4">Dimension 3: Tool-Call Compatibility (25%)</h4>
+
+                                <p class="text-300 mb-4">
+                                    Measures the structural quality of data returned in tool-call responses — the dimension most frequently overlooked by existing readiness frameworks. An AI agent that successfully calls a product endpoint but receives malformed, incomplete, or poorly typed data cannot make a reliable purchase decision.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    High scores require: consistent parameter typing (string/number/boolean without mixed types), enumerated value sets for categorical fields, complete price fields with currency codes, product identifiers (SKU/GTIN/MPN) present and parseable, and response latency below the agent timeout threshold. Academic research confirms that LLMs grounded in well-structured data achieve <strong>300% higher task accuracy</strong> compared to those relying on unstructured sources.<sup>[20]</sup>
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-3 my-3 bg-3">
+                                    <p class="text-400 fs-7 mb-2" style="letter-spacing:.08em;text-transform:uppercase">Scoring signals</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Consistent param typing</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Enumerated categoricals</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Price + currency complete</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">SKU/GTIN present</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Response latency</span>
+                                    </div>
+                                </div>
+
+                                <h4 class="mt-5 mb-4">Dimension 4: Inventory Simulation (25%)</h4>
+
+                                <p class="text-300 mb-4">
+                                    Measures whether real-time inventory state is machine-accessible — the final link in the agentic purchase chain. An AI agent comparing products needs not just price and description, but current availability, variant-level stock counts, and estimated shipping windows. Without this, agent recommendations are potentially stale at transaction time.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    High scores require: schema.org/Offer with <code>availability</code> property present and up-to-date, variant-level inventory data accessible, and a cart or checkout simulation endpoint that confirms actual purchase feasibility. Sites where availability signals are embedded only in JavaScript-rendered state — invisible to non-headless agents — receive significantly penalised scores. RetrieveAI's rendering gap audit (Phase 3.5) specifically detects this.
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-3 my-3 bg-3">
+                                    <p class="text-400 fs-7 mb-2" style="letter-spacing:.08em;text-transform:uppercase">Scoring signals</p>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Schema.org/Offer present</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Availability property</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Variant-level stock</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">Cart/checkout endpoint</span>
+                                        <span class="border border-1 rounded-2 px-2 py-1 text-400" style="font-size:.7rem">JS-independent state</span>
+                                    </div>
+                                </div>
+
+                                <!-- Section 4: Weighting -->
+                                <h3 class="mt-5 mb-4">4. Weighting Rationale: Why Equal Distribution?</h3>
+
+                                <p class="text-300 mb-4">
+                                    The equal 25/25/25/25 weighting requires explicit justification, as alternative schemes are plausible — one might argue MCP compatibility should carry greater weight given its status as the emerging universal standard.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    We arrived at equal weighting through three arguments tested against RetrieveAI's pipeline behaviour:
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-secondary">
+                                    <strong>The complementarity argument:</strong> The four dimensions are not substitutes but complements. A score of 100 on MCP Compatibility provides no commercial benefit if Inventory Simulation scores 0 — the agent can discover products it cannot verify as available. This interdependence argues against any single dimension dominating the composite.
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-secondary">
+                                    <strong>The temporal stability argument:</strong> MCP is the current dominant standard, but OpenAI's ACP, Google's UCP, and Anthropic's MCP are all gaining commercial adoption simultaneously. An overweight on MCP today risks penalising sites that implement ACP or UCP equally well.
+                                </p>
+
+                                <p class="text-300 mb-4 ps-4 border-start border-2 border-secondary">
+                                    <strong>The pipeline argument:</strong> In RetrieveAI's implementation, each dimension corresponds to a distinct data collection phase. Equal weighting decouples the scoring model from temporal market conditions, making the framework more stable as a long-term benchmark.
+                                </p>
+
+                                <!-- Section 5: Grades -->
+                                <h3 class="mt-5 mb-4">5. Scoring Grades and Benchmark Thresholds</h3>
+
+                                <p class="text-300 mb-4">
+                                    CARF produces a composite CARS between 0 and 100. The following grade thresholds are derived from the score distribution produced by RetrieveAI's commerce phase:
+                                </p>
+
+                                <!-- Grade Table Visual -->
+                                <div class="rounded-3 border border-1 overflow-hidden my-4">
+                                    <div class="p-3 bg-3" style="border-bottom:1px solid rgba(255,255,255,.1)">
+                                        <p class="text-400 mb-0 fs-7" style="letter-spacing:.1em;text-transform:uppercase">CARS Grade Thresholds</p>
+                                    </div>
+                                    <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="rounded-2 px-3 py-1 fw-medium" style="background:rgba(40,167,69,.15);color:#28a745;font-size:.8rem;min-width:90px;text-align:center">A · Excellent</span>
+                                            <span class="text-400" style="font-size:.75rem;min-width:60px">85–100</span>
+                                            <span class="text-300 fs-7">Full agentic accessibility. MCP functional, API complete, tool-call responses well-structured, inventory machine-readable. Ready for autonomous AI agent transactions.</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="rounded-2 px-3 py-1 fw-medium" style="background:rgba(0,123,255,.15);color:#007bff;font-size:.8rem;min-width:90px;text-align:center">B · Good</span>
+                                            <span class="text-400" style="font-size:.75rem;min-width:60px">70–84</span>
+                                            <span class="text-300 fs-7">Substantially agent-accessible. One or two dimension gaps — typically MCP absent or inventory partially JS-dependent. Agents can evaluate products but may face friction at transaction.</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="rounded-2 px-3 py-1 fw-medium" style="background:rgba(255,193,7,.15);color:#ffc107;font-size:.8rem;min-width:90px;text-align:center">C · Adequate</span>
+                                            <span class="text-400" style="font-size:.75rem;min-width:60px">50–69</span>
+                                            <span class="text-300 fs-7">Partial agent accessibility. Functional APIs with poor data quality, or strong schema but no MCP or tool-call surface. Agents can retrieve information but cannot execute transactions reliably.</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="rounded-2 px-3 py-1 fw-medium" style="background:rgba(220,53,69,.15);color:#dc3545;font-size:.8rem;min-width:90px;text-align:center">D · Poor</span>
+                                            <span class="text-400" style="font-size:.75rem;min-width:60px">25–49</span>
+                                            <span class="text-300 fs-7">Minimal agent accessibility. No MCP, no structured API, availability JS-dependent. Agents can read product names but cannot act programmatically.</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <span class="rounded-2 px-3 py-1 fw-medium" style="background:rgba(220,53,69,.25);color:#ff6b6b;font-size:.8rem;min-width:90px;text-align:center">F · Invisible</span>
+                                            <span class="text-400" style="font-size:.75rem;min-width:60px">0–24</span>
+                                            <span class="text-300 fs-7">Effectively agent-invisible. No structured surfaces, no machine-readable endpoints, heavily JS-dependent. AI agents retrieve near-zero actionable product data.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Section 6: Competitive -->
+                                <h3 class="mt-5 mb-4">6. What Existing Tools Miss</h3>
+
+                                <p class="text-300 mb-4">
+                                    Mapping CARF against the most prominent AI visibility tools as of April 2026 reveals a consistent pattern: every existing tool either monitors LLM outputs or audits content quality, but none score all four dimensions of commerce agent accessibility.
+                                </p>
+
+                                <!-- Comparison Table -->
+                                <div class="rounded-3 border border-1 overflow-hidden my-4" style="overflow-x:auto">
+                                    <table class="w-100" style="border-collapse:collapse;font-size:.82rem">
+                                        <thead>
+                                            <tr style="background:rgba(255,255,255,.05)">
+                                                <th class="p-3 text-400" style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;text-align:left;border-bottom:1px solid rgba(255,255,255,.1)">Tool</th>
+                                                <th class="p-3 text-400" style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;text-align:center;border-bottom:1px solid rgba(255,255,255,.1)">MCP Score</th>
+                                                <th class="p-3 text-400" style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;text-align:center;border-bottom:1px solid rgba(255,255,255,.1)">API Ready</th>
+                                                <th class="p-3 text-400" style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;text-align:center;border-bottom:1px solid rgba(255,255,255,.1)">Tool-Call</th>
+                                                <th class="p-3 text-400" style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;text-align:center;border-bottom:1px solid rgba(255,255,255,.1)">Inventory</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="border-left:3px solid #e67e22">
+                                                <td class="p-3 text-300" style="border-bottom:1px solid rgba(255,255,255,.06)"><strong>RetrieveAI CARF</strong></td>
+                                                <td class="p-3 text-center" style="border-bottom:1px solid rgba(255,255,255,.06);color:#28a745;font-weight:600">✓ Full</td>
+                                                <td class="p-3 text-center" style="border-bottom:1px solid rgba(255,255,255,.06);color:#28a745;font-weight:600">✓ Full</td>
+                                                <td class="p-3 text-center" style="border-bottom:1px solid rgba(255,255,255,.06);color:#28a745;font-weight:600">✓ Full</td>
+                                                <td class="p-3 text-center" style="border-bottom:1px solid rgba(255,255,255,.06);color:#28a745;font-weight:600">✓ Full</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-3 text-300" style="border-bottom:1px solid rgba(255,255,255,.06)">Profound</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-3 text-300" style="border-bottom:1px solid rgba(255,255,255,.06)">AthenaHQ</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                                <td class="p-3 text-center" style="border-bottom:1px solid rgba(255,255,255,.06);color:#ffc107">~ Partial</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-3 text-300" style="border-bottom:1px solid rgba(255,255,255,.06)">Conductor</td>
+                                                <td class="p-3 text-center" style="border-bottom:1px solid rgba(255,255,255,.06);color:#ffc107">~ Outbound only</td>
+                                                <td class="p-3 text-center" style="border-bottom:1px solid rgba(255,255,255,.06);color:#ffc107">~ Limited</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-3 text-300" style="border-bottom:1px solid rgba(255,255,255,.06)">LLMClicks.ai</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                                <td class="p-3 text-center" style="border-bottom:1px solid rgba(255,255,255,.06);color:#ffc107">~ Checklist</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                                <td class="p-3 text-center text-400" style="border-bottom:1px solid rgba(255,255,255,.06)">✗</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-3 text-300">Goodie AI</td>
+                                                <td class="p-3 text-center text-400">✗</td>
+                                                <td class="p-3 text-center text-400">✗</td>
+                                                <td class="p-3 text-center text-400">✗</td>
+                                                <td class="p-3 text-center" style="color:#ffc107">~ Schema only</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p class="text-300 mb-4">
+                                    The comparison reveals that no existing commercial tool implements all four CARF dimensions. Conductor is the closest — having built MCP server infrastructure — but this enables Conductor's <em>platform</em> to connect to AI tools, not to score a <em>website's</em> readiness to serve AI agents. These are fundamentally different problems.
+                                </p>
+
+                                <!-- Section 7 -->
+                                <h3 class="mt-5 mb-4">7. The Structured Data–Agent Performance Relationship</h3>
+
+                                <p class="text-300 mb-4">
+                                    A central theoretical assumption of CARF is that structured, machine-readable product data improves AI agent task performance. This assumption has strong empirical support from multiple research streams.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Microsoft Research's "Table Meets LLM" study (WSDM '24, 91 citations) found that HTML-formatted data outperformed CSV/TSV by <strong>6.76%</strong> on structured task benchmarks — demonstrating that format and structure meaningfully affect agent performance.<sup>[24]</sup> Research from data.world found that LLMs grounded in knowledge graphs achieve <strong>300% higher accuracy</strong> versus unstructured text.<sup>[20]</sup>
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    Microsoft's Bing/Copilot team explicitly confirmed at SMX Munich in March 2025 that <strong>"schema markup helps Microsoft's LLMs understand content"</strong> and that freshness of structured data is specifically valued.<sup>[16]</sup> AccuraCast's analysis of 9,000 AI citation sources found that <strong>81% of AI-cited pages include schema markup</strong>.<sup>[14]</sup>
+                                </p>
+
+                                <div class="rounded-3 border border-1 p-4 my-4 bg-3">
+                                    <p class="text-300 mb-0 fst-italic">
+                                        An AI agent that can discover a product via MCP but cannot parse its pricing structure due to poor tool-call response formatting is no more useful than one that cannot connect at all. Commerce AI readiness is a chain; its strength is determined by the weakest link.
+                                    </p>
+                                </div>
+
+                                <!-- Section 8 -->
+                                <h3 class="mt-5 mb-4">8. Implementation in RetrieveAI</h3>
+
+                                <p class="text-300 mb-4">
+                                    The Commerce AI Readiness Framework is fully implemented in <a href="https://retrieveai.akshaydahiya.site/" target="_blank">RetrieveAI</a>'s audit pipeline as Phase 19, following 16 prior phases that establish the content, entity, and structural context required for accurate commerce scoring.
+                                </p>
+
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2"><strong>Phase 3 (Headless Crawl)</strong> — Playwright-based rendering that executes JavaScript to surface dynamically loaded product data, cart states, and API calls invisible to lightweight crawlers. Essential for scoring Dimension 4's JS-independence signal.</li>
+                                    <li class="mb-2"><strong>Phase 3.5 (Rendering Gap Audit)</strong> — Explicit comparison between raw HTML and rendered content. Sites with high rendering gaps on product data receive Dimension 4 penalties regardless of schema quality.</li>
+                                    <li class="mb-2"><strong>Phase 4a (API Detection)</strong> — Extraction of API endpoints from JavaScript bundles, network patterns, and sitemap metadata. Feeds Dimension 2 scoring.</li>
+                                    <li class="mb-2"><strong>Phase 4b (Commerce Data Extraction)</strong> — Extraction of product schema (JSON-LD and microdata), offer data, pricing, availability, SKU, and variant structure. Feeds Dimensions 3 and 4.</li>
+                                    <li><strong>Phase 19 (Commerce Audit)</strong> — Assembly of the four CARF dimension scores into a weighted composite CARS, alongside dimension-level breakdowns and failed service flags.</li>
+                                </ul>
+
+                                <p class="text-300 mb-4">
+                                    Within RetrieveAI's overall AI Visibility Score, the CARS contributes 10% (alongside Entity Strength at 45% and Prompt Coverage at 45%). Commerce readiness is treated as a necessary but insufficient condition for AI visibility — reflecting the current reality that most AI visibility use cases remain informational rather than transactional. As agentic commerce grows, this weighting will be revisited.
+                                </p>
+
+                                <!-- Key Takeaways -->
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-3">
+                                    <h5 class="mb-3">Key Takeaways</h5>
+                                    <ul class="mb-0 text-300">
+                                        <li class="mb-2">No existing AI visibility tool implements all four dimensions of commerce agent accessibility</li>
+                                        <li class="mb-2">MCP compatibility is the single most discriminating signal — near zero adoption outside Shopify</li>
+                                        <li class="mb-2">Tool-call response <em>quality</em> is distinct from endpoint <em>presence</em> and has significant practical consequences</li>
+                                        <li class="mb-2">JavaScript-dependent inventory data is effectively invisible to non-headless AI agents</li>
+                                        <li class="mb-2">Equal 25/25/25/25 weighting reflects complementarity — weakness in any one dimension degrades the whole chain</li>
+                                        <li>McKinsey projects $3–5T global agentic commerce by 2030; CARF provides the first systematic tool for measuring readiness</li>
+                                    </ul>
+                                </div>
+
+                                <h3 class="mt-5 mb-4">Conclusion</h3>
+
+                                <p class="text-300 mb-4">
+                                    The question is no longer whether AI agents will purchase on behalf of consumers. The question is whether your store can be found, understood, and transacted with when they do.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    The Commerce AI Readiness Framework (CARF) presents the first structured scoring model for measuring e-commerce accessibility to autonomous AI agents — built through the implementation of <a href="https://retrieveai.akshaydahiya.site/" target="_blank">RetrieveAI</a>. The framework makes three original contributions: defining MCP compatibility as a first-class readiness dimension, distinguishing tool-call response quality from endpoint presence, and embedding commerce scoring within a multi-phase audit that accounts for JavaScript-dependent content invisible to non-headless agents.
+                                </p>
+
+                                <p class="text-300 mb-4">
+                                    A brand that scores an F on CARS in 2026 will be structurally excluded from the agentic commerce channel as it grows toward Bain's projected 25% of e-commerce. The cost of that exclusion compounds annually.
+                                </p>
+
+                                <!-- References -->
+                                <h4 class="mt-5 mb-3">References</h4>
+                                <ol class="text-400 mb-0" style="font-size:.8rem;line-height:1.8">
+                                    <li class="mb-1">[1] Anthropic. "Introducing the Model Context Protocol." November 25, 2024. anthropic.com/news/model-context-protocol</li>
+                                    <li class="mb-1">[3] Anthropic. "Donating MCP and establishing the Agentic AI Foundation." December 9, 2025. anthropic.com</li>
+                                    <li class="mb-1">[4] Altman, S. (OpenAI). Quoted in TechCrunch, March 26, 2025.</li>
+                                    <li class="mb-1">[6] Shopify. "About Storefront MCP." shopify.dev/docs/apps/build/storefront-mcp</li>
+                                    <li class="mb-1">[7] Stripe / OpenAI. "Agentic Commerce Protocol." September 2025. stripe.com</li>
+                                    <li class="mb-1">[8] Google Developers Blog. "Universal Commerce Protocol (UCP)." developers.googleblog.com</li>
+                                    <li class="mb-1">[9] Gartner. "60% of Brands Will Use Agentic AI." January 15, 2026. gartner.com</li>
+                                    <li class="mb-1">[10] Gartner. "Top Predictions 2026." October 21, 2025. gartner.com</li>
+                                    <li class="mb-1">[11] Bain & Company (via Digital Commerce 360). "Agentic AI: 25% of US e-commerce by 2030." December 2025.</li>
+                                    <li class="mb-1">[12] Salesforce. "Cyber Week 2025." December 5, 2025. salesforce.com</li>
+                                    <li class="mb-1">[13] McKinsey. "The Agentic Commerce Opportunity." October 17, 2025. mckinsey.com</li>
+                                    <li class="mb-1">[14] AccuraCast. "Does Schema Markup Increase Generative Search Visibility?" December 2025. accuracast.com</li>
+                                    <li class="mb-1">[16] Canel, F. (Microsoft). SMX Munich, March 2025. searchengineland.com</li>
+                                    <li class="mb-1">[17] Omnisend Survey. "60% of Americans Use Gen AI for Shopping." July 2025. prnewswire.com</li>
+                                    <li class="mb-1">[20] data.world benchmark. "LLMs + knowledge graphs: 300% higher accuracy." 2023.</li>
+                                    <li class="mb-1">[21] Aggarwal et al. "GEO: Generative Engine Optimization." Princeton/IIT Delhi. arXiv:2311.09735.</li>
+                                    <li class="mb-1">[24] Sui et al. (Microsoft Research). "Table Meets LLM." WSDM '24. arXiv:2305.13062.</li>
+                                </ol>
+
+                            </div>
+
+                            <!-- Author Bio -->
+                            <div class="author-bio mt-5 p-4 rounded-3 border border-1 bg-3">
+                                <div class="d-flex align-items-start gap-4">
+                                    <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 80px; height: 80px;" />
+                                    <div>
+                                        <h5 class="mb-2">Akshay Dahiya</h5>
+                                        <p class="text-400 mb-3">Growth & MarTech Specialist</p>
+                                        <p class="text-300 mb-3">
+                                            Digital marketing professional with 6+ years of experience in SEO, analytics, and marketing automation. Founder of MarAI and passionate about building tools that solve real marketing problems.
+                                        </p>
+                                        <div class="d-flex gap-3">
+                                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" class="text-300">
+                                                <i class="ri-linkedin-fill fs-5"></i>
+                                            </a>
+                                            <a href="https://github.com/dahiyaakshay" target="_blank" class="text-300">
+                                                <i class="ri-github-fill fs-5"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Posts -->
+            <section class="section-related-posts pb-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="mb-5">Related Posts</h3>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-2.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Programmatic-GEO-Pages-at-Scale-Using-Search-Intent-Clustering-+-AI-Validation.html">SEO</a>
+                                        <a href="Programmatic-GEO-Pages-at-Scale-Using-Search-Intent-Clustering-+-AI-Validation.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">February 5, 2026 • 14 min read</span>
+                                    <h6 class="blog-card__title mt-2">Programmatic GEO Pages at Scale Using Search Intent Clustering</h6>
+                                    <p class="blog-card__description fs-7">How to build scalable local SEO pages using AI validation and intent clustering without</p>
+                                    <a href="Programmatic-GEO-Pages-at-Scale-Using-Search-Intent-Clustering-+-AI-Validation.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-3.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Measuring-Visibility-Loss-to-AI-Answers-Using-Click-Through-Suppression-Models.html">Analytics</a>
+                                        <a href="Measuring-Visibility-Loss-to-AI-Answers-Using-Click-Through-Suppression-Models.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">February 1, 2026 • 15 min read</span>
+                                    <h6 class="blog-card__title mt-2">Measuring Visibility Loss to AI Answers Using Click-Through Suppression Models</h6>
+                                    <p class="blog-card__description fs-7">How to quantify traffic loss caused by AI-generated answers and build CFO-level</p>
+                                    <a href="Measuring-Visibility-Loss-to-AI-Answers-Using-Click-Through-Suppression-Models.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="blog-card rounded-top-2">
+                                <div class="blog-card__image position-relative">
+                                    <div class="zoom-img rounded-2 overflow-hidden">
+                                        <img class="w-100" src="assets/imgs/snippet/snippet-4.png" alt="Blog Post" />
+                                        <a class="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="Engineering-Content-for-Citation-by-AI-Search-Engines.html">SEO</a>
+                                        <a href="Engineering-Content-for-Citation-by-AI-Search-Engines.html" class="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                                            <i class="ri-arrow-right-up-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-card__content position-relative text-center mt-4">
+                                    <span class="blog-card__date fs-7">January 27, 2026 • 13 min read</span>
+                                    <h6 class="blog-card__title mt-2">Engineering Content for Citation by AI Search Engines</h6>
+                                    <p class="blog-card__description fs-7">How to optimize content for AI retrieval and citation, not just rankings—turning your pages into trusted sources</p>
+                                    <a href="Engineering-Content-for-Citation-by-AI-Search-Engines.html" class="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="section-footer-2 position-relative">
+                <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                    <div class="text-center">
+                        <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="/">
+                            <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                            <span class="fs-4 ms-2">Akshay</span>
+                        </a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                        <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a class="nav-link" href="/"> Home </a>
+                    <a class="nav-link" href="about.html"> About me </a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a></li>
+                    <a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank"> MarAI </a>
+                    <a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank"> Rank Scan </a>
+                    <a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank"> Retrieve AI </a>
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                    <a class="nav-link" href="/#contact"> Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll top -->
+        <div class="btn-scroll-top style-btn-2">
+            <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+            </svg>
+        </div>
+
+        <!-- Libs JS -->
+<script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/main.js"></script>
+    </body>
+</html>
