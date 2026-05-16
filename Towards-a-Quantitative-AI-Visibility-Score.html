@@ -310,7 +310,7 @@
                                 </div>
 
                                 <p class="text-300 mb-4">
-                                    Peec AI's three-axis model (Visibility / Position / Sentiment) is the most parsimonious and methodologically honest among output-monitoring tools. It makes no claim to simulate retrieval mechanics, instead providing three clean, separately interpretable scores for what can actually be observed from LLM outputs. It also makes a methodologically important distinction that most tools conflate: separating sources the AI "used" (drew on for context) from sources it explicitly "cited" (named in the response) &#8212; a distinction with real significance for understanding where in the retrieval-to-generation pipeline a brand is present or absent.<sup>[8]</sup>
+                                    Peec AI's three-axis model (Visibility / Position / Sentiment) is the most parsimonious and methodologically honest among output-monitoring tools. It makes no claim to simulate retrieval mechanics, instead providing three clean, separately interpretable scores for what can actually be observed from LLM outputs. It also makes a methodologically important distinction that most tools conflate: separating sources the AI "used" (drew on for context) from sources it explicitly "cited" (named in the response) a distinction with real significance for understanding where in the retrieval-to-generation pipeline a brand is present or absent.<sup>[8]</sup>
                                 </p>
 
                                 <div class="rounded-3 border border-1 p-4 my-4 bg-3">
@@ -321,30 +321,30 @@
 
                                 <h3 class="mt-5 mb-4">3. Theoretical Foundations for the Three Dimensions</h3>
 
-                                <h4 class="mt-4 mb-3">3.1 Entity Strength &#8212; the knowledge graph foundation</h4>
+                                <h4 class="mt-4 mb-3">3.1 Entity Strength the knowledge graph foundation</h4>
 
                                 <p class="text-300 mb-4">
-                                    Pan et al.'s 2024 roadmap "Unifying Large Language Models and Knowledge Graphs" demonstrated that KGs provide structured entity knowledge that directly mitigates LLM hallucination and improves factual accuracy.<sup>[9]</sup> The practitioner evidence is striking: an analysis by Wellows found that pages with <strong>15+ recognised entities show 4.8&#215; higher citation probability</strong> (r=0.76 correlation between entity KG density and citation rate).<sup>[10]</sup> ZipTie.dev's reverse-engineering of AI Overview source selection found that only 38% of AI-cited pages rank in Google's organic top 10 &#8212; but pages with strong E-E-A-T signals were cited 2.3&#215; more than rank-#1 pages with weak authority.<sup>[11]</sup>
+                                    Pan et al.'s 2024 roadmap "Unifying Large Language Models and Knowledge Graphs" demonstrated that KGs provide structured entity knowledge that directly mitigates LLM hallucination and improves factual accuracy.<sup>[9]</sup> The practitioner evidence is striking: an analysis by Wellows found that pages with <strong>15+ recognised entities show 4.8&#215; higher citation probability</strong> (r=0.76 correlation between entity KG density and citation rate).<sup>[10]</sup> ZipTie.dev's reverse-engineering of AI Overview source selection found that only 38% of AI-cited pages rank in Google's organic top 10 but pages with strong E-E-A-T signals were cited 2.3&#215; more than rank-#1 pages with weak authority.<sup>[11]</sup>
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    Taher et al.'s 2025 NER survey finds that <strong>80% of top queries to a digital library contained at least one named entity</strong>.<sup>[12]</sup> Wikidata now indexes <strong>121+ million entities</strong> with 1.65 billion semantic triples;<sup>[14]</sup> DBpedia covers 228+ million entities from 111 Wikipedia language editions.<sup>[15]</sup> These serve as the primary coverage reference for entity strength scoring &#8212; entities are scored not just on frequency but on resolvability to recognised knowledge graph nodes.
+                                    Taher et al.'s 2025 NER survey finds that <strong>80% of top queries to a digital library contained at least one named entity</strong>.<sup>[12]</sup> Wikidata now indexes <strong>121+ million entities</strong> with 1.65 billion semantic triples;<sup>[14]</sup> DBpedia covers 228+ million entities from 111 Wikipedia language editions.<sup>[15]</sup> These serve as the primary coverage reference for entity strength scoring entities are scored not just on frequency but on resolvability to recognised knowledge graph nodes.
                                 </p>
 
-                                <h4 class="mt-4 mb-3">3.2 Prompt Coverage &#8212; the retrieval simulation foundation</h4>
+                                <h4 class="mt-4 mb-3">3.2 Prompt Coverage the retrieval simulation foundation</h4>
 
                                 <p class="text-300 mb-4">
-                                    The GEO paper found that citing sources improved visibility by <strong>+115%</strong> for lower-ranked pages &#8212; but keyword stuffing <em>reduced</em> it by 10%.<sup>[4]</sup> Lewis et al.'s foundational 2020 RAG paper established that retrieval recall serves as a hard upper bound on generation performance: a system can only cite what it can retrieve.<sup>[16]</sup> The RAGAS framework formalises four retrieval quality metrics, with Context Recall measuring information completeness of retrieved context.<sup>[5]</sup>
+                                    The GEO paper found that citing sources improved visibility by <strong>+115%</strong> for lower-ranked pages but keyword stuffing <em>reduced</em> it by 10%.<sup>[4]</sup> Lewis et al.'s foundational 2020 RAG paper established that retrieval recall serves as a hard upper bound on generation performance: a system can only cite what it can retrieve.<sup>[16]</sup> The RAGAS framework formalises four retrieval quality metrics, with Context Recall measuring information completeness of retrieved context.<sup>[5]</sup>
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    The Prompt Coverage dimension operationalises these concepts at the <em>site level</em>: generating a prompt universe from the site's own content, computing vector embeddings for both prompts and content chunks, and measuring cosine similarity. The resulting Coverage Score (proportion of generated prompts finding a chunk with cosine similarity &#8805;0.7) and Confidence Index (average similarity quality of matched chunks) combine into the sub-score. The 0.7 threshold aligns with Google Vertex AI's default grounding threshold &#8212; the industry standard for production RAG systems.<sup>[17]</sup>
+                                    The Prompt Coverage dimension operationalises these concepts at the <em>site level</em>: generating a prompt universe from the site's own content, computing vector embeddings for both prompts and content chunks, and measuring cosine similarity. The resulting Coverage Score (proportion of generated prompts finding a chunk with cosine similarity &#8805;0.7) and Confidence Index (average similarity quality of matched chunks) combine into the sub-score. The 0.7 threshold aligns with Google Vertex AI's default grounding threshold the industry standard for production RAG systems.<sup>[17]</sup>
                                 </p>
 
-                                <h4 class="mt-4 mb-3">3.3 Commerce Readiness &#8212; the agentic infrastructure foundation</h4>
+                                <h4 class="mt-4 mb-3">3.3 Commerce Readiness the agentic infrastructure foundation</h4>
 
                                 <p class="text-300 mb-4">
-                                    Gartner projects AI agents will intermediate <strong>90% of B2B purchasing by 2028</strong>, commanding over $15 trillion in purchases.<sup>[18]</sup> McKinsey projects $3&#8211;5 trillion in global agentic commerce sales by 2030.<sup>[19]</sup> Anthropic's Model Context Protocol, released November 2024, reached 10,000+ active servers and 97 million monthly SDK downloads by December 2025, establishing the technical standard for AI-to-commerce connectivity.<sup>[20]</sup> This dimension is weighted at 10% &#8212; explicitly provisional &#8212; reflecting that most AI visibility use cases in 2026 remain informational rather than transactional.
+                                    Gartner projects AI agents will intermediate <strong>90% of B2B purchasing by 2028</strong>, commanding over $15 trillion in purchases.<sup>[18]</sup> McKinsey projects $3&#8211;5 trillion in global agentic commerce sales by 2030.<sup>[19]</sup> Anthropic's Model Context Protocol, released November 2024, reached 10,000+ active servers and 97 million monthly SDK downloads by December 2025, establishing the technical standard for AI-to-commerce connectivity.<sup>[20]</sup> This dimension is weighted at 10% explicitly provisional reflecting that most AI visibility use cases in 2026 remain informational rather than transactional.
                                 </p>
 
                                 <h3 class="mt-5 mb-4">4. The AI Visibility Score: Formula and Weights</h3>
@@ -357,7 +357,7 @@
                                     <p class="text-400 fs-7 mb-4" style="letter-spacing:.1em;text-transform:uppercase">AVS Dimensional Composition</p>
                                     <div class="mb-4">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <div><span class="text-300 fw-medium">Entity Strength</span><span class="text-400 fs-7 ms-2">&#8212; entity density, KG resolvability, co-occurrence</span></div>
+                                            <div><span class="text-300 fw-medium">Entity Strength</span><span class="text-400 fs-7 ms-2"> entity density, KG resolvability, co-occurrence</span></div>
                                             <span class="fw-bold" style="color:#9b59b6;min-width:35px;text-align:right">45%</span>
                                         </div>
                                         <div class="w-100 rounded-pill" style="height:10px;background:rgba(255,255,255,.08)">
@@ -366,7 +366,7 @@
                                     </div>
                                     <div class="mb-4">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <div><span class="text-300 fw-medium">Prompt Coverage</span><span class="text-400 fs-7 ms-2">&#8212; vector retrieval simulation, coverage score, confidence index</span></div>
+                                            <div><span class="text-300 fw-medium">Prompt Coverage</span><span class="text-400 fs-7 ms-2"> vector retrieval simulation, coverage score, confidence index</span></div>
                                             <span class="fw-bold" style="color:#27ae60;min-width:35px;text-align:right">45%</span>
                                         </div>
                                         <div class="w-100 rounded-pill" style="height:10px;background:rgba(255,255,255,.08)">
@@ -375,7 +375,7 @@
                                     </div>
                                     <div class="mb-2">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <div><span class="text-300 fw-medium">Commerce Readiness</span><span class="text-400 fs-7 ms-2">&#8212; MCP compatibility, API exposure, offer schema, inventory state</span></div>
+                                            <div><span class="text-300 fw-medium">Commerce Readiness</span><span class="text-400 fs-7 ms-2"> MCP compatibility, API exposure, offer schema, inventory state</span></div>
                                             <span class="fw-bold" style="color:#e67e22;min-width:35px;text-align:right">10%</span>
                                         </div>
                                         <div class="w-100 rounded-pill" style="height:10px;background:rgba(255,255,255,.08)">
@@ -394,17 +394,17 @@
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    Entity Strength and Prompt Coverage receive equal weighting because they are complementary rather than redundant. A site can have high entity strength (well-written, entity-rich content) but poor prompt coverage (content misaligned with how users actually query AI). The inverse is equally common: broad topic coverage with shallow entity depth. Moz's Domain Authority 2.0 transition from linear to neural weighting (combining 40+ signals, achieving r=0.9+ with competitor metrics) demonstrates that complementary signals are best combined through learned weights &#8212; the AVS's linear combination is a deliberate simplification for interpretability.<sup>[23]</sup>
+                                    Entity Strength and Prompt Coverage receive equal weighting because they are complementary rather than redundant. A site can have high entity strength (well-written, entity-rich content) but poor prompt coverage (content misaligned with how users actually query AI). The inverse is equally common: broad topic coverage with shallow entity depth. Moz's Domain Authority 2.0 transition from linear to neural weighting (combining 40+ signals, achieving r=0.9+ with competitor metrics) demonstrates that complementary signals are best combined through learned weights the AVS's linear combination is a deliberate simplification for interpretability.<sup>[23]</sup>
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    Commerce Readiness is weighted at 10% because Pew's behavioral study confirms AI is more often replacing the need to visit a site than replacing e-commerce transactions &#8212; users "ended sessions after AI" at 26% vs 16% for traditional search.<sup>[3]</sup> For e-commerce verticals specifically, implementations of the AVS framework should re-weight Commerce Readiness toward 25%.
+                                    Commerce Readiness is weighted at 10% because Pew's behavioral study confirms AI is more often replacing the need to visit a site than replacing e-commerce transactions users "ended sessions after AI" at 26% vs 16% for traditional search.<sup>[3]</sup> For e-commerce verticals specifically, implementations of the AVS framework should re-weight Commerce Readiness toward 25%.
                                 </p>
 
                                 <h3 class="mt-5 mb-4">5. The Scope Coverage Multiplier</h3>
 
                                 <p class="text-300 mb-4">
-                                    A score derived from a single-page audit should not be directly comparable to a full-site audit of 500 pages. Cloudflare's analysis found that AI bots are less likely to reach 3rd- and 4th-level pages,<sup>[25]</sup> and Thiel & Kretschmer's FAccT 2024 paper found that Common Crawl URL discovery applies a PageRank-like filter to what enters LLM training data &#8212; systematically favouring comprehensively linked domains.<sup>[24]</sup>
+                                    A score derived from a single-page audit should not be directly comparable to a full-site audit of 500 pages. Cloudflare's analysis found that AI bots are less likely to reach 3rd- and 4th-level pages,<sup>[25]</sup> and Thiel & Kretschmer's FAccT 2024 paper found that Common Crawl URL discovery applies a PageRank-like filter to what enters LLM training data systematically favouring comprehensively linked domains.<sup>[24]</sup>
                                 </p>
 
                                 <div class="rounded-3 border border-1 overflow-hidden my-4">
@@ -441,7 +441,7 @@
 
                                 <div class="rounded-3 border border-1 overflow-hidden my-4">
                                     <div class="p-3 bg-3" style="border-bottom:1px solid rgba(255,255,255,.1)">
-                                        <p class="text-400 mb-0 fs-7" style="letter-spacing:.1em;text-transform:uppercase">AI Visibility Score &#8212; Grade Thresholds</p>
+                                        <p class="text-400 mb-0 fs-7" style="letter-spacing:.1em;text-transform:uppercase">AI Visibility Score Grade Thresholds</p>
                                     </div>
                                     <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
                                         <div class="d-flex align-items-start gap-3">
@@ -452,7 +452,7 @@
                                     <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
                                         <div class="d-flex align-items-start gap-3">
                                             <span class="rounded-2 flex-shrink-0 d-block text-center px-2 py-1 fw-medium" style="background:rgba(0,123,255,.15);color:#007bff;font-size:.8rem;min-width:90px">B &#183; 70&#8211;84</span>
-                                            <span class="text-300 fs-7">Good AI visibility. One or two dimension gaps &#8212; typically either entity co-occurrence weak or prompt coverage patchy on long-tail queries. Targeted optimisation would yield measurable gains.</span>
+                                            <span class="text-300 fs-7">Good AI visibility. One or two dimension gaps typically either entity co-occurrence weak or prompt coverage patchy on long-tail queries. Targeted optimisation would yield measurable gains.</span>
                                         </div>
                                     </div>
                                     <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
@@ -478,7 +478,7 @@
                                 <h3 class="mt-5 mb-4">7. Composite Scoring Precedents</h3>
 
                                 <p class="text-300 mb-4">
-                                    Page and Brin's PageRank (Stanford, 1999) established that a quality score should combine signal quantity with signal quality in a single recursive formula.<sup>[31]</sup> The FICO credit score demonstrates that fixed-weight combination of heterogeneous signal types can produce a universally adopted composite &#8212; weighted by empirical default prediction, not theoretical elegance.<sup>[21]</sup>
+                                    Page and Brin's PageRank (Stanford, 1999) established that a quality score should combine signal quantity with signal quality in a single recursive formula.<sup>[31]</sup> The FICO credit score demonstrates that fixed-weight combination of heterogeneous signal types can produce a universally adopted composite weighted by empirical default prediction, not theoretical elegance.<sup>[21]</sup>
                                 </p>
 
                                 <p class="text-300 mb-4">
@@ -488,7 +488,7 @@
                                 <h3 class="mt-5 mb-4">8. Limitations and Future Work</h3>
 
                                 <p class="text-300 mb-4">
-                                    The 45/45/10 weighting is theoretically motivated but not yet empirically validated against actual AI citation outcomes at scale. Wan, Wallace and Klein (ACL 2024) found that LLMs rely heavily on query relevance but largely ignore stylistic features &#8212; suggesting that specific Entity Strength sub-signals reflecting content clarity may deserve higher weight than richness signals.<sup>[33]</sup>
+                                    The 45/45/10 weighting is theoretically motivated but not yet empirically validated against actual AI citation outcomes at scale. Wan, Wallace and Klein (ACL 2024) found that LLMs rely heavily on query relevance but largely ignore stylistic features suggesting that specific Entity Strength sub-signals reflecting content clarity may deserve higher weight than richness signals.<sup>[33]</sup>
                                 </p>
 
                                 <p class="text-300 mb-4">
@@ -496,17 +496,17 @@
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    Algaba et al. (NAACL 2025) found that LLMs reinforce citation bias toward recent, highly cited sources, with only 8.78% of generated references matching ground truth.<sup>[35]</sup> This suggests the AVS score is not static &#8212; content freshness decay and volatility tracking should be incorporated as a fourth component. RetrieveAI's snapshot and volatility alert pipeline captures this dimension in practice but it is not yet included in the composite formula.
+                                    Algaba et al. (NAACL 2025) found that LLMs reinforce citation bias toward recent, highly cited sources, with only 8.78% of generated references matching ground truth.<sup>[35]</sup> This suggests the AVS score is not static content freshness decay and volatility tracking should be incorporated as a fourth component. RetrieveAI's snapshot and volatility alert pipeline captures this dimension in practice but it is not yet included in the composite formula.
                                 </p>
 
                                 <div class="rounded-3 border border-1 p-4 my-5 bg-3">
                                     <h5 class="mb-3">Key Takeaways</h5>
                                     <ul class="mb-0 text-300">
-                                        <li class="mb-2">No existing tool produces a weighted composite AI visibility score grounded in retrieval mechanics &#8212; all seven major platforms measure LLM outputs, not input-side retrievability</li>
+                                        <li class="mb-2">No existing tool produces a weighted composite AI visibility score grounded in retrieval mechanics all seven major platforms measure LLM outputs, not input-side retrievability</li>
                                         <li class="mb-2">Peec AI's three-axis model (Visibility / Position / Sentiment) is the most methodologically honest among output-monitoring tools, making the important distinction between "used" and "cited" sources</li>
-                                        <li class="mb-2">Entity Strength and Prompt Coverage receive equal 45% weights because they are complementary &#8212; a site can have high entity quality with poor query coverage, or broad coverage with shallow entity depth</li>
+                                        <li class="mb-2">Entity Strength and Prompt Coverage receive equal 45% weights because they are complementary a site can have high entity quality with poor query coverage, or broad coverage with shallow entity depth</li>
                                         <li class="mb-2">The Scope Multiplier (0.70&#8211;1.00) corrects a real bias: single-page audits systematically underestimate domain-wide AI visibility</li>
-                                        <li class="mb-2">The 10% Commerce Readiness weight is explicitly provisional &#8212; as agentic commerce matures, this should grow toward 25% for e-commerce verticals</li>
+                                        <li class="mb-2">The 10% Commerce Readiness weight is explicitly provisional as agentic commerce matures, this should grow toward 25% for e-commerce verticals</li>
                                         <li>Established precedents (PageRank, FICO, Domain Authority 2.0, Core Web Vitals, Balanced Scorecard) validate multi-dimensional composite scoring; the AVS applies this tradition to AI visibility for the first time</li>
                                     </ul>
                                 </div>
@@ -514,15 +514,15 @@
                                 <h3 class="mt-5 mb-4">Conclusion</h3>
 
                                 <p class="text-300 mb-4">
-                                    The AI visibility measurement landscape is crowded with tools answering the wrong question. "How often does ChatGPT mention our brand?" is an important data point &#8212; Peec AI, Profound, Semrush and others answer it well. But it is a consequence, not a cause. The more actionable question is: "Is our content structured so that AI retrieval systems can find, extract, and represent it across the likely query space for our domain?"
+                                    The AI visibility measurement landscape is crowded with tools answering the wrong question. "How often does ChatGPT mention our brand?" is an important data point Peec AI, Profound, Semrush and others answer it well. But it is a consequence, not a cause. The more actionable question is: "Is our content structured so that AI retrieval systems can find, extract, and represent it across the likely query space for our domain?"
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    The AI Visibility Score framework &#8212; built through the implementation of <a href="https://retrieveai.akshaydahiya.site/" target="_blank">RetrieveAI</a> &#8212; proposes the first published answer to that second question: a three-dimensional weighted composite (Entity Strength 45%, Prompt Coverage 45%, Commerce Readiness 10%) modulated by a Scope Coverage Multiplier, producing a single auditable 0&#8211;100 number with a clear lineage to PageRank, FICO, Domain Authority, and the Balanced Scorecard.
+                                    The AI Visibility Score framework &#8212; built through the implementation of <a href="https://retrieveai.akshaydahiya.site/" target="_blank">RetrieveAI</a> proposes the first published answer to that second question: a three-dimensional weighted composite (Entity Strength 45%, Prompt Coverage 45%, Commerce Readiness 10%) modulated by a Scope Coverage Multiplier, producing a single auditable 0&#8211;100 number with a clear lineage to PageRank, FICO, Domain Authority, and the Balanced Scorecard.
                                 </p>
 
                                 <p class="text-300 mb-0">
-                                    The weights are theoretically motivated but empirically provisional. The framework's value is not that it produces the definitive answer, but that it produces a <em>specific, falsifiable, reproducible</em> answer &#8212; one that future research can validate, challenge, and refine. That is what distinguishes a framework from a dashboard.
+                                    The weights are theoretically motivated but empirically provisional. The framework's value is not that it produces the definitive answer, but that it produces a <em>specific, falsifiable, reproducible</em> answer one that future research can validate, challenge, and refine. That is what distinguishes a framework from a dashboard.
                                 </p>
 
                                 <h4 class="mt-5 mb-3">References</h4>
@@ -540,7 +540,7 @@
                                     <li class="mb-1">[11] ZipTie.dev (2025). "Google AI Overviews Source Selection." ziptie.dev/blog/google-ai-overviews-source-selection/</li>
                                     <li class="mb-1">[12] Taher, H. et al. (2025). "Recent Advances in Named Entity Recognition." arXiv:2401.10825v3</li>
                                     <li class="mb-1">[14] Wikidata (2025). 121M+ entities, 1.65B triples. wikidata.org</li>
-                                    <li class="mb-1">[15] Lehmann, J. et al. (2015). "DBpedia &#8212; A Large-scale, Multilingual Knowledge Base." Semantic Web Journal, 6(2), 167&#8211;195.</li>
+                                    <li class="mb-1">[15] Lehmann, J. et al. (2015). "DBpedia A Large-scale, Multilingual Knowledge Base." Semantic Web Journal, 6(2), 167&#8211;195.</li>
                                     <li class="mb-1">[16] Lewis, P. et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks." NeurIPS 33. arXiv:2005.11401</li>
                                     <li class="mb-1">[17] Google Vertex AI Documentation. "Dynamic retrieval." Default grounding threshold: 0.7. cloud.google.com/vertex-ai</li>
                                     <li class="mb-1">[18] Gartner (2025). "Top Predictions for IT Organizations in 2026 and Beyond." October 21, 2025.</li>
