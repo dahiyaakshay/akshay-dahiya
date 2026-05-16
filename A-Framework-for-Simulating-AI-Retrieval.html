@@ -151,7 +151,7 @@
                                 A Framework for Simulating AI Retrieval to <span class="text-300">Measure Content Visibility_</span>
                             </h1>
                             <p class="fs-5 text-300 mb-4">
-                                A technical methodology for simulating how LLM retrieval pipelines find, extract, and score web content &mdash; developed through the construction of an AI visibility audit system.
+                                A technical methodology for simulating how LLM retrieval pipelines find, extract, and score web content developed through the construction of an AI visibility audit system.
                             </p>
                             <div class="d-flex align-items-center justify-content-center gap-3 mb-4">
                                 <img loading="lazy" src="assets/imgs/home-page-2/template/favicon.svg" alt="Author" class="rounded-circle" style="width: 40px; height: 40px;" />
@@ -185,11 +185,11 @@
                             <div class="blog-content">
 
                                 <p class="text-300 fs-5 mb-4">
-                                    Every major AI search system &mdash; Google AI Mode, Perplexity, ChatGPT Search, Microsoft Copilot &mdash; shares a common foundation: a retrieval pipeline that selects candidate content before a language model generates a single word. Yet no published methodology exists for <em>simulating</em> that retrieval pipeline against a website&rsquo;s own content in order to measure how visible that content actually is to AI systems.
+                                    Every major AI search system Google AI Mode, Perplexity, ChatGPT Search, Microsoft Copilot shares a common foundation: a retrieval pipeline that selects candidate content before a language model generates a single word. Yet no published methodology exists for <em>simulating</em> that retrieval pipeline against a website&rsquo;s own content in order to measure how visible that content actually is to AI systems.
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    This paper describes a 22-phase pipeline for doing exactly that. The pipeline crawls a domain, audits the gap between static and JavaScript-rendered content, extracts structured and unstructured content signals, generates a prompt universe across six intent categories, and runs a hybrid lexical-semantic retrieval simulation against that prompt universe. The result is a Coverage Score and Confidence Index that together measure a site&rsquo;s <em>retrievability</em> &mdash; not what AI systems say about it, but whether AI systems could reliably find it.
+                                    This paper describes a 22-phase pipeline for doing exactly that. The pipeline crawls a domain, audits the gap between static and JavaScript-rendered content, extracts structured and unstructured content signals, generates a prompt universe across six intent categories, and runs a hybrid lexical-semantic retrieval simulation against that prompt universe. The result is a Coverage Score and Confidence Index that together measure a site&rsquo;s <em>retrievability</em> not what AI systems say about it, but whether AI systems could reliably find it.
                                 </p>
 
                                 <p class="text-300 mb-4">
@@ -212,7 +212,7 @@
                                 <h3 class="mt-5 mb-4">1. The Gap This Framework Fills</h3>
 
                                 <p class="text-300 mb-4">
-                                    The RAG evaluation literature addresses a fundamentally different problem from the one this framework solves. RAGAS (Es et al., EACL 2024) evaluates how well a <em>deployed RAG system</em> retrieves and utilises context &mdash; faithfulness, context precision, context recall.<sup>[1]</sup> ARES (Saad-Falcon et al., NAACL 2024) fine-tunes LLM judges to evaluate retrieval quality for a specific corpus and query set.<sup>[2]</sup> The BEIR benchmark (Thakur et al., NeurIPS 2021) evaluates retrieval model performance across 18 heterogeneous datasets.<sup>[3]</sup> All three evaluate a <em>system&rsquo;s</em> retrieval quality given a known corpus.
+                                    The RAG evaluation literature addresses a fundamentally different problem from the one this framework solves. RAGAS (Es et al., EACL 2024) evaluates how well a <em>deployed RAG system</em> retrieves and utilises context faithfulness, context precision, context recall.<sup>[1]</sup> ARES (Saad-Falcon et al., NAACL 2024) fine-tunes LLM judges to evaluate retrieval quality for a specific corpus and query set.<sup>[2]</sup> The BEIR benchmark (Thakur et al., NeurIPS 2021) evaluates retrieval model performance across 18 heterogeneous datasets.<sup>[3]</sup> All three evaluate a <em>system&rsquo;s</em> retrieval quality given a known corpus.
                                 </p>
 
                                 <p class="text-300 mb-4">
@@ -220,12 +220,12 @@
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    The closest prior work is Penha et al.&rsquo;s controllable query generation study (WWW 2023), which found that machine-learned retrieval systems exhibit significant retrievability bias &mdash; the majority of a corpus remains effectively invisible because the same small set of documents surface for most queries.<sup>[4]</sup> Kang et al.&rsquo;s CCQGen (WSDM 2025) introduced concept-coverage-based query generation to ensure comprehensive evaluation of scientific documents.<sup>[5]</sup> Neither applies these ideas to web content retrieval simulation as a site-level visibility measurement tool.
+                                    The closest prior work is Penha et al.&rsquo;s controllable query generation study (WWW 2023), which found that machine-learned retrieval systems exhibit significant retrievability bias the majority of a corpus remains effectively invisible because the same small set of documents surface for most queries.<sup>[4]</sup> Kang et al.&rsquo;s CCQGen (WSDM 2025) introduced concept-coverage-based query generation to ensure comprehensive evaluation of scientific documents.<sup>[5]</sup> Neither applies these ideas to web content retrieval simulation as a site-level visibility measurement tool.
                                 </p>
 
                                 <div class="rounded-3 border border-1 p-4 my-4 bg-3">
                                     <p class="text-300 mb-0 fst-italic">
-                                        Gao et al. (EMNLP 2023) established that retrieval recall is a hard upper bound on LLM citation performance: a system can only cite what it retrieves.<sup>[6]</sup> This framework measures that ceiling &mdash; the maximum possible citation visibility a site can achieve given the retrievability of its content.
+                                        Gao et al. (EMNLP 2023) established that retrieval recall is a hard upper bound on LLM citation performance: a system can only cite what it retrieves.<sup>[6]</sup> This framework measures that ceiling the maximum possible citation visibility a site can achieve given the retrievability of its content.
                                     </p>
                                 </div>
 
@@ -241,7 +241,7 @@
                                         <div class="rounded-3 border border-1 p-3 text-center bg-3 h-100">
                                             <div class="fs-2 fw-bold text-secondary-2 mb-1">12%</div>
                                             <div class="text-400 fs-7">of AI-cited URLs also appear in Google&rsquo;s top 10</div>
-                                            <div class="text-400 mt-1" style="font-size:.65rem">Ahrefs, 2025 &mdash; 15,000 prompts</div>
+                                            <div class="text-400 mt-1" style="font-size:.65rem">Ahrefs, 2025 15,000 prompts</div>
                                         </div>
                                     </div>
                                     <div class="col-6 col-lg-3">
@@ -281,49 +281,49 @@
                                 <!-- Pipeline diagram -->
                                 <div class="rounded-3 border border-1 overflow-hidden my-5">
                                     <div class="p-3 bg-3" style="border-bottom:1px solid rgba(255,255,255,.1)">
-                                        <p class="text-400 mb-0 fs-7" style="letter-spacing:.1em;text-transform:uppercase">22-Phase Pipeline &mdash; Functional Groups</p>
+                                        <p class="text-400 mb-0 fs-7" style="letter-spacing:.1em;text-transform:uppercase">22-Phase Pipeline Functional Groups</p>
                                     </div>
                                     <div class="p-3">
                                         <div class="row g-2">
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="p-3 rounded-2 h-100" style="background:rgba(52,152,219,.08);border:1px solid rgba(52,152,219,.25)">
-                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#3498db">GROUP A &mdash; Discovery &amp; Context (Ph. 1&ndash;2)</div>
+                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#3498db">GROUP A Discovery &amp; Context (Ph. 1&ndash;2)</div>
                                                     <div class="text-400" style="font-size:.75rem">Sitemap / robots.txt URL discovery &rarr; intelligent context bundle selection</div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="p-3 rounded-2 h-100" style="background:rgba(52,152,219,.08);border:1px solid rgba(52,152,219,.25)">
-                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#3498db">GROUP B &mdash; Crawl &amp; Rendering (Ph. 3&ndash;6)</div>
+                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#3498db">GROUP B Crawl &amp; Rendering (Ph. 3&ndash;6)</div>
                                                     <div class="text-400" style="font-size:.75rem">JS-rendered crawl &rarr; rendering gap audit &rarr; interaction audit &rarr; navigation crawlability</div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="p-3 rounded-2 h-100" style="background:rgba(39,174,96,.08);border:1px solid rgba(39,174,96,.25)">
-                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#27ae60">GROUP C &mdash; Extraction (Ph. 7&ndash;9)</div>
+                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#27ae60">GROUP C Extraction (Ph. 7&ndash;9)</div>
                                                     <div class="text-400" style="font-size:.75rem">Structured metadata &rarr; API endpoint detection &rarr; commerce schema extraction</div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="p-3 rounded-2 h-100" style="background:rgba(39,174,96,.08);border:1px solid rgba(39,174,96,.25)">
-                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#27ae60">GROUP D &mdash; Intelligence (Ph. 10&ndash;13)</div>
+                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#27ae60">GROUP D Intelligence (Ph. 10&ndash;13)</div>
                                                     <div class="text-400" style="font-size:.75rem">Prompt universe generation &rarr; brand monitoring &rarr; brand perception &rarr; entity extraction</div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="p-3 rounded-2 h-100" style="background:rgba(155,89,182,.08);border:1px solid rgba(155,89,182,.25)">
-                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#9b59b6">GROUP E &mdash; Analysis (Ph. 14&ndash;17)</div>
+                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#9b59b6">GROUP E Analysis (Ph. 14&ndash;17)</div>
                                                     <div class="text-400" style="font-size:.75rem">Technical / SKU / extractability scores &rarr; gap detection &rarr; section generation &rarr; authority signals</div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="p-3 rounded-2 h-100" style="background:rgba(230,126,34,.08);border:1px solid rgba(230,126,34,.25)">
-                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#e67e22">GROUP F &mdash; Simulation &amp; Scoring (Ph. 19&ndash;21)</div>
+                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#e67e22">GROUP F Simulation &amp; Scoring (Ph. 19&ndash;21)</div>
                                                     <div class="text-400" style="font-size:.75rem">Hybrid retrieval simulation &rarr; composite score &rarr; commerce readiness</div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-4">
                                                 <div class="p-3 rounded-2 h-100" style="background:rgba(231,76,60,.08);border:1px solid rgba(231,76,60,.25)">
-                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#e74c3c">GROUP G &mdash; Continuity (Ph. 22)</div>
+                                                    <div class="fw-medium text-300 mb-2" style="font-size:.82rem;color:#e74c3c">GROUP G Continuity (Ph. 22)</div>
                                                     <div class="text-400" style="font-size:.75rem">Snapshot &rarr; delta comparison &rarr; volatility alerts</div>
                                                 </div>
                                             </div>
@@ -335,11 +335,11 @@
                                 <h3 class="mt-5 mb-4">4. Discovery and Context Selection (Phases 1&ndash;2)</h3>
 
                                 <p class="text-300 mb-4">
-                                    The pipeline opens with URL discovery through sitemap parsing, with a fallback to robots.txt crawl directives when sitemaps are absent or malformed. The output is a candidate URL list bounded by scope type &mdash; from a single page up to a full-site crawl.
+                                    The pipeline opens with URL discovery through sitemap parsing, with a fallback to robots.txt crawl directives when sitemaps are absent or malformed. The output is a candidate URL list bounded by scope type from a single page up to a full-site crawl.
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    Phase 2 introduces an intelligent context selection step that distinguishes this pipeline from naive crawl-everything approaches. Rather than processing all discovered URLs equally, the system constructs a curated context bundle: primary URLs designated by the audit scope, supplemented by semantically related pages &mdash; the site&rsquo;s homepage, about page, related product or category siblings, and associated blog content. This bundle-based approach reflects how AI retrieval systems actually build context: not from isolated pages but from the semantic neighbourhood around a domain&rsquo;s primary content.
+                                    Phase 2 introduces an intelligent context selection step that distinguishes this pipeline from naive crawl-everything approaches. Rather than processing all discovered URLs equally, the system constructs a curated context bundle: primary URLs designated by the audit scope, supplemented by semantically related pages the site&rsquo;s homepage, about page, related product or category siblings, and associated blog content. This bundle-based approach reflects how AI retrieval systems actually build context: not from isolated pages but from the semantic neighbourhood around a domain&rsquo;s primary content.
                                 </p>
 
                                 <p class="text-300 mb-4">
@@ -354,17 +354,17 @@
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    Phase 4 &mdash; the rendering gap audit &mdash; is one of the most practically significant phases in the pipeline. It systematically compares the raw pre-JavaScript HTML against the fully rendered DOM, quantifying what proportion of a page&rsquo;s content exists only after script execution. The audit specifically detects JS-only text content, JS-only headings, JS-only product schema markup, JS-dependent checkout flows, and third-party script injections.
+                                    Phase 4 the rendering gap audit is one of the most practically significant phases in the pipeline. It systematically compares the raw pre-JavaScript HTML against the fully rendered DOM, quantifying what proportion of a page&rsquo;s content exists only after script execution. The audit specifically detects JS-only text content, JS-only headings, JS-only product schema markup, JS-dependent checkout flows, and third-party script injections.
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    The practical stakes are high. Google&rsquo;s documentation confirms a two-phase crawl-then-render process with variable delays between phases.<sup>[12]</sup> AI crawlers &mdash; GPTBot, ClaudeBot, PerplexityBot &mdash; do not execute JavaScript at all: analysis of half a billion GPTBot fetches found zero evidence of script execution.<sup>[13]</sup> Any content that depends on JavaScript execution is permanently invisible to these crawlers.
+                                    The practical stakes are high. Google&rsquo;s documentation confirms a two-phase crawl-then-render process with variable delays between phases.<sup>[12]</sup> AI crawlers GPTBot, ClaudeBot, PerplexityBot do not execute JavaScript at all: analysis of half a billion GPTBot fetches found zero evidence of script execution.<sup>[13]</sup> Any content that depends on JavaScript execution is permanently invisible to these crawlers.
                                 </p>
 
                                 <!-- Rendering gap visual -->
                                 <div class="rounded-3 border border-1 overflow-hidden my-4">
                                     <div class="p-3 bg-3" style="border-bottom:1px solid rgba(255,255,255,.1)">
-                                        <p class="text-400 mb-0 fs-7" style="letter-spacing:.1em;text-transform:uppercase">Phase 4 &mdash; What Each Agent Class Sees</p>
+                                        <p class="text-400 mb-0 fs-7" style="letter-spacing:.1em;text-transform:uppercase">Phase 4 What Each Agent Class Sees</p>
                                     </div>
                                     <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
                                         <div class="d-flex align-items-start gap-3">
@@ -381,13 +381,13 @@
                                     <div class="p-3">
                                         <div class="d-flex align-items-start gap-3">
                                             <span class="rounded-2 px-3 py-1 fw-medium flex-shrink-0" style="background:rgba(220,53,69,.15);color:#dc3545;font-size:.8rem;min-width:145px;text-align:center">GPTBot / ClaudeBot</span>
-                                            <span class="text-300 fs-7">Raw HTML only &mdash; permanently. No JavaScript execution at any stage. Product inventory, pricing, dynamic descriptions, variant data, and any content populated by client-side frameworks is completely invisible.</span>
+                                            <span class="text-300 fs-7">Raw HTML only permanently. No JavaScript execution at any stage. Product inventory, pricing, dynamic descriptions, variant data, and any content populated by client-side frameworks is completely invisible.</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <p class="text-300 mb-4">
-                                    Phase 5 extends the rendering audit into interactive territory. Using a headless browser, the pipeline attempts to activate interactive elements &mdash; accordions, tabs, modals, variant selectors &mdash; and records whether substantive content appears behind those interactions. This matters because AI agents cannot click; they receive only the initial page state. Phase 5 flags pages where significant product or informational content is hidden behind interactive states that agents will never reach.
+                                    Phase 5 extends the rendering audit into interactive territory. Using a headless browser, the pipeline attempts to activate interactive elements accordions, tabs, modals, variant selectors and records whether substantive content appears behind those interactions. This matters because AI agents cannot click; they receive only the initial page state. Phase 5 flags pages where significant product or informational content is hidden behind interactive states that agents will never reach.
                                 </p>
 
                                 <p class="text-300 mb-4">
@@ -423,7 +423,7 @@
                                 <h4 class="mt-4 mb-3">Phase 10: Intent-Classified Prompt Universe Generation</h4>
 
                                 <p class="text-300 mb-4">
-                                    Phase 10 generates the prompt universe &mdash; the benchmark that all subsequent retrieval simulation is measured against. The site&rsquo;s content is summarised and passed to a language model, which generates up to 200 realistic queries that a user might ask an AI system about the brand or domain. Crucially, these queries are classified across six intent categories: informational, navigational, transactional, commercial, local, and other.
+                                    Phase 10 generates the prompt universe the benchmark that all subsequent retrieval simulation is measured against. The site&rsquo;s content is summarised and passed to a language model, which generates up to 200 realistic queries that a user might ask an AI system about the brand or domain. Crucially, these queries are classified across six intent categories: informational, navigational, transactional, commercial, local, and other.
                                 </p>
 
                                 <p class="text-300 mb-4">
@@ -451,7 +451,7 @@
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    This Wikidata verification step is significant. Pan et al.&rsquo;s 2024 roadmap &ldquo;Unifying Large Language Models and Knowledge Graphs&rdquo; demonstrated that structured entity knowledge from knowledge graphs directly mitigates LLM hallucination and improves factual accuracy.<sup>[19]</sup> An entity that resolves to a Wikidata node &mdash; which indexes 121+ million entities with 1.65 billion semantic triples &mdash; is more likely to be part of an AI system&rsquo;s structured world model than an unresolvable entity.<sup>[20]</sup>
+                                    This Wikidata verification step is significant. Pan et al.&rsquo;s 2024 roadmap &ldquo;Unifying Large Language Models and Knowledge Graphs&rdquo; demonstrated that structured entity knowledge from knowledge graphs directly mitigates LLM hallucination and improves factual accuracy.<sup>[19]</sup> An entity that resolves to a Wikidata node which indexes 121+ million entities with 1.65 billion semantic triples is more likely to be part of an AI system&rsquo;s structured world model than an unresolvable entity.<sup>[20]</sup>
                                 </p>
 
                                 <!-- Section 8 -->
@@ -464,7 +464,7 @@
                                 <!-- Analyser visual -->
                                 <div class="rounded-3 border border-1 overflow-hidden my-4">
                                     <div class="p-3 bg-3" style="border-bottom:1px solid rgba(255,255,255,.1)">
-                                        <p class="text-400 mb-0 fs-7" style="letter-spacing:.1em;text-transform:uppercase">Phase 14 &mdash; Three Concurrent Sub-Analysers</p>
+                                        <p class="text-400 mb-0 fs-7" style="letter-spacing:.1em;text-transform:uppercase">Phase 14 Three Concurrent Sub-Analysers</p>
                                     </div>
                                     <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
                                         <div class="d-flex align-items-start gap-3">
@@ -475,7 +475,7 @@
                                     <div class="p-3" style="border-bottom:1px solid rgba(255,255,255,.08)">
                                         <div class="d-flex align-items-start gap-3">
                                             <span class="rounded-2 px-3 py-1 fw-medium flex-shrink-0" style="background:rgba(39,174,96,.15);color:#27ae60;font-size:.8rem;min-width:140px;text-align:center">SKU Analysis</span>
-                                            <span class="text-300 fs-7">15 signals across five dimensions: product identity, pricing completeness, availability signalling, media quality, and social proof. Runs only on pages containing commerce schema from Phase 9. Scores whether a product is <em>fully machine-describable</em> &mdash; the prerequisite for AI agent purchasing.</span>
+                                            <span class="text-300 fs-7">15 signals across five dimensions: product identity, pricing completeness, availability signalling, media quality, and social proof. Runs only on pages containing commerce schema from Phase 9. Scores whether a product is <em>fully machine-describable</em> the prerequisite for AI agent purchasing.</span>
                                         </div>
                                     </div>
                                     <div class="p-3">
@@ -490,7 +490,7 @@
                                 <h3 class="mt-5 mb-4">9. Gap Detection and Authority Signals (Phases 15&ndash;17)</h3>
 
                                 <p class="text-300 mb-4">
-                                    Phase 15 operationalises the prompt universe as a content audit tool. For each generated prompt, the pipeline checks whether any entity from the Phase 13 entity index appears as a match. Unmatched prompts &mdash; those for which the site has no entity-level content &mdash; represent content gaps. The top 10 gaps are enriched with competitor analysis data, identifying which domains are already capturing traffic for those unserved intent categories.
+                                    Phase 15 operationalises the prompt universe as a content audit tool. For each generated prompt, the pipeline checks whether any entity from the Phase 13 entity index appears as a match. Unmatched prompts those for which the site has no entity-level content represent content gaps. The top 10 gaps are enriched with competitor analysis data, identifying which domains are already capturing traffic for those unserved intent categories.
                                 </p>
 
                                 <p class="text-300 mb-4">
@@ -502,7 +502,7 @@
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    Phase 17 evaluates six authority signals across all crawled pages: heading structure consistency, internal linking density, structured data coverage breadth, meta description coverage, author attribution presence, and content depth. These signals proxy the E-E-A-T factors that ZipTie.dev&rsquo;s 2025 analysis found to be strong predictors of AI citation &mdash; pages with strong authority signals were cited 2.3&times; more than rank-#1 pages with weak authority.<sup>[21]</sup>
+                                    Phase 17 evaluates six authority signals across all crawled pages: heading structure consistency, internal linking density, structured data coverage breadth, meta description coverage, author attribution presence, and content depth. These signals proxy the E-E-A-T factors that ZipTie.dev&rsquo;s 2025 analysis found to be strong predictors of AI citation pages with strong authority signals were cited 2.3&times; more than rank-#1 pages with weak authority.<sup>[21]</sup>
                                 </p>
 
                                 <!-- Section 10 -->
@@ -517,7 +517,7 @@
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    For each prompt in the universe, the simulation runs a <strong>hybrid lexical-semantic scoring</strong> process. The first pass uses Jaccard similarity &mdash; a fast, computationally inexpensive lexical overlap measure &mdash; to identify candidate chunks across the full corpus. The top candidates from this pass are then scored using dense vector cosine similarity via semantic embeddings. The final score for each prompt-chunk pair blends these two signals: lexical matching contributes 60% and semantic similarity contributes 40%.
+                                    For each prompt in the universe, the simulation runs a <strong>hybrid lexical-semantic scoring</strong> process. The first pass uses Jaccard similarity a fast, computationally inexpensive lexical overlap measure to identify candidate chunks across the full corpus. The top candidates from this pass are then scored using dense vector cosine similarity via semantic embeddings. The final score for each prompt-chunk pair blends these two signals: lexical matching contributes 60% and semantic similarity contributes 40%.
                                 </p>
 
                                 <p class="text-300 mb-4">
@@ -526,7 +526,7 @@
 
                                 <!-- Hybrid scoring visual -->
                                 <div class="rounded-3 border border-1 p-4 my-4 bg-3">
-                                    <p class="text-400 fs-7 mb-4" style="letter-spacing:.1em;text-transform:uppercase">Phase 19 &mdash; Hybrid Retrieval Simulation Architecture</p>
+                                    <p class="text-400 fs-7 mb-4" style="letter-spacing:.1em;text-transform:uppercase">Phase 19 Hybrid Retrieval Simulation Architecture</p>
                                     <div class="row g-3 mb-4">
                                         <div class="col-12 col-md-4">
                                             <div class="p-3 rounded-2 text-center h-100" style="background:rgba(52,152,219,.1);border:1px solid rgba(52,152,219,.3)">
@@ -554,7 +554,7 @@
                                 </div>
 
                                 <p class="text-300 mb-4">
-                                    The rationale for this hybrid approach is grounded in the information retrieval literature. Karpukhin et al.&rsquo;s Dense Passage Retrieval work (EMNLP 2020) showed that dense retrieval substantially outperforms BM25 on open-domain question answering,<sup>[22]</sup> but this advantage assumes a well-optimised dense retrieval system. For the general web content case &mdash; where content quality, specificity, and keyword density vary enormously &mdash; lexical pre-filtering reduces the risk of semantic retrieval returning plausible-but-wrong matches that high-quality keyword content would correctly reject.
+                                    The rationale for this hybrid approach is grounded in the information retrieval literature. Karpukhin et al.&rsquo;s Dense Passage Retrieval work (EMNLP 2020) showed that dense retrieval substantially outperforms BM25 on open-domain question answering,<sup>[22]</sup> but this advantage assumes a well-optimised dense retrieval system. For the general web content case where content quality, specificity, and keyword density vary enormously lexical pre-filtering reduces the risk of semantic retrieval returning plausible-but-wrong matches that high-quality keyword content would correctly reject.
                                 </p>
 
                                 <!-- Section 11 -->
@@ -569,19 +569,19 @@
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    The <strong>Confidence Index</strong> measures retrieval quality: the mean blended score of the best-matching chunk across all covered prompts. Where Coverage Score measures whether retrieval succeeds, the Confidence Index measures how confidently it succeeds. A site can have broad but shallow coverage (high Coverage, low Confidence) or narrow but deep coverage (low Coverage, high Confidence) &mdash; both are distinct failure modes with different remediation strategies.
+                                    The <strong>Confidence Index</strong> measures retrieval quality: the mean blended score of the best-matching chunk across all covered prompts. Where Coverage Score measures whether retrieval succeeds, the Confidence Index measures how confidently it succeeds. A site can have broad but shallow coverage (high Coverage, low Confidence) or narrow but deep coverage (low Coverage, high Confidence) both are distinct failure modes with different remediation strategies.
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    Salemi &amp; Zamani (SIGIR 2024) found that coverage-based retrieval evaluation achieves substantially higher Kendall&rsquo;s &tau; correlation with actual downstream RAG performance than traditional binary relevance labels &mdash; supporting Coverage Score as the primary visibility metric.<sup>[23]</sup>
+                                    Salemi &amp; Zamani (SIGIR 2024) found that coverage-based retrieval evaluation achieves substantially higher Kendall&rsquo;s &tau; correlation with actual downstream RAG performance than traditional binary relevance labels supporting Coverage Score as the primary visibility metric.<sup>[23]</sup>
                                 </p>
 
                                 <!-- Composite score visual -->
                                 <div class="rounded-3 border border-1 p-4 my-4 bg-3">
-                                    <p class="text-400 fs-7 mb-4" style="letter-spacing:.1em;text-transform:uppercase">Phase 20 &mdash; Composite AI Visibility Score Weights</p>
+                                    <p class="text-400 fs-7 mb-4" style="letter-spacing:.1em;text-transform:uppercase">Phase 20 Composite AI Visibility Score Weights</p>
                                     <div class="mb-4">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <div><span class="text-300 fw-medium">Entity Strength</span><span class="text-400 fs-7 ms-2">&mdash; Technical + SKU + Extractability (Phase 14) + Authority (Phase 17)</span></div>
+                                            <div><span class="text-300 fw-medium">Entity Strength</span><span class="text-400 fs-7 ms-2"> Technical + SKU + Extractability (Phase 14) + Authority (Phase 17)</span></div>
                                             <span class="fw-bold" style="color:#9b59b6;min-width:35px;text-align:right">45%</span>
                                         </div>
                                         <div class="w-100 rounded-pill" style="height:10px;background:rgba(255,255,255,.08)">
@@ -590,7 +590,7 @@
                                     </div>
                                     <div class="mb-4">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <div><span class="text-300 fw-medium">Retrieval Simulation</span><span class="text-400 fs-7 ms-2">&mdash; Coverage Score + Confidence Index (Phase 19)</span></div>
+                                            <div><span class="text-300 fw-medium">Retrieval Simulation</span><span class="text-400 fs-7 ms-2"> Coverage Score + Confidence Index (Phase 19)</span></div>
                                             <span class="fw-bold" style="color:#27ae60;min-width:35px;text-align:right">45%</span>
                                         </div>
                                         <div class="w-100 rounded-pill" style="height:10px;background:rgba(255,255,255,.08)">
@@ -599,7 +599,7 @@
                                     </div>
                                     <div class="mb-2">
                                         <div class="d-flex justify-content-between align-items-center mb-2">
-                                            <div><span class="text-300 fw-medium">Commerce Readiness</span><span class="text-400 fs-7 ms-2">&mdash; Agentic accessibility, MCP, API, checkout readiness (Phase 21)</span></div>
+                                            <div><span class="text-300 fw-medium">Commerce Readiness</span><span class="text-400 fs-7 ms-2"> Agentic accessibility, MCP, API, checkout readiness (Phase 21)</span></div>
                                             <span class="fw-bold" style="color:#e67e22;min-width:35px;text-align:right">10%</span>
                                         </div>
                                         <div class="w-100 rounded-pill" style="height:10px;background:rgba(255,255,255,.08)">
@@ -623,7 +623,7 @@
                                 </p>
 
                                 <p class="text-300 mb-4">
-                                    The snapshot mechanism addresses a property of AI visibility that output-monitoring tools have identified but not solved: citation patterns are temporally unstable. Profound&rsquo;s analysis found that 40&ndash;60% of cited sources change monthly.<sup>[24]</sup> Algaba et al. (NAACL 2025) found that LLMs reinforce citation bias toward recent sources &mdash; content freshness signals decay, reducing visibility over time.<sup>[25]</sup> Without a snapshot history, a score is a measurement; with it, the score becomes a trend.
+                                    The snapshot mechanism addresses a property of AI visibility that output-monitoring tools have identified but not solved: citation patterns are temporally unstable. Profound&rsquo;s analysis found that 40&ndash;60% of cited sources change monthly.<sup>[24]</sup> Algaba et al. (NAACL 2025) found that LLMs reinforce citation bias toward recent sources content freshness signals decay, reducing visibility over time.<sup>[25]</sup> Without a snapshot history, a score is a measurement; with it, the score becomes a trend.
                                 </p>
 
                                 <!-- Section 13 -->
@@ -634,7 +634,7 @@
                                 </p>
 
                                 <ul class="text-300 mb-4">
-                                    <li class="mb-2"><strong>Generation-layer utilisation.</strong> Even successfully retrieved content may not be used &mdash; the &ldquo;Lost in the Middle&rdquo; effect,<sup>[9]</sup> internal prior dominance,<sup>[26]</sup> and citation post-rationalisation<sup>[27]</sup> all reduce the probability that retrieved content influences output. The pipeline measures a ceiling, not a floor.</li>
+                                    <li class="mb-2"><strong>Generation-layer utilisation.</strong> Even successfully retrieved content may not be used the &ldquo;Lost in the Middle&rdquo; effect,<sup>[9]</sup> internal prior dominance,<sup>[26]</sup> and citation post-rationalisation<sup>[27]</sup> all reduce the probability that retrieved content influences output. The pipeline measures a ceiling, not a floor.</li>
                                     <li class="mb-2"><strong>Training data visibility.</strong> Parametric knowledge in model weights is not modelled. The simulation targets real-time RAG retrieval, which is the dominant architecture for AI search systems as of 2026.</li>
                                     <li class="mb-2"><strong>Platform-specific retrieval architectures.</strong> Different AI platforms use different retrieval mechanisms. The hybrid lexical-semantic simulation approximates the general case; platform-specific calibration would require separate models tuned per platform.</li>
                                     <li><strong>Authority and trust signals beyond on-page content.</strong> Backlink profiles, brand search volume, and domain reputation affect AI citation propensity but are not modelled in the retrieval simulation.</li>
@@ -643,12 +643,12 @@
                                 <div class="rounded-3 border border-1 p-4 my-5 bg-3">
                                     <h5 class="mb-3">Key Takeaways</h5>
                                     <ul class="mb-0 text-300">
-                                        <li class="mb-2">No existing evaluation framework addresses retrieval simulation at the content/site level &mdash; RAGAS, ARES, and BEIR all evaluate <em>systems</em>, not content retrievability</li>
+                                        <li class="mb-2">No existing evaluation framework addresses retrieval simulation at the content/site level RAGAS, ARES, and BEIR all evaluate <em>systems</em>, not content retrievability</li>
                                         <li class="mb-2">The rendering gap audit is the most practically significant finding for most sites: AI crawlers execute no JavaScript, making JS-dependent content permanently invisible to them</li>
-                                        <li class="mb-2">Intent classification of the prompt universe (six categories) is the methodological contribution beyond prior synthetic query generation work &mdash; it makes intent coverage gaps visible, not just content gaps</li>
+                                        <li class="mb-2">Intent classification of the prompt universe (six categories) is the methodological contribution beyond prior synthetic query generation work it makes intent coverage gaps visible, not just content gaps</li>
                                         <li class="mb-2">Hybrid Jaccard + semantic scoring reflects how production RAG systems actually work: pure lexical retrieval misses paraphrastic matches; pure semantic retrieval is expensive and can return plausible-but-wrong results against unoptimised content</li>
                                         <li class="mb-2">Coverage Score (breadth) and Confidence Index (quality) are distinct metrics because broad-shallow and narrow-deep coverage failure modes require different remediation</li>
-                                        <li>The snapshot mechanism converts a measurement into a trend &mdash; essential given that 40&ndash;60% of AI-cited sources change monthly</li>
+                                        <li>The snapshot mechanism converts a measurement into a trend essential given that 40&ndash;60% of AI-cited sources change monthly</li>
                                     </ul>
                                 </div>
 
@@ -680,7 +680,7 @@
                                     <li class="mb-1">[10] Thiel, H. &amp; Kretschmer, M. (2024). "A Critical Analysis of Common Crawl." FAccT &rsquo;24. DOI:10.1145/3630106.3659033</li>
                                     <li class="mb-1">[11] Cloudflare (2025). "From Googlebot to GPTBot: Who&rsquo;s Crawling Your Site in 2025." blog.cloudflare.com</li>
                                     <li class="mb-1">[12] Google Search Central (2024). "Understand JavaScript SEO Basics." developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics</li>
-                                    <li class="mb-1">[13] Daydream (2025). "How OpenAI Crawls and Indexes Your Website." withdaydream.com &mdash; analysis of half a billion GPTBot fetches, zero JS execution observed.</li>
+                                    <li class="mb-1">[13] Daydream (2025). "How OpenAI Crawls and Indexes Your Website." withdaydream.com analysis of half a billion GPTBot fetches, zero JS execution observed.</li>
                                     <li class="mb-1">[14] Canel, F. (Microsoft). SMX Munich, March 2025. searchengineland.com/microsoft-bing-copilot-use-schema-for-its-llms-453455</li>
                                     <li class="mb-1">[15] AccuraCast (2025). "Does Schema Markup Increase Generative Search Visibility?" accuracast.com</li>
                                     <li class="mb-1">[16] Bonifacio, L. et al. (2022). "InPars: Unsupervised Dataset Generation for Information Retrieval." SIGIR &rsquo;22.</li>
@@ -691,7 +691,7 @@
                                     <li class="mb-1">[21] ZipTie.dev (2025). "Google AI Overviews Source Selection." ziptie.dev/blog/google-ai-overviews-source-selection/</li>
                                     <li class="mb-1">[22] Karpukhin, V. et al. (2020). "Dense Passage Retrieval for Open-Domain Question Answering." EMNLP 2020. arXiv:2004.04906</li>
                                     <li class="mb-1">[23] Salemi, A. &amp; Zamani, H. (2024). "Evaluating Retrieval Quality in RAG." SIGIR &rsquo;24. arXiv:2404.13781</li>
-                                    <li class="mb-1">[24] EMARKETER (2026). "FAQ on GEO and AEO." emarketer.com &mdash; 40&ndash;60% of cited sources change monthly.</li>
+                                    <li class="mb-1">[24] EMARKETER (2026). "FAQ on GEO and AEO." emarketer.com 40&ndash;60% of cited sources change monthly.</li>
                                     <li class="mb-1">[25] Algaba, A. et al. (2025). "LLMs Reflect Human Citation Patterns with Heightened Bias." NAACL 2025. arXiv:2405.15739</li>
                                     <li class="mb-1">[26] Wu, K. et al. (2024). "How Faithful Are RAG Models?" arXiv:2404.10198</li>
                                     <li class="mb-1">[27] Wallat, J. et al. (2024). "Correctness is not Faithfulness in RAG Attributions." arXiv:2412.18004</li>
