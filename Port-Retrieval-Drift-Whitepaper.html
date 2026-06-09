@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Retrieval Drift Analysis for AI Retrievability – Research | Akshay Dahiya</title>
+        <!-- Favicon icon-->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+        <!-- Libs CSS -->
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="home-page-2">
+        <!--Preloader-->
+        <div id="preloader">
+            <div class="loader-cover">
+                <div class="loader-container">
+                    <div class="loader-icon-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <header>
+            <div class="container position-relative">
+                <div class="position-relative">
+                    <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                            <i class="ri-menu-2-line"></i>
+                        </a>
+                        <div class="container py-3 px-4">
+                            <a class="navbar-brand d-flex main-logo align-items-center" href="/">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="d-none d-lg-flex">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://aispider.akshaydahiya.site/" target="_blank">AI Spider</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                                <div class="d-md-flex d-none gap-3">
+                                    <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                    <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                                </div>
+                                <div class="burger-icon burger-icon-white border rounded-3">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- offCanvas Sidebar -->
+                <div class="offCanvas__info style-2">
+                    <div class="offCanvas__close-icon menu-close">
+                        <button><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+                    <div class="offCanvas__side-info mb-30">
+                        <div class="contact-list mb-30">
+                            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                            <div class="mb-3">
+                                <span class="text-400 fs-5">Email</span>
+                                <p class="mb-0"><a href="mailto:akshaydahiya92.ad@gmail.com">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <p class="text-400 fs-5 mb-2">Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__overly"></div>
+                <!-- Mobile Menu -->
+                <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+                    <div class="mobile-header-wrapper-inner">
+                        <div class="mobile-header-logo">
+                            <a class="d-flex main-logo align-items-center d-inline-flex" href="/">
+                                <img loading="lazy" src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-header-content-area">
+                            <div class="perfect-scroll">
+                                <div class="mobile-menu-wrap mobile-header-border">
+                                    <nav>
+                                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item has-children"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://aispider.akshaydahiya.site/" target="_blank">AI Spider</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Project Hero Section -->
+            <section class="section-hero-2 position-relative pt-160 pb-60">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <a href="portfolio.html" class="btn btn-sm border border-1 rounded-3 px-3 py-2 mb-3">
+                                <i class="ri-arrow-left-line me-2"></i>Back to Portfolio
+                            </a>
+                            <div class="d-flex align-items-center mb-3">
+                                <svg class="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                                    <circle cx="2.5" cy="3" r="2.5" fill="#ff6b35" />
+                                </svg>
+                                <span class="text-linear-4 d-flex align-items-center">Pre-Build Validation Research &nbsp;·&nbsp; Working Paper No. 003 &nbsp;·&nbsp; Third in Series &nbsp;·&nbsp; 2025-2026</span>
+                            </div>
+                            <h1 class="ds-3 my-3 fw-medium">
+                                Retrieval Drift Analysis <span class="text-300">for AI Retrievability_</span>
+                            </h1>
+                            <p class="fs-5 text-300 mb-4">A two-vertical, three-model benchmark validating entity classification and drift scoring as signals for measuring topical focus and intent alignment. Conducted as pre-build validation for a planned AI Spider module.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Retrieval Drift</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Entity Classification</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Intent Alignment</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">LLM Benchmarking</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">AI Retrievability</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Claude Sonnet 4.6</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">ChatGPT GPT-5.5</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Gemini 3.5 Flash</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 mt-5 mt-lg-0">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="rounded-3 border border-1 p-4 bg-3 text-center">
+                                        <p class="mb-1" style="font-family:'Playfair Display',serif; font-size:36px; font-weight:700; color:#a78bfa;">3</p>
+                                        <p class="text-300 mb-0 fs-7">LLMs Benchmarked</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="rounded-3 border border-1 p-4 bg-3 text-center">
+                                        <p class="mb-1" style="font-family:'Playfair Display',serif; font-size:36px; font-weight:700; color:#ff6b35;">4</p>
+                                        <p class="text-300 mb-0 fs-7">Reasoning Stages</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="rounded-3 border border-1 p-4 bg-3 text-center">
+                                        <p class="mb-1" style="font-family:'Playfair Display',serif; font-size:36px; font-weight:700; color:#22c55e;">2</p>
+                                        <p class="text-300 mb-0 fs-7">Verticals Tested</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="rounded-3 border border-1 p-4 bg-3 text-center">
+                                        <p class="mb-1" style="font-family:'Playfair Display',serif; font-size:36px; font-weight:700; color:#3b82f6;">3</p>
+                                        <p class="text-300 mb-0 fs-7">Drift Scores per Page</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Info Section -->
+            <section class="section-project-info pt-60 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="rounded-3 border border-1 p-lg-5 p-4 bg-3">
+
+                                <!-- ABSTRACT -->
+                                <h3 class="mb-4">Abstract</h3>
+                                <p class="text-300 mb-3">This paper documents pre-build validation research for a Retrieval Drift Analysis module planned as a future feature addition to <strong>AI Spider</strong>. It is the third paper in a series validating the planned content intelligence layer of AI Spider alongside the Competitive Content Intelligence module (WP001) and the Coverage Score and Entity Expansion module (WP002).</p>
+                                <p class="text-300 mb-3">Where WP001 measured what competitors have that a target page lacks, and WP002 measured whether a page covers what a complete answer requires, this module addresses a third and distinct question: <strong>does the page stay focused on answering the user query, or does it drift into topics that dilute its retrieval relevance?</strong> A page can be comprehensive and still score poorly if a significant proportion of its entity footprint belongs to unrelated domains.</p>
+                                <div class="rounded-3 border border-1 p-4 mb-5" style="border-left: 3px solid #ff6b35 !important; background: rgba(255,107,53,0.05);">
+                                    <p class="fs-7 text-400 mb-2" style="letter-spacing:0.1em; text-transform:uppercase;">Research Conclusion</p>
+                                    <p class="text-300 mb-0">Retrieval drift scoring is a valid and discriminating signal for AI retrievability. All three frontier models produced coherent entity classifications and plausible drift scores. The key finding is a meaningful divergence in how models draw the Aligned/Supporting/Drift boundary: Claude produces the most conservative classifications, Gemini the most aggressive, ChatGPT falls between. This divergence is correctable with calibration. The module will use Claude as the recommended default.</p>
+                                </div>
+
+                                <!-- SECTION 1 -->
+                                <h4 class="mt-5 mb-3">1. Background and Research Motivation</h4>
+                                <p class="text-300 mb-3">WP001 and WP002 established that content gap analysis and coverage scoring are valid signals for AI retrievability improvement. Both modules address completeness. The Retrieval Drift module addresses a complementary but different problem. Completeness asks: <em>is everything that should be here, here?</em> Drift asks: <em>is everything that is here, supposed to be here?</em></p>
+
+                                <div class="rounded-3 border border-1 p-4 mb-4" style="border-left: 3px solid #a78bfa !important; background: rgba(167,139,250,0.07);">
+                                    <p class="text-300 mb-0 fst-italic" style="font-family:'Playfair Display',serif; font-size:1.05rem;">"A page that discusses backlink analysis, domain authority, and SERP features in the context of an AI visibility query is not incomplete - it is mis-focused. Its entity footprint signals to retrieval systems that the page is about general SEO, diluting relevance for users specifically evaluating AI monitoring tools."</p>
+                                </div>
+
+                                <p class="text-300 mb-3">This pattern appeared directly in the WP002 benchmark - the Semrush AI Visibility Toolkit page carried the entity footprint of Semrush's broader SEO platform. That entity bleed could not be measured or scored in WP002's framework. The Retrieval Drift module was designed specifically to surface and quantify it.</p>
+                                <p class="text-300 mb-3">Three research questions needed answering before building:</p>
+                                <ul class="text-300 mb-5">
+                                    <li class="mb-2"><strong>Q1 - Is the Aligned/Supporting/Drift classification reliable?</strong> Do frontier models apply it consistently and in alignment with manually derived ground truth?</li>
+                                    <li class="mb-2"><strong>Q2 - How much do models disagree on the classification boundary?</strong> Does disagreement at the Supporting/Drift boundary produce materially different drift scores?</li>
+                                    <li><strong>Q3 - Can models reliably estimate competitor drift scores?</strong> The competitor comparison feature requires models to estimate drift scores from provided content - is this estimation plausible?</li>
+                                </ul>
+
+                                <!-- SECTION 2 -->
+                                <h4 class="mt-5 mb-3">2. Research Methodology</h4>
+
+                                <h6 class="mb-2">2.1 The Aligned / Supporting / Drift Classification System</h6>
+                                <p class="text-300 mb-3">Every significant entity and topic on a target page is classified into one of three categories, each with a distinct relationship to the query intent.</p>
+
+                                <div class="rounded-3 border border-1 overflow-hidden mb-2">
+                                    <div class="row g-0">
+                                        <div class="col-md-4 p-3 border-end border-1" style="background: rgba(34,197,94,0.05);">
+                                            <p class="mb-1 fw-semibold" style="font-size:13px; color:#22c55e;">Aligned</p>
+                                            <p class="text-300 mb-2" style="font-size:12px;">Directly addresses the query intent. AI models retrieving pages for this query would expect these entities. Their presence strengthens citation likelihood.</p>
+                                            <p class="text-400 mb-0" style="font-family:'DM Mono',monospace; font-size:11px; color:#22c55e;">e.g. Strategic Advisory, Red Team, Maturity Assessment, Penetration Testing</p>
+                                        </div>
+                                        <div class="col-md-4 p-3 border-end border-1" style="background: rgba(167,139,250,0.05);">
+                                            <p class="mb-1 fw-semibold" style="font-size:13px; color:#a78bfa;">Supporting</p>
+                                            <p class="text-300 mb-2" style="font-size:12px;">Related to the domain but not central to this specific query. Acceptable but should not dominate the page's entity profile.</p>
+                                            <p class="text-400 mb-0" style="font-family:'DM Mono',monospace; font-size:11px; color:#a78bfa;">e.g. Forrester Wave recognition, SOC integration, Pulse Services</p>
+                                        </div>
+                                        <div class="col-md-4 p-3" style="background: rgba(239,68,68,0.05);">
+                                            <p class="mb-1 fw-semibold" style="font-size:13px; color:#ef4444;">Drift</p>
+                                            <p class="text-300 mb-2" style="font-size:12px;">Moves away from the query intent. Dilutes retrieval relevance. Not wrong for the domain - wrong for this specific query.</p>
+                                            <p class="text-400 mb-0" style="font-family:'DM Mono',monospace; font-size:11px; color:#ef4444;">e.g. Scattered Spider (adversary), Falcon platform brand, Backlink analysis</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-400 mb-4" style="font-size:12px;">Figure 1. The three-tier entity classification system. Retrieval Drift Score = Drift entities / all page entities (lower is better).</p>
+
+                                <h6 class="mb-2 mt-4">2.2 The Four-Stage Prompt</h6>
+                                <p class="text-300 mb-3">The module uses a four-stage prompt - one more stage than WP002. Stage 2 (competitor validation) is the key structural addition: it anchors Stage 3 classification in what the competitive set actually discusses, preventing models from classifying entities against their own priors.</p>
+
+                                <div class="rounded-3 border border-1 overflow-hidden mb-2">
+                                    <div class="row g-0">
+                                        <div class="col-6 col-lg-3 p-3 border-end border-1">
+                                            <p class="mb-1 text-400" style="font-family:'DM Mono',monospace; font-size:11px;">STAGE 01</p>
+                                            <p class="fw-semibold mb-1" style="font-size:13px;">Intent extraction</p>
+                                            <p class="text-300 mb-0" style="font-size:12px;">From the query alone, define core intent entities and topics a page must address.</p>
+                                        </div>
+                                        <div class="col-6 col-lg-3 p-3 border-end border-1">
+                                            <p class="mb-1 text-400" style="font-family:'DM Mono',monospace; font-size:11px;">STAGE 02</p>
+                                            <p class="fw-semibold mb-1" style="font-size:13px;">Competitor validation</p>
+                                            <p class="text-300 mb-0" style="font-size:12px;">Extract common entities from competitors. Becomes the Competitor Entity Universe anchoring Stage 3.</p>
+                                        </div>
+                                        <div class="col-6 col-lg-3 p-3 border-end border-1">
+                                            <p class="mb-1 text-400" style="font-family:'DM Mono',monospace; font-size:11px;">STAGE 03</p>
+                                            <p class="fw-semibold mb-1" style="font-size:13px;">Entity classification</p>
+                                            <p class="text-300 mb-0" style="font-size:12px;">Classify every significant entity on the target page as Aligned, Supporting, or Drift.</p>
+                                        </div>
+                                        <div class="col-6 col-lg-3 p-3">
+                                            <p class="mb-1 text-400" style="font-family:'DM Mono',monospace; font-size:11px;">STAGE 04</p>
+                                            <p class="fw-semibold mb-1" style="font-size:13px;">Drift scoring</p>
+                                            <p class="text-300 mb-0" style="font-size:12px;">Calculate 3 scores, estimate competitor drift, generate prioritised recommendations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-400 mb-3" style="font-size:12px;">Figure 2. The four-stage reasoning framework.</p>
+
+                                <p class="text-300 mb-3 mt-4">The full prompt template used across all three models is reproduced below with page content omitted.</p>
+
+                                <div class="rounded-3 overflow-hidden border border-1 mb-2">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-2" style="background:#0d1117;">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <span style="font-family:'DM Mono',monospace; font-size:11px; color:#8b949e; letter-spacing:0.08em; text-transform:uppercase;">Prompt Template - v1.0</span>
+                                            <span class="px-2 py-1 rounded-2" style="font-family:'DM Mono',monospace; font-size:10px; color:#22c55e; background:rgba(34,197,94,0.12);">All 3 models identical - Both verticals</span>
+                                        </div>
+                                        <span style="font-family:'DM Mono',monospace; font-size:11px; color:#484f58;">Page content omitted</span>
+                                    </div>
+                                    <div class="p-4" style="background:#161b22; font-family:'DM Mono',monospace; font-size:12px; line-height:1.9; overflow-x:auto;">
+                                        <p style="color:#8b949e; margin-bottom:10px; font-size:11px;">// SYSTEM ROLE</p>
+                                        <div class="rounded-2 p-3 mb-4" style="background:rgba(255,255,255,0.03); border-left:3px solid #22c55e;">
+                                            <span style="color:#e6edf3;">You are a Retrieval Drift Analysis engine. You will complete FOUR stages of reasoning.</span><br><br>
+                                            <span style="color:#ff7b72;">Do not use external knowledge in Stages 2, 3, and 4.</span> <span style="color:#e6edf3;">Stage 1 should reflect your understanding of the query's intent.</span>
+                                        </div>
+                                        <p style="color:#8b949e; margin-bottom:10px; font-size:11px;">// CLASSIFICATION DEFINITIONS</p>
+                                        <div class="rounded-2 p-3 mb-4" style="background:rgba(255,255,255,0.03); border-left:3px solid #79c0ff;">
+                                            <span style="color:#22c55e;">ALIGNED:</span> <span style="color:#c9d1d9;">Directly supports the original prompt intent. Strengthens citation likelihood.</span><br>
+                                            <span style="color:#79c0ff;">SUPPORTING:</span> <span style="color:#c9d1d9;">Related but not central. Acceptable but should not dominate entity profile.</span><br>
+                                            <span style="color:#ff7b72;">DRIFT:</span> <span style="color:#c9d1d9;">Moves away from the intent. Dilutes retrieval relevance. Not wrong for the domain - wrong for this query.</span>
+                                        </div>
+                                        <p style="color:#8b949e; margin-bottom:10px; font-size:11px;">// OUTPUT FORMAT - strictly enforced</p>
+                                        <div class="rounded-2 p-3 mb-3" style="background:rgba(255,255,255,0.03); border-left:3px solid #d2a8ff;">
+                                            <span style="color:#d2a8ff;">STAGE 1 - CORE INTENT</span><br>
+                                            <span style="color:#c9d1d9;">- Core intent entities + Core intent topics</span><br><br>
+                                            <span style="color:#d2a8ff;">STAGE 2 - COMPETITOR ENTITY UNIVERSE</span><br>
+                                            <span style="color:#c9d1d9;">- Consolidated entity list from all competitors</span><br><br>
+                                            <span style="color:#d2a8ff;">STAGE 3 - TARGET PAGE ENTITY CLASSIFICATION</span><br>
+                                            <span style="color:#22c55e;">- ALIGNED entities: [list]</span><br>
+                                            <span style="color:#79c0ff;">- SUPPORTING entities: [list]</span><br>
+                                            <span style="color:#ff7b72;">- DRIFT entities: [list]</span><br><br>
+                                            <span style="color:#d2a8ff;">STAGE 4 - DRIFT SCORES</span><br>
+                                            <span style="color:#c9d1d9;">- Intent Alignment Score / Topic Focus Score / Retrieval Drift Score</span><br>
+                                            <span style="color:#c9d1d9;">- Drift summary: 1-2 sentence plain-language explanation of what causes drift</span><br><br>
+                                            <span style="color:#d2a8ff;">COMPETITOR COMPARISON + RECOMMENDATIONS</span><br>
+                                            <span style="color:#c9d1d9;">- Estimated drift scores per competitor + Priority 1/2/3 actions</span>
+                                        </div>
+                                        <div class="rounded-2 p-3" style="background:rgba(255,123,114,0.08); border-left:3px solid #ff7b72;">
+                                            <span style="color:#ff7b72;">Respond only with the structured report. No commentary outside the format.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-400 mb-5" style="font-size:12px;">Figure 3. Full prompt template. Green = role constraint and Aligned, blue = input and Supporting, purple = output format, red = Drift and enforcement.</p>
+
+                                <h6 class="mb-2 mt-4">2.3 Two-Vertical Test Set</h6>
+                                <ul class="text-300 mb-4">
+                                    <li class="mb-2"><strong>V1 - Cybersecurity Consulting: "What is cybersecurity consulting"</strong> - Target: CrowdStrike consulting page. Competitors: Mandiant, Secureworks, WithSecure. Ground truth drift range: 15-25%. Primary drift cause: product platform branding (Falcon) and named adversary references (Scattered Spider) serving brand positioning over query education.</li>
+                                    <li><strong>V2 - AI/GEO Tools: "Best AI visibility tools"</strong> - Target: Semrush AI Visibility Toolkit KB page. Competitors: Peec AI, Rankshift, OtterlyAI. Ground truth drift range: 25-35%. Primary drift cause: traditional SEO entity bleed - backlinks, domain authority, keyword research, SERP features - accurate for Semrush broadly but off-intent for this query.</li>
+                                </ul>
+
+                                <h6 class="mb-3 mt-4">2.4 Models Tested</h6>
+                                <div class="row g-3 mb-5">
+                                    <div class="col-sm-4">
+                                        <div class="rounded-3 border border-1 p-3 h-100" style="border-top: 2px solid #22c55e !important;">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div><p class="fw-semibold mb-0" style="font-size:14px;">Claude Sonnet 4.6</p><p class="text-400 mb-0" style="font-size:11px; font-family:'DM Mono',monospace;">Anthropic / Cloud API</p></div>
+                                                <span class="px-2 py-1 rounded-2 text-white-keep" style="font-size:10px; font-weight:700; background:#16a34a;">RECOMMENDED</span>
+                                            </div>
+                                            <p class="text-300 mb-0" style="font-size:12px;">Most conservative classification. Drift scores within ground truth range both verticals. Best recommendation specificity. Named specific entities and mechanism in drift cause description.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="rounded-3 border border-1 p-3 h-100" style="border-top: 2px solid #3b82f6 !important;">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div><p class="fw-semibold mb-0" style="font-size:14px;">ChatGPT GPT-5.5</p><p class="text-400 mb-0" style="font-size:11px; font-family:'DM Mono',monospace;">OpenAI / Cloud API</p></div>
+                                                <span class="px-2 py-1 rounded-2 text-white-keep" style="font-size:10px; font-weight:700; background:#2563eb;">VIABLE</span>
+                                            </div>
+                                            <p class="text-300 mb-0" style="font-size:12px;">Moderate classification. Within range on V1, wider on V2. Minor formatting issue (mislabelled Test 2 header) but content correct. Production-ready with calibration.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="rounded-3 border border-1 p-3 h-100" style="border-top: 2px solid #eab308 !important;">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div><p class="fw-semibold mb-0" style="font-size:14px;">Gemini 3.5 Flash</p><p class="text-400 mb-0" style="font-size:11px; font-family:'DM Mono',monospace;">Google / Cloud API</p></div>
+                                                <span class="px-2 py-1 rounded-2" style="font-size:10px; font-weight:700; background:#854d0e; color:#fef08a;">CAUTION</span>
+                                            </div>
+                                            <p class="text-300 mb-0" style="font-size:12px;">Aggressive classification - consistently pushed Supporting entities into Drift both verticals, producing above-range scores. Consistent, correctable with known calibration offset.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SECTION 3 -->
+                                <h4 class="mt-5 mb-3">3. Benchmark Results</h4>
+
+                                <h6 class="mb-3">3.1 Entity Classification Comparison</h6>
+                                <div class="table-responsive mb-2">
+                                    <table class="table table-bordered table-sm" style="font-size:12px; font-family:'DM Mono',monospace;">
+                                        <thead style="background: rgba(26,26,46,0.8);">
+                                            <tr><th class="text-300" style="min-width:160px;">Entity (V1 Cybersecurity)</th><th class="text-300">Claude 4.6</th><th class="text-300">ChatGPT GPT-5.5</th><th class="text-300">Gemini 3.5 Flash</th><th class="text-300">Ground Truth</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td class="text-300">Scattered Spider</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td></tr>
+                                            <tr style="background:rgba(255,255,255,0.03);"><td class="text-300">Falcon platform</td><td style="color:#a78bfa;">Supporting</td><td style="color:#a78bfa;">Supporting</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td></tr>
+                                            <tr><td class="text-300">Nation-state adversaries</td><td style="color:#a78bfa;">Supporting</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td></tr>
+                                            <tr style="background:rgba(255,255,255,0.03);"><td class="text-300">Forrester Wave</td><td style="color:#a78bfa;">Supporting</td><td style="color:#a78bfa;">Supporting</td><td style="color:#ef4444;">Drift</td><td style="color:#a78bfa;">Supporting</td></tr>
+                                            <tr><td class="text-300">AI Security Services</td><td style="color:#22c55e;">Aligned</td><td style="color:#22c55e;">Aligned</td><td style="color:#a78bfa;">Supporting</td><td style="color:#a78bfa;">Supporting</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-responsive mb-2 mt-3">
+                                    <table class="table table-bordered table-sm" style="font-size:12px; font-family:'DM Mono',monospace;">
+                                        <thead style="background: rgba(26,26,46,0.8);">
+                                            <tr><th class="text-300" style="min-width:160px;">Entity (V2 AI Tools)</th><th class="text-300">Claude 4.6</th><th class="text-300">ChatGPT GPT-5.5</th><th class="text-300">Gemini 3.5 Flash</th><th class="text-300">Ground Truth</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td class="text-300">Backlink analysis</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td></tr>
+                                            <tr style="background:rgba(255,255,255,0.03);"><td class="text-300">Domain authority</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td></tr>
+                                            <tr><td class="text-300">SERP features</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td></tr>
+                                            <tr style="background:rgba(255,255,255,0.03);"><td class="text-300">17+ years SEO data</td><td style="color:#a78bfa;">Supporting</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td><td style="color:#ef4444;">Drift</td></tr>
+                                            <tr><td class="text-300">Technical SEO</td><td style="color:#a78bfa;">Supporting</td><td style="color:#a78bfa;">Supporting</td><td style="color:#ef4444;">Drift</td><td style="color:#a78bfa;">Supporting</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text-400 mb-4" style="font-size:12px;">Figure 4. Entity-level classification. Green = Aligned, purple = Supporting, red = Drift. Core Drift entities agreed by all three models.</p>
+
+                                <h6 class="mb-3 mt-4">3.2 Drift Score Results</h6>
+                                <div class="rounded-3 border border-1 p-4 mb-2">
+                                    <div style="position:relative; height:260px;">
+                                        <canvas id="driftChart" role="img" aria-label="Grouped bar chart showing retrieval drift scores per model per vertical vs ground truth ranges">Drift scores: V1 Claude 15%, ChatGPT 12%, Gemini 26% vs GT 15-25%. V2 Claude 23%, ChatGPT 30%, Gemini 40% vs GT 25-35%.</canvas>
+                                    </div>
+                                </div>
+                                <p class="text-400 mb-4" style="font-size:12px;">Figure 5. Retrieval Drift Scores per model per vertical vs ground truth ranges. Claude within range both verticals. Gemini above range both verticals.</p>
+
+                                <h6 class="mb-3 mt-4">3.3 Full Scoring Table</h6>
+                                <div class="table-responsive mb-2">
+                                    <table class="table table-bordered table-sm" style="font-size:12px; font-family:'DM Mono',monospace;">
+                                        <thead style="background: rgba(26,26,46,0.8);">
+                                            <tr><th class="text-300" style="min-width:160px;">Metric</th><th class="text-300">Claude Sonnet 4.6</th><th class="text-300">ChatGPT GPT-5.5</th><th class="text-300">Gemini 3.5 Flash</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="background:rgba(34,197,94,0.05);"><td class="text-300">Drift Score - V1 (GT: 15-25%)</td><td><span style="color:#22c55e; font-weight:700;">15%</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#16a34a; color:#fff;">WITHIN RANGE</span></td><td><span style="color:#22c55e; font-weight:700;">12%</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#16a34a; color:#fff;">WITHIN RANGE</span></td><td><span style="color:#eab308; font-weight:700;">26%</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#854d0e; color:#fef08a;">ABOVE RANGE</span></td></tr>
+                                            <tr><td class="text-300">Drift Score - V2 (GT: 25-35%)</td><td><span style="color:#22c55e; font-weight:700;">23%</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#16a34a; color:#fff;">NEAR RANGE</span></td><td class="text-300">19-40% (range)</td><td><span style="color:#eab308; font-weight:700;">40%</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#854d0e; color:#fef08a;">ABOVE RANGE</span></td></tr>
+                                            <tr style="background:rgba(34,197,94,0.05);"><td class="text-300">Core Drift entities - V1</td><td style="color:#22c55e; font-weight:700;">Scattered Spider, marketing taglines</td><td class="text-300">Scattered Spider, nation-state refs</td><td class="text-300">Scattered Spider, Falcon, Forrester</td></tr>
+                                            <tr><td class="text-300">Core Drift entities - V2</td><td style="color:#22c55e; font-weight:700;">Backlinks, KW research, DA, SERP</td><td class="text-300">Backlinks, KW research, DA, SERP</td><td class="text-300">Backlinks, KW research, DA, SERP</td></tr>
+                                            <tr style="background:rgba(34,197,94,0.05);"><td class="text-300">Competitor ranking order</td><td style="color:#22c55e; font-weight:700;">Correct (WithSecure lowest)</td><td style="color:#22c55e;">Correct (WithSecure lowest)</td><td style="color:#22c55e;">Correct (WithSecure lowest)</td></tr>
+                                            <tr><td class="text-300">Drift cause articulation</td><td style="color:#22c55e; font-weight:700;">Precise - named entities + mechanism</td><td class="text-300">Precise - named entities</td><td class="text-300">Accurate but category-level</td></tr>
+                                            <tr style="background:rgba(34,197,94,0.05);"><td class="text-300">Hallucination observed</td><td style="color:#22c55e; font-weight:700;">None</td><td style="color:#22c55e;">None</td><td style="color:#22c55e;">None</td></tr>
+                                            <tr><td class="text-300">Overall assessment</td><td style="color:#22c55e; font-weight:700;">Production-ready</td><td class="text-300">Production-ready with calibration</td><td><span style="color:#eab308; font-weight:700;">Viable with normalisation</span></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text-400 mb-5" style="font-size:12px;">Figure 6. Full benchmark scoring table.</p>
+
+                                <!-- SECTION 4 -->
+                                <h4 class="mt-5 mb-4">4. Key Findings</h4>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-sm-6">
+                                        <div class="rounded-3 border border-1 p-3 h-100">
+                                            <p style="font-family:'DM Mono',monospace; font-size:28px; font-weight:500; color:#a78bfa; line-height:1; margin-bottom:8px;">F1</p>
+                                            <p class="fw-semibold mb-2" style="font-size:14px;">Retrieval drift scoring is a valid signal</p>
+                                            <p class="text-300 mb-0" style="font-size:13px;">All three models correctly identified primary drift entities in both verticals. The methodology discriminates meaningfully between focused and unfocused pages.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="rounded-3 border border-1 p-3 h-100">
+                                            <p style="font-family:'DM Mono',monospace; font-size:28px; font-weight:500; color:#a78bfa; line-height:1; margin-bottom:8px;">F2</p>
+                                            <p class="fw-semibold mb-2" style="font-size:14px;">Core drift consensus - boundary disagreement</p>
+                                            <p class="text-300 mb-0" style="font-size:13px;">All three models agreed completely on clearly Drift entities. All disagreement was at the Supporting/Drift boundary. The most actionable output - the core drift entity list - is reliable regardless of model.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="rounded-3 border border-1 p-3 h-100">
+                                            <p style="font-family:'DM Mono',monospace; font-size:28px; font-weight:500; color:#a78bfa; line-height:1; margin-bottom:8px;">F3</p>
+                                            <p class="fw-semibold mb-2" style="font-size:14px;">Gemini over-classifies Drift consistently</p>
+                                            <p class="text-300 mb-0" style="font-size:13px;">Gemini classified Supporting entities as Drift in both verticals, producing above-range scores. Consistent, predictable pattern correctable with a known calibration offset.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="rounded-3 border border-1 p-3 h-100">
+                                            <p style="font-family:'DM Mono',monospace; font-size:28px; font-weight:500; color:#a78bfa; line-height:1; margin-bottom:8px;">F4</p>
+                                            <p class="fw-semibold mb-2" style="font-size:14px;">Relative ranking more reliable than absolute score</p>
+                                            <p class="text-300 mb-0" style="font-size:13px;">All three models ranked competitors in the same order despite different absolute scores. For competitor comparison, relative ranking is the operationally useful output.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-3 border border-1 p-4 mb-4" style="border-left: 3px solid #ff6b35 !important; background: rgba(255,107,53,0.05);">
+                                    <p class="fs-7 text-400 mb-2" style="letter-spacing:0.1em; text-transform:uppercase;">F5 - New finding unique to this module</p>
+                                    <p class="fw-semibold mb-2" style="font-size:14px;">The drift cause description is the highest-value output - not the score</p>
+                                    <p class="text-300 mb-0" style="font-size:13px;">Claude's V2 drift cause: "The drift on Semrush's page originates from legacy SEO tooling entities - backlink analysis, keyword research, domain authority, SERP features, and on-page optimisation - that belong to Semrush's broader platform but are irrelevant to an AI visibility query. These entities signal to retrieval systems that this page is about general SEO, diluting its relevance." This paragraph tells the user exactly what to change and why. The score tells them nothing actionable. The module UI will foreground the drift cause description, not the score.</p>
+                                </div>
+
+                                <div class="rounded-3 border border-1 p-4 mb-5" style="border-left: 3px solid #a78bfa !important; background: rgba(167,139,250,0.07);">
+                                    <p class="fs-7 text-400 mb-2" style="letter-spacing:0.1em; text-transform:uppercase;">Series finding - across WP001, WP002, WP003</p>
+                                    <p class="text-300 mb-0 fst-italic" style="font-family:'Playfair Display',serif; font-size:1.05rem;">"Across three consecutive benchmarks covering three different analytical tasks, Claude Sonnet 4.6 has been the most calibrated and recommendation-specific model in every test. Gemini 3.5 Flash has shown task-specific patterns: over-inflating coverage scores in WP002, over-classifying entities as Drift in WP003. These are predictable behaviours accommodatable with calibration. The AI Spider module suite will use Claude as the recommended default across all three modules."</p>
+                                </div>
+
+                                <!-- SECTION 5 -->
+                                <h4 class="mt-5 mb-4">5. Implications for AI Spider</h4>
+                                <ul class="list-unstyled mb-5">
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">01</span>
+                                            <div><p class="fw-semibold mb-1" style="font-size:14px;">Drift cause description is the primary UI element</p><p class="text-300 mb-0" style="font-size:13px;">Finding F5 establishes that the plain-language explanation of what causes drift is more actionable than the numeric score. The module UI will foreground the drift cause paragraph, with the score displayed as a secondary metric.</p></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">02</span>
+                                            <div><p class="fw-semibold mb-1" style="font-size:14px;">Entity classification chips displayed per entity</p><p class="text-300 mb-0" style="font-size:13px;">The Aligned/Supporting/Drift classification will be surfaced at entity level in the UI - every significant entity on the page labelled with its classification, making it transparent, auditable, and actionable.</p></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">03</span>
+                                            <div><p class="fw-semibold mb-1" style="font-size:14px;">Relative ranking alongside absolute scores</p><p class="text-300 mb-0" style="font-size:13px;">Competitor comparison panel displays both estimated drift score and explicit ranking so users understand comparative position clearly even if absolute scores differ by model.</p></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">04</span>
+                                            <div><p class="fw-semibold mb-1" style="font-size:14px;">Gemini calibration offset documented</p><p class="text-300 mb-0" style="font-size:13px;">If a user selects Gemini, the module displays: "Drift scores from Gemini tend to run 5-15 percentage points higher than Claude due to more aggressive Supporting/Drift boundary classification." Transparent, not hidden.</p></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">05</span>
+                                            <div><p class="fw-semibold mb-1" style="font-size:14px;">Drift analysis integrates with CCI and Coverage Score</p><p class="text-300 mb-0" style="font-size:13px;">An entity identified as Drift that is also absent from the competitor set (via CCI) will be flagged as a double negative - both diluting focus and missing from the competitive entity universe - becoming the highest-priority recommendation across all three modules.</p></div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <!-- SECTION 6 -->
+                                <h4 class="mt-5 mb-3">6. Next Steps</h4>
+                                <ul class="text-300 mb-5">
+                                    <li class="mb-2"><strong>6.1 Module build - AI Spider Retrieval Drift tab:</strong> Standalone tab with entity classification panel (Aligned/Supporting/Drift chips per entity), drift cause description, three scores, competitor comparison ranking, and prioritised recommendations. Claude Sonnet 4.6 as default model.</li>
+                                    <li class="mb-2"><strong>6.2 Cross-module entity sharing:</strong> Shared entity store across CCI, Coverage Score, and Retrieval Drift tabs enabling cross-module signals - entities that are both Drift and missing from competitor set flagged as highest-priority recommendations.</li>
+                                    <li class="mb-2"><strong>6.3 RankScan correlation study:</strong> Following drift-informed content updates, measure whether citation rate improves via RankScan over 90 days. Results form Working Paper No. 004.</li>
+                                    <li class="mb-2"><strong>6.4 Gemini calibration study:</strong> Systematic testing across 10 additional verticals to establish a reliable calibration offset for automatic application when user selects Gemini.</li>
+                                    <li><strong>6.5 Series summary - Working Paper No. 004:</strong> Longitudinal paper measuring real-world citation rate changes following module-informed content updates across all three content intelligence dimensions. Evidence-based capstone of the AI Spider content intelligence research series.</li>
+                                </ul>
+
+                                <div class="rounded-3 border border-1 p-3" style="background:rgba(255,255,255,0.03);">
+                                    <p class="text-400 mb-1" style="font-size:11px; letter-spacing:0.08em; text-transform:uppercase;">Note on Sources</p>
+                                    <p class="text-300 mb-0" style="font-size:12px;">Target and competitor URLs were publicly accessible pages fetched in May-June 2025. Ground truth drift score ranges (V1: 15-25%, V2: 25-35%) established manually before running any model tests. Qwen2.5-3B-Instruct excluded following non-viable results in WP001 and WP002. Models tested: Claude Sonnet 4.6 (Anthropic), ChatGPT GPT-5.5 (OpenAI), Gemini 3.5 Flash (Google). All tests conducted May-June 2025. Third in series: WP001 Competitive Content Intelligence, WP002 Coverage Score and Entity Expansion, WP003 Retrieval Drift Analysis.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-5 mt-lg-0">
+                            <div class="rounded-3 border border-1 p-4 bg-3 mb-4">
+                                <h5 class="mb-4">Research Details</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 pb-3 border-bottom"><div class="d-flex justify-content-between"><span class="text-400">Type</span><span class="text-300">Pre-Build Validation</span></div></li>
+                                    <li class="mb-3 pb-3 border-bottom"><div class="d-flex justify-content-between"><span class="text-400">Working Paper</span><span class="text-300">No. 003</span></div></li>
+                                    <li class="mb-3 pb-3 border-bottom"><div class="d-flex justify-content-between"><span class="text-400">Series</span><span class="text-300">WP001, WP002, WP003</span></div></li>
+                                    <li class="mb-3 pb-3 border-bottom"><div class="d-flex justify-content-between"><span class="text-400">Models Tested</span><span class="text-300">3 LLMs</span></div></li>
+                                    <li class="mb-3 pb-3 border-bottom"><div class="d-flex justify-content-between"><span class="text-400">Verticals</span><span class="text-300">Cybersec + AI Tools</span></div></li>
+                                    <li class="mb-3 pb-3 border-bottom"><div class="d-flex justify-content-between"><span class="text-400">Status</span><span class="text-300">Validated / Building</span></div></li>
+                                    <li class="mb-3"><div class="d-flex justify-content-between"><span class="text-400">Year</span><span class="text-300">2025-2026</span></div></li>
+                                </ul>
+                            </div>
+                            <div class="rounded-3 border border-1 p-4 bg-3">
+                                <h5 class="mb-4">Research Tags</h5>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Retrieval Drift</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Entity Classification</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Intent Alignment</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">AI Retrievability</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">LLM Benchmarking</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Claude Sonnet 4.6</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">ChatGPT GPT-5.5</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Gemini 3.5 Flash</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">AI Spider</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">RankScan</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Cybersecurity</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">GEO Research</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                        <!-- Next Project -->
+            <section class="section-next-project pb-8">
+                <div class="container">
+                    <div class="rounded-3 border border-1 p-lg-5 p-4 bg-3">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <span class="text-400 fs-7">Previous in Series</span>
+                                <h3 class="mt-2 mb-3">Working Paper No. 002 - Coverage Score and Entity Expansion for AI Retrievability</h3>
+                                <p class="text-300 mb-0">The preceding research that validated prompt-driven coverage scoring and established the Stage 1 topic generation ceiling finding. Read alongside this paper and WP001 for the complete AI Spider content intelligence research series.</p>
+                            </div>
+                            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                                <a href="Port-Coverage-Entity-Whitepaper.html" class="btn btn-primary-2 rounded-2">
+                                    View WP002
+                                    <i class="ri-arrow-right-line ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="section-footer-2 position-relative">
+                <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                    <div class="text-center">
+                        <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="/">
+                            <img loading="lazy" src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                            <span class="fs-4 ms-2">Akshay</span>
+                        </a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                        <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a class="nav-link" href="/"> Home </a>
+                    <a class="nav-link" href="about.html"> About me </a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a>
+                    <a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank"> MarAI </a>
+                    <a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank"> Rank Scan </a>
+                    <a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank"> Retrieve AI </a>
+                    <a class="nav-link" href="https://aispider.akshaydahiya.site/" target="_blank">AI Spider</a>
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                    <a class="nav-link" href="/#contact"> Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Scroll top -->
+        <div class="btn-scroll-top style-btn-2">
+            <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+            </svg>
+        </div>
+        <!-- Libs JS -->
+        <script defer src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+        <script defer src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+        <script defer src="assets/js/vendors/swiper-bundle.min.js"></script>
+        <script defer src="assets/js/vendors/smart-stick-nav.js"></script>
+        <script defer src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+        <script defer src="assets/js/vendors/jquery.odometer.min.js"></script>
+        <script defer src="assets/js/vendors/jquery.appear.js"></script>
+        <!-- Chart.js for Retrieval Drift Research -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var dc = document.getElementById('driftChart');
+            if (dc) {
+                new Chart(dc, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Claude Sonnet 4.6', 'ChatGPT GPT-5.5', 'Gemini 3.5 Flash'],
+                        datasets: [
+                            { label: 'V1 - Cybersecurity (GT: 15-25%)', data: [15, 12, 26], backgroundColor: ['#a78bfacc','#3b82f6cc','#eab308cc'], borderRadius: 3 },
+                            { label: 'V2 - AI Tools (GT: 25-35%)', data: [23, 30, 40], backgroundColor: 'transparent', borderColor: ['#a78bfa','#3b82f6','#eab308'], borderWidth: 2, borderRadius: 3 },
+                            { label: 'V1 GT upper (25%)', data: [25,25,25], type: 'line', borderColor: '#ef4444', borderDash: [4,3], borderWidth: 1.5, pointRadius: 0, fill: false },
+                            { label: 'V1 GT lower (15%)', data: [15,15,15], type: 'line', borderColor: '#22c55e', borderDash: [4,3], borderWidth: 1.5, pointRadius: 0, fill: false },
+                            { label: 'V2 GT upper (35%)', data: [35,35,35], type: 'line', borderColor: '#ef4444', borderDash: [2,4], borderWidth: 1, pointRadius: 0, fill: false },
+                            { label: 'V2 GT lower (25%)', data: [25,25,25], type: 'line', borderColor: '#22c55e', borderDash: [2,4], borderWidth: 1, pointRadius: 0, fill: false }
+                        ]
+                    },
+                    options: {
+                        responsive: true, maintainAspectRatio: false,
+                        plugins: { legend: { display: true, position: 'top', labels: { font: { family: 'DM Mono', size: 11 }, color: '#9ca3af', boxWidth: 10, padding: 14 } } },
+                        scales: {
+                            x: { grid: { display: false }, ticks: { color: '#9ca3af', font: { size: 11 } } },
+                            y: { max: 50, grid: { color: 'rgba(255,255,255,0.06)' }, ticks: { color: '#9ca3af', font: { size: 11 }, callback: function(v){ return v + '%'; } } }
+                        }
+                    }
+                });
+            }
+        });
+        </script>
+        <!-- Theme JS -->
+        <script defer src="assets/js/main.js"></script>
+    </body>
+</html>
