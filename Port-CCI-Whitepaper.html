@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>AI Spider – Locally-Hosted AI Retrievability & Technical SEO Crawler | Akshay Dahiya</title>
+        <!-- Favicon icon-->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon-gradient.svg" />
+        <!-- Libs CSS -->
+        <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="home-page-2">
+        <!--Preloader-->
+        <div id="preloader">
+            <div class="loader-cover">
+                <div class="loader-container">
+                    <div class="loader-icon-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <header>
+            <div class="container position-relative">
+                <div class="position-relative">
+                    <nav class="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
+                        <a href="#" class="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target=".offCanvas__info" aria-controls="offCanvas__info">
+                            <i class="ri-menu-2-line"></i>
+                        </a>
+                        <div class="container py-3 px-4">
+                            <a class="navbar-brand d-flex main-logo align-items-center" href="/">
+                                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="d-none d-lg-flex">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                                        <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="https://aispider.akshaydahiya.site/" target="_blank">AI Spider</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                                <div class="d-md-flex d-none gap-3">
+                                    <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                    <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                                </div>
+                                <div class="burger-icon burger-icon-white border rounded-3">
+                                    <span class="burger-icon-top"></span>
+                                    <span class="burger-icon-mid"></span>
+                                    <span class="burger-icon-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- offCanvas Sidebar -->
+                <div class="offCanvas__info style-2">
+                    <div class="offCanvas__close-icon menu-close">
+                        <button><i class="ri-close-line"></i></button>
+                    </div>
+                    <div class="offCanvas__logo mb-5"><h3 class="mb-0">Get in touch</h3></div>
+                    <div class="offCanvas__side-info mb-30">
+                        <div class="contact-list mb-30">
+                            <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                            <div class="mb-3">
+                                <span class="text-400 fs-5">Email</span>
+                                <p class="mb-0"><a href="mailto:akshaydahiya92.ad@gmail.com">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <p class="text-400 fs-5 mb-2">Social</p>
+                            <div class="d-flex gap-3">
+                                <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                                <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offCanvas__overly"></div>
+                <!-- Mobile Menu -->
+                <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+                    <div class="mobile-header-wrapper-inner">
+                        <div class="mobile-header-logo">
+                            <a class="d-flex main-logo align-items-center d-inline-flex" href="/">
+                                <img loading="lazy" src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                                <span class="fs-4 ms-2">Akshay</span>
+                            </a>
+                            <div class="burger-icon burger-icon-white border rounded-3">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-header-content-area">
+                            <div class="perfect-scroll">
+                                <div class="mobile-menu-wrap mobile-header-border">
+                                    <nav>
+                                        <ul class="mobile-menu font-heading ps-0">
+                            <li class="nav-item has-children"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank">MarAI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank">Rank Scan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank">Retrieve AI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://aispider.akshaydahiya.site/" target="_blank">AI Spider</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Project Hero Section -->
+            <section class="section-hero-2 position-relative pt-160 pb-60">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <a href="portfolio.html" class="btn btn-sm border border-1 rounded-3 px-3 py-2 mb-3">
+                                <i class="ri-arrow-left-line me-2"></i>Back to Portfolio
+                            </a>
+                            <div class="d-flex align-items-center mb-3">
+                                <svg class="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                                    <circle cx="2.5" cy="3" r="2.5" fill="#ff6b35" />
+                                </svg>
+                                <span class="text-linear-4 d-flex align-items-center">Case Study</span>
+                            </div>
+                            <h1 class="ds-3 my-3 fw-medium">
+                                AI Spider – Locally-Hosted AI Retrievability & Technical SEO Crawler <span class="text-300">Platform_</span>
+                            </h1>
+                            <p class="fs-5 text-300 mb-4">A deterministic, session-based website crawler built for AI retrievability auditing, technical SEO analysis, and content intelligence — modeled after Screaming Frog but purpose-built for the AI-native search era. No LLM dependency. No data sent externally. Runs entirely on your machine.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Node.js</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Express</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">SQLite</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">React 19</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">TypeScript 5.9</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Vite 7</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Tailwind CSS v4</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Cheerio</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">TF-IDF</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">PageRank</span>
+                                <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">HITS Algorithm</span>
+                            </div>
+                            <div class="d-flex flex-wrap align-items-center gap-3">
+                                <a href="https://aispider.akshaydahiya.site/" target="_blank" class="btn btn-primary-2 rounded-2">
+                                    View Tool
+                                    <i class="ri-external-link-line ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div class="zoom-img rounded-3 overflow-hidden border border-1">
+                                <img loading="lazy" class="w-100" src="assets/imgs/portfolio/AI-Spider-1.png" alt="AI Spider Crawl Dashboard" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Info Section -->
+            <section class="section-project-info pt-60 pb-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="rounded-3 border border-1 p-lg-5 p-4 bg-3">
+                                <h3 class="mb-4">Project Overview</h3>
+                                <p class="text-300 mb-4">
+                                    Technical SEO tools were not built for the AI-native search era.
+                                </p>
+                                <p class="text-300 mb-3">Modern website auditing requires:</p>
+                                <ul class="text-300 mb-4">
+                                    <li>AI retrievability scoring per page</li>
+                                    <li>Deterministic signal extraction without LLM dependency</li>
+                                    <li>Content chunking and section strength analysis</li>
+                                    <li>Robots.txt AI bot access auditing</li>
+                                    <li>Citation readiness detection</li>
+                                    <li>PageRank and HITS authority propagation</li>
+                                    <li>Full link graph analysis</li>
+                                    <li>Session-based local data storage</li>
+                                    <li>Unlimited crawl depth and URL count</li>
+                                </ul>
+                                <p class="text-300 mb-3">Existing crawlers provide:</p>
+                                <ul class="text-300 mb-4">
+                                    <li>HTTP status code checking</li>
+                                    <li>Basic metadata extraction</li>
+                                    <li>Redirect chain detection</li>
+                                    <li>Broken link identification</li>
+                                    <li>Page speed metrics</li>
+                                </ul>
+                                <p class="text-300 mb-3">They do not provide:</p>
+                                <ul class="text-300 mb-4">
+                                    <li>AI retrievability scoring</li>
+                                    <li>Bot access auditing for GPTBot, ClaudeBot, Perplexitybot</li>
+                                    <li>Content extractability and structure scoring</li>
+                                    <li>Chunk-level section strength analysis</li>
+                                    <li>Citation signal detection</li>
+                                    <li>HITS hub and authority propagation</li>
+                                    <li>N-gram phrase extraction across all pages</li>
+                                    <li>llms.txt and ai.txt discovery</li>
+                                    <li>Locally-hosted, zero-cloud architecture</li>
+                                </ul>
+                                <p class="text-300 mb-4">
+                                    They were not designed for AI-native search visibility.
+                                </p>
+                                <p class="text-300 mb-4">
+                                    AI Spider was built to solve that gap.
+                                </p>
+                                <p class="text-300 mb-4">
+                                    It is not a basic crawler. It is a <span class="text-secondary-2">full-stack AI retrievability and technical SEO auditing platform</span>.
+                                </p>
+                                <h4 class="mt-5 mb-4">What It Does</h4>
+                                <p class="text-300 mb-3">AI Spider enables SEO professionals and developers to:</p>
+                                <ul class="text-300 mb-4">
+                                    <li>Crawl entire websites with unlimited URL depth and count</li>
+                                    <li>Score every page for AI retrievability across 5 dimensions</li>
+                                    <li>Audit which AI bots can and cannot access each page</li>
+                                    <li>Analyse content structure, chunking quality, and section strength</li>
+                                    <li>Detect citation signals — statistics, dates, sources, tables, lists</li>
+                                    <li>Compute PageRank and HITS authority across the internal link graph</li>
+                                    <li>Identify duplicate, near-duplicate, and orphan pages</li>
+                                    <li>Extract N-gram phrases from all crawled content</li>
+                                    <li>Analyse redirect chains, canonical conflicts, and hreflang errors</li>
+                                    <li>Store all session data locally in SQLite — no external data transfer</li>
+                                </ul>
+                                <p class="text-300 mb-4">
+                                    It is a unified AI-native crawl intelligence system running entirely on your machine.
+                                </p>
+                                <h4 class="mt-5 mb-4">Core Capabilities</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start">
+                                            <i class="ri-check-line text-primary-2 me-3 fs-5"></i>
+                                            <div>
+                                                <h6 class="mb-2">AI Retrievability Scoring Engine</h6>
+                                                <p class="text-300 mb-0">Every crawled page receives a composite AI Retrievability Score (0–100) computed from five deterministic sub-scores: Extractability, Structure, Citability, AI Crawlability, and Chunk Quality. Scores are computed post-crawl without any LLM API calls — entirely from HTML signal extraction, content chunking, and rule-based scoring logic.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start">
+                                            <i class="ri-check-line text-primary-2 me-3 fs-5"></i>
+                                            <div>
+                                                <h6 class="mb-2">AI Bot Access Auditing</h6>
+                                                <p class="text-300 mb-0">Parses robots.txt to determine access permissions for GPTBot, ClaudeBot, Perplexitybot, Applebot, CCBot, Google-Extended, and Diffbot per page. Detects data-nosnippet attributes, max-snippet directives, and noindex signals that block AI content extraction. Surfaces which pages are invisible to AI crawlers and why.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start">
+                                            <i class="ri-check-line text-primary-2 me-3 fs-5"></i>
+                                            <div>
+                                                <h6 class="mb-2">Content Chunking & Section Strength</h6>
+                                                <p class="text-300 mb-0">Converts page HTML to Markdown, splits content into H2-delimited chunks, and scores each chunk for word count, sentence density, list presence, table presence, numerical data, and outbound links. Section Strength Score reflects how well each content section is structured for AI extraction and citation. Orphan chunks (no heading) score lower.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start">
+                                            <i class="ri-check-line text-primary-2 me-3 fs-5"></i>
+                                            <div>
+                                                <h6 class="mb-2">Link Graph Intelligence — PageRank & HITS</h6>
+                                                <p class="text-300 mb-0">Extracts the complete internal link graph from crawled pages and computes normalised PageRank scores (0–100) across all pages. Also runs the HITS algorithm to compute Hub Scores (pages that link to authoritative destinations) and Authority Scores (pages endorsed by strong hubs). Identifies buried authority pages, orphan pages, and dead-end link structures.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start">
+                                            <i class="ri-check-line text-primary-2 me-3 fs-5"></i>
+                                            <div>
+                                                <h6 class="mb-2">Citation Readiness Detection</h6>
+                                                <p class="text-300 mb-0">Scores each page for citation signals that AI systems use when selecting content to cite: statistical data, date references, source attributions, blockquote presence, HTML tables, and ordered/unordered lists. Citation Score (0–100) reflects how citable a page is in AI-generated responses — a signal beyond traditional SEO metrics.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start">
+                                            <i class="ri-check-line text-primary-2 me-3 fs-5"></i>
+                                            <div>
+                                                <h6 class="mb-2">17-Tab URL Intelligence Interface</h6>
+                                                <p class="text-300 mb-0">Every crawled URL is surfaced across 17 specialised analysis tabs: URL Table, Content, Technical, Images, Links, Redirects, Canonicals, Structured Data, Issues, AI Signals, Authority, Citation, Section Strength, N-Grams, Architecture, Page Rank, and Visualisations. Column-resizable tables, real-time filtering, and PageIntelligencePanel slide-in drawer for per-URL deep dives.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start">
+                                            <i class="ri-check-line text-primary-2 me-3 fs-5"></i>
+                                            <div>
+                                                <h6 class="mb-2">N-Gram Phrase Intelligence</h6>
+                                                <p class="text-300 mb-0">Extracts 1–4 gram phrases from title, meta description, headings, body, anchor text, and image alt attributes across all crawled pages. Ranks phrases by frequency and page coverage. Reveals the actual topic vocabulary of a site as AI systems see it — not keyword rankings, but content-level phrase density and distribution.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex align-items-start">
+                                            <i class="ri-check-line text-primary-2 me-3 fs-5"></i>
+                                            <div>
+                                                <h6 class="mb-2">Duplicate & Near-Duplicate Detection</h6>
+                                                <p class="text-300 mb-0">Uses SHA-256 content hashing for exact duplicate detection and TF-IDF cosine similarity for near-duplicate identification. Flags pages with content similarity above threshold, surfaces the closest matching URL, and identifies canonicalisation opportunities. Prevents AI systems from encountering diluted or conflicting page signals.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3">
+                                        <div class="d-flex align-items-start">
+                                            <i class="ri-check-line text-primary-2 me-3 fs-5"></i>
+                                            <div>
+                                                <h6 class="mb-2">Session-Based Local Architecture</h6>
+                                                <p class="text-300 mb-0">Every crawl creates a fresh SQLite session database stored locally. No data is sent to external servers, no API keys required for core functionality, and no usage limits. Sessions can be saved as .aispider files and reloaded for future analysis. Supports concurrent crawl configuration: concurrency, crawl delay, depth, user agent, custom headers, cookies, JS rendering via Playwright, and robots.txt respect.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h4 class="mt-5 mb-4">The Challenge</h4>
+                                <p class="text-300 mb-3">SEO and content teams face:</p>
+                                <ul class="text-300 mb-4">
+                                    <li>No tooling for AI bot access auditing</li>
+                                    <li>No content extractability or structure scoring</li>
+                                    <li>No citation signal detection at scale</li>
+                                    <li>No chunk-level content quality analysis</li>
+                                    <li>No N-gram phrase intelligence across entire sites</li>
+                                    <li>No locally-hosted crawl infrastructure</li>
+                                    <li>Expensive SaaS crawlers with per-URL pricing</li>
+                                    <li>Tools optimised for keyword ranking, not AI visibility</li>
+                                </ul>
+                                <p class="text-300 mb-3">Traditional crawlers separate:</p>
+                                <ul class="text-300 mb-4">
+                                    <li>Technical auditing</li>
+                                    <li>Content analysis</li>
+                                    <li>Link intelligence</li>
+                                    <li>AI readiness signals</li>
+                                    <li>Citation modeling</li>
+                                </ul>
+                                <p class="text-300 mb-4">
+                                    They do not unify them into a single AI-native crawl session.
+                                </p>
+                                <h4 class="mt-5 mb-4">The Solution</h4>
+                                <p class="text-300 mb-4">
+                                    Built a full-stack locally-hosted crawl intelligence platform composed of:
+                                </p>
+                                <p class="text-300 mb-3"><strong>Backend:</strong></p>
+                                <ul class="text-300 mb-4">
+                                    <li>Node.js + Express API server</li>
+                                    <li>Async concurrent crawl engine with worker pool</li>
+                                    <li>Per-domain rate limiting and robots.txt enforcement</li>
+                                    <li>Cheerio HTML parsing and signal extraction</li>
+                                    <li>Readability pipeline, Markdown conversion, content chunking</li>
+                                    <li>Flesch-Kincaid readability scoring</li>
+                                    <li>TF-IDF cosine similarity for near-duplicate detection</li>
+                                    <li>MinHash signature generation</li>
+                                    <li>PageRank and HITS graph computation</li>
+                                    <li>N-gram extraction across 6 content zones</li>
+                                    <li>Citation and section strength scoring services</li>
+                                    <li>Redirect and canonical chain analysis</li>
+                                    <li>Structured data extraction and schema validation</li>
+                                    <li>SSE real-time crawl progress streaming</li>
+                                    <li>Session-based SQLite storage with .aispider file format</li>
+                                    <li>Optional Playwright JS rendering layer</li>
+                                </ul>
+                                <p class="text-300 mb-3"><strong>Frontend:</strong></p>
+                                <ul class="text-300 mb-4">
+                                    <li>React 19 + TypeScript 5.9</li>
+                                    <li>Vite 7 build system</li>
+                                    <li>React Router v7 for tab navigation</li>
+                                    <li>Tailwind CSS v4 styling</li>
+                                    <li>17 analysis tabs with column-resizable virtualised tables</li>
+                                    <li>PageIntelligencePanel slide-in drawer for per-URL analysis</li>
+                                    <li>Real-time SSE-driven crawl progress bar</li>
+                                    <li>Recharts visualisations across 4 visualisation sub-tabs</li>
+                                    <li>Session manager with recent crawl history</li>
+                                    <li>Custom extractor builder for bespoke signal extraction</li>
+                                    <li>Export menu for CSV, Excel, and PDF outputs</li>
+                                </ul>
+                                <p class="text-300 mb-4">
+                                    All scoring, signal extraction, and intelligence computation runs backend-authoritative. Nothing is calculated or manipulated client-side.
+                                </p>
+                                <h4 class="mt-5 mb-4">Why It Matters</h4>
+                                <p class="text-300 mb-4">
+                                    AI-native search is restructuring how content gets discovered and cited.
+                                </p>
+                                <p class="text-300 mb-3">Brands and SEO teams must understand:</p>
+                                <ul class="text-300 mb-4">
+                                    <li>Whether AI bots can access and extract their content</li>
+                                    <li>Whether page structure supports AI-readable chunking</li>
+                                    <li>Whether content contains citation-worthy signals</li>
+                                    <li>Whether internal link authority is distributed correctly</li>
+                                    <li>Whether duplicate content is diluting AI visibility</li>
+                                    <li>Whether llms.txt and ai.txt are present and valid</li>
+                                </ul>
+                                <p class="text-300 mb-4">
+                                    AI Spider provides deterministic crawl intelligence for the AI search era — no LLM required, no cloud dependency, no per-URL limits.
+                                </p>
+                                <p class="text-300 mb-4">
+                                    It transforms technical SEO auditing into AI-retrievability-first crawl intelligence operations.
+                                </p>
+                                <h4 class="mt-5 mb-4">Future Expansion</h4>
+                                <ul class="text-300 mb-4">
+                                    <li>LLM-powered content intelligence layer (optional)</li>
+                                    <li>Entity extraction and knowledge graph mapping</li>
+                                    <li>Query simulation and retrieval scoring</li>
+                                    <li>Scheduled recrawl and delta comparison</li>
+                                    <li>Multi-site session comparison</li>
+                                    <li>Competitor crawl benchmarking</li>
+                                    <li>MCP server integration for AI agent workflows</li>
+                                    <li>Playwright full JS rendering mode</li>
+                                    <li>SaaS cloud deployment layer</li>
+                                    <li>Executive PDF reporting suite</li>
+                                    <li>API access for CI/CD pipeline integration</li>
+                                </ul>
+                                <!-- ===== CCI RESEARCH SECTION ===== -->
+                                <div class="mt-5 pt-4 border-top border-1">
+
+                                    <!-- Research Header -->
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none"><circle cx="2.5" cy="3" r="2.5" fill="#ff6b35"/></svg>
+                                        <span class="text-linear-4 fs-7">Pre-Build Validation Research · Working Paper No. 001 · 2025-2026</span>
+                                    </div>
+                                    <h4 class="mb-3">Competitive Content Intelligence for AI Retrievability</h4>
+                                    <p class="text-300 mb-4">Before building the Competitive Content Intelligence module into AI Spider, I conducted original research to answer two questions: Is structured content gap analysis a valid signal for improving AI citation likelihood? And which class of language model can reliably power this analysis at scale? This section documents that research in full.</p>
+
+                                    <!-- Abstract callout -->
+                                    <div class="rounded-3 border border-1 p-4 mb-5" style="border-left: 3px solid #ff6b35 !important; background: rgba(255,107,53,0.05);">
+                                        <p class="fs-7 text-400 mb-1" style="letter-spacing:0.1em; text-transform:uppercase;">Research Conclusion</p>
+                                        <p class="text-300 mb-0">Structured content gap analysis is a valid and actionable signal for AI retrievability improvement. Large frontier models (Claude Sonnet 4.6, ChatGPT o3, Gemini 3.5 Flash) perform reliably on this task. Models below the 7B parameter threshold fail at multi-source role tracking and produce unreliable gap attribution. The CCI module will be built using cloud LLM APIs with user-supplied keys.</p>
+                                    </div>
+
+                                    <!-- Section 1: Background -->
+                                    <h5 class="mb-3" style="font-family:'Playfair Display',serif;">1. Background and Research Motivation</h5>
+                                    <p class="text-300 mb-3">The shift from keyword-based search to AI-generated answers has created a new visibility problem for brands and local businesses. In traditional SEO, ranking was largely a function of authority signals, backlinks, and keyword coverage. In generative search, a page must also satisfy a different criterion: it must contain the information an AI model expects to see in order to cite it as a source.</p>
+                                    <p class="text-300 mb-3">This creates a gap that existing SEO tools do not adequately address. Most crawlers and audit platforms measure technical health, keyword coverage, and backlink profiles. None of them measure <strong>content completeness relative to what AI models actually cite.</strong></p>
+
+                                    <!-- Pull quote -->
+                                    <div class="rounded-3 border border-1 p-4 mb-4" style="border-left: 3px solid #a78bfa !important; background: rgba(167,139,250,0.07);">
+                                        <p class="text-300 mb-0 fst-italic" style="font-family:'Playfair Display',serif; font-size:1.05rem;">"A page can rank on page one for a target keyword and still be completely invisible in AI-generated answers - not because of technical issues, but because it is missing the specific entities, topics, and terminology that competing pages contain."</p>
+                                    </div>
+
+                                    <p class="text-300 mb-3">AI Spider performs technical AI retrievability auditing - checking for crawlability, structured data, content signals, and citation readiness. The Competitive Content Intelligence module is a planned addition that would extend AI Spider into the content layer: identifying precisely what information a page is missing relative to its competitive set.</p>
+                                    <p class="text-300 mb-4">Before building this module, two questions needed validation:</p>
+                                    <ul class="text-300 mb-5">
+                                        <li class="mb-2"><strong>Q1 - Is the premise valid?</strong> Does structured content gap analysis between a target page and competitors actually surface meaningful differences that affect AI citation likelihood?</li>
+                                        <li><strong>Q2 - Which model is right for this task?</strong> Do all LLMs perform adequately, or is there a meaningful capability threshold? Can a smaller local model be used to preserve offline functionality?</li>
+                                    </ul>
+
+                                    <!-- Section 2: Methodology -->
+                                    <h5 class="mb-3" style="font-family:'Playfair Display',serif;">2. Research Methodology</h5>
+                                    <p class="text-400 fs-7 mb-2" style="letter-spacing:0.08em; text-transform:uppercase;">2.1 The 6-Dimension Analysis Framework</p>
+                                    <p class="text-300 mb-3">The CCI framework analyses one target URL against a set of competitor URLs across six structured dimensions. Each dimension surfaces a specific type of content gap known to affect AI retrievability.</p>
+
+                                    <!-- Phase diagram -->
+                                    <div class="rounded-3 border border-1 overflow-hidden mb-2">
+                                        <div class="row g-0">
+                                            <div class="col-6 col-lg-4 p-3 border-bottom border-end border-1">
+                                                <p class="fs-7 text-400 mb-1" style="font-family:'DM Mono',monospace; font-size:11px;">DIM 01</p>
+                                                <p class="fw-semibold mb-1" style="font-size:13px;">Information Gain</p>
+                                                <p class="text-300 mb-0" style="font-size:12px;">Unique value the target provides that competitors lack</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 p-3 border-bottom border-end border-1">
+                                                <p class="fs-7 text-400 mb-1" style="font-family:'DM Mono',monospace; font-size:11px;">DIM 02</p>
+                                                <p class="fw-semibold mb-1" style="font-size:13px;">Entity Gap</p>
+                                                <p class="text-300 mb-0" style="font-size:12px;">Named entities competitors mention that the target omits</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 p-3 border-bottom border-1">
+                                                <p class="fs-7 text-400 mb-1" style="font-family:'DM Mono',monospace; font-size:11px;">DIM 03</p>
+                                                <p class="fw-semibold mb-1" style="font-size:13px;">Topic Gap</p>
+                                                <p class="text-300 mb-0" style="font-size:12px;">Subject areas covered by competitors but absent from the target</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 p-3 border-end border-1">
+                                                <p class="fs-7 text-400 mb-1" style="font-family:'DM Mono',monospace; font-size:11px;">DIM 04</p>
+                                                <p class="fw-semibold mb-1" style="font-size:13px;">Phrase Gap</p>
+                                                <p class="text-300 mb-0" style="font-size:12px;">Industry terminology competitors use that the target lacks</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 p-3 border-end border-1">
+                                                <p class="fs-7 text-400 mb-1" style="font-family:'DM Mono',monospace; font-size:11px;">DIM 05</p>
+                                                <p class="fw-semibold mb-1" style="font-size:13px;">Coverage Score</p>
+                                                <p class="text-300 mb-0" style="font-size:12px;">Percentage of competitor topics addressed by the target</p>
+                                            </div>
+                                            <div class="col-6 col-lg-4 p-3">
+                                                <p class="fs-7 text-400 mb-1" style="font-family:'DM Mono',monospace; font-size:11px;">DIM 06</p>
+                                                <p class="fw-semibold mb-1" style="font-size:13px;">Recommendations</p>
+                                                <p class="text-300 mb-0" style="font-size:12px;">Prioritised content additions ranked by likely impact</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-400 mb-4" style="font-size:12px;">Figure 1. The six analytical dimensions of the CCI framework. All dimensions derived purely from provided page content - no external knowledge used.</p>
+
+                                    <p class="text-400 fs-7 mb-2 mt-4" style="letter-spacing:0.08em; text-transform:uppercase;">2.2 Test Set</p>
+                                    <p class="text-300 mb-3">Five pages from the AI visibility and GEO tools vertical were selected - all covering overlapping topics but from distinct companies:</p>
+                                    <ul class="text-300 mb-4">
+                                        <li class="mb-1"><strong>Target:</strong> Semrush AI Visibility Toolkit - product knowledge base page, marketing-focused, data-rich but narrow in GEO vocabulary</li>
+                                        <li class="mb-1"><strong>C1 - Peec AI:</strong> AI search analytics. Strong on metrics framing. MCP integration.</li>
+                                        <li class="mb-1"><strong>C2 - Rankshift:</strong> Covers ChatGPT, Perplexity, Claude, Gemini, Mistral, Llama. AI crawler log monitoring. UI-based response capture.</li>
+                                        <li class="mb-1"><strong>C3 - Promptwatch:</strong> Entity Tracker, agentic shopping data, publish-to-citation timeline, content creation features.</li>
+                                        <li><strong>C4 - OtterlyAI:</strong> 30,000+ users, Gartner recognition, Microsoft Copilot tracking, free GEO tools and marketplace.</li>
+                                    </ul>
+                                    <p class="text-300 mb-4">This vertical was chosen because the researcher has deep domain knowledge, enabling accurate manual ground-truth assessment of model outputs.</p>
+
+                                    <p class="text-400 fs-7 mb-3 mt-4" style="letter-spacing:0.08em; text-transform:uppercase;">2.3 Models Tested</p>
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-sm-6">
+                                            <div class="rounded-3 border border-1 p-3 h-100" style="border-top: 2px solid #22c55e !important;">
+                                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                                    <div>
+                                                        <p class="fw-semibold mb-0" style="font-size:14px;">Claude Sonnet 4.6</p>
+                                                        <p class="text-400 mb-0" style="font-size:11px; font-family:'DM Mono',monospace;">Anthropic / Cloud API</p>
+                                                    </div>
+                                                    <span class="px-2 py-1 rounded-2 text-white-keep" style="font-size:10px; font-weight:700; background:#16a34a; letter-spacing:0.06em;">RECOMMENDED</span>
+                                                </div>
+                                                <p class="text-300 mb-0" style="font-size:12px;">Large frontier model. Best recommendation specificity. Identified UI vs API distinction, publish-to-citation timeline, digital PR persona gap, and free trial conversion friction.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="rounded-3 border border-1 p-3 h-100" style="border-top: 2px solid #3b82f6 !important;">
+                                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                                    <div>
+                                                        <p class="fw-semibold mb-0" style="font-size:14px;">ChatGPT o3</p>
+                                                        <p class="text-400 mb-0" style="font-size:11px; font-family:'DM Mono',monospace;">OpenAI / Cloud API</p>
+                                                    </div>
+                                                    <span class="px-2 py-1 rounded-2 text-white-keep" style="font-size:10px; font-weight:700; background:#2563eb; letter-spacing:0.06em;">VIABLE</span>
+                                                </div>
+                                                <p class="text-300 mb-0" style="font-size:12px;">Large frontier model. Highest entity breadth (23 identified) but some inflation. Caught agentic shopping gap and all major entities. Good format compliance.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="rounded-3 border border-1 p-3 h-100" style="border-top: 2px solid #eab308 !important;">
+                                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                                    <div>
+                                                        <p class="fw-semibold mb-0" style="font-size:14px;">Gemini 3.5 Flash</p>
+                                                        <p class="text-400 mb-0" style="font-size:11px; font-family:'DM Mono',monospace;">Google / Cloud API</p>
+                                                    </div>
+                                                    <span class="px-2 py-1 rounded-2" style="font-size:10px; font-weight:700; background:#854d0e; color:#fef08a; letter-spacing:0.06em;">USABLE</span>
+                                                </div>
+                                                <p class="text-300 mb-0" style="font-size:12px;">Large frontier model. Good on GEO terminology gap and free trial gap. Minor scoring inconsistency. Slightly lower topic count than actual ground truth.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="rounded-3 border border-1 p-3 h-100" style="border-top: 2px solid #ef4444 !important;">
+                                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                                    <div>
+                                                        <p class="fw-semibold mb-0" style="font-size:14px;">Qwen2.5 3B Instruct</p>
+                                                        <p class="text-400 mb-0" style="font-size:11px; font-family:'DM Mono',monospace;">Alibaba / Local via LM Studio</p>
+                                                    </div>
+                                                    <span class="px-2 py-1 rounded-2 text-white-keep" style="font-size:10px; font-weight:700; background:#dc2626; letter-spacing:0.06em;">NOT VIABLE</span>
+                                                </div>
+                                                <p class="text-300 mb-0" style="font-size:12px;">3B local model. Critical role confusion - attributed competitor content to target page. Entity overlap reported as 0% (incorrect). Information Gain Score of 100/100 (hallucinated). Recommendations generic.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Section 3: Benchmark Results -->
+                                    <h5 class="mb-3 mt-5" style="font-family:'Playfair Display',serif;">3. Benchmark Results</h5>
+                                    <p class="text-400 fs-7 mb-3" style="letter-spacing:0.08em; text-transform:uppercase;">3.1 Side-by-Side Scoring Table</p>
+                                    <p class="text-300 mb-3">Each model's output was scored across twelve dimensions against a manually derived ground truth established before running any model tests.</p>
+
+                                    <div class="table-responsive mb-2">
+                                        <table class="table table-bordered table-sm" style="font-size:13px; font-family:'DM Mono',monospace;">
+                                            <thead style="background: #1a1a2e;">
+                                                <tr>
+                                                    <th class="text-300" style="min-width:160px;">Metric</th>
+                                                    <th class="text-300">Claude Sonnet 4.6</th>
+                                                    <th class="text-300">ChatGPT o3</th>
+                                                    <th class="text-300">Gemini 3.5 Flash</th>
+                                                    <th class="text-300">Qwen2.5 3B</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="background:rgba(34,197,94,0.06);">
+                                                    <td class="text-300">Coverage Score</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">44%</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#16a34a; color:#fff;">BEST</span></td>
+                                                    <td class="text-300">27%</td>
+                                                    <td class="text-300">40%</td>
+                                                    <td><span style="color:#ef4444;">11%</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#dc2626; color:#fff;">FAIL</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-300">Missing Entities Identified</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">17 (precise)</span></td>
+                                                    <td class="text-300">23 (inflated)</td>
+                                                    <td class="text-300">18</td>
+                                                    <td><span style="color:#ef4444;">3</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#dc2626; color:#fff;">FAIL</span></td>
+                                                </tr>
+                                                <tr style="background:rgba(34,197,94,0.06);">
+                                                    <td class="text-300">Missing Topics Identified</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">14 (precise)</span></td>
+                                                    <td class="text-300">37 (inflated)</td>
+                                                    <td class="text-300">12</td>
+                                                    <td><span style="color:#ef4444;">6</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#dc2626; color:#fff;">FAIL</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-300">Entity Overlap %</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">~28%</span></td>
+                                                    <td class="text-300">20%</td>
+                                                    <td class="text-300">21.7%</td>
+                                                    <td><span style="color:#ef4444;">0% (wrong)</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#dc2626; color:#fff;">FAIL</span></td>
+                                                </tr>
+                                                <tr style="background:rgba(34,197,94,0.06);">
+                                                    <td class="text-300">Information Gain Score</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">42/100 (calibrated)</span></td>
+                                                    <td class="text-300">78/100</td>
+                                                    <td class="text-300">75/100</td>
+                                                    <td><span style="color:#ef4444;">100/100 (hallucinated)</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#dc2626; color:#fff;">FAIL</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-300">Format Compliance</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">Full + narrative quality</span></td>
+                                                    <td class="text-300">Full, clean</td>
+                                                    <td class="text-300">Full, minor inconsistency</td>
+                                                    <td><span style="color:#ef4444;">Repeated section numbering</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#dc2626; color:#fff;">FAIL</span></td>
+                                                </tr>
+                                                <tr style="background:rgba(34,197,94,0.06);">
+                                                    <td class="text-300">Role Confusion</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">None</span></td>
+                                                    <td style="color:#22c55e;">None</td>
+                                                    <td style="color:#22c55e;">None</td>
+                                                    <td><span style="color:#ef4444;">Critical failure</span> <span class="ms-1 px-1 rounded-1" style="font-size:10px; background:#dc2626; color:#fff;">FAIL</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-300">Recommendation Specificity</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">High - buyer persona, framing, conversion context</span></td>
+                                                    <td class="text-300">High - feature-level</td>
+                                                    <td class="text-300">Medium - category-level</td>
+                                                    <td style="color:#ef4444;">Generic - any SaaS</td>
+                                                </tr>
+                                                <tr style="background:rgba(34,197,94,0.06);">
+                                                    <td class="text-300">Hallucination Risk</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">Low</span></td>
+                                                    <td class="text-300">Low-Medium</td>
+                                                    <td class="text-300">Medium</td>
+                                                    <td style="color:#ef4444;">High</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-300">Overall Assessment</td>
+                                                    <td><span style="color:#22c55e; font-weight:700;">Production-ready</span></td>
+                                                    <td class="text-300">Production-ready</td>
+                                                    <td class="text-300">Usable with caveats</td>
+                                                    <td style="color:#ef4444;">Not viable</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p class="text-400 mb-5" style="font-size:12px;">Figure 2. Side-by-side benchmark scoring. Ground truth established manually before running any model tests. Scores taken from raw model output with no post-processing.</p>
+
+                                    <!-- Radar Chart -->
+                                    <p class="text-400 fs-7 mb-3" style="letter-spacing:0.08em; text-transform:uppercase;">3.2 Visual Score Comparison</p>
+                                    <div class="rounded-3 border border-1 p-4 mb-2">
+                                        <div style="position:relative; height:320px; max-width:540px; margin:0 auto;">
+                                            <canvas id="cciRadarChart" role="img" aria-label="Radar chart comparing four models across five dimensions"></canvas>
+                                        </div>
+                                    </div>
+                                    <p class="text-400 mb-5" style="font-size:12px;">Figure 3. Normalised scores (0-100) across five key dimensions. Recommendation quality and format compliance scored by researcher assessment against ground truth.</p>
+
+                                    <!-- Section 4: Key Findings -->
+                                    <h5 class="mb-3 mt-2" style="font-family:'Playfair Display',serif;">4. Key Findings</h5>
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-sm-6">
+                                            <div class="rounded-3 border border-1 p-3 h-100">
+                                                <p style="font-family:'DM Mono',monospace; font-size:28px; font-weight:500; color:#a78bfa; line-height:1; margin-bottom:8px;">F1</p>
+                                                <p class="fw-semibold mb-2" style="font-size:14px;">The premise is validated</p>
+                                                <p class="text-300 mb-0" style="font-size:13px;">All three frontier models produced coherent, accurate, actionable content gap reports from the same prompt. The methodology reliably surfaces entity, topic, and phrase gaps that a subject-matter expert independently confirmed as real and relevant to AI citation likelihood.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="rounded-3 border border-1 p-3 h-100">
+                                                <p style="font-family:'DM Mono',monospace; font-size:28px; font-weight:500; color:#a78bfa; line-height:1; margin-bottom:8px;">F2</p>
+                                                <p class="fw-semibold mb-2" style="font-size:14px;">3B models fail at multi-source reasoning</p>
+                                                <p class="text-300 mb-0" style="font-size:13px;">Qwen2.5 3B exhibited critical role confusion - attributing competitor content to the target page - invalidating its entire output. This is not a prompt engineering failure. It is a fundamental reasoning capacity limitation at 3B scale when tracking 5 distinct content sources simultaneously.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="rounded-3 border border-1 p-3 h-100">
+                                                <p style="font-family:'DM Mono',monospace; font-size:28px; font-weight:500; color:#a78bfa; line-height:1; margin-bottom:8px;">F3</p>
+                                                <p class="fw-semibold mb-2" style="font-size:14px;">Claude scores best on depth; ChatGPT on breadth</p>
+                                                <p class="text-300 mb-0" style="font-size:13px;">Claude produced fewer but more precise gaps (14 topics vs ChatGPT's 37), with significantly higher recommendation specificity - identifying conversion friction, buyer personas, and vocabulary alignment that ChatGPT missed or listed generically.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="rounded-3 border border-1 p-3 h-100">
+                                                <p style="font-family:'DM Mono',monospace; font-size:28px; font-weight:500; color:#a78bfa; line-height:1; margin-bottom:8px;">F4</p>
+                                                <p class="fw-semibold mb-2" style="font-size:14px;">Minimum viable threshold is 7B+ parameters</p>
+                                                <p class="text-300 mb-0" style="font-size:13px;">A locally-hosted model powering the CCI module would need at least 7B parameters to handle multi-source role tracking reliably. The module will use cloud APIs with user-supplied keys rather than bundled local inference.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Second pull quote -->
+                                    <div class="rounded-3 border border-1 p-4 mb-5" style="border-left: 3px solid #a78bfa !important; background: rgba(167,139,250,0.07);">
+                                        <p class="text-300 mb-0 fst-italic" style="font-family:'Playfair Display',serif; font-size:1.05rem;">"The most practically significant finding is not which model scored highest - it is that the 3B local model failed in the specific way most dangerous for a production feature: silently producing plausible-looking but inverted output, with no error signal."</p>
+                                    </div>
+
+                                    <!-- Section 5: Implications -->
+                                    <h5 class="mb-3" style="font-family:'Playfair Display',serif;">5. Implications for AI Spider</h5>
+                                    <ul class="list-unstyled mb-5">
+                                        <li class="mb-3 pb-3 border-bottom">
+                                            <div class="d-flex align-items-start gap-3">
+                                                <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">01</span>
+                                                <div>
+                                                    <p class="fw-semibold mb-1" style="font-size:14px;">CCI module will use cloud API with user-supplied key</p>
+                                                    <p class="text-300 mb-0" style="font-size:13px;">Local model inference is not viable at any parameter size currently practical for desktop deployment. The module will integrate via OpenAI, Anthropic, or Google API endpoints, keeping the core AI Spider platform dependency-free while enabling the feature for users who want it.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3 pb-3 border-bottom">
+                                            <div class="d-flex align-items-start gap-3">
+                                                <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">02</span>
+                                                <div>
+                                                    <p class="fw-semibold mb-1" style="font-size:14px;">Analysis scoped to URL level, not site level</p>
+                                                    <p class="text-300 mb-0" style="font-size:13px;">URL-level comparison produces better signal quality, lower token cost, and more actionable recommendations. This aligns with benchmark findings - models performed best when given focused, well-scoped content rather than broad site summaries.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3 pb-3 border-bottom">
+                                            <div class="d-flex align-items-start gap-3">
+                                                <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">03</span>
+                                                <div>
+                                                    <p class="fw-semibold mb-1" style="font-size:14px;">Entity gap is the highest-value dimension for AI retrievability</p>
+                                                    <p class="text-300 mb-0" style="font-size:13px;">Across the benchmark, entity gaps were the most consistently identified and most actionable output. In the AI search context, entities are primary citation triggers. A page that lacks the entities an AI model associates with a topic will not be cited regardless of its authority or technical health.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3 pb-3 border-bottom">
+                                            <div class="d-flex align-items-start gap-3">
+                                                <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">04</span>
+                                                <div>
+                                                    <p class="fw-semibold mb-1" style="font-size:14px;">Vocabulary alignment is underserved by current SEO tooling</p>
+                                                    <p class="text-300 mb-0" style="font-size:13px;">The phrase gap dimension revealed pages that were technically comprehensive but used outdated terminology. The target page used "AI search" exclusively, missing the dominant category term "GEO" used by all four competitors. AI models trained on current content are sensitive to this vocabulary mismatch.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <div class="d-flex align-items-start gap-3">
+                                                <span class="px-2 py-1 rounded-2 flex-shrink-0" style="font-family:'DM Mono',monospace; font-size:11px; background:rgba(167,139,250,0.15); color:#a78bfa; margin-top:2px;">05</span>
+                                                <div>
+                                                    <p class="fw-semibold mb-1" style="font-size:14px;">A single well-structured prompt replaces hours of manual audit work</p>
+                                                    <p class="text-300 mb-0" style="font-size:13px;">The benchmark confirms that one standardised prompt reliably surfaces gaps that would take a human analyst several hours to compile manually. This makes the CCI module a high-leverage addition to AI Spider's existing deterministic audit capabilities.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Section 6: Next Steps -->
+                                    <h5 class="mb-3" style="font-family:'Playfair Display',serif;">6. Next Steps</h5>
+                                    <ul class="text-300 mb-4">
+                                        <li class="mb-2"><strong>6.1 Module build - AI Spider CCI tab:</strong> Implementation as a standalone tab within AI Spider. Independent from the core crawl. Accepts target URL plus up to 4 competitor URLs. Outputs all six analytical dimensions in a structured results dashboard.</li>
+                                        <li class="mb-2"><strong>6.2 Multi-vertical prompt testing:</strong> Current benchmark used a single vertical. Additional testing planned across law, healthcare, insurance, and construction verticals to validate prompt robustness across different content types.</li>
+                                        <li class="mb-2"><strong>6.3 Longitudinal citation tracking:</strong> Following CCI-informed content updates, AI citation rates will be tracked across ChatGPT, Claude, Gemini, and Perplexity using RankScan to measure whether closing identified gaps correlates with measurable citation improvement.</li>
+                                        <li><strong>6.4 7B+ local model re-evaluation:</strong> Once Llama 3.1 8B or Qwen2.5 7B are tested on the same prompt, a minimum viable local model recommendation will be published as an addendum.</li>
+                                    </ul>
+
+                                    <!-- Research note -->
+                                    <div class="rounded-3 border border-1 p-3 mt-4" style="background:rgba(255,255,255,0.03);">
+                                        <p class="text-400 mb-1" style="font-size:11px; letter-spacing:0.08em; text-transform:uppercase;">Note on Sources</p>
+                                        <p class="text-300 mb-0" style="font-size:12px;">All five URLs used in the benchmark test were publicly accessible pages fetched in May 2025. Content was extracted and included verbatim in the analysis prompt. No model-external knowledge was solicited or used in scoring. Ground truth was compiled manually before running any model tests and was not modified after viewing outputs. Models tested: Claude Sonnet 4.6 (Anthropic), ChatGPT o3 (OpenAI), Gemini 3.5 Flash (Google), Qwen2.5-3B-Instruct (Alibaba, via LM Studio v0.3). All tests conducted May-June 2025.</p>
+                                    </div>
+
+                                </div>
+                                <!-- ===== END CCI RESEARCH SECTION ===== -->
+
+                                <div class="rounded-3 border border-1 p-4 my-5 bg-linear-1">
+                                    <h5 class="mb-3 text-white-keep">Project Positioning Statement</h5>
+                                    <p class="text-white-keep mb-0">
+                                        AI Spider is a locally-hosted, session-based website crawler and AI retrievability auditing platform that combines deterministic signal extraction, content chunking intelligence, AI bot access auditing, citation readiness scoring, PageRank and HITS authority propagation, N-gram phrase analysis, and 17-tab URL intelligence into a unified crawl infrastructure purpose-built for the AI-native search era.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-5 mt-lg-0">
+                            <div class="rounded-3 border border-1 p-4 bg-3 mb-4">
+                                <h5 class="mb-4">Project Details</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="text-400">Category</span>
+                                            <span class="text-300">AI Crawl Intelligence</span>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 pb-3 border-bottom">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="text-400">Architecture</span>
+                                            <span class="text-300">Full-Stack Local</span>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="text-400">Year</span>
+                                            <span class="text-300">2026</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="rounded-3 border border-1 p-4 bg-3">
+                                <h5 class="mb-4">Tech Stack</h5>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Node.js</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Express</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">SQLite</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">React 19</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">TypeScript 5.9</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Vite 7</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Tailwind CSS v4</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">Cheerio</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">TF-IDF</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">PageRank</span>
+                                    <span class="px-3 py-2 bg-linear-1 rounded-2 text-white-keep fs-7">HITS Algorithm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Images Gallery -->
+            <section class="section-gallery pb-60">
+                <div class="container">
+                    <h3 class="mb-5 text-center">Project Gallery</h3>
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="zoom-img rounded-3 overflow-hidden border border-1">
+                                <a href="assets/imgs/portfolio/AI-Spider-2.png" class="popup-img">
+                                    <img loading="lazy" class="w-100" src="assets/imgs/portfolio/AI-Spider-2.png" alt="AI Spider URL Intelligence Table" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="zoom-img rounded-3 overflow-hidden border border-1">
+                                <a href="assets/imgs/portfolio/AI-Spider-3.png" class="popup-img">
+                                    <img loading="lazy" class="w-100" src="assets/imgs/portfolio/AI-Spider-3.png" alt="AI Spider AI Signals & Retrievability Scoring" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="zoom-img rounded-3 overflow-hidden border border-1">
+                                <a href="assets/imgs/portfolio/AI-Spider-4.png" class="popup-img">
+                                    <img loading="lazy" class="w-100" src="assets/imgs/portfolio/AI-Spider-4.png" alt="AI Spider Visualisations & Authority Analysis" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Next Project -->
+            <section class="section-next-project pb-8">
+                <div class="container">
+                    <div class="rounded-3 border border-1 p-lg-5 p-4 bg-3">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <span class="text-400 fs-7">Next Project</span>
+                                <h3 class="mt-2 mb-3">MarAI – AI-Native Multi-Client Marketing Intelligence Platform</h3>
+                                <p class="text-300 mb-0">Full-stack AI marketing execution system with dual-model intelligence, client-scoped orchestration, and citation visibility tracking</p>
+                            </div>
+                            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                                <a href="Port-MarAI-AI-Native.html" class="btn btn-primary-2 rounded-2">
+                                    View Project
+                                    <i class="ri-arrow-right-line ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="section-footer-2 position-relative">
+                <div class="container position-relative z-1 border-top border-1 pb-2 pt-4">
+                    <div class="text-center">
+                        <a class="d-flex main-logo align-items-center justify-content-center mb-3" href="/">
+                            <img loading="lazy" src="assets/imgs/home-page-2/template/favicon.svg" alt="Akshay" />
+                            <span class="fs-4 ms-2">Akshay</span>
+                        </a>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"><i class="ri-linkedin-fill fs-18"></i></a>
+                            <a href="https://github.com/dahiyaakshay" target="_blank"><i class="ri-github-fill fs-18"></i></a>
+                        </div>
+                        <div class="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
+                    <a class="nav-link" href="/"> Home </a>
+                    <a class="nav-link" href="about.html"> About me </a>
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a>
+                    <a class="nav-link" href="https://marai.akshaydahiya.site/" target="_blank"> MarAI </a>
+                    <a class="nav-link" href="https://rankscan.akshaydahiya.site/" target="_blank"> Rank Scan </a>
+                    <a class="nav-link" href="https://retrieveai.akshaydahiya.site/" target="_blank"> Retrieve AI </a>
+                    <a class="nav-link" href="https://aispider.akshaydahiya.site/" target="_blank">AI Spider</a>
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                    <a class="nav-link" href="/#contact"> Contact </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Scroll top -->
+        <div class="btn-scroll-top style-btn-2">
+            <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+                <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+            </svg>
+        </div>
+        <!-- Libs JS -->
+        <script defer src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+        <script defer src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+        <script defer src="assets/js/vendors/swiper-bundle.min.js"></script>
+        <script defer src="assets/js/vendors/smart-stick-nav.js"></script>
+        <script defer src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+        <script defer src="assets/js/vendors/jquery.odometer.min.js"></script>
+        <script defer src="assets/js/vendors/jquery.appear.js"></script>
+        <!-- Chart.js for CCI Research Section -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var ctx = document.getElementById('cciRadarChart');
+            if (!ctx) return;
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Coverage Score', 'Entity Detection', 'Topic Detection', 'Recommendation Quality', 'Format Compliance'],
+                    datasets: [
+                        {
+                            label: 'Claude Sonnet 4.6',
+                            data: [88, 82, 90, 96, 95],
+                            borderColor: '#a78bfa',
+                            backgroundColor: 'rgba(167,139,250,0.12)',
+                            borderWidth: 2,
+                            pointBackgroundColor: '#a78bfa',
+                            pointRadius: 4
+                        },
+                        {
+                            label: 'ChatGPT o3',
+                            data: [54, 78, 58, 80, 90],
+                            borderColor: '#3b82f6',
+                            backgroundColor: 'rgba(59,130,246,0.08)',
+                            borderWidth: 2,
+                            pointBackgroundColor: '#3b82f6',
+                            pointRadius: 4
+                        },
+                        {
+                            label: 'Gemini 3.5 Flash',
+                            data: [80, 75, 72, 68, 82],
+                            borderColor: '#eab308',
+                            backgroundColor: 'rgba(234,179,8,0.08)',
+                            borderWidth: 2,
+                            pointBackgroundColor: '#eab308',
+                            pointRadius: 4
+                        },
+                        {
+                            label: 'Qwen2.5 3B',
+                            data: [22, 14, 18, 20, 30],
+                            borderColor: '#ef4444',
+                            backgroundColor: 'rgba(239,68,68,0.06)',
+                            borderWidth: 1.5,
+                            borderDash: [4, 3],
+                            pointBackgroundColor: '#ef4444',
+                            pointRadius: 4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                font: { family: 'DM Mono', size: 11 },
+                                color: '#9ca3af',
+                                padding: 16,
+                                boxWidth: 12
+                            }
+                        }
+                    },
+                    scales: {
+                        r: {
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                                font: { family: 'DM Mono', size: 10 },
+                                color: '#6b7280',
+                                backdropColor: 'transparent'
+                            },
+                            grid: { color: 'rgba(255,255,255,0.08)' },
+                            angleLines: { color: 'rgba(255,255,255,0.08)' },
+                            pointLabels: {
+                                font: { family: 'Urbanist', size: 11, weight: '600' },
+                                color: '#d1d5db'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+        </script>
+        <!-- Theme JS -->
+        <script defer src="assets/js/main.js"></script>
+    </body>
+</html>
