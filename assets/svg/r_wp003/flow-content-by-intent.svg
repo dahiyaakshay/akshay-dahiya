@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 522" width="700" height="522" font-family="Inter, Arial, sans-serif">
+<rect x="0" y="0" width="700" height="522" fill="#FEFEFE"/>
+<text x="40" y="38" font-size="18" font-weight="700" fill="#434C4A">Content Type Selection by Query Intent</text>
+<rect x="40" y="70" width="620" height="80" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="110.0" r="14" fill="#B58CFF"/>
+<text x="70" y="115.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">1</text>
+<text x="100" y="100" font-size="15" font-weight="700" fill="#434C4A">Commercial intent</text>
+<text x="100" y="120" font-size="12.5" fill="#6B7471">Prioritise: comparison tables, feature H2s, specification blocks, FAQ for pricing questions</text>
+<line x1="350.0" y1="150" x2="350.0" y2="178" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="345.0,178 355.0,178 350.0,184" fill="#C9C4D4"/>
+<rect x="40" y="184" width="620" height="80" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="224.0" r="14" fill="#B58CFF"/>
+<text x="70" y="229.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">2</text>
+<text x="100" y="214" font-size="15" font-weight="700" fill="#434C4A">Analytical intent</text>
+<text x="100" y="234" font-size="12.5" fill="#6B7471">Prioritise: coherent sections with data, avoid scattering evidence across many short chunks</text>
+<line x1="350.0" y1="264" x2="350.0" y2="292" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="345.0,292 355.0,292 350.0,298" fill="#C9C4D4"/>
+<rect x="40" y="298" width="620" height="80" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="338.0" r="14" fill="#B58CFF"/>
+<text x="70" y="343.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">3</text>
+<text x="100" y="328" font-size="15" font-weight="700" fill="#434C4A">Troubleshooting intent</text>
+<text x="100" y="348" font-size="12.5" fill="#6B7471">Prioritise: numbered step sequences, code blocks at the top, minimal prose between steps</text>
+<line x1="350.0" y1="378" x2="350.0" y2="406" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="345.0,406 355.0,406 350.0,412" fill="#C9C4D4"/>
+<rect x="40" y="412" width="620" height="80" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="452.0" r="14" fill="#B58CFF"/>
+<text x="70" y="457.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">4</text>
+<text x="100" y="442" font-size="15" font-weight="700" fill="#434C4A">Opinion intent</text>
+<text x="100" y="462" font-size="12.5" fill="#6B7471">Realistic goal: be one node in a multi-source synthesis. Ensure your position is clear in</text>
+<text x="100" y="480" font-size="12.5" fill="#6B7471">the introduction.</text>
+</svg>

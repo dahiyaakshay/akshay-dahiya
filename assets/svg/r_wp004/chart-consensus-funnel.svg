@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="374.4pt" viewBox="0 0 576 374.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-12T04:54:18.453068</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 374.4 
+L 576 374.4 
+L 576 0 
+L 0 0 
+L 0 374.4 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 145.43 350.02 
+L 539.577143 350.02 
+L 539.577143 37.6 
+L 145.43 37.6 
+L 145.43 350.02 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 145.43 350.02 
+L 145.43 37.6 
+" clip-path="url(#pbb0eee87d1)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #6b7471" x="145.43" y="361.118438" transform="rotate(-0 145.43 361.118438)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 232.804478 350.02 
+L 232.804478 37.6 
+" clip-path="url(#pbb0eee87d1)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #6b7471" x="232.804478" y="361.118438" transform="rotate(-0 232.804478 361.118438)">5000</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 320.178955 350.02 
+L 320.178955 37.6 
+" clip-path="url(#pbb0eee87d1)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #6b7471" x="320.178955" y="361.118438" transform="rotate(-0 320.178955 361.118438)">10000</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 407.553433 350.02 
+L 407.553433 37.6 
+" clip-path="url(#pbb0eee87d1)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #6b7471" x="407.553433" y="361.118438" transform="rotate(-0 407.553433 361.118438)">15000</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 494.927911 350.02 
+L 494.927911 37.6 
+" clip-path="url(#pbb0eee87d1)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #6b7471" x="494.927911" y="361.118438" transform="rotate(-0 494.927911 361.118438)">20000</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="141.93" y="71.195309" transform="rotate(-0 141.93 71.195309)">Total unique businesses</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="141.93" y="121.912842" transform="rotate(-0 141.93 121.912842)">Multi-model (CCS 2+)</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="141.93" y="172.630374" transform="rotate(-0 141.93 172.630374)">CCS 3+</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14"/>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="141.93" y="223.347907" transform="rotate(-0 141.93 223.347907)">CCS 4+</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15"/>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="141.93" y="274.065439" transform="rotate(-0 141.93 274.065439)">CCS 5+</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16"/>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="141.93" y="324.782972" transform="rotate(-0 141.93 324.782972)">CCS 6 Universal</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 145.43 350.02 
+L 539.577143 350.02 
+" style="fill: none; stroke: #e4eae9; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 145.43 82.231429 
+L 520.808231 82.231429 
+L 520.808231 51.800909 
+L 145.43 51.800909 
+z
+" clip-path="url(#pbb0eee87d1)" style="fill: #d4c5a9"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 145.43 132.948961 
+L 303.088508 132.948961 
+L 303.088508 102.518442 
+L 145.43 102.518442 
+z
+" clip-path="url(#pbb0eee87d1)" style="fill: #acbcb3"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 145.43 183.666494 
+L 235.530561 183.666494 
+L 235.530561 153.235974 
+L 145.43 153.235974 
+z
+" clip-path="url(#pbb0eee87d1)" style="fill: #ca8a04"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 145.43 234.384026 
+L 194.237383 234.384026 
+L 194.237383 203.953506 
+L 145.43 203.953506 
+z
+" clip-path="url(#pbb0eee87d1)" style="fill: #65a30d"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 145.43 285.101558 
+L 167.95514 285.101558 
+L 167.95514 254.671039 
+L 145.43 254.671039 
+z
+" clip-path="url(#pbb0eee87d1)" style="fill: #059669"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 145.43 335.819091 
+L 152.944205 335.819091 
+L 152.944205 305.388571 
+L 145.43 305.388571 
+z
+" clip-path="url(#pbb0eee87d1)" style="fill: #8d5cf2"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start; fill: #434c4a" x="528.808231" y="69.775544" transform="rotate(-0 528.808231 69.775544)">21,481</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start; fill: #434c4a" x="311.088508" y="120.493076" transform="rotate(-0 311.088508 120.493076)">9,022</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start; fill: #434c4a" x="243.530561" y="171.210609" transform="rotate(-0 243.530561 171.210609)">5,156</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start; fill: #434c4a" x="202.237383" y="221.928141" transform="rotate(-0 202.237383 221.928141)">2,793</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start; fill: #434c4a" x="175.95514" y="272.645674" transform="rotate(-0 175.95514 272.645674)">1,289</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start; fill: #434c4a" x="160.944205" y="323.363206" transform="rotate(-0 160.944205 323.363206)">430</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start; fill: #434c4a" x="10" y="21.6" transform="rotate(-0 10 21.6)">The Consensus Funnel: 21,481 Businesses Narrowing to 430</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbb0eee87d1">
+   <rect x="145.43" y="37.6" width="394.147143" height="312.42"/>
+  </clipPath>
+ </defs>
+</svg>

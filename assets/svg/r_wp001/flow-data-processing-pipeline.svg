@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 468" width="1100" height="468" font-family="Inter, Arial, sans-serif">
+<rect x="0" y="0" width="1100" height="468" fill="#FEFEFE"/>
+<text x="40" y="38" font-size="18" font-weight="700" fill="#434C4A">Data Processing Pipeline</text>
+<rect x="40" y="70" width="320" height="92" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="68" cy="96" r="13" fill="#B58CFF"/>
+<text x="68" y="100" font-size="12" font-weight="700" fill="#FEFEFE" text-anchor="middle">1</text>
+<text x="90" y="100" font-size="14" font-weight="700" fill="#434C4A">Prompt submission</text>
+<text x="58" y="124" font-size="11.5" fill="#6B7471">Prompt sent to AI platform via interface</text>
+<text x="58" y="142" font-size="11.5" fill="#6B7471">or API. Response captured in full.</text>
+<line x1="360" y1="116.0" x2="394" y2="116.0" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="394,111.0 394,121.0 400,116.0" fill="#C9C4D4"/>
+<rect x="400" y="70" width="320" height="92" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="428" cy="96" r="13" fill="#B58CFF"/>
+<text x="428" y="100" font-size="12" font-weight="700" fill="#FEFEFE" text-anchor="middle">2</text>
+<text x="450" y="100" font-size="14" font-weight="700" fill="#434C4A">Response collection</text>
+<text x="418" y="124" font-size="11.5" fill="#6B7471">Full text and citation metadata recorded</text>
+<text x="418" y="142" font-size="11.5" fill="#6B7471">with timestamp.</text>
+<line x1="720" y1="116.0" x2="754" y2="116.0" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="754,111.0 754,121.0 760,116.0" fill="#C9C4D4"/>
+<rect x="760" y="70" width="320" height="92" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="788" cy="96" r="13" fill="#B58CFF"/>
+<text x="788" y="100" font-size="12" font-weight="700" fill="#FEFEFE" text-anchor="middle">3</text>
+<text x="810" y="100" font-size="14" font-weight="700" fill="#434C4A">Citation extraction</text>
+<text x="778" y="124" font-size="11.5" fill="#6B7471">URLs and source references parsed;</text>
+<text x="778" y="142" font-size="11.5" fill="#6B7471">platform-specific extraction rules applied.</text>
+<rect x="40" y="208" width="320" height="92" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="68" cy="234" r="13" fill="#B58CFF"/>
+<text x="68" y="238" font-size="12" font-weight="700" fill="#FEFEFE" text-anchor="middle">4</text>
+<text x="90" y="238" font-size="14" font-weight="700" fill="#434C4A">URL normalization</text>
+<text x="58" y="262" font-size="11.5" fill="#6B7471">Trailing slashes removed, query params</text>
+<text x="58" y="280" font-size="11.5" fill="#6B7471">stripped, HTTP/HTTPS and www collapsed.</text>
+<line x1="360" y1="254.0" x2="394" y2="254.0" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="394,249.0 394,259.0 400,254.0" fill="#C9C4D4"/>
+<rect x="400" y="208" width="320" height="92" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="428" cy="234" r="13" fill="#B58CFF"/>
+<text x="428" y="238" font-size="12" font-weight="700" fill="#FEFEFE" text-anchor="middle">5</text>
+<text x="450" y="238" font-size="14" font-weight="700" fill="#434C4A">Duplicate removal</text>
+<text x="418" y="262" font-size="11.5" fill="#6B7471">Within-response duplicates collapsed to</text>
+<text x="418" y="280" font-size="11.5" fill="#6B7471">one citation per URL per response.</text>
+<line x1="720" y1="254.0" x2="754" y2="254.0" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="754,249.0 754,259.0 760,254.0" fill="#C9C4D4"/>
+<rect x="760" y="208" width="320" height="92" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="788" cy="234" r="13" fill="#B58CFF"/>
+<text x="788" y="238" font-size="12" font-weight="700" fill="#FEFEFE" text-anchor="middle">6</text>
+<text x="810" y="238" font-size="14" font-weight="700" fill="#434C4A">Latency calculation</text>
+<text x="778" y="262" font-size="11.5" fill="#6B7471">Days from page publish/update date to</text>
+<text x="778" y="280" font-size="11.5" fill="#6B7471">first citation appearance computed.</text>
+<rect x="40" y="346" width="320" height="92" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="68" cy="372" r="13" fill="#B58CFF"/>
+<text x="68" y="376" font-size="12" font-weight="700" fill="#FEFEFE" text-anchor="middle">7</text>
+<text x="90" y="376" font-size="14" font-weight="700" fill="#434C4A">Cross-engine comparison</text>
+<text x="58" y="400" font-size="11.5" fill="#6B7471">Citation sets compared across platforms</text>
+<text x="58" y="418" font-size="11.5" fill="#6B7471">for overlap, latency, freshness.</text>
+<line x1="360" y1="392.0" x2="394" y2="392.0" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="394,387.0 394,397.0 400,392.0" fill="#C9C4D4"/>
+<rect x="400" y="346" width="320" height="92" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="428" cy="372" r="13" fill="#B58CFF"/>
+<text x="428" y="376" font-size="12" font-weight="700" fill="#FEFEFE" text-anchor="middle">8</text>
+<text x="450" y="376" font-size="14" font-weight="700" fill="#434C4A">Metric generation</text>
+<text x="418" y="400" font-size="11.5" fill="#6B7471">Final metrics computed: replacement</text>
+<text x="418" y="418" font-size="11.5" fill="#6B7471">rate, median latency, content age.</text>
+</svg>

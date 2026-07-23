@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 978" width="780" height="978" font-family="Inter, Arial, sans-serif">
+<rect x="0" y="0" width="780" height="978" fill="#FEFEFE"/>
+<text x="40" y="38" font-size="18" font-weight="700" fill="#434C4A">Data Processing Pipeline: 847 Prompts to 847K Entity Measurements</text>
+
+<rect x="40" y="70" width="700" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="107.0" r="14" fill="#B58CFF"/>
+<text x="70" y="112.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">1</text>
+<text x="100" y="100" font-size="15" font-weight="700" fill="#434C4A">Prompt Execution</text>
+<text x="100" y="120" font-size="12.5" fill="#6B7471">847 prompts issued across 7 AI platforms via API, producing 5,929 total responses.</text>
+<line x1="390.0" y1="144" x2="390.0" y2="172" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="385.0,172 395.0,172 390.0,178" fill="#C9C4D4"/>
+
+<rect x="40" y="178" width="700" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="215.0" r="14" fill="#B58CFF"/>
+<text x="70" y="220.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">2</text>
+<text x="100" y="208" font-size="15" font-weight="700" fill="#434C4A">Citation Extraction</text>
+<text x="100" y="228" font-size="12.5" fill="#6B7471">Cited URLs parsed from each response and copied for entity extraction, 22,547 citations extracted.</text>
+<line x1="390.0" y1="252" x2="390.0" y2="280" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="385.0,280 395.0,280 390.0,286" fill="#C9C4D4"/>
+
+<rect x="40" y="286" width="700" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="323.0" r="14" fill="#B58CFF"/>
+<text x="70" y="328.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">3</text>
+<text x="100" y="316" font-size="15" font-weight="700" fill="#434C4A">Webpage Content Extraction</text>
+<text x="100" y="336" font-size="12.5" fill="#6B7471">Each cited page's full content extracted and converted to Markdown, avg length 2,340 words.</text>
+<line x1="390.0" y1="360" x2="390.0" y2="388" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="385.0,388 395.0,388 390.0,394" fill="#C9C4D4"/>
+
+<rect x="40" y="394" width="700" height="90" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="439.0" r="14" fill="#B58CFF"/>
+<text x="70" y="444.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">4</text>
+<text x="100" y="422" font-size="15" font-weight="700" fill="#434C4A">Entity Identification</text>
+<text x="100" y="441" font-size="12.5" fill="#6B7471">Entities the AI's response surfaced were identified, then lexically matched against the full page</text>
+<text x="100" y="458" font-size="12.5" fill="#6B7471">content, producing 847,293 entity mentions.</text>
+<line x1="390.0" y1="484" x2="390.0" y2="512" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="385.0,512 395.0,512 390.0,518" fill="#C9C4D4"/>
+
+<rect x="40" y="518" width="700" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="555.0" r="14" fill="#B58CFF"/>
+<text x="70" y="560.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">5</text>
+<text x="100" y="548" font-size="15" font-weight="700" fill="#434C4A">Entity Categorization</text>
+<text x="100" y="568" font-size="12.5" fill="#6B7471">Each matched entity categorized by type (23-type taxonomy) and by placement on the page.</text>
+<line x1="390.0" y1="592" x2="390.0" y2="620" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="385.0,620 395.0,620 390.0,626" fill="#C9C4D4"/>
+
+<rect x="40" y="626" width="700" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="663.0" r="14" fill="#B58CFF"/>
+<text x="70" y="668.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">6</text>
+<text x="100" y="656" font-size="15" font-weight="700" fill="#434C4A">Citation Linkage</text>
+<text x="100" y="676" font-size="12.5" fill="#6B7471">Each entity mention linked to citation status, producing 847,293 entity-citation pairs.</text>
+<line x1="390.0" y1="700" x2="390.0" y2="728" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="385.0,728 395.0,728 390.0,734" fill="#C9C4D4"/>
+
+<rect x="40" y="734" width="700" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="771.0" r="14" fill="#B58CFF"/>
+<text x="70" y="776.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">7</text>
+<text x="100" y="764" font-size="15" font-weight="700" fill="#434C4A">Citation Rate Calculation</text>
+<text x="100" y="784" font-size="12.5" fill="#6B7471">Citation rate computed per entity type, cluster, and placement position.</text>
+<line x1="390.0" y1="808" x2="390.0" y2="836" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="385.0,836 395.0,836 390.0,842" fill="#C9C4D4"/>
+
+<rect x="40" y="842" width="700" height="90" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="887.0" r="14" fill="#B58CFF"/>
+<text x="70" y="892.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">8</text>
+<text x="100" y="870" font-size="15" font-weight="700" fill="#434C4A">Pattern Comparison</text>
+<text x="100" y="889" font-size="12.5" fill="#6B7471">Citation rates compared across entity types, clusters, density tiers, and platforms to find</text>
+<text x="100" y="906" font-size="12.5" fill="#6B7471">patterns.</text>
+</svg>

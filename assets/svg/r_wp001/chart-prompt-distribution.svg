@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="540pt" height="324pt" viewBox="0 0 540 324" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-12T03:57:56.322790</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 324 
+L 540 324 
+L 540 0 
+L 0 0 
+L 0 324 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 63.54 298.9 
+L 529.2 298.9 
+L 529.2 37.6 
+L 63.54 37.6 
+L 63.54 298.9 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #6b7471" x="130.359305" y="310.758281" transform="rotate(-0 130.359305 310.758281)">SaaS &amp; Software</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #6b7471" x="296.37" y="310.758281" transform="rotate(-0 296.37 310.758281)">Digital Marketing</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #6b7471" x="462.380695" y="310.758281" transform="rotate(-0 462.380695 310.758281)">E-commerce</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <path d="M 63.54 298.9 
+L 529.2 298.9 
+" clip-path="url(#p49fe8e861c)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_5"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="60.04" y="302.699219" transform="rotate(-0 60.04 302.699219)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <path d="M 63.54 263.34898 
+L 529.2 263.34898 
+" clip-path="url(#p49fe8e861c)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_7"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="60.04" y="267.148198" transform="rotate(-0 60.04 267.148198)">1,000</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <path d="M 63.54 227.797959 
+L 529.2 227.797959 
+" clip-path="url(#p49fe8e861c)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_9"/>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="60.04" y="231.597178" transform="rotate(-0 60.04 231.597178)">2,000</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <path d="M 63.54 192.246939 
+L 529.2 192.246939 
+" clip-path="url(#p49fe8e861c)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_11"/>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="60.04" y="196.046158" transform="rotate(-0 60.04 196.046158)">3,000</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_12">
+      <path d="M 63.54 156.695918 
+L 529.2 156.695918 
+" clip-path="url(#p49fe8e861c)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13"/>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="60.04" y="160.495137" transform="rotate(-0 60.04 160.495137)">4,000</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_14">
+      <path d="M 63.54 121.144898 
+L 529.2 121.144898 
+" clip-path="url(#p49fe8e861c)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_15"/>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="60.04" y="124.944117" transform="rotate(-0 60.04 124.944117)">5,000</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_16">
+      <path d="M 63.54 85.593878 
+L 529.2 85.593878 
+" clip-path="url(#p49fe8e861c)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_17"/>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="60.04" y="89.393096" transform="rotate(-0 60.04 89.393096)">6,000</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_18">
+      <path d="M 63.54 50.042857 
+L 529.2 50.042857 
+" clip-path="url(#p49fe8e861c)" style="fill: none; stroke: #e4eae9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_19"/>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: end; fill: #6b7471" x="60.04" y="53.842076" transform="rotate(-0 60.04 53.842076)">7,000</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #6b7471" x="19.124219" y="168.25" transform="rotate(-90 19.124219 168.25)">Total Prompts</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 63.54 298.9 
+L 529.2 298.9 
+" style="fill: none; stroke: #e4eae9; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 84.706364 298.9 
+L 176.012246 298.9 
+L 176.012246 50.042857 
+L 84.706364 50.042857 
+z
+" clip-path="url(#p49fe8e861c)" style="fill: #8d5cf2"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 250.717059 298.9 
+L 342.022941 298.9 
+L 342.022941 174.471429 
+L 250.717059 174.471429 
+z
+" clip-path="url(#p49fe8e861c)" style="fill: #b58cff"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 416.727754 298.9 
+L 508.033636 298.9 
+L 508.033636 174.471429 
+L 416.727754 174.471429 
+z
+" clip-path="url(#p49fe8e861c)" style="fill: #e8d0fe"/>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #434c4a" x="130.359305" y="44.042857" transform="rotate(-0 130.359305 44.042857)">7,000</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #434c4a" x="296.37" y="168.471429" transform="rotate(-0 296.37 168.471429)">3,500</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: middle; fill: #434c4a" x="462.380695" y="168.471429" transform="rotate(-0 462.380695 168.471429)">3,500</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans', 'Arial', sans-serif; text-anchor: start; fill: #434c4a" x="63.54" y="21.6" transform="rotate(-0 63.54 21.6)">Prompt Distribution by Industry</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p49fe8e861c">
+   <rect x="63.54" y="37.6" width="465.66" height="261.3"/>
+  </clipPath>
+ </defs>
+</svg>

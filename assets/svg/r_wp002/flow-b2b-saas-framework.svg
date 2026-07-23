@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 606" width="700" height="606" font-family="Inter, Arial, sans-serif">
+<rect x="0" y="0" width="700" height="606" fill="#FEFEFE"/>
+<text x="40" y="38" font-size="18" font-weight="700" fill="#434C4A">B2B SaaS Content Strategy for Multi-Hop Participation</text>
+<rect x="40" y="70" width="620" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="107.0" r="14" fill="#B58CFF"/>
+<text x="70" y="112.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">1</text>
+<text x="100" y="100" font-size="15" font-weight="700" fill="#434C4A">Audit your cross-domain presence</text>
+<text x="100" y="120" font-size="12.5" fill="#6B7471">G2, Capterra, GitHub, integration partner pages, security databases</text>
+<line x1="350.0" y1="144" x2="350.0" y2="172" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="345.0,172 355.0,172 350.0,178" fill="#C9C4D4"/>
+<rect x="40" y="178" width="620" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="215.0" r="14" fill="#B58CFF"/>
+<text x="70" y="220.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">2</text>
+<text x="100" y="208" font-size="15" font-weight="700" fill="#434C4A">Structure documentation for atomic extraction</text>
+<text x="100" y="228" font-size="12.5" fill="#6B7471">Each doc page answers one question. Section headers are searchable claims.</text>
+<line x1="350.0" y1="252" x2="350.0" y2="280" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="345.0,280 355.0,280 350.0,286" fill="#C9C4D4"/>
+<rect x="40" y="286" width="620" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="323.0" r="14" fill="#B58CFF"/>
+<text x="70" y="328.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">3</text>
+<text x="100" y="316" font-size="15" font-weight="700" fill="#434C4A">Write for contextual and complex query intents</text>
+<text x="100" y="336" font-size="12.5" fill="#6B7471">These trigger 34 to 82% MHCR. Simple FAQ answers rarely participate.</text>
+<line x1="350.0" y1="360" x2="350.0" y2="388" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="345.0,388 355.0,388 350.0,394" fill="#C9C4D4"/>
+<rect x="40" y="394" width="620" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="431.0" r="14" fill="#B58CFF"/>
+<text x="70" y="436.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">4</text>
+<text x="100" y="424" font-size="15" font-weight="700" fill="#434C4A">Enter the multi-hop citation pool</text>
+<text x="100" y="444" font-size="12.5" fill="#6B7471">Source Reuse Ratio of 0.34 means once in, you tend to stay in</text>
+<line x1="350.0" y1="468" x2="350.0" y2="496" stroke="#C9C4D4" stroke-width="2"/>
+<polygon points="345.0,496 355.0,496 350.0,502" fill="#C9C4D4"/>
+<rect x="40" y="502" width="620" height="74" rx="10" fill="#E4EAE9" stroke="#C9C4D4" stroke-width="1"/>
+<circle cx="70" cy="539.0" r="14" fill="#B58CFF"/>
+<text x="70" y="544.0" font-size="13" font-weight="700" fill="#FEFEFE" text-anchor="middle">5</text>
+<text x="100" y="532" font-size="15" font-weight="700" fill="#434C4A">Monitor citation presence on Perplexity and Copilot</text>
+<text x="100" y="552" font-size="12.5" fill="#6B7471">These platforms are most likely to include you in multi-hop paths</text>
+</svg>
