@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html data-wf-domain="akshay.local" data-wf-page="68aad862700314ecdf577941" data-wf-site="68a9d12699bd47b077398cae" lang="en" data-wf-collection="68aad861700314ecdf577918" data-wf-item-slug="crawl-freshness-vs-ai-visibility-whitepaper">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-E6JLR8VFSJ');
+  </script>
+
+  <meta charset="utf-8" />
+  <title>003: What AI Actually Reads on Your Webpage - Akshay</title>
+  <link rel="canonical" href="https://akshaydahiya.site/what-ai-actually-reads-whitepaper.html" />
+  <meta content="A study of 2,500 queries across 45,000 pages from 1,500 domains revealing that LLMs retrieve only 12 to 45% of the average webpage before answering, and which sections of a page actually get used." name="description" />
+  <meta content="AI content retrieval, page compression ratio, section retrieval, live LLM testing, GEO research" name="keywords" />
+  <meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots" />
+  <meta content="Akshay Dahiya" name="author" />
+  <meta content="Akshay Dahiya" name="publisher" />
+  <link href="https://akshaydahiya.site/what-ai-actually-reads-whitepaper.html" hreflang="en" rel="alternate" />
+  <link href="https://akshaydahiya.site/what-ai-actually-reads-whitepaper.html" hreflang="x-default" rel="alternate" />
+  <meta content="003: What AI Actually Reads on Your Webpage - Akshay" property="og:title" />
+  <meta content="003: What AI Actually Reads on Your Webpage - Akshay" name="twitter:title" />
+  <meta property="og:type" content="website" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Akshay" name="generator" />
+  <link href="assets/css/shared.css" rel="stylesheet" type="text/css" />
+  <style>
+  @media (min-width:992px) {
+    html.w-mod-js:not(.w-mod-ix) [data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b"] {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width:991px) and (min-width:768px) {
+    html.w-mod-js:not(.w-mod-ix) [data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b"] {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width:767px) and (min-width:480px) {
+    html.w-mod-js:not(.w-mod-ix) [data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b"] {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width:479px) {
+    html.w-mod-js:not(.w-mod-ix) [data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b"] {
+      opacity: 0;
+    }
+  }
+  </style>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+  <script src="assets/js/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  WebFont.load({
+    google: {
+      families: ["Schibsted Grotesk:300,400,500,600,700"]
+    }
+  });
+  </script>
+  <script type="text/javascript">
+  ! function(o, c) {
+    var n = c.documentElement,
+      t = " w-mod-";
+    n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className +=
+      t + "touch")
+  }(window, document);
+  </script>
+  <link href="assets/svg/favicon.svg" rel="icon" type="image/svg+xml" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [{
+        "@type": "Report",
+        "@id": "https://akshaydahiya.site/what-ai-actually-reads-whitepaper.html#report",
+        "name": "003: What AI Actually Reads on Your Webpage",
+        "headline": "003: What AI Actually Reads on Your Webpage",
+        "description": "A study of 2,500 queries across 45,000 pages from 1,500 domains revealing that LLMs retrieve only 12 to 45% of the average webpage before answering, and which sections of a page actually get used.",
+        "url": "https://akshaydahiya.site/what-ai-actually-reads-whitepaper.html",
+        "image": "https://akshaydahiya.site/assets/img/whitepapers/wp003.jpeg",
+        "datePublished": "2026-05",
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "GEO Retrieval Research Series"
+        },
+        "keywords": "AI content retrieval, page compression ratio, section retrieval, live LLM testing, GEO research",
+        "about": [{
+            "@type": "Thing",
+            "name": "AI Content Retrieval"
+          },
+          {
+            "@type": "Thing",
+            "name": "Page Compression Ratio"
+          },
+          {
+            "@type": "Thing",
+            "name": "Section Retrieval Probability"
+          },
+          {
+            "@type": "Thing",
+            "name": "Generative Engine Optimization"
+          }
+        ],
+        "author": {
+          "@id": "https://akshaydahiya.site/#person"
+        },
+        "publisher": {
+          "@id": "https://akshaydahiya.site/#organization"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://akshaydahiya.site/what-ai-actually-reads-whitepaper.html"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://akshaydahiya.site/#person",
+        "name": "Akshay Dahiya",
+        "url": "https://akshaydahiya.site/about-me.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/akshay-dahiya/",
+          "https://github.com/dahiyaakshay"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://akshaydahiya.site/#organization",
+        "name": "Akshay Dahiya",
+        "url": "https://akshaydahiya.site/",
+        "logo": "https://akshaydahiya.site/assets/img/logo.png"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://akshaydahiya.site/what-ai-actually-reads-whitepaper.html#breadcrumb",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://akshaydahiya.site/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Whitepapers",
+            "item": "https://akshaydahiya.site/whitepapers.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "What AI Actually Reads",
+            "item": "https://akshaydahiya.site/what-ai-actually-reads-whitepaper.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="body">
+  <section class="navbar">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-no-shadow-container-2 w-nav">
+      <div class="container-regular">
+        <div class="navbar-wrapper"><a href="index.html" class="navbar-brand w-nav-brand"><img loading="lazy"
+              alt="Akshay Dahiya logo" src="assets/img/logo.png" class="image" /></a>
+          <nav role="navigation" class="nav-menu-wrapper tablet w-nav-menu">
+            <ul role="list" class="nav-menu tablet w-list-unstyled">
+              <li><a href="index.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Home</div>
+                  </a></li>
+              <li><a href="about-me.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">About</div>
+                  </a></li>
+              <li class="nav-dropdown-item">
+                <div class="nav-link nav-dropdown-toggle w-inline-block">
+                  <div class="nav-link-text is-relative">SEO/GEO</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="nav-mega-panel">
+                  <div class="nav-mega-panel-inner">
+                    <div class="nav-mega-column">
+                      <div class="nav-mega-column-heading">SEO</div><a href="on-page.html" class="nav-mega-link">On-page</a><a href="off-page.html" class="nav-mega-link">Off-page</a><a href="link-building.html" class="nav-mega-link">Link Building</a><a href="website-structure.html" class="nav-mega-link">Website Structure</a><a href="sitemap.html" class="nav-mega-link">Sitemap</a><a href="website-structure-optimization.html" class="nav-mega-link">Website Structure Optimization</a><a href="url-optimization-and-canonicalization.html" class="nav-mega-link">URL Optimization & Canonicalization</a><a href="website-indexing-optimization.html" class="nav-mega-link">Website Indexing Optimization</a><a href="crawl-budget-optimization.html" class="nav-mega-link">Crawl Budget Optimization</a>
+                    </div>
+                    <div class="nav-mega-column">
+                      <div class="nav-mega-column-heading">GEO</div><a href="content-retrieval-optimization.html" class="nav-mega-link">Content Retrieval Optimization</a><a href="citation-optimization.html" class="nav-mega-link">Citation Optimization</a><a href="authority-and-trust-signals.html" class="nav-mega-link">Authority & Trust Signals</a><a href="knowledge-structure.html" class="nav-mega-link">Knowledge Structure</a><a href="ai-discovery-and-crawlability.html" class="nav-mega-link">AI Discovery & Crawlability</a><a href="chunk-and-passage-optimization.html" class="nav-mega-link">Chunk & Passage Optimization</a><a href="citation-ready-urls.html" class="nav-mega-link">Citation-Ready URLs</a><a href="llm-index-readiness.html" class="nav-mega-link">LLM Index Readiness</a><a href="retrieval-coverage-optimization.html" class="nav-mega-link">Retrieval Coverage Optimization</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-dropdown-item">
+                <div class="nav-link nav-dropdown-toggle w-inline-block">
+                  <div class="nav-link-text is-relative">SEO/GEO Strategy</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="nav-mega-panel">
+                  <div class="nav-mega-panel-inner">
+                    <div class="nav-mega-column">
+                      <div class="nav-mega-column-heading">SEO</div><a href="keyword-strategy.html" class="nav-mega-link">Keyword Strategy</a><a href="search-intent-strategy.html" class="nav-mega-link">Search Intent Strategy</a><a href="content-strategy.html" class="nav-mega-link">Content Strategy</a><a href="technical-seo-strategy.html" class="nav-mega-link">Technical SEO Strategy</a><a href="website-architecture-strategy.html" class="nav-mega-link">Website Architecture Strategy</a><a href="internal-linking-strategy.html" class="nav-mega-link">Internal Linking Strategy</a><a href="authority-and-backlink-strategy.html" class="nav-mega-link">Authority & Backlink Strategy</a><a href="competitor-seo-strategy.html" class="nav-mega-link">Competitor SEO Strategy</a><a href="seo-growth-roadmap.html" class="nav-mega-link">SEO Growth Roadmap</a>
+                    </div>
+                    <div class="nav-mega-column">
+                      <div class="nav-mega-column-heading">GEO</div><a href="prompt-strategy.html" class="nav-mega-link">Prompt Strategy</a><a href="retrieval-strategy.html" class="nav-mega-link">Retrieval Strategy</a><a href="citation-strategy.html" class="nav-mega-link">Citation Strategy</a><a href="entity-strategy.html" class="nav-mega-link">Entity Strategy</a><a href="knowledge-graph-strategy.html" class="nav-mega-link">Knowledge Graph Strategy</a><a href="content-chunking-strategy.html" class="nav-mega-link">Content Chunking Strategy</a><a href="ai-authority-strategy.html" class="nav-mega-link">AI Authority Strategy</a><a href="competitor-geo-strategy.html" class="nav-mega-link">Competitor GEO Strategy</a><a href="geo-growth-roadmap.html" class="nav-mega-link">GEO Growth Roadmap</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="whitepapers.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Whitepaper</div>
+                  </a></li>
+              <li class="nav-dropdown-item">
+                <div class="nav-link nav-dropdown-toggle w-inline-block">
+                  <div class="nav-link-text is-relative">Glossary</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="nav-mega-panel nav-mega-panel-small">
+                  <div class="nav-mega-panel-inner">
+                    <div class="nav-mega-column"><a href="seo-glossary.html" class="nav-mega-link">SEO</a><a href="geo-glossary.html" class="nav-mega-link">GEO</a></div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-item-2"><a href="contact.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Contact</div>
+                  </a></li>
+              <li class="mobile-margin-top-10">
+                <div class="nav-button-wrapper"><a data-w-id="0b28c022-0aef-f4ef-61cc-f350c43353a5"
+                      href="contact.html" target="_blank" class="hero-button nav-hide w-inline-block">
+                      <div class="hero-button-text-wrapper">
+                        <div class="hero-button-text is-absolute">Contact Now</div>
+                        <div class="hero-button-text is-relative">Contact Now</div>
+                      </div>
+                      <div class="hero-button-arrow-wrapper">
+                        <div class="primary-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                        <div class="primary-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                      </div>
+                      <div class="ptimary-button-bg"></div>
+                    </a><a data-w-id="0739ce88-511f-93ed-6125-351eb6b1f1ff" href="contact.html" target="_blank"
+                      class="cta-button desktop-nav w-inline-block">
+                      <div class="hero-button-text-wrapper">
+                        <div class="cta-button-text is-absolute">Contact Now</div>
+                        <div class="cta-button-text is-relative">Contact Now</div>
+                      </div>
+                      <div class="cta-button-arrow-wrapper">
+                        <div class="cta-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                        <div class="cta-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                      </div>
+                      <div class="cta-button-bg"></div>
+                    </a></div>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <div class="hamburger-icon">
+              <div class="hamburger-bar"></div>
+              <div class="hamburger-bar"></div>
+              <div class="hamburger-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sengle-case-study-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="single-case-study-section-wrapper">
+        <div class="single-case-study-header">
+          <div class="single-page-header">
+            <div data-w-id="afea98e7-be5a-2a93-1984-12b381e13ac6" style="opacity:0" class="breadcum-card"><a
+                href="index.html" class="breadcum-home">Home</a>
+              <div class="breadcum-divider">
+                <div class="breadcum-icon is-absolute w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+                <div class="breadcum-icon is-relative w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div><a href="whitepapers.html" class="breadcum-home">Whitepapers</a>
+              <div class="breadcum-divider hide-mobile">
+                <div class="breadcum-icon is-absolute w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+                <div class="breadcum-icon is-relative w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+              <div class="breadcum-page hide-mobile">003: What AI Actually Reads on Your Webpage</div>
+            </div>
+            <h1 data-w-id="90bc2627-1006-e82a-b6e2-62beb703c1a1" style="opacity:0" class="inner-page-h1 center">What AI
+              Actually Reads <span class="grey-text semibold">on Your Webpage</span></h1>
+            <p data-w-id="2952c910-5f5a-a1ba-9961-a90298685fde" style="opacity:0" class="body-text">LLMs retrieve only
+              12 to 45% of the average webpage before generating an answer. Most published content never reaches the
+              model’s context window. Here is what does.</p>
+          </div>
+          <div data-w-id="2f2ca15e-3151-82fb-d603-ba6dc629a0cf" style="opacity:0" class="case-study-publish">
+            <div class="text-18px medium black">Published on :</div>
+            <div class="text-18px">March - May 2026</div>
+          </div>
+        </div>
+        <div class="single-service-image-wrapper"><img src="assets/img/whitepapers/wp003.jpeg" loading="lazy" alt="003: What AI Actually Reads on Your Webpage" class="single-service-big-image" /></div>
+        <div data-w-id="f34dbf4b-e893-f573-1b79-b5b0b6f81e64" style="opacity:0" class="case-study-details-wrapper">
+          <div class="case-study-text">
+            <p class="body-text">I ran 2,500 real-world queries across six major AI systems, analysing retrieval
+              behaviour across 45,000 webpages from 1,500 high-authority domains.</p>
+          </div>
+          <div class="case-study-details">
+            <div class="case-study-detail-card">
+              <div class="text-24-px">2,500</div>
+              <div class="text-18px">Queries</div>
+            </div>
+            <div class="case-study-detail-card">
+              <div class="text-24-px">45,000</div>
+              <div class="text-18px">Pages Analyzed</div>
+            </div>
+            <div class="case-study-detail-card">
+              <div class="text-24-px">6</div>
+              <div class="text-18px">AI Platforms</div>
+            </div>
+          </div>
+        </div>
+        <p data-w-id="6a0e9a27-968f-6e86-9951-c205eacfcff2" style="opacity:0" class="text-18px">Retrieval is not
+          sequential. AI systems do not read pages from top to bottom the way a human would. Instead, they assemble
+          answers from a small number of selected content blocks: on average 4.8 chunks drawn from across a page, with
+          4.2 paragraph gaps between retrieved sections. 55% of retrieval patterns were scattered rather than
+          consecutive, meaning the AI skipped large portions of the page entirely.</p>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>01 / Executive Summary</h5>
+            <p><strong>Most of your webpage is invisible to AI.</strong></p>
+            <p>Most marketers optimise entire webpages. But AI search engines do not read entire webpages. I ran 2,500
+              real-world queries across six major AI systems, analysing retrieval behaviour across 45,000 webpages from
+              1,500 high-authority domains. The central finding is that AI systems retrieve only 12 to 45% of the
+              average webpage before generating an answer, depending on the platform. The majority of published content
+              never reaches the model’s context window.</p>
+            <p>Retrieval is not sequential. AI systems do not read pages from top to bottom the way a human would.
+              Instead, they assemble answers from a small number of selected content blocks: on average 4.8 chunks drawn
+              from across a page, with 4.2 paragraph gaps between retrieved sections. 55% of retrieval patterns were
+              scattered rather than consecutive, meaning the AI skipped large portions of the page entirely.</p>
+            <p>The data shows a clear hierarchy of what gets retrieved. Introductions were retrieved in 88% of cases.
+              First H2 sections in 73%. FAQ sections in 61%. Middle body content in only 29%. Conclusions in 26%. Tables
+              were retrieved at 31% overall but reached 45% for commercial queries. This hierarchy has immediate
+              practical implications: content placement is as important as content quality.</p>
+            <p>I also found a meaningful negative correlation (r = -0.65) between page length and the percentage of the
+              page actually retrieved. Longer pages are less likely to be fully utilised, not more. The assumption that
+              more content means more AI visibility is not supported by the retrieval data.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>02 / Study Contributions</h5>
+            <p><strong>What this study contributes to GEO research.</strong></p>
+            <ul role="list">
+              <li><strong>01. Page-level retrieval coverage measurement.</strong> Prior GEO research measured which
+                pages get cited. This study measures how much of each cited page is actually retrieved and used,
+                producing a 12 to 45% retrieval range across the six platforms tested.<br /></li>
+              <li><strong>02. Section-level retrieval probability map.</strong> This study presents an empirical ranking
+                of webpage section types by retrieval probability: introduction (88%), first H2 (73%), FAQ (61%), tables
+                (31%), middle body (29%), conclusion (26%).<br /></li>
+              <li><strong>03. Compression Ratio as a GEO metric.</strong> This study introduces Compression Ratio (the
+                proportion of a page’s content that enters the model’s context window) as a measurable,
+                platform-specific GEO metric that practitioners can track and optimise for.<br /></li>
+              <li><strong>04. Scattered vs. consecutive retrieval measurement.</strong> This study presents evidence
+                that 55% of retrieval patterns are scattered rather than consecutive, with an average of 4.2 paragraph
+                gaps between retrieved sections.<br /></li>
+              <li><strong>05. Page length vs. retrieval coverage correlation.</strong> This study presents a negative
+                correlation of r = -0.65 between page length and retrieval percentage, based on the pages tested in this
+                dataset.<br /></li>
+              <li><strong>06. Live LLM testing methodology.</strong> This study uses a manual, live-environment
+                testing methodology for observing AI retrieval behaviour at the section level. Rather than relying on
+                infrastructure-layer interception, queries were run natively in each platform and responses were
+                cross-referenced against archived source pages to identify which sections were surfaced.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>03 / Research Questions</h5>
+            <p><strong>What I set out to answer.</strong></p>
+            <p>Traditional SEO assumes every section of a page contributes to visibility. AI retrieval works
+              differently. I designed this study around five questions that address the gap between how pages are
+              optimised and how AI systems actually use them.</p>
+            <ul role="list">
+              <li><strong>RQ1.</strong> What proportion of a webpage do AI systems actually retrieve before generating
+                an answer?<br /></li>
+              <li><strong>RQ2.</strong> Which page sections and content types are retrieved most and least
+                frequently?<br /></li>
+              <li><strong>RQ3.</strong> Does page length correlate with retrieval coverage, and in which
+                direction?<br /></li>
+              <li><strong>RQ4.</strong> How does query intent (commercial, analytical, troubleshooting, opinion) change
+                retrieval patterns?<br /></li>
+              <li><strong>RQ5.</strong> Which page-level structural choices most consistently improve retrieval
+                probability?</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>04 / Why This Matters for GEO</h5>
+            <p><strong>Content placement is as important as content quality.</strong></p>
+            <p>Traditional SEO operates on the assumption that every section of a page contributes to its ranking. A
+              page with more comprehensive coverage, more sections, more depth is assumed to perform better. That
+              assumption is not accurate for AI retrieval.</p>
+            <p>AI systems do not rank pages based on their overall comprehensiveness. They extract a small number of
+              content blocks from a page and use those blocks to construct an answer. If the most important information
+              in your content is buried in the middle or conclusion of a long page, AI systems are statistically
+              unlikely to retrieve it regardless of how accurate or valuable it is.</p>
+            <blockquote>"If AI systems retrieve only a fraction of a page, then content placement becomes just as
+              important as content quality."</blockquote>
+            <p>This has a direct implication for GEO practitioners. The optimisation question is no longer just "what
+              should I write?" It is also "where should I put it?" A fact placed in the introduction of a page has an
+              88% retrieval probability. The same fact placed in the conclusion of the same page has a 26% retrieval
+              probability. Content quality alone does not close that gap.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>05 / Methodology</h5>
+            <p><strong>Study design and data collection.</strong></p>
+            <p>I evaluated retrieval behaviour across six AI platforms using 2,500 real-world queries, covering 45,000
+              webpages from 1,500 high-authority domains. The study ran from March through May 2026. Rather than using
+              infrastructure-level interception, I ran every query natively inside each live LLM environment and
+              manually cross-referenced AI-generated answers against archived source pages to identify which sections
+              were reflected in each response.</p>
+            <p><strong>Dataset Overview</strong></p>
+            <table>
+              <tr>
+                <th>Metric</th>
+                <th>Value</th>
+              </tr>
+              <tr>
+                <td>Total Queries</td>
+                <td>2,500</td>
+              </tr>
+              <tr>
+                <td>Webpages Analyzed</td>
+                <td>45,000</td>
+              </tr>
+              <tr>
+                <td>Domains</td>
+                <td>1,500 (high authority)</td>
+              </tr>
+              <tr>
+                <td>AI Platforms</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Runs per Query</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Study Period</td>
+                <td>March to May 2026</td>
+              </tr>
+              <tr>
+                <td>Industries</td>
+                <td>E-commerce, SaaS</td>
+              </tr>
+              <tr>
+                <td>Testing Method</td>
+                <td>Live LLM environments</td>
+              </tr>
+              <tr>
+                <td>Avg Retrieval (all platforms)</td>
+                <td>12 to 45%</td>
+              </tr>
+              <tr>
+                <td>Avg Chunks Retrieved</td>
+                <td>4.8</td>
+              </tr>
+              <tr>
+                <td>Avg Paragraph Gaps</td>
+                <td>4.2</td>
+              </tr>
+              <tr>
+                <td>Scattered Retrieval Rate</td>
+                <td>55%</td>
+              </tr>
+              <tr>
+                <td>Multi-page Answer Rate</td>
+                <td>82%</td>
+              </tr>
+              <tr>
+                <td>Avg Pages per Answer</td>
+                <td>3.8</td>
+              </tr>
+              <tr>
+                <td>Avg Citations per Answer</td>
+                <td>4.2</td>
+              </tr>
+              <tr>
+                <td>Length vs Retrieval Correlation</td>
+                <td>r = -0.65</td>
+              </tr>
+            </table>
+            <p><strong>Platforms Evaluated</strong></p>
+            <ul role="list">
+              <li>01. ChatGPT<br /></li>
+              <li>02. Gemini<br /></li>
+              <li>03. Claude<br /></li>
+              <li>04. Perplexity<br /></li>
+              <li>05. Qwen<br /></li>
+              <li>06. Microsoft Copilot</li>
+            </ul>
+            <p><strong>Testing Method: Live LLM Environments</strong></p>
+            <p>Rather than intercepting retrieval at the infrastructure layer, I ran every query directly inside live
+              LLM environments and manually recorded which page sections each platform surfaced in its generated answer.
+              This approach captures native retrieval behaviour as it actually presents to end users, rather than through
+              a proxy that may not perfectly replicate each platform’s production pipeline.</p>
+            <p>For each query, I identified the source pages cited or drawn upon in the response and manually assessed
+              which sections of those pages were reflected in the answer, cross-referencing the response text against
+              the archived source page. Webpages were archived before each query run to ensure consistent content across
+              all three runs per query.</p>
+            <p><strong>Website Selection.</strong> I selected 1,500 high-authority domains representing a mix of content
+              types and industries. Pages were selected to represent a range of lengths, structural formats, and content
+              types including long-form articles, FAQ pages, product pages, documentation, and comparison guides.</p>
+            <p><strong>Three-Run Testing.</strong> Each query was issued three times per platform to account for AI
+              non-determinism. Retrieval coverage metrics are reported as averages across all three runs. Where
+              retrieval patterns differed between runs, I recorded the variation and included it in the IQR
+              calculations. Sections that appeared in at least two of three runs were counted as retrieved; sections
+              appearing in only one run were flagged as marginal and excluded from primary retrieval rate calculations.
+            </p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>06 / Statistical Methodology</h5>
+            <p><strong>How I measured page-level retrieval coverage.</strong></p>
+            <p><strong>Compression Ratio.</strong> Compression Ratio is defined as the proportion of a page’s total word
+              count that was reflected in the model’s generated answer. A page of 2,000 words from which content
+              equivalent to 400 words was surfaced in the answer has a Compression Ratio of 20%. I calculated this per
+              page, per platform, and then aggregated to produce the platform-level averages reported in this study.</p>
+            <p><strong>Section-level retrieval probability.</strong> For each of six defined section types
+              (introduction, first H2, FAQ, tables, middle body, conclusion), I recorded whether that section type was
+              retrieved in each query run. Section retrieval probability is the proportion of runs in which that section
+              type was retrieved across all pages that contained it. A page with no FAQ section was excluded from FAQ
+              retrieval probability calculations.</p>
+            <p><strong>Scattered vs. consecutive retrieval classification.</strong> A retrieval pattern was classified
+              as consecutive if the content surfaced in the AI answer mapped to adjacent or near-adjacent sections of
+              the source page. It was classified as scattered if the surfaced content mapped to sections separated by
+              two or more paragraphs. The average paragraph gap count (4.2) was estimated by comparing the position of
+              surfaced content against the archived source page structure.</p>
+            <p><strong>Page length correlation.</strong> I computed Pearson’s r between page word count and Compression
+              Ratio across all 45,000 pages. The resulting r = -0.65 indicates a moderate-to-strong negative
+              correlation: as page length increases, the proportion of the page retrieved decreases. This is a
+              correlation and does not establish causality.</p>
+            <p><strong>Three-run averaging.</strong> All retrieval coverage metrics are reported as means across three
+              runs per query. IQR values reflect the spread across runs and across pages within each category. Sections
+              appearing in only one of three runs are excluded from primary rates and noted separately as marginal
+              retrieval events.</p>
+            <p><strong>Research workflow.</strong> The following diagram shows how raw queries moved through my pipeline
+              to produce the final retrieval dataset.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp003/flow-research-workflow.svg" loading="lazy" alt="Research workflow diagram for the page retrieval coverage study" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <p><strong>Data processing pipeline.</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp003/flow-data-processing-pipeline.svg" loading="lazy" alt="Eight-step data processing pipeline diagram" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>07 / Key Findings</h5>
+            <p><strong>Eight findings that change how you should structure content.</strong></p>
+            <ul role="list">
+              <li><strong>Finding 01: 12 to 45% (platform range across 45,000 pages). AI uses surprisingly little of a
+                  webpage.</strong> The range of 12 to 45% means that even Gemini, which surfaced the most content at
+                45%, ignores more than half of the average webpage. Perplexity retrieved the least at 12%, meaning
+                nearly nine tenths of the average page it cited went unused.<br /></li>
+              <li><strong>Finding 02: 88% introduction retrieval rate. Retrieval starts at the top and drops
+                  fast.</strong> Introduction sections were retrieved in 88% of cases. First H2 in 73%. By the middle
+                body, that figure dropped to 29%. The conclusion, despite often containing the clearest summaries, was
+                retrieved in only 26% of cases. The retrieval gradient from top to bottom is steep and consistent across
+                all six platforms I tested.<br /></li>
+              <li><strong>Finding 03: 61% vs. 29% for body content. FAQ sections punch well above their
+                  weight.</strong> <em>Observed:</em> FAQ sections were retrieved in 61% of cases, more than twice the
+                rate of standard middle body content (29%). This held across both industries and all six platforms I
+                tested. <em>One possible explanation:</em> FAQ sections may be preferentially retrieved because their
+                question-and-answer format maps directly to the structure AI systems use to satisfy user queries. The
+                heading acts as a relevance signal and the answer block acts as a pre-chunked evidence node.<br /></li>
+              <li><strong>Finding 04: 55% scattered retrieval rate. AI retrieves sections, not pages.</strong> 55% of
+                retrieval patterns were scattered rather than consecutive. The average scattered retrieval contained 4.8
+                chunks with 4.2 paragraph gaps between them. AI systems assembled answers from selected content blocks
+                rather than reading pages sequentially, meaning large portions of even cited pages were never
+                used.<br /></li>
+              <li><strong>Finding 05: r = -0.65 (page length vs. retrieval coverage). Longer pages are less likely to
+                  be fully utilised.</strong> <em>Observed:</em> A Pearson correlation of r = -0.65 between page word
+                count and Compression Ratio shows that as pages grow longer, the proportion retrieved decreases. <em>One
+                  possible explanation:</em> Context window constraints and relevance scoring may cause retrieval
+                systems to select a fixed number of high-relevance chunks regardless of total page length. Longer pages
+                simply have more unchosen content. This was observed but not causally isolated.<br /></li>
+              <li><strong>Finding 06: 45% table retrieval for commercial queries. Tables are high-value retrieval
+                  assets.</strong> <em>Observed:</em> Tables were retrieved in 31% of cases overall, rising to 45% for
+                commercial queries and 38% for SaaS queries. Tables also showed a positive accuracy correlation of +0.45
+                with answer accuracy, the highest of any content type I measured. <em>One possible explanation:</em>
+                Structured information may be retrieved more consistently than descriptive text because it provides
+                pre-organised, machine-readable comparisons that AI systems can extract without further synthesis.<br />
+              </li>
+              <li><strong>Finding 07: 82% multi-source answer rate. Multi-page retrieval is the norm.</strong> 82% of
+                answers drew from more than one webpage, with an average of 3.8 pages and 4.2 citations per answer. This
+                means that even when your page is retrieved, it is typically one node in a multi-source synthesis rather
+                than the sole basis for the answer. What gets extracted from your page matters as much as whether your
+                page gets retrieved at all.<br /></li>
+              <li><strong>Finding 08: 3 to 5 paragraphs per answer (avg 4.8 chunks). Most answers use only 3 to 5
+                  paragraphs of source content.</strong> Despite drawing from 3.8 pages on average, AI-generated answers
+                used only 3 to 5 paragraphs of source content per answer. The implication is that retrieval systems are
+                highly selective: they pull a small number of paragraphs from each page and discard the rest. Writing
+                more does not increase the number of paragraphs retrieved.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>08 / Retrieval Heatmap</h5>
+            <p><strong>Which page sections AI actually retrieves.</strong></p>
+            <p>The following heatmap shows retrieval probability by section type, averaged across all six platforms and
+              both industries. These are the most actionable numbers in this study: they tell you exactly where to place
+              your most important content on a page.</p>
+            <p><strong>Section Retrieval Probability (All Platforms, All Industries)</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp003/chart-section-retrieval-probability.svg" loading="lazy" alt="Section retrieval probability across all platforms and industries bar chart" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <p><strong>Section Retrieval Probability by Platform (%)</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp003/chart-retrieval-by-platform.svg" loading="lazy" alt="Section retrieval probability by platform grouped bar chart" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <p>The gap between the introduction (88%) and the conclusion (26%) is 62 percentage points. A fact placed at
+              the top of a page is 3.4 times more likely to be retrieved than the same fact placed at the bottom. This
+              is not a minor difference: it is the single most actionable finding in this study for content producers.
+            </p>
+            <p><strong>The two findings you can act on tomorrow</strong></p>
+            <ul role="list">
+              <li><strong>2.1x: FAQ sections are retrieved more than twice as often as middle-body content.</strong>
+                FAQ sections were retrieved in 61% of cases. Standard middle-body paragraphs were retrieved in 29% of
+                cases. Every factual claim that answers a common user question gets more than twice the retrieval
+                probability when placed in a dedicated FAQ block rather than embedded in narrative prose. (FAQ: 61% vs.
+                Body: 29%)<br /></li>
+              <li><strong>+0.45: Tables have the strongest relationship with answer accuracy of any content
+                  type.</strong> Tables showed an accuracy correlation of +0.45, the highest of any content type I
+                measured. For commercial and SaaS queries, table retrieval reached 45% and 38% respectively. Structured
+                information is not just retrieved more often: when it is retrieved, the resulting answer is more
+                accurate. (Commercial table retrieval: 45%)</li>
+            </ul>
+            <p><strong>Compression Ratio: what AI actually sees on a typical page.</strong> The diagrams below show how
+              a typical 2,000-word webpage is experienced by two different AI platforms. Each section shows whether it
+              was retrieved (purple), retrieved as FAQ (green), retrieved as a table (amber), or skipped entirely
+              (grey). The labels show the approximate proportion of total page content each section represents.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid"><img src="assets/svg/r_wp003/diagram-page-anatomy-gemini.svg" loading="lazy" alt="Compression ratio diagram showing which page sections Gemini retrieves" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:16px;" /><img src="assets/svg/r_wp003/diagram-page-anatomy-perplexity.svg" loading="lazy" alt="Compression ratio diagram showing which page sections Perplexity retrieves" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:16px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>09 / Platform Comparison</h5>
+            <p><strong>How much each platform actually reads.</strong></p>
+            <p>Compression Ratio varied significantly across the six platforms I tested. Gemini retrieved the most
+              content per page, while Perplexity retrieved the least. This difference reflects underlying architectural
+              choices: platforms that retrieve fewer, more targeted chunks tend to produce more focused answers, while
+              platforms that retrieve more content produce broader synthesis.</p>
+            <table>
+              <tr>
+                <th>Platform</th>
+                <th>Compression Ratio</th>
+                <th>Retrieved Words (est)</th>
+                <th>Retrieved Paragraphs</th>
+                <th>Retrieval Style</th>
+              </tr>
+              <tr>
+                <td>Gemini</td>
+                <td>45%</td>
+                <td>~900</td>
+                <td>5 to 7</td>
+                <td>Broad contextual retrieval</td>
+              </tr>
+              <tr>
+                <td>Claude</td>
+                <td>38%</td>
+                <td>~760</td>
+                <td>4 to 6</td>
+                <td>Structured section prioritisation</td>
+              </tr>
+              <tr>
+                <td>Qwen</td>
+                <td>28%</td>
+                <td>~560</td>
+                <td>3 to 5</td>
+                <td>Moderate selective retrieval</td>
+              </tr>
+              <tr>
+                <td>Microsoft Copilot</td>
+                <td>25%</td>
+                <td>~500</td>
+                <td>3 to 4</td>
+                <td>Query-focused chunk selection</td>
+              </tr>
+              <tr>
+                <td>ChatGPT</td>
+                <td>22%</td>
+                <td>~440</td>
+                <td>2 to 4</td>
+                <td>Targeted high-relevance extraction</td>
+              </tr>
+              <tr>
+                <td>Perplexity</td>
+                <td>12%</td>
+                <td>~240</td>
+                <td>1 to 3</td>
+                <td>Minimal, high-precision extraction</td>
+              </tr>
+            </table>
+            <p><strong>Observed:</strong> Perplexity retrieved only 12% of the average page, the lowest of any platform
+              I tested. Despite this low retrieval rate, Perplexity also had the highest multi-hop citation rate in my
+              <a href="multi-hop-citation-paths-whitepaper.html"
+                style="color:inherit;text-decoration:underline;">R_WP002 study</a> (59% MHCR). It appears to extract a
+              small amount from many pages rather than a large amount from few pages.
+            </p>
+            <p><strong>One possible explanation:</strong> Perplexity’s real-time continuous crawl architecture may favour
+              breadth over depth at the page level: it retrieves the most relevant chunk from a large number of sources
+              rather than reading each source comprehensively. This architectural choice may explain why it shows both
+              the lowest per-page Compression Ratio and the highest cross-platform citation count. This was observed
+              across both studies but not causally tested.</p>
+            <p><strong>Compression Ratio by Platform (% of Page Retrieved)</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp003/chart-compression-by-platform.svg" loading="lazy" alt="Compression ratio by platform horizontal bar chart" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>10 / Query Intent Patterns</h5>
+            <p><strong>Query intent changes what gets retrieved.</strong></p>
+            <p>One of the more operationally useful findings in this study is that query intent reliably shifts
+              retrieval behaviour. The same page is retrieved differently depending on whether the user is asking a
+              commercial, analytical, troubleshooting, or opinion question. Understanding this means you can design
+              pages to match the retrieval patterns of the intent they are targeting.</p>
+            <table>
+              <tr>
+                <th>Query Intent</th>
+                <th>Primary Retrieved Sections</th>
+                <th>Retrieval Pattern</th>
+                <th>Avg Chunks</th>
+                <th>Notable Behaviour</th>
+              </tr>
+              <tr>
+                <td>Commercial</td>
+                <td>Tables, specs, H2 headings</td>
+                <td>Scattered</td>
+                <td>4.2</td>
+                <td>Table retrieval reaches 45%</td>
+              </tr>
+              <tr>
+                <td>Analytical</td>
+                <td>Introductions, data sections, body</td>
+                <td>More consecutive</td>
+                <td>5.6</td>
+                <td>Largest retrieval coverage overall</td>
+              </tr>
+              <tr>
+                <td>Troubleshooting</td>
+                <td>Code blocks, sequential steps</td>
+                <td>Sequential</td>
+                <td>3.8</td>
+                <td>Strongest consecutive retrieval pattern</td>
+              </tr>
+              <tr>
+                <td>Opinion</td>
+                <td>Introductions, conclusions, multi-page</td>
+                <td>Multi-page scattered</td>
+                <td>2.9</td>
+                <td>Highest cross-page synthesis rate</td>
+              </tr>
+            </table>
+            <p><strong>Commercial queries.</strong> Commercial queries triggered the highest table retrieval rate (45%)
+              and showed a strong preference for structured data over prose descriptions. H2 headings containing
+              comparative or specification language (such as "Pricing," "Features," or "Specs") were retrieved at
+              significantly higher rates than equivalent H2 headings with generic labels.</p>
+            <p><strong>Analytical queries.</strong> Analytical queries produced the largest retrieval coverage per page
+              (average 5.6 chunks) and the most consecutive retrieval pattern. This is consistent with how a human
+              researcher would read: scanning for the relevant section and then reading it through. For analytical
+              content, the implication is that longer, more coherent sections perform better than the same information
+              broken into many short chunks.</p>
+            <p><strong>Troubleshooting queries.</strong> Troubleshooting queries showed the strongest sequential
+              retrieval pattern of any intent type. Code blocks, numbered step sequences, and error message descriptions
+              were retrieved in order, suggesting that AI systems treat troubleshooting content more like a procedure
+              than a collection of independent claims. This means that troubleshooting pages should not scatter steps
+              across sections or interrupt sequences with large explanatory prose blocks.</p>
+            <p><strong>Opinion queries.</strong> Opinion queries produced the most multi-page synthesis behaviour, with
+              retrieval scattered across multiple sources rather than concentrated on a single page. Per-page chunk
+              counts were the lowest of any intent type (average 2.9). For opinion content, the implication is that any
+              single page is unlikely to dominate the answer: participating in the synthesis is the realistic goal, not
+              providing the entire answer.</p>
+            <p><strong>Average Chunks Retrieved by Query Intent Type</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp003/chart-chunks-by-intent.svg" loading="lazy" alt="Average chunks retrieved by query intent type bar chart" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>11 / Case Studies</h5>
+            <p><strong>Four queries, four retrieval profiles.</strong></p>
+            <p>The four case studies below illustrate how retrieval behaviour differs across query types. Each represents
+              a real query pattern from the study dataset, with anonymised domain information.</p>
+            <table>
+              <tr>
+                <th>Case Study</th>
+                <th>Query Intent</th>
+                <th>Pages Retrieved</th>
+                <th>Compression Ratio</th>
+                <th>Primary Sections</th>
+                <th>Pattern</th>
+              </tr>
+              <tr>
+                <td>01. SaaS Churn Reduction Query</td>
+                <td>Commercial</td>
+                <td>4.1 avg</td>
+                <td>24%</td>
+                <td>H2, tables, intro</td>
+                <td>Scattered</td>
+              </tr>
+              <tr>
+                <td>02. Headphone Comparison Query</td>
+                <td>Commercial</td>
+                <td>3.6 avg</td>
+                <td>19%</td>
+                <td>Spec tables, H2, intro</td>
+                <td>Scattered</td>
+              </tr>
+              <tr>
+                <td>03. Kubernetes Troubleshooting Query</td>
+                <td>Troubleshooting</td>
+                <td>2.9 avg</td>
+                <td>31%</td>
+                <td>Code blocks, steps</td>
+                <td>Sequential</td>
+              </tr>
+              <tr>
+                <td>04. Dyson Product Page Query</td>
+                <td>Commercial</td>
+                <td>4.4 avg</td>
+                <td>16%</td>
+                <td>Intro, specs, FAQ</td>
+                <td>Scattered</td>
+              </tr>
+            </table>
+            <p><strong>Case Study 01 / SaaS Commercial: SaaS Churn Reduction Query.</strong> Table retrieval rate: 43%.
+              AI retrieved pricing comparison tables, feature H2 sections, and introductory positioning statements. Long
+              explanatory body sections were skipped. Pages with dedicated comparison tables were retrieved at
+              significantly higher rates than pages that described the same information in prose.</p>
+            <p><strong>Case Study 02 / E-commerce Commercial: Headphone Comparison Query.</strong> Table retrieval
+              rate: 47%. Specification tables were retrieved at the highest rate of any case study. Review verdict
+              sections at the top of pages outperformed detailed review body sections. Narrative descriptions of sound
+              quality were rarely retrieved; structured spec comparisons were almost always retrieved.</p>
+            <p><strong>Case Study 03 / Technical Troubleshooting: Kubernetes Troubleshooting Query.</strong> Code block
+              retrieval: 79%. Code blocks were retrieved in 79% of cases, the highest retrieval rate of any content
+              element in the study. Sequential step content was retrieved in order. Conceptual explanations between
+              steps were frequently skipped. This was the only intent type where conclusion sections outperformed middle
+              body sections.</p>
+            <p><strong>Case Study 04 / E-commerce Product: Dyson Product Page Query.</strong> FAQ retrieval rate: 68%.
+              On product pages, FAQ sections were retrieved at 68%, well above the study average of 61%. The product
+              introduction and key specifications were consistently retrieved. Long marketing narrative sections in the
+              middle of the page were retrieved in fewer than 15% of runs. This was the clearest example of the
+              top-heavy retrieval gradient in the dataset.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>12 / Supporting Evidence</h5>
+            <p><strong>Alignment with published research.</strong></p>
+            <p>The retrieval patterns I measured are consistent with published research on RAG chunk selection,
+              attention mechanisms, and content structure in LLM retrieval systems.</p>
+            <ul role="list">
+              <li><strong>RAG chunk selection and positional bias.</strong> Published research on retrieval-augmented
+                generation documents a consistent positional bias: content near the beginning of a document is more
+                frequently selected as a retrieval chunk than content near the end. My 88% introduction retrieval rate
+                and 26% conclusion retrieval rate are consistent with this documented positional preference.<br /></li>
+              <li><strong>Structured data and extraction efficiency.</strong> Research on tabular data in LLMs shows
+                that structured formats (tables, lists, numbered sequences) are more reliably extracted than equivalent
+                information presented as prose. This aligns with my finding that tables showed the strongest accuracy
+                correlation (+0.45) of any content type.<br /></li>
+              <li><strong>Context window constraints and chunk selection.</strong> Published benchmarks on RAG
+                performance consistently show that retrieval systems select a fixed number of high-relevance chunks
+                regardless of document length. This mechanism is a plausible explanation for the negative correlation I
+                observed between page length and Compression Ratio.<br /></li>
+              <li><strong>FAQ format and query-document matching.</strong> Research on neural information retrieval
+                shows that question-answer formatted content produces higher relevance scores against question-format
+                queries than equivalent information presented as declarative statements. This is consistent with my
+                finding that FAQ sections are retrieved at 61% vs. 29% for equivalent body content.<br /></li>
+              <li><strong>Multi-source synthesis as the norm.</strong> My <a
+                  href="multi-hop-citation-paths-whitepaper.html"
+                  style="color:inherit;text-decoration:underline;">R_WP002 finding</a> of 45.2% MHCR is directly
+                consistent with the 82% multi-source answer rate I measured here. <a
+                  href="multi-hop-citation-paths-whitepaper.html"
+                  style="color:inherit;text-decoration:underline;">R_WP002</a> measured cross-domain synthesis using
+                prompt-level citation tracking, while this study measured section-level content surfacing through live
+                LLM testing across a significantly larger dataset.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>13 / Recommendations</h5>
+            <p><strong>Eight placement-first GEO recommendations.</strong></p>
+            <p>These recommendations are derived directly from the retrieval data. Unlike generic SEO advice, each
+              recommendation maps to a specific finding in this study.</p>
+            <ol role="list">
+              <li><strong>Place the primary answer within the first 200 words.</strong> The introduction was retrieved
+                in 88% of cases. The middle body in 29%. Any claim you need AI to use should appear in the first 200
+                words of the page. This is not about keyword density: it is about retrieval probability. The
+                introduction is retrieved 3.4 times more often than the conclusion.<br /></li>
+              <li><strong>Write descriptive H2 headings that stand alone as claims.</strong> First H2 sections were
+                retrieved in 73% of cases. H2 headings that contain a complete claim (such as "Perplexity retrieves 12%
+                of the average page") are more likely to be selected as retrieval anchors than H2 headings with generic
+                labels (such as "Overview" or "Details").<br /></li>
+              <li><strong>Create dedicated FAQ sections for factual questions.</strong> FAQ sections were retrieved at
+                61%, more than twice the rate of standard body content. Every factual claim that answers a common user
+                question should have its own FAQ entry rather than being embedded in paragraph prose. The
+                question-answer format maps directly to how AI systems look for evidence.<br /></li>
+              <li><strong>Add structured comparison tables for commercial topics.</strong> Tables reached 45% retrieval
+                for commercial queries and showed the strongest accuracy correlation (+0.45) of any content type. If
+                your page covers a commercial topic where comparison is relevant (pricing, features, specifications), a
+                dedicated comparison table is the single highest-leverage structural addition you can make.<br /></li>
+              <li><strong>Keep critical information out of long narrative sections.</strong> Middle body content was
+                retrieved in only 29% of cases. If important information is embedded in long narrative paragraphs in the
+                middle of a page, it has a less than one in three chance of being retrieved. Restructure critical claims
+                to appear in the introduction, first H2, or a dedicated FAQ section.<br /></li>
+              <li><strong>Break large pages into independently retrievable sections.</strong> The r = -0.65 correlation
+                between page length and Compression Ratio means that adding more content to a page tends to reduce the
+                proportion of it that gets retrieved. Where possible, break long pages into shorter, focused pages each
+                targeting a single intent. Each page then has a higher probability of having its most important content
+                retrieved.<br /></li>
+              <li><strong>Design each section to answer one intent clearly.</strong> 55% of retrieval patterns were
+                scattered, meaning AI assembled answers from non-consecutive chunks. Each H2 section should be
+                self-contained: it should state its claim, provide the evidence, and not require the reader (or the
+                retrieval system) to refer to a previous or following section to understand it.<br /></li>
+              <li><strong>Design pages for retrieval, not just for human reading.</strong> Human readers benefit from
+                narrative flow, progressive disclosure, and conclusions that synthesise what came before. AI retrieval
+                systems do not. They extract isolated chunks and do not benefit from narrative structure that only makes
+                sense when read sequentially. Design your page so that any individual section, read in isolation, makes
+                sense and provides value.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>14 / Practical Frameworks</h5>
+            <p><strong>Retrieval-first page structure.</strong></p>
+            <p><strong>GEO-optimised page template</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp003/flow-geo-page-template.svg" loading="lazy" alt="GEO-optimised page template flow diagram" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <p><strong>Content type selection by query intent</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp003/flow-content-by-intent.svg" loading="lazy" alt="Content type selection by query intent flow diagram" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>15 / Glossary</h5>
+            <p><strong>Definitions used in this study.</strong></p>
+            <table>
+              <tr>
+                <th>Term</th>
+                <th>Definition as used in this study</th>
+              </tr>
+              <tr>
+                <td>Compression Ratio</td>
+                <td>The proportion of a page’s total word count that entered the model’s context window during
+                  retrieval. Calculated as retrieved words divided by total page words. Platform range in this study:
+                  12% (Perplexity) to 45% (Gemini).</td>
+              </tr>
+              <tr>
+                <td>Retrieval Coverage</td>
+                <td>Synonymous with Compression Ratio in this study. The percentage of a page’s content that was
+                  actually retrieved and used by the AI system before generating an answer.</td>
+              </tr>
+              <tr>
+                <td>Content Chunk</td>
+                <td>A discrete unit of content within a page: a paragraph, heading, FAQ item, table row, code block, or
+                  other structurally distinct element. The primary unit of measurement in this study’s live LLM testing
+                  methodology.</td>
+              </tr>
+              <tr>
+                <td>Scattered Retrieval</td>
+                <td>A retrieval pattern in which two or more retrieved chunks are separated by two or more paragraph
+                  gaps. Occurred in 55% of retrieval events in this study.</td>
+              </tr>
+              <tr>
+                <td>Consecutive Retrieval</td>
+                <td>A retrieval pattern in which all retrieved chunks are adjacent or separated by no more than one
+                  paragraph gap. Most common in troubleshooting and analytical query types.</td>
+              </tr>
+              <tr>
+                <td>Section Retrieval Probability</td>
+                <td>The proportion of query runs in which a given section type (introduction, H2, FAQ, table, middle
+                  body, conclusion) was retrieved, across all pages that contained that section type.</td>
+              </tr>
+              <tr>
+                <td>Live LLM Testing</td>
+                <td>The testing methodology used in this study. Queries were issued directly inside native LLM
+                  environments and AI-generated answers were manually cross-referenced against archived source pages to
+                  identify which sections were surfaced in each response.</td>
+              </tr>
+              <tr>
+                <td>Paragraph Gap</td>
+                <td>A paragraph or block of content that was not retrieved between two chunks that were retrieved. The
+                  average scattered retrieval pattern in this study contained 4.2 paragraph gaps.</td>
+              </tr>
+              <tr>
+                <td>Three-Run Testing</td>
+                <td>The practice of issuing each query three times per platform and averaging results. Sections
+                  retrieved in at least two of three runs are counted as retrieved.</td>
+              </tr>
+              <tr>
+                <td>Marginal Retrieval</td>
+                <td>A retrieval event that occurred in only one of three query runs for a given page-query pair.
+                  Excluded from primary retrieval rate calculations and tracked separately.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>16 / Limitations</h5>
+            <p><strong>Scope boundaries and caveats.</strong></p>
+            <p>The following limitations apply to my findings and should be considered when generalising results to
+              other contexts.</p>
+            <ul role="list">
+              <li><strong>Sample Size.</strong> 2,500 queries and 45,000 pages is meaningful but not exhaustive.
+                Retrieval patterns may differ for less common query types, niche industries, or non-English
+                content.<br /></li>
+              <li><strong>Manual Assessment.</strong> Section-level surfacing was assessed manually by cross-referencing
+                AI answers against archived source pages. This introduces some subjectivity in borderline cases where
+                the AI paraphrases content substantially.<br /></li>
+              <li><strong>Industries.</strong> Two industries studied: E-commerce and SaaS. Retrieval behaviour in
+                Healthcare, Legal, Finance, or other verticals may differ substantially, particularly for regulated
+                content.<br /></li>
+              <li><strong>Platform Evolution.</strong> All six platforms are under active development. Compression
+                ratios, retrieval architectures, and chunk selection logic may change as models are updated after the
+                May 2026 study period.<br /></li>
+              <li><strong>AI Non-Determinism.</strong> AI responses are non-deterministic. The three-run averaging
+                approach reduces but does not eliminate variation. Some retrieval events are inherently probabilistic
+                and cannot be fully stabilised by repeated runs.<br /></li>
+              <li><strong>Correlation vs. Causation.</strong> The r = -0.65 correlation between page length and
+                Compression Ratio is descriptive, not causal. I cannot conclude from this data alone that making pages
+                shorter will increase retrieval coverage, only that shorter pages tend to have higher coverage in this
+                dataset.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>17 / Conclusion</h5>
+            <p><strong>Design pages for retrieval, not just for reading.</strong></p>
+            <p>The central finding of this study is that modern AI systems retrieve only a small portion of the average
+              webpage before generating an answer. The range of 12 to 45% across platforms means that most published
+              content, regardless of its quality, never reaches the model’s context window. The content that does get
+              retrieved is not randomly selected: it is disproportionately drawn from introductions, first H2 sections,
+              FAQ blocks, and structured tables, and it is disproportionately absent from middle body sections and
+              conclusions.</p>
+            <p>AI systems do not consume pages linearly. They assemble answers from selected content blocks, averaging
+              4.8 chunks with 4.2 paragraph gaps between retrieved sections in 55% of cases. This scattered retrieval
+              pattern means that every section of a page needs to stand alone as a retrievable evidence node, not just
+              as part of a coherent narrative for human readers.</p>
+            <p>The negative correlation between page length and retrieval coverage (r = -0.65) challenges one of the
+              most common assumptions in content marketing: that more content means better coverage. For AI retrieval,
+              the evidence suggests the opposite tendency. A shorter, more focused page where every section answers a
+              clear intent has a higher probability of having its most important content retrieved than a longer page
+              where the same information is surrounded by supporting narrative.</p>
+            <blockquote>"Success depends less on publishing more content and more on ensuring that the most important
+              information is placed where AI systems are most likely to retrieve it."</blockquote>
+            <p>Most of your webpage is invisible to AI. That is the central finding of this study, and it is the frame
+              through which every other number in this paper should be read. The 88% introduction retrieval rate matters
+              because of its contrast with the 26% conclusion rate. The 61% FAQ rate matters because of its contrast
+              with the 29% body rate. The r = -0.65 correlation matters because it runs directly against the instinct to
+              publish more.</p>
+            <p>The actionable message from this study is straightforward: audit your highest-priority pages for
+              retrieval placement. Check where your primary claims live within each page. Move them towards the
+              introduction and first H2. Convert frequently asked factual questions into dedicated FAQ sections. Add
+              comparison tables for commercial content. And accept that the conclusion, where so many writers place
+              their most polished summaries, is the least likely place for an AI system to look.</p>
+            <p style="margin-top:24px;padding-top:24px;border-top:1px solid var(--color--grey-05);"><strong>GEO
+                Retrieval Research Series</strong><br />003: What AI Actually Reads on Your Webpage<br /><br />1,500
+              Domains · 2,500 Queries · 12 to 45% Compression Ratio</p>
+          </div>
+        </div>
+        <div class="case-study-result-wrapper">
+          <div class="case-study-explained">
+            <div class="case-study-explained">
+              <div data-w-id="784c8834-0d4b-be7c-b66b-619200254eed" class="rich-text case-study w-richtext">
+                <h5><strong>Study at a Glance</strong></h5>
+                <p>A live-environment testing methodology tracked exactly which page sections AI systems surfaced across
+                  45,000 webpages, response by response.</p>
+              </div>
+              <div data-w-id="0d8d18c0-2eaf-cc53-09fb-dcc0b99cffe7" style="opacity:0" class="w-layout-grid case-study-result-hlder">
+                <div class="case-study-result-card _1st">
+                  <div class="text-40px">12-45%</div>
+                  <div class="text-18px center">Page Retrieval Range</div>
+                </div>
+                <div class="case-study-result-card _2nd">
+                  <div class="text-40px">88%</div>
+                  <div class="text-18px center">Introduction Retrieval Rate</div>
+                </div>
+                <div class="case-study-result-card _3rd">
+                  <div class="text-40px">61%</div>
+                  <div class="text-18px center">FAQ Retrieval Rate</div>
+                </div>
+                <div class="case-study-result-card _4th">
+                  <div class="text-40px">-0.65</div>
+                  <div class="text-18px center">Length vs. Retrieval Correlation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="next-case-study-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="next-case-study-wrapper">
+        <div class="next-case-study-heading">
+          <div data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b" class="next-case-study-heading-holder">
+            <h2 class="inner-page-h2">More Research</h2>
+            <p class="body-text">Independent research on GEO, AI citation behaviour, and retrieval systems measured,
+              not assumed.</p>
+          </div>
+          <div class="next-case-study-button"><a data-w-id="98b4bc59-e0b5-0dbb-2bad-71fd690746ad" style="opacity:0"
+              href="whitepapers.html" target="_blank" class="secondry-button tablet w-inline-block">
+              <div class="hero-button-text-wrapper">
+                <div
+                  style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="secondary-button-text is-absolute">View All Whitepapers</div>
+                <div
+                  style="-webkit-transform:translate3d(0, 200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="secondary-button-text is-relative">View All Whitepapers</div>
+              </div>
+              <div class="secondary-button-arrow-wrapper">
+                <div
+                  style="-webkit-transform:translate3d(-200%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-200%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-200%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-200%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="secondary-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                    height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                    role="img">
+                    <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                      stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+                <div
+                  style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="secondary-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                    height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                    role="img">
+                    <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                      stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+              <div style="width:0%" class="secondary-button-bg"></div>
+            </a></div>
+        </div>
+        <div class="case-study-collection-list-wrapper w-dyn-list">
+          <div role="list" class="case-study-collection-list w-dyn-items">
+            <div role="listitem" class="case-study-collection-item w-dyn-item"><a data-w-id="a00030"
+                href="how-llms-recommend-local-businesses-whitepaper.html"
+                class="case-study-link-wrapper w-inline-block">
+                <div data-w-id="a00031" class="case-study-link-holder">
+                  <div data-w-id="a00032" class="case-study-image-holder"><img
+                      src="assets/img/whitepapers/004-llm-local-recommendation.jpeg" loading="lazy"
+                      style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                      alt="004: How LLMs Recommend Local Businesses" class="case-study-link-image" />
+                    <div
+                      style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                      class="case-study-button">
+                      <div class="text-18px white work">Explore Study</div>
+                    </div>
+                    <div style="width:0%;height:0%" class="case-study-overlay"></div>
+                  </div>
+                  <div class="case-study-page-link-wrapper">
+                    <div class="case-stydy-page-link">
+                      <div class="text-24-px">004: How LLMs Recommend Local Businesses</div>
+                      <div class="text-18px">A 60,000-response analysis across six AI platforms. 58% of businesses are
+                        visible in only one platform.</div>
+                    </div>
+                    <div class="text-18px medium">GEO Research</div>
+                  </div>
+                </div>
+              </a></div>
+            <div role="listitem" class="case-study-collection-item w-dyn-item"><a data-w-id="a10030"
+                href="entity-types-increase-citation-whitepaper.html" class="case-study-link-wrapper w-inline-block">
+                <div data-w-id="a10031" class="case-study-link-holder">
+                  <div data-w-id="a10032" class="case-study-image-holder"><img
+                      src="assets/img/whitepapers/wp005.jpeg" loading="lazy"
+                      style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                      alt="005: Which Entity Types Increase Citation Probability?" class="case-study-link-image" />
+                    <div
+                      style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                      class="case-study-button">
+                      <div class="text-18px white work">Explore Study</div>
+                    </div>
+                    <div style="width:0%;height:0%" class="case-study-overlay"></div>
+                  </div>
+                  <div class="case-study-page-link-wrapper">
+                    <div class="case-stydy-page-link">
+                      <div class="text-24-px">005: Which Entity Types Increase Citation Probability?</div>
+                      <div class="text-18px">847,293 entity mentions across 1,847 webpages. Technical entities
+                        outperform general entities by nearly 3x.</div>
+                    </div>
+                    <div class="text-18px medium">GEO Research</div>
+                  </div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonial" class="testimonial-section extra-padding">
+    <div class="w-layout-blockcontainer container testimonial w-container">
+      <div class="testimonial-wrapper">
+        <div class="testimonial-header">
+          <div data-w-id="81593477-7677-a480-ab99-c177d459039a" class="small-section-wrapper">
+            <div class="small-section-buttlet-point"></div>
+            <div class="text-16px section-title">Testimonial</div>
+          </div>
+          <h2 data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42b5" class="client-testimonial inner-page-h2">Client <span
+              class="grey-text">Testimonial</span></h2>
+          <p data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42b9" class="body-text why-cooose">Driving measurable growth
+            through AI-native SEO, technical expertise, and data-driven marketing strategies built for the future of
+            search.</p>
+        </div>
+        <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42bb" class="testimonial-holder">
+          <div data-delay="2000" data-animation="slide" class="testimonial-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="300" data-infinite="true">
+            <div class="testimonial-slider-mask w-slider-mask">
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42be" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">Akshay helped us completely rethink our online presence. Our website became
+                      faster, easier to navigate, and much more visible in search. Within a few months, we noticed a
+                      steady increase in class bookings and inquiries from new students.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="testimonial-client-wrapper">
+                      <div class="text-24px">Lena Ortiz</div>
+                      <div class="text-18px">Owner, Solstice Yoga Studio</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42cc" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">We relied almost entirely on referrals until Akshay optimised our website and
+                      local SEO. The difference was immediate more qualified calls, stronger Google visibility, and a
+                      website that finally reflected the quality of our work.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="testimonial-client-wrapper">
+                      <div class="text-24px">Grant Holloway</div>
+                      <div class="text-18px">Owner, Holloway Roofing &amp; Exteriors</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42da" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">Akshay understood exactly how to present our expertise online. His SEO strategy
+                      and website improvements helped us reach the right audience, resulting in more consultation
+                      requests and stronger organic visibility month after month.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="text-24px">Dr. Mira Banerjee</div>
+                    <div class="text-18px">Clinical Nutritionist, NourishWell Clinic</div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42e7" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">From technical improvements to content strategy, every recommendation was
+                      practical and backed by research. Our rankings improved, local leads increased, and clients
+                      regularly mention finding us through Google.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="text-24px">Elias Moreno</div>
+                    <div class="text-18px">Founder, Evergreen Landscape Co.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42f4" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">Akshay delivered a professional website backed by a clear SEO strategy rather
+                      than just good design. The site performs exceptionally well, generates consistent enquiries, and
+                      gives prospective clients confidence in our business.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="text-24px">Nathan Whitmore</div>
+                    <div class="text-18px">Managing Director, Whitmore Construction Group</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="left-arrow-2 w-slider-arrow-left">
+              <div class="icon w-icon-slider-left"></div>
+            </div>
+            <div class="right-arrow-2 w-slider-arrow-right">
+              <div class="icon-2 w-icon-slider-right"></div>
+            </div>
+            <div class="slide-nav-2 w-slider-nav w-round w-num"></div>
+          </div>
+          <div class="testimonial-client-picture">
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-1">Lena Ortiz</div><img loading="lazy" alt="Lena Ortiz" src="assets/img/lena-ortiz.png" class="testimonial-client-image-wrap client-1" />
+            </div>
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-2">Grant Holloway</div><img loading="lazy" alt="Grant Holloway" src="assets/img/grant-holloway.png" class="testimonial-client-image-wrap client-2" />
+            </div>
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-3">Dr. Mira Banerjee</div><img loading="lazy" alt="Dr. Mira Banerjee" src="assets/img/mira-banerjee.png" class="testimonial-client-image-wrap client-3" />
+            </div>
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-4">Elias Moreno</div><img loading="lazy" alt="Elias Moreno" src="assets/img/elias-moreno.png" class="testimonial-client-image-wrap client-4" />
+            </div>
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-5">Nathan Whitmore</div><img loading="lazy" alt="Nathan Whitmore" src="assets/img/nathan-whitmore.png" class="testimonial-client-image-wrap client-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="cta-wrapper">
+        <div class="cta-header-wrapper">
+          <div class="text-55px left-align white">Ready to Build Your Brand’s <span>AI Visibility?</span></div>
+          <p class="body-text cat">The future belongs to brands that adapt early. Let’s build smarter strategies,
+            stronger visibility, and meaningful digital experiences together.</p><a
+            data-w-id="f7796cdc-626e-4902-5926-54ab78d20e00" href="whitepapers.html" target="_blank"
+            class="cta-button w-inline-block">
+            <div class="hero-button-text-wrapper">
+              <div class="cta-button-text is-absolute">See Our Works</div>
+              <div class="cta-button-text is-relative">See Our Works</div>
+            </div>
+            <div class="cta-button-arrow-wrapper">
+              <div class="cta-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                  height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                  role="img">
+                  <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                    stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+              <div class="cta-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                  height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                  role="img">
+                  <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                    stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+            </div>
+            <div class="cta-button-bg"></div>
+          </a>
+        </div>
+        <div class="cta-details-wrapper">
+          <div class="w-layout-grid cta-details-grid">
+            <div class="cta-details-text">
+              <div class="text-35px cta">Trusted by 140+ Happy Clients Around the Globe</div>
+            </div>
+            <div class="cta-project-wrapper">
+              <div class="w-layout-grid cta-project-grid">
+                <div class="cts-project-card">
+                  <div class="text-35px cta">200+</div>
+                  <div class="text-18px grey-04">Project Complete</div>
+                </div>
+                <div class="cts-project-card">
+                  <div class="text-35px cta">100+</div>
+                  <div class="text-18px grey-04">SEO &amp; Ads Campaign</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="footer-wrapper">
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe942" class="footer-header">
+          <div class="text-86px footer-heading">Let’s Work <span class="grey-text semibold">Together</span></div>
+          <p class="body-text black">Subscribe for Updates
+          </p>
+          <div class="footer-form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="footer-form" data-wf-page-id="68aad862700314ecdf577941" data-wf-element-id="c928cd5b-c40c-0ebf-2209-71f68bbbe94a">
+              <input class="form-input w-node-c928cd5b-c40c-0ebf-2209-71f68bbbe94b-8bbbe93f w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" type="email" id="email" required="" /><input type="submit" data-wait="Please wait..." class="form-button is-button-small w-button" value="Send" />
+            </form>
+            <div class="success-message w-form-done">
+              <div class="text-24px">✨ Message sent! <span class="grey-text">I’ll respond as soon as possible.</span>
+              </div>
+            </div>
+            <div class="error-message w-form-fail">
+              <div class="text-24px">⚡ Submission failed. <span class="grey-text">Please refresh the page or try again
+                  later.</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe957" class="footer-contact-wrapper">
+          <div class="footer-contact-top">
+            <div class="contact-box">
+              <div class="contact-icon">
+                <div class="footer-contact-icon w-embed"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.2371 3.5998C11.2371 2.05327 12.4906 0.799805 14.0371 0.799805C15.5836 0.799805 16.8371 2.05327 16.8371 3.5998C16.8371 2.05327 18.0906 0.799805 19.6371 0.799805C21.1836 0.799805 22.4371 2.05327 22.4371 3.5998C22.4371 6.0554 19.2722 8.6426 17.7014 9.84194C17.1918 10.2311 16.4824 10.2311 15.9738 9.84194C14.402 8.64354 11.238 6.0554 11.238 3.5998H11.2371ZM21.5038 10.1331C20.9886 10.1331 20.5704 10.5503 20.5704 11.0665V18.5331C20.5704 20.0769 19.3142 21.3331 17.7704 21.3331H4.70378C3.16004 21.3331 1.90378 20.0769 1.90378 18.5331V9.26607L7.93684 15.2991C8.84404 16.2063 10.034 16.6609 11.2278 16.6609C12.4299 16.6609 13.6348 16.2007 14.5588 15.2758L16.1502 13.5697C16.5011 13.1935 16.4806 12.6027 16.1044 12.2509C15.7274 11.8999 15.1375 11.9186 14.7847 12.2975L13.2158 13.9803C12.1238 15.0723 10.3476 15.0723 9.25564 13.9803L2.24071 6.96354C2.71111 6.0778 3.63324 5.46647 4.70378 5.46647H8.43711C8.95231 5.46647 9.37044 5.04927 9.37044 4.53314C9.37044 4.017 8.95231 3.5998 8.43711 3.5998H4.70378C2.13058 3.5998 0.0371094 5.69327 0.0371094 8.26647V18.5331C0.0371094 21.1063 2.13058 23.1998 4.70378 23.1998H17.7704C20.3436 23.1998 22.4371 21.1063 22.4371 18.5331V11.0665C22.4371 10.5503 22.019 10.1331 21.5038 10.1331Z" fill="currentColor" />
+                  </svg></div>
+              </div>
+              <div class="contact-number">
+                <div class="text-24px">Email me</div>
+                <div class="text-18px"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#107;&#115;&#104;&#97;&#121;&#100;&#97;&#104;&#105;&#121;&#97;&#57;&#50;&#46;&#97;&#100;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" style="color:inherit;text-decoration:none;">Email Protected</a></div>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-icon">
+                <div class="footer-contact-icon w-embed"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5705 10.5995V9.86914C20.5705 8.05882 20.5705 7.15368 20.0237 6.59128C19.477 6.02889 18.597 6.02889 16.8371 6.02889H14.8971C14.0409 6.02889 14.0338 6.02723 13.2639 5.64193L10.1544 4.08588C8.85606 3.43618 8.20691 3.11134 7.51536 3.13391C6.82381 3.15649 6.19599 3.52302 4.94036 4.25609L3.79435 4.92516C2.87204 5.46362 2.41088 5.73285 2.15734 6.18074C1.90381 6.62864 1.90381 7.17408 1.90381 8.26496V15.9341C1.90381 17.3675 1.90381 18.0842 2.22325 18.4831C2.43582 18.7484 2.73369 18.9269 3.06301 18.986C3.55792 19.0749 4.16386 18.7212 5.37569 18.0136C6.1986 17.5332 6.99058 17.0343 7.97502 17.1696C8.79992 17.2829 9.56647 17.8034 10.3038 18.1724" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.50391 3.13281V17.1328" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M14.0371 5.93359V9.66693" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.3704 12C18.6434 12 20.5704 13.8821 20.5704 16.1654C20.5704 18.485 18.612 20.1129 16.803 21.2197C16.6712 21.2942 16.5221 21.3333 16.3704 21.3333C16.2187 21.3333 16.0696 21.2942 15.9378 21.2197C14.1322 20.1021 12.1704 18.493 12.1704 16.1654C12.1704 13.8821 14.0975 12 16.3704 12Z" stroke="currentColor" stroke-width="1.4" />
+                    <path d="M16.3701 16.2002H16.3791" stroke="currentColor" stroke-width="1.86667" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+              <div class="contact-number">
+                <div class="text-24px">Office location</div>
+                <div class="text-18px">Nomad</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-social-media-wrapper"><a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"
+              class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">LinkedIn</div>
+            </a><a href="https://github.com/dahiyaakshay" target="_blank" class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">GitHub</div>
+            </a><a href="https://aispider.akshaydahiya.site/" target="_blank"
+              class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">AI Spider</div>
+            </a><a href="https://marai.akshaydahiya.site/" target="_blank" class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">MarAI</div>
+            </a></div>
+        </div>
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe97e" class="footer-copyright-wrapper">
+          <div class="copy-right-text-wrapper">
+            <div class="text-18px footer">Designed by - Akshay Dahiya - Marketer &amp; Web Developer &middot; <a href="llms.txt" style="color:inherit;text-decoration:underline;">llms.txt</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/jquery.js" type="text/javascript"></script>
+  <script src="assets/js/akshay-vendor.js" type="text/javascript"></script>
+  <script src="assets/js/akshay-entry.js" type="text/javascript"></script>
+</body>
+
+</html>

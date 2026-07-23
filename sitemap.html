@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html data-wf-domain="akshay.local" data-wf-page="simple-page" data-wf-site="68a9d12699bd47b077398cae" lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-E6JLR8VFSJ');
+  </script>
+  <meta charset="utf-8" />
+  <title>XML Sitemaps: What They Are & Why You Need One - Akshay</title>
+  <link href="https://akshaydahiya.site/sitemap.html" rel="canonical" />
+  <meta content="How XML and HTML sitemaps help search engines discover and prioritize your pages, plus the sitemap mistakes that quietly waste crawl budget." name="description" />
+  <meta content="XML sitemap, sitemap index, sitemap best practices, crawl budget, hreflang sitemap, sitemap submission" name="keywords" />
+  <meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots" />
+  <meta content="Akshay Dahiya" name="author" />
+  <meta content="Akshay Dahiya" name="publisher" />
+  <link href="https://akshaydahiya.site/sitemap.html" hreflang="en" rel="alternate" />
+  <link href="https://akshaydahiya.site/sitemap.html" hreflang="x-default" rel="alternate" />
+  <meta content="XML Sitemaps: What They Are & Why You Need One - Akshay" property="og:title" />
+  <meta property="og:type" content="website" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Akshay" name="generator" />
+  <link href="assets/css/shared.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+  <script src="assets/js/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  WebFont.load({
+    google: {
+      families: ["Schibsted Grotesk:300,400,500,600,700"]
+    }
+  });
+  </script>
+  <script type="text/javascript">
+  ! function(o, c) {
+    var n = c.documentElement,
+      t = " w-mod-";
+    n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+  }(window, document);
+  </script>
+  <link href="assets/svg/favicon.svg" rel="icon" type="image/svg+xml" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [{
+        "@type": "TechArticle",
+        "headline": "Sitemaps: What They Are and Why Every Website Needs One",
+        "description": "A sitemap is a file that lists the pages of a website, helping search engines discover and understand its content more efficiently. While a well-structured site with strong internal linking should theoretically be fully discoverab",
+        "url": "https://akshaydahiya.site/sitemap.html",
+        "author": {
+          "@id": "https://akshaydahiya.site/#person"
+        },
+        "publisher": {
+          "@id": "https://akshaydahiya.site/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://akshaydahiya.site/#organization"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "Do I need a sitemap if my website is small?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Small sites with strong internal linking and a handful of pages are often fully crawlable without a sitemap, but including one is still considered best practice since it's low effort, and studies show sitemaps are the first discovery path for the large majority of URLs on the web."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many URLs can a single XML sitemap contain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A single sitemap file is generally limited to 50,000 URLs and 50MB uncompressed. Sites exceeding this need to split their URLs across multiple sitemap files referenced by a sitemap index file, and some large-site practitioners have found that using a smaller per-file limit actually speeds up processing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does submitting a sitemap guarantee my pages will be indexed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A sitemap only tells search engines that a page exists and provides its location; it doesn't guarantee crawling or indexing. Search engines still evaluate content quality, uniqueness, and relevance before deciding whether to index a page. A healthy sitemap typically sees above 80% of submitted URLs actually indexed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I include noindex pages in my sitemap?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Pages marked noindex should be excluded from the sitemap, since including them sends a contradictory signal. The sitemap says \"please index this\" while the noindex tag says the opposite."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between an XML sitemap and an HTML sitemap?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An XML sitemap is a machine-readable file intended for search engine crawlers. An HTML sitemap is a page built for human visitors that lists and links to key site pages, primarily aiding navigation and providing supplementary internal links."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should my sitemap update?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ideally, your sitemap updates automatically and immediately whenever pages are added, removed, or significantly changed. Most content management systems and site generators handle this dynamically; manually maintained sitemaps should be reviewed and refreshed regularly to avoid drift from the live site."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="body">
+  <section class="case-study-hero-section">
+    <section class="navbar">
+      <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-no-shadow-container-2 w-nav">
+        <div class="container-regular">
+          <div class="navbar-wrapper"><a href="index.html" class="navbar-brand w-nav-brand"><img loading="lazy"
+                alt="Akshay Dahiya logo" src="assets/img/logo.png" class="image" /></a>
+            <nav role="navigation" class="nav-menu-wrapper tablet w-nav-menu">
+              <ul role="list" class="nav-menu tablet w-list-unstyled">
+                <li><a href="index.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Home</div>
+                  </a></li>
+                <li><a href="about-me.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">About</div>
+                  </a></li>
+                <li class="nav-dropdown-item">
+                  <div class="nav-link nav-dropdown-toggle w-inline-block">
+                    <div class="nav-link-text is-relative">SEO/GEO</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="nav-mega-panel">
+                    <div class="nav-mega-panel-inner">
+                      <div class="nav-mega-column">
+                        <div class="nav-mega-column-heading">SEO</div><a href="on-page.html" class="nav-mega-link">On-page</a><a href="off-page.html" class="nav-mega-link">Off-page</a><a href="link-building.html" class="nav-mega-link">Link Building</a><a href="website-structure.html" class="nav-mega-link">Website Structure</a><a href="sitemap.html" class="nav-mega-link">Sitemap</a><a href="website-structure-optimization.html" class="nav-mega-link">Website Structure Optimization</a><a href="url-optimization-and-canonicalization.html" class="nav-mega-link">URL Optimization & Canonicalization</a><a href="website-indexing-optimization.html" class="nav-mega-link">Website Indexing Optimization</a><a href="crawl-budget-optimization.html" class="nav-mega-link">Crawl Budget Optimization</a>
+                      </div>
+                      <div class="nav-mega-column">
+                        <div class="nav-mega-column-heading">GEO</div><a href="content-retrieval-optimization.html" class="nav-mega-link">Content Retrieval Optimization</a><a href="citation-optimization.html" class="nav-mega-link">Citation Optimization</a><a href="authority-and-trust-signals.html" class="nav-mega-link">Authority & Trust Signals</a><a href="knowledge-structure.html" class="nav-mega-link">Knowledge Structure</a><a href="ai-discovery-and-crawlability.html" class="nav-mega-link">AI Discovery & Crawlability</a><a href="chunk-and-passage-optimization.html" class="nav-mega-link">Chunk & Passage Optimization</a><a href="citation-ready-urls.html" class="nav-mega-link">Citation-Ready URLs</a><a href="llm-index-readiness.html" class="nav-mega-link">LLM Index Readiness</a><a href="retrieval-coverage-optimization.html" class="nav-mega-link">Retrieval Coverage Optimization</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-dropdown-item">
+                  <div class="nav-link nav-dropdown-toggle w-inline-block">
+                    <div class="nav-link-text is-relative">SEO/GEO Strategy</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="nav-mega-panel">
+                    <div class="nav-mega-panel-inner">
+                      <div class="nav-mega-column">
+                        <div class="nav-mega-column-heading">SEO</div><a href="keyword-strategy.html" class="nav-mega-link">Keyword Strategy</a><a href="search-intent-strategy.html" class="nav-mega-link">Search Intent Strategy</a><a href="content-strategy.html" class="nav-mega-link">Content Strategy</a><a href="technical-seo-strategy.html" class="nav-mega-link">Technical SEO Strategy</a><a href="website-architecture-strategy.html" class="nav-mega-link">Website Architecture Strategy</a><a href="internal-linking-strategy.html" class="nav-mega-link">Internal Linking Strategy</a><a href="authority-and-backlink-strategy.html" class="nav-mega-link">Authority & Backlink Strategy</a><a href="competitor-seo-strategy.html" class="nav-mega-link">Competitor SEO Strategy</a><a href="seo-growth-roadmap.html" class="nav-mega-link">SEO Growth Roadmap</a>
+                      </div>
+                      <div class="nav-mega-column">
+                        <div class="nav-mega-column-heading">GEO</div><a href="prompt-strategy.html" class="nav-mega-link">Prompt Strategy</a><a href="retrieval-strategy.html" class="nav-mega-link">Retrieval Strategy</a><a href="citation-strategy.html" class="nav-mega-link">Citation Strategy</a><a href="entity-strategy.html" class="nav-mega-link">Entity Strategy</a><a href="knowledge-graph-strategy.html" class="nav-mega-link">Knowledge Graph Strategy</a><a href="content-chunking-strategy.html" class="nav-mega-link">Content Chunking Strategy</a><a href="ai-authority-strategy.html" class="nav-mega-link">AI Authority Strategy</a><a href="competitor-geo-strategy.html" class="nav-mega-link">Competitor GEO Strategy</a><a href="geo-growth-roadmap.html" class="nav-mega-link">GEO Growth Roadmap</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="whitepapers.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Whitepaper</div>
+                  </a></li>
+                <li class="nav-dropdown-item">
+                  <div class="nav-link nav-dropdown-toggle w-inline-block">
+                    <div class="nav-link-text is-relative">Glossary</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="nav-mega-panel nav-mega-panel-small">
+                    <div class="nav-mega-panel-inner">
+                      <div class="nav-mega-column"><a href="seo-glossary.html" class="nav-mega-link">SEO</a><a href="geo-glossary.html" class="nav-mega-link">GEO</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list-item-2"><a href="contact.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Contact</div>
+                  </a></li>
+                <li class="mobile-margin-top-10">
+                  <div class="nav-button-wrapper"><a data-w-id="0b28c022-0aef-f4ef-61cc-f350c43353a5"
+                      href="contact.html" target="_blank" class="hero-button nav-hide w-inline-block">
+                      <div class="hero-button-text-wrapper">
+                        <div class="hero-button-text is-absolute">Contact Now</div>
+                        <div class="hero-button-text is-relative">Contact Now</div>
+                      </div>
+                      <div class="hero-button-arrow-wrapper">
+                        <div class="primary-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                        <div class="primary-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                      </div>
+                      <div class="ptimary-button-bg"></div>
+                    </a><a data-w-id="0739ce88-511f-93ed-6125-351eb6b1f1ff" href="contact.html" target="_blank"
+                      class="cta-button desktop-nav w-inline-block">
+                      <div class="hero-button-text-wrapper">
+                        <div class="cta-button-text is-absolute">Contact Now</div>
+                        <div class="cta-button-text is-relative">Contact Now</div>
+                      </div>
+                      <div class="cta-button-arrow-wrapper">
+                        <div class="cta-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                        <div class="cta-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                      </div>
+                      <div class="cta-button-bg"></div>
+                    </a></div>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu-button w-nav-button">
+              <div class="hamburger-icon">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="w-layout-blockcontainer container inner-hero w-container">
+      <div class="service-page-hero-wrapper">
+        <div class="pagelink-section-wrapper">
+          <div data-w-id="c9dc4fd3-f0df-95b9-217f-e10902c746a9" class="inner-page-heading-holder simple-hero-animate">
+            <div class="breadcum-card"><a href="index.html" class="breadcum-home">Home</a>
+              <div class="breadcum-divider">
+                <div class="breadcum-icon is-absolute w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="16" height="16" fill="url(#pattern0_622_2195)" />
+                    <defs>
+                      <pattern id="pattern0_622_2195" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_622_2195" transform="scale(0.00195312)" />
+                      </pattern>
+                      <image id="image0_622_2195" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,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" />
+                    </defs>
+                  </svg></div>
+                <div class="breadcum-icon is-relative w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="16" height="16" fill="url(#pattern0_622_2195)" />
+                    <defs>
+                      <pattern id="pattern0_622_2195" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_622_2195" transform="scale(0.00195312)" />
+                      </pattern>
+                      <image id="image0_622_2195" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,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" />
+                    </defs>
+                  </svg></div>
+              </div>
+              <div class="breadcum-page">Sitemap</div>
+            </div>
+
+            <h1 class="inner-page-h1">Sitemaps: What They Are</h1>
+            <p class="body-text service">What XML and HTML sitemaps are, how they help search engines discover and prioritize your pages, and the best practices for keeping them clean.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="simple-page-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="rich-text case-study w-richtext">
+        <p>A sitemap is a file that lists the pages of a website, helping search engines discover and understand its content more efficiently. While a well-structured site with strong internal linking should theoretically be fully discoverable through crawling alone, sitemaps act as a direct, reliable signal that supplements natural discovery, particularly important for large sites, new sites with few external links, or sites with pages that are difficult to reach through normal navigation. A large-scale study covering more than five billion URLs found that 78% of them were first seen by a search engine through the sitemap rather than through organic link discovery, which underscores how much of the modern web relies on sitemaps as the primary discovery path.</p>
+        <h2>Types of Sitemaps</h2>
+        <h3>XML Sitemaps</h3>
+        <p>The XML sitemap is the primary format used for SEO purposes. It's a machine-readable file, typically located at a URL like <code>/sitemap.xml</code>, that lists a site's indexable URLs along with optional metadata such as the last modification date, change frequency, and relative priority. Search engines use XML sitemaps as a hint, not a guarantee, about which pages exist and should be considered for crawling and indexing.</p>
+        <p>A basic XML sitemap entry looks like this:</p>
+        <pre><code>&lt;url&gt;
+            &lt;loc&gt;https://example.com/page&lt;/loc&gt;
+            &lt;lastmod&gt;2026-06-15&lt;/lastmod&gt;
+            &lt;/url&gt;</code></pre>
+        <h3>HTML Sitemaps</h3>
+        <p>An HTML sitemap is a page on the website itself, designed for human visitors, that lists and links to the site's main pages in an organized way. While less critical for SEO than they once were, HTML sitemaps can still help users navigate large sites and provide an additional set of internal links that reinforce site structure.</p>
+        <h3>Sitemap Index Files</h3>
+        <p>For large sites with more URLs than a single sitemap file can efficiently handle, typically limited to 50,000 URLs or 50MB uncompressed per file, a sitemap index file is used to reference multiple individual sitemap files, for example separate sitemaps for products, blog posts, and category pages. One technical SEO practitioner found that reducing the per-file limit from 50,000 to 30,000 URLs, which grew a single index from roughly 80 XML files to about 130, actually sped up processing, with Google covering three to four million pages within a couple of days rather than leaving files unprocessed for weeks as before.</p>
+        <h3>Specialized Sitemaps</h3>
+        <p>Some content types have their own sitemap formats or extensions, including image sitemaps, video sitemaps, and news sitemaps, which include additional metadata specific to that content type, such as video duration or publication date for news content, to help search engines index that content more accurately. For news sitemaps specifically, best practice is to include only articles published within the last 48 hours and remove older URLs once they're no longer current.</p>
+        <h2>What Should Be in Your Sitemap</h2>
+        <p>A sitemap should include only the canonical, indexable URLs you actually want search engines to crawl and rank. This means:</p>
+        <ul role="list">
+          <li>Only include pages that return a 200 status code, not redirects, 404s, or error pages</li>
+          <li><a href="url-optimization-and-canonicalization.html">Only include canonical versions of pages</a>, never duplicate or parameterized URL variants</li>
+          <li>Exclude pages blocked by robots.txt or marked <code>noindex</code>, since including them creates conflicting signals</li>
+          <li>Exclude low-value pages like internal search results, admin pages, or thin filtered and faceted URLs that shouldn't be indexed</li>
+        </ul>
+        <p>A healthy sitemap-to-index ratio is generally considered to be above 80%, meaning at least eight out of every 10 submitted URLs should actually get indexed. Including non-canonical, blocked, or low-quality URLs in a sitemap doesn't just fail to help; it can waste crawl budget and create confusing signals about which pages actually matter.</p>
+        <h2>How Sitemaps Help Crawling and Indexing</h2>
+        <p>Sitemaps are especially valuable in specific scenarios: large websites where the sheer number of pages makes it inefficient for search engines to discover everything through link-following alone; new websites that don't yet have enough external links pointing into them to be crawled and discovered organically at speed; sites with pages that have few internal links pointing to them; and sites with frequently updated content, where the <code>lastmod</code> field helps search engines prioritize recrawling pages that have actually changed.</p>
+        <p>It's important to understand that submitting a sitemap does not guarantee indexing. Search engines still evaluate each page's quality, uniqueness, and value before deciding to index it. A sitemap tells search engines a page exists and where to find it; it doesn't override quality-based indexing decisions.</p>
+        <h2>Creating and Maintaining a Sitemap</h2>
+        <p>Most modern content management systems generate and update XML sitemaps automatically through built-in features or SEO plugins. For custom-built sites, sitemaps can be generated programmatically, ideally as part of the build or deployment process so they stay in sync with the live site automatically rather than requiring manual updates.</p>
+        <p>Key best practices for sitemap maintenance include keeping the sitemap dynamically updated so it reflects the current state of the site, using accurate <code>lastmod</code> timestamps only when content has genuinely changed, splitting large sitemaps by content type to make monitoring and troubleshooting easier, and compressing large sitemaps to stay within file size limits and reduce load. Google's Gary Illyes has said that decreasing crawling without sacrificing crawl quality would benefit everyone, a comment that reflects the search engine's own push toward crawling less overall but more efficiently, which makes clean, well-segmented sitemaps more valuable, not less.</p>
+        <h2>Submitting Your Sitemap</h2>
+        <p>Once created, a sitemap should be referenced in the robots.txt file with a line pointing search engines to its location, so any crawler checking robots.txt can find it automatically, and submitted directly through the relevant search engine's webmaster tools, which also provides reporting on how many submitted URLs were successfully indexed versus excluded, and why.</p>
+        <p>Monitoring this <a href="website-indexing-optimization.html">indexing report regularly is one of the most useful</a> diagnostic tools available. A large gap between submitted and indexed URLs often points to underlying content quality, duplication, or technical crawling issues that need investigation.</p>
+        <h2>Common Sitemap Mistakes</h2>
+        <p>Common mistakes include including redirected or broken URLs, which waste crawl budget and create noise in indexing reports; listing non-canonical duplicate URLs, which conflicts with canonical tag signals elsewhere on the site; forgetting to update the sitemap after a redesign or migration; exceeding size limits without splitting into an index file; and blocking sitemap-listed pages in robots.txt, a direct contradiction that confuses crawlers about whether a page should be crawled.</p>
+        <h2>Sitemaps and Crawl Budget</h2>
+        <p>For very large sites, <a href="crawl-budget-optimization.html">sitemaps play a role in crawl budget efficiency</a> by helping search engines focus crawling resources on the URLs that matter most rather than spending that budget discovering pages through exhaustive link-following. As one technical guide put it, a well-structured sitemap acts as a <a href="website-structure.html">highly efficient internal linking mechanism</a>, ensuring the most important content receives immediate attention. This becomes increasingly important as site size grows into the tens or hundreds of thousands of pages.</p>
+        <h2>Sitemaps for Multilingual and Multi-Regional Sites</h2>
+        <p>Sites that serve multiple languages or regions face an added layer of complexity: search engines need to understand not just that a page exists, but which language or region it's intended for, and how it relates to equivalent pages in other languages. This is typically handled through hreflang annotations, which can be included either directly in page <code>&lt;head&gt;</code> tags or, more efficiently for large multilingual sites, within the XML sitemap itself. Including hreflang data in the sitemap avoids bloating every individual page's HTML with alternate-language references and centralizes the management of these relationships in one place.</p>
+        <h2>Sitemaps and Fresh Content Discovery</h2>
+        <p>For sites that publish new content frequently, such as news outlets, active blogs, and e-commerce sites launching new products regularly, a well-maintained sitemap plays an outsized role in speeding up discovery of that new content. Some publishers maintain a dedicated, smaller "recent content" sitemap alongside their full sitemap specifically to draw crawler attention to the newest additions without waiting for a full site recrawl cycle.</p>
+        <h2>Sitemaps Are a Support Tool, Not a Substitute</h2>
+        <p>It's worth emphasizing that a sitemap supplements good site structure and internal linking; it doesn't replace them. A site with poor internal linking but a comprehensive sitemap will still struggle with authority distribution and user navigation, even if every page gets crawled. The sitemap ensures discoverability; <a href="website-structure-optimization.html">structure and content quality determine</a> whether those discovered pages actually get indexed and rank well.</p>
+      </div>
+      <div class="simple-faq-wrapper" style="margin-top:48px;">
+        <details class="simple-faq-item">
+          <summary>Do I need a sitemap if my website is small?</summary>
+          <div class="simple-faq-answer">Small sites with strong internal linking and a handful of pages are often fully crawlable without a sitemap, but including one is still considered best practice since it's low effort, and studies show sitemaps are the first discovery path for the large majority of URLs on the web.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>How many URLs can a single XML sitemap contain?</summary>
+          <div class="simple-faq-answer">A single sitemap file is generally limited to 50,000 URLs and 50MB uncompressed. Sites exceeding this need to split their URLs across multiple sitemap files referenced by a sitemap index file, and some large-site practitioners have found that using a smaller per-file limit actually speeds up processing.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>Does submitting a sitemap guarantee my pages will be indexed?</summary>
+          <div class="simple-faq-answer">No. A sitemap only tells search engines that a page exists and provides its location; it doesn't guarantee crawling or indexing. Search engines still evaluate content quality, uniqueness, and relevance before deciding whether to index a page. A healthy sitemap typically sees above 80% of submitted URLs actually indexed.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>Should I include noindex pages in my sitemap?</summary>
+          <div class="simple-faq-answer">No. Pages marked <code>noindex</code> should be excluded from the sitemap, since including them sends a contradictory signal. The sitemap says "please index this" while the noindex tag says the opposite.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>What's the difference between an XML sitemap and an HTML sitemap?</summary>
+          <div class="simple-faq-answer">An XML sitemap is a machine-readable file intended for search engine crawlers. An HTML sitemap is a page built for human visitors that lists and links to key site pages, primarily aiding navigation and providing supplementary internal links.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>How often should my sitemap update?</summary>
+          <div class="simple-faq-answer">Ideally, your sitemap updates automatically and immediately whenever pages are added, removed, or significantly changed. Most content management systems and site generators handle this dynamically; manually maintained sitemaps should be reviewed and refreshed regularly to avoid drift from the live site.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="cta-wrapper">
+        <div class="cta-header-wrapper">
+          <div class="text-55px left-align white">Ready to Build Your Brand’s <span>AI Visibility?</span></div>
+          <p class="body-text cat">The future belongs to brands that adapt early. Let’s build smarter strategies,
+            stronger visibility, and meaningful digital experiences together.</p><a
+            data-w-id="f7796cdc-626e-4902-5926-54ab78d20e00" href="whitepapers.html" target="_blank"
+            class="cta-button w-inline-block">
+            <div class="hero-button-text-wrapper">
+              <div class="cta-button-text is-absolute">See Our Works</div>
+              <div class="cta-button-text is-relative">See Our Works</div>
+            </div>
+            <div class="cta-button-arrow-wrapper">
+              <div class="cta-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                  height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                  role="img">
+                  <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                    stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+              <div class="cta-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                  height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                  role="img">
+                  <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                    stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+            </div>
+            <div class="cta-button-bg"></div>
+          </a>
+        </div>
+        <div class="cta-details-wrapper">
+          <div class="w-layout-grid cta-details-grid">
+            <div class="cta-details-text">
+              <div class="text-35px cta">Trusted by 140+ Happy Clients Around the Globe</div>
+            </div>
+            <div class="cta-project-wrapper">
+              <div class="w-layout-grid cta-project-grid">
+                <div class="cts-project-card">
+                  <div class="text-35px cta">200+</div>
+                  <div class="text-18px grey-04">Project Complete</div>
+                </div>
+                <div class="cts-project-card">
+                  <div class="text-35px cta">100+</div>
+                  <div class="text-18px grey-04">SEO &amp; Ads Campaign</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="footer-wrapper">
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe942" class="footer-header">
+          <div class="text-86px footer-heading">Let’s Work <span class="grey-text semibold">Together</span></div>
+          <p class="body-text black">Subscribe for Updates
+          </p>
+          <div class="footer-form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="footer-form" data-wf-page-id="68ac7f7180d72c34901c1bbd" data-wf-element-id="c928cd5b-c40c-0ebf-2209-71f68bbbe94a">
+              <input class="form-input w-node-c928cd5b-c40c-0ebf-2209-71f68bbbe94b-8bbbe93f w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" type="email" id="email" required="" /><input type="submit" data-wait="Please wait..." class="form-button is-button-small w-button" value="Send" />
+            </form>
+            <div class="success-message w-form-done">
+              <div class="text-24px">✨ Message sent! <span class="grey-text">I’ll respond as soon as possible.</span>
+              </div>
+            </div>
+            <div class="error-message w-form-fail">
+              <div class="text-24px">⚡ Submission failed. <span class="grey-text">Please refresh the page or try again
+                  later.</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe957" class="footer-contact-wrapper">
+          <div class="footer-contact-top">
+            <div class="contact-box">
+              <div class="contact-icon">
+                <div class="footer-contact-icon w-embed"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.2371 3.5998C11.2371 2.05327 12.4906 0.799805 14.0371 0.799805C15.5836 0.799805 16.8371 2.05327 16.8371 3.5998C16.8371 2.05327 18.0906 0.799805 19.6371 0.799805C21.1836 0.799805 22.4371 2.05327 22.4371 3.5998C22.4371 6.0554 19.2722 8.6426 17.7014 9.84194C17.1918 10.2311 16.4824 10.2311 15.9738 9.84194C14.402 8.64354 11.238 6.0554 11.238 3.5998H11.2371ZM21.5038 10.1331C20.9886 10.1331 20.5704 10.5503 20.5704 11.0665V18.5331C20.5704 20.0769 19.3142 21.3331 17.7704 21.3331H4.70378C3.16004 21.3331 1.90378 20.0769 1.90378 18.5331V9.26607L7.93684 15.2991C8.84404 16.2063 10.034 16.6609 11.2278 16.6609C12.4299 16.6609 13.6348 16.2007 14.5588 15.2758L16.1502 13.5697C16.5011 13.1935 16.4806 12.6027 16.1044 12.2509C15.7274 11.8999 15.1375 11.9186 14.7847 12.2975L13.2158 13.9803C12.1238 15.0723 10.3476 15.0723 9.25564 13.9803L2.24071 6.96354C2.71111 6.0778 3.63324 5.46647 4.70378 5.46647H8.43711C8.95231 5.46647 9.37044 5.04927 9.37044 4.53314C9.37044 4.017 8.95231 3.5998 8.43711 3.5998H4.70378C2.13058 3.5998 0.0371094 5.69327 0.0371094 8.26647V18.5331C0.0371094 21.1063 2.13058 23.1998 4.70378 23.1998H17.7704C20.3436 23.1998 22.4371 21.1063 22.4371 18.5331V11.0665C22.4371 10.5503 22.019 10.1331 21.5038 10.1331Z" fill="currentColor" />
+                  </svg></div>
+              </div>
+              <div class="contact-number">
+                <div class="text-24px">Email me</div>
+                <div class="text-18px"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#107;&#115;&#104;&#97;&#121;&#100;&#97;&#104;&#105;&#121;&#97;&#57;&#50;&#46;&#97;&#100;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" style="color:inherit;text-decoration:none;">Email Protected</a></div>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-icon">
+                <div class="footer-contact-icon w-embed"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5705 10.5995V9.86914C20.5705 8.05882 20.5705 7.15368 20.0237 6.59128C19.477 6.02889 18.597 6.02889 16.8371 6.02889H14.8971C14.0409 6.02889 14.0338 6.02723 13.2639 5.64193L10.1544 4.08588C8.85606 3.43618 8.20691 3.11134 7.51536 3.13391C6.82381 3.15649 6.19599 3.52302 4.94036 4.25609L3.79435 4.92516C2.87204 5.46362 2.41088 5.73285 2.15734 6.18074C1.90381 6.62864 1.90381 7.17408 1.90381 8.26496V15.9341C1.90381 17.3675 1.90381 18.0842 2.22325 18.4831C2.43582 18.7484 2.73369 18.9269 3.06301 18.986C3.55792 19.0749 4.16386 18.7212 5.37569 18.0136C6.1986 17.5332 6.99058 17.0343 7.97502 17.1696C8.79992 17.2829 9.56647 17.8034 10.3038 18.1724" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.50391 3.13281V17.1328" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M14.0371 5.93359V9.66693" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.3704 12C18.6434 12 20.5704 13.8821 20.5704 16.1654C20.5704 18.485 18.612 20.1129 16.803 21.2197C16.6712 21.2942 16.5221 21.3333 16.3704 21.3333C16.2187 21.3333 16.0696 21.2942 15.9378 21.2197C14.1322 20.1021 12.1704 18.493 12.1704 16.1654C12.1704 13.8821 14.0975 12 16.3704 12Z" stroke="currentColor" stroke-width="1.4" />
+                    <path d="M16.3701 16.2002H16.3791" stroke="currentColor" stroke-width="1.86667" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+              <div class="contact-number">
+                <div class="text-24px">Office location</div>
+                <div class="text-18px">Nomad</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-social-media-wrapper"><a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"
+              class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">LinkedIn</div>
+            </a><a href="https://github.com/dahiyaakshay" target="_blank" class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">GitHub</div>
+            </a><a href="https://aispider.akshaydahiya.site/" target="_blank"
+              class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">AI Spider</div>
+            </a><a href="https://marai.akshaydahiya.site/" target="_blank" class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">MarAI</div>
+            </a></div>
+        </div>
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe97e" class="footer-copyright-wrapper">
+          <div class="copy-right-text-wrapper">
+            <div class="text-18px footer">Designed by - Akshay Dahiya - Marketer &amp; Web Developer &middot; <a href="llms.txt" style="color:inherit;text-decoration:underline;">llms.txt</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/jquery.js" type="text/javascript"></script>
+  <script src="assets/js/akshay-vendor.js" type="text/javascript"></script>
+  <script src="assets/js/akshay-entry.js" type="text/javascript"></script>
+</body>
+
+</html>

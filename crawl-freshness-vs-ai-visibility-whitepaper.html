@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html data-wf-domain="akshay.local" data-wf-page="68aad862700314ecdf577941" data-wf-site="68a9d12699bd47b077398cae" lang="en" data-wf-collection="68aad861700314ecdf577918" data-wf-item-slug="crawl-freshness-vs-ai-visibility-whitepaper">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-E6JLR8VFSJ');
+  </script>
+
+  <meta charset="utf-8" />
+  <title>001: Crawl Freshness vs AI Visibility - Akshay</title>
+  <meta content="A four-month benchmark (14,000 prompts, 67,200 citations) examining how crawl freshness and content updates affect AI visibility across seven AI search and answer engines, revealing a 14-day median first-citation latency." name="description" />
+  <link href="https://akshaydahiya.site/crawl-freshness-vs-ai-visibility-whitepaper.html" rel="canonical" />
+  <meta content="crawl freshness, AI visibility, AI citation latency, content freshness, GEO research" name="keywords" />
+  <meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots" />
+  <meta content="Akshay Dahiya" name="author" />
+  <meta content="Akshay Dahiya" name="publisher" />
+  <link href="https://akshaydahiya.site/crawl-freshness-vs-ai-visibility-whitepaper.html" hreflang="en" rel="alternate" />
+  <link href="https://akshaydahiya.site/crawl-freshness-vs-ai-visibility-whitepaper.html" hreflang="x-default" rel="alternate" />
+  <meta content="001: Crawl Freshness vs AI Visibility - Akshay" property="og:title" />
+  <meta content="001: Crawl Freshness vs AI Visibility - Akshay" name="twitter:title" />
+  <meta property="og:type" content="website" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Akshay" name="generator" />
+  <link href="assets/css/shared.css" rel="stylesheet" type="text/css" />
+  <style>
+  @media (min-width:992px) {
+    html.w-mod-js:not(.w-mod-ix) [data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b"] {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width:991px) and (min-width:768px) {
+    html.w-mod-js:not(.w-mod-ix) [data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b"] {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width:767px) and (min-width:480px) {
+    html.w-mod-js:not(.w-mod-ix) [data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b"] {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width:479px) {
+    html.w-mod-js:not(.w-mod-ix) [data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b"] {
+      opacity: 0;
+    }
+  }
+  </style>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+  <script src="assets/js/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  WebFont.load({
+    google: {
+      families: ["Schibsted Grotesk:300,400,500,600,700"]
+    }
+  });
+  </script>
+  <script type="text/javascript">
+  ! function(o, c) {
+    var n = c.documentElement,
+      t = " w-mod-";
+    n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className +=
+      t + "touch")
+  }(window, document);
+  </script>
+  <link href="assets/svg/favicon.svg" rel="icon" type="image/svg+xml" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [{
+        "@type": "Report",
+        "@id": "https://akshaydahiya.site/crawl-freshness-vs-ai-visibility-whitepaper.html#report",
+        "name": "001: Crawl Freshness vs AI Visibility",
+        "headline": "001: Crawl Freshness vs AI Visibility",
+        "description": "A four-month benchmark (14,000 prompts, 67,200 citations) examining how crawl freshness and content updates affect AI visibility across seven AI search and answer engines, revealing a 14-day median first-citation latency.",
+        "url": "https://akshaydahiya.site/crawl-freshness-vs-ai-visibility-whitepaper.html",
+        "image": "https://akshaydahiya.site/assets/img/whitepapers/wp001.jpeg",
+        "datePublished": "2026-05",
+        "isPartOf": {
+          "@type": "CreativeWorkSeries",
+          "name": "GEO Retrieval Research Series"
+        },
+        "keywords": "crawl freshness, AI visibility, AI citation latency, content freshness, GEO research",
+        "about": [{
+            "@type": "Thing",
+            "name": "Crawl Freshness"
+          },
+          {
+            "@type": "Thing",
+            "name": "AI Citation Latency"
+          },
+          {
+            "@type": "Thing",
+            "name": "Content Freshness"
+          },
+          {
+            "@type": "Thing",
+            "name": "Generative Engine Optimization"
+          }
+        ],
+        "author": {
+          "@id": "https://akshaydahiya.site/#person"
+        },
+        "publisher": {
+          "@id": "https://akshaydahiya.site/#organization"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://akshaydahiya.site/crawl-freshness-vs-ai-visibility-whitepaper.html"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://akshaydahiya.site/#person",
+        "name": "Akshay Dahiya",
+        "url": "https://akshaydahiya.site/about-me.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/akshay-dahiya/",
+          "https://github.com/dahiyaakshay"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://akshaydahiya.site/#organization",
+        "name": "Akshay Dahiya",
+        "url": "https://akshaydahiya.site/",
+        "logo": "https://akshaydahiya.site/assets/img/logo.png"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://akshaydahiya.site/crawl-freshness-vs-ai-visibility-whitepaper.html#breadcrumb",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://akshaydahiya.site/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Whitepapers",
+            "item": "https://akshaydahiya.site/whitepapers.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Crawl Freshness vs AI Visibility",
+            "item": "https://akshaydahiya.site/crawl-freshness-vs-ai-visibility-whitepaper.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="body">
+  <section class="navbar">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-no-shadow-container-2 w-nav">
+      <div class="container-regular">
+        <div class="navbar-wrapper"><a href="index.html" class="navbar-brand w-nav-brand"><img loading="lazy"
+              alt="Akshay Dahiya logo" src="assets/img/logo.png" class="image" /></a>
+          <nav role="navigation" class="nav-menu-wrapper tablet w-nav-menu">
+            <ul role="list" class="nav-menu tablet w-list-unstyled">
+              <li><a href="index.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Home</div>
+                  </a></li>
+              <li><a href="about-me.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">About</div>
+                  </a></li>
+              <li class="nav-dropdown-item">
+                <div class="nav-link nav-dropdown-toggle w-inline-block">
+                  <div class="nav-link-text is-relative">SEO/GEO</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="nav-mega-panel">
+                  <div class="nav-mega-panel-inner">
+                    <div class="nav-mega-column">
+                      <div class="nav-mega-column-heading">SEO</div><a href="on-page.html" class="nav-mega-link">On-page</a><a href="off-page.html" class="nav-mega-link">Off-page</a><a href="link-building.html" class="nav-mega-link">Link Building</a><a href="website-structure.html" class="nav-mega-link">Website Structure</a><a href="sitemap.html" class="nav-mega-link">Sitemap</a><a href="website-structure-optimization.html" class="nav-mega-link">Website Structure Optimization</a><a href="url-optimization-and-canonicalization.html" class="nav-mega-link">URL Optimization & Canonicalization</a><a href="website-indexing-optimization.html" class="nav-mega-link">Website Indexing Optimization</a><a href="crawl-budget-optimization.html" class="nav-mega-link">Crawl Budget Optimization</a>
+                    </div>
+                    <div class="nav-mega-column">
+                      <div class="nav-mega-column-heading">GEO</div><a href="content-retrieval-optimization.html" class="nav-mega-link">Content Retrieval Optimization</a><a href="citation-optimization.html" class="nav-mega-link">Citation Optimization</a><a href="authority-and-trust-signals.html" class="nav-mega-link">Authority & Trust Signals</a><a href="knowledge-structure.html" class="nav-mega-link">Knowledge Structure</a><a href="ai-discovery-and-crawlability.html" class="nav-mega-link">AI Discovery & Crawlability</a><a href="chunk-and-passage-optimization.html" class="nav-mega-link">Chunk & Passage Optimization</a><a href="citation-ready-urls.html" class="nav-mega-link">Citation-Ready URLs</a><a href="llm-index-readiness.html" class="nav-mega-link">LLM Index Readiness</a><a href="retrieval-coverage-optimization.html" class="nav-mega-link">Retrieval Coverage Optimization</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-dropdown-item">
+                <div class="nav-link nav-dropdown-toggle w-inline-block">
+                  <div class="nav-link-text is-relative">SEO/GEO Strategy</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="nav-mega-panel">
+                  <div class="nav-mega-panel-inner">
+                    <div class="nav-mega-column">
+                      <div class="nav-mega-column-heading">SEO</div><a href="keyword-strategy.html" class="nav-mega-link">Keyword Strategy</a><a href="search-intent-strategy.html" class="nav-mega-link">Search Intent Strategy</a><a href="content-strategy.html" class="nav-mega-link">Content Strategy</a><a href="technical-seo-strategy.html" class="nav-mega-link">Technical SEO Strategy</a><a href="website-architecture-strategy.html" class="nav-mega-link">Website Architecture Strategy</a><a href="internal-linking-strategy.html" class="nav-mega-link">Internal Linking Strategy</a><a href="authority-and-backlink-strategy.html" class="nav-mega-link">Authority & Backlink Strategy</a><a href="competitor-seo-strategy.html" class="nav-mega-link">Competitor SEO Strategy</a><a href="seo-growth-roadmap.html" class="nav-mega-link">SEO Growth Roadmap</a>
+                    </div>
+                    <div class="nav-mega-column">
+                      <div class="nav-mega-column-heading">GEO</div><a href="prompt-strategy.html" class="nav-mega-link">Prompt Strategy</a><a href="retrieval-strategy.html" class="nav-mega-link">Retrieval Strategy</a><a href="citation-strategy.html" class="nav-mega-link">Citation Strategy</a><a href="entity-strategy.html" class="nav-mega-link">Entity Strategy</a><a href="knowledge-graph-strategy.html" class="nav-mega-link">Knowledge Graph Strategy</a><a href="content-chunking-strategy.html" class="nav-mega-link">Content Chunking Strategy</a><a href="ai-authority-strategy.html" class="nav-mega-link">AI Authority Strategy</a><a href="competitor-geo-strategy.html" class="nav-mega-link">Competitor GEO Strategy</a><a href="geo-growth-roadmap.html" class="nav-mega-link">GEO Growth Roadmap</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="whitepapers.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Whitepaper</div>
+                  </a></li>
+              <li class="nav-dropdown-item">
+                <div class="nav-link nav-dropdown-toggle w-inline-block">
+                  <div class="nav-link-text is-relative">Glossary</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="nav-mega-panel nav-mega-panel-small">
+                  <div class="nav-mega-panel-inner">
+                    <div class="nav-mega-column"><a href="seo-glossary.html" class="nav-mega-link">SEO</a><a href="geo-glossary.html" class="nav-mega-link">GEO</a></div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-item-2"><a href="contact.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Contact</div>
+                  </a></li>
+              <li class="mobile-margin-top-10">
+                <div class="nav-button-wrapper"><a data-w-id="0b28c022-0aef-f4ef-61cc-f350c43353a5"
+                      href="contact.html" target="_blank" class="hero-button nav-hide w-inline-block">
+                      <div class="hero-button-text-wrapper">
+                        <div class="hero-button-text is-absolute">Contact Now</div>
+                        <div class="hero-button-text is-relative">Contact Now</div>
+                      </div>
+                      <div class="hero-button-arrow-wrapper">
+                        <div class="primary-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                        <div class="primary-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                      </div>
+                      <div class="ptimary-button-bg"></div>
+                    </a><a data-w-id="0739ce88-511f-93ed-6125-351eb6b1f1ff" href="contact.html" target="_blank"
+                      class="cta-button desktop-nav w-inline-block">
+                      <div class="hero-button-text-wrapper">
+                        <div class="cta-button-text is-absolute">Contact Now</div>
+                        <div class="cta-button-text is-relative">Contact Now</div>
+                      </div>
+                      <div class="cta-button-arrow-wrapper">
+                        <div class="cta-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                        <div class="cta-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                      </div>
+                      <div class="cta-button-bg"></div>
+                    </a></div>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <div class="hamburger-icon">
+              <div class="hamburger-bar"></div>
+              <div class="hamburger-bar"></div>
+              <div class="hamburger-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sengle-case-study-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="single-case-study-section-wrapper">
+        <div class="single-case-study-header">
+          <div class="single-page-header">
+            <div data-w-id="afea98e7-be5a-2a93-1984-12b381e13ac6" style="opacity:0" class="breadcum-card"><a
+                href="index.html" class="breadcum-home">Home</a>
+              <div class="breadcum-divider">
+                <div class="breadcum-icon is-absolute w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+                <div class="breadcum-icon is-relative w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div><a href="whitepapers.html" class="breadcum-home">Whitepapers</a>
+              <div class="breadcum-divider hide-mobile">
+                <div class="breadcum-icon is-absolute w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+                <div class="breadcum-icon is-relative w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+              <div class="breadcum-page hide-mobile">001: Crawl Freshness vs AI Visibility</div>
+            </div>
+            <h1 data-w-id="90bc2627-1006-e82a-b6e2-62beb703c1a1" style="opacity:0" class="inner-page-h1 center">Crawl
+              Freshness vs <span class="grey-text semibold">AI Visibility</span></h1>
+            <p data-w-id="2952c910-5f5a-a1ba-9961-a90298685fde" style="opacity:0" class="body-text">How quickly do
+              updated pages begin appearing in AI-generated answers? A four-month benchmark across seven AI search and
+              answer engines.</p>
+          </div>
+          <div data-w-id="2f2ca15e-3151-82fb-d603-ba6dc629a0cf" style="opacity:0" class="case-study-publish">
+            <div class="text-18px medium black">Published on :</div>
+            <div class="text-18px">February - May 2026</div>
+          </div>
+        </div>
+        <div class="single-service-image-wrapper"><img src="assets/img/whitepapers/wp001.jpeg" loading="lazy" alt="001: Crawl Freshness vs AI Visibility" class="single-service-big-image" /></div>
+        <div data-w-id="f34dbf4b-e893-f573-1b79-b5b0b6f81e64" style="opacity:0" class="case-study-details-wrapper">
+          <div class="case-study-text">
+            <p class="body-text">This research investigates the relationship between crawl freshness, content updates,
+              and AI visibility across seven leading AI search and answer engines over a four-month period from February
+              to May 2026.</p>
+          </div>
+          <div class="case-study-details">
+            <div class="case-study-detail-card">
+              <div class="text-24-px">4 Months</div>
+              <div class="text-18px">Study Duration</div>
+            </div>
+            <div class="case-study-detail-card">
+              <div class="text-24-px">7</div>
+              <div class="text-18px">AI Platforms</div>
+            </div>
+            <div class="case-study-detail-card">
+              <div class="text-24-px">14,000</div>
+              <div class="text-18px">Total Prompts</div>
+            </div>
+          </div>
+        </div>
+        <p data-w-id="6a0e9a27-968f-6e86-9951-c205eacfcff2" style="opacity:0" class="text-18px">Contrary to assumptions
+          common in the GEO community, publishing or updating content does not produce immediate citation by AI systems.
+          The median first-citation latency, blended across all seven platforms, was 14 days (IQR: 9 to 21 days); high
+          authority sped up retrieval substantially on most platforms, but not enough to offset the slowest ones. AI
+          engines showed consistent preference for content approximately five months old, suggesting a
+          recency sweet spot rather than a preference for either very new or evergreen-aged content. Citation behaviour
+          was dynamic rather than fixed: 34% of citations (IQR: 28 to 41%) changed during repeated testing of identical
+          prompts.</p>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>01 / Executive Summary</h5>
+            <p><strong>Fresh content does not guarantee fast AI visibility.</strong></p>
+            <p>This research investigates the relationship between crawl freshness, content updates, and AI visibility
+              across seven leading AI search and answer engines over a four-month period from February to May 2026.
+              Contrary to assumptions common in the GEO community, publishing or updating content does not produce
+              immediate citation by AI systems. Blended across all seven platforms, the median first-citation latency
+              was 14 days (IQR: 9 to 21 days). This blend masks a wide spread: high-authority sites saw first citation
+              within a day or two on real-time platforms like Google AI Overviews and Perplexity, while the same
+              high-authority sites still waited weeks to months on training-dependent platforms like Claude and Qwen,
+              where authority barely moves the needle. Section 10 breaks down latency by authority tier and
+              platform.</p>
+            <p>AI engines showed consistent preference for content approximately five months old, suggesting a recency
+              sweet spot rather than a preference for either very new or evergreen-aged content. Citation behaviour was
+              dynamic rather than fixed: 34% of citations (IQR: 28 to 41%) changed during repeated testing of identical
+              prompts. Only 36.5% of citations pointed to unique URLs, confirming that AI systems repeatedly circulate a
+              small pool of trusted pages rather than distributing coverage broadly.</p>
+            <p>Website authority, internal linking density, and crawl accessibility were stronger
+              predictors of retrieval speed than publish date alone. Updating existing high-authority pages consistently
+              outperformed publishing new pages in achieving fast AI visibility.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>02 / Study Contributions</h5>
+            <p><strong>What this research measures directly.</strong></p>
+            <p>Much of the existing GEO literature consists of practitioner observations, vendor reports, or
+              single-platform case studies. This benchmark differs in scope and measurability. Below are the specific
+              contributions this study makes.</p>
+            <ul role="list">
+              <li><strong>01. A measured median first-citation latency.</strong> Prior work described AI citation
+                speed qualitatively. This benchmark reports a measured median of 14 days (IQR: 9 to 21 days)
+                across seven platforms simultaneously.<br /></li>
+              <li><strong>02. A measured citation replacement rate.</strong> The 34% (IQR: 28 to 41%) citation
+                replacement rate across 4,800 repeated prompt runs quantifies AI citation
+                volatility at this scale.<br /></li>
+              <li><strong>03. Seven-platform simultaneous comparison.</strong> Existing studies typically cover one to
+                three platforms. This benchmark evaluated ChatGPT, Google AI Overviews, Perplexity, Gemini, Claude,
+                Microsoft Copilot, and Qwen under identical conditions.<br /></li>
+              <li><strong>04. 14,000 prompt benchmark dataset.</strong> With 2,000 prompts per platform across three
+                industries and three intent types, this is one of the larger structured GEO prompt studies conducted by
+                an independent researcher.<br /></li>
+              <li><strong>05. Cross-platform crawl freshness comparison.</strong> Content updates were tracked to see how
+                quickly they propagated into citations across all seven platforms under controlled conditions,
+                producing a side-by-side freshness comparison at this breadth.<br /></li>
+              <li><strong>06. Update vs. publish controlled comparison.</strong> By monitoring 400 pages that were
+                either updated or newly published on the same domains, this study produced a controlled comparison of
+                retrieval latency by content strategy.<br /></li>
+              <li><strong>07. Authority-tier latency model.</strong> First-citation latency was segmented by domain
+                authority tier (high, mid, low) across three platforms, producing a structured model that practitioners
+                can use to set realistic expectations.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>03 / Research Questions</h5>
+            <p><strong>What this study set out to answer.</strong></p>
+            <p>This research is built around seven core questions that represent the primary knowledge gaps in
+              understanding AI retrieval behaviour as it relates to content freshness and update strategy.</p>
+            <ul role="list">
+              <li><strong>RQ1.</strong> How quickly do updated pages appear in AI-generated answers after a change is
+                made?<br /></li>
+              <li><strong>RQ2.</strong> Which AI platforms demonstrate the lowest retrieval latency for newly updated
+                content?<br /></li>
+              <li><strong>RQ3.</strong> Does updating an existing page outperform publishing a new page for AI citation
+                speed?<br /></li>
+              <li><strong>RQ4.</strong> How significantly does website authority influence the speed of AI
+                visibility?<br /></li>
+              <li><strong>RQ5.</strong> What technical factors (crawlability, HTML structure, internal linking)
+                measurably reduce retrieval latency?<br /></li>
+              <li><strong>RQ6.</strong> Does content freshness carry equal weight across all seven AI engines
+                tested?<br /></li>
+              <li><strong>RQ7.</strong> Which optimisation strategies consistently improve AI citation speed regardless
+                of engine?</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>04 / Methodology</h5>
+            <p><strong>Study design and data collection.</strong></p>
+            <p>This benchmark ran from February 2026 through May 2026, evaluating seven AI platforms using an
+              identical prompt distribution to ensure cross-platform comparability. Daily monitoring covered
+              50 websites, with each platform receiving 2,000 prompts drawn from three industries and three distinct
+              query intent categories.</p>
+            <p><strong>Dataset Overview</strong></p>
+            <table>
+              <tr>
+                <th>Metric</th>
+                <th>Value</th>
+              </tr>
+              <tr>
+                <td>Study Duration</td>
+                <td>4 Months</td>
+              </tr>
+              <tr>
+                <td>Research Period</td>
+                <td>Feb - May 2026</td>
+              </tr>
+              <tr>
+                <td>AI Platforms</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>Total Prompts</td>
+                <td>14,000</td>
+              </tr>
+              <tr>
+                <td>Responses Collected</td>
+                <td>14,000</td>
+              </tr>
+              <tr>
+                <td>Total Citations</td>
+                <td>67,200</td>
+              </tr>
+              <tr>
+                <td>Unique URLs</td>
+                <td>24,500</td>
+              </tr>
+              <tr>
+                <td>Unique Domains</td>
+                <td>5,840</td>
+              </tr>
+              <tr>
+                <td>Avg Citations / Response</td>
+                <td>4.8</td>
+              </tr>
+              <tr>
+                <td>Median Citations</td>
+                <td>4.0</td>
+              </tr>
+              <tr>
+                <td>First Citation Latency</td>
+                <td>14 Days</td>
+              </tr>
+              <tr>
+                <td>Average Content Age</td>
+                <td>5 Months</td>
+              </tr>
+              <tr>
+                <td>Updated Pages Monitored</td>
+                <td>400</td>
+              </tr>
+              <tr>
+                <td>Citation Replacement Rate</td>
+                <td>34%</td>
+              </tr>
+              <tr>
+                <td>Repeated Prompt Runs</td>
+                <td>4,800</td>
+              </tr>
+              <tr>
+                <td>Websites Included</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Testing Frequency</td>
+                <td>Daily</td>
+              </tr>
+              <tr>
+                <td>Geographic Region</td>
+                <td>San Diego, CA, USA</td>
+              </tr>
+            </table>
+            <p><strong>Website Selection</strong></p>
+            <p>50 websites were selected for monitoring rather than a larger or smaller set for the following reasons:
+              enough sites to produce statistically meaningful patterns across authority tiers, but few enough to
+              monitor daily with consistent depth. The 50 sites were selected to represent a balanced mix across four
+              dimensions:</p>
+            <ul role="list">
+              <li><strong>Authority range.</strong> Approximately one third each of high-authority (10,000+ referring
+                domains), mid-authority (1,000 to 10,000 referring domains), and low-authority (under 1,000 referring
+                domains) sites.<br /></li>
+              <li><strong>CMS diversity.</strong> Sites running on WordPress, Webflow, custom builds, and headless CMS
+                architectures were included to avoid CMS-specific bias in crawl behaviour.<br /></li>
+              <li><strong>Industry coverage.</strong> Sites were drawn proportionally from the three study industries:
+                SaaS, Digital Marketing, and E-commerce.<br /></li>
+              <li><strong>Update frequency.</strong> Sites were selected to include a range of publishing cadences, from
+                daily publishers to sites updated quarterly, so that the update-vs-publish comparison had sufficient
+                variation to analyse.</li>
+            </ul>
+            <p><strong>Platforms Evaluated</strong></p>
+            <p>Each of the following seven platforms received an identical prompt distribution to maintain comparability
+              across retrieval architectures:</p>
+            <ul role="list">
+              <li>01. ChatGPT<br /></li>
+              <li>02. Google AI Overviews<br /></li>
+              <li>03. Perplexity<br /></li>
+              <li>04. Gemini<br /></li>
+              <li>05. Claude<br /></li>
+              <li>06. Microsoft Copilot<br /></li>
+              <li>07. Qwen</li>
+            </ul>
+            <p><strong>Industry and Intent Distribution</strong></p>
+            <p>Prompts were distributed across three industries: SaaS &amp; Software (7,000 total prompts, 1,000 per
+              platform), Digital Marketing (3,500 total, 500 per platform), and E-commerce (3,500 total, 500 per
+              platform). Three intent categories were used: Commercial, Analytics, and Opinion. These were selected
+              because they consistently trigger AI-generated answers that synthesize multiple external sources.</p>
+            <p><strong>Prompt Distribution by Industry</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp001/chart-prompt-distribution.svg" loading="lazy" alt="Prompt distribution by industry bar chart" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <p><strong>Evaluation Metrics</strong></p>
+            <p>Each AI response was evaluated across eleven dimensions: citation frequency, citation diversity, citation
+              replacement rate, retrieval latency, content freshness, average content age, URL diversity, domain
+              diversity, cross-platform citation overlap, first citation latency, and platform-specific retrieval
+              behaviour.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>05 / Statistical Methodology</h5>
+            <p><strong>How the data was measured, normalised, and analysed.</strong></p>
+            <p>This section documents the specific measurement and analytical decisions made during the study. These
+              choices affect how results should be interpreted and compared with other research.</p>
+            <p><strong>Why median instead of mean.</strong> Median rather than mean was used for latency and citation
+              count measurements throughout this study. Retrieval latency distributions are right-skewed: a small number
+              of pages took extremely long to appear (or never appeared), which would inflate a mean significantly.
+              Median is a more robust central tendency measure for this type of data.</p>
+            <p><strong>URL normalization.</strong> All cited URLs were normalised before analysis: trailing slashes were
+              stripped, query parameters were removed unless they were structurally part of the URL, HTTP and HTTPS
+              variants of the same URL were collapsed to a single entry, and www and non-www variants of the same domain
+              were treated as the same domain. This reduced apparent URL diversity but improved measurement accuracy.
+            </p>
+            <p><strong>Duplicate removal.</strong> Within a single AI response, if the same URL appeared in multiple
+              citation positions, it was counted once. Duplicates across separate prompt runs of the same prompt were
+              retained, as these represent real citation events that contribute to frequency and replacement rate
+              calculations.</p>
+            <p><strong>Citation extraction rules.</strong> Citations were extracted from AI responses using the following
+              rules: for platforms that provide explicit citation links (Perplexity, Google AI Overviews, Microsoft
+              Copilot), the linked URLs were extracted directly. For platforms that provide in-text source references
+              without links (ChatGPT, Claude, Gemini, Qwen), the domain name or source description was extracted and
+              resolved to a URL where possible. Unresolvable source references were excluded from URL-level analysis
+              but included in citation count totals.</p>
+            <p><strong>Latency calculation.</strong> First-citation latency was calculated as the number of days between
+              the date a page was published or updated (as recorded in HTTP response headers or visible page metadata)
+              and the first date on which that page appeared as a citation in any monitored prompt run. Pages that never
+              appeared in any citation during the study period were excluded from latency calculations but are noted in
+              the broader dataset.</p>
+            <p><strong>Content age calculation.</strong> Content age at time of citation was calculated as the number of
+              days between a page's publication date and the date it was cited. For pages with multiple citation events,
+              the date of first citation was used. Publication dates were sourced from HTTP Last-Modified headers where
+              available, falling back to visible page metadata, and then to Wayback Machine records for pages where
+              neither was available.</p>
+            <p><strong>Citation replacement rate.</strong> For each of the 4,800 repeated prompt runs (each prompt run
+              twice at minimum), the set of cited URLs was compared between executions using Jaccard similarity. A
+              citation was counted as "replaced" if it appeared in the first run but not the second. The replacement
+              rate is the proportion of citations replaced across all repeated runs, not the proportion of prompts that
+              showed any change.</p>
+            <p><strong>IQR reporting.</strong> Interquartile ranges (IQR) reported throughout this paper represent the
+              25th to 75th percentile range of the observed distribution. They are approximate estimates derived from
+              the observed data rather than computed from a fitted statistical model, and should be interpreted
+              accordingly.</p>
+            <p><strong>Research workflow.</strong> The following diagram shows how raw prompts moved through the pipeline
+              to produce the final citation dataset.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp001/flow-research-workflow.svg" loading="lazy" alt="Research workflow diagram from 14,000 prompts to final analysis" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <p><strong>Data processing pipeline.</strong> Each individual citation went through the following processing
+              steps before entering analysis.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp001/flow-data-processing-pipeline.svg" loading="lazy" alt="Eight-step data processing pipeline diagram" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>06 / Key Findings</h5>
+            <p><strong>Nine findings that reframe AI freshness strategy.</strong></p>
+            <ul role="list">
+              <li><strong>Finding 01: 14 days (IQR: 9 to 21 days). Median first citation latency.</strong> Fresh pages
+                rarely achieve AI visibility immediately. Blended across all seven platforms tracked, the median time
+                from publish or update to first citation was 14 days (IQR: 9 to 21 days). This blended figure hides a
+                wide split by platform: high-authority sites were cited within a day or two on real-time platforms
+                (see Section 10), but the same sites still waited weeks to months on training-dependent platforms
+                regardless of authority, which pulls the overall median up substantially. Successful crawling,
+                indexing, and retrieval all need to occur before citation is possible.<br /></li>
+              <li><strong>Finding 02: 36.5% unique URLs, 4.2 pages per domain. Citation coverage is concentrated, not
+                  broad.</strong> <em>Observed:</em> Only 36.5% of citations pointed to unique URLs. Across 5,840
+                unique domains generating 24,500 cited URLs, the average was 4.2 pages cited per domain. AI engines
+                repeatedly recirculate a narrow pool of trusted pages rather than distributing citation coverage
+                broadly. <em>One possible explanation:</em> AI retrieval systems may apply heavy domain-level trust
+                weighting, so that once a domain enters the citation pool, multiple pages from it get surfaced
+                repeatedly.<br /></li>
+              <li><strong>Finding 03: 34% (IQR: 28 to 41%). Citation replacement rate.</strong> Across 4,800
+                repeated prompt runs, 34% of citations (IQR: 28 to 41%) changed between executions of the
+                same prompt. AI visibility is dynamic rather than fixed, which means monitoring needs to be ongoing to
+                accurately measure citation presence.<br /></li>
+              <li><strong>Finding 04: 5 months (Range: 3 to 8 months). Average age of cited content.</strong> AI
+                systems consistently preferred pages approximately five months old. This suggests a recency
+                sweet spot: content recent enough to appear fresh but established enough to have accumulated authority
+                signals.<br /></li>
+              <li><strong>Finding 05: Median 4.0 (IQR: 3 to 6), average 4.8. Citations per response.</strong>
+                Citation counts were consistent across all platforms tested. This relatively narrow range suggests AI
+                engines converge on a similar quantity of sources per synthesized answer, regardless of retrieval
+                architecture.<br /></li>
+              <li><strong>Finding 06: Update &gt; Publish. Refreshing outperforms publishing new.</strong>
+                <em>Observed:</em> Updating an existing page on a high-authority domain consistently achieved faster
+                citation visibility than publishing a new page on the same domain. <em>One possible explanation:</em>
+                Existing authority signals, internal link equity, and prior crawl history may accelerate retrieval for
+                updated content. This study did not isolate individual variables, so no single cause can be
+                confirmed.<br />
+              </li>
+              <li><strong>Finding 07: Not equal. Freshness weight varies significantly by engine.</strong> Content
+                freshness mattered far more for real-time retrieval engines like Perplexity than for training-heavy
+                models like Claude and Qwen. Platform retrieval architecture appears to be the primary
+                determinant of how much freshness influences citation speed.<br /></li>
+              <li><strong>Finding 08: Authority &gt; Freshness. Authority outweighs freshness as a retrieval
+                  signal.</strong> <em>Observed:</em> High-authority domains achieved first citation faster than
+                low-authority domains regardless of publish date. A new page on a high-authority domain was cited before
+                an equivalently fresh page on a low-authority domain in nearly every case tracked. <em>One possible
+                  explanation:</em> AI crawlers may inherit prioritization signals from existing search indices, where
+                authority has always outweighed recency for crawl scheduling.<br /></li>
+              <li><strong>Finding 09: 10+ links. Internal linking density reduces latency.</strong> <em>Observed:</em>
+                Pages receiving 10 or more internal links from high-traffic pages were cited faster than pages with
+                fewer than 3 internal links, even on the same domain. <em>One possible explanation:</em> Internal link
+                density may signal page importance to AI crawlers in a similar way it signals crawl priority to
+                traditional search engine bots. This was observed but not causally isolated.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>07 / Engine-by-Engine Analysis</h5>
+            <p><strong>Platform retrieval profiles.</strong></p>
+            <p>Each of the seven platforms evaluated operates on a distinct retrieval architecture. These
+              architectural differences, not content quality alone, are the primary determinant of how quickly updated
+              content achieves AI citation visibility.</p>
+            <p>The latency estimates below reflect mid-authority sites specifically (Domain Rating 40 to 65), the same
+              slice of the 400 monitored pages shown in the chart in Section 08. See Section 10 for how these figures
+              shift across the full high, mid, and low authority range.</p>
+            <blockquote>"The fastest engine for a given piece of content is determined by how that engine retrieves, not
+              by how good the content is."</blockquote>
+            <table>
+              <tr>
+                <th>Engine</th>
+                <th>Retrieval Model</th>
+                <th>Freshness Sensitivity</th>
+                <th>Est. Latency (Mid-Authority)</th>
+                <th>Speed</th>
+              </tr>
+              <tr>
+                <td>Google AI Overviews</td>
+                <td>Real-time index (Googlebot)</td>
+                <td>Very High</td>
+                <td>24 - 72 hrs (high authority)</td>
+                <td>Fastest</td>
+              </tr>
+              <tr>
+                <td>Perplexity</td>
+                <td>Continuous live crawl</td>
+                <td>Very High</td>
+                <td>1 - 4 days</td>
+                <td>Very Fast</td>
+              </tr>
+              <tr>
+                <td>Gemini</td>
+                <td>Google index + training blend</td>
+                <td>High</td>
+                <td>3 - 10 days</td>
+                <td>Fast</td>
+              </tr>
+              <tr>
+                <td>Microsoft Copilot</td>
+                <td>Bing index + live retrieval</td>
+                <td>High</td>
+                <td>4 - 12 days</td>
+                <td>Fast</td>
+              </tr>
+              <tr>
+                <td>ChatGPT</td>
+                <td>Bing index + training data</td>
+                <td>Medium</td>
+                <td>7 - 21 days</td>
+                <td>Moderate</td>
+              </tr>
+              <tr>
+                <td>Claude</td>
+                <td>Training data (periodic updates)</td>
+                <td>Low</td>
+                <td>Weeks - months</td>
+                <td>Slow</td>
+              </tr>
+              <tr>
+                <td>Qwen</td>
+                <td>Training data (periodic updates)</td>
+                <td>Low</td>
+                <td>Weeks - months</td>
+                <td>Slow</td>
+              </tr>
+            </table>
+            <p><strong>Google AI Overviews.</strong> The fastest platform observed for high-authority sites. Because
+              AI Overviews are grounded directly in Google’s search index, sites with strong organic standing can see
+              newly updated pages cited within 24 to 72 hours. Authority and crawl frequency are the primary
+              gatekeepers: low-authority sites experienced significantly longer latency regardless of content quality.
+            </p>
+            <p><strong>Perplexity.</strong> Perplexity’s continuous live crawling pipeline produced the second-fastest
+              retrieval behaviour of the live-index engines. Its transparent citation model and real-time indexing make it the most
+              responsive engine to content updates for mid-authority sites. Content updated on a Wednesday appeared in
+              Perplexity citations within 1 to 4 days across the monitored domain set.</p>
+            <p><strong>Gemini.</strong> Gemini’s hybrid model, blending Google’s search index with its own training
+              layer, produced moderate-to-fast retrieval in this testing. High-authority pages with existing Google
+              organic rankings moved into Gemini citations faster than equivalent pages without organic presence. The
+              Google index grounding is a meaningful accelerant for sites with established SEO foundations.</p>
+            <p><strong>Microsoft Copilot.</strong> Copilot’s Bing-index grounding produced similar behaviour to Gemini,
+              with slightly longer latency in this data. Sites with strong Bing organic rankings, which do not always
+              correlate with Google rankings, achieved faster citation speeds. This highlights the importance of
+              cross-index authority rather than Google-only optimisation.</p>
+            <p><strong>ChatGPT.</strong> ChatGPT’s retrieval behaviour was the most variable of the live-index engines
+              tested, with observed latency ranging from 7 to 21 days depending on domain authority, industry, and query
+              intent. Commercial intent prompts produced faster citation of updated content than analytics or opinion
+              prompts, which suggests the retrieval layer is calibrated differently by intent type.</p>
+            <p><strong>Claude and Qwen.</strong> Both training-heavy platforms showed the longest retrieval latency
+              recorded, as their citation behaviour is primarily driven by knowledge encoded during training cycles
+              rather than real-time web retrieval. For these platforms, content freshness has minimal influence on
+              citation speed. The primary optimisation lever is building domain authority and citation presence that
+              will be captured in future training data updates.</p>
+            <p><strong>Estimated Median Retrieval Latency by Platform (Days)</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp001/chart-latency-by-platform.svg" loading="lazy" alt="Estimated median retrieval latency by platform bar chart" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>08 / Retrieval Latency</h5>
+            <p><strong>The race to first citation.</strong></p>
+            <p>The following visualization maps estimated first-citation latency across all seven platforms relative to
+              the 14-day median recorded overall. Bars represent the midpoint of the observed latency range for mid-authority
+              sites (Domain Rating 40 to 65).</p>
+            <p><strong>What drives latency reduction.</strong></p>
+            <p>Across the 400 pages monitored, three variables showed the strongest correlation with reduced
+              first-citation latency: domain authority (measured by referring domain count and historical citation
+              volume), crawl accessibility (clean HTML, no JavaScript-gated content, open robots.txt for AI bots), and
+              internal link density pointing to the updated page.</p>
+            <p>Pages with 10 or more internal links pointing to them showed measurably faster citation appearance than
+              equivalent pages with fewer than 3 internal links, even on the same domain. This suggests AI crawlers are
+              influenced by the same internal link equity signals that traditional search engine crawlers use to
+              prioritize content.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>09 / Content Freshness Signals</h5>
+            <p><strong>The five-month recency sweet spot.</strong></p>
+            <p>One of the more counterintuitive patterns in the data was the consistent preference AI systems showed for pages
+              approximately five months old. The expectation that the very newest content would be most frequently cited
+              was not supported by the data.</p>
+            <blockquote>"Content that is recent enough to appear credible but established enough to have accumulated
+              authority consistently outperformed both very new pages and older evergreen content."</blockquote>
+            <p>This pattern held across six of the seven platforms studied, with Perplexity being the exception due to
+              its real-time crawl architecture, which showed less preference for a specific content age and instead
+              prioritized recency more linearly.</p>
+            <p><strong>What counts as a meaningful update.</strong></p>
+            <p>A key operational finding from monitoring 400 pages: changing only the publish date or making
+              cosmetic edits did not accelerate citation speed. Pages that received substantive updates (new statistics,
+              revised claims, expanded sections, or updated references) achieved faster retrieval than pages where only
+              the date metadata was altered.</p>
+            <p>This has direct implications for content refresh strategy. Refreshing a page solely to signal recency to
+              AI systems is not effective. The update needs to contain meaningful informational change that an AI
+              retrieval system can distinguish from the prior version of the page.</p>
+            <p><strong>Content Age at Time of Citation (Month Distribution)</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp001/chart-content-age-distribution.svg" loading="lazy" alt="Content age at time of citation month distribution bar chart" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>10 / Authority and Crawl Signals</h5>
+            <p><strong>Authority is the primary retrieval accelerant.</strong></p>
+            <p>Across all seven platforms studied, website authority, approximated by referring domain count, citation
+              history, and organic traffic volume, was the single strongest predictor of retrieval speed. High-authority
+              sites achieved first citation on Google AI Overviews within 24 hours; low-authority sites on the same
+              platform waited 14 or more days for identical content quality.</p>
+            <table>
+              <tr>
+                <th>Authority Tier</th>
+                <th>Referring Domains (approx)</th>
+                <th>Google AI Overviews Latency</th>
+                <th>Perplexity Latency</th>
+                <th>ChatGPT Latency</th>
+              </tr>
+              <tr>
+                <td>High Authority</td>
+                <td>10,000+</td>
+                <td>24 - 72 hrs</td>
+                <td>1 - 2 days</td>
+                <td>5 - 10 days</td>
+              </tr>
+              <tr>
+                <td>Mid Authority</td>
+                <td>1,000 - 10,000</td>
+                <td>3 - 7 days</td>
+                <td>2 - 5 days</td>
+                <td>10 - 18 days</td>
+              </tr>
+              <tr>
+                <td>Low Authority</td>
+                <td>Under 1,000</td>
+                <td>7 - 30+ days</td>
+                <td>5 - 14 days</td>
+                <td>21+ days</td>
+              </tr>
+            </table>
+            <p><strong>Technical crawl signals.</strong></p>
+            <p>Beyond domain authority, three technical signals consistently appeared in pages with faster retrieval
+              latency across the monitored pages:</p>
+            <ul role="list">
+              <li><strong>robots.txt permissiveness.</strong> Pages on domains that explicitly permitted AI crawl bots
+                (GPTBot, ClaudeBot, PerplexityBot, GoogleOther) achieved faster citation appearance than equivalent
+                pages that relied on the default of not blocking, even when the latter were technically
+                accessible.<br /></li>
+              <li><strong>Clean semantic HTML.</strong> Pages with well-formed heading hierarchies, meaningful meta
+                descriptions, and structured data markup (Article, FAQPage, Product schema) were retrieved and cited
+                faster than pages with equivalent content delivered via heavy JavaScript frameworks without server-side
+                rendering.<br /></li>
+              <li><strong>Internal linking density.</strong> Pages receiving 10 or more internal links from high-traffic
+                pages on the same domain showed measurably faster citation speeds, suggesting that crawl prioritization
+                signals from internal link equity carry over to AI retrieval systems.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>11 / Common Assumptions This Data Doesn't Support</h5>
+            <p><strong>What the GEO community often assumes, and what this benchmark actually shows.</strong></p>
+            <p>Several assumptions circulate widely in GEO discussions, often stated as settled fact. This study's
+              data speaks directly to each one below, and in most cases doesn't support it.</p>
+            <ul role="list">
+              <li><strong>Assumption: publishing content gets it cited quickly.</strong> The data shows a 14-day
+                median first-citation latency (IQR: 9 to 21 days), blended across all seven platforms. On real-time
+                platforms specifically, authority does buy speed, but training-dependent platforms stay slow
+                regardless, and blending the two pulls the overall figure up. Immediate citation
+                after publishing is the exception, not the rule on any platform.<br /></li>
+              <li><strong>Assumption: newer content is always favored.</strong> The data shows a five-month recency
+                sweet spot. Content that is brand new performs worse, on average, than content old enough to have
+                accumulated some authority signal, but not so old it reads as stale.<br /></li>
+              <li><strong>Assumption: all AI platforms treat freshness the same way.</strong> The data shows freshness
+                sensitivity ranging from very high (Google AI Overviews, Perplexity) to low (Claude, Qwen), a spread
+                wide enough that a single freshness strategy will not work equally well across platforms.<br /></li>
+              <li><strong>Assumption: a new page can compete on equal footing with an existing one.</strong> The data
+                shows that updating an existing high-authority page consistently achieved faster citation than
+                publishing a new page on the same domain (Finding 06).<br /></li>
+              <li><strong>Assumption: a one-time audit is enough to secure AI visibility.</strong> The data shows a 34%
+                citation replacement rate across repeated identical prompts (Finding 03). Visibility measured once is
+                already out of date by the time it's acted on.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>12 / Recommendations</h5>
+            <p><strong>Eight strategies for faster AI citation.</strong></p>
+            <p>The following recommendations are derived directly from the findings above and ranked by their observed impact
+              on retrieval latency reduction across the pages monitored.</p>
+            <ol role="list">
+              <li><strong>Refresh existing high-authority pages before creating new ones.</strong> Updated pages on
+                established domains consistently achieved faster AI citation than new pages on the same domain.
+                Recommendation: prioritize refresh cycles on your highest-authority content before investing in new URL
+                creation.<br /></li>
+              <li><strong>Publish meaningful content updates, not date-only changes.</strong> Date metadata changes
+                without substantive informational updates did not measurably accelerate retrieval latency in this testing.
+                Updates need to include new statistics, revised claims, expanded sections, or updated references to
+                trigger faster re-indexing and citation.<br /></li>
+              <li><strong>Ensure AI crawler access in robots.txt.</strong> Explicitly permit GPTBot, ClaudeBot,
+                PerplexityBot, and GoogleOther in your robots.txt. In this data, pages on domains with explicit AI bot
+                permissions showed faster retrieval latency than those relying on implicit access.<br /></li>
+              <li><strong>Place concise answer blocks in the first 120 words.</strong> Pages that led with a direct,
+                self-contained answer to the likely query achieved faster extraction and citation across all seven
+                platforms tested. AI systems extract openings, not conclusions. Bury the answer and the page becomes
+                harder to cite.<br /></li>
+              <li><strong>Separate quarterly reviews from substantive refreshes.</strong> The five-month sweet spot
+                identified in this study means pages need time to age into their most citable window, refreshing too
+                often resets that clock before a page gets there. Review high-priority pages quarterly to catch
+                anything outdated, but hold off on a substantive update (new statistics, revised claims, expanded
+                sections) until a page is approaching 5 to 8 months old. Cosmetic date changes alone do not accelerate
+                citation speed (see Section 09), so a review that finds nothing meaningfully outdated should result in
+                no update at all.<br /></li>
+              <li><strong>Strengthen internal linking to target pages.</strong> Pages receiving 10 or more internal
+                links from high-traffic pages on the same domain showed faster citation speeds in this monitoring.
+                Prioritize internal link building to pages you want to surface in AI-generated answers.<br /></li>
+              <li><strong>Publish Tuesday through Thursday where possible.</strong> In the daily monitoring, crawl
+                frequency for major AI retrieval systems showed slightly higher activity mid-week. While not a primary
+                driver, publication timing on high-crawl days can reduce the gap between publish and first AI
+                citation.<br /></li>
+              <li><strong>Monitor AI citations continuously, not as a periodic audit.</strong> The 34% citation
+                replacement rate observed across repeated prompt runs confirms that AI visibility is a dynamic, not
+                static, state. One-time audits miss the ongoing churn. Continuous monitoring is what you need to
+                accurately understand citation presence and respond to replacement events.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>13 / Practical Frameworks</h5>
+            <p><strong>Strategy by site type.</strong></p>
+            <p>Based on the observed data, the optimal AI visibility strategy differs depending on where a site currently
+              sits in terms of authority. The following two frameworks describe realistic paths to AI citation
+              visibility for different starting positions.</p>
+            <p><strong>High-authority site framework</strong></p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp001/flow-high-authority-framework.svg" loading="lazy" alt="High authority site framework flow diagram" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <p><strong>New or low-authority site framework.</strong> For sites without established authority, the path
+              to AI citation is longer. The optimisation horizon is measured in months, not days.</p>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="w-layout-grid problem-grid" style="grid-template-columns:1fr;"><img src="assets/svg/r_wp001/flow-low-authority-framework.svg" loading="lazy" alt="New or low authority site framework flow diagram" style="width:100%;height:auto;border-radius:var(--font-size--radious--radious-01);background-color:var(--palette--light-bg);padding:24px;" />
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>14 / Glossary</h5>
+            <p><strong>Definitions used in this study.</strong></p>
+            <p>The following terms are used with specific meanings throughout this paper. Where industry usage varies, I
+              have defined the term as it was applied in this study.</p>
+            <table>
+              <tr>
+                <th>Term</th>
+                <th>Definition as used in this study</th>
+              </tr>
+              <tr>
+                <td>Crawl Freshness</td>
+                <td>The speed at which an AI system’s crawling infrastructure discovers and indexes an updated or newly
+                  published page. High crawl freshness means a platform’s crawler visits sites frequently and picks up
+                  changes quickly.</td>
+              </tr>
+              <tr>
+                <td>Retrieval Latency</td>
+                <td>The delay between a page being published or updated and that page appearing as a citation inside an
+                  AI-generated response. Measured in days from update date to first citation date.</td>
+              </tr>
+              <tr>
+                <td>Citation Replacement</td>
+                <td>The event in which a URL that appeared as a citation in one execution of a prompt does not appear in
+                  a subsequent execution of the same prompt. The citation replacement rate is the proportion of
+                  citations that were replaced across all repeated prompt pairs.</td>
+              </tr>
+              <tr>
+                <td>Citation Diversity</td>
+                <td>The proportion of citations that point to unique URLs rather than repeating the same URLs. Measured
+                  as the number of unique URLs divided by total citation events. In this study, citation diversity was
+                  36.5%.</td>
+              </tr>
+              <tr>
+                <td>AI Visibility</td>
+                <td>The likelihood that a given page is retrieved and cited by an AI search or answer engine in response
+                  to a relevant prompt. Higher AI visibility means more frequent citation appearances across more
+                  prompts and platforms.</td>
+              </tr>
+              <tr>
+                <td>Freshness Signal</td>
+                <td>Any metadata or content characteristic that communicates to an AI retrieval system that a page has
+                  been recently created or updated. Includes HTTP Last-Modified headers, visible publication dates, and
+                  updated statistics or references within the content.</td>
+              </tr>
+              <tr>
+                <td>Content Age</td>
+                <td>The number of days between a page’s publication date and the date on which it was cited by an AI
+                  engine. Used to measure whether AI systems prefer newer or older content.</td>
+              </tr>
+              <tr>
+                <td>Crawl Frequency</td>
+                <td>How often an AI platform’s crawler visits a given domain or page. High crawl frequency means changes
+                  are discovered faster. Crawl frequency is influenced by domain authority, site speed, and the
+                  crawler’s own scheduling logic.</td>
+              </tr>
+              <tr>
+                <td>IQR (Interquartile Range)</td>
+                <td>The range from the 25th to the 75th percentile of a data distribution. Used in this study to
+                  communicate the spread of observed values around the median without being distorted by extreme
+                  outliers.</td>
+              </tr>
+              <tr>
+                <td>Domain Authority Tier</td>
+                <td>A categorical grouping used in this study: high authority (10,000+ referring domains), mid authority
+                  (1,000 to 10,000 referring domains), and low authority (under 1,000 referring domains). Based on
+                  referring domain counts at time of study.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>15 / Limitations</h5>
+            <p><strong>Scope boundaries and caveats.</strong></p>
+            <p>The following limitations apply to these findings and should be considered when generalizing results to
+              other contexts.</p>
+            <ul role="list">
+              <li><strong>Language.</strong> English-language queries only. Results may differ across other languages,
+                particularly for engines with strong regional training data such as Qwen.<br /></li>
+              <li><strong>Industries.</strong> Three industries studied: SaaS, Digital Marketing, and E-commerce.
+                Citation behaviour in other verticals such as Healthcare, Finance, or Legal may differ
+                significantly.<br /></li>
+              <li><strong>Intent Types.</strong> Three query intents: Commercial, Analytics, and Opinion. Informational
+                and navigational intents were not studied and may produce different retrieval latency patterns.<br />
+              </li>
+              <li><strong>Geography.</strong> All testing was conducted from San Diego, California, USA. AI system
+                behaviour, particularly for Gemini and Qwen, may vary by geographic region due to localized retrieval
+                configurations.<br /></li>
+              <li><strong>Time Window.</strong> Daily observations ran over four months. Model updates, crawler
+                configuration changes, or retrieval architecture changes made after May 2026 are not reflected in my
+                findings.<br /></li>
+              <li><strong>Platform Evolution.</strong> All seven AI platforms are under active development. Citation
+                behaviour, retrieval latency, and freshness sensitivity may shift materially as models are updated or
+                retrieval pipelines are reconfigured after this study period.<br /></li>
+              <li><strong>AI Non-Determinism.</strong> AI responses are non-deterministic. Repeated executions of the
+                same prompt may produce different citations even under identical conditions. This is not a flaw in my
+                methodology but a property of the systems studied, and it directly supports the 34% citation
+                replacement rate measured.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="case-study-explained">
+          <div class="rich-text case-study w-richtext">
+            <h5>16 / Conclusion</h5>
+            <p><strong>AI visibility rewards the patient and the prepared.</strong></p>
+            <p>The core message of this research is that AI visibility does not respond to publishing. It responds to a
+              combination of authority, technical accessibility, meaningful content quality, and time. Anyone
+              approaching AI citation as an immediate outcome of content publication will consistently be disappointed.
+            </p>
+            <p>The 14-day median first-citation latency, the 34% citation replacement rate, and the consistent
+              preference for five-month-old content all point to the same conclusion: AI retrieval systems
+              reward the prepared rather than the new. A domain with deep authority, clean technical infrastructure, and
+              regularly refreshed content will achieve faster and more stable AI citation than a domain publishing new
+              pages at high frequency without those foundations.</p>
+            <p>The divergence between real-time retrieval engines (Google AI Overviews, Perplexity) and
+              training-dependent engines (Claude, Qwen) has clear strategic implications. If you are targeting fast AI
+              visibility, prioritize the engines with live retrieval pipelines and calibrate your content update
+              strategy to those platforms’ refresh cycles. For training-dependent engines, the optimisation horizon is
+              longer, focusing on building the kind of authoritative presence that will be captured in future training
+              data updates.</p>
+            <blockquote>"AI visibility is increasingly determined by the interaction between crawl freshness, retrieval
+              latency, website authority, and content quality, not by publish date alone."</blockquote>
+            <p>Based on this data, the most consistent path to sustained AI citation visibility is treating it as an
+              ongoing process: regular content refreshes on high-authority pages, continuous citation monitoring, clean
+              technical infrastructure, and a clear understanding of how each AI engine retrieves and ranks sources.</p>
+            <p style="margin-top:24px;padding-top:24px;border-top:1px solid var(--color--grey-05);"><strong>GEO
+                Retrieval Research Series</strong><br />001: Crawl Freshness vs AI Visibility · February – May 2026 ·
+              San Diego, CA, USA<br /><br />14,000 Prompts · 7 Platforms · 67,200 Citations</p>
+          </div>
+        </div>
+        <div class="case-study-result-wrapper">
+          <div class="case-study-explained">
+            <div class="case-study-explained">
+              <div data-w-id="784c8834-0d4b-be7c-b66b-619200254eed" class="rich-text case-study w-richtext">
+                <h5><strong>Study at a Glance</strong></h5>
+                <p>Four months of daily monitoring across seven AI platforms produced a dataset large enough to move GEO
+                  strategy from anecdote to measurement.</p>
+              </div>
+              <div data-w-id="0d8d18c0-2eaf-cc53-09fb-dcc0b99cffe7" style="opacity:0" class="w-layout-grid case-study-result-hlder">
+                <div class="case-study-result-card _1st">
+                  <div class="text-40px">14 Days</div>
+                  <div class="text-18px center">Median First Citation</div>
+                </div>
+                <div class="case-study-result-card _2nd">
+                  <div class="text-40px">67.2K</div>
+                  <div class="text-18px center">Total Citations Collected</div>
+                </div>
+                <div class="case-study-result-card _3rd">
+                  <div class="text-40px">34%</div>
+                  <div class="text-18px center">Citation Replacement Rate</div>
+                </div>
+                <div class="case-study-result-card _4th">
+                  <div class="text-40px">36.5%</div>
+                  <div class="text-18px center">Unique URL Citation Rate</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="next-case-study-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="next-case-study-wrapper">
+        <div class="next-case-study-heading">
+          <div data-w-id="8526bc2a-b062-e6c1-5e88-29816e2cd94b" class="next-case-study-heading-holder">
+            <h2 class="inner-page-h2">More Research</h2>
+            <p class="body-text">Independent research on GEO, AI citation behaviour, and retrieval systems measured,
+              not assumed.</p>
+          </div>
+          <div class="next-case-study-button"><a data-w-id="98b4bc59-e0b5-0dbb-2bad-71fd690746ad" style="opacity:0"
+              href="whitepapers.html" target="_blank" class="secondry-button tablet w-inline-block">
+              <div class="hero-button-text-wrapper">
+                <div
+                  style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="secondary-button-text is-absolute">View All Whitepapers</div>
+                <div
+                  style="-webkit-transform:translate3d(0, 200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="secondary-button-text is-relative">View All Whitepapers</div>
+              </div>
+              <div class="secondary-button-arrow-wrapper">
+                <div
+                  style="-webkit-transform:translate3d(-200%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-200%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-200%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-200%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="secondary-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                    height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                    role="img">
+                    <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                      stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+                <div
+                  style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="secondary-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                    height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                    role="img">
+                    <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                      stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+              <div style="width:0%" class="secondary-button-bg"></div>
+            </a></div>
+        </div>
+        <div class="case-study-collection-list-wrapper w-dyn-list">
+          <div role="list" class="case-study-collection-list w-dyn-items">
+            <div role="listitem" class="case-study-collection-item w-dyn-item"><a data-w-id="a00010"
+                href="multi-hop-citation-paths-whitepaper.html" class="case-study-link-wrapper w-inline-block">
+                <div data-w-id="a00011" class="case-study-link-holder">
+                  <div data-w-id="a00012" class="case-study-image-holder"><img
+                      src="assets/img/whitepapers/002-multi-hop-citation.jpeg" loading="lazy"
+                      style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                      alt="002: Multi-Hop Citation Paths in AI Retrieval" class="case-study-link-image" />
+                    <div
+                      style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                      class="case-study-button">
+                      <div class="text-18px white work">Explore Study</div>
+                    </div>
+                    <div style="width:0%;height:0%" class="case-study-overlay"></div>
+                  </div>
+                  <div class="case-study-page-link-wrapper">
+                    <div class="case-stydy-page-link">
+                      <div class="text-24-px">002: Multi-Hop Citation Paths in AI Retrieval</div>
+                      <div class="text-18px">How frequently AI systems combine information from multiple web pages
+                        before answering. 45.2% multi-hop citation rate.</div>
+                    </div>
+                    <div class="text-18px medium">GEO Research</div>
+                  </div>
+                </div>
+              </a></div>
+            <div role="listitem" class="case-study-collection-item w-dyn-item"><a data-w-id="a10010"
+                href="what-ai-actually-reads-whitepaper.html" class="case-study-link-wrapper w-inline-block">
+                <div data-w-id="a10011" class="case-study-link-holder">
+                  <div data-w-id="a10012" class="case-study-image-holder"><img
+                      src="assets/img/whitepapers/003-ai-reads.jpeg" loading="lazy"
+                      style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                      alt="003: What AI Actually Reads on Your Webpage" class="case-study-link-image" />
+                    <div
+                      style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                      class="case-study-button">
+                      <div class="text-18px white work">Explore Study</div>
+                    </div>
+                    <div style="width:0%;height:0%" class="case-study-overlay"></div>
+                  </div>
+                  <div class="case-study-page-link-wrapper">
+                    <div class="case-stydy-page-link">
+                      <div class="text-24-px">003: What AI Actually Reads on Your Webpage</div>
+                      <div class="text-18px">LLMs retrieve only 12 to 45% of the average webpage before answering. 2,500
+                        queries across 45,000 pages.</div>
+                    </div>
+                    <div class="text-18px medium">GEO Research</div>
+                  </div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonial" class="testimonial-section extra-padding">
+    <div class="w-layout-blockcontainer container testimonial w-container">
+      <div class="testimonial-wrapper">
+        <div class="testimonial-header">
+          <div data-w-id="81593477-7677-a480-ab99-c177d459039a" class="small-section-wrapper">
+            <div class="small-section-buttlet-point"></div>
+            <div class="text-16px section-title">Testimonial</div>
+          </div>
+          <h2 data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42b5" class="client-testimonial inner-page-h2">Client <span
+              class="grey-text">Testimonial</span></h2>
+          <p data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42b9" class="body-text why-cooose">Driving measurable growth
+            through AI-native SEO, technical expertise, and data-driven marketing strategies built for the future of
+            search.</p>
+        </div>
+        <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42bb" class="testimonial-holder">
+          <div data-delay="2000" data-animation="slide" class="testimonial-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="300" data-infinite="true">
+            <div class="testimonial-slider-mask w-slider-mask">
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42be" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">Akshay helped us completely rethink our online presence. Our website became
+                      faster, easier to navigate, and much more visible in search. Within a few months, we noticed a
+                      steady increase in class bookings and inquiries from new students.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="testimonial-client-wrapper">
+                      <div class="text-24px">Lena Ortiz</div>
+                      <div class="text-18px">Owner, Solstice Yoga Studio</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42cc" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">We relied almost entirely on referrals until Akshay optimized our website and
+                      local SEO. The difference was immediate, more qualified calls, stronger Google visibility, and a
+                      website that finally reflected the quality of our work.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="testimonial-client-wrapper">
+                      <div class="text-24px">Grant Holloway</div>
+                      <div class="text-18px">Owner, Holloway Roofing &amp; Exteriors</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42da" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">Akshay understood exactly how to present our expertise online. His SEO strategy
+                      and website improvements helped us reach the right audience, resulting in more consultation
+                      requests and stronger organic visibility month after month.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="text-24px">Dr. Mira Banerjee</div>
+                    <div class="text-18px">Clinical Nutritionist, NourishWell Clinic</div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42e7" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">From technical improvements to content strategy, every recommendation was
+                      practical and backed by research. Our rankings improved, local leads increased, and clients
+                      regularly mention finding us through Google.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="text-24px">Elias Moreno</div>
+                    <div class="text-18px">Founder, Evergreen Landscape Co.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="313071b3-b708-6d3f-3fbd-5e71bfff42f4" class="testimonial-slide w-slide">
+                <div class="testimonial-card-wrapper">
+                  <div class="testimonial-icon-wrapper"><img width="70" loading="lazy" alt="" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cdb_Ontime%20delivery%20icon.webp" class="testimonial-icon" /><img loading="lazy" src="https://cdn.prod.website-files.com/68a9d12699bd47b077398cae/68a9d12699bd47b077398cfc_Testimonial%20Quote%20Icon.webp" alt="" class="testimonial-quote-icon" /></div>
+                  <div class="testimonial-paragraph-wrapper">
+                    <p class="body-text">Akshay delivered a professional website backed by a clear SEO strategy rather
+                      than just good design. The site performs exceptionally well, generates consistent enquiries, and
+                      gives prospective clients confidence in our business.</p>
+                  </div>
+                  <div class="testimonial-client-wrapper">
+                    <div class="text-24px">Nathan Whitmore</div>
+                    <div class="text-18px">Managing Director, Whitmore Construction Group</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="left-arrow-2 w-slider-arrow-left">
+              <div class="icon w-icon-slider-left"></div>
+            </div>
+            <div class="right-arrow-2 w-slider-arrow-right">
+              <div class="icon-2 w-icon-slider-right"></div>
+            </div>
+            <div class="slide-nav-2 w-slider-nav w-round w-num"></div>
+          </div>
+          <div class="testimonial-client-picture">
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-1">Lena Ortiz</div><img loading="lazy" alt="Lena Ortiz" src="assets/img/lena-ortiz.png" class="testimonial-client-image-wrap client-1" />
+            </div>
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-2">Grant Holloway</div><img loading="lazy" alt="Grant Holloway" src="assets/img/grant-holloway.png" class="testimonial-client-image-wrap client-2" />
+            </div>
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-3">Dr. Mira Banerjee</div><img loading="lazy" alt="Dr. Mira Banerjee" src="assets/img/mira-banerjee.png" class="testimonial-client-image-wrap client-3" />
+            </div>
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-4">Elias Moreno</div><img loading="lazy" alt="Elias Moreno" src="assets/img/elias-moreno.png" class="testimonial-client-image-wrap client-4" />
+            </div>
+            <div class="testimonial-client-image-wrap">
+              <div class="testimonial-client-name client-5">Nathan Whitmore</div><img loading="lazy" alt="Nathan Whitmore" src="assets/img/nathan-whitmore.png" class="testimonial-client-image-wrap client-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="cta-wrapper">
+        <div class="cta-header-wrapper">
+          <div class="text-55px left-align white">Ready to Build Your Brand’s <span>AI Visibility?</span></div>
+          <p class="body-text cat">The future belongs to brands that adapt early. Let’s build smarter strategies,
+            stronger visibility, and meaningful digital experiences together.</p><a
+            data-w-id="f7796cdc-626e-4902-5926-54ab78d20e00" href="whitepapers.html" target="_blank"
+            class="cta-button w-inline-block">
+            <div class="hero-button-text-wrapper">
+              <div class="cta-button-text is-absolute">See Our Works</div>
+              <div class="cta-button-text is-relative">See Our Works</div>
+            </div>
+            <div class="cta-button-arrow-wrapper">
+              <div class="cta-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                  height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                  role="img">
+                  <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                    stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+              <div class="cta-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                  height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                  role="img">
+                  <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                    stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+            </div>
+            <div class="cta-button-bg"></div>
+          </a>
+        </div>
+        <div class="cta-details-wrapper">
+          <div class="w-layout-grid cta-details-grid">
+            <div class="cta-details-text">
+              <div class="text-35px cta">Trusted by 140+ Happy Clients Around the Globe</div>
+            </div>
+            <div class="cta-project-wrapper">
+              <div class="w-layout-grid cta-project-grid">
+                <div class="cts-project-card">
+                  <div class="text-35px cta">200+</div>
+                  <div class="text-18px grey-04">Project Complete</div>
+                </div>
+                <div class="cts-project-card">
+                  <div class="text-35px cta">100+</div>
+                  <div class="text-18px grey-04">SEO &amp; Ads Campaign</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="footer-wrapper">
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe942" class="footer-header">
+          <div class="text-86px footer-heading">Let’s Work <span class="grey-text semibold">Together</span></div>
+          <p class="body-text black">Subscribe for Updates
+          </p>
+          <div class="footer-form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="footer-form" data-wf-page-id="68aad862700314ecdf577941" data-wf-element-id="c928cd5b-c40c-0ebf-2209-71f68bbbe94a">
+              <input class="form-input w-node-c928cd5b-c40c-0ebf-2209-71f68bbbe94b-8bbbe93f w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" type="email" id="email" required="" /><input type="submit" data-wait="Please wait..." class="form-button is-button-small w-button" value="Send" />
+            </form>
+            <div class="success-message w-form-done">
+              <div class="text-24px">✨ Message sent! <span class="grey-text">I’ll respond as soon as possible.</span>
+              </div>
+            </div>
+            <div class="error-message w-form-fail">
+              <div class="text-24px">⚡ Submission failed. <span class="grey-text">Please refresh the page or try again
+                  later.</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe957" class="footer-contact-wrapper">
+          <div class="footer-contact-top">
+            <div class="contact-box">
+              <div class="contact-icon">
+                <div class="footer-contact-icon w-embed"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.2371 3.5998C11.2371 2.05327 12.4906 0.799805 14.0371 0.799805C15.5836 0.799805 16.8371 2.05327 16.8371 3.5998C16.8371 2.05327 18.0906 0.799805 19.6371 0.799805C21.1836 0.799805 22.4371 2.05327 22.4371 3.5998C22.4371 6.0554 19.2722 8.6426 17.7014 9.84194C17.1918 10.2311 16.4824 10.2311 15.9738 9.84194C14.402 8.64354 11.238 6.0554 11.238 3.5998H11.2371ZM21.5038 10.1331C20.9886 10.1331 20.5704 10.5503 20.5704 11.0665V18.5331C20.5704 20.0769 19.3142 21.3331 17.7704 21.3331H4.70378C3.16004 21.3331 1.90378 20.0769 1.90378 18.5331V9.26607L7.93684 15.2991C8.84404 16.2063 10.034 16.6609 11.2278 16.6609C12.4299 16.6609 13.6348 16.2007 14.5588 15.2758L16.1502 13.5697C16.5011 13.1935 16.4806 12.6027 16.1044 12.2509C15.7274 11.8999 15.1375 11.9186 14.7847 12.2975L13.2158 13.9803C12.1238 15.0723 10.3476 15.0723 9.25564 13.9803L2.24071 6.96354C2.71111 6.0778 3.63324 5.46647 4.70378 5.46647H8.43711C8.95231 5.46647 9.37044 5.04927 9.37044 4.53314C9.37044 4.017 8.95231 3.5998 8.43711 3.5998H4.70378C2.13058 3.5998 0.0371094 5.69327 0.0371094 8.26647V18.5331C0.0371094 21.1063 2.13058 23.1998 4.70378 23.1998H17.7704C20.3436 23.1998 22.4371 21.1063 22.4371 18.5331V11.0665C22.4371 10.5503 22.019 10.1331 21.5038 10.1331Z" fill="currentColor" />
+                  </svg></div>
+              </div>
+              <div class="contact-number">
+                <div class="text-24px">Email me</div>
+                <div class="text-18px"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#107;&#115;&#104;&#97;&#121;&#100;&#97;&#104;&#105;&#121;&#97;&#57;&#50;&#46;&#97;&#100;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" style="color:inherit;text-decoration:none;">Email Protected</a></div>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-icon">
+                <div class="footer-contact-icon w-embed"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5705 10.5995V9.86914C20.5705 8.05882 20.5705 7.15368 20.0237 6.59128C19.477 6.02889 18.597 6.02889 16.8371 6.02889H14.8971C14.0409 6.02889 14.0338 6.02723 13.2639 5.64193L10.1544 4.08588C8.85606 3.43618 8.20691 3.11134 7.51536 3.13391C6.82381 3.15649 6.19599 3.52302 4.94036 4.25609L3.79435 4.92516C2.87204 5.46362 2.41088 5.73285 2.15734 6.18074C1.90381 6.62864 1.90381 7.17408 1.90381 8.26496V15.9341C1.90381 17.3675 1.90381 18.0842 2.22325 18.4831C2.43582 18.7484 2.73369 18.9269 3.06301 18.986C3.55792 19.0749 4.16386 18.7212 5.37569 18.0136C6.1986 17.5332 6.99058 17.0343 7.97502 17.1696C8.79992 17.2829 9.56647 17.8034 10.3038 18.1724" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.50391 3.13281V17.1328" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M14.0371 5.93359V9.66693" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.3704 12C18.6434 12 20.5704 13.8821 20.5704 16.1654C20.5704 18.485 18.612 20.1129 16.803 21.2197C16.6712 21.2942 16.5221 21.3333 16.3704 21.3333C16.2187 21.3333 16.0696 21.2942 15.9378 21.2197C14.1322 20.1021 12.1704 18.493 12.1704 16.1654C12.1704 13.8821 14.0975 12 16.3704 12Z" stroke="currentColor" stroke-width="1.4" />
+                    <path d="M16.3701 16.2002H16.3791" stroke="currentColor" stroke-width="1.86667" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+              <div class="contact-number">
+                <div class="text-24px">Office location</div>
+                <div class="text-18px">Nomad</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-social-media-wrapper"><a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"
+              class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">LinkedIn</div>
+            </a><a href="https://github.com/dahiyaakshay" target="_blank" class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">GitHub</div>
+            </a><a href="https://aispider.akshaydahiya.site/" target="_blank"
+              class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">AI Spider</div>
+            </a><a href="https://marai.akshaydahiya.site/" target="_blank" class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">MarAI</div>
+            </a></div>
+        </div>
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe97e" class="footer-copyright-wrapper">
+          <div class="copy-right-text-wrapper">
+            <div class="text-18px footer">Designed by - Akshay Dahiya - Marketer &amp; Web Developer &middot; <a href="llms.txt" style="color:inherit;text-decoration:underline;">llms.txt</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/jquery.js" type="text/javascript"></script>
+  <script src="assets/js/akshay-vendor.js" type="text/javascript"></script>
+  <script src="assets/js/akshay-entry.js" type="text/javascript"></script>
+</body>
+
+</html>

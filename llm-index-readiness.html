@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html data-wf-domain="akshay.local" data-wf-page="simple-page" data-wf-site="68a9d12699bd47b077398cae" lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-E6JLR8VFSJ');
+  </script>
+  <meta charset="utf-8" />
+  <title>LLM Index Readiness: Get Found by AI Systems - Akshay</title>
+  <link href="https://akshaydahiya.site/llm-index-readiness.html" rel="canonical" />
+  <meta content="Why content has to clear crawling and indexing before it can be cited, and how retrieval gaps differ from passage-quality gaps." name="description" />
+  <meta content="LLM index readiness, retrieval gap, passage-quality gap, JavaScript rendering, AI indexing" name="keywords" />
+  <meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots" />
+  <meta content="Akshay Dahiya" name="author" />
+  <meta content="Akshay Dahiya" name="publisher" />
+  <link href="https://akshaydahiya.site/llm-index-readiness.html" hreflang="en" rel="alternate" />
+  <link href="https://akshaydahiya.site/llm-index-readiness.html" hreflang="x-default" rel="alternate" />
+  <meta content="LLM Index Readiness: Get Found by AI Systems - Akshay" property="og:title" />
+  <meta property="og:type" content="website" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Akshay" name="generator" />
+  <link href="assets/css/shared.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+  <script src="assets/js/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  WebFont.load({
+    google: {
+      families: ["Schibsted Grotesk:300,400,500,600,700"]
+    }
+  });
+  </script>
+  <script type="text/javascript">
+  ! function(o, c) {
+    var n = c.documentElement,
+      t = " w-mod-";
+    n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+  }(window, document);
+  </script>
+  <link href="assets/svg/favicon.svg" rel="icon" type="image/svg+xml" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [{
+        "@type": "TechArticle",
+        "headline": "LLM Index Readiness: Preparing Your Content to Be Found by AI Systems",
+        "description": "LLM index readiness refers to how well a website's content is prepared to be discovered, processed, and stored by the retrieval systems that large language models draw on when answering queries. It sits upstream of citation and co",
+        "url": "https://akshaydahiya.site/llm-index-readiness.html",
+        "author": {
+          "@id": "https://akshaydahiya.site/#person"
+        },
+        "publisher": {
+          "@id": "https://akshaydahiya.site/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://akshaydahiya.site/#organization"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "Is LLM index readiness the same thing as traditional search engine indexing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They're closely related but not identical. Most generative engines rely on traditional search indexes for their initial retrieval stage, so traditional indexing fundamentals are a prerequisite. LLM index readiness adds further requirements around semantic structure and passage-level clarity that go beyond what's needed for a page to simply appear in standard search results."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between a retrieval gap and a passage-quality gap?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A retrieval gap means content isn't reaching the AI system's candidate pool at all, often due to crawl or rendering issues. A passage-quality gap means the content is indexed and retrieved, but it's too vague, generic, or buried to be selected for citation. Diagnosing which one is occurring determines whether the fix is technical or content-focused."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does JavaScript rendering cause indexing problems for AI systems specifically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some AI crawlers and retrieval systems don't execute JavaScript the way modern search engine crawlers do, so content that only appears after client-side rendering may never be seen by those systems, even though it displays normally to human visitors browsing the live site."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does covering a topic from multiple angles actually improve retrieval likelihood?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Some AI search systems combine results across multiple sub-queries using methods like Reciprocal Rank Fusion, meaning content that ranks reasonably well across several related phrasings of a topic has a better chance of being retrieved than content narrowly optimized for a single specific phrasing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often do I need to update content to maintain good LLM index readiness?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the platform. Systems that retrieve live web content, like Perplexity, benefit from continuously current, accessible content, while systems relying on periodically retrained models absorb updates on a slower, less predictable cadence. In general, treating content freshness as an ongoing practice rather than a one-time task is the safer approach across platforms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If my content already ranks well in traditional Google search, is it automatically LLM index ready?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not automatically. Strong traditional rankings suggest good baseline crawlability and indexing, which is necessary but not sufficient. LLM index readiness also depends on clear semantic structure, coverage across related query phrasings, and content specific enough to be extracted and cited, none of which traditional ranking position guarantees on its own."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="body">
+  <section class="case-study-hero-section">
+    <section class="navbar">
+      <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-no-shadow-container-2 w-nav">
+        <div class="container-regular">
+          <div class="navbar-wrapper"><a href="index.html" class="navbar-brand w-nav-brand"><img loading="lazy"
+                alt="Akshay Dahiya logo" src="assets/img/logo.png" class="image" /></a>
+            <nav role="navigation" class="nav-menu-wrapper tablet w-nav-menu">
+              <ul role="list" class="nav-menu tablet w-list-unstyled">
+                <li><a href="index.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Home</div>
+                  </a></li>
+                <li><a href="about-me.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">About</div>
+                  </a></li>
+                <li class="nav-dropdown-item">
+                  <div class="nav-link nav-dropdown-toggle w-inline-block">
+                    <div class="nav-link-text is-relative">SEO/GEO</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="nav-mega-panel">
+                    <div class="nav-mega-panel-inner">
+                      <div class="nav-mega-column">
+                        <div class="nav-mega-column-heading">SEO</div><a href="on-page.html" class="nav-mega-link">On-page</a><a href="off-page.html" class="nav-mega-link">Off-page</a><a href="link-building.html" class="nav-mega-link">Link Building</a><a href="website-structure.html" class="nav-mega-link">Website Structure</a><a href="sitemap.html" class="nav-mega-link">Sitemap</a><a href="website-structure-optimization.html" class="nav-mega-link">Website Structure Optimization</a><a href="url-optimization-and-canonicalization.html" class="nav-mega-link">URL Optimization & Canonicalization</a><a href="website-indexing-optimization.html" class="nav-mega-link">Website Indexing Optimization</a><a href="crawl-budget-optimization.html" class="nav-mega-link">Crawl Budget Optimization</a>
+                      </div>
+                      <div class="nav-mega-column">
+                        <div class="nav-mega-column-heading">GEO</div><a href="content-retrieval-optimization.html" class="nav-mega-link">Content Retrieval Optimization</a><a href="citation-optimization.html" class="nav-mega-link">Citation Optimization</a><a href="authority-and-trust-signals.html" class="nav-mega-link">Authority & Trust Signals</a><a href="knowledge-structure.html" class="nav-mega-link">Knowledge Structure</a><a href="ai-discovery-and-crawlability.html" class="nav-mega-link">AI Discovery & Crawlability</a><a href="chunk-and-passage-optimization.html" class="nav-mega-link">Chunk & Passage Optimization</a><a href="citation-ready-urls.html" class="nav-mega-link">Citation-Ready URLs</a><a href="llm-index-readiness.html" class="nav-mega-link">LLM Index Readiness</a><a href="retrieval-coverage-optimization.html" class="nav-mega-link">Retrieval Coverage Optimization</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-dropdown-item">
+                  <div class="nav-link nav-dropdown-toggle w-inline-block">
+                    <div class="nav-link-text is-relative">SEO/GEO Strategy</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="nav-mega-panel">
+                    <div class="nav-mega-panel-inner">
+                      <div class="nav-mega-column">
+                        <div class="nav-mega-column-heading">SEO</div><a href="keyword-strategy.html" class="nav-mega-link">Keyword Strategy</a><a href="search-intent-strategy.html" class="nav-mega-link">Search Intent Strategy</a><a href="content-strategy.html" class="nav-mega-link">Content Strategy</a><a href="technical-seo-strategy.html" class="nav-mega-link">Technical SEO Strategy</a><a href="website-architecture-strategy.html" class="nav-mega-link">Website Architecture Strategy</a><a href="internal-linking-strategy.html" class="nav-mega-link">Internal Linking Strategy</a><a href="authority-and-backlink-strategy.html" class="nav-mega-link">Authority & Backlink Strategy</a><a href="competitor-seo-strategy.html" class="nav-mega-link">Competitor SEO Strategy</a><a href="seo-growth-roadmap.html" class="nav-mega-link">SEO Growth Roadmap</a>
+                      </div>
+                      <div class="nav-mega-column">
+                        <div class="nav-mega-column-heading">GEO</div><a href="prompt-strategy.html" class="nav-mega-link">Prompt Strategy</a><a href="retrieval-strategy.html" class="nav-mega-link">Retrieval Strategy</a><a href="citation-strategy.html" class="nav-mega-link">Citation Strategy</a><a href="entity-strategy.html" class="nav-mega-link">Entity Strategy</a><a href="knowledge-graph-strategy.html" class="nav-mega-link">Knowledge Graph Strategy</a><a href="content-chunking-strategy.html" class="nav-mega-link">Content Chunking Strategy</a><a href="ai-authority-strategy.html" class="nav-mega-link">AI Authority Strategy</a><a href="competitor-geo-strategy.html" class="nav-mega-link">Competitor GEO Strategy</a><a href="geo-growth-roadmap.html" class="nav-mega-link">GEO Growth Roadmap</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="whitepapers.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Whitepaper</div>
+                  </a></li>
+                <li class="nav-dropdown-item">
+                  <div class="nav-link nav-dropdown-toggle w-inline-block">
+                    <div class="nav-link-text is-relative">Glossary</div><svg class="nav-dropdown-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="nav-mega-panel nav-mega-panel-small">
+                    <div class="nav-mega-panel-inner">
+                      <div class="nav-mega-column"><a href="seo-glossary.html" class="nav-mega-link">SEO</a><a href="geo-glossary.html" class="nav-mega-link">GEO</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list-item-2"><a href="contact.html" class="nav-link w-inline-block">
+                    <div class="nav-link-text is-relative">Contact</div>
+                  </a></li>
+                <li class="mobile-margin-top-10">
+                  <div class="nav-button-wrapper"><a data-w-id="0b28c022-0aef-f4ef-61cc-f350c43353a5"
+                      href="contact.html" target="_blank" class="hero-button nav-hide w-inline-block">
+                      <div class="hero-button-text-wrapper">
+                        <div class="hero-button-text is-absolute">Contact Now</div>
+                        <div class="hero-button-text is-relative">Contact Now</div>
+                      </div>
+                      <div class="hero-button-arrow-wrapper">
+                        <div class="primary-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                        <div class="primary-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                      </div>
+                      <div class="ptimary-button-bg"></div>
+                    </a><a data-w-id="0739ce88-511f-93ed-6125-351eb6b1f1ff" href="contact.html" target="_blank"
+                      class="cta-button desktop-nav w-inline-block">
+                      <div class="hero-button-text-wrapper">
+                        <div class="cta-button-text is-absolute">Contact Now</div>
+                        <div class="cta-button-text is-relative">Contact Now</div>
+                      </div>
+                      <div class="cta-button-arrow-wrapper">
+                        <div class="cta-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                        <div class="cta-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                              stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg></div>
+                      </div>
+                      <div class="cta-button-bg"></div>
+                    </a></div>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu-button w-nav-button">
+              <div class="hamburger-icon">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="w-layout-blockcontainer container inner-hero w-container">
+      <div class="service-page-hero-wrapper">
+        <div class="pagelink-section-wrapper">
+          <div data-w-id="c9dc4fd3-f0df-95b9-217f-e10902c746a9" class="inner-page-heading-holder simple-hero-animate">
+            <div class="breadcum-card"><a href="index.html" class="breadcum-home">Home</a>
+              <div class="breadcum-divider">
+                <div class="breadcum-icon is-absolute w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="16" height="16" fill="url(#pattern0_622_2195)" />
+                    <defs>
+                      <pattern id="pattern0_622_2195" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_622_2195" transform="scale(0.00195312)" />
+                      </pattern>
+                      <image id="image0_622_2195" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,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" />
+                    </defs>
+                  </svg></div>
+                <div class="breadcum-icon is-relative w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="16" height="16" fill="url(#pattern0_622_2195)" />
+                    <defs>
+                      <pattern id="pattern0_622_2195" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_622_2195" transform="scale(0.00195312)" />
+                      </pattern>
+                      <image id="image0_622_2195" width="512" height="512" preserveAspectRatio="none" xlink:href="data:image/png;base64,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" />
+                    </defs>
+                  </svg></div>
+              </div>
+              <div class="breadcum-page">LLM Index Readiness</div>
+            </div>
+
+            <h1 class="inner-page-h1">LLM Index Readiness: Preparing Content for AI</h1>
+            <p class="body-text service">Why content has to clear crawling and indexing before it can ever be cited, and how retrieval gaps differ from passage-quality gaps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="simple-page-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="rich-text case-study w-richtext">
+        <p>LLM index readiness refers to how well a website's content is prepared to be discovered, processed, and stored by the retrieval systems that large language models draw on when answering queries. It sits upstream of citation and content optimization: before content can be optimized for extraction or trusted enough to be cited, it first has to clear the more basic hurdle of being reliably picked up and represented in whatever index or retrieval layer a given AI system relies on. Most AI search engines still depend heavily on traditional search indexes for this initial retrieval stage, which makes LLM index readiness deeply connected to, but not identical with, conventional technical SEO.</p>
+        <h2>The Two-Stage Retrieval and Citation Process</h2>
+        <p>Understanding LLM index readiness requires understanding how generative engines actually operate. Research on GEO methodology describes a two-phase process: first, potentially relevant content is retrieved from existing web indexes, and second, a large language model synthesizes a response from that retrieved material, selecting which sources to cite. <a href="website-indexing-optimization.html">ChatGPT's web browsing capability, for instance, relies on Bing's index</a>, Perplexity queries multiple search engines, and Google's AI Overviews draw from the same underlying index as traditional Google Search. This means that if content never reaches the first stage, retrieval, it has no chance of reaching the second stage, citation, no matter how well-written or authoritative it might be.</p>
+        <h2>Why Traditional SEO Fundamentals Still Matter</h2>
+        <p>Because most generative engines lean on existing search indexes rather than building entirely separate ones from scratch, LLM index readiness starts with the same fundamentals as traditional indexing optimization: a page must be crawlable, free of blocking robots.txt directives or noindex tags, technically sound enough to render correctly, and indexed by the underlying search engine the AI system draws from. Neglecting these SEO fundamentals means content never reaches the retrieval stage at all. Mastering only these fundamentals without additional GEO-specific work means content gets retrieved but often fails to be selected for citation, so index readiness is a necessary but not sufficient condition for AI visibility.</p>
+        <h2>Diagnosing Retrieval Gaps Versus Quality Gaps</h2>
+        <p>A useful diagnostic framework distinguishes between two different failure modes when content underperforms in AI visibility. A retrieval gap exists when <a href="retrieval-coverage-optimization.html">content isn't appearing in AI responses at all</a>, even for queries where relevant, published material genuinely exists on a site, which points to an upstream problem: the content isn't reaching the candidate pool in the first place, often due to crawl access restrictions, rendering failures that prevent proper indexing, or missing semantic structure like heading hierarchy and section markers that a retrieval system relies on to parse the page. A passage-quality gap, by contrast, exists when content does map to a relevant page, but that page addresses the topic vaguely or buries the relevant information, meaning the content is technically indexed but not extractable or citation-worthy once retrieved. These two problems require different fixes, and misdiagnosing one as the other, for instance producing more content when the actual issue is a rendering failure blocking indexing, wastes effort without addressing the underlying cause.</p>
+        <h2>Reciprocal Rank Fusion and Multi-Query Coverage</h2>
+        <p>Some AI search systems <a href="content-retrieval-optimization.html">combine results from multiple sub-queries using a method known as Reciprocal Rank Fusion</a>, where a document's overall relevance score is calculated by summing its inverse rank across every sub-query in which it appears. In practical terms, this means content that's indexed and ranks reasonably well across several related query phrasings and angles has a meaningfully better chance of surfacing in a generative engine's retrieval pool than content that only ranks well for one narrow, specific phrasing. This reinforces a specific implication for index readiness: comprehensive coverage of a topic across multiple related angles and phrasings improves the odds of being retrieved for the range of ways real users actually phrase their questions, not just the primary keyword a page was originally built around.</p>
+        <h2>Semantic Structure as an Indexing Signal</h2>
+        <p>Beyond basic crawlability, LLM index readiness depends on a page's semantic structure being clear enough for automated systems to parse reliably. This includes <a href="knowledge-structure.html">a logical heading hierarchy that accurately reflects</a> the content's organization, descriptive section markers rather than vague or generic subheadings, and markup that clearly delineates where one topic or answer ends and another begins. Pages lacking this structure may still be technically indexed by a traditional search engine while remaining poorly prepared for the more granular, passage-level parsing that generative retrieval systems perform on top of that base index.</p>
+        <h2>Freshness and Reindexing Cadence</h2>
+        <p>Different AI platforms update their underlying knowledge at different cadences, which has direct implications for index readiness. Some platforms update training data periodically on a fixed schedule, while others, like Perplexity, retrieve live web content in real time, and Google's AI Overviews draw from a continuously updated index. This variance means that content relying on live retrieval has more forgiving reindexing requirements than content that depends on a periodically retrained model absorbing updates, but it also means that for real-time retrieval platforms, technical accessibility and current indexing status matter continuously, not just at initial publication.</p>
+        <h2>Rendering and JavaScript Dependencies</h2>
+        <p>A significant, often underdiagnosed cause of poor LLM index readiness is client-side rendering. When <a href="ai-discovery-and-crawlability.html">critical content only appears after JavaScript execution</a> rather than existing in the initial HTML response, some crawlers and retrieval systems may never see that content at all, effectively excluding it from the index regardless of its quality. This is a particularly common issue on modern, JavaScript-framework-built sites where content is dynamically injected, and it often produces a confusing symptom: the page displays correctly to human visitors and passes visual review, while remaining functionally invisible to certain automated retrieval processes.</p>
+        <h2>Cross-Referencing Multiple Underlying Indexes</h2>
+        <p>Because different AI platforms draw from different underlying search indexes and retrieval systems, achieving strong LLM index readiness sometimes requires verifying status across more than one system rather than assuming that strong performance in one automatically carries over to another. A page indexed cleanly in Google and appearing reliably in Google AI Overviews may still be poorly represented in Bing's index, which affects its visibility in ChatGPT's browsing mode specifically, since that mode relies on Bing rather than Google. Checking indexing status across each relevant underlying system, rather than assuming uniform coverage, avoids blind spots that are easy to miss when only one platform is monitored.</p>
+        <h2>The Role of Historical Content Performance</h2>
+        <p>Pages with a longer track record of stable indexing, consistent traffic, and accumulated backlinks or citations tend to carry more established trust within a search index than newly published pages, even when the newer page is technically well-optimized. This means LLM index readiness isn't purely a technical checklist completed once at publication; it also benefits from time and sustained performance, which is one reason why consolidating and strengthening existing, already-indexed pages often produces faster visibility gains than publishing new pages from scratch on the same topic.</p>
+        <h2>Building an Index Readiness Audit Process</h2>
+        <p>A practical audit for LLM index readiness starts by confirming baseline technical health: crawlability, absence of blocking directives, and confirmed indexing status in the underlying search engines relevant AI platforms draw from. From there, it moves into diagnostic mapping: taking a representative set of real user questions relevant to the business and checking whether each maps clearly to a specific, well-structured page or passage. Questions that map to nothing indicate genuine content gaps; questions that map to vague or buried content indicate a passage-quality issue distinct from an indexing problem; and questions that should retrieve content but consistently don't, despite that content existing and being indexed, point toward a semantic structure or rendering issue worth investigating directly.</p>
+      </div>
+      <div class="simple-faq-wrapper" style="margin-top:48px;">
+        <details class="simple-faq-item">
+          <summary>Is LLM index readiness the same thing as traditional search engine indexing?</summary>
+          <div class="simple-faq-answer">They're closely related but not identical. Most generative engines rely on traditional search indexes for their initial retrieval stage, so traditional indexing fundamentals are a prerequisite. LLM index readiness adds further requirements around semantic structure and passage-level clarity that go beyond what's needed for a page to simply appear in standard search results.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>What's the difference between a retrieval gap and a passage-quality gap?</summary>
+          <div class="simple-faq-answer">A retrieval gap means content isn't reaching the AI system's candidate pool at all, often due to crawl or rendering issues. A passage-quality gap means the content is indexed and retrieved, but it's too vague, generic, or buried to be selected for citation. Diagnosing which one is occurring determines whether the fix is technical or content-focused.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>Why does JavaScript rendering cause indexing problems for AI systems specifically?</summary>
+          <div class="simple-faq-answer">Some AI crawlers and retrieval systems don't execute JavaScript the way modern search engine crawlers do, so content that only appears after client-side rendering may never be seen by those systems, even though it displays normally to human visitors browsing the live site.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>Does covering a topic from multiple angles actually improve retrieval likelihood?</summary>
+          <div class="simple-faq-answer">Yes. Some AI search systems combine results across multiple sub-queries using methods like Reciprocal Rank Fusion, meaning content that ranks reasonably well across several related phrasings of a topic has a better chance of being retrieved than content narrowly optimized for a single specific phrasing.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>How often do I need to update content to maintain good LLM index readiness?</summary>
+          <div class="simple-faq-answer">It depends on the platform. Systems that retrieve live web content, like Perplexity, benefit from continuously current, accessible content, while systems relying on periodically retrained models absorb updates on a slower, less predictable cadence. In general, treating content freshness as an ongoing practice rather than a one-time task is the safer approach across platforms.</div>
+        </details>
+        <details class="simple-faq-item">
+          <summary>If my content already ranks well in traditional Google search, is it automatically LLM index ready?</summary>
+          <div class="simple-faq-answer">Not automatically. Strong traditional rankings suggest good baseline crawlability and indexing, which is necessary but not sufficient. LLM index readiness also depends on clear semantic structure, coverage across related query phrasings, and content specific enough to be extracted and cited, none of which traditional ranking position guarantees on its own.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="cta-wrapper">
+        <div class="cta-header-wrapper">
+          <div class="text-55px left-align white">Ready to Build Your Brand’s <span>AI Visibility?</span></div>
+          <p class="body-text cat">The future belongs to brands that adapt early. Let’s build smarter strategies,
+            stronger visibility, and meaningful digital experiences together.</p><a
+            data-w-id="f7796cdc-626e-4902-5926-54ab78d20e00" href="whitepapers.html" target="_blank"
+            class="cta-button w-inline-block">
+            <div class="hero-button-text-wrapper">
+              <div class="cta-button-text is-absolute">See Our Works</div>
+              <div class="cta-button-text is-relative">See Our Works</div>
+            </div>
+            <div class="cta-button-arrow-wrapper">
+              <div class="cta-arrow is-absolute w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                  height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                  role="img">
+                  <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                    stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+              <div class="cta-arrow is-relative w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                  height="100%" viewBox="0 0 20 20" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true"
+                  role="img">
+                  <path d="M16.6668 9.99988H3.33349" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.5004 14.1667C12.5004 14.1667 16.667 11.098 16.667 10C16.667 8.90204 12.5003 5.83337 12.5003 5.83337"
+                    stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+            </div>
+            <div class="cta-button-bg"></div>
+          </a>
+        </div>
+        <div class="cta-details-wrapper">
+          <div class="w-layout-grid cta-details-grid">
+            <div class="cta-details-text">
+              <div class="text-35px cta">Trusted by 140+ Happy Clients Around the Globe</div>
+            </div>
+            <div class="cta-project-wrapper">
+              <div class="w-layout-grid cta-project-grid">
+                <div class="cts-project-card">
+                  <div class="text-35px cta">200+</div>
+                  <div class="text-18px grey-04">Project Complete</div>
+                </div>
+                <div class="cts-project-card">
+                  <div class="text-35px cta">100+</div>
+                  <div class="text-18px grey-04">SEO &amp; Ads Campaign</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="footer-wrapper">
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe942" class="footer-header">
+          <div class="text-86px footer-heading">Let’s Work <span class="grey-text semibold">Together</span></div>
+          <p class="body-text black">Subscribe for Updates
+          </p>
+          <div class="footer-form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="footer-form" data-wf-page-id="68ac7f7180d72c34901c1bbd" data-wf-element-id="c928cd5b-c40c-0ebf-2209-71f68bbbe94a">
+              <input class="form-input w-node-c928cd5b-c40c-0ebf-2209-71f68bbbe94b-8bbbe93f w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email" type="email" id="email" required="" /><input type="submit" data-wait="Please wait..." class="form-button is-button-small w-button" value="Send" />
+            </form>
+            <div class="success-message w-form-done">
+              <div class="text-24px">✨ Message sent! <span class="grey-text">I’ll respond as soon as possible.</span>
+              </div>
+            </div>
+            <div class="error-message w-form-fail">
+              <div class="text-24px">⚡ Submission failed. <span class="grey-text">Please refresh the page or try again
+                  later.</span></div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe957" class="footer-contact-wrapper">
+          <div class="footer-contact-top">
+            <div class="contact-box">
+              <div class="contact-icon">
+                <div class="footer-contact-icon w-embed"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.2371 3.5998C11.2371 2.05327 12.4906 0.799805 14.0371 0.799805C15.5836 0.799805 16.8371 2.05327 16.8371 3.5998C16.8371 2.05327 18.0906 0.799805 19.6371 0.799805C21.1836 0.799805 22.4371 2.05327 22.4371 3.5998C22.4371 6.0554 19.2722 8.6426 17.7014 9.84194C17.1918 10.2311 16.4824 10.2311 15.9738 9.84194C14.402 8.64354 11.238 6.0554 11.238 3.5998H11.2371ZM21.5038 10.1331C20.9886 10.1331 20.5704 10.5503 20.5704 11.0665V18.5331C20.5704 20.0769 19.3142 21.3331 17.7704 21.3331H4.70378C3.16004 21.3331 1.90378 20.0769 1.90378 18.5331V9.26607L7.93684 15.2991C8.84404 16.2063 10.034 16.6609 11.2278 16.6609C12.4299 16.6609 13.6348 16.2007 14.5588 15.2758L16.1502 13.5697C16.5011 13.1935 16.4806 12.6027 16.1044 12.2509C15.7274 11.8999 15.1375 11.9186 14.7847 12.2975L13.2158 13.9803C12.1238 15.0723 10.3476 15.0723 9.25564 13.9803L2.24071 6.96354C2.71111 6.0778 3.63324 5.46647 4.70378 5.46647H8.43711C8.95231 5.46647 9.37044 5.04927 9.37044 4.53314C9.37044 4.017 8.95231 3.5998 8.43711 3.5998H4.70378C2.13058 3.5998 0.0371094 5.69327 0.0371094 8.26647V18.5331C0.0371094 21.1063 2.13058 23.1998 4.70378 23.1998H17.7704C20.3436 23.1998 22.4371 21.1063 22.4371 18.5331V11.0665C22.4371 10.5503 22.019 10.1331 21.5038 10.1331Z" fill="currentColor" />
+                  </svg></div>
+              </div>
+              <div class="contact-number">
+                <div class="text-24px">Email me</div>
+                <div class="text-18px"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#107;&#115;&#104;&#97;&#121;&#100;&#97;&#104;&#105;&#121;&#97;&#57;&#50;&#46;&#97;&#100;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" style="color:inherit;text-decoration:none;">Email Protected</a></div>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="contact-icon">
+                <div class="footer-contact-icon w-embed"><svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5705 10.5995V9.86914C20.5705 8.05882 20.5705 7.15368 20.0237 6.59128C19.477 6.02889 18.597 6.02889 16.8371 6.02889H14.8971C14.0409 6.02889 14.0338 6.02723 13.2639 5.64193L10.1544 4.08588C8.85606 3.43618 8.20691 3.11134 7.51536 3.13391C6.82381 3.15649 6.19599 3.52302 4.94036 4.25609L3.79435 4.92516C2.87204 5.46362 2.41088 5.73285 2.15734 6.18074C1.90381 6.62864 1.90381 7.17408 1.90381 8.26496V15.9341C1.90381 17.3675 1.90381 18.0842 2.22325 18.4831C2.43582 18.7484 2.73369 18.9269 3.06301 18.986C3.55792 19.0749 4.16386 18.7212 5.37569 18.0136C6.1986 17.5332 6.99058 17.0343 7.97502 17.1696C8.79992 17.2829 9.56647 17.8034 10.3038 18.1724" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.50391 3.13281V17.1328" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                    <path d="M14.0371 5.93359V9.66693" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.3704 12C18.6434 12 20.5704 13.8821 20.5704 16.1654C20.5704 18.485 18.612 20.1129 16.803 21.2197C16.6712 21.2942 16.5221 21.3333 16.3704 21.3333C16.2187 21.3333 16.0696 21.2942 15.9378 21.2197C14.1322 20.1021 12.1704 18.493 12.1704 16.1654C12.1704 13.8821 14.0975 12 16.3704 12Z" stroke="currentColor" stroke-width="1.4" />
+                    <path d="M16.3701 16.2002H16.3791" stroke="currentColor" stroke-width="1.86667" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+              </div>
+              <div class="contact-number">
+                <div class="text-24px">Office location</div>
+                <div class="text-18px">Nomad</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-social-media-wrapper"><a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank"
+              class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">LinkedIn</div>
+            </a><a href="https://github.com/dahiyaakshay" target="_blank" class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">GitHub</div>
+            </a><a href="https://aispider.akshaydahiya.site/" target="_blank"
+              class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">AI Spider</div>
+            </a><a href="https://marai.akshaydahiya.site/" target="_blank" class="footer-social-media w-inline-block">
+              <div class="footer-social-media-text">MarAI</div>
+            </a></div>
+        </div>
+        <div data-w-id="c928cd5b-c40c-0ebf-2209-71f68bbbe97e" class="footer-copyright-wrapper">
+          <div class="copy-right-text-wrapper">
+            <div class="text-18px footer">Designed by - Akshay Dahiya - Marketer &amp; Web Developer &middot; <a href="llms.txt" style="color:inherit;text-decoration:underline;">llms.txt</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/jquery.js" type="text/javascript"></script>
+  <script src="assets/js/akshay-vendor.js" type="text/javascript"></script>
+  <script src="assets/js/akshay-entry.js" type="text/javascript"></script>
+</body>
+
+</html>
