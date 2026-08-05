@@ -917,6 +917,36 @@
     font-size:11px;
   }
 
+  /* ===== 404 PAGE ===== */
+  .error-404{
+    padding:140px 0 160px;
+    max-width:640px;
+  }
+  .error-404 h1.display{
+    font-size:clamp(32px, 4vw, 48px);
+    line-height:1.15;
+    margin-top:22px;
+  }
+  .error-404 .blog-hero-sub{
+    margin-top:20px;
+    max-width:520px;
+  }
+  .error-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px 28px;
+    margin-top:56px;
+    padding-top:28px;
+    border-top:1px solid var(--line);
+  }
+  .error-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.03em;
+    color:var(--taupe-deep);
+  }
+  .error-links a:hover{color:var(--ink);}
+
   /* ===== RELATED READING (cross-links on posts and papers) ===== */
   .related-section{
     border-top:1px solid var(--line);
@@ -1203,6 +1233,7 @@
 
     .blog-hero{padding:36px 0 48px;}
     .work-hero{padding:36px 0 48px;}
+    .error-404{padding:72px 0 80px;}
     .work-hero-copy{margin-top:24px;}
     .blog-index{padding-top:48px; padding-bottom:64px;}
     .blog-post-grid{grid-template-columns:1fr;}
