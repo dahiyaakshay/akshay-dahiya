@@ -1,0 +1,49 @@
+<svg viewBox="0 0 660 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="340" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">AVG BUSINESSES RECOMMENDED PER RESPONSE</text>
+
+  <line x1="90" y1="270" x2="620" y2="270" stroke="#1E1C19" stroke-width="1.2"/>
+  <g stroke="#A89A87" stroke-width="0.5" opacity="0.35">
+    <line x1="90" y1="210" x2="620" y2="210"/>
+    <line x1="90" y1="150" x2="620" y2="150"/>
+    <line x1="90" y1="90" x2="620" y2="90"/>
+  </g>
+  <g font-family="'IBM Plex Mono', monospace" font-size="10.5" fill="#7C6E5C" text-anchor="end">
+    <text x="82" y="274">0</text>
+    <text x="82" y="214">2.5</text>
+    <text x="82" y="154">5.0</text>
+    <text x="82" y="94">7.5</text>
+  </g>
+
+  <!-- Claude 3.1, ChatGPT 6.2, Perplexity 6.8, Copilot 7.0, Qwen 7.1, Gemini 7.4. scale 7.5 -> 200px -->
+  <g font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19" text-anchor="middle">
+    <rect x="105" y="187" width="68" height="83" stroke="#A89A87" stroke-width="1.1" stroke-dasharray="2 3" fill="#ECE5D8"/>
+    <text x="139" y="178" fill="#7C6E5C">3.1</text>
+
+    <rect x="188" y="105" width="68" height="165" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+    <text x="222" y="96">6.2</text>
+
+    <rect x="271" y="89" width="68" height="181" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+    <text x="305" y="80">6.8</text>
+
+    <rect x="354" y="83" width="68" height="187" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+    <text x="388" y="74">7.0</text>
+
+    <rect x="437" y="81" width="68" height="189" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+    <text x="471" y="72">7.1</text>
+
+    <rect x="520" y="72" width="68" height="198" fill="#1E1C19"/>
+    <text x="554" y="63">7.4</text>
+  </g>
+
+  <g font-family="Inter, sans-serif" font-size="11.5" fill="#3C3730" text-anchor="middle">
+    <text x="139" y="292">Claude</text>
+    <text x="222" y="292">ChatGPT</text>
+    <text x="305" y="292">Perplexity</text>
+    <text x="388" y="292">Copilot</text>
+    <text x="471" y="292">Qwen</text>
+    <text x="554" y="292">Gemini</text>
+  </g>
+
+  <text x="0" y="322" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">Set size varies 2.3x between the most conservative and most generous platform.</text>
+</svg>

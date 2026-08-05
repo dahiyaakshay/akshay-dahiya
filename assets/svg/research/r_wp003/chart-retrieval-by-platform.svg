@@ -1,0 +1,63 @@
+<svg viewBox="0 0 660 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="400" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">SECTION RETRIEVAL: GEMINI VS PERPLEXITY</text>
+  <text x="0" y="46" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">The platform with the highest and lowest overall Compression Ratio</text>
+
+  <rect x="0" y="58" width="16" height="10" fill="#1E1C19"/>
+  <text x="22" y="67" font-family="Inter, sans-serif" font-size="11.5" fill="#3C3730">Gemini (45% overall)</text>
+  <rect x="170" y="58" width="16" height="10" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  <text x="192" y="67" font-family="Inter, sans-serif" font-size="11.5" fill="#3C3730">Perplexity (12% overall)</text>
+
+  <line x1="90" y1="330" x2="620" y2="330" stroke="#1E1C19" stroke-width="1.2"/>
+
+  <!-- 6 groups, each with 2 bars. scale 100% -> 260px -->
+  <g font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="500" fill="#1E1C19">
+    <!-- Introduction: 91 / 82 -->
+    <rect x="100" y="93" width="30" height="237" fill="#1E1C19"/>
+    <text x="115" y="85" text-anchor="middle">91%</text>
+    <rect x="132" y="117" width="30" height="213" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="147" y="109" text-anchor="middle" fill="#7C6E5C">82%</text>
+
+    <!-- First H2: 78 / 65 -->
+    <rect x="200" y="127" width="30" height="203" fill="#1E1C19"/>
+    <text x="215" y="119" text-anchor="middle">78%</text>
+    <rect x="232" y="161" width="30" height="169" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="247" y="153" text-anchor="middle" fill="#7C6E5C">65%</text>
+
+    <!-- FAQ: 65 / 54 -->
+    <rect x="300" y="161" width="30" height="169" fill="#1E1C19"/>
+    <text x="315" y="153" text-anchor="middle">65%</text>
+    <rect x="332" y="190" width="30" height="140" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="347" y="182" text-anchor="middle" fill="#7C6E5C">54%</text>
+
+    <!-- Table: 38 / 22 -->
+    <rect x="400" y="231" width="30" height="99" fill="#1E1C19"/>
+    <text x="415" y="223" text-anchor="middle">38%</text>
+    <rect x="432" y="273" width="30" height="57" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="447" y="265" text-anchor="middle" fill="#7C6E5C">22%</text>
+
+    <!-- Middle Body: 35 / 19 -->
+    <rect x="500" y="239" width="30" height="91" fill="#1E1C19"/>
+    <text x="515" y="231" text-anchor="middle">35%</text>
+    <rect x="532" y="280" width="30" height="50" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="547" y="272" text-anchor="middle" fill="#7C6E5C">19%</text>
+
+    <!-- Conclusion: 31 / 18 -->
+    <rect x="580" y="250" width="30" height="80" fill="#1E1C19"/>
+    <text x="595" y="242" text-anchor="middle">31%</text>
+    <rect x="612" y="288" width="30" height="42" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  </g>
+  <text x="627" y="280" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#7C6E5C" text-anchor="middle">18%</text>
+  <rect x="0" y="0" width="0" height="0" opacity="0"/>
+
+  <g font-family="Inter, sans-serif" font-size="10.5" fill="#3C3730" text-anchor="middle">
+    <text x="131" y="350">Intro</text>
+    <text x="231" y="350">First H2</text>
+    <text x="331" y="350">FAQ</text>
+    <text x="431" y="350">Table</text>
+    <text x="531" y="350">Mid Body</text>
+    <text x="611" y="350">Concl.</text>
+  </g>
+
+  <text x="0" y="380" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">Both platforms follow the same top-heavy pattern; Gemini simply retrieves more of it.</text>
+</svg>

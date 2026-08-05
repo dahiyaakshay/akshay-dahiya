@@ -1,0 +1,65 @@
+<svg viewBox="0 -36 1080 246" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <line x1="60" y1="60" x2="900" y2="60" stroke="#A89A87" stroke-width="1" stroke-dasharray="3 5"/>
+  <path d="M856 53 L868 60 L856 67" stroke="#A89A87" stroke-width="1.1" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- 01 Crawl -->
+  <g>
+    <circle cx="60" cy="60" r="26" stroke="#1E1C19" stroke-width="1.4" fill="#F4EFE6"/>
+    <path d="M50 65 L50 55 L60 48 L70 55 L70 65" stroke="#7C6E5C" stroke-width="1.3" fill="none"/>
+    <circle cx="60" cy="58" r="3" fill="#7C6E5C"/>
+    <text x="60" y="112" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="17" letter-spacing="0.04em" fill="#1E1C19">01 / CRAWL</text>
+    <text x="60" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">Index every page,</text>
+    <text x="60" y="154" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">feed and surface</text>
+  </g>
+
+  <!-- 02 Analyze -->
+  <g>
+    <circle cx="270" cy="60" r="26" stroke="#1E1C19" stroke-width="1.4" fill="#F4EFE6"/>
+    <circle cx="264" cy="54" r="9" stroke="#7C6E5C" stroke-width="1.3" fill="none"/>
+    <line x1="271" y1="61" x2="278" y2="68" stroke="#7C6E5C" stroke-width="1.3"/>
+    <text x="270" y="112" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="17" letter-spacing="0.04em" fill="#1E1C19">02 / ANALYZE</text>
+    <text x="270" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">Technical, content</text>
+    <text x="270" y="154" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">and entity signals</text>
+  </g>
+
+  <!-- 03 Find -->
+  <g>
+    <circle cx="480" cy="60" r="26" stroke="#1E1C19" stroke-width="1.4" fill="#F4EFE6"/>
+    <circle cx="480" cy="60" r="10" stroke="#7C6E5C" stroke-width="1.2" fill="none"/>
+    <line x1="480" y1="50" x2="480" y2="45" stroke="#7C6E5C" stroke-width="1.2"/>
+    <line x1="480" y1="75" x2="480" y2="70" stroke="#7C6E5C" stroke-width="1.2"/>
+    <line x1="465" y1="60" x2="470" y2="60" stroke="#7C6E5C" stroke-width="1.2"/>
+    <line x1="490" y1="60" x2="495" y2="60" stroke="#7C6E5C" stroke-width="1.2"/>
+    <circle cx="480" cy="60" r="2.5" fill="#7C6E5C"/>
+    <text x="480" y="112" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="17" letter-spacing="0.04em" fill="#1E1C19">03 / FIND</text>
+    <text x="480" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">Gaps, errors and</text>
+    <text x="480" y="154" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">missed opportunity</text>
+  </g>
+
+  <!-- 04 Report -->
+  <g>
+    <circle cx="690" cy="60" r="26" stroke="#1E1C19" stroke-width="1.4" fill="#F4EFE6"/>
+    <rect x="680" y="47" width="20" height="26" stroke="#7C6E5C" stroke-width="1.2" fill="none"/>
+    <line x1="684" y1="54" x2="696" y2="54" stroke="#7C6E5C" stroke-width="1"/>
+    <line x1="684" y1="60" x2="696" y2="60" stroke="#7C6E5C" stroke-width="1"/>
+    <line x1="684" y1="66" x2="692" y2="66" stroke="#7C6E5C" stroke-width="1"/>
+    <text x="690" y="112" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="17" letter-spacing="0.04em" fill="#1E1C19">04 / REPORT</text>
+    <text x="690" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">Priority order,</text>
+    <text x="690" y="154" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">plain language</text>
+  </g>
+
+  <!-- 05 Optimize -->
+  <g>
+    <circle cx="900" cy="60" r="26" stroke="#1E1C19" stroke-width="1.4" fill="#1E1C19"/>
+    <path d="M892 68 L900 46 L908 68" stroke="#F4EFE6" stroke-width="1.3" fill="none"/>
+    <line x1="895" y1="61" x2="905" y2="61" stroke="#F4EFE6" stroke-width="1.1"/>
+    <text x="900" y="112" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="17" letter-spacing="0.04em" fill="#1E1C19">05 / OPTIMIZE</text>
+    <text x="900" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">Ship fixes, then</text>
+    <text x="900" y="154" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">measure the lift</text>
+  </g>
+
+  <!-- promote loop arrow back, arcing above the row from Optimize into Crawl -->
+  <path d="M900 34 C 900 -24, 60 -24, 60 34" stroke="#A89A87" stroke-width="1" stroke-dasharray="2 4" fill="none"/>
+  <path d="M52 22 L60 34 L68 22" stroke="#A89A87" stroke-width="1.1" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="480" y="197" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="12.5" letter-spacing="0.05em" fill="#A89A87">THEN PROMOTE ACROSS RELEVANT PLATFORMS, AND REPEAT</text>
+</svg>

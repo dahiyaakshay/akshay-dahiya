@@ -1,0 +1,50 @@
+<svg viewBox="0 0 660 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="340" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">CONTENT AGE AT TIME OF CITATION</text>
+  <text x="0" y="46" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">Percent of citations by content age, in months</text>
+
+  <line x1="50" y1="270" x2="640" y2="270" stroke="#1E1C19" stroke-width="1.2"/>
+  <g stroke="#A89A87" stroke-width="0.5" opacity="0.35">
+    <line x1="50" y1="220" x2="640" y2="220"/>
+    <line x1="50" y1="170" x2="640" y2="170"/>
+    <line x1="50" y1="120" x2="640" y2="120"/>
+    <line x1="50" y1="70" x2="640" y2="70"/>
+  </g>
+
+  <!-- 7 buckets, values: 4,8,13,22,28,16,9 (percent). scale: 28% -> 200px tall -->
+  <!-- bar width 65, gap 20, start x=60 -->
+  <g font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="500" fill="#1E1C19" text-anchor="middle">
+    <rect x="60" y="241" width="65" height="29" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="92" y="234">4%</text>
+
+    <rect x="145" y="213" width="65" height="57" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="177" y="206">8%</text>
+
+    <rect x="230" y="177" width="65" height="93" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="262" y="170">13%</text>
+
+    <rect x="315" y="113" width="65" height="157" fill="#1E1C19"/>
+    <text x="347" y="106">22%</text>
+
+    <rect x="400" y="70" width="65" height="200" fill="#1E1C19"/>
+    <text x="432" y="63">28%</text>
+
+    <rect x="485" y="156" width="65" height="114" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="517" y="149">16%</text>
+
+    <rect x="570" y="206" width="65" height="64" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+    <text x="602" y="199">9%</text>
+  </g>
+
+  <g font-family="Inter, sans-serif" font-size="11" fill="#3C3730" text-anchor="middle">
+    <text x="92" y="288">&lt; 1 mo</text>
+    <text x="177" y="288">1-2 mo</text>
+    <text x="262" y="288">2-3 mo</text>
+    <text x="347" y="288">3-5 mo</text>
+    <text x="432" y="288">5-7 mo</text>
+    <text x="517" y="288">7-12 mo</text>
+    <text x="602" y="288">&gt; 12 mo</text>
+  </g>
+
+  <text x="0" y="320" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">The 5 to 7 month bucket peaks. Neither the newest nor oldest content wins.</text>
+</svg>

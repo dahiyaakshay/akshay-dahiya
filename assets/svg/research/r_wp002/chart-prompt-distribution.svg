@@ -1,0 +1,34 @@
+<svg viewBox="0 0 660 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="340" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">PROMPT DISTRIBUTION BY COMPLEXITY TIER</text>
+
+  <g stroke="#A89A87" stroke-width="0.5" opacity="0.35">
+    <line x1="90" y1="270" x2="620" y2="270"/>
+    <line x1="90" y1="210" x2="620" y2="210"/>
+    <line x1="90" y1="150" x2="620" y2="150"/>
+    <line x1="90" y1="90" x2="620" y2="90"/>
+  </g>
+  <g font-family="'IBM Plex Mono', monospace" font-size="10.5" fill="#7C6E5C" text-anchor="end">
+    <text x="82" y="274">0</text>
+    <text x="82" y="214">2,000</text>
+    <text x="82" y="154">4,000</text>
+    <text x="82" y="94">6,000</text>
+  </g>
+
+  <line x1="90" y1="270" x2="620" y2="270" stroke="#1E1C19" stroke-width="1.2"/>
+
+  <!-- Simple Factual 2,800 (20%), Contextual 5,600 (40%), Complex Reasoning 5,600 (40%) -->
+  <rect x="150" y="164" width="110" height="106" stroke="#7C6E5C" stroke-width="1.3" fill="#ECE5D8"/>
+  <text x="205" y="154" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="12.5" font-weight="500" fill="#1E1C19">2,800</text>
+  <text x="205" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" fill="#3C3730">Simple Factual (20%)</text>
+
+  <rect x="320" y="58" width="110" height="212" fill="#1E1C19"/>
+  <text x="375" y="48" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="12.5" font-weight="500" fill="#1E1C19">5,600</text>
+  <text x="375" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" fill="#3C3730">Contextual (40%)</text>
+
+  <rect x="470" y="58" width="110" height="212" fill="#1E1C19"/>
+  <text x="525" y="48" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="12.5" font-weight="500" fill="#1E1C19">5,600</text>
+  <text x="525" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" fill="#3C3730">Complex Reasoning (40%)</text>
+
+  <text x="0" y="322" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">14,000 total prompts, split evenly across two industries within each tier.</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 660 618" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="660" height="618" fill="#F4EFE6"/>
+<line x1="34" y1="40" x2="34" y2="558" stroke="#A89A87" stroke-width="1.2" stroke-dasharray="3 5"/>
+<circle cx="34" cy="40" r="13" fill="#1E1C19"/>
+<text x="60" y="38" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">01 / QUERY SUBMISSION</text>
+<text x="60" y="58" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Issued directly in live LLM environment. Full response recorded with timestamp</text>
+<circle cx="34" cy="114" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="112" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">02 / PAGE ARCHIVING</text>
+<text x="60" y="132" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Source pages cited or referenced archived before each query set</text>
+<circle cx="34" cy="188" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="186" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">03 / PAGE SEGMENTATION</text>
+<text x="60" y="206" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Archived pages manually segmented into intro, H2, FAQ, tables, body, conclusion</text>
+<circle cx="34" cy="262" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="260" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">04 / SECTION MATCHING</text>
+<text x="60" y="280" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">AI answer cross-referenced against archived page to identify surfaced sections</text>
+<circle cx="34" cy="336" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="334" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">05 / COMPRESSION RATIO CALCULATION</text>
+<text x="60" y="354" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Estimated surfaced word count divided by total page word count</text>
+<circle cx="34" cy="410" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="408" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">06 / SECTION CLASSIFICATION</text>
+<text x="60" y="428" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Each surfaced block classified by section type</text>
+<circle cx="34" cy="484" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="482" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">07 / PATTERN CLASSIFICATION</text>
+<text x="60" y="502" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Retrieval classified as consecutive or scattered by paragraph gaps</text>
+<circle cx="34" cy="558" r="13" fill="#1E1C19"/>
+<text x="60" y="556" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">08 / THREE-RUN AGGREGATION</text>
+<text x="60" y="576" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Metrics averaged across three runs. Single-run sections marked marginal</text>
+</svg>

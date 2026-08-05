@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#ECE5D8"/>
+  <g stroke="#A89A87" stroke-width="0.6" opacity="0.4">
+    <line x1="0" y1="62.5" x2="400" y2="62.5"/>
+    <line x1="0" y1="125" x2="400" y2="125"/>
+    <line x1="0" y1="187.5" x2="400" y2="187.5"/>
+    <line x1="100" y1="0" x2="100" y2="250"/>
+    <line x1="200" y1="0" x2="200" y2="250"/>
+    <line x1="300" y1="0" x2="300" y2="250"/>
+  </g>
+
+  <!-- stacked page blocks: retrieved (dark) at top, skipped (outline) below -->
+  <rect x="70" y="45" width="260" height="34" fill="#1E1C19"/>
+  <rect x="70" y="83" width="260" height="26" fill="#1E1C19"/>
+  <rect x="70" y="113" width="260" height="22" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  <rect x="70" y="139" width="260" height="26" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  <rect x="70" y="169" width="260" height="26" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+
+  <text x="200" y="66" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#F4EFE6">88%</text>
+  <text x="200" y="100" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9.5" fill="#F4EFE6">73%</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#ECE5D8"/>
+  <g stroke="#A89A87" stroke-width="0.6" opacity="0.4">
+    <line x1="0" y1="62.5" x2="400" y2="62.5"/>
+    <line x1="0" y1="125" x2="400" y2="125"/>
+    <line x1="0" y1="187.5" x2="400" y2="187.5"/>
+    <line x1="100" y1="0" x2="100" y2="250"/>
+    <line x1="200" y1="0" x2="200" y2="250"/>
+    <line x1="300" y1="0" x2="300" y2="250"/>
+  </g>
+
+  <!-- 3 separate platform clusters, mostly non-overlapping, one small shared node -->
+  <circle cx="90" cy="90" r="34" stroke="#7C6E5C" stroke-width="1.2" fill="none"/>
+  <text x="90" y="70" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#7C6E5C">GPT</text>
+
+  <circle cx="200" cy="130" r="34" stroke="#7C6E5C" stroke-width="1.2" fill="none"/>
+  <text x="200" y="110" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#7C6E5C">PPLX</text>
+
+  <circle cx="300" cy="80" r="34" stroke="#7C6E5C" stroke-width="1.2" fill="none"/>
+  <text x="300" y="60" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#7C6E5C">GEM</text>
+
+  <!-- business dots, mostly isolated to one circle -->
+  <circle cx="75" cy="95" r="4" fill="#1E1C19"/>
+  <circle cx="100" cy="105" r="4" fill="#1E1C19"/>
+  <circle cx="195" cy="140" r="4" fill="#1E1C19"/>
+  <circle cx="215" cy="120" r="4" fill="#1E1C19"/>
+  <circle cx="290" cy="90" r="4" fill="#1E1C19"/>
+  <circle cx="310" cy="70" r="4" fill="#1E1C19"/>
+
+  <!-- one rare shared node in overlap -->
+  <circle cx="148" cy="112" r="6" fill="#1E1C19"/>
+</svg>

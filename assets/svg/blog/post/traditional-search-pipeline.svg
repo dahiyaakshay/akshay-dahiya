@@ -1,0 +1,28 @@
+<svg viewBox="0 0 660 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="460" fill="#F4EFE6"/>
+
+  <line x1="34" y1="40" x2="34" y2="382" stroke="#A89A87" stroke-width="1.2" stroke-dasharray="3 5"/>
+
+  <circle cx="34" cy="40" r="14" fill="#1E1C19"/>
+  <text x="64" y="38" font-family="'IBM Plex Mono', monospace" font-size="18" font-weight="500" fill="#1E1C19">CRAWLER</text>
+  <text x="64" y="60" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">Discovers and fetches URLs</text>
+
+  <circle cx="34" cy="122" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="120" font-family="'IBM Plex Mono', monospace" font-size="18" font-weight="500" fill="#1E1C19">RENDERER</text>
+  <text x="64" y="142" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">Executes JS, builds the final DOM</text>
+
+  <circle cx="34" cy="204" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="202" font-family="'IBM Plex Mono', monospace" font-size="18" font-weight="500" fill="#1E1C19">INDEXER</text>
+  <text x="64" y="224" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">Stores the processed content</text>
+
+  <circle cx="34" cy="286" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="284" font-family="'IBM Plex Mono', monospace" font-size="18" font-weight="500" fill="#1E1C19">RANKING</text>
+  <text x="64" y="306" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">PageRank plus relevance signals</text>
+
+  <circle cx="34" cy="368" r="14" fill="#1E1C19"/>
+  <text x="64" y="366" font-family="'IBM Plex Mono', monospace" font-size="18" font-weight="500" fill="#1E1C19">SEARCH RESULTS</text>
+  <text x="64" y="388" font-family="Inter, sans-serif" font-size="14" fill="#7C6E5C">Surfaced for relevant queries</text>
+
+  <line x1="0" y1="418" x2="660" y2="418" stroke="#A89A87" stroke-width="0.6" opacity="0.5"/>
+  <text x="0" y="444" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">Every stage is a hard gate. Crawl budget only affects the first two.</text>
+</svg>

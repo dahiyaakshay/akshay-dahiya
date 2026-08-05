@@ -1,0 +1,52 @@
+<svg viewBox="0 0 660 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="380" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">SECTION RETRIEVAL PROBABILITY (ALL PLATFORMS)</text>
+
+  <line x1="90" y1="310" x2="620" y2="310" stroke="#1E1C19" stroke-width="1.2"/>
+  <g stroke="#A89A87" stroke-width="0.5" opacity="0.35">
+    <line x1="90" y1="250" x2="620" y2="250"/>
+    <line x1="90" y1="190" x2="620" y2="190"/>
+    <line x1="90" y1="130" x2="620" y2="130"/>
+    <line x1="90" y1="70" x2="620" y2="70"/>
+  </g>
+  <g font-family="'IBM Plex Mono', monospace" font-size="10.5" fill="#7C6E5C" text-anchor="end">
+    <text x="82" y="314">0</text>
+    <text x="82" y="254">25%</text>
+    <text x="82" y="194">50%</text>
+    <text x="82" y="134">75%</text>
+    <text x="82" y="74">100%</text>
+  </g>
+
+  <!-- 6 sections: Introduction 88, First H2 73, FAQ 61, Table 31, Middle Body 29, Conclusion 26 -->
+  <!-- scale: 100% -> 240px (y=70 to y=310) -->
+  <g font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19" text-anchor="middle">
+    <rect x="105" y="99" width="68" height="211" fill="#1E1C19"/>
+    <text x="139" y="90">88%</text>
+
+    <rect x="188" y="134" width="68" height="176" fill="#1E1C19"/>
+    <text x="222" y="125">73%</text>
+
+    <rect x="271" y="163" width="68" height="147" fill="#1E1C19"/>
+    <text x="305" y="154">61%</text>
+
+    <rect x="354" y="235" width="68" height="75" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+    <text x="388" y="226">31%</text>
+
+    <rect x="437" y="240" width="68" height="70" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+    <text x="471" y="231">29%</text>
+
+    <rect x="520" y="247" width="68" height="63" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+    <text x="554" y="238">26%</text>
+  </g>
+
+  <g font-family="Inter, sans-serif" font-size="11" fill="#3C3730" text-anchor="middle">
+    <text x="139" y="330">Intro</text>
+    <text x="222" y="330">First H2</text>
+    <text x="305" y="330">FAQ</text>
+    <text x="388" y="330">Table</text>
+    <text x="471" y="330">Mid Body</text>
+    <text x="554" y="330">Conclusion</text>
+  </g>
+
+  <text x="0" y="360" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">A fact at the top of a page is 3.4x more likely to be retrieved than at the bottom.</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg viewBox="0 0 660 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="860" fill="#F4EFE6"/>
+
+  <line x1="34" y1="40" x2="34" y2="688" stroke="#A89A87" stroke-width="1.2" stroke-dasharray="3 5"/>
+
+  <circle cx="34" cy="40" r="13" fill="#1E1C19"/>
+  <text x="60" y="38" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">WEBPAGE</text>
+  <text x="60" y="58" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">The original, complete source document</text>
+
+  <circle cx="34" cy="112" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+  <text x="60" y="110" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">HTML PARSING</text>
+  <text x="60" y="130" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">Extracts tags, headings, paragraph boundaries</text>
+
+  <circle cx="34" cy="184" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+  <text x="60" y="182" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">CONTENT CLEANING</text>
+  <text x="60" y="202" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">Strips nav, ads, cookie banners, boilerplate</text>
+
+  <circle cx="34" cy="256" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+  <text x="60" y="254" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">HEADING DETECTION</text>
+  <text x="60" y="274" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">Finds H1 to H6 as natural split points</text>
+
+  <circle cx="34" cy="328" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+  <text x="60" y="326" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">CHUNK GENERATION</text>
+  <text x="60" y="346" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">Applies a splitting strategy to produce chunks</text>
+
+  <circle cx="34" cy="400" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+  <text x="60" y="398" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">EMBEDDING CREATION</text>
+  <text x="60" y="418" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">Converts each chunk into a vector</text>
+
+  <circle cx="34" cy="472" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+  <text x="60" y="470" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">VECTOR DATABASE</text>
+  <text x="60" y="490" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">Indexes vectors for nearest-neighbor search</text>
+
+  <circle cx="34" cy="544" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+  <text x="60" y="542" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">SEMANTIC RETRIEVAL</text>
+  <text x="60" y="562" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">Finds chunks closest to the query embedding</text>
+
+  <circle cx="34" cy="616" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+  <text x="60" y="614" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">GROUNDING</text>
+  <text x="60" y="634" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">Supplies retrieved chunks as model context</text>
+
+  <circle cx="34" cy="688" r="13" fill="#1E1C19"/>
+  <text x="60" y="686" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="500" fill="#1E1C19">LLM RESPONSE</text>
+  <text x="60" y="706" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">The final, synthesized output</text>
+
+  <line x1="0" y1="740" x2="660" y2="740" stroke="#A89A87" stroke-width="0.6" opacity="0.5"/>
+  <text x="0" y="766" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">
+    <tspan x="0" dy="0">The page itself is never the thing matched against a query.</tspan>
+    <tspan x="0" dy="19">A chunk is.</tspan>
+  </text>
+</svg>

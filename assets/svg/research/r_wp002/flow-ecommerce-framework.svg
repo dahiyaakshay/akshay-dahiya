@@ -1,0 +1,16 @@
+<svg viewBox="0 0 660 322" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="660" height="322" fill="#F4EFE6"/>
+<line x1="34" y1="40" x2="34" y2="262" stroke="#A89A87" stroke-width="1.2" stroke-dasharray="3 5"/>
+<circle cx="34" cy="40" r="13" fill="#1E1C19"/>
+<text x="60" y="38" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">01 / OPTIMIZE PRODUCT/CATEGORY DEPTH</text>
+<text x="60" y="58" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">22% cross-domain rate means one great page can often win alone</text>
+<circle cx="34" cy="114" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="112" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">02 / WRITE BUYING GUIDES FOR COMPLEX QUERIES</text>
+<text x="60" y="132" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Contextual and complex intents drive higher MHCR, even here</text>
+<circle cx="34" cy="188" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="186" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">03 / ADD STRUCTURED DATA TO PRODUCT PAGES</text>
+<text x="60" y="206" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Product, Offer, Review schema improves extractability as an evidence node</text>
+<circle cx="34" cy="262" r="13" fill="#1E1C19"/>
+<text x="60" y="260" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">04 / TARGET PERPLEXITY AND COPILOT</text>
+<text x="60" y="280" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Even at e-commerce's 39% MHCR, these platforms are the best entry points</text>
+</svg>

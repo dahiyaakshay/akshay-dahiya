@@ -1,0 +1,32 @@
+<svg viewBox="0 0 660 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="320" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">RECOMMENDATION OVERLAP BETWEEN MODEL PAIRS</text>
+
+  <line x1="220" y1="55" x2="220" y2="295" stroke="#1E1C19" stroke-width="1.2"/>
+
+  <!-- 5 rows, scale 44% -> 380px -->
+  <text x="210" y="70" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">ChatGPT / Perplexity</text>
+  <rect x="220" y="59" width="380" height="18" fill="#1E1C19"/>
+  <text x="608" y="73" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19">44%</text>
+
+  <text x="210" y="110" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">ChatGPT / Gemini</text>
+  <rect x="220" y="99" width="268" height="18" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+  <text x="496" y="113" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19">31%</text>
+
+  <text x="210" y="150" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">ChatGPT / Claude</text>
+  <rect x="220" y="139" width="242" height="18" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+  <text x="470" y="153" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19">28%</text>
+
+  <text x="210" y="190" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">Claude / Copilot</text>
+  <rect x="220" y="179" width="199" height="18" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+  <text x="427" y="193" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19">23%</text>
+
+  <text x="210" y="230" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">Gemini / Qwen</text>
+  <rect x="220" y="219" width="164" height="18" stroke="#A89A87" stroke-width="1.1" stroke-dasharray="2 3" fill="#ECE5D8"/>
+  <text x="392" y="233" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#7C6E5C">19%</text>
+
+  <text x="0" y="270" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">
+    <tspan x="0" dy="0">No model pair exceeded 50% overlap. Even the two closest platforms agreed</tspan>
+    <tspan x="0" dy="18">on fewer than half of their recommendations.</tspan>
+  </text>
+</svg>

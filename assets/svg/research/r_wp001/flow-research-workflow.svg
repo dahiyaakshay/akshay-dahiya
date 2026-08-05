@@ -1,0 +1,28 @@
+<svg viewBox="0 0 660 618" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="660" height="618" fill="#F4EFE6"/>
+<line x1="34" y1="40" x2="34" y2="558" stroke="#A89A87" stroke-width="1.2" stroke-dasharray="3 5"/>
+<circle cx="34" cy="40" r="13" fill="#1E1C19"/>
+<text x="60" y="38" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">01 / 14,000 PROMPTS</text>
+<text x="60" y="58" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">2,000 per platform, 3 industries, 3 intents</text>
+<circle cx="34" cy="114" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="112" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">02 / 7 AI ENGINES</text>
+<text x="60" y="132" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">ChatGPT, Google AI Overviews, Perplexity, Gemini, Claude, Copilot, Qwen</text>
+<circle cx="34" cy="188" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="186" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">03 / 67,200 CITATIONS EXTRACTED</text>
+<text x="60" y="206" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Avg 4.8 per response, median 4.0</text>
+<circle cx="34" cy="262" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="260" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">04 / 24,500 UNIQUE URLS</text>
+<text x="60" y="280" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">After normalization and deduplication</text>
+<circle cx="34" cy="336" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="334" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">05 / 5,840 UNIQUE DOMAINS</text>
+<text x="60" y="354" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">4.2 cited pages per domain on average</text>
+<circle cx="34" cy="410" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="408" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">06 / 400 UPDATED PAGES</text>
+<text x="60" y="428" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Monitored for first-citation latency</text>
+<circle cx="34" cy="484" r="13" stroke="#1E1C19" stroke-width="1.5" fill="#F4EFE6"/>
+<text x="60" y="482" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">07 / 4,800 REPEATED RUNS</text>
+<text x="60" y="502" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Citation replacement rate analysis</text>
+<circle cx="34" cy="558" r="13" fill="#1E1C19"/>
+<text x="60" y="556" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="500" fill="#1E1C19">08 / ANALYSIS AND METRICS</text>
+<text x="60" y="576" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Latency, replacement rate, freshness, authority correlation</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 660 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="340" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">COMPRESSION RATIO BY PLATFORM</text>
+  <text x="0" y="46" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">Percent of an average page actually retrieved</text>
+
+  <line x1="180" y1="58" x2="180" y2="310" stroke="#1E1C19" stroke-width="1.2"/>
+
+  <!-- 6 rows, 40px pitch. scale 45% -> 380px -->
+  <text x="170" y="73" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">Gemini</text>
+  <rect x="180" y="62" width="380" height="18" fill="#1E1C19"/>
+  <text x="568" y="76" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19">45%</text>
+
+  <text x="170" y="113" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">Claude</text>
+  <rect x="180" y="102" width="321" height="18" fill="#1E1C19"/>
+  <text x="509" y="116" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19">38%</text>
+
+  <text x="170" y="153" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">Qwen</text>
+  <rect x="180" y="142" width="236" height="18" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+  <text x="424" y="156" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19">28%</text>
+
+  <text x="170" y="193" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">Microsoft Copilot</text>
+  <rect x="180" y="182" width="211" height="18" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+  <text x="399" y="196" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19">25%</text>
+
+  <text x="170" y="233" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">ChatGPT</text>
+  <rect x="180" y="222" width="186" height="18" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+  <text x="374" y="236" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#1E1C19">22%</text>
+
+  <text x="170" y="273" text-anchor="end" font-family="Inter, sans-serif" font-size="12.5" fill="#3C3730">Perplexity</text>
+  <rect x="180" y="262" width="101" height="18" stroke="#A89A87" stroke-width="1.1" stroke-dasharray="2 3" fill="#ECE5D8"/>
+  <text x="289" y="276" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="500" fill="#7C6E5C">12%</text>
+
+  <text x="0" y="304" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">Perplexity retrieves the least per page, but cites the most distinct sources.</text>
+</svg>

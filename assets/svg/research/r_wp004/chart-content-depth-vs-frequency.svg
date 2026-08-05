@@ -1,0 +1,49 @@
+<svg viewBox="0 0 660 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="340" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">CONTENT DEPTH VS LONG-TAIL RECOMMENDATION FREQUENCY</text>
+
+  <line x1="90" y1="270" x2="620" y2="270" stroke="#1E1C19" stroke-width="1.2"/>
+  <g stroke="#A89A87" stroke-width="0.5" opacity="0.35">
+    <line x1="90" y1="210" x2="620" y2="210"/>
+    <line x1="90" y1="150" x2="620" y2="150"/>
+    <line x1="90" y1="90" x2="620" y2="90"/>
+  </g>
+  <g font-family="'IBM Plex Mono', monospace" font-size="10.5" fill="#7C6E5C" text-anchor="end">
+    <text x="82" y="274">0</text>
+    <text x="82" y="214">30</text>
+    <text x="82" y="154">60</text>
+    <text x="82" y="94">90</text>
+  </g>
+
+  <!-- 5 points: 12,22,41,68,89. x positions 140,250,360,470,580. scale 90 -> 200px -->
+  <polyline points="140,246 250,224 360,166 470,89 580,26" stroke="#1E1C19" stroke-width="1.6" fill="none"/>
+  <g fill="#1E1C19">
+    <circle cx="140" cy="246" r="5"/>
+    <circle cx="250" cy="224" r="5"/>
+    <circle cx="360" cy="166" r="5"/>
+    <circle cx="470" cy="89" r="5"/>
+    <circle cx="580" cy="26" r="5"/>
+  </g>
+  <g font-family="'IBM Plex Mono', monospace" font-size="11.5" font-weight="500" fill="#1E1C19" text-anchor="middle">
+    <text x="140" y="236">12</text>
+    <text x="250" y="214">22</text>
+    <text x="360" y="156">41</text>
+    <text x="470" y="79">68</text>
+    <text x="580" y="18">89</text>
+  </g>
+
+  <g font-family="Inter, sans-serif" font-size="10.5" fill="#3C3730" text-anchor="middle">
+    <text x="140" y="290">Minimal</text>
+    <text x="140" y="303">1-2 pages</text>
+    <text x="250" y="290">Basic</text>
+    <text x="250" y="303">3-5 pages</text>
+    <text x="360" y="290">Moderate</text>
+    <text x="360" y="303">6-10 pages</text>
+    <text x="470" y="290">Comprehensive</text>
+    <text x="470" y="303">11-20 pages</text>
+    <text x="580" y="290">Extensive</text>
+    <text x="580" y="303">20+ pages</text>
+  </g>
+
+  <text x="0" y="326" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">Monotonic and steep. Content depth is a primary driver, not a marginal one.</text>
+</svg>

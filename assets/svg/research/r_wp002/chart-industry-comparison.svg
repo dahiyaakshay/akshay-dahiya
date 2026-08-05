@@ -1,0 +1,51 @@
+<svg viewBox="0 0 660 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="480" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">INDUSTRY COMPARISON: KEY MULTI-HOP METRICS</text>
+
+  <!-- legend -->
+  <rect x="0" y="40" width="16" height="10" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  <text x="22" y="49" font-family="Inter, sans-serif" font-size="11.5" fill="#3C3730">E-commerce</text>
+  <rect x="130" y="40" width="16" height="10" fill="#1E1C19"/>
+  <text x="152" y="49" font-family="Inter, sans-serif" font-size="11.5" fill="#3C3730">B2B SaaS</text>
+
+  <!-- row 1: MHCR 39 vs 51 -->
+  <text x="0" y="86" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#1E1C19">MHCR</text>
+  <rect x="160" y="76" width="152" height="16" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  <text x="320" y="88" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#3C3730">39%</text>
+  <rect x="160" y="96" width="199" height="16" fill="#1E1C19"/>
+  <text x="367" y="108" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#1E1C19">51%</text>
+
+  <!-- row 2: Hop Depth 1.6 vs 2.4 -->
+  <text x="0" y="156" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#1E1C19">HOP DEPTH</text>
+  <rect x="160" y="146" width="153" height="16" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  <text x="321" y="158" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#3C3730">1.6</text>
+  <rect x="160" y="166" width="230" height="16" fill="#1E1C19"/>
+  <text x="398" y="178" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#1E1C19">2.4</text>
+
+  <!-- row 3: Cross-Domain 22 vs 58 -->
+  <text x="0" y="226" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#1E1C19">CROSS-DOMAIN</text>
+  <rect x="160" y="216" width="86" height="16" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  <text x="254" y="228" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#3C3730">22%</text>
+  <rect x="160" y="236" width="227" height="16" fill="#1E1C19"/>
+  <text x="395" y="248" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#1E1C19">58%</text>
+
+  <!-- row 4: Fan-Out 1.9 vs 3.6 -->
+  <text x="0" y="296" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#1E1C19">FAN-OUT</text>
+  <rect x="160" y="286" width="163" height="16" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  <text x="331" y="298" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#3C3730">1.9</text>
+  <rect x="160" y="306" width="309" height="16" fill="#1E1C19"/>
+  <text x="477" y="318" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#1E1C19">3.6</text>
+
+  <!-- row 5: Diversity 0.55 vs 0.81 -->
+  <text x="0" y="366" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#1E1C19">DIVERSITY</text>
+  <rect x="160" y="356" width="217" height="16" stroke="#7C6E5C" stroke-width="1.1" fill="#ECE5D8"/>
+  <text x="385" y="368" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#3C3730">0.55</text>
+  <rect x="160" y="376" width="320" height="16" fill="#1E1C19"/>
+  <text x="488" y="388" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#1E1C19">0.81</text>
+
+  <line x1="0" y1="420" x2="660" y2="420" stroke="#A89A87" stroke-width="0.6" opacity="0.5"/>
+  <text x="0" y="446" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">
+    <tspan x="0" dy="0">B2B SaaS outperforms e-commerce on every depth metric measured. The gap is</tspan>
+    <tspan x="0" dy="18">widest on cross-domain synthesis, 58% vs 22%.</tspan>
+  </text>
+</svg>

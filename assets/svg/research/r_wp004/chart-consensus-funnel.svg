@@ -1,0 +1,37 @@
+<svg viewBox="0 0 660 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="420" fill="#F4EFE6"/>
+  <text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">THE CONSENSUS FUNNEL</text>
+  <text x="0" y="46" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">21,481 businesses narrowing to 430 with universal consensus</text>
+
+  <!-- 6 funnel stages, widths scaled to value, centered -->
+  <!-- stage 1: 21,481 (100%) -->
+  <rect x="30" y="66" width="600" height="42" fill="#1E1C19"/>
+  <text x="330" y="92" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#F4EFE6">21,481</text>
+  <text x="620" y="92" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#D8CFC0">Total unique businesses</text>
+
+  <!-- stage 2: 9,022 (42%) -->
+  <rect x="141" y="120" width="378" height="42" fill="#1E1C19"/>
+  <text x="330" y="146" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#F4EFE6">9,022</text>
+  <text x="509" y="146" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#D8CFC0">Multi-model (CCS 2+)</text>
+
+  <!-- stage 3: 5,156 (24%) -->
+  <rect x="185" y="174" width="290" height="42" stroke="#7C6E5C" stroke-width="1.3" fill="#ECE5D8"/>
+  <text x="330" y="200" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">5,156</text>
+  <text x="465" y="200" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#7C6E5C">CCS 3+</text>
+
+  <!-- stage 4: 2,793 (13%) -->
+  <rect x="220" y="228" width="220" height="42" stroke="#7C6E5C" stroke-width="1.3" fill="#ECE5D8"/>
+  <text x="330" y="254" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">2,793</text>
+  <text x="430" y="254" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#7C6E5C">CCS 4+</text>
+
+  <!-- stage 5: 1,289 (6%) -->
+  <rect x="250" y="282" width="160" height="42" stroke="#7C6E5C" stroke-width="1.3" fill="#ECE5D8"/>
+  <text x="330" y="308" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">1,289</text>
+  <text x="400" y="308" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#7C6E5C">CCS 5+</text>
+
+  <!-- stage 6: 430 (2%) -->
+  <rect x="280" y="336" width="100" height="42" fill="#1E1C19"/>
+  <text x="330" y="362" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="13" font-weight="500" fill="#F4EFE6">430</text>
+
+  <text x="0" y="404" font-family="Inter, sans-serif" font-size="12" fill="#7C6E5C">CCS 6, Universal Consensus. More than half drop out at the very first step.</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 660 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="700" fill="#F4EFE6"/>
+
+  <line x1="34" y1="40" x2="34" y2="622" stroke="#A89A87" stroke-width="1.2" stroke-dasharray="3 5"/>
+
+  <circle cx="34" cy="40" r="14" fill="#1E1C19"/>
+  <text x="64" y="38" font-family="'IBM Plex Mono', monospace" font-size="17" font-weight="500" fill="#1E1C19">CRAWLER</text>
+  <text x="64" y="60" font-family="Inter, sans-serif" font-size="13.5" fill="#7C6E5C">Discovers and fetches URLs, identical to traditional search</text>
+
+  <circle cx="34" cy="122" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="120" font-family="'IBM Plex Mono', monospace" font-size="17" font-weight="500" fill="#1E1C19">CONTENT EXTRACTION</text>
+  <text x="64" y="142" font-family="Inter, sans-serif" font-size="13.5" fill="#7C6E5C">Strips boilerplate, isolates the real text</text>
+
+  <circle cx="34" cy="204" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="202" font-family="'IBM Plex Mono', monospace" font-size="17" font-weight="500" fill="#1E1C19">CHUNKING</text>
+  <text x="64" y="224" font-family="Inter, sans-serif" font-size="13.5" fill="#7C6E5C">Splits text into retrieval-sized units, no equivalent upstream</text>
+
+  <circle cx="34" cy="286" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="284" font-family="'IBM Plex Mono', monospace" font-size="17" font-weight="500" fill="#1E1C19">EMBEDDINGS</text>
+  <text x="64" y="306" font-family="Inter, sans-serif" font-size="13.5" fill="#7C6E5C">Vectorizes each chunk</text>
+
+  <circle cx="34" cy="368" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="366" font-family="'IBM Plex Mono', monospace" font-size="17" font-weight="500" fill="#1E1C19">VECTOR RETRIEVAL</text>
+  <text x="64" y="388" font-family="Inter, sans-serif" font-size="13.5" fill="#7C6E5C">Nearest-neighbor search against the query embedding</text>
+
+  <circle cx="34" cy="450" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="448" font-family="'IBM Plex Mono', monospace" font-size="17" font-weight="500" fill="#1E1C19">GROUNDING</text>
+  <text x="64" y="470" font-family="Inter, sans-serif" font-size="13.5" fill="#7C6E5C">Supplies chunks to the model as context</text>
+
+  <circle cx="34" cy="532" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="530" font-family="'IBM Plex Mono', monospace" font-size="17" font-weight="500" fill="#1E1C19">GENERATION</text>
+  <text x="64" y="552" font-family="Inter, sans-serif" font-size="13.5" fill="#7C6E5C">Model produces a response</text>
+
+  <circle cx="34" cy="614" r="14" fill="#1E1C19"/>
+  <text x="64" y="612" font-family="'IBM Plex Mono', monospace" font-size="17" font-weight="500" fill="#1E1C19">CITATION</text>
+  <text x="64" y="634" font-family="Inter, sans-serif" font-size="13.5" fill="#7C6E5C">Attributes claims back to source chunks, where implemented</text>
+
+  <line x1="0" y1="662" x2="660" y2="662" stroke="#A89A87" stroke-width="0.6" opacity="0.5"/>
+  <text x="0" y="688" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">The first stage is identical to traditional search. Everything after it diverges.</text>
+</svg>

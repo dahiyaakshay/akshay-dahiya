@@ -1,0 +1,23 @@
+<svg viewBox="0 0 660 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="660" height="500" fill="#F4EFE6"/>
+<text x="0" y="26" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" fill="#1E1C19">TYPICAL 2,000-WORD PAGE: PERPLEXITY</text>
+<text x="0" y="46" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">12% of page retrieved</text>
+<rect x="0" y="60" width="660" height="58" fill="#1E1C19" />
+<text x="20" y="84" font-family="'IBM Plex Mono', monospace" font-size="13.5" font-weight="500" fill="#F4EFE6">Introduction</text>
+<text x="20" y="104" font-family="Inter, sans-serif" font-size="11.5" fill="#D8CFC0">82% retrieved</text>
+<rect x="0" y="130" width="660" height="58" fill="#ECE5D8" stroke="#7C6E5C" stroke-width="1.2"/>
+<text x="20" y="154" font-family="'IBM Plex Mono', monospace" font-size="13.5" font-weight="500" fill="#1E1C19">First H2</text>
+<text x="20" y="174" font-family="Inter, sans-serif" font-size="11.5" fill="#7C6E5C">65% retrieved, mostly skipped</text>
+<rect x="0" y="200" width="660" height="58" fill="#ECE5D8" stroke="#7C6E5C" stroke-width="1.2"/>
+<text x="20" y="224" font-family="'IBM Plex Mono', monospace" font-size="13.5" font-weight="500" fill="#1E1C19">FAQ Block</text>
+<text x="20" y="244" font-family="Inter, sans-serif" font-size="11.5" fill="#7C6E5C">54% retrieved, mostly skipped</text>
+<rect x="0" y="270" width="660" height="58" fill="#ECE5D8" stroke="#7C6E5C" stroke-width="1.2"/>
+<text x="20" y="294" font-family="'IBM Plex Mono', monospace" font-size="13.5" font-weight="500" fill="#1E1C19">Table</text>
+<text x="20" y="314" font-family="Inter, sans-serif" font-size="11.5" fill="#7C6E5C">22% retrieved, mostly skipped</text>
+<rect x="0" y="340" width="660" height="58" fill="#ECE5D8" stroke="#7C6E5C" stroke-width="1.2"/>
+<text x="20" y="364" font-family="'IBM Plex Mono', monospace" font-size="13.5" font-weight="500" fill="#1E1C19">Middle Body</text>
+<text x="20" y="384" font-family="Inter, sans-serif" font-size="11.5" fill="#7C6E5C">19% retrieved, mostly skipped</text>
+<rect x="0" y="410" width="660" height="58" fill="#ECE5D8" stroke="#7C6E5C" stroke-width="1.2"/>
+<text x="20" y="434" font-family="'IBM Plex Mono', monospace" font-size="13.5" font-weight="500" fill="#1E1C19">Conclusion</text>
+<text x="20" y="454" font-family="Inter, sans-serif" font-size="11.5" fill="#7C6E5C">18% retrieved, mostly skipped</text>
+</svg>

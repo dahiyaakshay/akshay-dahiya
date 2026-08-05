@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="250" fill="#ECE5D8"/>
+  <g stroke="#A89A87" stroke-width="0.6" opacity="0.4">
+    <line x1="0" y1="62.5" x2="400" y2="62.5"/>
+    <line x1="0" y1="125" x2="400" y2="125"/>
+    <line x1="0" y1="187.5" x2="400" y2="187.5"/>
+    <line x1="100" y1="0" x2="100" y2="250"/>
+    <line x1="200" y1="0" x2="200" y2="250"/>
+    <line x1="300" y1="0" x2="300" y2="250"/>
+  </g>
+
+  <!-- left: whole page -->
+  <rect x="40" y="55" width="90" height="140" stroke="#1E1C19" stroke-width="1.3" fill="#F4EFE6"/>
+  <line x1="52" y1="75" x2="118" y2="75" stroke="#A89A87" stroke-width="1"/>
+  <line x1="52" y1="95" x2="118" y2="95" stroke="#A89A87" stroke-width="1"/>
+  <line x1="52" y1="115" x2="100" y2="115" stroke="#A89A87" stroke-width="1"/>
+  <line x1="52" y1="145" x2="118" y2="145" stroke="#A89A87" stroke-width="1"/>
+  <line x1="52" y1="165" x2="105" y2="165" stroke="#A89A87" stroke-width="1"/>
+
+  <!-- arrow -->
+  <line x1="150" y1="125" x2="220" y2="125" stroke="#7C6E5C" stroke-width="1.2" stroke-dasharray="2 3"/>
+  <path d="M210 118 L220 125 L210 132" stroke="#7C6E5C" stroke-width="1.2" fill="none"/>
+
+  <!-- right: isolated chunks -->
+  <rect x="245" y="60" width="115" height="26" stroke="#A89A87" stroke-width="1" fill="#ECE5D8"/>
+  <rect x="245" y="98" width="115" height="26" fill="#1E1C19"/>
+  <rect x="245" y="136" width="115" height="26" stroke="#A89A87" stroke-width="1" fill="#ECE5D8"/>
+  <rect x="245" y="174" width="115" height="26" stroke="#A89A87" stroke-width="1" fill="#ECE5D8"/>
+</svg>

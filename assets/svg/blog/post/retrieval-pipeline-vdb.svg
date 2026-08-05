@@ -1,0 +1,41 @@
+<svg viewBox="0 0 660 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="780" fill="#F4EFE6"/>
+
+  <line x1="34" y1="40" x2="34" y2="688" stroke="#A89A87" stroke-width="1.2" stroke-dasharray="3 5"/>
+
+  <circle cx="34" cy="40" r="14" fill="#1E1C19"/>
+  <text x="64" y="38" font-family="'IBM Plex Mono', monospace" font-size="16.5" font-weight="500" fill="#1E1C19">CRAWLER</text>
+
+  <circle cx="34" cy="112" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="110" font-family="'IBM Plex Mono', monospace" font-size="16.5" font-weight="500" fill="#1E1C19">CONTENT EXTRACTION</text>
+
+  <circle cx="34" cy="184" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="182" font-family="'IBM Plex Mono', monospace" font-size="16.5" font-weight="500" fill="#1E1C19">CHUNKING</text>
+
+  <circle cx="34" cy="256" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="254" font-family="'IBM Plex Mono', monospace" font-size="16.5" font-weight="500" fill="#1E1C19">EMBEDDINGS</text>
+
+  <!-- vector database: circle marker plus small cylinder icon to distinguish it as storage -->
+  <circle cx="34" cy="328" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <path d="M22 322 v8 a12 3 0 0 0 24 0 v-8 a12 3 0 0 0 -24 0 a12 3 0 0 0 24 0" stroke="#1E1C19" stroke-width="1" fill="none"/>
+  <text x="64" y="326" font-family="'IBM Plex Mono', monospace" font-size="16.5" font-weight="500" fill="#1E1C19">VECTOR DATABASE</text>
+  <text x="64" y="346" font-family="Inter, sans-serif" font-size="12.5" fill="#7C6E5C">Stores embeddings for fast lookup</text>
+
+  <circle cx="34" cy="418" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="416" font-family="'IBM Plex Mono', monospace" font-size="16.5" font-weight="500" fill="#1E1C19">SEMANTIC RETRIEVAL</text>
+
+  <circle cx="34" cy="490" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="488" font-family="'IBM Plex Mono', monospace" font-size="16.5" font-weight="500" fill="#1E1C19">GROUNDING</text>
+
+  <circle cx="34" cy="562" r="14" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="64" y="560" font-family="'IBM Plex Mono', monospace" font-size="16.5" font-weight="500" fill="#1E1C19">RESPONSE GENERATION</text>
+
+  <circle cx="34" cy="634" r="14" fill="#1E1C19"/>
+  <text x="64" y="632" font-family="'IBM Plex Mono', monospace" font-size="16.5" font-weight="500" fill="#1E1C19">CITATION</text>
+
+  <line x1="0" y1="670" x2="660" y2="670" stroke="#A89A87" stroke-width="0.6" opacity="0.5"/>
+  <text x="0" y="696" font-family="Inter, sans-serif" font-size="13" fill="#7C6E5C">
+    <tspan x="0" dy="0">Google names retrieval-augmented generation directly as the</tspan>
+    <tspan x="0" dy="18">technique behind AI Overviews, layered on its existing index.</tspan>
+  </text>
+</svg>

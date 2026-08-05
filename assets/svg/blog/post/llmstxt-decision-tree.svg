@@ -1,0 +1,58 @@
+<svg viewBox="0 0 660 660" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="660" height="660" fill="#F4EFE6"/>
+
+  <!-- root question -->
+  <rect x="0" y="0" width="660" height="70" stroke="#1E1C19" stroke-width="1.6" fill="#F4EFE6"/>
+  <text x="20" y="30" font-family="Inter, sans-serif" font-size="15.5" fill="#1E1C19">
+    <tspan x="20" dy="0">Do you publish API docs, SDKs or</tspan>
+    <tspan x="20" dy="21">developer documentation?</tspan>
+  </text>
+
+  <!-- guide line down the left -->
+  <line x1="14" y1="70" x2="14" y2="620" stroke="#A89A87" stroke-width="1" stroke-dasharray="3 4"/>
+
+  <!-- YES branch: coding agents question -->
+  <text x="30" y="98" font-family="'IBM Plex Mono', monospace" font-size="12.5" fill="#7C6E5C">IF YES ↓</text>
+  <rect x="30" y="106" width="600" height="64" stroke="#1E1C19" stroke-width="1.3" fill="#F4EFE6"/>
+  <text x="46" y="132" font-family="Inter, sans-serif" font-size="14.5" fill="#1E1C19">
+    <tspan x="46" dy="0">Do your users rely on coding agents</tspan>
+    <tspan x="46" dy="20">like Cursor or Claude Code?</tspan>
+  </text>
+
+  <!-- leaf: build one (recommended) -->
+  <text x="60" y="196" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#7C6E5C">IF YES ↓</text>
+  <rect x="60" y="204" width="580" height="58" stroke="#1E1C19" stroke-width="1.8" fill="#1E1C19"/>
+  <text x="76" y="228" font-family="Inter, sans-serif" font-size="14" fill="#F4EFE6">
+    <tspan x="76" dy="0">Build a curated llms.txt.</tspan>
+    <tspan x="76" dy="19">This is the confirmed use case.</tspan>
+  </text>
+
+  <!-- leaf: optional -->
+  <text x="60" y="284" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#7C6E5C">IF NO ↓</text>
+  <rect x="60" y="292" width="580" height="46" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+  <text x="76" y="320" font-family="Inter, sans-serif" font-size="14" fill="#3C3730">Optional. Low cost, unproven benefit.</text>
+
+  <!-- NO branch: Google visibility question -->
+  <text x="30" y="368" font-family="'IBM Plex Mono', monospace" font-size="12.5" fill="#7C6E5C">IF NO ↓</text>
+  <rect x="30" y="376" width="600" height="64" stroke="#1E1C19" stroke-width="1.3" fill="#F4EFE6"/>
+  <text x="46" y="402" font-family="Inter, sans-serif" font-size="14.5" fill="#1E1C19">
+    <tspan x="46" dy="0">Is your primary goal Google Search /</tspan>
+    <tspan x="46" dy="20">AI Overview visibility?</tspan>
+  </text>
+
+  <!-- leaf: skip it -->
+  <text x="60" y="466" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#7C6E5C">IF YES ↓</text>
+  <rect x="60" y="474" width="580" height="58" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+  <text x="76" y="498" font-family="Inter, sans-serif" font-size="14" fill="#3C3730">
+    <tspan x="76" dy="0">Skip it. Invest in content quality,</tspan>
+    <tspan x="76" dy="19">schema and E-E-A-T instead.</tspan>
+  </text>
+
+  <!-- leaf: low priority -->
+  <text x="60" y="554" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#7C6E5C">IF NO ↓</text>
+  <rect x="60" y="562" width="580" height="58" stroke="#7C6E5C" stroke-width="1.2" fill="#ECE5D8"/>
+  <text x="76" y="586" font-family="Inter, sans-serif" font-size="14" fill="#3C3730">
+    <tspan x="76" dy="0">Low priority. Fine as cheap</tspan>
+    <tspan x="76" dy="19">insurance, not a strategy.</tspan>
+  </text>
+</svg>
