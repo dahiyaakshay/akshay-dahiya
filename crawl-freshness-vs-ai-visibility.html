@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-E6JLR8VFSJ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R_WP001: Crawl Freshness vs AI Visibility / Akshay Dahiya</title>
+<meta name="description" content="A six-month benchmark across seven AI platforms and 14,000 prompts. Median first-citation latency was 14 days. Authority beat freshness as a retrieval signal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://akshaydahiya.site/crawl-freshness-vs-ai-visibility.html"
+  },
+  "headline": "R_WP001: Crawl Freshness vs AI Visibility",
+  "description": "A six-month benchmark across seven AI platforms and 14,000 prompts. Median first-citation latency was 14 days. Authority beat freshness as a retrieval signal.",
+  "datePublished": "2026-05-01",
+  "author": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "publisher": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "GEO Retrieval Research Series"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="grid-overlay" id="gridOverlay"></div>
+
+<header>
+  <div class="wordmark"><a href="index.html" style="color:inherit;">Akshay Dahiya <span class="mono">/ AD</span></a></div>
+  <div class="nav-wrap" id="navWrap">
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mailto:akshaydahiya92.ad@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://github.com/dahiyaakshay/marketing-skills" target="_blank" rel="noopener" class="btn-install">Install Skills</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navWrap">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main class="wrap">
+
+  <a href="research.html" class="post-back mono">← Back to research</a>
+
+  <div class="post-layout">
+
+    <!-- TABLE OF CONTENTS -->
+    <aside class="post-toc">
+      <div class="toc-inner">
+        <span class="mono toc-label">On This Page</span>
+        <nav class="toc-nav" id="tocNav">
+          <a href="#top" class="toc-link toc-h1">Crawl Freshness vs AI Visibility</a>
+          <a href="#executive-summary" class="toc-link toc-h2">01 / Executive Summary</a>
+          <a href="#methodology" class="toc-link toc-h2">02 / Methodology</a>
+          <a href="#how-measured" class="toc-link toc-h2">03 / How the Data Was Measured</a>
+          <a href="#key-findings" class="toc-link toc-h2">04 / Key Findings</a>
+          <a href="#engine-analysis" class="toc-link toc-h2">05 / Engine-by-Engine Analysis</a>
+          <a href="#retrieval-latency" class="toc-link toc-h2">06 / Retrieval Latency</a>
+          <a href="#freshness-signals" class="toc-link toc-h2">07 / Content Freshness Signals</a>
+          <a href="#authority-signals" class="toc-link toc-h2">08 / Authority and Crawl Signals</a>
+          <a href="#recommendations" class="toc-link toc-h2">09 / Recommendations</a>
+          <a href="#frameworks" class="toc-link toc-h2">10 / Practical Frameworks</a>
+          <a href="#glossary" class="toc-link toc-h2">11 / Glossary</a>
+          <a href="#limitations" class="toc-link toc-h2">12 / Limitations</a>
+          <a href="#conclusion" class="toc-link toc-h2">13 / Conclusion</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="post-content">
+      <div class="post-meta-header mono">R_WP001 <span class="sep">/</span> GEO Retrieval Research Series <span class="sep">/</span> Dec 2025 to May 2026</div>
+
+      <h1 id="top" class="display">Crawl Freshness vs AI Visibility</h1>
+
+      <p class="post-lede">How quickly do updated pages begin appearing in AI-generated answers? A six-month benchmark across seven AI search and answer engines.</p>
+
+      <div class="stat-strip">
+        <div class="stat-block"><span class="num">6</span><span class="lbl">MONTHS STUDIED</span></div>
+        <div class="stat-block"><span class="num">7</span><span class="lbl">AI PLATFORMS</span></div>
+        <div class="stat-block"><span class="num">14,000</span><span class="lbl">TOTAL PROMPTS</span></div>
+        <div class="stat-block"><span class="num">67,200</span><span class="lbl">CITATIONS COLLECTED</span></div>
+      </div>
+
+      <p>Contrary to assumptions common in the GEO community, publishing or updating content does not produce immediate citation by AI systems. The median first-citation latency, blended across all seven platforms, was 14 days (most results fell between 9 and 21 days); high authority sped up retrieval substantially on most platforms, but not enough to offset the slowest ones. AI engines showed consistent preference for content approximately five months old, suggesting a recency sweet spot rather than a preference for either very new or evergreen-aged content. Citation behaviour was dynamic rather than fixed: 34% of citations (with most results between 28% and 41%) changed during repeated testing of identical prompts.</p>
+
+      <h2 id="executive-summary">01 / Executive Summary</h2>
+      <p><strong>Fresh content does not guarantee fast AI visibility.</strong></p>
+      <p>This research investigates the relationship between crawl freshness, content updates, and AI visibility across seven leading AI search and answer engines over a six-month period from December 2025 to May 2026. Contrary to assumptions common in the GEO community, publishing or updating content does not produce immediate citation by AI systems. Blended across all seven platforms, the median first-citation latency was 14 days (most results fell between 9 and 21 days). This blend masks a wide spread: high-authority sites saw first citation within a day or two on real-time platforms like Google AI Overviews and Perplexity, while the same high-authority sites still waited weeks to months on training-dependent platforms like Claude and Qwen. This study did not build a full authority-tier breakdown for Claude and Qwen the way it did for Google, Perplexity, and ChatGPT (see Section 08), so the observation that authority moves the needle less for these two platforms is qualitative rather than tier-quantified. Section 08 breaks down latency by authority tier and platform for the three engines it was measured on.</p>
+      <p>AI engines showed consistent preference for content approximately five months old, suggesting a recency sweet spot rather than a preference for either very new or evergreen-aged content. Citation behaviour was dynamic rather than fixed: 34% of citations (with most results between 28% and 41%) changed during repeated testing of identical prompts. Only 36.5% of citations pointed to unique URLs, confirming that AI systems repeatedly circulate a small pool of trusted pages rather than distributing coverage broadly.</p>
+      <p>Website authority, internal linking density, and crawl accessibility were stronger predictors of retrieval speed than publish date alone. Updating existing high-authority pages consistently outperformed publishing new pages in achieving fast AI visibility.</p>
+      <p>This benchmark tracked 14,000 prompts across all seven major AI platforms at once, over six months, with the same content monitored daily. That combination, same content, same time window, every major engine, measured every day, is what lets the numbers in this paper be compared directly against each other instead of guessed at.</p>
+
+      <h2 id="methodology">02 / Methodology</h2>
+      <p><strong>Study design and data collection.</strong></p>
+      <p>This benchmark ran from December 2025 through May 2026, evaluating seven AI platforms using an identical prompt distribution to ensure cross-platform comparability. Daily monitoring covered 50 websites, with each platform receiving 2,000 prompts drawn from three industries and three distinct query intent categories.</p>
+
+      <p><strong>Dataset Overview</strong></p>
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>Study Duration</td><td>6 Months</td></tr>
+            <tr><td>Research Period</td><td>Dec 2025 to May 2026</td></tr>
+            <tr><td>AI Platforms</td><td>7</td></tr>
+            <tr><td>Total Prompts</td><td>14,000</td></tr>
+            <tr><td>Total Citations</td><td>67,200</td></tr>
+            <tr><td>Unique URLs</td><td>24,500</td></tr>
+            <tr><td>Unique Domains</td><td>5,840</td></tr>
+            <tr><td>Avg Citations / Response</td><td>4.8</td></tr>
+            <tr><td>Median Citations</td><td>4.0</td></tr>
+            <tr><td>First Citation Latency</td><td>14 Days</td></tr>
+            <tr><td>Median Content Age</td><td>5 Months</td></tr>
+            <tr><td>Updated Pages Monitored</td><td>400</td></tr>
+            <tr><td>Citation Replacement Rate</td><td>34%</td></tr>
+            <tr><td>Repeated Prompt Runs</td><td>4,800</td></tr>
+            <tr><td>Websites Included</td><td>50</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Website Selection</strong></p>
+      <p>50 websites were monitored, enough to see real patterns across small, mid-size, and large sites, but few enough to track daily in real depth. They were split into four groups so the results wouldn't be skewed toward one type of site:</p>
+      <ul>
+        <li><strong>Authority range.</strong> 17 high-authority sites (each with 10,000+ referring domains), 17 mid-authority sites (each with 1,000 to 10,000 referring domains), and 16 low-authority sites (each with fewer than 1,000 referring domains).</li>
+        <li><strong>CMS diversity.</strong> Sites running on WordPress, Webflow, custom builds, and headless CMS architectures were included to avoid CMS-specific bias in crawl behaviour.</li>
+        <li><strong>Industry coverage.</strong> Sites were drawn proportionally from the three study industries: SaaS, Digital Marketing, and E-commerce.</li>
+        <li><strong>Update frequency.</strong> Sites were selected to include a range of publishing cadences, from daily publishers to sites updated quarterly, so that the update-vs-publish comparison had sufficient variation to analyse.</li>
+      </ul>
+
+      <p><strong>Platforms Evaluated</strong></p>
+      <p>All seven received an identical prompt distribution to keep the comparison fair: ChatGPT, Google AI Overviews, Perplexity, Gemini, Claude, Microsoft Copilot, and Qwen.</p>
+
+      <p><strong>Industry and Intent Distribution</strong></p>
+      <p>Prompts were distributed across three industries: SaaS &amp; Software (7,000 total prompts, 1,000 per platform), Digital Marketing (3,500 total, 500 per platform), and E-commerce (3,500 total, 500 per platform). Three intent categories were used: Commercial, Analytics, and Opinion. These were selected because they consistently trigger AI-generated answers that synthesize multiple external sources.</p>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp001/chart-prompt-distribution.svg" alt="Bar chart of prompt distribution by industry: SaaS and Software 7,000 prompts, Digital Marketing 3,500, E-commerce 3,500." width="660" height="340">
+        <span class="post-figure-caption mono">14,000 total prompts, split proportionally across three industries.</span>
+      </div>
+
+      <p><strong>Evaluation Metrics</strong></p>
+      <p>Each AI response was evaluated across eight dimensions: citation frequency, citation diversity, citation replacement rate, first-citation latency, median content age, domain diversity, cross-platform citation overlap, and platform-specific retrieval behaviour.</p>
+
+      <h2 id="how-measured">03 / How the Data Was Measured</h2>
+      <p><strong>The short version, in plain terms.</strong></p>
+      <p>We used medians (the middle value, not the average) for latency and content age, because a handful of extremely slow or extremely fast pages would otherwise throw off an average and make the numbers look worse, or better, than what most pages actually experienced. Citation counts per response are shown as both average and median (see Finding 05), because in that case the two numbers were close enough that showing both told a more complete story.</p>
+      <p>Before counting anything, we cleaned up the citation URLs, different formats of the same web address (with or without "www," trailing slashes, etc.) were treated as one, and if the same link appeared twice in a single AI answer it only counted once. First-citation latency is the number of days between a page going live or being updated and it first showing up as a source in any AI answer. Content age was measured the same way, in days, then grouped into the month ranges you'll see throughout this paper (e.g. "3-5 mo") for readability.</p>
+      <p>For the citation replacement number, we ran 4,800 prompts at least twice each and compared how much overlap there was between the sources cited each time. If a source showed up in the first answer but not the second, that counted as "replaced."</p>
+      <p><strong>What "IQR" means.</strong> You'll see ranges written like "(IQR: 9 to 21 days)" throughout this paper. That's just shorthand for "most results fell somewhere in this window," the extreme outliers on both ends are set aside so one unusual page doesn't distort the picture.</p>
+
+      <p><strong>Research workflow.</strong> The following diagram shows how raw prompts moved through the pipeline to produce the final citation dataset.</p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp001/flow-research-workflow.svg" alt="Research workflow: 14,000 prompts across 7 AI engines produced 67,200 citations extracted, normalized to 24,500 unique URLs across 5,840 unique domains, with 400 updated pages monitored and 4,800 repeated runs feeding final analysis and metrics." width="660" height="618">
+        <span class="post-figure-caption mono">From 14,000 prompts to a final, comparable dataset.</span>
+      </div>
+
+      <p><strong>Data processing pipeline.</strong> Each individual citation went through the following processing steps before entering analysis.</p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp001/flow-data-processing-pipeline.svg" alt="Eight step data processing pipeline: prompt submission, response collection, citation extraction, URL normalization, duplicate removal, latency calculation, cross-engine comparison, metric generation." width="660" height="618">
+        <span class="post-figure-caption mono">Every citation passed through the same eight steps before analysis.</span>
+      </div>
+
+      <h2 id="key-findings">04 / Key Findings</h2>
+      <p><strong>Nine findings that reframe AI freshness strategy.</strong></p>
+      <ul>
+        <li><strong>Finding 01: 14 days (IQR: 9 to 21 days). Median first citation latency.</strong> Fresh pages rarely achieve AI visibility immediately. Blended across all seven platforms tracked, the median time from publish or update to first citation was 14 days (IQR: 9 to 21 days). This blended figure hides a wide split by platform: high-authority sites were cited within a day or two on real-time platforms (see Section 08), but the same sites still waited weeks to months on training-dependent platforms like Claude and Qwen, which pulls the overall median up substantially. This is an observed pattern rather than a tier-quantified one, since Claude and Qwen weren't part of the authority-tier breakdown in Section 08. Successful crawling, indexing, and retrieval all need to occur before citation is possible.</li>
+        <li><strong>Finding 02: 36.5% unique URLs, 4.2 pages per domain. Citation coverage is concentrated, not broad.</strong> Observed: only 36.5% of citations pointed to unique URLs. Across 5,840 unique domains generating 24,500 cited URLs, the average was 4.2 pages cited per domain. AI engines repeatedly recirculate a narrow pool of trusted pages rather than distributing citation coverage broadly. One possible explanation: AI retrieval systems may apply heavy domain-level trust weighting, so that once a domain enters the citation pool, multiple pages from it get surfaced repeatedly.</li>
+        <li><strong>Finding 03: 34% (IQR: 28 to 41%). Citation replacement rate.</strong> Across 4,800 repeated prompt runs, 34% of citations (IQR: 28 to 41%) changed between executions of the same prompt. AI visibility is dynamic rather than fixed, which means monitoring needs to be ongoing to accurately measure citation presence.</li>
+        <li><strong>Finding 04: 5 months (IQR: 3 to 7 months). Median age of cited content.</strong> AI systems consistently preferred pages approximately five months old. This suggests a recency sweet spot: content recent enough to appear fresh but established enough to have accumulated authority signals.</li>
+        <li><strong>Finding 05: Median 4.0 (IQR: 3 to 6), average 4.8. Citations per response.</strong> Citation counts were consistent across all platforms tested. This relatively narrow range suggests AI engines converge on a similar quantity of sources per synthesized answer, regardless of retrieval architecture.</li>
+        <li><strong>Finding 06: Update greater than Publish. Refreshing outperforms publishing new.</strong> Observed: updating an existing page on a high-authority domain consistently achieved faster citation visibility than publishing a new page on the same domain. One possible explanation: existing authority signals, internal link equity, and prior crawl history may accelerate retrieval for updated content. This study did not isolate individual variables, so no single cause can be confirmed.</li>
+        <li><strong>Finding 07: Not equal. Freshness weight varies significantly by engine.</strong> Content freshness mattered far more for real-time retrieval engines like Perplexity than for training-heavy models like Claude and Qwen. Platform retrieval architecture appears to be the primary determinant of how much freshness influences citation speed.</li>
+        <li><strong>Finding 08: Authority greater than Freshness. Authority outweighs freshness as a retrieval signal.</strong> Observed: high-authority domains achieved first citation faster than low-authority domains regardless of publish date. A new page on a high-authority domain was cited before an equivalently fresh page on a low-authority domain in nearly every case tracked. One possible explanation: AI crawlers may inherit prioritization signals from existing search indices, where authority has always outweighed recency for crawl scheduling.</li>
+        <li><strong>Finding 09: 10+ links. Internal linking density reduces latency.</strong> Observed: pages receiving 10 or more internal links from high-traffic pages were cited faster than pages with fewer than 3 internal links, even on the same domain. One possible explanation: internal link density may signal page importance to AI crawlers in a similar way it signals crawl priority to traditional search engine bots. This was observed but not causally isolated.</li>
+      </ul>
+
+      <h2 id="engine-analysis">05 / Engine-by-Engine Analysis</h2>
+      <p><strong>Platform retrieval profiles.</strong></p>
+      <p>Each of the seven platforms evaluated operates on a distinct retrieval architecture. These architectural differences, not content quality alone, are the primary determinant of how quickly updated content achieves AI citation visibility.</p>
+      <p>The latency estimates below reflect mid-authority sites specifically (sites with 1,000 to 10,000 referring domains, as defined in Section 02), the same slice of the 400 monitored pages shown in the chart in Section 06. See Section 08 for how these figures shift across the full high, mid, and low authority range.</p>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Engine</th><th>Retrieval Model</th><th>Freshness Sensitivity</th><th>Est. Latency (Mid-Authority)</th><th>Speed</th></tr></thead>
+          <tbody>
+            <tr><td>Perplexity</td><td>Continuous live crawl</td><td>Very High</td><td>2-5 days</td><td>Fastest</td></tr>
+            <tr><td>Google AI Overviews</td><td>Real-time index (Googlebot)</td><td>Very High</td><td>3-7 days</td><td>Very Fast</td></tr>
+            <tr><td>Gemini</td><td>Google index + training blend</td><td>High</td><td>3-10 days</td><td>Fast</td></tr>
+            <tr><td>Microsoft Copilot</td><td>Bing index + live retrieval</td><td>High</td><td>4-12 days</td><td>Fast</td></tr>
+            <tr><td>ChatGPT</td><td>Bing index + training data</td><td>Medium</td><td>10-18 days</td><td>Moderate</td></tr>
+            <tr><td>Claude</td><td>Training data (periodic updates)</td><td>Low</td><td>Weeks to months</td><td>Slow</td></tr>
+            <tr><td>Qwen</td><td>Training data (periodic updates)</td><td>Low</td><td>Weeks to months</td><td>Slow</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Perplexity.</strong> Perplexity's continuous live crawling pipeline produced the fastest retrieval behaviour among mid-authority sites. Its live crawl means content updates appeared in Perplexity citations within 2 to 5 days across the monitored domain set.</p>
+      <p><strong>Google AI Overviews.</strong> A close second for mid-authority sites, and the fastest platform once a site reaches high authority (see Section 08), because AI Overviews are grounded directly in Google's own search index, sites with strong organic standing get pulled in fastest.</p>
+      <p><strong>Gemini.</strong> Blends Google's search index with its own training data. High-authority pages with existing Google organic rankings moved into Gemini citations faster than pages without organic presence, the same SEO foundations that help in Google Search carry over here.</p>
+      <p><strong>Microsoft Copilot.</strong> Runs on similar logic to Gemini but grounded in Bing instead of Google. Sites with strong Bing rankings, which don't always match their Google rankings, saw faster citation speeds, worth checking Bing visibility separately, not just Google.</p>
+      <p><strong>ChatGPT.</strong> The most variable of the live-index engines: latency ranged from 5 days on high-authority sites to 21-plus days on low-authority ones. Commercial-intent prompts got faster citation than analytical or opinion prompts, suggesting ChatGPT retrieves differently depending on what the user is trying to do.</p>
+      <p><strong>Claude and Qwen.</strong> Both pull primarily from training data rather than live web retrieval, which is why they're the slowest and least freshness-sensitive of the seven. The main lever here isn't publishing faster, it's building the kind of authority and citation presence that gets picked up whenever the model is next retrained.</p>
+
+      <p><strong>Estimated Median Retrieval Latency by Platform (Days)</strong></p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp001/chart-latency-by-platform.svg" alt="Horizontal bar chart of estimated median retrieval latency by platform for mid-authority sites: Perplexity about 3.5 days, Google AI Overviews about 5 days, Gemini about 6.5 days, Microsoft Copilot about 8 days, ChatGPT about 14 days, Claude weeks or more, Qwen weeks or more." width="660" height="380">
+        <span class="post-figure-caption mono">Real-time retrieval engines cluster under 10 days. Training-dependent engines don't.</span>
+      </div>
+
+      <h2 id="retrieval-latency">06 / Retrieval Latency</h2>
+      <p><strong>The race to first citation.</strong></p>
+      <p>The following visualization maps estimated first-citation latency across all seven platforms relative to the 14-day median recorded overall. Bars represent the midpoint of the observed latency range for mid-authority sites (sites with 1,000 to 10,000 referring domains).</p>
+      <p><strong>What drives latency reduction.</strong></p>
+      <p>Across the 400 pages monitored, three variables showed the strongest correlation with reduced first-citation latency: domain authority (measured by referring domain count and historical citation volume), crawl accessibility (clean HTML, no JavaScript-gated content, open robots.txt for AI bots), and internal link density pointing to the updated page, see Finding 09 for the specific numbers. Crawl accessibility here is the same gating concern covered from the traditional-SEO side in <a href="crawl-budget-vs-retrieval-readiness.html">the site's research on crawl budget versus retrieval readiness</a>.</p>
+
+      <h2 id="freshness-signals">07 / Content Freshness Signals</h2>
+      <p><strong>The three-to-seven-month recency plateau.</strong></p>
+      <p>One of the more counterintuitive patterns in the data was the consistent preference AI systems showed for pages between three and seven months old, with a median around five months. The expectation that the very newest content would be most frequently cited was not supported by the data.</p>
+      <p>This pattern held across six of the seven platforms studied, with Perplexity being the exception due to its real-time crawl architecture, which showed less preference for a specific content age and instead prioritized recency more linearly.</p>
+      <p><strong>What counts as a meaningful update.</strong></p>
+      <p>A key operational finding from monitoring 400 pages: changing only the publish date or making cosmetic edits did not accelerate citation speed. Pages that received substantive updates (new statistics, revised claims, expanded sections, or updated references) achieved faster retrieval than pages where only the date metadata was altered.</p>
+      <p>This has direct implications for content refresh strategy. Refreshing a page solely to signal recency to AI systems is not effective. The update needs to contain meaningful informational change that an AI retrieval system can distinguish from the prior version of the page.</p>
+
+      <p><strong>Content Age at Time of Citation (Month Distribution)</strong></p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp001/chart-content-age-distribution.svg" alt="Bar chart of content age at time of citation: under 1 month 4%, 1 to 2 months 8%, 2 to 3 months 13%, 3 to 5 months 22%, 5 to 7 months 28%, 7 to 12 months 16%, over 12 months 9%. The 5 to 7 month bucket peaks." width="660" height="340">
+        <span class="post-figure-caption mono">The 5 to 7 month bucket peaks. Neither the newest nor oldest content wins.</span>
+      </div>
+
+      <h2 id="authority-signals">08 / Authority and Crawl Signals</h2>
+      <p><strong>Authority is the primary retrieval accelerant.</strong></p>
+      <p>Across all seven platforms studied, website authority, approximated by referring domain count, citation history, and organic traffic volume, was the single strongest predictor of retrieval speed. High-authority sites achieved first citation on Google AI Overviews within 24 hours; low-authority sites on the same platform waited 7 or more days for identical content quality, and often longer.</p>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Authority Tier</th><th>Referring Domains (approx)</th><th>Google AI Overviews Latency</th><th>Perplexity Latency</th><th>ChatGPT Latency</th></tr></thead>
+          <tbody>
+            <tr><td>High Authority</td><td>10,000+</td><td>24-72 hrs</td><td>1-2 days</td><td>5-10 days</td></tr>
+            <tr><td>Mid Authority</td><td>1,000-10,000</td><td>3-7 days</td><td>2-5 days</td><td>10-18 days</td></tr>
+            <tr><td>Low Authority</td><td>Under 1,000</td><td>7-30+ days</td><td>5-14 days</td><td>21+ days</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Technical crawl signals.</strong></p>
+      <p>Beyond domain authority, three technical signals consistently appeared in pages with faster retrieval latency across the monitored pages:</p>
+      <ul>
+        <li><strong>robots.txt permissiveness.</strong> Pages on domains that explicitly permitted AI crawl bots (GPTBot, ClaudeBot, PerplexityBot, GoogleOther) achieved faster citation appearance than equivalent pages that relied on the default of not blocking, even when the latter were technically accessible.</li>
+        <li><strong>Clean semantic HTML.</strong> Pages with well-formed heading hierarchies, meaningful meta descriptions, and structured data markup (Article, FAQPage, Product schema) were retrieved and cited faster than pages with equivalent content delivered via heavy JavaScript frameworks without server-side rendering.</li>
+        <li><strong>Internal linking density.</strong> Pages with more links pointing to them from high-traffic pages on the same domain showed measurably faster citation speeds (see Finding 09), suggesting that crawl prioritization signals from internal link equity carry over to AI retrieval systems.</li>
+      </ul>
+
+      <h2 id="recommendations">09 / Recommendations</h2>
+      <p><strong>Seven strategies for faster AI citation.</strong></p>
+      <p>The following recommendations are derived directly from the findings above and ranked by their observed impact on retrieval latency reduction across the pages monitored.</p>
+      <ol>
+        <li><strong>Refresh existing high-authority pages before creating new ones.</strong> Updated pages on established domains consistently achieved faster AI citation than new pages on the same domain. Recommendation: prioritize refresh cycles on your highest-authority content before investing in new URL creation.</li>
+        <li><strong>Publish meaningful content updates, not date-only changes.</strong> Date metadata changes without substantive informational updates did not measurably accelerate retrieval latency in this testing. Updates need to include new statistics, revised claims, expanded sections, or updated references to trigger faster re-indexing and citation.</li>
+        <li><strong>Ensure AI crawler access in robots.txt.</strong> Explicitly permit GPTBot, ClaudeBot, PerplexityBot, and GoogleOther in your robots.txt. In this data, pages on domains with explicit AI bot permissions showed faster retrieval latency than those relying on implicit access.</li>
+        <li><strong>Place concise answer blocks in the first 120 words.</strong> Pages that led with a direct, self-contained answer to the likely query achieved faster extraction and citation across all seven platforms tested. AI systems extract openings, not conclusions. Bury the answer and the page becomes harder to cite.</li>
+        <li><strong>Separate quarterly reviews from substantive refreshes.</strong> The three-to-seven-month plateau identified in this study means pages need time to age into their most citable window, refreshing too often resets that clock before a page gets there. Review high-priority pages quarterly to catch anything outdated, but hold off on a substantive update (new statistics, revised claims, expanded sections) until a page is approaching 3 to 7 months old. Cosmetic date changes alone do not accelerate citation speed (see Section 07), so a review that finds nothing meaningfully outdated should result in no update at all.</li>
+        <li><strong>Strengthen internal linking to target pages.</strong> Pages receiving 10 or more internal links from high-traffic pages on the same domain showed faster citation speeds in this monitoring. Prioritize internal link building to pages you want to surface in AI-generated answers.</li>
+        <li><strong>Monitor AI citations continuously, not as a periodic audit.</strong> The 34% citation replacement rate observed across repeated prompt runs confirms that AI visibility is a dynamic, not static, state. One-time audits miss the ongoing churn. Continuous monitoring is what you need to accurately understand citation presence and respond to replacement events.</li>
+      </ol>
+
+      <h2 id="frameworks">10 / Practical Frameworks</h2>
+      <p><strong>Strategy by site type.</strong></p>
+      <p>Based on the observed data, the optimal AI visibility strategy differs depending on where a site currently sits in terms of authority. The following two frameworks describe realistic paths to AI citation visibility for different starting positions.</p>
+
+      <p><strong>High-authority site framework</strong></p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp001/flow-high-authority-framework.svg" alt="High authority site framework: identify high-value pages, review quarterly and refresh substantively later, verify AI crawler access, achieve AI citation visibility, then monitor citations continuously." width="660" height="396">
+        <span class="post-figure-caption mono">For sites that already have authority: refresh, verify access, and monitor.</span>
+      </div>
+
+      <p><strong>New or low-authority site framework.</strong> For sites without established authority, the path to AI citation is longer. The optimisation horizon is measured in months, not days.</p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp001/flow-low-authority-framework.svg" alt="New or low authority site framework: publish answer-first content, build internal linking density, earn external links, build domain authority over time, then achieve AI citation visibility." width="660" height="396">
+        <span class="post-figure-caption mono">For sites building from zero: the path runs through authority first.</span>
+      </div>
+
+      <h2 id="glossary">11 / Glossary</h2>
+      <p><strong>Definitions used in this study.</strong></p>
+      <p>The following terms are used with specific meanings throughout this paper, kept short, and limited to the ones that actually need explaining rather than every term that appears.</p>
+      <dl>
+        <dt>Retrieval Latency</dt>
+        <dd>The delay between a page being published or updated and that page appearing as a citation inside an AI-generated response. Measured in days from update date to first citation date.</dd>
+        <dt>AI Visibility</dt>
+        <dd>The likelihood that a given page is retrieved and cited by an AI search or answer engine in response to a relevant prompt. Higher AI visibility means more frequent citation appearances across more prompts and platforms.</dd>
+        <dt>Citation Replacement</dt>
+        <dd>The event in which a URL that appeared as a citation in one execution of a prompt does not appear in a subsequent execution of the same prompt. The citation replacement rate is the proportion of citations that were replaced across all repeated prompt pairs.</dd>
+        <dt>IQR (Interquartile Range)</dt>
+        <dd>Shorthand you'll see throughout this paper, like "(IQR: 9 to 21 days)." It means "most results fell in this window," with extreme outliers set aside so they don't distort the picture.</dd>
+        <dt>Referring Domain</dt>
+        <dd>A unique external domain that has at least one hyperlink pointing to a monitored site. This is a backlink metric describing a monitored site's own authority, and is not the same as "Unique Domains" elsewhere in this study, which counts the distinct domains that AI engines cited as sources across the whole dataset (5,840 total).</dd>
+        <dt>Domain Authority Tier</dt>
+        <dd>A categorical grouping used in this study: high authority (sites with 10,000+ referring domains), mid authority (sites with 1,000 to 10,000 referring domains), and low authority (sites with fewer than 1,000 referring domains). Based on each site's referring domain count at time of study.</dd>
+      </dl>
+
+      <h2 id="limitations">12 / Limitations</h2>
+      <p><strong>Scope boundaries and caveats.</strong></p>
+      <p>The following limitations apply to these findings and should be considered when generalizing results to other contexts.</p>
+      <ul>
+        <li><strong>Language.</strong> English-language queries only. Results may differ across other languages, particularly for engines with strong regional training data such as Qwen.</li>
+        <li><strong>Industries.</strong> Three industries studied: SaaS, Digital Marketing, and E-commerce. Citation behaviour in other verticals such as Healthcare, Finance, or Legal may differ significantly.</li>
+        <li><strong>Intent Types.</strong> Three query intents: Commercial, Analytics, and Opinion. Informational and navigational intents were not studied and may produce different retrieval latency patterns.</li>
+        <li><strong>Geography.</strong> All testing was conducted from San Diego, California, USA. AI system behaviour, particularly for Gemini and Qwen, may vary by geographic region due to localized retrieval configurations.</li>
+        <li><strong>Time Window.</strong> Daily observations ran over six months. Model updates, crawler configuration changes, or retrieval architecture changes made after May 2026 are not reflected in these findings.</li>
+        <li><strong>Platform Evolution.</strong> All seven AI platforms are under active development. Citation behaviour, retrieval latency, and freshness sensitivity may shift materially as models are updated or retrieval pipelines are reconfigured after this study period.</li>
+        <li><strong>AI Non-Determinism.</strong> AI responses are non-deterministic. Repeated executions of the same prompt may produce different citations even under identical conditions. This is not a flaw in the methodology but a property of the systems studied, and it directly supports the 34% citation replacement rate measured.</li>
+      </ul>
+
+      <h2 id="conclusion">13 / Conclusion</h2>
+      <p><strong>AI visibility rewards the patient and the prepared.</strong></p>
+      <p>The core message of this research is that AI visibility does not respond to publishing. It responds to a combination of authority, technical accessibility, meaningful content quality, and time. Anyone approaching AI citation as an immediate outcome of content publication will consistently be disappointed.</p>
+      <p>The 14-day median first-citation latency, the 34% citation replacement rate, and the consistent preference for five-month-old content all point to the same conclusion: AI retrieval systems reward the prepared rather than the new. A domain with deep authority, clean technical infrastructure, and regularly refreshed content will achieve faster and more stable AI citation than a domain publishing new pages at high frequency without those foundations.</p>
+      <p>The divergence between real-time retrieval engines (Google AI Overviews, Perplexity) and training-dependent engines (Claude, Qwen) has clear strategic implications. If you are targeting fast AI visibility, prioritize the engines with live retrieval pipelines and calibrate your content update strategy to those platforms' refresh cycles. For training-dependent engines, the optimisation horizon is longer, focusing on building the kind of authoritative presence that will be captured in future training data updates. Once a page is reliably retrieved, how much of it actually gets used is a separate question, one measured directly in <a href="what-ai-actually-reads-on-your-webpage.html">the site's research on what AI actually reads on a webpage</a>.</p>
+
+      <blockquote>"AI visibility is increasingly determined by the interaction between crawl freshness, retrieval latency, website authority, and content quality, not by publish date alone."</blockquote>
+
+      <p>Based on this data, the most consistent path to sustained AI citation visibility is treating it as an ongoing process: regular content refreshes on high-authority pages, continuous citation monitoring, clean technical infrastructure, and a clear understanding of how each AI engine retrieves and ranks sources.</p>
+
+      <p class="post-meta-header mono" style="margin-top:40px;">GEO Retrieval Research Series <span class="sep">/</span> R_WP001: Crawl Freshness vs AI Visibility <span class="sep">/</span> Dec 2025 to May 2026 <span class="sep">/</span> San Diego, CA</p>
+
+      <div class="stat-strip">
+        <div class="stat-block"><span class="num">14 Days</span><span class="lbl">MEDIAN FIRST CITATION</span></div>
+        <div class="stat-block"><span class="num">67.2K</span><span class="lbl">TOTAL CITATIONS</span></div>
+        <div class="stat-block"><span class="num">34%</span><span class="lbl">CITATION REPLACEMENT</span></div>
+        <div class="stat-block"><span class="num">36.5%</span><span class="lbl">UNIQUE URL RATE</span></div>
+      </div>
+
+      <div class="related-section">
+        <span class="mono toc-label">Related Reading</span>
+        <div class="related-groups">
+        <div class="related-group">
+          <span class="mono related-group-label">Related Blog Posts</span>
+          <div class="related-list">
+          <a href="crawl-budget-vs-retrieval-readiness.html" class="related-row">
+            <span class="related-title">Crawl Budget vs Retrieval Readiness</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        <div class="related-group">
+          <span class="mono related-group-label">Related Research</span>
+          <div class="related-list">
+          <a href="what-ai-actually-reads-on-your-webpage.html" class="related-row">
+            <span class="related-title">R_WP003: What AI Actually Reads on Your Webpage</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          <a href="multi-hop-citation-paths-in-ai-retrieval.html" class="related-row">
+            <span class="related-title">R_WP002: Multi-Hop Citation Paths in AI Retrieval</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-inner">
+      <h2>For agencies, brands and small businesses who want a site built right, and found by both people and machines.</h2>
+      <div class="contact-links">
+        <a href="mailto:akshaydahiya92.ad@gmail.com">
+          Email
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" rel="noopener">
+          LinkedIn
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://github.com/dahiyaakshay?tab=repositories" target="_blank" rel="noopener">
+          GitHub
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Akshay Dahiya <a href="llm.txt" class="foot-link">llm.txt</a> <a href="sitemap.xml" class="foot-link">sitemap</a></span>
+      <span>akshaydahiya.site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>

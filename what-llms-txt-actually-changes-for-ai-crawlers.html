@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-E6JLR8VFSJ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What llms.txt Actually Changes for AI Crawlers / Akshay Dahiya</title>
+<meta name="description" content="llms.txt has no confirmed effect on crawling, retrieval, or AI citation, outside a narrow, real use case for coding agents and RAG tooling that opt in to fetch it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://akshaydahiya.site/what-llms-txt-actually-changes-for-ai-crawlers.html"
+  },
+  "headline": "What llms.txt Actually Changes for AI Crawlers",
+  "description": "llms.txt has no confirmed effect on crawling, retrieval, or AI citation, outside a narrow, real use case for coding agents and RAG tooling that opt in to fetch it.",
+  "datePublished": "2026-07-01",
+  "author": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "publisher": {
+    "@id": "https://akshaydahiya.site/#person"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="grid-overlay" id="gridOverlay"></div>
+
+<header>
+  <div class="wordmark"><a href="index.html" style="color:inherit;">Akshay Dahiya <span class="mono">/ AD</span></a></div>
+  <div class="nav-wrap" id="navWrap">
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mailto:akshaydahiya92.ad@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://github.com/dahiyaakshay/marketing-skills" target="_blank" rel="noopener" class="btn-install">Install Skills</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navWrap">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main class="wrap">
+
+  <a href="blog.html" class="post-back mono">← Back to blog</a>
+
+  <div class="post-layout">
+
+    <!-- TABLE OF CONTENTS -->
+    <aside class="post-toc">
+      <div class="toc-inner">
+        <span class="mono toc-label">On This Page</span>
+        <nav class="toc-nav" id="tocNav">
+          <a href="#top" class="toc-link toc-h1">What llms.txt Actually Changes for AI Crawlers</a>
+          <a href="#executive-summary" class="toc-link toc-h2">Executive Summary</a>
+          <a href="#introduction" class="toc-link toc-h2">Introduction</a>
+          <a href="#what-is-llmstxt" class="toc-link toc-h2">What Is llms.txt?</a>
+          <a href="#syntax" class="toc-link toc-h3">Syntax</a>
+          <a href="#why-created" class="toc-link toc-h2">Why Was llms.txt Created?</a>
+          <a href="#google" class="toc-link toc-h2">Does Google Use llms.txt?</a>
+          <a href="#openai" class="toc-link toc-h2">Does OpenAI Use llms.txt?</a>
+          <a href="#anthropic" class="toc-link toc-h2">Does Anthropic Use It?</a>
+          <a href="#adoption" class="toc-link toc-h2">Current Industry Adoption</a>
+          <a href="#what-changes" class="toc-link toc-h2">What Actually Changes?</a>
+          <a href="#myths-facts" class="toc-link toc-h2">Myths vs. Facts</a>
+          <a href="#timeline" class="toc-link toc-h2">Timeline</a>
+          <a href="#decision-tree" class="toc-link toc-h2">Should You Build One?</a>
+          <a href="#practical-benefits" class="toc-link toc-h2">Practical Benefits</a>
+          <a href="#best-practices" class="toc-link toc-h2">Best Practices</a>
+          <a href="#future-outlook" class="toc-link toc-h2">Future Outlook</a>
+          <a href="#key-takeaways" class="toc-link toc-h2">Key Takeaways</a>
+          <a href="#glossary" class="toc-link toc-h2">Glossary</a>
+          <a href="#faq" class="toc-link toc-h2">FAQ</a>
+          <a href="#references" class="toc-link toc-h2">References</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="post-content">
+      <div class="post-meta-header mono">AI Visibility <span class="sep">/</span> Jul 2026 <span class="sep">/</span> 14 min read</div>
+
+      <h1 id="top" class="display">What llms.txt Actually Changes for AI Crawlers</h1>
+
+      <p class="post-lede">llms.txt has no confirmed effect on crawling, retrieval, or AI citation today, outside one narrow and real use case: coding agents and RAG tooling that are built to fetch it on purpose.</p>
+
+      <h2 id="executive-summary">Executive Summary</h2>
+      <p>llms.txt is a proposed Markdown file, placed at a site's root, that gives AI systems a curated map of a website's most important pages. Jeremy Howard of Answer.AI published the proposal on September 3, 2024. As of mid-2026, no major AI vendor, not Google, not OpenAI, not Anthropic, not Perplexity, not Meta, has committed to using it as a retrieval, ranking, or citation input in production. Google has said so explicitly and repeatedly. OpenAI's crawler documentation never mentions it. Anthropic publishes one for its own docs but has made no claim that Claude reads other sites' files. Independent studies covering hundreds of thousands of domains and tens of thousands of AI citations find no measurable citation benefit, and adoption sits at roughly one in ten sites. The one place llms.txt demonstrably works is narrow and specific: developer-tool and API documentation, consumed intentionally by coding agents and RAG pipelines that are built to fetch it. Everywhere else, it is a low-cost bet with no confirmed payoff.</p>
+
+      <h2 id="introduction">Introduction</h2>
+      <p>The debate around llms.txt keeps resurfacing for a structural reason: it looks exactly like something that should matter. It sits in the same URL pattern as robots.txt and sitemap.xml, two files every technical SEO already treats as load-bearing. It was proposed by a credible figure, Jeremy Howard co-founded fast.ai and Answer.AI, and it solves a real, well-articulated problem. That combination makes it easy to assume adoption implies function.</p>
+      <p>The confusion has a second source: Google's own guidance is not internally consistent on the surface. Google Search says the file is unnecessary for AI Overviews and AI Mode. Google's Chrome team added an llms.txt check to Lighthouse's agentic-browsing audits in the same year. Both statements are true, and they answer different questions. This article separates the two, and everything else that gets blurred together in the current discourse: discovery from ranking, adoption from function, crawler visits from citation influence, and the documented behavior of AI systems from marketing claims about that behavior.</p>
+
+      <h2 id="what-is-llmstxt">What Is llms.txt?</h2>
+      <p>llms.txt is a Markdown file published at <code>/llms.txt</code> on a website's root domain. Jeremy Howard proposed it through Answer.AI on September 3, 2024, framing the problem plainly: language models increasingly draw on website content, but their context windows can't hold most sites in full, and converting HTML pages, with their navigation chrome, ads, and JavaScript, into something a model can use cleanly is both difficult and imprecise. The proposal's stated fix is a single, curated, plain-Markdown entry point that gives a model the same kind of concise overview a human expert would want, rather than forcing it to reconstruct that overview from raw HTML.</p>
+      <p>The specification lives at llmstxt.org, with the reference implementation and discussion hosted in the AnswerDotAI/llms-txt GitHub repository. It is a community proposal, not a ratified standard: no IETF RFC and no W3C working group has adopted it.</p>
+      <p><strong>Relationship to robots.txt:</strong> robots.txt is an access-control file. It tells crawlers what they may and may not fetch, using Allow and Disallow directives per user-agent. llms.txt does nothing of the kind, it has no permission semantics. A site can have a fully permissive robots.txt and no llms.txt, or a restrictive robots.txt and a detailed llms.txt; the two files don't interact.</p>
+      <p><strong>Relationship to sitemap.xml:</strong> sitemap.xml is exhaustive and machine-oriented, every indexable URL, with metadata for crawl scheduling. llms.txt is deliberately partial and human-curated, a short list of the pages the site owner considers most important, each with a one-line description, written in Markdown rather than XML.</p>
+
+      <h3 id="syntax">Syntax</h3>
+      <p>Only one element is required: an H1 with the site or project name. Everything else is optional but recommended.</p>
+      <pre><code># FastHTML
+
+&gt; FastHTML is a python library which brings together Starlette,
+&gt; Uvicorn, HTMX, and fastcore's `FT` "FastTags" into a library
+&gt; for creating server-rendered hypermedia applications.
+
+Some optional context about the project goes here.
+
+## Docs
+
+- [Quickstart](https://example.com/quickstart.md): Get started in five minutes
+- [API Reference](https://example.com/api.md): Full API documentation
+
+## Optional
+
+- [Changelog](https://example.com/changelog.md): Release history</code></pre>
+      <p>The proposal also defines an optional companion, <code>/llms-full.txt</code>, which concatenates the full Markdown content of the linked pages into a single file. Answer.AI built a command-line tool, <code>llms_txt2ctx</code>, that assembles either file, with or without the linked URLs resolved, into a ready-to-paste context block for use with models like Claude.</p>
+
+      <h2 id="why-created">Why Was llms.txt Created?</h2>
+      <p>Howard's proposal identifies three concrete problems:</p>
+      <ol>
+        <li><strong>Context-window mismatch.</strong> Most websites, rendered as raw text, exceed what a model can hold alongside a user's actual question.</li>
+        <li><strong>HTML noise.</strong> Navigation bars, ad slots, cookie banners, and client-side JavaScript make automated extraction imprecise: a scraper either strips too much, losing content, or too little, polluting the context with boilerplate.</li>
+        <li><strong>No token-efficient format.</strong> Sitemaps enumerate URLs but carry no summary; full-page scraping carries summary but wastes tokens on markup and layout.</li>
+      </ol>
+      <p>Markdown is the proposed fix because it's already the native format most LLMs are trained to read cleanly, and because a curated H2-linked structure lets a downstream tool decide how deep to go: read just the summary, or resolve every linked page.</p>
+
+      <h2 id="google">Does Google Use llms.txt?</h2>
+      <p>No, and Google has said so on the record more than once, through more than one channel.</p>
+      <p>At the Google Search Central Deep Dive event in the Asia-Pacific region on July 23, 2025, Gary Illyes stated plainly that Google does not support llms.txt and has no plans to. John Mueller reinforced this on Reddit, comparing the file to the meta keywords tag, a self-declared field Google stopped using for ranking decades ago specifically because site owners could write anything into it, with no verification. Mueller noted server logs show AI services generally aren't even requesting the file.</p>
+      <p>Google's own AI-features documentation, updated June 15, 2026 specifically to address recurring community questions, states directly that publishers don't need to create special AI files, markup, or Markdown to appear in Google Search or its generative features, because Search doesn't use them.</p>
+
+      <blockquote><strong>Confusion event:</strong> On December 3, 2025, an llms.txt briefly appeared on one of Google's own developer-docs properties (ai.google.dev). It disappeared the same day. When asked on Bluesky whether this counted as an endorsement, Mueller's answer was one word: "no." The file existed because Google's internal documentation CMS had added generic llms.txt support, not because Search Relations had changed position.</blockquote>
+
+      <p><strong>What Google has not confirmed:</strong> any use of llms.txt in ranking, retrieval, or AI Overview/AI Mode source selection. Zero.</p>
+      <p><strong>Lighthouse is a separate story.</strong> Chrome shipped an llms.txt check inside Lighthouse's experimental Agentic Browsing category, documented as of May 5, 2026. The audit only checks that the file, if present, is reachable, a server error is flagged, while a 404 is marked Not Applicable, since Google's own documentation calls providing the file optional. Chrome's rationale is narrow and consistent with the Search team's position: an AI agent browsing a page live may waste time reconstructing site structure without a summary file, which is a browser-automation efficiency question, not a search-ranking one. The two teams are answering different questions with tools built for different jobs, which is why the guidance reads as contradictory if you don't separate them.</p>
+      <p>Google's more concrete bet for agent-website interaction is WebMCP, a separate W3C proposal (Web Machine Learning Community Group) that lets a page expose typed, callable JavaScript tools to an in-browser agent, rather than a static content summary. It moved into a public Chrome 149 origin trial on May 19, 2026, at Google I/O. Mueller has pointed to WebMCP, not llms.txt, as the direction he considers more promising for agent interaction.</p>
+
+      <h2 id="openai">Does OpenAI Use llms.txt?</h2>
+      <p><strong>Fact:</strong> OpenAI's official crawler documentation covers GPTBot, OAI-SearchBot, ChatGPT-User, and OAI-AdsBot, and describes controlling all of them through robots.txt directives. The word "llms.txt" does not appear anywhere in that documentation.</p>
+      <p><strong>Fact:</strong> OpenAI publishes its own llms.txt for its developer docs, but that's the same documentation-export pattern every doc-platform vendor uses, not evidence that GPTBot reads anyone else's file.</p>
+      <p><strong>Disputed/anecdotal:</strong> Individual site owners have posted server-log screenshots showing OpenAI-associated user agents requesting <code>/llms.txt</code> at regular intervals. These reports exist, and Google's own Gary Illyes has acknowledged seeing similar activity from OpenAI while reiterating Google isn't doing the same. A fetch is not proof of use, however, it confirms a bot found the file reachable, not that the file's content shaped an output.</p>
+      <p><strong>Independent measurement:</strong> A 30-day log analysis across 1,000 Adobe Experience Manager domains found zero requests to <code>/llms.txt</code> from GPTBot, ClaudeBot, or PerplexityBot; the handful of AI-adjacent hits came from OAI-SearchBot on a single domain. A separate 90-day, 62,100-visit study found only 84 requests, 0.1% of all AI bot traffic, targeted <code>/llms.txt</code> directly.</p>
+      <p>There is currently no public evidence that OpenAI's production crawlers treat llms.txt as a preferential input for training, retrieval, or ChatGPT's live browsing.</p>
+
+      <h2 id="anthropic">Does Anthropic Use It?</h2>
+      <p>Anthropic created the Model Context Protocol (November 25, 2024), a different, more consequential standard that is frequently and incorrectly conflated with llms.txt in casual discussion. MCP defines how an AI application connects to external tools and data sources at runtime; llms.txt is a static content-summary file. They solve unrelated problems.</p>
+      <p>Anthropic publishes both <code>/llms.txt</code> and <code>/llms-full.txt</code> for its own developer documentation (docs.claude.com), following the same documentation-export pattern OpenAI and other developer-tool companies use. Mintlify, the docs platform, has stated that Anthropic asked it to implement llms.txt and llms-full.txt support for Anthropic's own docs, that claim comes from Mintlify, a vendor with a commercial interest in the format's adoption, and should be read as a platform's account of a customer request, not an Anthropic policy statement.</p>
+      <p>There is currently no public evidence that ClaudeBot, or any Claude product, gives <code>/llms.txt</code> special retrieval priority when reading third-party websites.</p>
+
+      <h2 id="adoption">Current Industry Adoption</h2>
+      <p>Adoption figures diverge sharply depending on methodology and dataset, and the sources disagree with each other:</p>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Source</th><th>Dataset</th><th>Reported Adoption</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>SE Ranking (Nov 2025)</td><td>~300,000 domains</td><td>10.13%</td></tr>
+            <tr><td>Generix Marketing (Apr 2026)</td><td>2,500 sites</td><td>6.5%</td></tr>
+            <tr><td>ProGEO.ai</td><td>Fortune 500</td><td>7.4%</td></tr>
+            <tr><td>HTTP Archive / Web Almanac 2025</td><td>Full crawl</td><td>~0.015% early 2025, rising to ~2% by end of 2025</td></tr>
+            <tr><td>Okara (May 2026)</td><td>Tranco Top 10,000</td><td>5.86%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The spread reflects different sampling frames, Fortune 500 vs. long-tail domains vs. Tranco top sites, and different validation strictness, some studies reject files that resolve to soft-404 or generic HTML error pages. Treat any single adoption number as approximate.</p>
+      <p><strong>Who's adopted it:</strong> SaaS, developer-tool, and API-documentation companies lead, Stripe, Cursor, Mintlify, Zapier, Slack, Notion, Vercel, and FastHTML appear repeatedly across vendor case studies as early adopters.</p>
+      <p><strong>Who hasn't:</strong> the highest-authority, most-cited domains. A study of 37,894 domains with confirmed AI citation history found that reference, review, and academic sites, the categories with the highest domain authority, had the lowest llms.txt adoption. Reddit, Reuters, Forbes, and LinkedIn dominate AI citations with no llms.txt file at all.</p>
+      <p><strong>Who's recommending it:</strong> SEO tool vendors (Yoast, Rank Math now ship one-click generators), GEO agencies positioning it as a checklist item, and Chrome's Lighthouse team, in the narrow agent-browsing-efficiency sense described above.</p>
+
+      <h2 id="what-changes">What Actually Changes?</h2>
+      <p>Breaking the pipeline into discrete stages, from a model's first contact with a site to the words it generates, the dotted annotations below matter as much as the connecting spine: llms.txt only has a confirmed entry point at the discovery stage, and only for tools built to look for it. Everywhere downstream, evidence is either absent or contradicts an effect. Discovery itself is a separate question from whether a crawler ever reaches a page at all, a distinction covered in more depth in <a href="crawl-budget-vs-retrieval-readiness.html">the site's research on crawl budget and retrieval readiness</a>, and chunking is the stage where <a href="ai-retrieves-chunks-not-web-pages.html">how AI systems actually process a page once fetched</a> becomes the more decisive factor.</p>
+
+      <div class="post-figure">
+        <img src="assets/svg/blog/post/llmstxt-pipeline.svg" alt="Eight stage retrieval pipeline from discovery through generation. llms.txt has a confirmed but narrow effect on discovery for coding agents and RAG tools, no confirmed effect on retrieval, and a plausible but unmeasured effect on chunking. Every other stage shows no confirmed or measured effect." width="660" height="660">
+        <span class="post-figure-caption mono">Confirmed effect stops at discovery, and only for tools built to look for the file.</span>
+      </div>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Stage</th><th>Does llms.txt Affect It?</th><th>Evidence</th><th>Confidence</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Discovery</td>
+              <td>Only if something deliberately requests the file</td>
+              <td>Log studies show 0.1%–7 requests per 1,000 visits from major AI bots</td>
+              <td>High confidence of no effect for consumer chat crawlers; moderate confidence of real effect for coding agents/RAG tools built to fetch it</td>
+            </tr>
+            <tr>
+              <td>Crawling</td>
+              <td>No measured effect on GPTBot, ClaudeBot, PerplexityBot, Google-Extended</td>
+              <td>Multi-domain log analyses find near-zero requests</td>
+              <td>High confidence of no effect</td>
+            </tr>
+            <tr>
+              <td>Retrieval (RAG grounding in chat products)</td>
+              <td>No confirmed preferential treatment in production</td>
+              <td>No vendor has published a retrieval-priority claim</td>
+              <td>High confidence of no effect</td>
+            </tr>
+            <tr>
+              <td>Chunking</td>
+              <td>Plausible, unmeasured benefit if a system deliberately ingests llms-full.txt</td>
+              <td>Markdown parses more cleanly than HTML with nav/ads/scripts, Howard's stated design rationale</td>
+              <td>Reasoning-based, not empirically measured</td>
+            </tr>
+            <tr>
+              <td>Embeddings</td>
+              <td>No special treatment found</td>
+              <td>Ingested content, if any, is embedded like any other text</td>
+              <td>High confidence of no differentiated effect</td>
+            </tr>
+            <tr>
+              <td>Grounding</td>
+              <td>No confirmed preferential grounding on llms.txt-declared pages</td>
+              <td>No vendor statement; independent citation-tracing studies contradict it</td>
+              <td>High confidence of no effect</td>
+            </tr>
+            <tr>
+              <td>Citation</td>
+              <td>Measured directly, repeatedly, at scale, no lift found</td>
+              <td>SE Ranking (300k domains): no statistically significant correlation. ALLMO.ai: 1 of 94,614 traced citations came from an llms.txt-linked page. Trakkr: no citation advantage across 37,894 domains</td>
+              <td>High confidence of no measurable effect today</td>
+            </tr>
+            <tr>
+              <td>Generation</td>
+              <td>No evidence of differentiated treatment</td>
+              <td>Downstream of retrieval/grounding, which show no effect</td>
+              <td>High confidence of no effect</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The pattern across every stage that's actually been measured, discovery by major bots, crawling frequency, and citation frequency, is the same: no detectable effect. The one stage where a plausible mechanism exists, chunking benefiting from clean Markdown, has never been isolated and tested; it's a reasonable hypothesis, not a finding.</p>
+
+      <h2 id="myths-facts">Myths vs. Facts</h2>
+      <div class="post-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Claim</th><th>Status</th><th>Why</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>llms.txt improves Google rankings</td><td>Myth</td><td>Google's Search Relations team has said this directly, more than once, in writing and on stage</td></tr>
+            <tr><td>llms.txt replaces robots.txt</td><td>Myth</td><td>Different function entirely, no access-control semantics</td></tr>
+            <tr><td>Every LLM reads llms.txt</td><td>Myth</td><td>No major consumer LLM crawler shows meaningful request volume for it</td></tr>
+            <tr><td>Having llms.txt increases AI citations</td><td>Myth</td><td>Three independent studies (SE Ranking, ALLMO.ai, Trakkr), different methodologies, same null result</td></tr>
+            <tr><td>Google's Lighthouse audit means Google uses it for Search</td><td>Myth</td><td>Lighthouse audits agent-browsing efficiency, a Chrome product decision, separate from Search ranking</td></tr>
+            <tr><td>Coding agents and RAG pipelines can be built to use it</td><td>Fact</td><td>This is llms.txt's actual designed use case, and tooling exists for it (llms_txt2ctx)</td></tr>
+            <tr><td>Some AI bots occasionally fetch it</td><td>Fact, but low-volume</td><td>Confirmed in logs, at request rates near 0.1% of AI bot traffic</td></tr>
+            <tr><td>WebMCP will eventually matter more for agent interaction</td><td>Unproven, but Google is betting on it</td><td>Live origin trial, industry co-authorship (Microsoft), zero adoption so far</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="timeline">Timeline</h2>
+      <div class="post-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Date</th><th>Event</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>September 3, 2024</td><td>Jeremy Howard (Answer.AI) publishes the llms.txt proposal</td></tr>
+            <tr><td>Late 2024 to 2025</td><td>Early adoption by dev-tool and SaaS companies (Stripe, Mintlify, Zapier, Cursor)</td></tr>
+            <tr><td>July 23, 2025</td><td>Gary Illyes states at Search Central Live (APAC) that Google does not support llms.txt</td></tr>
+            <tr><td>November 7, 2025</td><td>SE Ranking publishes 300,000-domain study: no citation correlation</td></tr>
+            <tr><td>December 3, 2025</td><td>llms.txt briefly appears on a Google developer-docs property, then is removed same day</td></tr>
+            <tr><td>January 23, 2026</td><td>ALLMO.ai study: 1 of 94,614 traced AI citations came via llms.txt</td></tr>
+            <tr><td>February 10, 2026</td><td>WebMCP first announced (Google, Microsoft, W3C Web ML CG)</td></tr>
+            <tr><td>May 5, 2026</td><td>Chrome documents the Lighthouse llms.txt audit (Agentic Browsing category)</td></tr>
+            <tr><td>May 19, 2026</td><td>WebMCP enters public origin trial in Chrome 149 at Google I/O</td></tr>
+            <tr><td>June 15, 2026</td><td>Google updates AI-features guidance, explicitly naming llms.txt as unnecessary</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="decision-tree">Decision Tree: Should You Build One?</h2>
+      <div class="post-figure">
+        <img src="assets/svg/blog/post/llmstxt-decision-tree.svg" alt="Decision tree: if you publish developer documentation and your users rely on coding agents like Cursor or Claude Code, build a curated llms.txt, the confirmed use case. If not, it's optional with unproven benefit. If you don't publish developer docs and your primary goal is Google Search or AI Overview visibility, skip it and invest in content quality, schema and E-E-A-T instead. Otherwise, it's low priority, fine as cheap insurance, not a strategy." width="660" height="660">
+        <span class="post-figure-caption mono">The only branch with a confirmed payoff runs through developer documentation and coding agents.</span>
+      </div>
+
+      <h2 id="practical-benefits">Practical Benefits</h2>
+      <p><strong>Who should create one:</strong></p>
+      <ul>
+        <li>Developer-tool, API, and SDK companies whose users route through coding assistants (Cursor, Claude Code, GitHub Copilot) that are explicitly built to ingest doc-summary files at inference time</li>
+        <li>Documentation platforms already generating Markdown as a build artifact, where an llms.txt costs nothing incremental to produce</li>
+        <li>Teams that want a Lighthouse Agentic Browsing score with no missing checks, since the audit only penalizes broken files, not absent ones</li>
+      </ul>
+      <p><strong>Who probably doesn't need it:</strong></p>
+      <ul>
+        <li>E-commerce, local business, publisher, and content-marketing sites chasing Google AI Overviews or AI Mode visibility, Google has explicitly ruled this out as a lever</li>
+        <li>Any site expecting a citation-frequency improvement in ChatGPT, Claude, Gemini, or Perplexity answers, no study has found one</li>
+        <li>Sites without existing Markdown or clean content-export tooling, where building the file is nontrivial engineering for an unproven return</li>
+      </ul>
+
+      <h2 id="best-practices">Best Practices</h2>
+      <p><strong>Checklist:</strong></p>
+      <ul class="checklist">
+        <li>Required H1 with site/project name</li>
+        <li>Blockquote with a one to three sentence summary</li>
+        <li>H2-organized link sections, each entry with a short description</li>
+        <li>Links point to Markdown or plain-text versions of pages where possible, not JS-rendered HTML</li>
+        <li>File served with a 200 status and correct text/markdown or text/plain content type</li>
+        <li>Consider noindex on the file itself so it doesn't get indexed as a regular search result, Mueller's suggestion</li>
+        <li>If publishing llms-full.txt, keep it a genuine concatenation of real page content, not a marketing rewrite</li>
+        <li>Re-validate periodically, broken or stale files are the one thing Lighthouse's audit actually flags</li>
+      </ul>
+      <p><strong>Common mistakes:</strong></p>
+      <ul>
+        <li>Treating it as an SEO ranking lever and prioritizing it over content quality, schema, or E-E-A-T signals that have measured impact</li>
+        <li>Auto-generating it from a sitemap with no real curation, defeating the entire curated premise</li>
+        <li>Letting it 404 or 500 silently, this is the one condition Lighthouse actively flags</li>
+        <li>Linking to HTML pages instead of Markdown/plain-text equivalents, reintroducing the noise problem the format was built to solve</li>
+      </ul>
+
+      <h2 id="future-outlook">Future Outlook</h2>
+      <p>For llms.txt to become a genuine web standard, it would need at least one of the following, none of which has happened as of mid-2026: formal adoption into an IETF or W3C standards track; a public commitment from at least one major model provider to use it as a production retrieval or ranking input; or measurable, reproducible citation lift in independent studies, replacing the current null results.</p>
+      <p>The more concrete signal to watch is WebMCP, which answers a related but different question, not "what should an agent read to understand my site" but "what should an agent be able to do on my site." It has Google and Microsoft co-authorship, a live Chrome 149 origin trial, and named launch partners, which is a materially stronger adoption signal at this stage than llms.txt has ever had. Whether WebMCP eventually absorbs the site-summary use case llms.txt was built for, or the two coexist, is unresolved.</p>
+
+      <h2 id="key-takeaways">Key Takeaways</h2>
+      <ol>
+        <li>Jeremy Howard (Answer.AI) proposed llms.txt on September 3, 2024; it is not a ratified standard.</li>
+        <li>Google's Search Relations team has stated on the record, multiple times, that Search does not use it and has no plans to.</li>
+        <li>Chrome's Lighthouse tool audits llms.txt for reachability under a separate agent-browsing-efficiency rationale, this is not a Search signal.</li>
+        <li>OpenAI's official crawler documentation never mentions llms.txt; robots.txt remains the documented control mechanism.</li>
+        <li>Anthropic publishes an llms.txt for its own docs but has made no claim that Claude prioritizes reading other sites' files.</li>
+        <li>Independent studies spanning hundreds of thousands of domains and tens of thousands of citations find no measurable correlation with AI citation frequency.</li>
+        <li>Adoption sits roughly in the 2% to 10% range depending on dataset, concentrated in SaaS and developer-tool sites.</li>
+        <li>The highest-authority, most AI-cited domains (Reddit, Reuters, Forbes) largely don't have one.</li>
+        <li>The one confirmed, designed use case is coding agents and RAG tooling that intentionally fetch it, a narrow, real, and different claim than AI visibility.</li>
+        <li>WebMCP, a separate and unrelated standard, currently has a stronger adoption trajectory for agent-website interaction than llms.txt does for content summarization.</li>
+      </ol>
+
+      <h2 id="glossary">Glossary</h2>
+      <dl>
+        <dt>llms.txt</dt>
+        <dd>A Markdown file at a site's root summarizing its most important content for LLM consumption.</dd>
+        <dt>llms-full.txt</dt>
+        <dd>Optional companion file containing the full Markdown content of the pages llms.txt links to.</dd>
+        <dt>robots.txt</dt>
+        <dd>Access-control file specifying which crawlers may fetch which URLs.</dd>
+        <dt>GEO (Generative Engine Optimization)</dt>
+        <dd>Practices aimed at improving a site's likelihood of being cited or surfaced by generative AI answer engines.</dd>
+        <dt>RAG (Retrieval-Augmented Generation)</dt>
+        <dd>Architecture where a model retrieves external documents at query time to ground its answer.</dd>
+        <dt>WebMCP</dt>
+        <dd>A proposed W3C standard letting a website expose callable JavaScript tools to in-browser AI agents.</dd>
+        <dt>MCP (Model Context Protocol)</dt>
+        <dd>Anthropic's open standard for connecting AI applications to external tools and data sources; unrelated to llms.txt despite similar naming.</dd>
+      </dl>
+
+      <h2 id="faq">FAQ</h2>
+      <p><strong>Does adding llms.txt hurt my SEO?</strong></p>
+      <p>No evidence suggests it does. It also shows no evidence of helping.</p>
+      <p><strong>Should I remove my llms.txt file?</strong></p>
+      <p>Not necessarily, it's low-cost to maintain and has a real, if narrow, use for coding agents. But it shouldn't be treated as a growth lever.</p>
+      <p><strong>Is llms.txt the same as MCP?</strong></p>
+      <p>No. MCP is Anthropic's protocol for connecting AI applications to tools and data at runtime. llms.txt is a static file. The naming similarity causes frequent confusion.</p>
+      <p><strong>Will Google ever support it?</strong></p>
+      <p>Google's public position, as of June 2026, is explicit non-support with no stated plans to change that.</p>
+
+      <h2 id="references">References</h2>
+      <ul>
+        <li>Answer.AI, "/llms.txt, a proposal to provide information to help LLMs use websites," September 3, 2024, answer.ai/posts/2024-09-03-llmstxt.html</li>
+        <li>llmstxt.org, the published specification</li>
+        <li>AnswerDotAI/llms-txt, GitHub repository, reference implementation</li>
+        <li>Google Search Central, AI features guidance (mythbusting section), updated June 15, 2026</li>
+        <li>Chrome for Developers, "llms.txt | Lighthouse," developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt</li>
+        <li>Chrome for Developers, "Join the WebMCP origin trial," June 9, 2026</li>
+        <li>OpenAI, "Overview of OpenAI Crawlers," developers.openai.com/api/docs/bots</li>
+        <li>SE Ranking, "LLMs.txt: Why Brands Rely On It and Why It Doesn't Work," November 7, 2025</li>
+        <li>ALLMO.ai, "LLMs.txt for AI Search Report 2026," January 23, 2026</li>
+        <li>Trakkr Research, "The llms.txt Effect: 37,894 Domains Scanned, Zero Citation Advantage," March 19, 2026</li>
+        <li>Search Engine Journal / Search Engine Land coverage of Google Search Central Live statements (Gary Illyes, John Mueller), July to August 2025</li>
+        <li>Search Engine Roundtable, coverage of John Mueller's Bluesky statements on llms.txt, December 2025 to January 2026</li>
+      </ul>
+
+      <div class="related-section">
+        <span class="mono toc-label">Related Reading</span>
+        <div class="related-groups">
+        <div class="related-group">
+          <span class="mono related-group-label">Related Blog Posts</span>
+          <div class="related-list">
+          <a href="crawl-budget-vs-retrieval-readiness.html" class="related-row">
+            <span class="related-title">Crawl Budget vs Retrieval Readiness</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          <a href="ai-retrieves-chunks-not-web-pages.html" class="related-row">
+            <span class="related-title">AI Doesn't Read Web Pages, It Retrieves Chunks</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        <div class="related-group">
+          <span class="mono related-group-label">Related Research</span>
+          <div class="related-list">
+          <a href="crawl-freshness-vs-ai-visibility.html" class="related-row">
+            <span class="related-title">R_WP001: Crawl Freshness vs AI Visibility</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-inner">
+      <h2>For agencies, brands and small businesses who want a site built right, and found by both people and machines.</h2>
+      <div class="contact-links">
+        <a href="mailto:akshaydahiya92.ad@gmail.com">
+          Email
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" rel="noopener">
+          LinkedIn
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://github.com/dahiyaakshay?tab=repositories" target="_blank" rel="noopener">
+          GitHub
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Akshay Dahiya <a href="llm.txt" class="foot-link">llm.txt</a> <a href="sitemap.xml" class="foot-link">sitemap</a></span>
+      <span>akshaydahiya.site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>

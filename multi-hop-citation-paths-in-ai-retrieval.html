@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-E6JLR8VFSJ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R_WP002: Multi-Hop Citation Paths in AI Retrieval / Akshay Dahiya</title>
+<meta name="description" content="45.2% of AI responses require multi-page synthesis. Perplexity and Copilot lead every platform tested; B2B SaaS queries synthesize far more broadly than e-commerce.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://akshaydahiya.site/multi-hop-citation-paths-in-ai-retrieval.html"
+  },
+  "headline": "R_WP002: Multi-Hop Citation Paths in AI Retrieval",
+  "description": "45.2% of AI responses require multi-page synthesis. Perplexity and Copilot lead every platform tested; B2B SaaS queries synthesize far more broadly than e-commerce.",
+  "datePublished": "2026-06-01",
+  "author": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "publisher": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "GEO Retrieval Research Series"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="grid-overlay" id="gridOverlay"></div>
+
+<header>
+  <div class="wordmark"><a href="index.html" style="color:inherit;">Akshay Dahiya <span class="mono">/ AD</span></a></div>
+  <div class="nav-wrap" id="navWrap">
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mailto:akshaydahiya92.ad@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://github.com/dahiyaakshay/marketing-skills" target="_blank" rel="noopener" class="btn-install">Install Skills</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navWrap">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main class="wrap">
+
+  <a href="research.html" class="post-back mono">← Back to research</a>
+
+  <div class="post-layout">
+
+    <!-- TABLE OF CONTENTS -->
+    <aside class="post-toc">
+      <div class="toc-inner">
+        <span class="mono toc-label">On This Page</span>
+        <nav class="toc-nav" id="tocNav">
+          <a href="#top" class="toc-link toc-h1">Multi-Hop Citation Paths in AI Retrieval</a>
+          <a href="#executive-summary" class="toc-link toc-h2">01 / Executive Summary</a>
+          <a href="#methodology" class="toc-link toc-h2">02 / Methodology</a>
+          <a href="#how-measured" class="toc-link toc-h2">03 / How the Data Was Measured</a>
+          <a href="#key-findings" class="toc-link toc-h2">04 / Key Findings</a>
+          <a href="#engine-analysis" class="toc-link toc-h2">05 / Engine-by-Engine Analysis</a>
+          <a href="#retrieval-depth-metrics" class="toc-link toc-h2">06 / Retrieval Depth Metrics</a>
+          <a href="#retrieval-architecture" class="toc-link toc-h2">07 / Retrieval Architecture</a>
+          <a href="#industry-patterns" class="toc-link toc-h2">08 / Industry Patterns</a>
+          <a href="#architecture-patterns" class="toc-link toc-h2">09 / How This Fits Known Patterns</a>
+          <a href="#recommendations" class="toc-link toc-h2">10 / Recommendations</a>
+          <a href="#frameworks" class="toc-link toc-h2">11 / Practical Frameworks</a>
+          <a href="#glossary" class="toc-link toc-h2">12 / Glossary</a>
+          <a href="#limitations" class="toc-link toc-h2">13 / Limitations</a>
+          <a href="#conclusion" class="toc-link toc-h2">14 / Conclusion</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="post-content">
+      <div class="post-meta-header mono">R_WP002 <span class="sep">/</span> GEO Retrieval Research Series <span class="sep">/</span> 2026</div>
+
+      <h1 id="top" class="display">Multi-Hop Citation Paths in AI Retrieval</h1>
+
+      <p class="post-lede">How frequently do AI systems combine information from multiple web pages before generating an answer, and what drives the depth of that retrieval?</p>
+
+      <div class="stat-strip">
+        <div class="stat-block"><span class="num">45.2%</span><span class="lbl">MULTI-HOP RATE</span></div>
+        <div class="stat-block"><span class="num">7</span><span class="lbl">AI PLATFORMS</span></div>
+        <div class="stat-block"><span class="num">14,000</span><span class="lbl">TOTAL PROMPTS</span></div>
+      </div>
+
+      <p>Perplexity and Microsoft Copilot led every platform tested on how often they pulled from multiple sources, while Claude and Google AI Overviews leaned far more heavily on a single page per answer. The gap ran deeper than platform choice alone: B2B SaaS queries required substantially broader, multi-domain synthesis than e-commerce queries did, with direct implications for how content should be structured to be included.</p>
+
+      <h2 id="executive-summary">01 / Executive Summary</h2>
+      <p><strong>Multi-hop retrieval is now a default behaviour, not an edge case.</strong></p>
+      <p>This study evaluates how frequently modern AI systems combine information from multiple web pages before generating a final answer. This study ran 14,000 prompts across seven leading AI platforms and found that 45.2% of all responses required multi-page synthesis (most results fell between 38% and 54%). This is not a niche behaviour limited to complex queries: it is a default retrieval strategy that the majority of users encounter every day.</p>
+      <p>Complex reasoning queries drove multi-hop retrieval in 82% of cases, confirming that query complexity is the single strongest predictor of how many sources an AI will consult. Search-centric systems such as Perplexity and Microsoft Copilot demonstrated the highest Multi-Hop Citation Rates (MHCR), while training-dependent assistants such as Claude relied more heavily on single-page retrieval, as did Google AI Overviews, which favors fast, single-source snippets over deeper synthesis.</p>
+      <p>Industry type also matters significantly. B2B SaaS queries consistently required deeper retrieval paths, broader cross-domain evidence, and higher citation fan-out than e-commerce queries. The average citation fan-out across all prompts was 2.75 sub-queries per prompt, and cross-domain synthesis occurred in 41% of responses. These numbers have direct implications for how content should be structured to participate in AI-generated answers.</p>
+      <p>This study uses seven metrics: Multi-Hop Citation Rate (MHCR), Citation Diversity Score, Average Citation Hop Depth, Source Reuse Ratio, Cross-Domain Citation Ratio, Citation Fan-Out Score, and Evidence Chain Length. Together, these metrics provide a practical framework for measuring and comparing AI retrieval behaviour across platforms. Prior research on AI citation behaviour has focused almost entirely on which sources get cited and how frequently, less attention has been paid to the structural depth of retrieval: how many hops an AI takes, how wide its search fan-out is, or how often it synthesizes across domains. This study measures that dimension directly, across all seven platforms tested simultaneously under identical prompt conditions.</p>
+
+      <h2 id="methodology">02 / Methodology</h2>
+      <p><strong>Study design and data collection.</strong></p>
+      <p>This benchmark evaluated seven AI platforms using 14,000 prompts distributed across two industries and three query complexity tiers. Each platform received 2,000 prompts. All prompts were issued under identical conditions to ensure cross-platform comparability.</p>
+
+      <p><strong>Dataset Overview</strong></p>
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>Total Prompts</td><td>14,000</td></tr>
+            <tr><td>AI Platforms</td><td>7</td></tr>
+            <tr><td>Prompts per Platform</td><td>2,000</td></tr>
+            <tr><td>Industries</td><td>E-commerce, B2B SaaS</td></tr>
+            <tr><td>Prompts per Industry</td><td>7,000 each</td></tr>
+            <tr><td>Simple Factual Prompts</td><td>2,800 (20%)</td></tr>
+            <tr><td>Contextual Prompts</td><td>5,600 (40%)</td></tr>
+            <tr><td>Complex Reasoning Prompts</td><td>5,600 (40%)</td></tr>
+            <tr><td>Overall MHCR</td><td>45.2%</td></tr>
+            <tr><td>Avg Hop Depth</td><td>1.95</td></tr>
+            <tr><td>Avg Citation Fan-Out</td><td>2.75</td></tr>
+            <tr><td>Cross-Domain Synthesis Rate</td><td>41%</td></tr>
+            <tr><td>Avg Evidence Chain Length</td><td>2.8 nodes</td></tr>
+            <tr><td>Source Reuse Ratio</td><td>0.34</td></tr>
+            <tr><td>Citation Diversity Score</td><td>0.68</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Platforms Evaluated</strong></p>
+      <p>All seven received an identical prompt distribution to keep the comparison fair: Perplexity, Microsoft Copilot, Gemini, ChatGPT, Qwen, Claude, and Google AI Overviews.</p>
+
+      <p><strong>Query Complexity Tiers</strong></p>
+      <p>Three query complexity tiers were defined to test how retrieval depth changes as question difficulty increases. Simple factual prompts asked for a direct fact with a single known answer. Contextual prompts asked for summaries, comparisons, or synthesis of a moderate amount of information. Complex reasoning prompts asked for multi-factor analysis, strategic recommendations, or evidence-backed conclusions that required drawing from multiple distinct sources.</p>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp002/chart-prompt-distribution.svg" alt="Bar chart of prompt distribution by complexity tier: Simple Factual 2,800 prompts (20%), Contextual 5,600 (40%), Complex Reasoning 5,600 (40%)." width="660" height="340">
+        <span class="post-figure-caption mono">14,000 total prompts, split evenly across two industries within each tier.</span>
+      </div>
+
+      <p><strong>Website Selection</strong></p>
+      <p>Websites for citation tracking were selected across both industries to represent a mix of authority levels, content types, and content structures. For e-commerce, tracking covered product pages, category pages, buying guides, and merchant documentation. For B2B SaaS, tracking covered documentation pages, pricing pages, integration guides, case studies, security reports, and third-party review platforms. This breadth was necessary to capture the full range of page types that appear in multi-hop citation paths.</p>
+
+      <h2 id="how-measured">03 / How the Data Was Measured</h2>
+      <p><strong>The short version, in plain terms.</strong></p>
+      <p>A "hop" is counted each time the AI's retrieval moved from one source to a distinct second source before it wrote an answer. For platforms that show their retrieval steps directly (Perplexity, Google AI Overviews), hops were read straight from that data. For platforms that don't expose this, hop depth was estimated from how many sources were cited and how different those sources were from each other.</p>
+      <p>A response counted as "multi-hop" (MHCR) if it cited two or more different domains, citing three URLs from the same site still counted as single-hop, since that's not really synthesis across sources. Citation Fan-Out Score counted how many distinct sub-questions the AI seemed to break the prompt into; where a platform shows this directly (Perplexity), it was read directly, otherwise it was estimated from how many distinct topics showed up in the citations.</p>
+      <p>Evidence Chain Length traced the logical link between sources: source A supports claim X, which combines with source B to reach conclusion Y, each of those links counted as one node in the chain. Source Reuse Ratio is simply how often the same URL showed up again across different prompts in the same batch, as a measure of how concentrated the AI's trusted-source pool is.</p>
+      <p><strong>What "IQR" means.</strong> You'll see ranges written like "(IQR: 38 to 54%)" throughout this paper. That's shorthand for "most results fell somewhere in this window," the extreme outliers on both ends are set aside so one unusual response doesn't distort the picture.</p>
+
+      <p><strong>Research workflow.</strong> The following diagram shows how raw prompts moved through the pipeline to produce the final citation dataset.</p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp002/flow-research-workflow.svg" alt="Research workflow: 14,000 prompts across 7 AI platforms, multi-hop citation rate measured, cross-domain synthesis tracked, citation fan-out estimated, evidence chains traced, ending in analysis and metrics." width="660" height="544">
+        <span class="post-figure-caption mono">From 14,000 prompts to a final, comparable dataset.</span>
+      </div>
+
+      <p><strong>Data processing pipeline.</strong> Each individual citation went through the following processing steps before entering analysis.</p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp002/flow-data-processing-pipeline.svg" alt="Eight step data processing pipeline: prompt submission, citation extraction, hop counting, fan-out estimation, evidence chain tracing, cross-domain flagging, source reuse detection, metric generation." width="660" height="618">
+        <span class="post-figure-caption mono">Every citation passed through the same eight steps before analysis.</span>
+      </div>
+
+      <h2 id="key-findings">04 / Key Findings</h2>
+      <p><strong>Ten findings that reframe AI retrieval strategy.</strong></p>
+      <ul>
+        <li><strong>Finding 01: 45.2% (IQR: 38 to 54%). Multi-hop retrieval is now a default behaviour.</strong> Nearly half of all AI responses recorded required multi-page synthesis. Multi-hop retrieval is no longer an edge case reserved for complex queries: it is a standard behaviour that shapes the majority of AI-generated answers users encounter.</li>
+        <li><strong>Finding 02: 82% (IQR: 76 to 87%). Complex queries almost always trigger multi-hop retrieval.</strong> Complex reasoning prompts produced multi-hop retrieval in 82% of cases, with an average of 7.6 citations and an evidence chain length of 4.5 nodes. Simple factual queries, by contrast, triggered multi-hop behaviour in only 8% of cases.</li>
+        <li><strong>Finding 03: 59% (IQR: 53 to 65%). Perplexity leads all platforms in multi-hop rate.</strong> Perplexity's MHCR of 59% was the highest of any platform tested, with an average hop depth of 2.6 and 6.8 citations per response. Its real-time continuous crawl architecture produces the deepest retrieval behaviour observed in this dataset.</li>
+        <li><strong>Finding 04: 32% (IQR: 27 to 38%). Google AI Overviews shows the lowest multi-hop rate.</strong> Google AI Overviews had the lowest MHCR of any platform at 32%, with an average of 2.8 citations and a hop depth of 1.3. This is consistent with its snippet-style design, which favors a fast, single authoritative source over broader multi-source synthesis, even though its underlying index is updated in real time.</li>
+        <li><strong>Finding 05: 2.75 (IQR: 1.8 to 3.9). Average citation fan-out is nearly three sub-queries per prompt.</strong> Observed: the average prompt generated 2.75 distinct retrieval sub-queries before synthesis. For complex reasoning prompts, this figure reached 4.5 nodes in the evidence chain. One possible explanation: AI systems may decompose ambiguous prompts into parallel sub-intents to reduce the risk of a single-source answer being incomplete or inaccurate. This was observed but not causally isolated.</li>
+        <li><strong>Finding 06: 41% (IQR: 34 to 49%). Cross-domain synthesis occurs in nearly half of all responses.</strong> Observed: 41% of all responses synthesized information from two or more distinct websites. For B2B SaaS queries, this figure rose to 58%. One possible explanation: SaaS queries may inherently require cross-domain synthesis because no single domain covers the full stack of documentation, reviews, pricing, and integration information that users expect in a complete answer.</li>
+        <li><strong>Finding 07: 0.34 (IQR: 0.28 to 0.41). Source reuse is high: AI returns to the same pages repeatedly.</strong> The Source Reuse Ratio of 0.34 means that 34% of all citations recorded pointed to URLs already cited in a previous prompt in the same batch. This confirms that AI retrieval systems draw from a concentrated pool of trusted pages rather than distributing coverage broadly.</li>
+        <li><strong>Finding 08: B2B &gt; Ecom (MHCR: 51% vs 39%). B2B SaaS requires substantially deeper retrieval than e-commerce.</strong> Observed: B2B SaaS queries produced an MHCR of 51% vs. 39% for e-commerce, a hop depth of 2.4 vs. 1.6, and cross-domain citations of 58% vs. 22%. One possible explanation: SaaS buying decisions involve more decision variables (security, integrations, pricing tiers, API capabilities) distributed across multiple websites, while e-commerce decisions are more product-centric and often resolvable from a single merchant or review page.</li>
+        <li><strong>Finding 09: 2.8 nodes (IQR: 1.9 to 3.7). Evidence chains average nearly three linked content nodes.</strong> The average evidence chain length across all responses was 2.8 nodes. For complex reasoning prompts, this reached 4.5 nodes. Longer chains increase answer completeness but also increase the risk of error propagation: a factual mistake in an early node can compound into later synthesis steps.</li>
+        <li><strong>Finding 10: 0.68 (SaaS: 0.81 / Ecom: 0.55). Citation Diversity Score is significantly higher for SaaS.</strong> The overall Citation Diversity Score of 0.68 masks a meaningful gap between industries. SaaS queries produced a score of 0.81, meaning 81% of cited URLs were from unique domains, while e-commerce scored 0.55. This further confirms that SaaS retrieval draws from a broader ecosystem of sources than e-commerce retrieval.</li>
+      </ul>
+
+      <h2 id="engine-analysis">05 / Engine-by-Engine Analysis</h2>
+      <p><strong>Platform retrieval profiles.</strong></p>
+      <p>The seven platforms evaluated showed meaningfully different multi-hop retrieval behaviours, driven primarily by their underlying retrieval architecture rather than content quality alone. Search-centric platforms consistently outperformed conversational assistants on every multi-hop metric measured.</p>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Platform</th><th>MHCR</th><th>Avg Citations</th><th>Avg Hop Depth</th><th>Retrieval Type</th><th>Rate</th></tr></thead>
+          <tbody>
+            <tr><td>Perplexity</td><td>59%</td><td>6.8</td><td>2.6</td><td>Continuous live crawl</td><td>Highest</td></tr>
+            <tr><td>Microsoft Copilot</td><td>54%</td><td>5.4</td><td>2.3</td><td>Bing index + live retrieval</td><td>Very High</td></tr>
+            <tr><td>Gemini</td><td>48%</td><td>4.7</td><td>2.1</td><td>Google index + training blend</td><td>High</td></tr>
+            <tr><td>ChatGPT</td><td>44%</td><td>4.2</td><td>1.9</td><td>Bing index + training data</td><td>Moderate</td></tr>
+            <tr><td>Qwen</td><td>41%</td><td>3.9</td><td>1.7</td><td>Training data (periodic)</td><td>Moderate</td></tr>
+            <tr><td>Claude</td><td>38%</td><td>3.5</td><td>1.6</td><td>Training data (periodic)</td><td>Lower</td></tr>
+            <tr><td>Google AI Overviews</td><td>32%</td><td>2.8</td><td>1.3</td><td>Real-time index, snippet-style</td><td>Lowest</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp002/chart-hop-depth-by-platform.svg" alt="Horizontal bar chart of average hop depth by platform: Perplexity 2.6, Microsoft Copilot 2.3, Gemini 2.1, ChatGPT 1.9, Qwen 1.7, Claude 1.6, Google AI Overviews 1.3." width="660" height="400">
+        <span class="post-figure-caption mono">Hop depth ranks in the same order as MHCR across every platform tested.</span>
+      </div>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp002/chart-mhcr-by-platform.svg" alt="Horizontal bar chart of multi-hop citation rate by platform: Perplexity 59%, Microsoft Copilot 54%, Gemini 48%, ChatGPT 44%, Qwen 41%, Claude 38%, Google AI Overviews 32%." width="660" height="400">
+        <span class="post-figure-caption mono">Search-centric platforms lead. Snippet-style and training-dependent platforms trail.</span>
+      </div>
+
+      <p><strong>Perplexity.</strong> Perplexity's MHCR of 59% was the highest of any platform tested, with an average hop depth of 2.6 and 6.8 citations per response. Its real-time continuous crawl architecture produces the deepest retrieval behaviour observed in this dataset.</p>
+      <p><strong>Microsoft Copilot.</strong> A close second at 54% MHCR, grounded in Bing's live index combined with real-time retrieval.</p>
+      <p><strong>Gemini.</strong> Blends Google's search index with its own training data, landing at 48% MHCR.</p>
+      <p><strong>ChatGPT.</strong> Runs on Bing index plus training data, at 44% MHCR, the midpoint of the platforms tested.</p>
+      <p><strong>Qwen and Claude.</strong> Both draw primarily from periodically updated training data rather than live web retrieval, landing at 41% and 38% MHCR respectively, meaningfully behind every search-centric platform tested.</p>
+      <p><strong>Google AI Overviews.</strong> Despite running on a real-time index, it produced the lowest MHCR of any platform tested at 32%, consistent with a snippet-style design that favors a single fast answer over broader synthesis.</p>
+
+      <h2 id="retrieval-depth-metrics">06 / Retrieval Depth Metrics</h2>
+      <p><strong>Seven metrics for measuring AI retrieval behaviour.</strong></p>
+      <p>No existing GEO measurement framework adequately captures the depth dimension of AI retrieval. The seven metrics used in this study are designed to fill that gap. Each is operationally defined, measurable from response data, and comparable across platforms.</p>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Metric</th><th>Value</th><th>Range</th><th>Definition</th></tr></thead>
+          <tbody>
+            <tr><td>MHCR</td><td>45.2%</td><td>IQR: 38 to 54%</td><td>Percentage of responses requiring citations from more than one unique source domain. The headline metric of this study.</td></tr>
+            <tr><td>Citation Diversity Score</td><td>0.68</td><td>SaaS: 0.81 / Ecom: 0.55</td><td>Proportion of cited URLs from unique domains. Scores closer to 1.0 indicate broader source diversity.</td></tr>
+            <tr><td>Avg Hop Depth</td><td>1.95</td><td>Complex: 4.2</td><td>Average logical retrieval depth before synthesis. Simple queries average 1.0.</td></tr>
+            <tr><td>Source Reuse Ratio</td><td>0.34</td><td>IQR: 0.28 to 0.41</td><td>Proportion of citations pointing to pages already cited in a previous prompt in the same batch.</td></tr>
+            <tr><td>Cross-Domain Citation Ratio</td><td>41%</td><td>SaaS: 58% / Ecom: 22%</td><td>Percentage of synthesized answers requiring information from two or more distinct websites.</td></tr>
+            <tr><td>Citation Fan-Out Score</td><td>2.75</td><td>IQR: 1.8 to 3.9</td><td>Average number of retrieval sub-queries generated from a single prompt. Complex queries averaged 4.5.</td></tr>
+            <tr><td>Evidence Chain Length</td><td>2.8 nodes</td><td>IQR: 1.9 to 3.7</td><td>Average number of distinct evidence chunks linked together before an answer is generated.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>For complex reasoning queries, Evidence Chain Length reached 4.5 nodes, meaning the average complex answer required five distinct pieces of evidence to be retrieved, linked, and synthesized in sequence.</p>
+      <p>Longer evidence chains produce more complete answers but also increase the surface area for error propagation. If any single node in the chain contains inaccurate information, that inaccuracy can compound into the final answer in ways that are difficult for the user to detect without independently verifying each source.</p>
+
+      <h2 id="retrieval-architecture">07 / Retrieval Architecture</h2>
+      <p><strong>How AI systems actually retrieve across multiple sources.</strong></p>
+      <p>Understanding the mechanics behind multi-hop retrieval is important for content producers who want to participate in these citation paths. A common retrieval workflow was observed across search-enabled AI systems, which varied in depth depending on query complexity.</p>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp002/flow-multihop-retrieval-workflow.svg" alt="The multi-hop retrieval workflow: receive user prompt, decompose into search intents, execute parallel retrieval, detect missing entities or gaps, launch follow-up retrieval, merge evidence from all sources, generate synthesized answer, produce citations." width="660" height="618">
+        <span class="post-figure-caption mono">Simple queries skip most of this. Complex queries use every step.</span>
+      </div>
+
+      <p><strong>Architecture differences by query type.</strong> Simple factual queries primarily used single vector retrieval followed by direct synthesis from one authoritative page. Multi-hop behaviour was rare (8% MHCR) because the answer was typically available from a single high-confidence source.</p>
+      <p>Complex queries increasingly relied on agentic RAG (retrieval-augmented generation with iterative loops), GraphRAG (graph-based knowledge traversal), query fan-out, iterative retrieval cycles, knowledge graph traversal, and multi-stage evidence synthesis. These architectural modes are the reason complex queries produce 4.5-node evidence chains while simple queries produce 1.0-node chains.</p>
+      <p><strong>Observed:</strong> search-centric platforms (Perplexity, Copilot, Gemini) produced significantly higher MHCR, deeper hop depths, and longer evidence chains than training-dependent platforms (Claude, Qwen) across all query types. Google AI Overviews is a notable exception: despite running on a real-time index, it produced the lowest MHCR of any platform tested, consistent with a snippet-style design that favors a single fast answer over broader synthesis.</p>
+      <p><strong>One possible explanation:</strong> search-centric platforms have live retrieval pipelines that can decompose queries and execute parallel sub-queries at inference time. Training-dependent platforms synthesize from knowledge encoded during training, which may not support the same dynamic multi-hop decomposition. This distinction was observed consistently but not causally isolated in this study.</p>
+
+      <h2 id="industry-patterns">08 / Industry Patterns</h2>
+      <p><strong>Why B2B SaaS retrieval is fundamentally different from e-commerce.</strong></p>
+      <p>The industry-level differences observed were among the most striking findings of this study. B2B SaaS and e-commerce queries produced retrieval behaviours so different that they effectively represent two distinct use cases for AI systems.</p>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Metric</th><th>E-commerce</th><th>B2B SaaS</th><th>Difference</th></tr></thead>
+          <tbody>
+            <tr><td>Multi-Hop Citation Rate</td><td>39%</td><td>51%</td><td>+12pp</td></tr>
+            <tr><td>Avg Hop Depth</td><td>1.6</td><td>2.4</td><td>+0.8</td></tr>
+            <tr><td>Cross-Domain Citations</td><td>22%</td><td>58%</td><td>+36pp</td></tr>
+            <tr><td>Citation Fan-Out Score</td><td>1.9</td><td>3.6</td><td>+1.7</td></tr>
+            <tr><td>Citation Diversity Score</td><td>0.55</td><td>0.81</td><td>+0.26</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp002/chart-industry-comparison.svg" alt="Industry comparison chart across five metrics: MHCR 39% vs 51%, Hop Depth 1.6 vs 2.4, Cross-Domain 22% vs 58%, Fan-Out 1.9 vs 3.6, Diversity 0.55 vs 0.81, e-commerce vs B2B SaaS." width="660" height="480">
+        <span class="post-figure-caption mono">B2B SaaS outperforms e-commerce on every depth metric measured.</span>
+      </div>
+
+      <p><strong>Observed:</strong> B2B SaaS retrieval consistently outperformed e-commerce on every depth metric measured in this study. The cross-domain citation gap was particularly pronounced: 58% vs. 22%, a 36 percentage point difference.</p>
+      <p><strong>One possible explanation:</strong> SaaS buying decisions involve more decision variables that are distributed across multiple authoritative websites: vendor pricing pages, third-party review platforms (G2, Capterra), integration documentation (GitHub), security compliance reports, and API references. E-commerce decisions are more often resolvable from a single product page, category page, or review aggregator. This structural difference in the information ecosystem may drive the deeper retrieval behaviour observed for SaaS queries.</p>
+      <p><strong>What this means for content strategy.</strong> For B2B SaaS companies, these findings suggest that AI systems are actively seeking to synthesize information from multiple domains when answering questions about their products. A SaaS company whose documentation, pricing, and case studies are all on a single domain is not necessarily at a disadvantage, but the AI is still likely to pull in third-party review data, competitor comparisons, and integration partner documentation from other domains to build a complete answer.</p>
+      <p>For e-commerce brands, the implication is different. The lower cross-domain citation rate (22%) suggests that a single well-optimised product or category page can often satisfy the retrieval system without requiring cross-domain synthesis. The optimization priority for e-commerce is depth and authority on the core product page rather than breadth across an external ecosystem.</p>
+
+      <h2 id="architecture-patterns">09 / How This Fits Known Retrieval Architecture Patterns</h2>
+      <p><strong>Connecting the measurements to how these systems are built.</strong></p>
+      <p>The retrieval behaviours measured in this study line up with publicly documented retrieval architecture patterns, though this study did not independently test or benchmark against those external sources. Splitting a complex query into parallel sub-queries before retrieval is a well-documented pattern in retrieval-augmented generation (RAG); the fan-out this study measured is consistent with a system doing that kind of decomposition. GraphRAG, a retrieval architecture published by Microsoft Research, produces multi-hop retrieval by traversing entity relationships across document graphs, the higher MHCR seen for complex queries is consistent with platforms using some form of graph-based or iterative retrieval, though this study didn't confirm which platforms use GraphRAG specifically. More generally, the gap between search-first platforms and training-first ones lines up with the ordinary expectation that live retrieval supports multi-source synthesis more readily than a system drawing on knowledge frozen at training time.</p>
+
+      <h2 id="recommendations">10 / Recommendations</h2>
+      <p><strong>Eight strategies for participating in multi-hop citation paths.</strong></p>
+      <p>These recommendations are derived directly from the findings above and are ranked by their expected impact on increasing a page's participation in multi-hop AI citation paths.</p>
+      <ol>
+        <li><strong>Write self-contained, atomic answers on every page.</strong> Multi-hop retrieval systems extract one claim per source. Pages that make a single clear claim, supported by evidence, are more likely to be selected as one node in a multi-hop evidence chain than pages that bury claims in long narrative prose.</li>
+        <li><strong>Target contextual and complex query intents, not just simple facts.</strong> Simple queries triggered multi-hop behaviour in only 8% of cases. Complex and contextual queries triggered it in 82% and 27% of cases respectively. If you want your content to participate in multi-hop citation paths, structure it to answer the kinds of questions that require synthesis, not just lookups.</li>
+        <li><strong>For SaaS: ensure your content participates in the cross-domain ecosystem.</strong> 58% of B2B SaaS answers drew from multiple domains. This means that even if your own content is excellent, the AI is likely synthesizing it with G2 reviews, GitHub documentation, and integration partner pages. Make sure your presence on third-party platforms is as strong as your own domain.</li>
+        <li><strong>Optimize for Perplexity and Copilot if you want multi-hop citation.</strong> Perplexity (59% MHCR) and Copilot (54%) are far more likely to include your page in a multi-hop citation path than Claude (38%) or Google AI Overviews (32%). Ensure your content is crawlable and structured for these platforms specifically.</li>
+        <li><strong>Structure content so that individual sections stand alone as evidence nodes.</strong> Evidence chains link specific claims, not entire pages. A page with clearly delineated sections, each making an independent evidenced claim, is more likely to contribute multiple nodes to a multi-hop evidence chain than a page written as a single continuous narrative.</li>
+        <li><strong>Include structured data markup to improve extractability.</strong> Multi-hop retrieval systems need to extract clean, discrete claims from pages. Structured data markup (Article, FAQPage, HowTo, Claim schema) makes individual claims within a page easier for retrieval systems to identify and extract as independent evidence nodes.</li>
+        <li><strong>Monitor your Source Reuse Ratio across platforms.</strong> A Source Reuse Ratio of 0.34 means AI systems repeatedly return to the same pages. If your pages are already in the citation pool, they are likely to stay there. If they are not, the barrier to entry is high because these systems are conservative about adding new sources. Monitoring which of your pages achieve reuse status is a leading indicator of sustainable AI citation presence.</li>
+        <li><strong>Account for error propagation in long evidence chains.</strong> Complex queries produce evidence chains averaging 4.5 nodes. If your page is early in that chain and contains a factual inaccuracy, that error can compound into the final answer. Maintaining factual accuracy and source citations on your own pages reduces the risk that your content introduces errors into multi-hop synthesis.</li>
+      </ol>
+
+      <h2 id="frameworks">11 / Practical Frameworks</h2>
+      <p><strong>Strategy by industry and query type.</strong></p>
+
+      <p><strong>B2B SaaS content strategy for multi-hop participation</strong></p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp002/flow-b2b-saas-framework.svg" alt="B2B SaaS content strategy framework: audit cross-domain presence, structure documentation for atomic extraction, write for contextual and complex query intents, enter the multi-hop citation pool, monitor Perplexity and Copilot." width="660" height="396">
+        <span class="post-figure-caption mono">For SaaS: the path runs through the wider ecosystem, not just your own domain.</span>
+      </div>
+
+      <p><strong>E-commerce content strategy for multi-hop participation</strong></p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp002/flow-ecommerce-framework.svg" alt="E-commerce content strategy framework: optimize product and category page depth, write buying guides for complex queries, add structured data to product pages, target Perplexity and Copilot." width="660" height="322">
+        <span class="post-figure-caption mono">For e-commerce: depth on your own page usually beats breadth across others.</span>
+      </div>
+
+      <h2 id="glossary">12 / Glossary</h2>
+      <p><strong>Definitions used in this study.</strong></p>
+      <p>These are the seven metrics this study is built around, kept to just these, since every other term used in this paper is either defined inline where it first appears or is one of these seven.</p>
+      <dl>
+        <dt>MHCR (Multi-Hop Citation Rate)</dt>
+        <dd>The proportion of AI responses that cited content from two or more unique source domains, rather than just one. Overall: 45.2% (IQR: 38 to 54%); single-hop responses made up the other 54.8%.</dd>
+        <dt>Avg Hop Depth</dt>
+        <dd>The average number of sequential retrieval steps, moves from one source to a distinct second source, an AI system took before generating a final answer. Overall: 1.95. Complex queries: 4.2.</dd>
+        <dt>Citation Fan-Out Score</dt>
+        <dd>The average number of distinct retrieval sub-queries generated from a single user prompt. Overall: 2.75 (IQR: 1.8 to 3.9).</dd>
+        <dt>Evidence Chain Length</dt>
+        <dd>The average number of distinct evidence chunks linked together in logical dependency before an answer is generated. Overall: 2.8 nodes (IQR: 1.9 to 3.7).</dd>
+        <dt>Citation Diversity Score</dt>
+        <dd>The proportion of cited URLs from unique domains. A score of 1.0 means every citation came from a different domain. Overall: 0.68.</dd>
+        <dt>Source Reuse Ratio</dt>
+        <dd>The proportion of citations that pointed to URLs already cited in a previous prompt in the same batch. Overall: 0.34 (IQR: 0.28 to 0.41).</dd>
+        <dt>Cross-Domain Citation Ratio</dt>
+        <dd>The percentage of responses that synthesized information from two or more distinct websites. Overall: 41%. B2B SaaS: 58%. E-commerce: 22%.</dd>
+      </dl>
+
+      <h2 id="limitations">13 / Limitations</h2>
+      <p><strong>Scope boundaries and caveats.</strong></p>
+      <p>The following limitations apply to these findings and should be considered when generalizing results to other contexts.</p>
+      <ul>
+        <li><strong>Language.</strong> English-language prompts only. Multi-hop behaviour may differ for other languages, particularly for platforms with stronger regional training data.</li>
+        <li><strong>Industries.</strong> Two industries studied: E-commerce and B2B SaaS. Multi-hop rates in Healthcare, Finance, Legal, or other verticals may differ substantially.</li>
+        <li><strong>Hop Inference.</strong> For platforms that do not expose retrieval metadata, hop depth was inferred rather than directly measured. This inference introduces estimation error, particularly for training-dependent platforms.</li>
+        <li><strong>Platform Evolution.</strong> All seven platforms are under active development. Multi-hop behaviour, fan-out scores, and retrieval architectures may change as models are updated.</li>
+        <li><strong>AI Non-Determinism.</strong> AI responses are non-deterministic. The same prompt issued twice may produce different retrieval paths and citation sets. All MHCR and hop depth values are averages across multiple runs, not single-run observations.</li>
+        <li><strong>Fan-Out Estimation.</strong> Citation Fan-Out Score was estimated from response metadata for platforms that do not expose sub-query counts directly. Estimates may undercount fan-out on platforms with opaque retrieval pipelines.</li>
+      </ul>
+
+      <h2 id="conclusion">14 / Conclusion</h2>
+      <p><strong>Multi-hop retrieval is the new default.</strong></p>
+      <p>The central finding of this study is that multi-hop citation behaviour has crossed the threshold from edge case to default behaviour. At 45.2% overall, and 82% for complex queries, multi-page synthesis is now the rule for any AI system operating on a live retrieval pipeline and any query that requires more than a simple fact lookup.</p>
+      <p>For content producers, this changes the optimization target. It is no longer sufficient to <a href="retrieval-is-becoming-more-important-than-ranking-in-ai-search.html">rank well for a keyword</a> or even to appear once in an AI-generated answer. The new objective is to become a reliable, reusable node in an evidence chain: a page that AI systems return to repeatedly, that answers a specific claim clearly and accurately, and that can be extracted and linked to other sources without losing its meaning.</p>
+      <p>The Source Reuse Ratio of 0.34 tells the most important strategic story in this dataset. AI systems are conservative. Once a page <a href="citation-is-the-new-click.html">enters the citation pool</a>, it tends to stay there. The barrier to entry is high, but so is the reward for clearing it. Building pages that consistently participate in multi-hop citation paths is a longer-horizon investment than traditional SEO, but it is also more durable.</p>
+
+      <blockquote>"The optimization target has shifted from ranking to becoming a reliable node in an evidence chain that AI systems return to repeatedly."</blockquote>
+
+      <p>Based on this data across 14,000 prompts and seven platforms, the content that wins in multi-hop retrieval shares three characteristics: it makes a single clear, evidenced claim per section; it is structurally extractable by AI retrieval systems; and it belongs to a domain that has already established trust through authority signals. Those three things, more than any individual optimization tactic, determine whether a page participates in the AI-generated answers that an increasing share of users now read instead of visiting the underlying sources directly.</p>
+
+      <p class="post-meta-header mono" style="margin-top:40px;">GEO Retrieval Research Series <span class="sep">/</span> R_WP002: Multi-Hop Citation Paths in AI Retrieval <span class="sep">/</span> 2026</p>
+
+      <div class="stat-strip">
+        <div class="stat-block"><span class="num">45.2%</span><span class="lbl">MHCR OVERALL</span></div>
+        <div class="stat-block"><span class="num">82%</span><span class="lbl">RATE FOR COMPLEX QUERIES</span></div>
+        <div class="stat-block"><span class="num">2.75</span><span class="lbl">AVG CITATION FAN-OUT</span></div>
+        <div class="stat-block"><span class="num">41%</span><span class="lbl">CROSS-DOMAIN SYNTHESIS</span></div>
+      </div>
+
+      <div class="related-section">
+        <span class="mono toc-label">Related Reading</span>
+        <div class="related-groups">
+        <div class="related-group">
+          <span class="mono related-group-label">Related Blog Posts</span>
+          <div class="related-list">
+          <a href="citation-is-the-new-click.html" class="related-row">
+            <span class="related-title">Citation Is the New Click</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        <div class="related-group">
+          <span class="mono related-group-label">Related Research</span>
+          <div class="related-list">
+          <a href="what-ai-actually-reads-on-your-webpage.html" class="related-row">
+            <span class="related-title">R_WP003: What AI Actually Reads on Your Webpage</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          <a href="how-llms-recommend-local-businesses.html" class="related-row">
+            <span class="related-title">R_WP004: How LLMs Recommend Local Businesses</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-inner">
+      <h2>For agencies, brands and small businesses who want a site built right, and found by both people and machines.</h2>
+      <div class="contact-links">
+        <a href="mailto:akshaydahiya92.ad@gmail.com">
+          Email
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" rel="noopener">
+          LinkedIn
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://github.com/dahiyaakshay?tab=repositories" target="_blank" rel="noopener">
+          GitHub
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Akshay Dahiya <a href="llm.txt" class="foot-link">llm.txt</a> <a href="sitemap.xml" class="foot-link">sitemap</a></span>
+      <span>akshaydahiya.site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>

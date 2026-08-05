@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-E6JLR8VFSJ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Doesn't Read Web Pages, It Retrieves Chunks / Akshay Dahiya</title>
+<meta name="description" content="In retrieval-augmented systems, a page is never the thing matched against a query. It's split into chunks first, and each chunk competes independently.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://akshaydahiya.site/ai-retrieves-chunks-not-web-pages.html"
+  },
+  "headline": "AI Doesn't Read Web Pages, It Retrieves Chunks",
+  "description": "In retrieval-augmented systems, a page is never the thing matched against a query. It's split into chunks first, and each chunk competes independently.",
+  "datePublished": "2026-03-01",
+  "author": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "publisher": {
+    "@id": "https://akshaydahiya.site/#person"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="grid-overlay" id="gridOverlay"></div>
+
+<header>
+  <div class="wordmark"><a href="index.html" style="color:inherit;">Akshay Dahiya <span class="mono">/ AD</span></a></div>
+  <div class="nav-wrap" id="navWrap">
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mailto:akshaydahiya92.ad@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://github.com/dahiyaakshay/marketing-skills" target="_blank" rel="noopener" class="btn-install">Install Skills</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navWrap">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main class="wrap">
+
+  <a href="blog.html" class="post-back mono">← Back to blog</a>
+
+  <div class="post-layout">
+
+    <!-- TABLE OF CONTENTS -->
+    <aside class="post-toc">
+      <div class="toc-inner">
+        <span class="mono toc-label">On This Page</span>
+        <nav class="toc-nav" id="tocNav">
+          <a href="#top" class="toc-link toc-h1">AI Doesn't Read Web Pages, It Retrieves Chunks</a>
+          <a href="#executive-summary" class="toc-link toc-h2">Executive Summary</a>
+          <a href="#introduction" class="toc-link toc-h2">Introduction</a>
+          <a href="#what-is-a-chunk" class="toc-link toc-h2">What Is a Chunk?</a>
+          <a href="#why-chunks" class="toc-link toc-h2">Why AI Systems Use Chunks</a>
+          <a href="#pipeline" class="toc-link toc-h2">The Chunking Pipeline</a>
+          <a href="#strategies" class="toc-link toc-h2">Different Chunking Strategies</a>
+          <a href="#why-quality-matters" class="toc-link toc-h2">Why Chunk Quality Matters</a>
+          <a href="#mistakes" class="toc-link toc-h2">Common Chunking Mistakes</a>
+          <a href="#optimising" class="toc-link toc-h2">Optimising Content for Chunk Retrieval</a>
+          <a href="#comparison" class="toc-link toc-h2">Traditional SEO vs. Chunk Optimisation</a>
+          <a href="#geo-checklist" class="toc-link toc-h2">Practical GEO Checklist</a>
+          <a href="#future-outlook" class="toc-link toc-h2">Future Outlook</a>
+          <a href="#key-takeaways" class="toc-link toc-h2">Key Takeaways</a>
+          <a href="#glossary" class="toc-link toc-h2">Glossary</a>
+          <a href="#faq" class="toc-link toc-h2">FAQ</a>
+          <a href="#references" class="toc-link toc-h2">References</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="post-content">
+      <div class="post-meta-header mono">GEO <span class="sep">/</span> Mar 2026 <span class="sep">/</span> 13 min read</div>
+
+      <h1 id="top" class="display">AI Doesn't Read Web Pages, It Retrieves Chunks</h1>
+
+      <p class="post-lede">In retrieval-augmented systems, a page is never the thing matched against a query. It's fetched, split into smaller units, and each unit competes independently.</p>
+
+      <h2 id="executive-summary">Executive Summary</h2>
+      <p>When a person imagines an AI chatbot answering a question about a website, the intuitive mental model is that the model "reads" the page, the way a human would. In retrieval-augmented systems, the architecture behind most AI-powered search and most production chatbots grounded in external data, that's not what happens. A page is fetched, stripped of boilerplate, split into smaller units called chunks, and each chunk is converted into a vector. When a query arrives, the system finds the chunks whose vectors are closest to the query's vector and hands only those chunks to the model as context. The page, as a single unit, is never the thing being matched or retrieved. This is not true of every LLM interaction, a model reading a single document a user pastes directly into a chat, or a model with a very large context window processing one file end to end, works differently. But for retrieval, the mechanism that lets an AI system search across many documents at once, chunking is the standard architecture, documented consistently across every major vector-database and RAG-framework vendor. This article explains why, and what it changes about how content should be structured.</p>
+
+      <h2 id="introduction">Introduction</h2>
+      <p>The assumption that AI "reads" a webpage the way a person does is a reasonable one to start from, it's how humans experience an LLM's output, as a response that seems to reflect the whole page's content. But retrieval systems, by design, don't operate on whole pages as their basic unit. Pinecone's own documentation on chunking strategies states the problem plainly: when documents are too large to feed into a model's context window whole, or too large to search efficiently across a large collection, they need to be broken into smaller pieces first, pieces small enough to embed precisely and retrieve individually.</p>
+      <p>That distinction matters because it's not a minor implementation detail; it changes what "being findable to AI" actually means. A page can be excellent, comprehensive, and well-written, and still perform poorly in retrieval if its internal structure doesn't produce clean, self-contained chunks. This article traces exactly why chunking exists, how the major frameworks implement it differently, and what that means concretely for how content should be structured, while being explicit that this describes retrieval-augmented pipelines specifically, not every way an LLM can consume text.</p>
+
+      <h2 id="what-is-a-chunk">What Is a Chunk?</h2>
+      <p><strong>Chunk.</strong> A contiguous span of text, typically a paragraph, a few sentences, or a section, extracted from a larger document and treated as an independent, retrievable unit. A chunk is the thing that gets embedded, stored, and retrieved; it is not the same object as the page it came from.</p>
+      <p><strong>Passage.</strong> Used largely interchangeably with "chunk" in academic information retrieval literature, particularly in question-answering research (Karpukhin et al.'s Dense Passage Retrieval paper uses "passage" as its primary term for this same unit).</p>
+      <p><strong>Document.</strong> The original, complete source, a webpage, a PDF, a support article, before it's split. In RAG system design, "document" and "chunk" are deliberately distinct terms precisely because a document is rarely the unit that gets matched against a query.</p>
+      <p><strong>Embedding.</strong> A fixed-length numerical vector representing a chunk's meaning, positioned in a high-dimensional space such that semantically similar chunks produce vectors that are close together.</p>
+      <p><strong>Context window.</strong> The maximum amount of text (measured in tokens) a model can process in a single call, as of mid-2026, this ranges from roughly 200K tokens (Claude's standard tier, with a 1M-token beta) to 1M to 1.1M tokens (GPT-5.x, standard Gemini tiers) up to 10M tokens in some Gemini configurations. Context window size determines an upper bound on how much retrieved content (and everything else in a request, system prompt, conversation history, retrieved chunks) can be included at once; it does not by itself determine retrieval accuracy.</p>
+      <p><strong>Semantic unit.</strong> A span of text that expresses one complete, coherent idea, the property good chunking tries to preserve, and naive chunking often breaks.</p>
+      <p><strong>The difference between a webpage and a chunk, stated precisely:</strong> a webpage is a rendering unit, it exists to be displayed to a browser and read top to bottom by a human. A chunk is a retrieval unit, it exists to be independently matched against a query, often read by a system in complete isolation from the rest of its source page. Content that reads perfectly in page order can fail badly as an isolated chunk if it depends on context established several paragraphs earlier.</p>
+
+      <h2 id="why-chunks">Why AI Systems Use Chunks</h2>
+      <p><strong>Token limits.</strong> Even with the substantially larger context windows available by mid-2026, retrieval systems typically operate over collections, hundreds, thousands, or millions of documents, far exceeding what any single context window could hold, regardless of size. Chunking is what makes search across a large collection tractable at all; a bigger context window changes how much retrieved content can be used per query, not whether retrieval and chunking are still needed to select that content from a large corpus in the first place.</p>
+      <p><strong>Retrieval efficiency.</strong> Vector search operates over an index of embeddings; smaller, focused units produce more precise vector representations than large, topic-mixed ones, since a single embedding has to represent everything in its input, mixing multiple topics in one chunk dilutes the vector's specificity for any one of them.</p>
+      <p><strong>Semantic similarity.</strong> A chunk's embedding is only as useful as the coherence of what it represents. Pinecone's own stated rule of thumb for evaluating chunk quality is direct: if a chunk of text makes sense to a human without its surrounding context, it will make sense to the model as well, and fixed-size splitting, which ignores sentence and paragraph boundaries, regularly fails that test.</p>
+      <p><strong>Embedding generation and vector databases.</strong> Every embedding call and every vector-index entry has both a computational cost and a monetary cost, scaling with the number of chunks. This is a direct, real engineering constraint, more chunks means more embedding calls, larger indexes, and higher storage and query costs, not a hypothetical one.</p>
+      <p><strong>Grounding.</strong> Supplying a generation model with the specific, relevant chunks needed to answer a query, rather than an entire source document, reduces the amount of irrelevant material the model has to filter through to construct a grounded response.</p>
+      <p><strong>Latency.</strong> Smaller, targeted context reduces the token count a model has to process per request, directly affecting response time; larger context inputs measurably increase time-to-first-token.</p>
+      <p><strong>Cost.</strong> Nearly every commercial LLM API prices by token count, for both input and output; retrieving only the relevant chunks rather than entire documents directly reduces per-query cost at scale.</p>
+      <p><strong>Scalability.</strong> A chunked, indexed architecture allows a retrieval system to search across a corpus that grows into the millions of documents without a linear increase in per-query context size, a property whole-document approaches don't have, since a whole-document approach can't cap the size of what a single relevant match might contribute to a query.</p>
+      <p><strong>An important caveat, stated per this article's own constraints:</strong> larger context windows do not eliminate the case for chunking, but they do change some of its trade-offs, a system with a very large context window can, in some architectures, retrieve larger chunks or more of them per query without exceeding the window. Independent research on long-context model behavior has documented a separate, real problem here: models retrieving information from the middle of very long contexts perform measurably worse than when that same information sits near the beginning or end, a phenomenon researchers have termed "lost in the middle." This means simply feeding a model more raw text, even within a technically supported context window, does not reliably substitute for retrieving well-chosen, relevant chunks.</p>
+
+      <h2 id="pipeline">The Chunking Pipeline</h2>
+      <div class="post-figure">
+        <img src="assets/svg/blog/post/chunking-pipeline.svg" alt="Pipeline from webpage through HTML parsing, content cleaning, heading detection, chunk generation, embedding creation, vector database storage, semantic retrieval, grounding, to LLM response. The page itself is never the thing matched against a query, a chunk is." width="660" height="860">
+        <span class="post-figure-caption mono">The page itself is never the thing matched against a query. A chunk is.</span>
+      </div>
+      <p><strong>HTML parsing</strong> extracts the underlying markup structure, tags, headings, paragraph boundaries, that later stages depend on. <strong>Content cleaning</strong> removes navigation, ads, cookie banners, and other boilerplate that would otherwise pollute embeddings with irrelevant text; this is the same extraction-difficulty problem that motivated the llms.txt proposal specifically for AI consumption. <strong>Heading detection</strong> identifies structural boundaries (H1 to H6) that many chunking strategies use as natural, semantically meaningful split points, rather than arbitrary character counts. <strong>Chunk generation</strong> applies a specific splitting strategy (detailed below) to produce the final retrievable units. <strong>Embedding creation</strong> converts each chunk into a vector via a model such as those in the Sentence-BERT family or a commercial embedding API. <strong>Vector database</strong> storage (FAISS, Pinecone, Weaviate, Milvus, Chroma, and similar systems) indexes these vectors for efficient approximate-nearest-neighbor search. <strong>Semantic retrieval</strong> finds the chunks closest to a query's embedding. <strong>Grounding</strong> supplies those retrieved chunks to a generation model as context. <strong>LLM response</strong> is the final, synthesized output.</p>
+
+      <h2 id="strategies">Different Chunking Strategies</h2>
+      <p><strong>Fixed-size chunking</strong> splits text into equal-length spans (by character or token count), optionally with overlap between consecutive chunks to preserve context across a boundary. Advantage: simple, fast, predictable output size. Disadvantage: ignores sentence and paragraph structure entirely, regularly cutting mid-sentence or mid-thought.</p>
+      <p><strong>Sliding window chunking</strong> is a variant of fixed-size chunking where consecutive chunks overlap by a defined amount, specifically to preserve transitional context and linked ideas that a hard boundary would otherwise sever. Advantage: reduces the "cut mid-thought" failure of pure fixed-size splitting. Disadvantage: increases total chunk count and storage/embedding cost proportional to the overlap percentage.</p>
+      <p><strong>Recursive chunking</strong>, implemented as LangChain's <code>RecursiveCharacterTextSplitter</code>, and documented as LangChain's default splitter for this reason, attempts to split on a prioritized list of separators (paragraph breaks first, then line breaks, then sentences, then words), falling back to a coarser separator only if a resulting chunk still exceeds the target size. Advantage: respects document structure without requiring an embedding model at split time, and handles the majority of general-purpose cases well, per Pinecone's own stated framing of it as a strong middle ground. Disadvantage: still ultimately governed by a size target, so very long unstructured passages can still be split at less-than-ideal points.</p>
+      <p><strong>Sentence chunking</strong> splits strictly on sentence boundaries. Advantage: guarantees grammatically complete units. Disadvantage: individual sentences are frequently too short to carry meaningful standalone context, especially for anaphoric references ("it," "this," "the company") to something established in a prior sentence.</p>
+      <p><strong>Paragraph chunking</strong> splits on paragraph boundaries. Advantage: aligns well with how content is naturally authored to group related ideas. Disadvantage: paragraph length varies enormously by writing style, producing inconsistent chunk sizes that can exceed embedding-model input limits or retrieval-system size targets.</p>
+      <p><strong>Semantic chunking</strong> uses embedding similarity between adjacent sentences to detect genuine topic shifts, splitting where similarity drops below a threshold (commonly a percentile-based cutoff, as implemented in LangChain's <code>SemanticChunker</code>) rather than at a fixed size. Advantage: one 2026 benchmark comparison reported semantic chunking producing the highest accuracy lift among tested strategies against naive baselines in that specific test, a single vendor benchmark, not a peer-reviewed, replicated finding, and results are dataset-dependent. Disadvantage: requires an embedding model at chunking time, adding compute cost and latency to the ingestion pipeline itself.</p>
+      <p><strong>Markdown-aware chunking</strong> parses Markdown syntax (headings, lists, code blocks) to split along the document's own declared hierarchy rather than treating it as flat text. Advantage: directly preserves the author's intended structure. Disadvantage: only applicable to content that's actually well-formed Markdown or convertible to it cleanly.</p>
+      <p><strong>Section-aware chunking</strong> performs structural splitting first, at document headers and sections, and only applies size limits within those structural boundaries as a second pass, a two-pass pattern some production RAG-pipeline implementations use specifically to avoid breaking a heading's content across chunks arbitrarily. Advantage: combines the structural fidelity of Markdown-aware chunking with a hard ceiling on individual chunk size. Disadvantage: requires the source content to have reliably marked structural boundaries to begin with, unstructured prose gets no benefit from this approach.</p>
+
+      <h2 id="why-quality-matters">Why Chunk Quality Matters</h2>
+      <p><strong>Retrieval accuracy.</strong> A chunk that mixes two topics produces an embedding that's a compromise between both, weakening its similarity score to queries about either one specifically, this is a direct, mechanical consequence of how embedding models represent meaning as a single vector per input. Which sections of a page actually get selected as chunks in production systems is measured directly in <a href="what-ai-actually-reads-on-your-webpage.html">the site's research on what AI actually reads on a webpage</a>.</p>
+      <p><strong>Grounding.</strong> A model given a well-bounded, complete chunk has to do less inferential reconstruction to use it correctly; a model given a chunk that starts or ends mid-thought has to either guess at missing context or produce an incomplete answer.</p>
+      <p><strong>Citation likelihood.</strong> In systems that track provenance back to source chunks, a self-contained chunk is more likely to be selected and cited cleanly, since it can stand on its own as supporting evidence, a chunk that only makes sense alongside its neighbors is a weaker citation candidate even if its content is relevant.</p>
+      <p><strong>Semantic relevance.</strong> Directly tied to retrieval accuracy above, chunk quality and semantic-match quality are the same underlying mechanism, described from two angles.</p>
+      <p><strong>Answer completeness.</strong> If a chunk boundary falls in the middle of a multi-part explanation (for instance, splitting a list of steps across two separate chunks), a retrieval system may surface only part of the needed information, producing an incomplete grounded answer even when the source document, read as a whole, fully addressed the query.</p>
+      <p><strong>Hallucination reduction.</strong> This is a plausible, mechanistically reasonable connection, a model given incomplete or poorly bounded context has more gaps to fill from parametric knowledge rather than grounded evidence, but no controlled, published study reviewed for this article isolates chunk quality specifically as an independent variable and measures its effect on hallucination rate. This article states that gap explicitly rather than treating the connection as confirmed.</p>
+      <p><strong>Trust.</strong> Downstream of the above: a system that reliably retrieves complete, accurate, well-grounded chunks produces answers a user can rely on more consistently; this is a reasonable end-to-end consequence of the mechanisms above, not a separately measured metric on its own.</p>
+      <p><strong>A practical example.</strong> A product page listing installation steps as "Step 1... Step 2... Step 3..." within a single unbroken paragraph, with no heading or list markup, is a strong candidate for a fixed-size splitter to cut between Step 2 and Step 3, producing one chunk with an incomplete instruction set. The same content marked up as a proper HTML list, or split by a <code>HowTo</code>-aware or section-aware chunker, would far more reliably stay intact as one retrievable unit.</p>
+
+      <h2 id="mistakes">Common Chunking Mistakes</h2>
+      <ul>
+        <li><strong>Chunks too large</strong>, dilutes the embedding's specificity by forcing it to represent multiple ideas at once, and risks exceeding downstream size limits.</li>
+        <li><strong>Chunks too small</strong>, as with pure sentence chunking, risks losing the surrounding context a short span needs to be independently meaningful.</li>
+        <li><strong>Broken headings</strong>, a heading separated from the content it introduces (split across a chunk boundary) loses the structural signal that heading was meant to provide to both readers and chunkers.</li>
+        <li><strong>Mixed topics</strong>, a chunk covering two unrelated ideas produces a compromised embedding that matches neither topic's queries well.</li>
+        <li><strong>No semantic boundaries</strong>, pure fixed-size or fixed-character splitting with no awareness of sentence, paragraph, or structural markers, regularly producing mid-thought cuts.</li>
+        <li><strong>Missing context</strong>, a chunk that depends on an antecedent (a pronoun, a previously named entity) established several paragraphs earlier, but retrieved and read in isolation.</li>
+        <li><strong>Duplicate chunks</strong>, near-identical content appearing in multiple chunks (from templated boilerplate, or from poor deduplication during ingestion) wastes index space and can crowd out genuinely distinct, relevant chunks in retrieval results.</li>
+        <li><strong>Poor document hierarchy</strong>, source content with no clear heading structure at all gives every chunking strategy less to work with, forcing a fallback to size-based splitting regardless of which strategy is nominally configured.</li>
+      </ul>
+
+      <h2 id="optimising">Optimising Content for Chunk Retrieval</h2>
+      <ul>
+        <li><strong>Clear headings</strong>, name the specific concept or entity a section addresses, giving structural and Markdown-aware chunkers a reliable, meaningful split point.</li>
+        <li><strong>Logical hierarchy</strong>, consistent use of heading levels (H2 for major sections, H3 for subsections) gives section-aware chunking strategies an accurate structural map to follow.</li>
+        <li><strong>Short, focused sections</strong>, content organized so that each section covers one complete idea reduces the odds that any reasonable chunking strategy splits it awkwardly.</li>
+        <li><strong>Entity-rich writing</strong>, explicitly naming entities rather than relying on pronouns reduces the context a chunk needs from its neighbors to be independently meaningful, directly addressing the "missing context" failure mode above, a mechanism explored in more depth in <a href="entity-clarity-beats-keyword-density-in-retrieval-scoring.html">the site's research on entity clarity in retrieval scoring</a>.</li>
+        <li><strong>Internal links</strong>, primarily a crawl-discovery and site-architecture signal, not a chunk-quality one; included here because it remains a prerequisite (a page must be found and crawled before it can be chunked at all), not because it improves chunking itself.</li>
+        <li><strong>Schema</strong>, structured data can supply explicit type and entity context that helps a system interpret a page's content correctly, with confirmed relevance to Google's own AI features specifically; its effect on third-party RAG pipelines' chunking or retrieval isn't independently documented.</li>
+        <li><strong>Context preservation</strong>, writing each section so it doesn't depend on unstated information from earlier sections directly reduces the "missing context" failure this article has already identified as a common mistake.</li>
+        <li><strong>Semantic continuity</strong>, maintaining a consistent topic focus within a section (rather than drifting across several loosely related ideas) keeps a section's eventual chunk embedding specific and precise.</li>
+      </ul>
+      <p>Each of these works by the same underlying mechanism: reducing the amount of external context a chunk needs in order to be correctly and independently interpretable, since that is exactly the condition under which retrieval systems will actually use it.</p>
+
+      <h2 id="comparison">Traditional SEO vs. Chunk Optimisation</h2>
+      <div class="post-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Traditional SEO</th><th>Chunk Optimisation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pages</td><td>Chunks (paragraph/section-scale spans within a page)</td></tr>
+            <tr><td>Keywords</td><td>Entities (explicitly named, disambiguated)</td></tr>
+            <tr><td>Rankings</td><td>Retrieval (semantic similarity match at query time)</td></tr>
+            <tr><td>Meta titles</td><td>Semantic structure (headings, hierarchy, section boundaries)</td></tr>
+            <tr><td>Page relevance</td><td>Chunk relevance (a sub-page span's match to a specific query)</td></tr>
+            <tr><td>Whole-document authority signals (backlinks)</td><td>Embedding quality of individual spans</td></tr>
+            <tr><td>Crawl and index the page</td><td>Crawl, extract, chunk, and embed the page's content</td></tr>
+            <tr><td>One unit competes per query</td><td>Multiple chunks from the same page can each independently compete for different queries</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>How both approaches complement one another:</strong> a page still needs to be crawled and indexed to be eligible for either traditional ranking or chunk-based retrieval, nothing in this article's chunking discussion bypasses that gate. What changes is the unit of competition within an already-eligible page: traditional SEO optimizes the page as a whole for one ranking position, while chunk optimization recognizes that different sections of the same page may independently win or lose separate retrieval competitions for different queries, an idea with no real equivalent in page-level ranking.</p>
+
+      <h2 id="geo-checklist">Practical GEO Checklist</h2>
+      <ol>
+        <li>Use descriptive headings that name the specific concept a section covers, not generic labels.</li>
+        <li>Maintain one topic per section, mixed-topic sections weaken every chunking strategy that touches them.</li>
+        <li>Avoid abrupt topic changes within a single paragraph or section; if a topic shifts, start a new section with its own heading.</li>
+        <li>Use entity-rich language, explicit names over pronouns, especially at section starts.</li>
+        <li>Preserve context within each section so it can stand alone if retrieved in isolation.</li>
+        <li>Reduce ambiguity by disambiguating polysemous terms on first mention within each section, not just once at the top of the page.</li>
+        <li>Use structured data (Article, FAQPage, HowTo) where it matches genuine content structure, particularly for confirmed platforms.</li>
+        <li>Maintain semantic continuity, keep each section's sentences focused on the same underlying idea.</li>
+        <li>Improve information density, remove filler that dilutes a chunk's embedding without adding retrievable substance.</li>
+        <li>Write for retrieval explicitly: ask, for each section, "would this make sense if someone read only this paragraph, with no surrounding context?"</li>
+        <li>Keep lists and sequential steps in genuine list markup (<code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>), not run-on prose, to help both structural chunkers and human readers.</li>
+        <li>Use consistent heading-level hierarchy (H2 to H3 to H4) rather than skipping levels or using headings purely for visual styling.</li>
+        <li>Avoid extremely long, undifferentiated blocks of text with no internal headings, they force every chunking strategy back onto arbitrary size-based splitting.</li>
+        <li>Where content naturally repeats (product variants, templated sections), differentiate each instance enough that chunks aren't near-duplicates of each other.</li>
+        <li>Front-load the specific entity or concept a section addresses in its first sentence, rather than building up to it.</li>
+        <li>Test how your own content chunks using an open chunking library (LangChain's <code>RecursiveCharacterTextSplitter</code> or similar) to see the actual output before assuming a strategy works.</li>
+        <li>Pair chunk-level structure with page-level fundamentals (crawlability, indexing eligibility), chunk optimization cannot compensate for a page that's never fetched.</li>
+        <li>Avoid relying solely on very large context windows as a substitute for good structure; "lost in the middle" research shows position within a long context measurably affects retrieval, even within a supported window size.</li>
+        <li>Revisit chunking-relevant structure after significant content edits, restructuring a page's content without updating headings can silently degrade downstream chunk quality.</li>
+        <li>Treat this as an evolving, testable discipline, chunking-strategy research (semantic chunking, contextual retrieval, late chunking) is active and published results vary by dataset; validate against your own content and query patterns rather than assuming a single strategy is universally best.</li>
+      </ol>
+
+      <h2 id="future-outlook">Future Outlook</h2>
+      <p><strong>Longer context windows.</strong> Context windows have grown substantially, from roughly 4K to 8K tokens in early flagship models to 1M tokens and beyond by mid-2026 across major providers. As established above, this changes retrieval trade-offs (more retrieved content can fit per query) without eliminating the underlying need to select which content to retrieve from a large corpus, chunking and retrieval remain necessary for searching across collections larger than any single context window, regardless of how large that window grows.</p>
+      <p><strong>Agentic search.</strong> As AI systems perform multi-step tasks requiring several retrieval calls within one session, chunk quality compounds across steps, an agent building on a poorly grounded intermediate retrieval result carries that error forward, a reasonable architectural inference rather than a documented, measured finding specific to any named production system.</p>
+      <p><strong>Persistent memory.</strong> Whether AI assistants increasingly retrieve from session-spanning memory stores, in addition to or instead of live document retrieval, is an active product-design direction industry-wide; no primary source reviewed for this article documents a specific technical architecture unifying persistent memory with the chunk-retrieval pipeline described here.</p>
+      <p><strong>Dynamic and adaptive retrieval.</strong> Published 2026-era techniques, including approaches selecting chunk granularity per query rather than using a single fixed size across an entire corpus, represent an active, documented research direction, distinct from the static, one-time chunking strategies detailed earlier in this article.</p>
+      <p><strong>Knowledge graphs.</strong> Combining chunk-based dense retrieval with structured, entity-linked knowledge-graph lookups is an observed architectural pattern in production RAG systems generally; the specific weighting between the two approaches in any particular commercial product isn't published in comparable detail across vendors.</p>
+      <p><strong>Multimodal chunking.</strong> Extending chunking beyond text to images, video segments, and other media is a natural extension of the same underlying problem (breaking large content into independently retrievable, embeddable units), though this article found no primary-source documentation of a standardized approach comparable to the text-chunking strategies detailed above.</p>
+      <p><strong>Real-time retrieval.</strong> Google's own stated architecture for AI Overviews and AI Mode, retrieval-augmented generation drawing on its existing, continuously updated Search index, is a documented example of retrieval operating against live, current content rather than a static, one-time-ingested corpus; whether this specific pattern generalizes to how other platforms will architect real-time retrieval isn't something this article can responsibly extrapolate beyond Google's own stated case.</p>
+
+      <h2 id="key-takeaways">Key Takeaways</h2>
+      <ol>
+        <li>Retrieval-augmented systems match queries against chunks, sub-document spans, not whole pages; this is documented, standard architecture across every major vector-database and RAG-framework vendor examined for this article.</li>
+        <li>Chunking is necessary primarily because retrieval operates across large collections that exceed any context window, and because focused, single-topic embeddings retrieve more precisely than broad, mixed-topic ones.</li>
+        <li>Larger context windows change how much retrieved content fits per query; they don't eliminate the need to select which content to retrieve from a large corpus in the first place.</li>
+        <li>"Lost in the middle" research documents a real, measured degradation in retrieval accuracy for information placed mid-context, even within a technically supported window size.</li>
+        <li>Recursive chunking (splitting on a prioritized list of separators) is documented as LangChain's default strategy specifically because it handles general-purpose content well without requiring an embedding model at chunking time.</li>
+        <li>Semantic chunking uses embedding-similarity shifts to detect topic boundaries and has shown strong results in at least one published vendor benchmark, though results are dataset-dependent and not established as universally superior.</li>
+        <li>Pinecone's stated rule of thumb, a chunk should make sense to a human reading it in isolation, is a practical, testable standard for evaluating chunk quality directly.</li>
+        <li>The connection between chunk quality and hallucination reduction is mechanistically plausible but not confirmed by a controlled, published study isolating that specific variable.</li>
+        <li>Content structured with clear headings, entity-explicit writing, and topic-focused sections produces measurably better chunk boundaries across every major chunking strategy examined in this article.</li>
+        <li>This describes retrieval-augmented pipelines specifically, a model reading one document a user pastes directly, or processing a single file end to end within its context window, is a different, whole-document interaction pattern that doesn't involve this chunking pipeline at all.</li>
+      </ol>
+
+      <h2 id="glossary">Glossary</h2>
+      <dl>
+        <dt>Chunk</dt>
+        <dd>A contiguous span of text extracted from a document and treated as an independent retrievable unit.</dd>
+        <dt>Passage</dt>
+        <dd>Academic IR term largely synonymous with "chunk," used in papers like Dense Passage Retrieval.</dd>
+        <dt>Context window</dt>
+        <dd>The maximum text length a model can process in a single call.</dd>
+        <dt>Recursive chunking</dt>
+        <dd>Splitting on a prioritized list of separators (paragraphs, then lines, then sentences, then words), LangChain's documented default strategy.</dd>
+        <dt>Semantic chunking</dt>
+        <dd>Splitting based on embedding-similarity shifts between adjacent sentences rather than a fixed size.</dd>
+        <dt>Chunk overlap</dt>
+        <dd>Shared text between consecutive chunks, used to preserve context across a split boundary.</dd>
+        <dt>Lost in the middle</dt>
+        <dd>A documented phenomenon where information positioned in the middle of a long context is retrieved less reliably than information near the beginning or end.</dd>
+        <dt>Vector database</dt>
+        <dd>Infrastructure for efficient approximate-nearest-neighbor search over chunk embeddings (FAISS, Pinecone, Weaviate, Milvus, Chroma).</dd>
+        <dt>Grounding</dt>
+        <dd>Supplying retrieved chunks to a generation model as context for its response.</dd>
+      </dl>
+
+      <h2 id="faq">FAQ</h2>
+      <p><strong>Does this mean whole-page content doesn't matter anymore?</strong></p>
+      <p>No. A page still needs to be crawled, indexed, and eligible for retrieval before any of its chunks can be considered, page-level fundamentals remain a prerequisite, not a replacement, for chunk-level optimization.</p>
+      <p><strong>Do all AI systems chunk content?</strong></p>
+      <p>No, and this article does not claim that. Chunking is specific to retrieval-augmented pipelines searching across a corpus. A model processing one document a user provides directly, within its context window, does not necessarily chunk that document first, this depends on the specific application and how it's built.</p>
+      <p><strong>Is there one correct chunk size?</strong></p>
+      <p>No. Published guidance varies by use case, general documents commonly use smaller chunk sizes, technical reference material commonly uses larger ones, and 2026-era research suggests optimal chunk size can vary even within a single corpus depending on the specific query. This article does not endorse one universal number.</p>
+      <p><strong>Will bigger context windows eventually make chunking unnecessary?</strong></p>
+      <p>Not for the retrieval problem specifically, retrieving relevant content from a large corpus still requires deciding what to retrieve, which requires some unit of comparison. Bigger context windows change what happens after that selection (how much retrieved content can be included), not whether selection is needed in the first place.</p>
+
+      <h2 id="references">References</h2>
+      <ul>
+        <li>Pinecone, "Chunking Strategies for LLM Applications," pinecone.io/learn/chunking-strategies</li>
+        <li>LangChain documentation, <code>RecursiveCharacterTextSplitter</code> and <code>SemanticChunker</code> reference</li>
+        <li>Karpukhin, V., et al., "Dense Passage Retrieval for Open-Domain Question Answering," Proceedings of EMNLP 2020 (ACL Anthology)</li>
+        <li>Reimers, N., and Gurevych, I., "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks," Proceedings of EMNLP-IJCNLP 2019 (ACL Anthology)</li>
+        <li>Liu, N. F., et al., "Lost in the Middle: How Language Models Use Long Contexts," Transactions of the Association for Computational Linguistics, 2023</li>
+        <li>Anthropic Engineering, "Introducing Contextual Retrieval"</li>
+        <li>Answer.AI, "/llms.txt, a proposal to provide information to help LLMs use websites," September 3, 2024 (cited for the HTML-extraction-difficulty problem statement)</li>
+        <li>Google for Developers, "AI Features and Your Website," Google Search Central documentation</li>
+      </ul>
+
+      <div class="related-section">
+        <span class="mono toc-label">Related Reading</span>
+        <div class="related-groups">
+        <div class="related-group">
+          <span class="mono related-group-label">Related Blog Posts</span>
+          <div class="related-list">
+          <a href="retrieval-is-becoming-more-important-than-ranking-in-ai-search.html" class="related-row">
+            <span class="related-title">Retrieval Is Becoming More Important Than Ranking</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          <a href="ai-retrieval-rewards-specificity-not-word-count.html" class="related-row">
+            <span class="related-title">AI Retrieval Rewards Specificity, Not Word Count</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        <div class="related-group">
+          <span class="mono related-group-label">Related Research</span>
+          <div class="related-list">
+          <a href="what-ai-actually-reads-on-your-webpage.html" class="related-row">
+            <span class="related-title">R_WP003: What AI Actually Reads on Your Webpage</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-inner">
+      <h2>For agencies, brands and small businesses who want a site built right, and found by both people and machines.</h2>
+      <div class="contact-links">
+        <a href="mailto:akshaydahiya92.ad@gmail.com">
+          Email
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" rel="noopener">
+          LinkedIn
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://github.com/dahiyaakshay?tab=repositories" target="_blank" rel="noopener">
+          GitHub
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Akshay Dahiya <a href="llm.txt" class="foot-link">llm.txt</a> <a href="sitemap.xml" class="foot-link">sitemap</a></span>
+      <span>akshaydahiya.site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>

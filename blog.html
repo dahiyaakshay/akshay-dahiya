@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-E6JLR8VFSJ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog / Akshay Dahiya: Field Notes on SEO & AI Retrieval</title>
+<meta name="description" content="Field notes on SEO, GEO and the mechanics of AI visibility, from the developer of AI Spider.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "url": "https://akshaydahiya.site/blog.html",
+  "name": "Blog / Akshay Dahiya",
+  "description": "Field notes on SEO, GEO and the mechanics of AI visibility, from the developer of AI Spider.",
+  "author": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "What llms.txt Actually Changes for AI Crawlers",
+      "url": "https://akshaydahiya.site/what-llms-txt-actually-changes-for-ai-crawlers.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Entity Clarity Beats Keyword Density in Retrieval Scoring",
+      "url": "https://akshaydahiya.site/entity-clarity-beats-keyword-density-in-retrieval-scoring.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Structured Data Is the New Backlink? Why Schema Matters More in AI Retrieval",
+      "url": "https://akshaydahiya.site/structured-data-vs-backlinks-in-ai-retrieval.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Crawl Budget vs Retrieval Readiness: What Changes in the Age of AI Agents",
+      "url": "https://akshaydahiya.site/crawl-budget-vs-retrieval-readiness.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Retrieval Is Becoming More Important Than Ranking in AI Search",
+      "url": "https://akshaydahiya.site/retrieval-is-becoming-more-important-than-ranking-in-ai-search.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "AI Doesn't Read Web Pages, It Retrieves Chunks",
+      "url": "https://akshaydahiya.site/ai-retrieves-chunks-not-web-pages.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Citation Is the New Click: Measuring Success in AI Search",
+      "url": "https://akshaydahiya.site/citation-is-the-new-click.html"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "AI Retrieval Rewards Specificity, Not Word Count",
+      "url": "https://akshaydahiya.site/ai-retrieval-rewards-specificity-not-word-count.html"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="grid-overlay" id="gridOverlay"></div>
+
+<header>
+  <div class="wordmark"><a href="index.html" style="color:inherit;">Akshay Dahiya <span class="mono">/ AD</span></a></div>
+  <div class="nav-wrap" id="navWrap">
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mailto:akshaydahiya92.ad@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://github.com/dahiyaakshay/marketing-skills" target="_blank" rel="noopener" class="btn-install">Install Skills</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navWrap">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main class="wrap">
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="eyebrow">
+      <span class="dash"></span>
+      <span class="mono">Blog</span>
+    </div>
+    <h1 class="display">Field notes on SEO, GEO and the mechanics of AI visibility.</h1>
+    <p class="blog-hero-sub">Short, practical write-ups from building retrieval-audit tooling in the open, covering what actually changes AI visibility and what's noise.</p>
+  </section>
+
+  <!-- BLOG INDEX -->
+  <section class="blog-index" id="blog-index">
+
+    <div class="blog-post-grid">
+
+      <a href="what-llms-txt-actually-changes-for-ai-crawlers.html" class="post-card">
+        <div class="post-thumb">
+          <img src="assets/svg/blog/thumb-llmtxt.svg" alt="" width="400" height="250">
+        </div>
+        <div class="post-body">
+          <span class="blog-tag mono">AI Visibility</span>
+          <h2>What llms.txt actually changes for AI crawlers</h2>
+          <p>Google, OpenAI and Anthropic have all declined to confirm using it. Independent studies across hundreds of thousands of domains find no citation lift, outside one narrow, real use case.</p>
+          <span class="post-meta mono">Jul 2026 <span class="sep">/</span> Read more →</span>
+        </div>
+      </a>
+
+      <a href="entity-clarity-beats-keyword-density-in-retrieval-scoring.html" class="post-card">
+        <div class="post-thumb">
+          <img src="assets/svg/blog/thumb-entity.svg" alt="" width="400" height="250">
+        </div>
+        <div class="post-body">
+          <span class="blog-tag mono">GEO</span>
+          <h2>Entity clarity beats keyword density in retrieval scoring</h2>
+          <p>TF-IDF and BM25 score strings, not things. Modern retrieval increasingly resolves ambiguous terms to specific entities, and that changes what content actually needs to do.</p>
+          <span class="post-meta mono">Jun 2026 <span class="sep">/</span> Read more →</span>
+        </div>
+      </a>
+
+      <a href="structured-data-vs-backlinks-in-ai-retrieval.html" class="post-card">
+        <div class="post-thumb">
+          <img src="assets/svg/blog/thumb-structured-data.svg" alt="" width="400" height="250">
+        </div>
+        <div class="post-body">
+          <span class="blog-tag mono">Structured Data</span>
+          <h2>Structured data is the new backlink?</h2>
+          <p>Google and Bing confirm schema feeds their AI systems as context. OpenAI, Anthropic and Perplexity haven't said the same, and testing finds no citation lift there.</p>
+          <span class="post-meta mono">Jun 2026 <span class="sep">/</span> Read more →</span>
+        </div>
+      </a>
+
+      <a href="crawl-budget-vs-retrieval-readiness.html" class="post-card">
+        <div class="post-thumb">
+          <img src="assets/svg/blog/thumb-crawl-budget.svg" alt="" width="400" height="250">
+        </div>
+        <div class="post-body">
+          <span class="blog-tag mono">SEO</span>
+          <h2>Crawl budget vs retrieval readiness</h2>
+          <p>A page with perfect chunk boundaries is still invisible if no crawler ever reaches it. Crawl budget and AI retrieval readiness are sequential gates, not competing ones.</p>
+          <span class="post-meta mono">May 2026 <span class="sep">/</span> Read more →</span>
+        </div>
+      </a>
+
+      <a href="retrieval-is-becoming-more-important-than-ranking-in-ai-search.html" class="post-card">
+        <div class="post-thumb">
+          <img src="assets/svg/blog/thumb-retrieval-ranking.svg" alt="" width="400" height="250">
+        </div>
+        <div class="post-body">
+          <span class="blog-tag mono">GEO</span>
+          <h2>Retrieval is becoming more important than ranking</h2>
+          <p>Ranking orders candidate pages. Retrieval selects the specific passages an AI answer is built from. Google's own documentation confirms both now run as sequential stages.</p>
+          <span class="post-meta mono">Apr 2026 <span class="sep">/</span> Read more →</span>
+        </div>
+      </a>
+
+      <a href="ai-retrieves-chunks-not-web-pages.html" class="post-card">
+        <div class="post-thumb">
+          <img src="assets/svg/blog/thumb-chunking.svg" alt="" width="400" height="250">
+        </div>
+        <div class="post-body">
+          <span class="blog-tag mono">GEO</span>
+          <h2>AI doesn't read web pages, it retrieves chunks</h2>
+          <p>A page is never the thing matched against a query. It's split into smaller units first, and each one competes independently for retrieval.</p>
+          <span class="post-meta mono">Mar 2026 <span class="sep">/</span> Read more →</span>
+        </div>
+      </a>
+
+      <a href="citation-is-the-new-click.html" class="post-card">
+        <div class="post-thumb">
+          <img src="assets/svg/blog/thumb-citation.svg" alt="" width="400" height="250">
+        </div>
+        <div class="post-body">
+          <span class="blog-tag mono">GEO</span>
+          <h2>Citation is the new click</h2>
+          <p>Roughly two-thirds of Google searches now end without a click. A separate visibility layer exists beneath it: whether content gets cited as evidence at all.</p>
+          <span class="post-meta mono">Feb 2026 <span class="sep">/</span> Read more →</span>
+        </div>
+      </a>
+
+      <a href="ai-retrieval-rewards-specificity-not-word-count.html" class="post-card">
+        <div class="post-thumb">
+          <img src="assets/svg/blog/thumb-specificity.svg" alt="" width="400" height="250">
+        </div>
+        <div class="post-body">
+          <span class="blog-tag mono">GEO</span>
+          <h2>AI retrieval rewards specificity, not word count</h2>
+          <p>The word-count-ranking correlation was always about backlinks. Dense retrieval makes the case for information density mechanistic instead.</p>
+          <span class="post-meta mono">Jan 2026 <span class="sep">/</span> Read more →</span>
+        </div>
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-inner">
+      <h2>For agencies, brands and small businesses who want a site built right, and found by both people and machines.</h2>
+      <div class="contact-links">
+        <a href="mailto:akshaydahiya92.ad@gmail.com">
+          Email
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" rel="noopener">
+          LinkedIn
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://github.com/dahiyaakshay?tab=repositories" target="_blank" rel="noopener">
+          GitHub
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Akshay Dahiya <a href="llm.txt" class="foot-link">llm.txt</a> <a href="sitemap.xml" class="foot-link">sitemap</a></span>
+      <span>akshaydahiya.site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-E6JLR8VFSJ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entity Clarity Beats Keyword Density in Retrieval Scoring / Akshay Dahiya</title>
+<meta name="description" content="Why modern retrieval treats language as references to things, not strings of words, and what that means for how content should be written.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://akshaydahiya.site/entity-clarity-beats-keyword-density-in-retrieval-scoring.html"
+  },
+  "headline": "Entity Clarity Beats Keyword Density in Retrieval Scoring",
+  "description": "Why modern retrieval treats language as references to things, not strings of words, and what that means for how content should be written.",
+  "datePublished": "2026-06-01",
+  "author": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "publisher": {
+    "@id": "https://akshaydahiya.site/#person"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="grid-overlay" id="gridOverlay"></div>
+
+<header>
+  <div class="wordmark"><a href="index.html" style="color:inherit;">Akshay Dahiya <span class="mono">/ AD</span></a></div>
+  <div class="nav-wrap" id="navWrap">
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mailto:akshaydahiya92.ad@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://github.com/dahiyaakshay/marketing-skills" target="_blank" rel="noopener" class="btn-install">Install Skills</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navWrap">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main class="wrap">
+
+  <a href="blog.html" class="post-back mono">← Back to blog</a>
+
+  <div class="post-layout">
+
+    <!-- TABLE OF CONTENTS -->
+    <aside class="post-toc">
+      <div class="toc-inner">
+        <span class="mono toc-label">On This Page</span>
+        <nav class="toc-nav" id="tocNav">
+          <a href="#top" class="toc-link toc-h1">Entity Clarity Beats Keyword Density in Retrieval Scoring</a>
+          <a href="#executive-summary" class="toc-link toc-h2">Executive Summary</a>
+          <a href="#introduction" class="toc-link toc-h2">Introduction</a>
+          <a href="#what-is-an-entity" class="toc-link toc-h2">What Is an Entity?</a>
+          <a href="#why-keywords-mattered" class="toc-link toc-h2">Why Keywords Mattered</a>
+          <a href="#how-retrieval-works" class="toc-link toc-h2">How Modern Retrieval Works</a>
+          <a href="#why-clarity-matters" class="toc-link toc-h2">Why Entity Clarity Matters More</a>
+          <a href="#comparison" class="toc-link toc-h2">Keyword Density vs. Entity Clarity</a>
+          <a href="#structured-data" class="toc-link toc-h2">The Role of Structured Data</a>
+          <a href="#practical-examples" class="toc-link toc-h2">Practical Examples</a>
+          <a href="#common-mistakes" class="toc-link toc-h2">Common Mistakes</a>
+          <a href="#geo-checklist" class="toc-link toc-h2">Practical GEO Checklist</a>
+          <a href="#future-outlook" class="toc-link toc-h2">Future Outlook</a>
+          <a href="#key-takeaways" class="toc-link toc-h2">Key Takeaways</a>
+          <a href="#glossary" class="toc-link toc-h2">Glossary</a>
+          <a href="#faq" class="toc-link toc-h2">FAQ</a>
+          <a href="#references" class="toc-link toc-h2">References</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="post-content">
+      <div class="post-meta-header mono">GEO <span class="sep">/</span> Jun 2026 <span class="sep">/</span> 12 min read</div>
+
+      <h1 id="top" class="display">Entity Clarity Beats Keyword Density in Retrieval Scoring</h1>
+
+      <p class="post-lede">Why language models reward well-defined entities over repeated phrases, and what that means for how content actually needs to be written.</p>
+
+      <h2 id="executive-summary">Executive Summary</h2>
+      <p>Traditional search ranking scored documents by counting words: how often a term appeared, how rare it was across a corpus, how close it sat to other query terms. That family of methods, TF-IDF, then BM25, treats language as strings. Modern retrieval, the kind that feeds both Google's Knowledge Graph-informed search and the RAG pipelines behind AI chat products, increasingly treats language as references to things: people, organizations, products, places. This shift did not happen because keyword matching was replaced overnight. It happened because entity resolution and semantic embeddings solve a problem keyword matching cannot: they collapse ambiguity. "Apple" the fruit and "Apple" the company are the same string and different entities. A retrieval system that can't tell them apart wastes its ranking budget on false matches. This article traces the mechanics of that shift, from probabilistic term weighting to entity linking, embeddings, and grounded generation, and states plainly where the evidence is solid and where it isn't.</p>
+
+      <h2 id="introduction">Introduction</h2>
+      <p>Keyword density dominated SEO for a structural reason: the ranking systems of the 1990s and 2000s were, mechanically, term-counting systems. TF-IDF scored a term by how often it appeared in a document relative to how rare it was across the collection. BM25, which followed and still underpins search engines like Elasticsearch and OpenSearch today, refined that with saturation (diminishing returns per repeated term) and length normalization. Neither method has any concept of what a word refers to. To a bag-of-words model, "jaguar" is a token with a document frequency, not a car manufacturer, an animal, or a musical instrument. Optimizing for these systems meant optimizing token frequency, because token frequency was, quite literally, the entire signal.</p>
+      <p>AI retrieval changed the input, not just the algorithm. Dense retrieval and generation systems consume meaning as vectors, and increasingly cross-reference text against structured entity data, Google's Knowledge Graph, Wikidata, DBpedia, that exists independently of any particular document's wording. This piece breaks that pipeline apart stage by stage: what an entity actually is, why keyword systems worked well enough for as long as they did, how embeddings and entity linking changed the retrieval calculus, and what a content strategist can concretely do differently, without resorting to the tactical hand-waving that "entity SEO" content often trades in.</p>
+
+      <h2 id="what-is-an-entity">What Is an Entity?</h2>
+      <p><strong>Entity.</strong> In information retrieval and knowledge representation, an entity is a distinct, identifiable thing, a person, organization, place, product, event, or concept, that can be referenced independently of the specific words used to describe it. An entity has an existence outside of text; a keyword does not.</p>
+      <p><strong>Named entity.</strong> A span of text that refers to an entity with a proper name: "Marie Curie," "Tesla, Inc.," "Mount Kilimanjaro." Named Entity Recognition (NER) is the NLP task of finding these spans and classifying them by type (PERSON, ORGANIZATION, LOCATION, and so on).</p>
+      <p><strong>Knowledge graph.</strong> A structured network of entities and the relationships between them, typically stored as subject-predicate-object triples, such as (Marie Curie, discovered, Radium). Google's Knowledge Graph, launched in 2012 under the framing "things, not strings," was described at launch as containing over 500 million objects and 3.5 billion facts and relationships between them. Wikidata and DBpedia are open, community- and Wikipedia-derived equivalents that are widely used as training and grounding sources.</p>
+      <p><strong>Entity resolution.</strong> The process of determining that two different mentions, possibly with different surface text, refer to the same real-world entity. Google's Cloud Natural Language API documentation demonstrates this directly: analyzing a passage about author J.K. Rowling returns a single entity with <code>salience: 0.798</code>, while its <code>mentions</code> array shows the API recognized "Joanne Rowling," "Rowling," "novelist," and pen name "Robert Galbraith" as four separate surface mentions of the same underlying entity.</p>
+      <p><strong>Entity linking.</strong> Connecting a recognized entity mention to a specific node in a knowledge base, for example, resolving the text "Paris" to the Wikidata ID for the French capital rather than Paris, Texas, or Paris Hilton. This is the mechanism that actually resolves ambiguity; NER alone only finds that a proper noun exists, not which real-world thing it names.</p>
+      <p><strong>Disambiguation.</strong> The general term for choosing the correct referent among multiple candidates when a surface string is ambiguous. It is the problem entity linking exists to solve.</p>
+
+      <p><strong>Worked example, ambiguity in practice.</strong> Consider five single-word entities with genuinely different resolutions depending on context:</p>
+      <ul>
+        <li><strong>Apple</strong> → could resolve to the fruit (Wikidata Q89), the company (Wikidata Q312), or the record label (Apple Records)</li>
+        <li><strong>Jaguar</strong> → the animal (Panthera onca), the car manufacturer (Jaguar Cars), or the Mac OS X 10.2 codename</li>
+        <li><strong>Python</strong> → the snake genus, the programming language, or Monty Python</li>
+        <li><strong>Mercury</strong> → the planet, the element, the Roman god, or the automotive brand (discontinued 2011)</li>
+        <li><strong>Amazon</strong> → the river, the rainforest, or the company</li>
+      </ul>
+      <p>A keyword-matching system treats all of these as one token each. An entity-resolving system treats each as multiple distinct nodes, and uses surrounding context, co-occurring entities, syntactic role, document-level topic signals, to pick the right one. This is not a subtle distinction; it is the entire mechanical difference between the two paradigms.</p>
+
+      <h2 id="why-keywords-mattered">Why Keywords Mattered in Traditional SEO</h2>
+      <p><strong>TF-IDF</strong> (term frequency, inverse document frequency) scores a term's importance to a document as a function of how often it appears in that document, discounted by how commonly it appears across the whole collection. A term that's frequent in one document but rare elsewhere scores high; a term that's frequent everywhere (like "the") scores near zero regardless of raw count.</p>
+      <p><strong>BM25</strong> (Best Matching 25), developed from the probabilistic retrieval framework built by Stephen Robertson and Karen Spärck Jones through the 1970s to 1990s and implemented in the Okapi system at City University London, extended TF-IDF with two refinements: term-frequency saturation, so the tenth occurrence of a word contributes far less than the second, and document-length normalization, so a long document doesn't win purely by containing more words. BM25 remains, decades later, the default lexical scoring function in Elasticsearch, OpenSearch, and Lucene, and is still used as the sparse-retrieval half of many hybrid search systems.</p>
+      <p><strong>Why density became a popular tactic:</strong> because it was legible and directly manipulable. If a term's frequency (relative to corpus frequency) drove the score, then repeating a target term more often, within limits, moved the score. This produced two decades of content advice keyed to keyword counts, LSI-keyword lists, and density percentages.</p>
+      <p><strong>The limitation, stated precisely:</strong> these functions have no representation of meaning. BM25 cannot tell that "car," "automobile," and "vehicle" are related concepts, that "Apple" in one document means the fruit and in another means the corporation, or that a page repeating "best running shoes" fifteen times is not more relevant to a runner's actual question than a page that says it twice but correctly identifies the shoe brand, use case, and terrain. Term-frequency methods score surface form. They do not, and structurally cannot, score reference.</p>
+
+      <h2 id="how-retrieval-works">How Modern Retrieval Works</h2>
+      <p>A production AI-answer pipeline, the kind behind RAG-based chat products and modern hybrid search engines, typically runs through the stages below. Retrieval itself forks into three methods that run in parallel and get merged back together before a chunk is ever selected.</p>
+
+      <div class="post-figure">
+        <img src="assets/svg/blog/post/entity-clarity-pipeline.svg" alt="Pipeline from user query through entity extraction, retrieval (which forks into sparse BM25 matching, dense embedding search, and knowledge graph lookup, then fuses back together), chunk selection, grounding, generation, and citation attribution." width="660" height="700">
+        <span class="post-figure-caption mono">Entity resolution touches nearly every stage except the raw embedding math itself.</span>
+      </div>
+
+      <p><strong>Embeddings.</strong> A model (commonly a Sentence-BERT-style bi-encoder, following the siamese-network architecture published by Nils Reimers and Iryna Gurevych in 2019) converts a chunk of text into a fixed-length vector such that semantically similar text produces vectors that are close together under cosine similarity. Critically, this similarity is learned from meaning, not shared vocabulary, "a physician performed surgery" and "a doctor operated on the patient" can embed close together despite sharing almost no words.</p>
+      <p><strong>Semantic similarity / vector search.</strong> Given a query embedding, an approximate-nearest-neighbor index (HNSW, IVF, and similar structures, implemented in tools like FAISS, pgvector, and dedicated vector databases) retrieves the chunks whose embeddings are closest to it. This is the dense retrieval half of a modern hybrid system, run alongside, not instead of, a BM25-style sparse pass; production systems typically fuse both because sparse retrieval is still stronger for exact-match cases like product codes, error strings, or names it hasn't seen paired with synonyms.</p>
+      <p><strong>Entity extraction.</strong> Named entity recognition and linking run over both the query and the candidate documents, identifying which real-world things are being discussed, independent of the specific words used.</p>
+      <p><strong>Knowledge graphs.</strong> Where available, entity nodes carry structured facts and relationships that can be checked directly, rather than inferred from text, Google's Knowledge Graph and structured sources like Wikidata serve this role for general-knowledge entities.</p>
+      <p><strong>Chunk retrieval.</strong> Because documents exceed what a model can process at once, retrieval operates over chunks (paragraph- or section-sized spans) rather than whole documents. A document can contain one highly relevant chunk and nine irrelevant ones; document-level scoring, the unit BM25 and PageRank were built around, doesn't capture this.</p>
+      <p><strong>Grounding.</strong> The retrieved chunks are supplied to the generation model as context, with the expectation that the model's output will be derived from, "grounded in," that context rather than parametric memory alone.</p>
+      <p><strong>Citation.</strong> Some systems track which retrieved chunk supported which claim in the generated output, enabling source attribution back to the original document.</p>
+      <p><strong>Generation.</strong> The language model produces a response conditioned on the query and the grounded context.</p>
+      <p>Entity resolution touches nearly every stage of this pipeline except the embedding math itself: it disambiguates the query, it can filter or boost candidate chunks before dense retrieval even runs, and it supplies the structured facts that ground a generated answer independent of any single document's specific wording.</p>
+
+      <h2 id="why-clarity-matters">Why Entity Clarity Matters More Than Keyword Density</h2>
+      <p><strong>Reduced ambiguity.</strong> A document that states "Apple Inc., the Cupertino-based technology company" removes the fruit/company ambiguity at the point of parsing, rather than leaving it to be inferred from surrounding context, which a retrieval system may or may not do correctly. Compare:</p>
+      <ul>
+        <li><strong>"Apple"</strong>, ambiguous between the fruit, the company, the record label, and dozens of smaller referents; a system must infer intent from context, and inference can fail.</li>
+        <li><strong>"Apple Inc."</strong>, resolves unambiguously to a single Knowledge Graph / Wikidata node in one token span, no inference required.</li>
+        <li><strong>"Python"</strong>, ambiguous between the language, the snake genus, and Monty Python.</li>
+        <li><strong>"Python programming language"</strong>, resolves unambiguously; a coding-documentation context becomes explicit rather than inferred.</li>
+        <li><strong>"Jaguar"</strong>, ambiguous between the animal and the manufacturer.</li>
+        <li><strong>"Jaguar Cars"</strong>, resolves unambiguously to the automotive entity.</li>
+      </ul>
+
+      <p><strong>Why this changes retrieval outcomes, mechanically:</strong></p>
+      <ul>
+        <li><strong>Better retrieval confidence.</strong> Entity linkers and downstream ranking models can assign a disambiguated mention a specific knowledge-base ID with a confidence score, rather than treating the mention as an ambiguous token requiring probabilistic guessing at query time.</li>
+        <li><strong>Knowledge graph alignment.</strong> An unambiguous entity mention can be matched directly against a knowledge graph node, pulling in verified structured facts (founding date, industry, relationships) that a purely text-based system would have to infer or hallucinate.</li>
+        <li><strong>Higher semantic precision.</strong> Embedding models still encode context, but removing lexical ambiguity removes one source of noise from that encoding, the vector for "Apple Inc. reported quarterly earnings" carries less competing signal than the vector for a passage that says only "Apple" throughout.</li>
+        <li><strong>Improved grounding.</strong> When a generation model is given disambiguated, entity-explicit context, it has less reconstructive work to do to determine what's actually being discussed, a plausible mechanism for fewer entity-conflation errors, though it should be stated clearly that no published, controlled study isolates entity explicitness as an independent variable and measures its effect on hallucination rates. This is a reasonable inference from how the pipeline works, not an established empirical finding.</li>
+        <li><strong>Potentially more accurate citations.</strong> Similarly, systems that track provenance back to source chunks would plausibly attribute claims more reliably when the source chunk itself is unambiguous about which entity it describes, again, a mechanistic argument rather than a measured result. There is currently no public benchmark that isolates entity clarity as a citation-accuracy variable.</li>
+      </ul>
+
+      <h2 id="comparison">Keyword Density vs. Entity Clarity</h2>
+      <div class="post-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Dimension</th><th>Traditional SEO (TF-IDF / BM25 era)</th><th>Modern Retrieval (Embeddings + Entity Resolution)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Core signal</td><td>Term frequency, inverse document frequency</td><td>Semantic similarity + entity identity</td></tr>
+            <tr><td>Matching method</td><td>Exact / lexical string matching</td><td>Vector similarity + knowledge graph linking</td></tr>
+            <tr><td>Handles synonyms</td><td>No, "car" ≠ "automobile"</td><td>Yes, synonymous phrasing embeds nearby</td></tr>
+            <tr><td>Handles ambiguity</td><td>No, "Apple" is one token regardless of meaning</td><td>Yes, entity linking resolves to a specific referent</td></tr>
+            <tr><td>Authority signal</td><td>Anchor text, backlink counts</td><td>Knowledge graph relationships, entity co-occurrence, corroboration across sources</td></tr>
+            <tr><td>Unit of ranking</td><td>Whole page</td><td>Chunk (paragraph/section span)</td></tr>
+            <tr><td>Optimization lever</td><td>Repeat target term at a target density</td><td>Disambiguate entities explicitly; provide structured context</td></tr>
+            <tr><td>Gaming risk</td><td>High, keyword stuffing directly moved scores</td><td>Lower, but not zero, entity-stuffing and fabricated schema are analogous failure modes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Neither system fully replaces the other in production. Modern hybrid retrieval architectures explicitly combine sparse (BM25-style) and dense (embedding) retrieval because they fail on different query types, sparse retrieval remains stronger for exact identifiers, codes, and rare proper nouns a dense model hasn't learned good representations for. Entity clarity is not a replacement for lexical matching; it is a layer that resolves what lexical matching cannot.</p>
+
+      <h2 id="structured-data">The Role of Structured Data</h2>
+      <p>Schema.org markup does not directly cause better rankings or retrieval placement, no primary source from Google, Bing, OpenAI, or Anthropic makes that claim, and it should not be implied. What structured data does, verifiably, is reduce the inference burden on any system trying to identify what a page is about and what entity it represents. The evidence for exactly which platforms treat structured data as a confirmed input is covered in more depth in <a href="structured-data-vs-backlinks-in-ai-retrieval.html">the site's research comparing structured data against backlinks as an AI retrieval signal</a>.</p>
+      <p>Relevant types and what they declare explicitly rather than leaving to inference:</p>
+      <ul>
+        <li><strong>Organization</strong>, legal name, alternate names, industry, <code>sameAs</code> links to Wikidata/Wikipedia/official profiles, resolving company-name ambiguity at the markup level.</li>
+        <li><strong>Person</strong>, name, affiliations, roles, <code>sameAs</code> identity links, disambiguating people who share names.</li>
+        <li><strong>Article</strong>, author entity, publication date, <code>about</code> and <code>mentions</code> properties that can explicitly declare which entities the content concerns.</li>
+        <li><strong>SoftwareApplication</strong>, explicit name, version, operating system, category, resolving naming collisions between software and other entities.</li>
+        <li><strong>Product</strong>, brand, SKU/GTIN identifiers, explicit disambiguation from same-named products or companies.</li>
+        <li><strong>FAQPage</strong>, question/answer pairs marked as discrete units, aligning naturally with chunk-based retrieval.</li>
+        <li><strong>LocalBusiness</strong>, geographic and category identity, disambiguating businesses with common names.</li>
+        <li><strong>Dataset</strong>, explicit provenance and subject-matter declarations, relevant for content cited as a data source.</li>
+      </ul>
+      <p><strong>Why this helps machines identify entities:</strong> Schema.org's <code>sameAs</code> property, in particular, is a direct entity-resolution mechanism, it lets a page assert that its subject is equivalent to a specific external knowledge-base node (a Wikidata item, a Wikipedia article), collapsing ambiguity the same way writing "Apple Inc." instead of "Apple" does, but machine-parseable rather than inferred from prose.</p>
+      <p><strong>The necessary caveat:</strong> structured data is one signal among several a system may use, not a guaranteed ranking or retrieval factor, and it can be, and has historically been, abused (inaccurate or manipulative markup), which is precisely why no crawler treats it as authoritative on its own. Google's public documentation has consistently framed structured data as helping eligibility for specific display features and aiding content understanding, not as a direct ranking multiplier.</p>
+
+      <h2 id="practical-examples">Practical Examples</h2>
+      <p><strong>Before (ambiguous, keyword-repetitive):</strong></p>
+      <blockquote>Our platform uses Python to build fast apps. Python makes it easy to build apps quickly, and developers love Python for building apps. If you want to build apps, Python is a great choice for building apps.</blockquote>
+      <p>Problems: "Python" appears five times with no disambiguation from the snake or the comedy troupe; "apps" and "building" repeat without adding information; no entity is explicitly linked to anything a knowledge graph could resolve.</p>
+
+      <p><strong>After (entity-explicit, semantically dense):</strong></p>
+      <blockquote>Our platform is built on the Python programming language, using the Django web framework for backend logic and FastAPI for asynchronous services. This combination lets small teams ship production APIs without the boilerplate typically associated with statically typed languages like Java or C#.</blockquote>
+      <p>Why this is easier for retrieval systems to interpret: every technical term is a resolvable named entity (Python programming language, Django, FastAPI, Java, C#) rather than a repeated ambiguous token; the comparison to Java and C# gives an embedding model richer contrastive context; and a knowledge-graph-aware system can verify each named framework independently rather than inferring meaning from repetition.</p>
+
+      <p><strong>Before:</strong></p>
+      <blockquote>Our company was founded by John. John has years of experience. John leads the team and John's vision drives everything we do.</blockquote>
+
+      <p><strong>After:</strong></p>
+      <blockquote>Our company was founded in 2019 by John Okafor, a former backend engineer at Stripe. Okafor now leads a twelve-person engineering team focused on payments infrastructure.</blockquote>
+      <p>The second version supplies exactly the kind of disambiguating detail (founding year, prior affiliation, specific role) that both entity-linking systems and human readers need to resolve "John" into a specific, verifiable person rather than a repeated pronoun-adjacent token.</p>
+
+      <h2 id="common-mistakes">Common Mistakes</h2>
+      <ul>
+        <li><strong>Keyword stuffing</strong>, repeating a term past the point of adding information; measurably ineffective under BM25's saturation function and actively unhelpful for embedding quality, since repetition doesn't add semantic content.</li>
+        <li><strong>Ambiguous language</strong>, using bare entity names ("Apple," "Mercury," "Amazon") without qualifying context, forcing a downstream system to guess.</li>
+        <li><strong>Missing context</strong>, introducing an entity without establishing what kind of thing it is on first mention.</li>
+        <li><strong>Poor headings</strong>, headings that don't name the entity or concept they introduce, weakening the chunk-level signal retrieval systems rely on.</li>
+        <li><strong>No schema</strong>, leaving entity identity entirely to inference when a <code>sameAs</code> link could resolve it explicitly.</li>
+        <li><strong>No author information</strong>, omitting the Person entity, which removes a corroborating identity signal available to knowledge-graph-aware systems.</li>
+        <li><strong>Undefined acronyms</strong>, an acronym is a keyword; its expansion is what actually links to an entity.</li>
+      </ul>
+
+      <h2 id="geo-checklist">Practical GEO Checklist</h2>
+      <ol>
+        <li>Name every core entity explicitly on first mention (full company name, not a nickname or pronoun).</li>
+        <li>Disambiguate polysemous terms immediately ("Python programming language," not "Python").</li>
+        <li>Add <code>Organization</code> schema with a <code>sameAs</code> link to your Wikidata and/or Wikipedia entry, if one exists.</li>
+        <li>Add <code>Person</code> schema for named authors, with <code>sameAs</code> links to verifiable profiles.</li>
+        <li>Use <code>Article</code> schema's <code>about</code> and <code>mentions</code> properties to declare the entities your content covers.</li>
+        <li>Write headings that name the concept or entity, not generic labels like "Overview" or "More Info."</li>
+        <li>Keep one core idea per chunk-sized section (roughly one paragraph to a few hundred words) rather than blending topics.</li>
+        <li>Replace pronoun chains ("it," "they," "this") with the named entity when a paragraph spans more than two sentences.</li>
+        <li>Introduce acronyms with their full expansion on first use.</li>
+        <li>Cross-reference related entities explicitly (state relationships, not just proximity), "X, a subsidiary of Y," rather than mentioning X and Y separately.</li>
+        <li>Avoid keyword-density targets as a content brief metric entirely; they optimize for a signal modern retrieval barely weights.</li>
+        <li>Use <code>FAQPage</code> schema for genuine Q&amp;A content, aligned to natural chunk boundaries.</li>
+        <li>Ensure <code>Product</code> or <code>SoftwareApplication</code> entities carry explicit identifiers (SKU, version, category).</li>
+        <li>Add publication and modification dates, a factual, non-entity signal that still matters for freshness-sensitive retrieval.</li>
+        <li>Link to canonical external sources (Wikipedia, official documentation, standards bodies) for entities you reference but don't define yourself.</li>
+        <li>Maintain internal consistency in entity naming, don't alternate between "Acme," "Acme Corp," and "Acme Corporation" without an explicit statement they're equivalent.</li>
+        <li>Avoid unverified structured-data claims, mismatched schema (declaring facts not supported by visible content) is a known source of trust penalties, not a shortcut.</li>
+        <li>Write comparisons explicitly where relevant ("unlike Java, Python doesn't require explicit type declarations"), contrastive context measurably enriches embedding quality.</li>
+        <li>Test how your content's key entities resolve using a public entity-analysis tool (for example, Google Cloud Natural Language API) to see what a machine actually extracts.</li>
+        <li>Prioritize disambiguation on your most commercially important, most polysemous terms first, not every "the" needs entity treatment, but every ambiguous brand or product name does.</li>
+      </ol>
+
+      <h2 id="future-outlook">Future Outlook</h2>
+      <p>Three developments are underway and worth tracking, stated with appropriate uncertainty:</p>
+      <p><strong>Multimodal retrieval.</strong> Entity resolution is expanding beyond text, image and video embeddings increasingly get linked to the same knowledge-graph nodes as textual mentions, meaning entity clarity in captions, alt text, and structured metadata plausibly matters for cross-modal retrieval, though this is an extrapolation from current architecture trends rather than a documented, measured claim about any specific production system.</p>
+      <p><strong>Agentic search.</strong> As AI agents perform multi-step tasks (comparing products, filling forms, executing transactions) rather than answering single queries, entity resolution becomes a prerequisite for correct action, not just correct retrieval, an agent that can't disambiguate "the Jaguar" from context risks acting on the wrong entity entirely. This is a reasonable industry trajectory rather than an established research finding, since agentic web standards (like WebMCP) are still in early origin-trial stages as of mid-2026.</p>
+      <p><strong>Knowledge graph growth and convergence.</strong> Open knowledge bases (Wikidata, DBpedia) and proprietary ones (Google's Knowledge Graph) continue to expand in scope, and increasing interoperability between them (shared identifier schemes, <code>sameAs</code> linking conventions) plausibly lowers the cost of entity resolution for smaller players who can't build their own knowledge graph from scratch. This is an observed trend in tooling and standards adoption, not a specific vendor commitment. Entity authority also turns out to be the strongest single predictor of AI citation for a very different kind of entity, local businesses, a pattern <a href="how-llms-recommend-local-businesses.html">covered directly in the site's research on how LLMs recommend local businesses</a>.</p>
+
+      <h2 id="key-takeaways">Key Takeaways</h2>
+      <ol>
+        <li>TF-IDF and BM25 score term frequency and document statistics; they have no representation of what a term refers to.</li>
+        <li>An entity is a real-world thing; a keyword is a string. The distinction is the entire basis for the shift this article describes.</li>
+        <li>Ambiguous terms like "Apple," "Jaguar," "Python," "Mercury," and "Amazon" can each resolve to multiple distinct entities, disambiguating context is not optional for accurate retrieval.</li>
+        <li>Modern retrieval pipelines combine sparse (BM25-style) and dense (embedding) retrieval, plus entity linking and knowledge-graph lookups, not one method replacing another, but a layered system.</li>
+        <li>Sentence-embedding models (following the Sentence-BERT architecture) encode meaning, not just vocabulary, enabling synonym and paraphrase matching keyword systems cannot do.</li>
+        <li>Google's Cloud Natural Language API demonstrates entity resolution directly: it correctly links "Joanne Rowling," "Rowling," and "Robert Galbraith" as mentions of one entity.</li>
+        <li>Schema.org's <code>sameAs</code> property is a direct, machine-readable entity-resolution mechanism, most useful for <code>Organization</code>, <code>Person</code>, and <code>Product</code> types.</li>
+        <li>Structured data is one signal among several, not a guaranteed ranking or retrieval factor, and no primary source claims otherwise.</li>
+        <li>Claims about entity clarity improving grounding accuracy or citation reliability are mechanistically reasonable but not backed by a published, controlled study isolating that variable, this article states that gap explicitly rather than papering over it.</li>
+        <li>The practical lever for content strategists is disambiguation and explicit entity naming, not keyword density targets, which optimize for a signal modern retrieval increasingly treats as secondary.</li>
+      </ol>
+
+      <h2 id="glossary">Glossary</h2>
+      <dl>
+        <dt>Entity</dt>
+        <dd>A distinct, identifiable real-world thing (person, place, organization, concept) referenced by text.</dd>
+        <dt>Named Entity Recognition (NER)</dt>
+        <dd>The NLP task of locating and classifying entity mentions in text.</dd>
+        <dt>Entity Linking</dt>
+        <dd>Connecting a recognized mention to a specific node in a knowledge base.</dd>
+        <dt>Disambiguation</dt>
+        <dd>Choosing the correct referent for an ambiguous term.</dd>
+        <dt>Knowledge Graph</dt>
+        <dd>A structured network of entities and their relationships, typically stored as triples.</dd>
+        <dt>TF-IDF</dt>
+        <dd>Term Frequency, Inverse Document Frequency; a statistical measure of term importance to a document relative to a corpus.</dd>
+        <dt>BM25</dt>
+        <dd>A probabilistic ranking function extending TF-IDF with term-frequency saturation and length normalization.</dd>
+        <dt>Embedding</dt>
+        <dd>A fixed-length numerical vector representation of text (or other data) positioned such that semantic similarity corresponds to geometric closeness.</dd>
+        <dt>Dense retrieval</dt>
+        <dd>Retrieval based on embedding similarity rather than lexical term matching.</dd>
+        <dt>Sparse retrieval</dt>
+        <dd>Retrieval based on lexical term matching, typically via BM25 or similar.</dd>
+        <dt>Grounding</dt>
+        <dd>Supplying a generation model with retrieved context so its output is derived from that context.</dd>
+        <dt>Salience</dt>
+        <dd>A score (used by Google's Natural Language API, among others) indicating how central an entity is to a given document, on a 0 to 1 scale.</dd>
+      </dl>
+
+      <h2 id="faq">FAQ</h2>
+      <p><strong>Does this mean keyword research is obsolete?</strong></p>
+      <p>No. Keywords still matter for understanding what people search for and how they phrase questions. What's changed is that repeating a keyword no longer substitutes for correctly identifying and disambiguating the entities that keyword refers to.</p>
+      <p><strong>Is entity SEO a Google ranking factor?</strong></p>
+      <p>No primary Google source states entity markup or entity clarity is a direct ranking factor. The evidence supports entity clarity as a mechanism that helps machine systems (including but not limited to Google Search) correctly interpret and match content, a different claim from "ranking factor," and this article does not conflate the two.</p>
+      <p><strong>Do I need a knowledge graph of my own?</strong></p>
+      <p>No. Linking to established external knowledge bases (Wikidata, Wikipedia) via <code>sameAs</code> is sufficient for most organizations; building a proprietary knowledge graph is a large undertaking justified only at significant scale.</p>
+      <p><strong>Does BM25 still matter if embeddings are better?</strong></p>
+      <p>Yes. Production hybrid systems retain BM25-style sparse retrieval because it outperforms dense retrieval on exact-match cases, product codes, rare proper nouns, and error strings a dense model may not represent well.</p>
+
+      <h2 id="references">References</h2>
+      <ul>
+        <li>Google, "Introducing the Knowledge Graph: things, not strings," Official Google Blog, May 16, 2012</li>
+        <li>Google Cloud, "Method: documents.analyzeEntities," Cloud Natural Language API documentation, cloud.google.com/natural-language</li>
+        <li>Google Cloud, "Entity and Sentiment Analysis with the Natural Language API" tutorial (J.K. Rowling / Robert Galbraith entity-resolution example)</li>
+        <li>Robertson, S. E., and Spärck Jones, K., "Relevance Weighting of Search Terms," Journal of the American Society for Information Science, 1976</li>
+        <li>Robertson, S., and Zaragoza, H., "The Probabilistic Relevance Framework: BM25 and Beyond," Foundations and Trends in Information Retrieval, 2009</li>
+        <li>Reimers, N., and Gurevych, I., "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks," Proceedings of EMNLP-IJCNLP, 2019 (ACL Anthology)</li>
+        <li>Schema.org, type documentation for Organization, Person, Article, Product, SoftwareApplication, FAQPage, LocalBusiness, Dataset</li>
+        <li>Wikidata and DBpedia, project documentation on entity identifiers and <code>sameAs</code> linking conventions</li>
+      </ul>
+
+      <div class="related-section">
+        <span class="mono toc-label">Related Reading</span>
+        <div class="related-groups">
+        <div class="related-group">
+          <span class="mono related-group-label">Related Blog Posts</span>
+          <div class="related-list">
+          <a href="structured-data-vs-backlinks-in-ai-retrieval.html" class="related-row">
+            <span class="related-title">Structured Data Is the New Backlink?</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          <a href="ai-retrieval-rewards-specificity-not-word-count.html" class="related-row">
+            <span class="related-title">AI Retrieval Rewards Specificity, Not Word Count</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        <div class="related-group">
+          <span class="mono related-group-label">Related Research</span>
+          <div class="related-list">
+          <a href="how-llms-recommend-local-businesses.html" class="related-row">
+            <span class="related-title">R_WP004: How LLMs Recommend Local Businesses</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-inner">
+      <h2>For agencies, brands and small businesses who want a site built right, and found by both people and machines.</h2>
+      <div class="contact-links">
+        <a href="mailto:akshaydahiya92.ad@gmail.com">
+          Email
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" rel="noopener">
+          LinkedIn
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://github.com/dahiyaakshay?tab=repositories" target="_blank" rel="noopener">
+          GitHub
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Akshay Dahiya <a href="llm.txt" class="foot-link">llm.txt</a> <a href="sitemap.xml" class="foot-link">sitemap</a></span>
+      <span>akshaydahiya.site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>

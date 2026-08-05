@@ -1,0 +1,37 @@
+# Akshay Dahiya
+
+> AI-native SEO and GEO specialist. Building the tools and independent research that measure whether AI systems can actually retrieve, parse and cite a brand, not just rank it.
+
+Seven-plus years across SEO, growth marketing and analytics, now focused on generative engine optimization: how AI search and answer engines crawl, chunk, retrieve and cite web content. Two tools shipped (AI Spider, an AI retrievability audit platform, and MarAI, an AI marketing operations platform), two more in development, and an independent whitepaper series (the GEO Retrieval Research Series) currently four papers in.
+
+## Core Pages
+
+- [About](https://akshaydahiya.site/about.html): Background, expertise and current focus
+- [Work](https://akshaydahiya.site/work.html): Tools, skills and free resources, shipped and in progress
+- [Approach](https://akshaydahiya.site/approach.html): SEO, GEO and website development services
+- [Research](https://akshaydahiya.site/research.html): GEO Retrieval Research Series index
+- [Blog](https://akshaydahiya.site/blog.html): Field notes on SEO, GEO and AI retrieval
+
+## Research: GEO Retrieval Research Series
+
+- [R_WP001: Crawl Freshness vs AI Visibility](https://akshaydahiya.site/crawl-freshness-vs-ai-visibility.html): Six-month benchmark across seven AI platforms; median first-citation latency was 14 days
+- [R_WP002: Multi-Hop Citation Paths in AI Retrieval](https://akshaydahiya.site/multi-hop-citation-paths-in-ai-retrieval.html): 45.2% of AI responses require multi-page synthesis
+- [R_WP003: What AI Actually Reads on Your Webpage](https://akshaydahiya.site/what-ai-actually-reads-on-your-webpage.html): LLMs retrieve only 12 to 45% of the average webpage
+- [R_WP004: How LLMs Recommend Local Businesses](https://akshaydahiya.site/how-llms-recommend-local-businesses.html): 60,000-prompt analysis across six AI platforms
+
+## Blog
+
+- [What llms.txt Actually Changes for AI Crawlers](https://akshaydahiya.site/what-llms-txt-actually-changes-for-ai-crawlers.html)
+- [Entity Clarity Beats Keyword Density in Retrieval Scoring](https://akshaydahiya.site/entity-clarity-beats-keyword-density-in-retrieval-scoring.html)
+- [Structured Data Is the New Backlink?](https://akshaydahiya.site/structured-data-vs-backlinks-in-ai-retrieval.html)
+- [Crawl Budget vs Retrieval Readiness](https://akshaydahiya.site/crawl-budget-vs-retrieval-readiness.html)
+- [Retrieval Is Becoming More Important Than Ranking in AI Search](https://akshaydahiya.site/retrieval-is-becoming-more-important-than-ranking-in-ai-search.html)
+- [AI Doesn't Read Web Pages, It Retrieves Chunks](https://akshaydahiya.site/ai-retrieves-chunks-not-web-pages.html)
+- [Citation Is the New Click](https://akshaydahiya.site/citation-is-the-new-click.html)
+- [AI Retrieval Rewards Specificity, Not Word Count](https://akshaydahiya.site/ai-retrieval-rewards-specificity-not-word-count.html)
+
+## Contact
+
+- Email: akshaydahiya92.ad@gmail.com
+- LinkedIn: https://www.linkedin.com/in/akshay-dahiya/
+- GitHub: https://github.com/dahiyaakshay

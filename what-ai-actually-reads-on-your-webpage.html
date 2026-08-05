@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E6JLR8VFSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-E6JLR8VFSJ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R_WP003: What AI Actually Reads on Your Webpage / Akshay Dahiya</title>
+<meta name="description" content="LLMs retrieve only 12 to 45% of the average webpage before generating an answer. Introductions get retrieved in 88% of cases, conclusions in 26%.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://akshaydahiya.site/what-ai-actually-reads-on-your-webpage.html"
+  },
+  "headline": "R_WP003: What AI Actually Reads on Your Webpage",
+  "description": "LLMs retrieve only 12 to 45% of the average webpage before generating an answer. Introductions get retrieved in 88% of cases, conclusions in 26%.",
+  "datePublished": "2026-05-01",
+  "author": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "publisher": {
+    "@id": "https://akshaydahiya.site/#person"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "GEO Retrieval Research Series"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="grid-overlay" id="gridOverlay"></div>
+
+<header>
+  <div class="wordmark"><a href="index.html" style="color:inherit;">Akshay Dahiya <span class="mono">/ AD</span></a></div>
+  <div class="nav-wrap" id="navWrap">
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mailto:akshaydahiya92.ad@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://github.com/dahiyaakshay/marketing-skills" target="_blank" rel="noopener" class="btn-install">Install Skills</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navWrap">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main class="wrap">
+
+  <a href="research.html" class="post-back mono">← Back to research</a>
+
+  <div class="post-layout">
+
+    <!-- TABLE OF CONTENTS -->
+    <aside class="post-toc">
+      <div class="toc-inner">
+        <span class="mono toc-label">On This Page</span>
+        <nav class="toc-nav" id="tocNav">
+          <a href="#top" class="toc-link toc-h1">What AI Actually Reads on Your Webpage</a>
+          <a href="#executive-summary" class="toc-link toc-h2">01 / Executive Summary</a>
+          <a href="#why-this-matters" class="toc-link toc-h2">02 / Why This Matters for GEO</a>
+          <a href="#methodology" class="toc-link toc-h2">03 / Methodology</a>
+          <a href="#how-measured" class="toc-link toc-h2">04 / How the Data Was Measured</a>
+          <a href="#key-findings" class="toc-link toc-h2">05 / Key Findings</a>
+          <a href="#retrieval-heatmap" class="toc-link toc-h2">06 / Retrieval Heatmap</a>
+          <a href="#platform-comparison" class="toc-link toc-h2">07 / Platform Comparison</a>
+          <a href="#query-intent" class="toc-link toc-h2">08 / Query Intent Patterns</a>
+          <a href="#case-studies" class="toc-link toc-h2">09 / Case Studies</a>
+          <a href="#supporting-evidence" class="toc-link toc-h2">10 / Supporting Evidence</a>
+          <a href="#recommendations" class="toc-link toc-h2">11 / Recommendations</a>
+          <a href="#frameworks" class="toc-link toc-h2">12 / Practical Frameworks</a>
+          <a href="#glossary" class="toc-link toc-h2">13 / Glossary</a>
+          <a href="#limitations" class="toc-link toc-h2">14 / Limitations</a>
+          <a href="#conclusion" class="toc-link toc-h2">15 / Conclusion</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- ARTICLE -->
+    <article class="post-content">
+      <div class="post-meta-header mono">R_WP003 <span class="sep">/</span> GEO Retrieval Research Series <span class="sep">/</span> Mar to May 2026</div>
+
+      <h1 id="top" class="display">What AI Actually Reads on Your Webpage</h1>
+
+      <p class="post-lede">LLMs retrieve only 12 to 45% of the average webpage before generating an answer. Most published content never reaches the model's context window. Here is what does.</p>
+
+      <div class="stat-strip">
+        <div class="stat-block"><span class="num">2,500</span><span class="lbl">QUERIES</span></div>
+        <div class="stat-block"><span class="num">45,000</span><span class="lbl">PAGES ANALYZED</span></div>
+        <div class="stat-block"><span class="num">6</span><span class="lbl">AI PLATFORMS</span></div>
+      </div>
+
+      <p>Gemini retrieved the most of any platform tested, at 45% of the average page; Perplexity retrieved the least, at just 12%. The gap between what gets retrieved and what gets ignored followed a clear pattern by section: content near the top of a page was retrieved far more often than content near the bottom, regardless of how valuable that content was.</p>
+
+      <h2 id="executive-summary">01 / Executive Summary</h2>
+      <p><strong>Most of your webpage is invisible to AI.</strong></p>
+      <p>Most marketers optimise entire webpages. But AI search engines do not read entire webpages. This study ran 2,500 real-world queries across six major AI systems, analysing retrieval behaviour across 45,000 webpages from 1,500 high-authority domains. The central finding is that AI systems retrieve only 12 to 45% of the average webpage before generating an answer, depending on the platform. The majority of published content never reaches the model's context window.</p>
+      <p>Retrieval is not sequential. AI systems do not read pages from top to bottom the way a human would. Instead, they assemble answers from a small number of selected content blocks: on average <a href="ai-retrieves-chunks-not-web-pages.html">4.8 chunks drawn from across a page</a>, with 4.2 paragraph gaps between retrieved sections. 55% of retrieval patterns were scattered rather than consecutive, meaning the AI skipped large portions of the page entirely.</p>
+      <p>The data shows a clear hierarchy of what gets retrieved. Introductions were retrieved in 88% of cases. First H2 sections in 73%. FAQ sections in 61%. Middle body content in only 29%. Conclusions in 26%. Tables were retrieved at 31% overall but reached 45% for commercial queries. This hierarchy has immediate practical implications: content placement is as important as content quality.</p>
+      <p>A meaningful negative correlation (r = -0.65) also emerged between <a href="ai-retrieval-rewards-specificity-not-word-count.html">page length</a> and the percentage of the page actually retrieved. Longer pages are less likely to be fully utilised, not more. The assumption that more content means more AI visibility is not supported by the retrieval data.</p>
+      <p>Prior GEO research has largely measured which pages get cited. This study measures how much of each cited page is actually retrieved and used, and maps that down to the section level: an empirical ranking of webpage section types by retrieval probability (introduction 88%, first H2 73%, FAQ 61%, tables 31%, middle body 29%, conclusion 26%), plus Compression Ratio, the proportion of a page's content that enters the model's context window, as a measurable, platform-specific metric practitioners can track directly.</p>
+
+      <h2 id="why-this-matters">02 / Why This Matters for GEO</h2>
+      <p><strong>Content placement is as important as content quality.</strong></p>
+      <p>Traditional SEO operates on the assumption that every section of a page contributes to its ranking. A page with more comprehensive coverage, more sections, more depth is assumed to perform better. That assumption is not accurate for AI retrieval.</p>
+      <p>AI systems do not rank pages based on their overall comprehensiveness. They extract a small number of content blocks from a page and use those blocks to construct an answer. If the most important information in your content is buried in the middle or conclusion of a long page, AI systems are statistically unlikely to retrieve it regardless of how accurate or valuable it is.</p>
+      <p>This has a direct implication for GEO practitioners. The optimisation question is no longer just "what should I write?" It is also "where should I put it?" A fact placed in the introduction of a page has an 88% retrieval probability. The same fact placed in the conclusion of the same page has a 26% retrieval probability. Content quality alone does not close that gap.</p>
+
+      <h2 id="methodology">03 / Methodology</h2>
+      <p><strong>Study design and data collection.</strong></p>
+      <p>This study evaluated retrieval behaviour across six AI platforms using 2,500 real-world queries, covering 45,000 webpages from 1,500 high-authority domains. The study ran from March through May 2026. Rather than using infrastructure-level interception, every query was run natively inside each live LLM environment and the AI-generated answers were manually cross-referenced against archived source pages to identify which sections were reflected in each response.</p>
+
+      <p><strong>Dataset Overview</strong></p>
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Metric</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>Total Queries</td><td>2,500</td></tr>
+            <tr><td>Webpages Analyzed</td><td>45,000</td></tr>
+            <tr><td>Domains</td><td>1,500 (high authority)</td></tr>
+            <tr><td>AI Platforms</td><td>6</td></tr>
+            <tr><td>Runs per Query</td><td>3</td></tr>
+            <tr><td>Study Period</td><td>March to May 2026</td></tr>
+            <tr><td>Industries</td><td>E-commerce, SaaS</td></tr>
+            <tr><td>Testing Method</td><td>Live LLM environments</td></tr>
+            <tr><td>Avg Retrieval (all platforms)</td><td>12 to 45%</td></tr>
+            <tr><td>Avg Chunks Retrieved</td><td>4.8</td></tr>
+            <tr><td>Avg Paragraph Gaps</td><td>4.2</td></tr>
+            <tr><td>Scattered Retrieval Rate</td><td>55%</td></tr>
+            <tr><td>Multi-page Answer Rate</td><td>82%</td></tr>
+            <tr><td>Avg Pages per Answer</td><td>3.8</td></tr>
+            <tr><td>Avg Citations per Answer</td><td>4.2</td></tr>
+            <tr><td>Length vs Retrieval Correlation</td><td>r = -0.65</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Platforms Evaluated</strong></p>
+      <p>All six received an identical query distribution to keep the comparison fair: ChatGPT, Gemini, Claude, Perplexity, Qwen, and Microsoft Copilot.</p>
+
+      <p><strong>Testing Method: Live LLM Environments</strong></p>
+      <p>Rather than intercepting retrieval at the infrastructure layer, every query was run directly inside live LLM environments, manually recording which page sections each platform surfaced in its generated answer. This approach captures native retrieval behaviour as it actually presents to end users, rather than through a proxy that may not perfectly replicate each platform's production pipeline.</p>
+      <p>For each query, the source pages cited or drawn upon in the response were identified, then manually assessed for which sections of those pages were reflected in the answer, cross-referencing the response text against the archived source page. Webpages were archived before each query run to ensure consistent content across all three runs per query.</p>
+
+      <p><strong>Website Selection.</strong> 1,500 high-authority domains were selected representing a mix of content types and industries. Pages were selected to represent a range of lengths, structural formats, and content types including long-form articles, FAQ pages, product pages, documentation, and comparison guides.</p>
+      <p><strong>Three-Run Testing.</strong> Each query was issued three times per platform to account for AI non-determinism. Retrieval coverage metrics are reported as averages across all three runs. Where retrieval patterns differed between runs, the variation was recorded and included in the IQR calculations. Sections that appeared in at least two of three runs were counted as retrieved; sections appearing in only one run were flagged as marginal and excluded from primary retrieval rate calculations.</p>
+
+      <h2 id="how-measured">04 / How the Data Was Measured</h2>
+      <p><strong>The short version, in plain terms.</strong></p>
+      <p>Compression Ratio is the share of a page's word count that actually showed up in the AI's answer. A 2,000-word page that contributed roughly 400 words' worth of content to the answer has a Compression Ratio of 20%. This was calculated per page, per platform, then averaged up to the platform-level figures reported throughout this study.</p>
+      <p>Each page section (introduction, first H2, FAQ, tables, middle body, conclusion) was checked for whether it showed up in the answer on each query run; Section Retrieval Probability is just how often that happened, out of all the pages that had that kind of section. A retrieval pattern counted as "scattered" if the surfaced content came from parts of the page two or more paragraphs apart, and "consecutive" if it came from one continuous stretch, the reported average of 4.2 paragraph gaps comes from comparing where the surfaced content sat against the original page.</p>
+      <p>The r = -0.65 correlation between page length and Compression Ratio was computed using Pearson's r across all 45,000 pages, a standard way of measuring how strongly two things move together. A correlation this strong (closer to -1 or 1 is stronger; 0 means no relationship) means longer pages reliably had a lower share of their content retrieved, but it's a correlation, not proof that shortening a page would cause a higher retrieval rate.</p>
+      <p>Every number in this study is an average across three runs per query, done to smooth out the fact that AI answers aren't perfectly repeatable. A section only counted as genuinely "retrieved" if it showed up in at least two of the three runs; anything that appeared just once was set aside as marginal rather than counted toward the main rates.</p>
+      <p><strong>What "IQR" means.</strong> You'll see ranges written like "(IQR: X to Y)" throughout this paper. That's shorthand for "most results fell somewhere in this window," the extreme outliers on both ends are set aside so one unusual page doesn't distort the picture.</p>
+
+      <p><strong>Research workflow.</strong> The following diagram shows how raw queries moved through the pipeline to produce the final retrieval dataset.</p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/flow-research-workflow.svg" alt="Research workflow: 2,500 real-world queries across 6 AI platforms, live LLM testing, compression ratio measured, section retrieval map built, ending in analysis and GEO implications." width="660" height="470">
+        <span class="post-figure-caption mono">From 2,500 queries to a section-level retrieval dataset.</span>
+      </div>
+
+      <p><strong>Data processing pipeline.</strong></p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/flow-data-processing-pipeline.svg" alt="Eight step data processing pipeline: query submission, page archiving, page segmentation, section matching, compression ratio calculation, section classification, pattern classification, three-run aggregation." width="660" height="618">
+        <span class="post-figure-caption mono">Every page passed through the same eight steps before analysis.</span>
+      </div>
+
+      <h2 id="key-findings">05 / Key Findings</h2>
+      <p><strong>Eight findings that change how you should structure content.</strong></p>
+      <ul>
+        <li><strong>Finding 01: 12 to 45% (platform range across 45,000 pages). AI uses surprisingly little of a webpage.</strong> The range of 12 to 45% means that even Gemini, which surfaced the most content at 45%, ignores more than half of the average webpage. Perplexity retrieved the least at 12%, meaning nearly nine tenths of the average page it cited went unused.</li>
+        <li><strong>Finding 02: 88% introduction retrieval rate. Retrieval starts at the top and drops fast.</strong> Introduction sections were retrieved in 88% of cases. First H2 in 73%. By the middle body, that figure dropped to 29%. The conclusion, despite often containing the clearest summaries, was retrieved in only 26% of cases. The retrieval gradient from top to bottom is steep and consistent across all six platforms tested.</li>
+        <li><strong>Finding 03: 61% vs. 29% for body content. FAQ sections punch well above their weight.</strong> Observed: FAQ sections were retrieved in 61% of cases, more than twice the rate of standard middle body content (29%). This held across both industries and all six platforms tested. One possible explanation: FAQ sections may be preferentially retrieved because their question-and-answer format maps directly to the structure AI systems use to satisfy user queries. The heading acts as a relevance signal and the answer block acts as a pre-chunked evidence node.</li>
+        <li><strong>Finding 04: 55% scattered retrieval rate. AI retrieves sections, not pages.</strong> 55% of retrieval patterns were scattered rather than consecutive. The average scattered retrieval contained 4.8 chunks with 4.2 paragraph gaps between them. AI systems assembled answers from selected content blocks rather than reading pages sequentially, meaning large portions of even cited pages were never used.</li>
+        <li><strong>Finding 05: r = -0.65 (page length vs. retrieval coverage). Longer pages are less likely to be fully utilised.</strong> Observed: a Pearson correlation of r = -0.65 between page word count and Compression Ratio shows that as pages grow longer, the proportion retrieved decreases. One possible explanation: context window constraints and relevance scoring may cause retrieval systems to select a fixed number of high-relevance chunks regardless of total page length. Longer pages simply have more unchosen content. This was observed but not causally isolated.</li>
+        <li><strong>Finding 06: 45% table retrieval for commercial queries. Tables are high-value retrieval assets.</strong> Observed: tables were retrieved in 31% of cases overall, rising to 45% for commercial queries and 38% for SaaS queries. Tables also showed a positive accuracy correlation of +0.45 with answer accuracy, the highest of any content type measured. One possible explanation: structured information may be retrieved more consistently than descriptive text because it provides pre-organised, machine-readable comparisons that AI systems can extract without further synthesis.</li>
+        <li><strong>Finding 07: 82% multi-source answer rate. Multi-page retrieval is the norm.</strong> 82% of answers drew from more than one webpage, with an average of 3.8 pages and 4.2 citations per answer. This means that even when your page is retrieved, it is typically one node in a multi-source synthesis rather than the sole basis for the answer. What gets extracted from your page matters as much as whether your page gets retrieved at all.</li>
+        <li><strong>Finding 08: 3 to 5 paragraphs per answer (avg 4.8 chunks). Most answers use only 3 to 5 paragraphs of source content.</strong> Despite drawing from 3.8 pages on average, AI-generated answers used only 3 to 5 paragraphs of source content per answer. The implication is that retrieval systems are highly selective: they pull a small number of paragraphs from each page and discard the rest. Writing more does not increase the number of paragraphs retrieved.</li>
+      </ul>
+
+      <h2 id="retrieval-heatmap">06 / Retrieval Heatmap</h2>
+      <p><strong>Which page sections AI actually retrieves.</strong></p>
+      <p>The following heatmap shows retrieval probability by section type, averaged across all six platforms and both industries. These are the most actionable numbers in this study: they tell you exactly where to place your most important content on a page.</p>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/chart-section-retrieval-probability.svg" alt="Bar chart of section retrieval probability: Introduction 88%, First H2 73%, FAQ 61%, Table 31%, Middle Body 29%, Conclusion 26%." width="660" height="380">
+        <span class="post-figure-caption mono">A fact at the top of a page is 3.4x more likely to be retrieved than at the bottom.</span>
+      </div>
+
+      <p>The gap between the introduction (88%) and the conclusion (26%) is 62 percentage points. A fact placed at the top of a page is 3.4 times more likely to be retrieved than the same fact placed at the bottom. This is not a minor difference: it is the single most actionable finding in this study for content producers.</p>
+
+      <p><strong>The two findings you can act on tomorrow</strong></p>
+      <ul>
+        <li><strong>2.1x: FAQ sections are retrieved more than twice as often as middle-body content.</strong> FAQ sections were retrieved in 61% of cases. Standard middle-body paragraphs were retrieved in 29% of cases. Every factual claim that answers a common user question gets more than twice the retrieval probability when placed in a dedicated FAQ block rather than embedded in narrative prose. (FAQ: 61% vs. Body: 29%)</li>
+        <li><strong>+0.45: Tables have the strongest relationship with answer accuracy of any content type.</strong> Tables showed an accuracy correlation of +0.45, the highest of any content type measured. For commercial and SaaS queries, table retrieval reached 45% and 38% respectively. Structured information is not just retrieved more often: when it is retrieved, the resulting answer is more accurate. (Commercial table retrieval: 45%)</li>
+      </ul>
+
+      <p><strong>Compression Ratio: what AI actually sees on a typical page.</strong> The diagrams below show how a typical 2,000-word webpage is experienced by two different AI platforms, the one that retrieves the most and the one that retrieves the least.</p>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/diagram-page-anatomy-gemini.svg" alt="Page anatomy diagram for Gemini: Introduction 91% retrieved, First H2 78% retrieved, FAQ Block 65% retrieved, Table 38% retrieved mostly skipped, Middle Body 35% retrieved mostly skipped, Conclusion 31% retrieved mostly skipped. 45% of page retrieved overall." width="660" height="500">
+        <span class="post-figure-caption mono">Gemini: the highest overall Compression Ratio of any platform tested.</span>
+      </div>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/diagram-page-anatomy-perplexity.svg" alt="Page anatomy diagram for Perplexity: Introduction 82% retrieved, First H2 65% retrieved mostly skipped, FAQ Block 54% retrieved mostly skipped, Table 22% retrieved mostly skipped, Middle Body 19% retrieved mostly skipped, Conclusion 18% retrieved mostly skipped. 12% of page retrieved overall." width="660" height="500">
+        <span class="post-figure-caption mono">Perplexity: the lowest overall Compression Ratio of any platform tested.</span>
+      </div>
+
+      <h2 id="platform-comparison">07 / Platform Comparison</h2>
+      <p><strong>How much each platform actually reads.</strong></p>
+      <p>Compression Ratio varied significantly across the six platforms tested. Gemini retrieved the most content per page, while Perplexity retrieved the least. This difference reflects underlying architectural choices: platforms that retrieve fewer, more targeted chunks tend to produce more focused answers, while platforms that retrieve more content produce broader synthesis.</p>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Platform</th><th>Compression Ratio</th><th>Retrieved Words (est)</th><th>Retrieved Paragraphs</th><th>Retrieval Style</th></tr></thead>
+          <tbody>
+            <tr><td>Gemini</td><td>45%</td><td>~900</td><td>5 to 7</td><td>Broad contextual retrieval</td></tr>
+            <tr><td>Claude</td><td>38%</td><td>~760</td><td>4 to 6</td><td>Structured section prioritisation</td></tr>
+            <tr><td>Qwen</td><td>28%</td><td>~560</td><td>3 to 5</td><td>Moderate selective retrieval</td></tr>
+            <tr><td>Microsoft Copilot</td><td>25%</td><td>~500</td><td>3 to 4</td><td>Query-focused chunk selection</td></tr>
+            <tr><td>ChatGPT</td><td>22%</td><td>~440</td><td>2 to 4</td><td>Targeted high-relevance extraction</td></tr>
+            <tr><td>Perplexity</td><td>12%</td><td>~240</td><td>1 to 3</td><td>Minimal, high-precision extraction</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/chart-compression-by-platform.svg" alt="Horizontal bar chart of compression ratio by platform: Gemini 45%, Claude 38%, Qwen 28%, Microsoft Copilot 25%, ChatGPT 22%, Perplexity 12%." width="660" height="340">
+        <span class="post-figure-caption mono">Perplexity retrieves the least per page, but cites the most distinct sources.</span>
+      </div>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/chart-retrieval-by-platform.svg" alt="Grouped bar chart comparing section retrieval probability for Gemini and Perplexity across introduction, first H2, FAQ, table, middle body, and conclusion. Both follow the same top-heavy pattern; Gemini retrieves more of each section." width="660" height="400">
+        <span class="post-figure-caption mono">Both platforms follow the same top-heavy pattern; Gemini simply retrieves more of it.</span>
+      </div>
+
+      <p><strong>Observed:</strong> Perplexity retrieved only 12% of the average page, the lowest of any platform tested. Despite this low retrieval rate, Perplexity also had the highest multi-hop citation rate in the R_WP002 study (59% MHCR). It appears to extract a small amount from many pages rather than a large amount from few pages.</p>
+      <p><strong>One possible explanation:</strong> Perplexity's real-time continuous crawl architecture may favour breadth over depth at the page level: it retrieves the most relevant chunk from a large number of sources rather than reading each source comprehensively. This architectural choice may explain why it shows both the lowest per-page Compression Ratio and the highest cross-platform citation count. This was observed across both studies but not causally tested.</p>
+
+      <h2 id="query-intent">08 / Query Intent Patterns</h2>
+      <p><strong>Query intent changes what gets retrieved.</strong></p>
+      <p>One of the more operationally useful findings in this study is that query intent reliably shifts retrieval behaviour. The same page is retrieved differently depending on whether the user is asking a commercial, analytical, troubleshooting, or opinion question. Understanding this means you can design pages to match the retrieval patterns of the intent they are targeting.</p>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Query Intent</th><th>Primary Retrieved Sections</th><th>Retrieval Pattern</th><th>Avg Chunks</th><th>Notable Behaviour</th></tr></thead>
+          <tbody>
+            <tr><td>Commercial</td><td>Tables, specs, H2 headings</td><td>Scattered</td><td>4.2</td><td>Table retrieval reaches 45%</td></tr>
+            <tr><td>Analytical</td><td>Introductions, data sections, body</td><td>More consecutive</td><td>5.6</td><td>Largest retrieval coverage overall</td></tr>
+            <tr><td>Troubleshooting</td><td>Code blocks, sequential steps</td><td>Sequential</td><td>3.8</td><td>Strongest consecutive retrieval pattern</td></tr>
+            <tr><td>Opinion</td><td>Introductions, conclusions, multi-page</td><td>Multi-page scattered</td><td>2.9</td><td>Highest cross-page synthesis rate</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Commercial queries.</strong> Commercial queries triggered the highest table retrieval rate (45%) and showed a strong preference for structured data over prose descriptions. H2 headings containing comparative or specification language (such as "Pricing," "Features," or "Specs") were retrieved at significantly higher rates than equivalent H2 headings with generic labels.</p>
+      <p><strong>Analytical queries.</strong> Analytical queries produced the largest retrieval coverage per page (average 5.6 chunks) and the most consecutive retrieval pattern. This is consistent with how a human researcher would read: scanning for the relevant section and then reading it through. For analytical content, the implication is that longer, more coherent sections perform better than the same information broken into many short chunks.</p>
+      <p><strong>Troubleshooting queries.</strong> Troubleshooting queries showed the strongest sequential retrieval pattern of any intent type. Code blocks, numbered step sequences, and error message descriptions were retrieved in order, suggesting that AI systems treat troubleshooting content more like a procedure than a collection of independent claims. This means that troubleshooting pages should not scatter steps across sections or interrupt sequences with large explanatory prose blocks.</p>
+      <p><strong>Opinion queries.</strong> Opinion queries produced the most multi-page synthesis behaviour, with retrieval scattered across multiple sources rather than concentrated on a single page. Per-page chunk counts were the lowest of any intent type (average 2.9). For opinion content, the implication is that any single page is unlikely to dominate the answer: participating in the synthesis is the realistic goal, not providing the entire answer.</p>
+
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/chart-chunks-by-intent.svg" alt="Bar chart of average chunks retrieved by query intent: Commercial 4.2, Analytical 5.6, Troubleshooting 3.8, Opinion 2.9." width="660" height="340">
+        <span class="post-figure-caption mono">Analytical queries pull the widest coverage. Opinion queries pull the narrowest.</span>
+      </div>
+
+      <h2 id="case-studies">09 / Case Studies</h2>
+      <p><strong>Four queries, four retrieval profiles.</strong></p>
+      <p>The four case studies below illustrate how retrieval behaviour differs across query types. Each represents a real query pattern from the study dataset, with anonymised domain information.</p>
+
+      <div class="post-table-wrap">
+        <table>
+          <thead><tr><th>Case Study</th><th>Query Intent</th><th>Pages Retrieved</th><th>Compression Ratio</th><th>Primary Sections</th><th>Pattern</th></tr></thead>
+          <tbody>
+            <tr><td>01. SaaS Churn Reduction Query</td><td>Commercial</td><td>4.1 avg</td><td>24%</td><td>H2, tables, intro</td><td>Scattered</td></tr>
+            <tr><td>02. Headphone Comparison Query</td><td>Commercial</td><td>3.6 avg</td><td>19%</td><td>Spec tables, H2, intro</td><td>Scattered</td></tr>
+            <tr><td>03. Kubernetes Troubleshooting Query</td><td>Troubleshooting</td><td>2.9 avg</td><td>31%</td><td>Code blocks, steps</td><td>Sequential</td></tr>
+            <tr><td>04. Premium Appliance Product Page Query</td><td>Commercial</td><td>4.4 avg</td><td>16%</td><td>Intro, specs, FAQ</td><td>Scattered</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Case Study 01 / SaaS Commercial: SaaS Churn Reduction Query.</strong> Table retrieval rate: 43%. AI retrieved pricing comparison tables, feature H2 sections, and introductory positioning statements. Long explanatory body sections were skipped. Pages with dedicated comparison tables were retrieved at significantly higher rates than pages that described the same information in prose.</p>
+      <p><strong>Case Study 02 / E-commerce Commercial: Headphone Comparison Query.</strong> Table retrieval rate: 47%. Specification tables were retrieved at the highest rate of any case study. Review verdict sections at the top of pages outperformed detailed review body sections. Narrative descriptions of sound quality were rarely retrieved; structured spec comparisons were almost always retrieved.</p>
+      <p><strong>Case Study 03 / Technical Troubleshooting: Kubernetes Troubleshooting Query.</strong> Code block retrieval: 79%. Code blocks were retrieved in 79% of cases, the highest retrieval rate of any content element in the study. Sequential step content was retrieved in order. Conceptual explanations between steps were frequently skipped. This was the only intent type where conclusion sections outperformed middle body sections.</p>
+      <p><strong>Case Study 04 / E-commerce Product: Premium Appliance Product Page Query.</strong> FAQ retrieval rate: 68%. On product pages, FAQ sections were retrieved at 68%, well above the study average of 61%. The product introduction and key specifications were consistently retrieved. Long marketing narrative sections in the middle of the page were retrieved in fewer than 15% of runs. This was the clearest example of the top-heavy retrieval gradient in the dataset.</p>
+
+      <h2 id="supporting-evidence">10 / Supporting Evidence</h2>
+      <p><strong>Alignment with published research.</strong></p>
+      <p>The retrieval patterns measured in this study are consistent with published research on RAG chunk selection, attention mechanisms, and content structure in LLM retrieval systems, though this study did not independently benchmark against those external sources. Published RAG research documents a consistent positional bias, content near the start of a document gets selected as a retrieval chunk more often than content near the end, which lines up with the 88% introduction vs. 26% conclusion gap measured here. Research on tabular data in LLMs shows structured formats are extracted more reliably than equivalent prose, consistent with tables showing the strongest accuracy correlation (+0.45) of any content type in this study. Published RAG benchmarks also show that retrieval systems tend to select a fixed number of high-relevance chunks regardless of document length, a plausible mechanism behind the negative correlation (r = -0.65) found here between page length and Compression Ratio. And research on neural information retrieval shows question-answer formatted content scores higher against question-format queries than declarative prose, consistent with FAQ sections being retrieved at 61% vs. 29% for equivalent body content.</p>
+      <p>One connection worth calling out specifically: the R_WP002 study's finding of 45.2% MHCR (responses requiring synthesis across multiple domains) is directly consistent with the 82% multi-source answer rate measured here. R_WP002 measured cross-domain synthesis using prompt-level citation tracking, while this study measured section-level content surfacing through live LLM testing across a significantly larger dataset, two different methods arriving at the same underlying picture: AI answers are rarely built from a single source.</p>
+
+      <h2 id="recommendations">11 / Recommendations</h2>
+      <p><strong>Eight placement-first GEO recommendations.</strong></p>
+      <p>These recommendations are derived directly from the retrieval data. Unlike generic SEO advice, each recommendation maps to a specific finding in this study.</p>
+      <ol>
+        <li><strong>Place the primary answer within the first 200 words.</strong> The introduction was retrieved in 88% of cases. The middle body in 29%. Any claim you need AI to use should appear in the first 200 words of the page. This is not about keyword density: it is about retrieval probability. The introduction is retrieved 3.4 times more often than the conclusion.</li>
+        <li><strong>Write descriptive H2 headings that stand alone as claims.</strong> First H2 sections were retrieved in 73% of cases. H2 headings that contain a complete claim (such as "Perplexity retrieves 12% of the average page") are more likely to be selected as retrieval anchors than H2 headings with generic labels (such as "Overview" or "Details").</li>
+        <li><strong>Create dedicated FAQ sections for factual questions.</strong> FAQ sections were retrieved at 61%, more than twice the rate of standard body content. Every factual claim that answers a common user question should have its own FAQ entry rather than being embedded in paragraph prose. The question-answer format maps directly to how AI systems look for evidence.</li>
+        <li><strong>Add structured comparison tables for commercial topics.</strong> Tables reached 45% retrieval for commercial queries and showed the strongest accuracy correlation (+0.45) of any content type. If your page covers a commercial topic where comparison is relevant (pricing, features, specifications), a dedicated comparison table is the single highest-leverage structural addition you can make.</li>
+        <li><strong>Keep critical information out of long narrative sections.</strong> Middle body content was retrieved in only 29% of cases. If important information is embedded in long narrative paragraphs in the middle of a page, it has a less than one in three chance of being retrieved. Restructure critical claims to appear in the introduction, first H2, or a dedicated FAQ section.</li>
+        <li><strong>Break large pages into independently retrievable sections.</strong> The r = -0.65 correlation between page length and Compression Ratio means that adding more content to a page tends to reduce the proportion of it that gets retrieved. Where possible, break long pages into shorter, focused pages each targeting a single intent. Each page then has a higher probability of having its most important content retrieved.</li>
+        <li><strong>Design each section to answer one intent clearly.</strong> 55% of retrieval patterns were scattered, meaning AI assembled answers from non-consecutive chunks. Each H2 section should be self-contained: it should state its claim, provide the evidence, and not require the reader (or the retrieval system) to refer to a previous or following section to understand it.</li>
+        <li><strong>Design pages for retrieval, not just for human reading.</strong> Human readers benefit from narrative flow, progressive disclosure, and conclusions that synthesise what came before. AI retrieval systems do not. They extract isolated chunks and do not benefit from narrative structure that only makes sense when read sequentially. Design your page so that any individual section, read in isolation, makes sense and provides value.</li>
+      </ol>
+
+      <h2 id="frameworks">12 / Practical Frameworks</h2>
+      <p><strong>Retrieval-first page structure.</strong></p>
+
+      <p><strong>GEO-optimised page template</strong></p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/flow-geo-page-template.svg" alt="GEO-optimised page template: introduction with the primary answer in the first 200 words, first H2 with a self-contained claim, a comparison table for commercial or SaaS intent, additional independently readable H2 sections, a dedicated FAQ section, and a short conclusion." width="660" height="470">
+        <span class="post-figure-caption mono">Structure follows retrieval probability, top to bottom.</span>
+      </div>
+
+      <p><strong>Content type selection by query intent</strong></p>
+      <div class="post-figure">
+        <img src="assets/svg/research/r_wp003/flow-content-by-intent.svg" alt="Content type selection by query intent: commercial intent prioritizes comparison tables and specs, analytical intent prioritizes coherent data sections, troubleshooting intent prioritizes numbered steps and code blocks, opinion intent aims to be one node in multi-source synthesis." width="660" height="322">
+        <span class="post-figure-caption mono">Match structure to intent, not just topic.</span>
+      </div>
+
+      <h2 id="glossary">13 / Glossary</h2>
+      <p><strong>Definitions used in this study.</strong></p>
+      <p>Kept to the terms that actually need defining, process details like three-run testing and live LLM testing are covered where they first come up in the Methodology section instead of repeated here.</p>
+      <dl>
+        <dt>Compression Ratio</dt>
+        <dd>The proportion of a page's total word count that entered the model's context window during retrieval. Calculated as retrieved words divided by total page words. Platform range in this study: 12% (Perplexity) to 45% (Gemini).</dd>
+        <dt>Content Chunk</dt>
+        <dd>A discrete unit of content within a page: a paragraph, heading, FAQ item, table row, code block, or other structurally distinct element. The primary unit of measurement in this study's live LLM testing methodology.</dd>
+        <dt>Scattered Retrieval</dt>
+        <dd>A retrieval pattern in which two or more retrieved chunks are separated by two or more paragraph gaps. Occurred in 55% of retrieval events in this study.</dd>
+        <dt>Consecutive Retrieval</dt>
+        <dd>A retrieval pattern in which all retrieved chunks are adjacent or separated by no more than one paragraph gap. Most common in troubleshooting and analytical query types.</dd>
+        <dt>Section Retrieval Probability</dt>
+        <dd>The proportion of query runs in which a given section type (introduction, H2, FAQ, table, middle body, conclusion) was retrieved, across all pages that contained that section type.</dd>
+        <dt>Paragraph Gap</dt>
+        <dd>A paragraph or block of content that was not retrieved between two chunks that were retrieved. The average scattered retrieval pattern in this study contained 4.2 paragraph gaps.</dd>
+      </dl>
+
+      <h2 id="limitations">14 / Limitations</h2>
+      <p><strong>Scope boundaries and caveats.</strong></p>
+      <p>The following limitations apply to these findings and should be considered when generalising results to other contexts.</p>
+      <ul>
+        <li><strong>Sample Size.</strong> 2,500 queries and 45,000 pages is meaningful but not exhaustive. Retrieval patterns may differ for less common query types, niche industries, or non-English content.</li>
+        <li><strong>Manual Assessment.</strong> Section-level surfacing was assessed manually by cross-referencing AI answers against archived source pages. This introduces some subjectivity in borderline cases where the AI paraphrases content substantially.</li>
+        <li><strong>Industries.</strong> Two industries studied: E-commerce and SaaS. Retrieval behaviour in Healthcare, Legal, Finance, or other verticals may differ substantially, particularly for regulated content.</li>
+        <li><strong>Platform Evolution.</strong> All six platforms are under active development. Compression ratios, retrieval architectures, and chunk selection logic may change as models are updated after the May 2026 study period.</li>
+        <li><strong>AI Non-Determinism.</strong> AI responses are non-deterministic. The three-run averaging approach reduces but does not eliminate variation. Some retrieval events are inherently probabilistic and cannot be fully stabilised by repeated runs.</li>
+        <li><strong>Correlation vs. Causation.</strong> The r = -0.65 correlation between page length and Compression Ratio is descriptive, not causal. This data alone does not establish that making pages shorter will increase retrieval coverage, only that shorter pages tend to have higher coverage in this dataset.</li>
+      </ul>
+
+      <h2 id="conclusion">15 / Conclusion</h2>
+      <p><strong>Design pages for retrieval, not just for reading.</strong></p>
+      <p>The central finding of this study is that modern AI systems retrieve only a small portion of the average webpage before generating an answer. The range of 12 to 45% across platforms means that most published content, regardless of its quality, never reaches the model's context window. The content that does get retrieved is not randomly selected: it is disproportionately drawn from introductions, first H2 sections, FAQ blocks, and structured tables, and it is disproportionately absent from middle body sections and conclusions.</p>
+      <p>AI systems do not consume pages linearly. They assemble answers from selected content blocks, averaging 4.8 chunks with 4.2 paragraph gaps between retrieved sections in 55% of cases. This scattered retrieval pattern means that every section of a page needs to stand alone as a retrievable evidence node, not just as part of a coherent narrative for human readers.</p>
+      <p>The negative correlation between page length and retrieval coverage (r = -0.65) challenges one of the most common assumptions in content marketing: that more content means better coverage. For AI retrieval, the evidence suggests the opposite tendency. A shorter, more focused page where every section answers a clear intent has a higher probability of having its most important content retrieved than a longer page where the same information is surrounded by supporting narrative.</p>
+
+      <blockquote>"Success depends less on publishing more content and more on ensuring that the most important information is placed where AI systems are most likely to retrieve it."</blockquote>
+
+      <p>Most of your webpage is invisible to AI. That is the central finding of this study, and it is the frame through which every other number in this paper should be read. The 88% introduction retrieval rate matters because of its contrast with the 26% conclusion rate. The 61% FAQ rate matters because of its contrast with the 29% body rate. The r = -0.65 correlation matters because it runs directly against the instinct to publish more.</p>
+      <p>The actionable message from this study is straightforward: audit your highest-priority pages for retrieval placement. Check where your primary claims live within each page. Move them towards the introduction and first H2. Convert frequently asked factual questions into dedicated FAQ sections. Add comparison tables for commercial content. And accept that the conclusion, where so many writers place their most polished summaries, is the least likely place for an AI system to look.</p>
+
+      <p class="post-meta-header mono" style="margin-top:40px;">GEO Retrieval Research Series <span class="sep">/</span> R_WP003: What AI Actually Reads on Your Webpage <span class="sep">/</span> Mar to May 2026</p>
+
+      <div class="stat-strip">
+        <div class="stat-block"><span class="num">12-45%</span><span class="lbl">PAGE RETRIEVAL RANGE</span></div>
+        <div class="stat-block"><span class="num">88%</span><span class="lbl">INTRODUCTION RETRIEVAL</span></div>
+        <div class="stat-block"><span class="num">61%</span><span class="lbl">FAQ RETRIEVAL</span></div>
+        <div class="stat-block"><span class="num">-0.65</span><span class="lbl">LENGTH VS RETRIEVAL</span></div>
+      </div>
+
+      <div class="related-section">
+        <span class="mono toc-label">Related Reading</span>
+        <div class="related-groups">
+        <div class="related-group">
+          <span class="mono related-group-label">Related Blog Posts</span>
+          <div class="related-list">
+          <a href="ai-retrieves-chunks-not-web-pages.html" class="related-row">
+            <span class="related-title">AI Doesn't Read Web Pages, It Retrieves Chunks</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          <a href="ai-retrieval-rewards-specificity-not-word-count.html" class="related-row">
+            <span class="related-title">AI Retrieval Rewards Specificity, Not Word Count</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        <div class="related-group">
+          <span class="mono related-group-label">Related Research</span>
+          <div class="related-list">
+          <a href="multi-hop-citation-paths-in-ai-retrieval.html" class="related-row">
+            <span class="related-title">R_WP002: Multi-Hop Citation Paths in AI Retrieval</span>
+            <img class="related-arrow" src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+          </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-inner">
+      <h2>For agencies, brands and small businesses who want a site built right, and found by both people and machines.</h2>
+      <div class="contact-links">
+        <a href="mailto:akshaydahiya92.ad@gmail.com">
+          Email
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://www.linkedin.com/in/akshay-dahiya/" target="_blank" rel="noopener">
+          LinkedIn
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+        <a href="https://github.com/dahiyaakshay?tab=repositories" target="_blank" rel="noopener">
+          GitHub
+          <img src="assets/svg/icon-arrow-small.svg" alt="" width="14" height="14">
+        </a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© 2026 Akshay Dahiya <a href="llm.txt" class="foot-link">llm.txt</a> <a href="sitemap.xml" class="foot-link">sitemap</a></span>
+      <span>akshaydahiya.site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+
+</body>
+</html>
